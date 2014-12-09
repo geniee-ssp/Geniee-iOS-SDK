@@ -1,5 +1,5 @@
-Geniee-iOS-SDK
-==============
-[日本語](integrate_guide_ja.md)
+# Geniee-iOS-SDK
 
-[English](integrate_guide_en.md)
+## [日本語](integrate_guide_ja.md)
+
+## [English](integrate_guide_en.md)
