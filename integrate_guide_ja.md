@@ -13,9 +13,9 @@ Geniee Ad SDK for iOS
 - [Integrating Video Ads](#Integrating Video Ads)  
 - [Integrating Native Ads](#Integrating Native Ads)
 
-### Requirements
+###Requirements
 
-### Download the Geniee iOS SDK
+###Download the Geniee iOS SDK
 
 ### Integrating the Geniee SDK
 
