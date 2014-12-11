@@ -15,7 +15,7 @@ Geniee iOS SDK は、スマートフォン(iOS)アプリケーション内に広
 
 ## 組み込み手順
 
-組み込み手順は、以下のドキュメントを参照してください。
+組み込み手順は、以下のドキュメントを参照してください。  
 <https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki>
 
 ## バージョンの新機能
