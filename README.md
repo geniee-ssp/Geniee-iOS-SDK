@@ -1,6 +1,6 @@
 # Geniee iOS SDK
 
-Geniee iOS SDK は、スマートフォン(iOS)アプリケーション内に広告を表示するための Ad SDK です。
+Geniee iOS SDK は、iOS アプリケーション内に広告を表示するための Ad SDK です。
 
 以下の機能を備えています。  
 - 広告の表示
