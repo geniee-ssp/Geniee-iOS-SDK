@@ -11,7 +11,7 @@ Geniee iOS SDK は、iOS アプリケーション内に広告を表示するた�
 
 以下の URL から Geniee iOS SDK をダウンロードします。
 
-- **[Geniee iOS SDK.zip](https://github.com/geniee-ssp/Geniee-iOS-SDK/releases)**
+- **[Geniee-iOS-SDK.zip](https://github.com/geniee-ssp/Geniee-iOS-SDK/releases)**
 
 ## 組み込み手順
 
