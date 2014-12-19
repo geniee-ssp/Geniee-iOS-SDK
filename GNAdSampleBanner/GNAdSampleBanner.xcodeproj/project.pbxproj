@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FECFF2D41A43EC6A00A06E68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFF2D31A43EC6A00A06E68 /* main.m */; };
+		FECFF2D71A43EC6A00A06E68 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFF2D61A43EC6A00A06E68 /* AppDelegate.m */; };
+		FECFF2DA1A43EC6A00A06E68 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFF2D91A43EC6A00A06E68 /* ViewController.m */; };
+		FECFF2DD1A43EC6A00A06E68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FECFF2DB1A43EC6A00A06E68 /* Main.storyboard */; };
+		FECFF2DF1A43EC6A00A06E68 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FECFF2DE1A43EC6A00A06E68 /* Images.xcassets */; };
+		FECFF2E21A43EC6A00A06E68 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FECFF2E01A43EC6A00A06E68 /* LaunchScreen.xib */; };
+		FECFF2EE1A43EC6B00A06E68 /* GNAdSampleBannerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FECFF2ED1A43EC6B00A06E68 /* GNAdSampleBannerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FECFF2E81A43EC6A00A06E68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FECFF2C61A43EC6A00A06E68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FECFF2CD1A43EC6A00A06E68;
+			remoteInfo = GNAdSampleBanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FECFF2CE1A43EC6A00A06E68 /* GNAdSampleBanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNAdSampleBanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FECFF2D21A43EC6A00A06E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FECFF2D31A43EC6A00A06E68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FECFF2D51A43EC6A00A06E68 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FECFF2D61A43EC6A00A06E68 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FECFF2D81A43EC6A00A06E68 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FECFF2D91A43EC6A00A06E68 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FECFF2DC1A43EC6A00A06E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FECFF2DE1A43EC6A00A06E68 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FECFF2E11A43EC6A00A06E68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FECFF2E71A43EC6A00A06E68 /* GNAdSampleBannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GNAdSampleBannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FECFF2EC1A43EC6A00A06E68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FECFF2ED1A43EC6B00A06E68 /* GNAdSampleBannerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNAdSampleBannerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FECFF2CB1A43EC6A00A06E68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FECFF2E41A43EC6A00A06E68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FECFF2C51A43EC6A00A06E68 = {
+			isa = PBXGroup;
+			children = (
+				FECFF2D01A43EC6A00A06E68 /* GNAdSampleBanner */,
+				FECFF2EA1A43EC6A00A06E68 /* GNAdSampleBannerTests */,
+				FECFF2CF1A43EC6A00A06E68 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FECFF2CF1A43EC6A00A06E68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FECFF2CE1A43EC6A00A06E68 /* GNAdSampleBanner.app */,
+				FECFF2E71A43EC6A00A06E68 /* GNAdSampleBannerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FECFF2D01A43EC6A00A06E68 /* GNAdSampleBanner */ = {
+			isa = PBXGroup;
+			children = (
+				FECFF2D51A43EC6A00A06E68 /* AppDelegate.h */,
+				FECFF2D61A43EC6A00A06E68 /* AppDelegate.m */,
+				FECFF2D81A43EC6A00A06E68 /* ViewController.h */,
+				FECFF2D91A43EC6A00A06E68 /* ViewController.m */,
+				FECFF2DB1A43EC6A00A06E68 /* Main.storyboard */,
+				FECFF2DE1A43EC6A00A06E68 /* Images.xcassets */,
+				FECFF2E01A43EC6A00A06E68 /* LaunchScreen.xib */,
+				FECFF2D11A43EC6A00A06E68 /* Supporting Files */,
+			);
+			path = GNAdSampleBanner;
+			sourceTree = "<group>";
+		};
+		FECFF2D11A43EC6A00A06E68 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FECFF2D21A43EC6A00A06E68 /* Info.plist */,
+				FECFF2D31A43EC6A00A06E68 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FECFF2EA1A43EC6A00A06E68 /* GNAdSampleBannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FECFF2ED1A43EC6B00A06E68 /* GNAdSampleBannerTests.m */,
+				FECFF2EB1A43EC6A00A06E68 /* Supporting Files */,
+			);
+			path = GNAdSampleBannerTests;
+			sourceTree = "<group>";
+		};
+		FECFF2EB1A43EC6A00A06E68 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FECFF2EC1A43EC6A00A06E68 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FECFF2CD1A43EC6A00A06E68 /* GNAdSampleBanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FECFF2F11A43EC6B00A06E68 /* Build configuration list for PBXNativeTarget "GNAdSampleBanner" */;
+			buildPhases = (
+				FECFF2CA1A43EC6A00A06E68 /* Sources */,
+				FECFF2CB1A43EC6A00A06E68 /* Frameworks */,
+				FECFF2CC1A43EC6A00A06E68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GNAdSampleBanner;
+			productName = GNAdSampleBanner;
+			productReference = FECFF2CE1A43EC6A00A06E68 /* GNAdSampleBanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FECFF2E61A43EC6A00A06E68 /* GNAdSampleBannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FECFF2F41A43EC6B00A06E68 /* Build configuration list for PBXNativeTarget "GNAdSampleBannerTests" */;
+			buildPhases = (
+				FECFF2E31A43EC6A00A06E68 /* Sources */,
+				FECFF2E41A43EC6A00A06E68 /* Frameworks */,
+				FECFF2E51A43EC6A00A06E68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FECFF2E91A43EC6A00A06E68 /* PBXTargetDependency */,
+			);
+			name = GNAdSampleBannerTests;
+			productName = GNAdSampleBannerTests;
+			productReference = FECFF2E71A43EC6A00A06E68 /* GNAdSampleBannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FECFF2C61A43EC6A00A06E68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Geniee;
+				TargetAttributes = {
+					FECFF2CD1A43EC6A00A06E68 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					FECFF2E61A43EC6A00A06E68 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = FECFF2CD1A43EC6A00A06E68;
+					};
+				};
+			};
+			buildConfigurationList = FECFF2C91A43EC6A00A06E68 /* Build configuration list for PBXProject "GNAdSampleBanner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FECFF2C51A43EC6A00A06E68;
+			productRefGroup = FECFF2CF1A43EC6A00A06E68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FECFF2CD1A43EC6A00A06E68 /* GNAdSampleBanner */,
+				FECFF2E61A43EC6A00A06E68 /* GNAdSampleBannerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FECFF2CC1A43EC6A00A06E68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FECFF2DD1A43EC6A00A06E68 /* Main.storyboard in Resources */,
+				FECFF2E21A43EC6A00A06E68 /* LaunchScreen.xib in Resources */,
+				FECFF2DF1A43EC6A00A06E68 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FECFF2E51A43EC6A00A06E68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FECFF2CA1A43EC6A00A06E68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FECFF2DA1A43EC6A00A06E68 /* ViewController.m in Sources */,
+				FECFF2D71A43EC6A00A06E68 /* AppDelegate.m in Sources */,
+				FECFF2D41A43EC6A00A06E68 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FECFF2E31A43EC6A00A06E68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FECFF2EE1A43EC6B00A06E68 /* GNAdSampleBannerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FECFF2E91A43EC6A00A06E68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FECFF2CD1A43EC6A00A06E68 /* GNAdSampleBanner */;
+			targetProxy = FECFF2E81A43EC6A00A06E68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FECFF2DB1A43EC6A00A06E68 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FECFF2DC1A43EC6A00A06E68 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FECFF2E01A43EC6A00A06E68 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FECFF2E11A43EC6A00A06E68 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FECFF2EF1A43EC6B00A06E68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FECFF2F01A43EC6B00A06E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FECFF2F21A43EC6B00A06E68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GNAdSampleBanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GenieeAdsSDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FECFF2F31A43EC6B00A06E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = GNAdSampleBanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GenieeAdsSDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FECFF2F51A43EC6B00A06E68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GNAdSampleBannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GNAdSampleBanner.app/GNAdSampleBanner";
+			};
+			name = Debug;
+		};
+		FECFF2F61A43EC6B00A06E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GNAdSampleBannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GNAdSampleBanner.app/GNAdSampleBanner";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FECFF2C91A43EC6A00A06E68 /* Build configuration list for PBXProject "GNAdSampleBanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FECFF2EF1A43EC6B00A06E68 /* Debug */,
+				FECFF2F01A43EC6B00A06E68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FECFF2F11A43EC6B00A06E68 /* Build configuration list for PBXNativeTarget "GNAdSampleBanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FECFF2F21A43EC6B00A06E68 /* Debug */,
+				FECFF2F31A43EC6B00A06E68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FECFF2F41A43EC6B00A06E68 /* Build configuration list for PBXNativeTarget "GNAdSampleBannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FECFF2F51A43EC6B00A06E68 /* Debug */,
+				FECFF2F61A43EC6B00A06E68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FECFF2C61A43EC6A00A06E68 /* Project object */;
+}
