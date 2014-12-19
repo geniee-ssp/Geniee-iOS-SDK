@@ -36,6 +36,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>CFBundleIconFile</key>
+	<string>icon_geniee.png</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>use GeoLocation</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>use GeoLocation</string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
