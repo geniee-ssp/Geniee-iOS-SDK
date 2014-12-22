@@ -7,4 +7,4 @@
 ## Version 2.0.8
 
 - **Native Ad 機能の追加**.
-    - In-Feed 広告
+    - In-Feed 広告の配信
