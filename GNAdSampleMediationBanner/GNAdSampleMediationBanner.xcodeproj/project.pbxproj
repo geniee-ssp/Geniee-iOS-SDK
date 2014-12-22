@@ -35,7 +35,7 @@
 		FE637DCA1A4706B500CF2223 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE637DC91A4706B500CF2223 /* EventKit.framework */; };
 		FE637DCC1A4706BA00CF2223 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE637DCB1A4706BA00CF2223 /* EventKitUI.framework */; };
 		FE637DCE1A4706C200CF2223 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE637DCD1A4706C200CF2223 /* StoreKit.framework */; };
-		FE637DEC1A47090500CF2223 /* libGNAdSDK-2.0.7-aladdin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE637DD31A47090500CF2223 /* libGNAdSDK-2.0.7-aladdin.a */; };
+		FE637DEC1A47090500CF2223 /* libGNAdSDK-2.0.8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE637DD31A47090500CF2223 /* libGNAdSDK-2.0.8.a */; };
 		FE637DED1A47090500CF2223 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE637DD81A47090500CF2223 /* DDXMLElementAdditions.m */; };
 		FE637DEE1A47090500CF2223 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = FE637DDB1A47090500CF2223 /* NSString+DDXML.m */; };
 		FE637DEF1A47090500CF2223 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = FE637DDE1A47090500CF2223 /* DDXMLDocument.m */; };
@@ -122,7 +122,7 @@
 		FE637DD01A47090500CF2223 /* GNAdVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNAdVideo.h; sourceTree = "<group>"; };
 		FE637DD11A47090500CF2223 /* GNAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNAdView.h; sourceTree = "<group>"; };
 		FE637DD21A47090500CF2223 /* GNInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNInterstitial.h; sourceTree = "<group>"; };
-		FE637DD31A47090500CF2223 /* libGNAdSDK-2.0.7-aladdin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libGNAdSDK-2.0.7-aladdin.a"; sourceTree = "<group>"; };
+		FE637DD31A47090500CF2223 /* libGNAdSDK-2.0.8.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libGNAdSDK-2.0.8.a"; sourceTree = "<group>"; };
 		FE637DD71A47090500CF2223 /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
 		FE637DD81A47090500CF2223 /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
 		FE637DDA1A47090500CF2223 /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 				FE637DCC1A4706BA00CF2223 /* EventKitUI.framework in Frameworks */,
 				FE637DCA1A4706B500CF2223 /* EventKit.framework in Frameworks */,
 				FE637D601A46FE7900CF2223 /* iAd.framework in Frameworks */,
-				FE637DEC1A47090500CF2223 /* libGNAdSDK-2.0.7-aladdin.a in Frameworks */,
+				FE637DEC1A47090500CF2223 /* libGNAdSDK-2.0.8.a in Frameworks */,
 				FE637D5E1A46FE3900CF2223 /* Foundation.framework in Frameworks */,
 				FE637D5C1A46FE3300CF2223 /* MessageUI.framework in Frameworks */,
 				FE637D5A1A46FE2B00CF2223 /* QuartzCore.framework in Frameworks */,
@@ -349,7 +349,7 @@
 				FE637DD01A47090500CF2223 /* GNAdVideo.h */,
 				FE637DD11A47090500CF2223 /* GNAdView.h */,
 				FE637DD21A47090500CF2223 /* GNInterstitial.h */,
-				FE637DD31A47090500CF2223 /* libGNAdSDK-2.0.7-aladdin.a */,
+				FE637DD31A47090500CF2223 /* libGNAdSDK-2.0.8.a */,
 				FE637DD41A47090500CF2223 /* libs */,
 				FE637DE81A47090500CF2223 /* Log4GNAd.h */,
 				FE637DE91A47090500CF2223 /* Mediation */,
