@@ -16,7 +16,7 @@
 		FE637E271A470B0A00CF2223 /* GNAdSampleAdMobAdapterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE637E261A470B0A00CF2223 /* GNAdSampleAdMobAdapterTests.m */; };
 		FE637E521A470BAA00CF2223 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE637E501A470BAA00CF2223 /* libGoogleAdMobAds.a */; };
 		FE637E531A470BAA00CF2223 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = FE637E511A470BAA00CF2223 /* README.txt */; };
-		FE637E711A470BBB00CF2223 /* libGNAdSDK-2.0.7-aladdin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE637E581A470BBB00CF2223 /* libGNAdSDK-2.0.7-aladdin.a */; };
+		FE637E711A470BBB00CF2223 /* libGNAdSDK-2.0.8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE637E581A470BBB00CF2223 /* libGNAdSDK-2.0.8.a */; };
 		FE637E721A470BBB00CF2223 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE637E5D1A470BBB00CF2223 /* DDXMLElementAdditions.m */; };
 		FE637E731A470BBB00CF2223 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = FE637E601A470BBB00CF2223 /* NSString+DDXML.m */; };
 		FE637E741A470BBB00CF2223 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = FE637E631A470BBB00CF2223 /* DDXMLDocument.m */; };
@@ -100,7 +100,7 @@
 		FE637E551A470BBB00CF2223 /* GNAdVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNAdVideo.h; sourceTree = "<group>"; };
 		FE637E561A470BBB00CF2223 /* GNAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNAdView.h; sourceTree = "<group>"; };
 		FE637E571A470BBB00CF2223 /* GNInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNInterstitial.h; sourceTree = "<group>"; };
-		FE637E581A470BBB00CF2223 /* libGNAdSDK-2.0.7-aladdin.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libGNAdSDK-2.0.7-aladdin.a"; sourceTree = "<group>"; };
+		FE637E581A470BBB00CF2223 /* libGNAdSDK-2.0.8.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libGNAdSDK-2.0.8.a"; sourceTree = "<group>"; };
 		FE637E5C1A470BBB00CF2223 /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
 		FE637E5D1A470BBB00CF2223 /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
 		FE637E5F1A470BBB00CF2223 /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 				FE637EAE1A470DA100CF2223 /* libGNAdMediationAdapter-1.0.3.a in Frameworks */,
 				FE637E871A470BFC00CF2223 /* AdSupport.framework in Frameworks */,
 				FE637E851A470BF700CF2223 /* UIKit.framework in Frameworks */,
-				FE637E711A470BBB00CF2223 /* libGNAdSDK-2.0.7-aladdin.a in Frameworks */,
+				FE637E711A470BBB00CF2223 /* libGNAdSDK-2.0.8.a in Frameworks */,
 				FE637E521A470BAA00CF2223 /* libGoogleAdMobAds.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,7 +315,7 @@
 				FE637E551A470BBB00CF2223 /* GNAdVideo.h */,
 				FE637E561A470BBB00CF2223 /* GNAdView.h */,
 				FE637E571A470BBB00CF2223 /* GNInterstitial.h */,
-				FE637E581A470BBB00CF2223 /* libGNAdSDK-2.0.7-aladdin.a */,
+				FE637E581A470BBB00CF2223 /* libGNAdSDK-2.0.8.a */,
 				FE637E591A470BBB00CF2223 /* libs */,
 				FE637E6D1A470BBB00CF2223 /* Log4GNAd.h */,
 				FE637E6E1A470BBB00CF2223 /* Mediation */,
@@ -770,6 +770,7 @@
 				FE637E2C1A470B0A00CF2223 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE637E2D1A470B0A00CF2223 /* Build configuration list for PBXNativeTarget "GNAdSampleAdMobAdapterTests" */ = {
 			isa = XCConfigurationList;
@@ -778,6 +779,7 @@
 				FE637E2F1A470B0A00CF2223 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
