@@ -26,5 +26,3 @@ Geniee iOS SDK は、iOS アプリケーション内に広告を表示するた�
 
 - バージョン5以降のiOSを対象としています。
 - 32bit / 64bit のiOSを対象としています。
-
-## commit
