@@ -6,11 +6,13 @@
 #import "TableViewController.h"
 #import "TableViewCell.h"
 #import "MyCellData.h"
+#import "GNQueue.h"
 
 @interface TableViewController ()
 {
     BOOL _loading;
     NSTimeInterval secondsStart, secondsEnd;
+    GNQueue *queueAds;
 }
 
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
@@ -25,6 +27,7 @@
 
     secondsStart = [NSDate timeIntervalSinceReferenceDate];
     _cellDataList = [NSMutableArray array];
+    queueAds = [[GNQueue alloc] initWithSize:100];
     
     _nativeAdRequest = [[GNNativeAdRequest alloc] initWithID:@"YOUR_SSP_APP_ID"];
     _nativeAdRequest.delegate = self;
@@ -55,8 +58,7 @@
         //if ([nativeAd.zoneID isEqualToString:@"YOUR_SSP_APP_ID"]) {
         //    [_cellDataList addObject:nativeAd];
         //}
-        [_cellDataList addObject:nativeAd];
-        
+        [queueAds enqueue:nativeAd];
     }
 }
 
@@ -70,13 +72,18 @@
 - (void)requestCellDataListAsync
 {
     _loading = YES;
-    [self performSelector:@selector(createCellDataList) withObject:nil afterDelay:0.5];
+    [self performSelector:@selector(createCellDataList) withObject:nil afterDelay:0.3];
 }
 
 - (void)createCellDataList
 {
     for (int i = 0; i < 20; i++) {
-        [_cellDataList addObject:[[MyCellData alloc] init]];
+        if ([queueAds count] > 0) {
+                id ad = [queueAds dequeue];
+                [_cellDataList addObject:ad];
+        } else {
+            [_cellDataList addObject:[[MyCellData alloc] init]];
+        }
     }
     [_indicator stopAnimating];
     [self.tableView reloadData];
@@ -117,7 +124,7 @@
     } else {
         MyCellData *myCellData = (MyCellData *)[_cellDataList objectAtIndex:indexPath.row];
         cell.nativeAd = nil;
-        cell.title.text = [myCellData.title stringByAppendingFormat:@" No.%d", indexPath.row + 1];
+        cell.title.text = [myCellData.title stringByAppendingFormat:@" No.%ld", indexPath.row + 1];
         cell.description.text = myCellData.content;
         cell.icon.image = nil;
         NSURL *url = myCellData.imgURL;
