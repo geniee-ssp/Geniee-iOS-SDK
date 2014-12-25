@@ -5,6 +5,7 @@
 
 #import <Foundation/Foundation.h>
 #import "GNNativeAdRequest.h"
+#import <UIKit/UIKit.h>
 
 /**
  * The `GNNativeAd` class is used to manage native ad.
@@ -42,10 +43,11 @@
 
 /**
  * Tracking Ad Impression
- *
  * When the Ad content is rendered, report this Impression to Ad server.
+ *
+ * @param uiView the view for rendering Impression beacon tag
  */
-- (void)trackingImpression;
+- (void)trackingImpressionWithView:(UIView *)uiView;
 
 /**
  * Tracking Ad Click

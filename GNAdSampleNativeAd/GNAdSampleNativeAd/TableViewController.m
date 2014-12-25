@@ -72,7 +72,7 @@
 - (void)requestCellDataListAsync
 {
     _loading = YES;
-    [self performSelector:@selector(createCellDataList) withObject:nil afterDelay:0.3];
+    [self performSelector:@selector(createCellDataList) withObject:nil afterDelay:0.5];
 }
 
 - (void)createCellDataList
@@ -119,7 +119,7 @@
                 if (error) return;
                 cell.icon.image = image;
             }];
-            [nativeAd trackingImpression];
+            [nativeAd trackingImpressionWithView:cell];
         }
     } else {
         MyCellData *myCellData = (MyCellData *)[_cellDataList objectAtIndex:indexPath.row];
