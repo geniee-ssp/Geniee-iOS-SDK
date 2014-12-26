@@ -18,7 +18,7 @@ class ViewController: UIViewController, GNAdViewDelegate {
         _adView.rootViewController = self
         //_adView.bgColor = YES
         //_adView.geoLocationEnable = YES
-        _adView.GNAdlogPriority = GNLogPriorityInfo
+        //_adView.GNAdlogPriority = GNLogPriorityInfo
         self.view.addSubview(_adView)
         _adView.startAdLoop()
     }
