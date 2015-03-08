@@ -22,6 +22,7 @@ typedef enum {
 #endif
 
 @class GNNativeAdRequest;
+@class GNNativeAd;
 
 @protocol GNNativeAdRequestDelegate <NSObject>
 
@@ -45,6 +46,17 @@ typedef enum {
  * @return void
  */
 - (void)nativeAdRequest:(GNNativeAdRequest *)request didFailToReceiveAdsWithError:(NSError *)error;
+
+@optional
+
+/**
+ * Sent before ad begins open landingURL in External Browser.
+ *
+ * @param nativeAd The Native Ad.
+ * @param landingURL The URL of the landing page.
+ * @return BOOL YES if the ad should begin start External Browser; otherwise, NO .
+ */
+- (BOOL)shouldStartExternalBrowserWithClick:(GNNativeAd *)nativeAd landingURL:(NSString *)landingURL;
 
 @end
 
