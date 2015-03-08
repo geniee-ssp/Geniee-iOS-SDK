@@ -29,6 +29,7 @@
     _cellDataList = [NSMutableArray array];
     queueAds = [[GNQueue alloc] initWithSize:100];
     
+    // Create GNNativeAdRequest
     _nativeAdRequest = [[GNNativeAdRequest alloc] initWithID:@"YOUR_SSP_APP_ID"];
     _nativeAdRequest.delegate = self;
     //_nativeAdRequest.GNAdlogPriority = GNLogPriorityInfo;
@@ -65,6 +66,12 @@
 - (void)nativeAdRequest:(GNNativeAdRequest *)request didFailToReceiveAdsWithError:(NSError *)error
 {
     NSLog(@"TableViewController: didFailToReceiveAdsWithError : %@.", [error localizedDescription]);
+}
+
+- (BOOL)shouldStartExternalBrowserWithClick:(GNNativeAd *)nativeAd landingURL:(NSString *)landingURL
+{
+    NSLog(@"TableViewController: shouldStartExternalBrowserWithClick : %@.", landingURL);
+    return YES;
 }
 
 #pragma mark - Get My Cell Data

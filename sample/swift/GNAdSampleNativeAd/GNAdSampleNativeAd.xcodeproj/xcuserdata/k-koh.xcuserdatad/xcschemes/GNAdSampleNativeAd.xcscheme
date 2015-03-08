@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FED88A2A1A300E8000F7964F"
+               BlueprintIdentifier = "B6C9613E1A4D26AA00E7CB15"
                BuildableName = "GNAdSampleNativeAd.app"
                BlueprintName = "GNAdSampleNativeAd"
                ReferencedContainer = "container:GNAdSampleNativeAd.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FED88A431A300E8000F7964F"
+               BlueprintIdentifier = "B6C961531A4D26AA00E7CB15"
                BuildableName = "GNAdSampleNativeAdTests.xctest"
                BlueprintName = "GNAdSampleNativeAdTests"
                ReferencedContainer = "container:GNAdSampleNativeAd.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FED88A431A300E8000F7964F"
+               BlueprintIdentifier = "B6C961531A4D26AA00E7CB15"
                BuildableName = "GNAdSampleNativeAdTests.xctest"
                BlueprintName = "GNAdSampleNativeAdTests"
                ReferencedContainer = "container:GNAdSampleNativeAd.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FED88A2A1A300E8000F7964F"
+            BlueprintIdentifier = "B6C9613E1A4D26AA00E7CB15"
             BuildableName = "GNAdSampleNativeAd.app"
             BlueprintName = "GNAdSampleNativeAd"
             ReferencedContainer = "container:GNAdSampleNativeAd.xcodeproj">
@@ -75,7 +75,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FED88A2A1A300E8000F7964F"
+            BlueprintIdentifier = "B6C9613E1A4D26AA00E7CB15"
             BuildableName = "GNAdSampleNativeAd.app"
             BlueprintName = "GNAdSampleNativeAd"
             ReferencedContainer = "container:GNAdSampleNativeAd.xcodeproj">
@@ -93,7 +93,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FED88A2A1A300E8000F7964F"
+            BlueprintIdentifier = "B6C9613E1A4D26AA00E7CB15"
             BuildableName = "GNAdSampleNativeAd.app"
             BlueprintName = "GNAdSampleNativeAd"
             ReferencedContainer = "container:GNAdSampleNativeAd.xcodeproj">
