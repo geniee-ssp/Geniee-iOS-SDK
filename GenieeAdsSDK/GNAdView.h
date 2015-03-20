@@ -4,6 +4,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GNAdViewRequest.h"
 
 
 #if defined(__cplusplus)
@@ -42,6 +43,15 @@ typedef enum {
 
 #pragma mark Click-Time Lifecycle Notifications
 
+/**
+ * Sent before ad begins open landingURL in External Browser.
+ *
+ * @param gnAdView The GNAdView Ad.
+ * @param landingURL The URL of the landing page.
+ * @return BOOL YES if the ad should begin start External Browser; otherwise, NO .
+ */
+- (BOOL)shouldStartExternalBrowserWithClick:(GNAdView *)adView landingURL:(NSString *)landingURL;
+
 // Sent just before presenting the user a browser,
 // in response to clicking on an ad.
 - (void)adViewWillShowInDefaultBrowser:(GNAdView *)adView;
@@ -77,15 +87,25 @@ typedef enum {
     GNAdSizeTypeW480H32,  //480x32
     GNAdSizeTypeW768H66,  //768x66
     GNAdSizeTypeW1024H66, //1024x66
+    GNAdSizeTypeCustom,   //Custom size
 } GNAdSizeType;
 
 #pragma mark Initialization
+
+/// Zone ID
+@property(nonatomic, readonly, copy) NSString *zoneID;
 
 // Initializes a GNAdView and sets it to the specified frame, and geniee app ID (with default ad size 320x50)
 - (id)initWithFrame:(CGRect)frame appID:(NSString *)appID;
 
 // Initializes a GNAdView and sets it to the specified frame, size type, and geniee app ID
 - (id)initWithFrame:(CGRect)frame adSizeType:(GNAdSizeType)adSizeType appID:(NSString *)appID;
+
+// Initializes a GNAdView and sets it to the specified frame, size type, size, and geniee app ID
+- (id)initWithFrame:(CGRect)frame adSizeType:(GNAdSizeType)adSizeType adSize:(CGSize)adSize appID:(NSString *)appID;
+
+// Initializes a GNAdView and sets it to the specified banners, and geniee app ID (with default ad size 320x50)
+- (id)initWithBanner:(NSArray*)banners appID:(NSString *)appID request:(GNAdViewRequest *)request;
 
 // Set view controller displays in-app browser (rootViewController setting is necessary  when using the in-app browser.)
 @property(nonatomic, retain) UIViewController* rootViewController;
@@ -101,6 +121,9 @@ typedef enum {
 
 // End automatically refreshing banner ads.
 - (void)stopAdLoop;
+
+// Show banner with the specified frame, and ad size
+- (void)showBannerWithFrame:(CGRect)frame adSize:(CGSize)adSize;
 
 #pragma mark set/get Ad backgroud color
 // Optional
