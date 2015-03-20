@@ -10,6 +10,8 @@
 	<string>GNAdSampleBanner</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>0F4B00D4B39FC69448867DE83F9692A765B9D16F</key>
+		<string>melpomene.geniee.jp:sdk/ssp.git</string>
 		<key>52F467044D434C7C9BD20FFDFA62D224B48314C2</key>
 		<string>https://github.com/geniee-ssp/Geniee-iOS-SDK.git</string>
 	</dict>
@@ -17,6 +19,8 @@
 	<string>sample/objective-c/GNAdSampleBanner/GNAdSampleBanner.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>0F4B00D4B39FC69448867DE83F9692A765B9D16F</key>
+		<string>../../../../../../gitlab/sdk-ssp</string>
 		<key>52F467044D434C7C9BD20FFDFA62D224B48314C2</key>
 		<string>../../../../..</string>
 	</dict>
@@ -35,6 +39,14 @@
 			<string>52F467044D434C7C9BD20FFDFA62D224B48314C2</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Geniee-iOS-SDK</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0F4B00D4B39FC69448867DE83F9692A765B9D16F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>sdk-ssp</string>
 		</dict>
 	</array>
 </dict>

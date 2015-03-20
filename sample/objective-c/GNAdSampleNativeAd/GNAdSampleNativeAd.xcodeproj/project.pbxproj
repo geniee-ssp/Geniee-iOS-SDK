@@ -13,7 +13,7 @@
 		B61D1C601AA9D5A400727331 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B61D1C5F1AA9D5A400727331 /* Images.xcassets */; };
 		B61D1C631AA9D5A400727331 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B61D1C611AA9D5A400727331 /* LaunchScreen.xib */; };
 		B61D1C6F1AA9D5A400727331 /* GNAdSampleNativeAdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B61D1C6E1AA9D5A400727331 /* GNAdSampleNativeAdTests.m */; };
-		B61D1C971AA9D60C00727331 /* libGNAdSDK-2.0.9.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B61D1C7E1AA9D60C00727331 /* libGNAdSDK-2.0.9.a */; };
+		B61D1C971AA9D60C00727331 /* libGNAdSDK-2.1.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B61D1C7E1AA9D60C00727331 /* libGNAdSDK-2.1.1.a */; };
 		B61D1C981AA9D60C00727331 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B61D1C831AA9D60C00727331 /* DDXMLElementAdditions.m */; };
 		B61D1C991AA9D60C00727331 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = B61D1C861AA9D60C00727331 /* NSString+DDXML.m */; };
 		B61D1C9A1AA9D60C00727331 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B61D1C891AA9D60C00727331 /* DDXMLDocument.m */; };
@@ -67,7 +67,7 @@
 		B61D1C7B1AA9D60C00727331 /* GNInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNInterstitial.h; sourceTree = "<group>"; };
 		B61D1C7C1AA9D60C00727331 /* GNNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNNativeAd.h; sourceTree = "<group>"; };
 		B61D1C7D1AA9D60C00727331 /* GNNativeAdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNNativeAdRequest.h; sourceTree = "<group>"; };
-		B61D1C7E1AA9D60C00727331 /* libGNAdSDK-2.0.9.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libGNAdSDK-2.0.9.a"; sourceTree = "<group>"; };
+		B61D1C7E1AA9D60C00727331 /* libGNAdSDK-2.1.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libGNAdSDK-2.1.1.a"; sourceTree = "<group>"; };
 		B61D1C821AA9D60C00727331 /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
 		B61D1C831AA9D60C00727331 /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
 		B61D1C851AA9D60C00727331 /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
@@ -128,7 +128,7 @@
 				B61D1CA61AA9D6DF00727331 /* CoreGraphics.framework in Frameworks */,
 				B61D1CA41AA9D67C00727331 /* AdSupport.framework in Frameworks */,
 				B61D1CA21AA9D67400727331 /* UIKit.framework in Frameworks */,
-				B61D1C971AA9D60C00727331 /* libGNAdSDK-2.0.9.a in Frameworks */,
+				B61D1C971AA9D60C00727331 /* libGNAdSDK-2.1.1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +215,7 @@
 				B61D1C7B1AA9D60C00727331 /* GNInterstitial.h */,
 				B61D1C7C1AA9D60C00727331 /* GNNativeAd.h */,
 				B61D1C7D1AA9D60C00727331 /* GNNativeAdRequest.h */,
-				B61D1C7E1AA9D60C00727331 /* libGNAdSDK-2.0.9.a */,
+				B61D1C7E1AA9D60C00727331 /* libGNAdSDK-2.1.1.a */,
 				B61D1C7F1AA9D60C00727331 /* libs */,
 				B61D1C931AA9D60C00727331 /* Log4GNAd.h */,
 				B61D1C941AA9D60C00727331 /* Mediation */,

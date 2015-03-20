@@ -27,6 +27,11 @@ class ViewController: UIViewController, GNAdViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func shouldStartExternalBrowserWithClick(nativeAd: GNAdView, landingURL: NSString) -> Bool {
+        NSLog("ViewController: shouldStartExternalBrowserWithClick : %@.", landingURL);
+        return true;
+    }
 
 }
 

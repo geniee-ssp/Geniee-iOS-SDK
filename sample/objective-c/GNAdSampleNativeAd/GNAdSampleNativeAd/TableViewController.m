@@ -122,6 +122,7 @@
             cell.description.text = nativeAd.description;
             cell.icon.image = nil;
             NSURL *url = [NSURL URLWithString:nativeAd.icon_url];
+            //NSURL *url = [NSURL URLWithString:nativeAd.screenshots_url];
             [TableViewController requestImageWithURL:url completion:^(UIImage *image, NSError *error) {
                 if (error) return;
                 cell.icon.image = image;
