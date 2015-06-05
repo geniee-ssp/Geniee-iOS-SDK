@@ -39,7 +39,7 @@ class TableViewController: UITableViewController, GNNativeAdRequestDelegate {
     func nativeAdRequestDidReceiveAds(nativeAds: [AnyObject]) {
         _secondsEnd = NSDate.timeIntervalSinceReferenceDate()
         NSLog("TableViewController: nativeAdRequestDidReceiveAds in %f seconds.", (Double)(_secondsEnd - _secondsStart));
-        for nativeAd in nativeAds as [GNNativeAd] {
+        for nativeAd in nativeAds as! [GNNativeAd] {
             // You can identify the GNNativeAd by using the zoneID field of GNNativeAd.
             //if (nativeAd.zoneID == "YOUR_SSP_APP_ID") {
             //    _cellDataList.addObject(nativeAd)
@@ -52,7 +52,7 @@ class TableViewController: UITableViewController, GNNativeAdRequestDelegate {
         NSLog("TableViewController: didFailToReceiveAdsWithError : %@.", error.localizedDescription);
     }
     
-    func shouldStartExternalBrowserWithClick(nativeAd: GNNativeAd, landingURL: NSString) -> Bool {
+    func shouldStartExternalBrowserWithClick(nativeAd: GNNativeAd, landingURL: String) -> Bool {
         NSLog("TableViewController: shouldStartExternalBrowserWithClick : %@.", landingURL);
         return true;
     }
@@ -101,10 +101,10 @@ class TableViewController: UITableViewController, GNNativeAdRequestDelegate {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("SampleDataCell", forIndexPath: indexPath) as TableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("SampleDataCell", forIndexPath: indexPath) as! TableViewCell
         
         if (_cellDataList.objectAtIndex(indexPath.row).isKindOfClass(GNNativeAd)) {
-            var nativeAd: GNNativeAd = _cellDataList.objectAtIndex(indexPath.row) as GNNativeAd
+            var nativeAd: GNNativeAd = _cellDataList.objectAtIndex(indexPath.row) as! GNNativeAd
             cell.nativeAd = nativeAd;
             cell.title.text = nativeAd.title;
             cell.content.text = nativeAd.description
@@ -119,10 +119,10 @@ class TableViewController: UITableViewController, GNNativeAdRequestDelegate {
             })
             nativeAd.trackingImpressionWithView(cell)
         } else {
-            var myCellData: MyCellData = _cellDataList.objectAtIndex(indexPath.row) as MyCellData
+            var myCellData: MyCellData = _cellDataList.objectAtIndex(indexPath.row) as! MyCellData
             cell.nativeAd = nil
-            cell.title.text = myCellData.title + " No.\(indexPath.row + 1)"
-            cell.content.text = myCellData.content
+            cell.title.text = (myCellData.title as String) + " No.\(indexPath.row + 1)"
+            cell.content.text = myCellData.content as String
             cell.icon.image = nil;
             var url: NSURL = myCellData.imgURL
             requestImageWithURL(url, completion:{(image: UIImage!, error: NSError!)->Void in
@@ -137,7 +137,7 @@ class TableViewController: UITableViewController, GNNativeAdRequestDelegate {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let cell = tableView.cellForRowAtIndexPath(indexPath) as TableViewCell
+        let cell = tableView.cellForRowAtIndexPath(indexPath) as! TableViewCell
         if (cell.nativeAd != nil) {
             cell.nativeAd.trackingClick()
         } else {
@@ -238,11 +238,11 @@ class TableViewController: UITableViewController, GNNativeAdRequestDelegate {
         let h: CGFloat = image.size.height
         let w: CGFloat = image.size.width
         var cimage: CGImageRef = image.CGImage
-        let pC: UInt = CGImageGetBitsPerComponent(cimage)
-        let pR: UInt = pC * 4 * UInt(w)
+        let pC: Int = CGImageGetBitsPerComponent(cimage)
+        let pR: Int = pC * 4 * Int(w)
         var colorSpace: CGColorSpaceRef = CGColorSpaceCreateDeviceRGB()
         let bitmapInfo = CGBitmapInfo(CGImageAlphaInfo.NoneSkipLast.rawValue)
-        var context: CGContextRef = CGBitmapContextCreate(nil, UInt(w), UInt(h), pC, pR, colorSpace, bitmapInfo)
+        var context: CGContextRef = CGBitmapContextCreate(nil, Int(w), Int(h), pC, pR, colorSpace, bitmapInfo)
         
         CGContextSetRGBFillColor(context, 1.0, 1.0, 1.0, 1.0)
         CGContextFillRect(context, CGRectMake(0, 0, w, h))

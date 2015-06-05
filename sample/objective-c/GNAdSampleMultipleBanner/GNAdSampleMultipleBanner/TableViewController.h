@@ -4,8 +4,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GNAdViewRequest.h"
-#import "GNAdView.h"
+#import <GNAdSDK/GNAdViewRequest.h>
+#import <GNAdSDK/GNAdView.h>
 
 
 @interface TableViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate, GNAdViewRequestDelegate>

@@ -4,7 +4,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GNInterstitial.h"
+#import <GNAdSDK/GNInterstitial.h>
 
 @interface ViewController : UIViewController<GNInterstitialDelegate>
 {

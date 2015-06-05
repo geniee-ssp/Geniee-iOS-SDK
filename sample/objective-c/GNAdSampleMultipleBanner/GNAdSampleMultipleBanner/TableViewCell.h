@@ -4,7 +4,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GNAdView.h"
+#import <GNAdSDK/GNAdView.h>
 
 @interface TableViewCell : UITableViewCell
 

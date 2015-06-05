@@ -4,8 +4,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GNNativeAdRequest.h"
-#import "GNNativeAd.h"
+#import <GNAdSDK/GNNativeAdRequest.h>
+#import <GNAdSDK/GNNativeAd.h>
 
 @interface TableViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate, GNNativeAdRequestDelegate>
 {

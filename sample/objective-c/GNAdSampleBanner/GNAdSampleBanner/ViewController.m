@@ -21,6 +21,8 @@
     //_adView.geoLocationEnable = YES;
     //_adView.GNAdlogPriority = GNLogPriorityInfo;
     [self.view addSubview:_adView];
+
+    _adView.center = CGPointMake(self.view.center.x, _adView.center.y);
     [_adView startAdLoop];
 }
 

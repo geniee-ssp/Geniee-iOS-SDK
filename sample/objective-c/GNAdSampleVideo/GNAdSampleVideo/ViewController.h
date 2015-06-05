@@ -4,7 +4,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GNAdVideo.h"
+#import <GNAdSDK/GNAdVideo.h>
 
 @interface ViewController : UIViewController<GNAdVideoDelegate>
 {

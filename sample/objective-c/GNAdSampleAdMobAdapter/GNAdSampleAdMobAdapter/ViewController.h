@@ -4,13 +4,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GADBannerView.h"
-#import "GADBannerViewDelegate.h"
+@class GADBannerView;
+@class GADBannerViewDelegate;
 
 @interface ViewController : UIViewController<GADBannerViewDelegate> {
-    GADBannerView *bannerView_;
+    GADBannerView *_bannerView;
 }
 
-
 @end
-

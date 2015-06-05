@@ -30,7 +30,7 @@
     queueAds = [[GNQueue alloc] initWithSize:100];
     
     // Create GNAdViewRequest
-    _adViewRequest = [[GNAdViewRequest alloc] initWithID:@"YOUR_SSP_APP_ID"];
+    _adViewRequest = [[GNAdViewRequest alloc] initWithID:@"APPID1,APPID2,APPID3,...,APPID10"];
     _adViewRequest.delegate = self;
     //_adViewRequest.GNAdlogPriority = GNLogPriorityInfo;
     //_adViewRequest.geoLocationEnable = YES;

@@ -14,7 +14,7 @@ class TableViewController: UITableViewController, GNAdViewRequestDelegate {
     var _cellDataList: NSMutableArray = NSMutableArray()
     
     // Create GNAdViewRequest
-    var _adViewRequest: GNAdViewRequest  = GNAdViewRequest(ID:"YOUR_SSP_APP_ID");
+    var _adViewRequest: GNAdViewRequest  = GNAdViewRequest(ID:"APPID1,APPID2,APPID3,...,APPID10");
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +39,7 @@ class TableViewController: UITableViewController, GNAdViewRequestDelegate {
     func gnAdViewRequestDidReceiveAds(gnAdViews: [AnyObject]) {
         _secondsEnd = NSDate.timeIntervalSinceReferenceDate()
         NSLog("TableViewController: nativeAdRequestDidReceiveAds in %f seconds.", (Double)(_secondsEnd - _secondsStart));
-        for adView in gnAdViews as [GNAdView] {
+        for adView in gnAdViews as! [GNAdView] {
             // You can identify the GNAdView by using the zoneID field of GNAdView.
             //if (adView.zoneID == "YOUR_SSP_APP_ID") {
             //    _cellDataList.addObject(adView)
@@ -52,7 +52,7 @@ class TableViewController: UITableViewController, GNAdViewRequestDelegate {
         NSLog("TableViewController: didFailToReceiveAdsWithError : %@.", error.localizedDescription);
     }
     
-    func shouldStartExternalBrowserWithClick(gnAdView: GNAdView, landingURL: NSString) -> Bool {
+    func shouldStartExternalBrowserWithClick(gnAdView: GNAdView, landingURL: String) -> Bool {
         NSLog("TableViewController: shouldStartExternalBrowserWithClick : %@.", landingURL);
         return true;
     }
@@ -101,10 +101,10 @@ class TableViewController: UITableViewController, GNAdViewRequestDelegate {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("SampleDataCell", forIndexPath: indexPath) as TableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("SampleDataCell", forIndexPath: indexPath) as! TableViewCell
         
         if (_cellDataList.objectAtIndex(indexPath.row).isKindOfClass(GNAdView)) {
-            var adView: GNAdView = _cellDataList.objectAtIndex(indexPath.row) as GNAdView
+            var adView: GNAdView = _cellDataList.objectAtIndex(indexPath.row) as! GNAdView
             
             // remove old adview from cell
             if (cell.adView != nil) {
@@ -126,15 +126,15 @@ class TableViewController: UITableViewController, GNAdViewRequestDelegate {
             
             cell.adView = adView
         } else {
-            var myCellData: MyCellData = _cellDataList.objectAtIndex(indexPath.row) as MyCellData
+            var myCellData: MyCellData = _cellDataList.objectAtIndex(indexPath.row) as! MyCellData
             // remove old adview from cell
             if (cell.adView != nil) {
                 cell.adView.stopAdLoop()
                 cell.adView.removeFromSuperview()
                 cell.adView = nil
             }
-            cell.title.text = myCellData.title + " No.\(indexPath.row + 1)"
-            cell.content.text = myCellData.content
+            cell.title.text = (myCellData.title as String) + " No.\(indexPath.row + 1)"
+            cell.content.text = myCellData.content as String
             cell.icon.image = nil;
             var url: NSURL = myCellData.imgURL
             requestImageWithURL(url, completion:{(image: UIImage!, error: NSError!)->Void in
@@ -149,7 +149,7 @@ class TableViewController: UITableViewController, GNAdViewRequestDelegate {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let cell = tableView.cellForRowAtIndexPath(indexPath) as TableViewCell
+        let cell = tableView.cellForRowAtIndexPath(indexPath) as! TableViewCell
         if (cell.adView != nil) {
             //The GNAdView can respond to click
         } else {
@@ -250,11 +250,11 @@ class TableViewController: UITableViewController, GNAdViewRequestDelegate {
         let h: CGFloat = image.size.height
         let w: CGFloat = image.size.width
         var cimage: CGImageRef = image.CGImage
-        let pC: UInt = CGImageGetBitsPerComponent(cimage)
-        let pR: UInt = pC * 4 * UInt(w)
+        let pC: Int = CGImageGetBitsPerComponent(cimage)
+        let pR: Int = pC * 4 * Int(w)
         var colorSpace: CGColorSpaceRef = CGColorSpaceCreateDeviceRGB()
         let bitmapInfo = CGBitmapInfo(CGImageAlphaInfo.NoneSkipLast.rawValue)
-        var context: CGContextRef = CGBitmapContextCreate(nil, UInt(w), UInt(h), pC, pR, colorSpace, bitmapInfo)
+        var context: CGContextRef = CGBitmapContextCreate(nil, Int(w), Int(h), pC, pR, colorSpace, bitmapInfo)
         
         CGContextSetRGBFillColor(context, 1.0, 1.0, 1.0, 1.0)
         CGContextFillRect(context, CGRectMake(0, 0, w, h))

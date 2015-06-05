@@ -19,6 +19,8 @@ class ViewController: UIViewController, GNAdViewDelegate {
         //_adView.bgColor = YES
         //_adView.geoLocationEnable = YES
         //_adView.GNAdlogPriority = GNLogPriorityInfo
+        _adView.center = CGPointMake(self.view.center.x, _adView.center.y);
+        
         self.view.addSubview(_adView)
         _adView.startAdLoop()
     }
@@ -28,10 +30,9 @@ class ViewController: UIViewController, GNAdViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    func shouldStartExternalBrowserWithClick(nativeAd: GNAdView, landingURL: NSString) -> Bool {
+    func shouldStartExternalBrowserWithClick(nativeAd: GNAdView, landingURL: String) -> Bool {
         NSLog("ViewController: shouldStartExternalBrowserWithClick : %@.", landingURL);
         return true;
     }
 
 }
-
