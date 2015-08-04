@@ -19,7 +19,7 @@ Download Geniee iOS SDK form the URL below :
 Integration Manual :
 <https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki>
 
-## New Version information
+## ChangeLog
 
 [ChangeLog](https://github.com/geniee-ssp/Geniee-iOS-SDK/blob/master/CHANGELOG.md)
 
