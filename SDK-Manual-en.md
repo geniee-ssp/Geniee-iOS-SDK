@@ -2,7 +2,7 @@
 
 Geniee iOS SDK enables interstitial and banner ads easily and with a little efforts.
 
-Geniee iOS SDK is equipped with the following functions.
+Geniee iOS SDK is equipped with the following functions : 
 - Serve and display advertisements on your application
 - Display the landing page by clicking ads
 - The specification of display methods for the landing page (browser application / in-app browser)
