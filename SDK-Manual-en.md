@@ -10,9 +10,9 @@ Geniee iOS SDK is equipped with the following functions :
 
 ## Download
 
-Download Geniee iOS SDK form the URL below :
+Download iOS SDK form the URL below :
 
-- **[Geniee-iOS-SDK](https://github.com/geniee-ssp/Geniee-iOS-SDK/releases)**
+- **[iOS-Ads-SDK](https://github.com/geniee-ssp/Geniee-iOS-SDK/releases)**
 
 ## Integration Manual
 
