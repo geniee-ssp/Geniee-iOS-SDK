@@ -10,7 +10,7 @@ Geniee iOS SDK is equipped with the following functions.
 
 ## Download
 
-Download Geniee iOS SDK form the ULR below :
+Download Geniee iOS SDK form the URL below :
 
 - **[Geniee-iOS-SDK](https://github.com/geniee-ssp/Geniee-iOS-SDK/releases)**
 
