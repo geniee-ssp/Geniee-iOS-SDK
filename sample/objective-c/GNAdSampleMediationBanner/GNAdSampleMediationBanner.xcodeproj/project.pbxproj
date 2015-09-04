@@ -158,14 +158,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B64837DB1B20B89A001A3BD9 /* GenieeAdsSDK-2.1.2 */ = {
+		B64837DB1B20B89A001A3BD9 /* GenieeAdsSDK-2.1.3 */ = {
 			isa = PBXGroup;
 			children = (
 				B64837DC1B20B89A001A3BD9 /* GNAdSDK.framework */,
 				B64837DD1B20B89A001A3BD9 /* libs */,
 			);
-			name = "GenieeAdsSDK-2.1.2";
-			path = "../../../GenieeAdsSDK-2.1.2";
+			name = "GenieeAdsSDK-2.1.3";
+			path = "../../../GenieeAdsSDK-2.1.3";
 			sourceTree = "<group>";
 		};
 		B64837DD1B20B89A001A3BD9 /* libs */ = {
@@ -272,15 +272,15 @@
 			path = iAd;
 			sourceTree = "<group>";
 		};
-		B6A433C71B20A81700824420 /* GoogleMobileAdsSdkiOS-7.3.1 */ = {
+		B6A433C71B20A81700824420 /* GoogleMobileAdsSdkiOS-7.4.1 */ = {
 			isa = PBXGroup;
 			children = (
 				B6A433C81B20A81700824420 /* GoogleMobileAds.framework */,
 				B6A433C91B20A81700824420 /* Mediation Adapters */,
 				B6A433CE1B20A81700824420 /* README.txt */,
 			);
-			name = "GoogleMobileAdsSdkiOS-7.3.1";
-			path = "../GoogleMobileAdsSdkiOS-7.3.1";
+			name = "GoogleMobileAdsSdkiOS-7.4.1";
+			path = "../GoogleMobileAdsSdkiOS-7.4.1";
 			sourceTree = "<group>";
 		};
 		B6A433C91B20A81700824420 /* Mediation Adapters */ = {
@@ -297,9 +297,9 @@
 		FE637CE61A46FCC900CF2223 = {
 			isa = PBXGroup;
 			children = (
-				B64837DB1B20B89A001A3BD9 /* GenieeAdsSDK-2.1.2 */,
+				B64837DB1B20B89A001A3BD9 /* GenieeAdsSDK-2.1.3 */,
 				B64837F11B20B89A001A3BD9 /* libAdsMediation */,
-				B6A433C71B20A81700824420 /* GoogleMobileAdsSdkiOS-7.3.1 */,
+				B6A433C71B20A81700824420 /* GoogleMobileAdsSdkiOS-7.4.1 */,
 				FE637D421A46FDBB00CF2223 /* Frameworks */,
 				FE637CF11A46FCC900CF2223 /* GNAdSampleMediationBanner */,
 				FE637D0B1A46FCC900CF2223 /* GNAdSampleMediationBannerTests */,
@@ -619,10 +619,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"../GoogleMobileAdsSdkiOS-7.3.1",
-					"../../../GenieeAdsSDK-2.1.2",
+					"../GoogleMobileAdsSdkiOS-7.4.1",
+					"../../../GenieeAdsSDK-2.1.3",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -650,10 +651,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"../GoogleMobileAdsSdkiOS-7.3.1",
-					"../../../GenieeAdsSDK-2.1.2",
+					"../GoogleMobileAdsSdkiOS-7.4.1",
+					"../../../GenieeAdsSDK-2.1.3",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

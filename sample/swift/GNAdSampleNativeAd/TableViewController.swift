@@ -75,7 +75,7 @@ class TableViewController: UITableViewController, GNNativeAdRequestDelegate {
     func createCellDataList() {
         for (var i:Int = 0; i < 20; i++) {
             if (_queueAds.count() > 0) {
-                var ad: AnyObject? = _queueAds.dequeue()
+                let ad: AnyObject? = _queueAds.dequeue()
                 if (ad != nil) {
                     _cellDataList.addObject(ad!)
                 }
@@ -104,12 +104,12 @@ class TableViewController: UITableViewController, GNNativeAdRequestDelegate {
         let cell = tableView.dequeueReusableCellWithIdentifier("SampleDataCell", forIndexPath: indexPath) as! TableViewCell
         
         if (_cellDataList.objectAtIndex(indexPath.row).isKindOfClass(GNNativeAd)) {
-            var nativeAd: GNNativeAd = _cellDataList.objectAtIndex(indexPath.row) as! GNNativeAd
+            let nativeAd: GNNativeAd = _cellDataList.objectAtIndex(indexPath.row) as! GNNativeAd
             cell.nativeAd = nativeAd;
             cell.title.text = nativeAd.title;
             cell.content.text = nativeAd.description
             cell.icon.image = nil;
-            var url: NSURL = NSURL(string: nativeAd.icon_url)!
+            let url: NSURL = NSURL(string: nativeAd.icon_url)!
             requestImageWithURL(url, completion:{(image: UIImage!, error: NSError!)->Void in
                 if (error != nil)
                 {
@@ -119,12 +119,12 @@ class TableViewController: UITableViewController, GNNativeAdRequestDelegate {
             })
             nativeAd.trackingImpressionWithView(cell)
         } else {
-            var myCellData: MyCellData = _cellDataList.objectAtIndex(indexPath.row) as! MyCellData
+            let myCellData: MyCellData = _cellDataList.objectAtIndex(indexPath.row) as! MyCellData
             cell.nativeAd = nil
             cell.title.text = (myCellData.title as String) + " No.\(indexPath.row + 1)"
             cell.content.text = myCellData.content as String
             cell.icon.image = nil;
-            var url: NSURL = myCellData.imgURL
+            let url: NSURL = myCellData.imgURL
             requestImageWithURL(url, completion:{(image: UIImage!, error: NSError!)->Void in
                 if (error != nil || !(url.isEqual(myCellData.imgURL)))
                 {
@@ -154,13 +154,13 @@ class TableViewController: UITableViewController, GNNativeAdRequestDelegate {
         NSURLConnection.sendAsynchronousRequest(
             request,
             queue:NSOperationQueue.mainQueue(),
-            completionHandler:{(response: NSURLResponse!,  data: NSData!, connectionError: NSError!) in
+            completionHandler:{(response: NSURLResponse?,  data: NSData?, connectionError: NSError?) in
                 if (connectionError != nil) {
                     completion(image: nil, error: connectionError)
                     return
                 }
                 dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), {
-                    var image: UIImage? = UIImage(data:data)
+                    var image: UIImage? = UIImage(data:data!)
                     image = self.createIconImageWithImage(image!)
                     dispatch_async(dispatch_get_main_queue(), {
                         completion(image: image, error: nil)
@@ -172,8 +172,8 @@ class TableViewController: UITableViewController, GNNativeAdRequestDelegate {
     }
     
     override func scrollViewDidScroll(scrollView: UIScrollView) {
-        var contentOffsetWidthWindow: CGFloat = self.tableView.contentOffset.y + self.tableView.bounds.size.height
-        var heightContent: CGFloat = self.tableView.contentSize.height
+        let contentOffsetWidthWindow: CGFloat = self.tableView.contentOffset.y + self.tableView.bounds.size.height
+        let heightContent: CGFloat = self.tableView.contentSize.height
         var leachToBottom: Bool = false
         if contentOffsetWidthWindow >= heightContent {leachToBottom = true}
         if (!leachToBottom || _loading) {return}
@@ -185,7 +185,7 @@ class TableViewController: UITableViewController, GNNativeAdRequestDelegate {
     }
     
     func createIconImageWithImage(image: UIImage) -> UIImage {
-        var img: UIImage! = resizedImageWithImage(image,maxPixel: 100)
+        let img: UIImage! = resizedImageWithImage(image,maxPixel: 100)
         return roundedImageWithImage(img, cornerRadius: 10.0, borderWidth: 1.0);
     }
     
@@ -194,7 +194,7 @@ class TableViewController: UITableViewController, GNNativeAdRequestDelegate {
         var h: CGFloat = image.size.height
         if (w == 0 || h == 0) {return nil}
         
-        var ratio: CGFloat = w / h
+        let ratio: CGFloat = w / h
         var resized: Bool = false
         
         if (1 < ratio) {
@@ -214,13 +214,13 @@ class TableViewController: UITableViewController, GNNativeAdRequestDelegate {
         var context: CGContextRef
         
         UIGraphicsBeginImageContext(CGSizeMake(w, h))
-        context = UIGraphicsGetCurrentContext()
+        context = UIGraphicsGetCurrentContext()!
         CGContextTranslateCTM(context, 0, 0)
         CGContextRotateCTM(context, 0)
         
-        CGContextSetInterpolationQuality(context, kCGInterpolationHigh)
+        CGContextSetInterpolationQuality(context, CGInterpolationQuality.High)
         image.drawInRect(CGRectMake(0, 0, w, h))
-        var resultImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()
+        let resultImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
         return resultImage
@@ -237,11 +237,11 @@ class TableViewController: UITableViewController, GNNativeAdRequestDelegate {
         
         let h: CGFloat = image.size.height
         let w: CGFloat = image.size.width
-        var cimage: CGImageRef = image.CGImage
+        var cimage: CGImageRef = image.CGImage!
         let pC: Int = CGImageGetBitsPerComponent(cimage)
         let pR: Int = pC * 4 * Int(w)
-        var colorSpace: CGColorSpaceRef = CGColorSpaceCreateDeviceRGB()
-        let bitmapInfo = CGBitmapInfo(CGImageAlphaInfo.NoneSkipLast.rawValue)
+        var colorSpace: CGColorSpaceRef = CGColorSpaceCreateDeviceRGB()!
+        let bitmapInfo = CGBitmapInfo(rawValue: CGImageAlphaInfo.NoneSkipLast.rawValue)
         var context: CGContextRef = CGBitmapContextCreate(nil, Int(w), Int(h), pC, pR, colorSpace, bitmapInfo)
         
         CGContextSetRGBFillColor(context, 1.0, 1.0, 1.0, 1.0)

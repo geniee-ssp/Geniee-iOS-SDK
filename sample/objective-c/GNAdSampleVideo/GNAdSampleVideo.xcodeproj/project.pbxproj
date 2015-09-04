@@ -130,14 +130,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B686DF781B21BA80007E9DCF /* GenieeAdsSDK-2.1.2 */ = {
+		B686DF781B21BA80007E9DCF /* GenieeAdsSDK-2.1.3 */ = {
 			isa = PBXGroup;
 			children = (
 				B686DF791B21BA80007E9DCF /* GNAdSDK.framework */,
 				B686DF7A1B21BA80007E9DCF /* libs */,
 			);
-			name = "GenieeAdsSDK-2.1.2";
-			path = "../../../GenieeAdsSDK-2.1.2";
+			name = "GenieeAdsSDK-2.1.3";
+			path = "../../../GenieeAdsSDK-2.1.3";
 			sourceTree = "<group>";
 		};
 		B686DF7A1B21BA80007E9DCF /* libs */ = {
@@ -204,7 +204,7 @@
 		FE099EC31A46DB1500A5455B = {
 			isa = PBXGroup;
 			children = (
-				B686DF781B21BA80007E9DCF /* GenieeAdsSDK-2.1.2 */,
+				B686DF781B21BA80007E9DCF /* GenieeAdsSDK-2.1.3 */,
 				FE099F381A46F7A800A5455B /* Toast */,
 				FE099F1B1A46DF7B00A5455B /* Frameworks */,
 				FE099ECE1A46DB1500A5455B /* GNAdSampleVideo */,
@@ -531,7 +531,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"../../../GenieeAdsSDK-2.1.2",
+					"../../../GenieeAdsSDK-2.1.3",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -543,7 +543,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"../../../GenieeAdsSDK-2.1.2",
+					"../../../GenieeAdsSDK-2.1.3",
 				);
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -557,7 +557,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"../../../GenieeAdsSDK-2.1.2",
+					"../../../GenieeAdsSDK-2.1.3",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -569,7 +569,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"../../../GenieeAdsSDK-2.1.2",
+					"../../../GenieeAdsSDK-2.1.3",
 				);
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";

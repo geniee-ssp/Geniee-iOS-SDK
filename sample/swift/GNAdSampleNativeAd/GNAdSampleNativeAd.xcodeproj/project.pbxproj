@@ -157,14 +157,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B686DFCF1B21C40D007E9DCF /* GenieeAdsSDK-2.1.2 */ = {
+		B686DFCF1B21C40D007E9DCF /* GenieeAdsSDK-2.1.3 */ = {
 			isa = PBXGroup;
 			children = (
 				B686DFD01B21C40D007E9DCF /* GNAdSDK.framework */,
 				B686DFD11B21C40D007E9DCF /* libs */,
 			);
-			name = "GenieeAdsSDK-2.1.2";
-			path = "../../../GenieeAdsSDK-2.1.2";
+			name = "GenieeAdsSDK-2.1.3";
+			path = "../../../GenieeAdsSDK-2.1.3";
 			sourceTree = "<group>";
 		};
 		B686DFD11B21C40D007E9DCF /* libs */ = {
@@ -231,7 +231,7 @@
 		B6C961361A4D26AA00E7CB15 = {
 			isa = PBXGroup;
 			children = (
-				B686DFCF1B21C40D007E9DCF /* GenieeAdsSDK-2.1.2 */,
+				B686DFCF1B21C40D007E9DCF /* GenieeAdsSDK-2.1.3 */,
 				B646FA721AAB411C0021547C /* Frameworks */,
 				B646FA4B1AAB40550021547C /* GNAdSampleNativeAd-Bridging-Header.h */,
 				B6D438101A5537D400C439C2 /* DataStructure */,
@@ -342,6 +342,8 @@
 		B6C961371A4D26AA00E7CB15 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Geniee;
 				TargetAttributes = {
@@ -536,7 +538,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"../../../GenieeAdsSDK-2.1.2",
+					"../../../GenieeAdsSDK-2.1.3",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -547,7 +549,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"../../../GenieeAdsSDK-2.1.2",
+					"../../../GenieeAdsSDK-2.1.3",
 				);
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -562,7 +564,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"../../../GenieeAdsSDK-2.1.2",
+					"../../../GenieeAdsSDK-2.1.3",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -573,7 +575,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"../../../GenieeAdsSDK-2.1.2",
+					"../../../GenieeAdsSDK-2.1.3",
 				);
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";

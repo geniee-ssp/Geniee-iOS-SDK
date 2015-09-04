@@ -75,7 +75,7 @@ class TableViewController: UITableViewController, GNAdViewRequestDelegate {
     func createCellDataList() {
         for (var i:Int = 0; i < 20; i++) {
             if (_queueAds.count() > 0) {
-                var ad: AnyObject? = _queueAds.dequeue()
+                let ad: AnyObject? = _queueAds.dequeue()
                 if (ad != nil) {
                     _cellDataList.addObject(ad!)
                 }
@@ -166,13 +166,13 @@ class TableViewController: UITableViewController, GNAdViewRequestDelegate {
         NSURLConnection.sendAsynchronousRequest(
             request,
             queue:NSOperationQueue.mainQueue(),
-            completionHandler:{(response: NSURLResponse!,  data: NSData!, connectionError: NSError!) in
+            completionHandler:{(response: NSURLResponse?,  data: NSData?, connectionError: NSError?) in
                 if (connectionError != nil) {
                     completion(image: nil, error: connectionError)
                     return
                 }
                 dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), {
-                    var image: UIImage? = UIImage(data:data)
+                    var image: UIImage? = UIImage(data:data!)
                     image = self.createIconImageWithImage(image!)
                     dispatch_async(dispatch_get_main_queue(), {
                         completion(image: image, error: nil)
@@ -197,7 +197,7 @@ class TableViewController: UITableViewController, GNAdViewRequestDelegate {
     }
     
     func createIconImageWithImage(image: UIImage) -> UIImage {
-        var img: UIImage! = resizedImageWithImage(image,maxPixel: 100)
+        let img: UIImage! = resizedImageWithImage(image,maxPixel: 100)
         return roundedImageWithImage(img, cornerRadius: 10.0, borderWidth: 1.0);
     }
     
@@ -206,7 +206,7 @@ class TableViewController: UITableViewController, GNAdViewRequestDelegate {
         var h: CGFloat = image.size.height
         if (w == 0 || h == 0) {return nil}
         
-        var ratio: CGFloat = w / h
+        let ratio: CGFloat = w / h
         var resized: Bool = false
         
         if (1 < ratio) {
@@ -226,13 +226,13 @@ class TableViewController: UITableViewController, GNAdViewRequestDelegate {
         var context: CGContextRef
         
         UIGraphicsBeginImageContext(CGSizeMake(w, h))
-        context = UIGraphicsGetCurrentContext()
+        context = UIGraphicsGetCurrentContext(!)
         CGContextTranslateCTM(context, 0, 0)
         CGContextRotateCTM(context, 0)
         
-        CGContextSetInterpolationQuality(context, kCGInterpolationHigh)
+        CGContextSetInterpolationQuality(context, CGInterpolationQuality.High)
         image.drawInRect(CGRectMake(0, 0, w, h))
-        var resultImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()
+        let resultImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
         return resultImage
@@ -249,11 +249,11 @@ class TableViewController: UITableViewController, GNAdViewRequestDelegate {
         
         let h: CGFloat = image.size.height
         let w: CGFloat = image.size.width
-        var cimage: CGImageRef = image.CGImage
+        var cimage: CGImageRef = image.CGImag!;e
         let pC: Int = CGImageGetBitsPerComponent(cimage)
         let pR: Int = pC * 4 * Int(w)
-        var colorSpace: CGColorSpaceRef = CGColorSpaceCreateDeviceRGB()
-        let bitmapInfo = CGBitmapInfo(CGImageAlphaInfo.NoneSkipLast.rawValue)
+        var colorSpace: CGColorSpaceRef = CGColorSpaceCreateDeviceRGB(!)
+        let bitmapInfo = CGBitmapInfo(rawValue: CGImageAlphaInfo.NoneSkipLast.rawValue)
         var context: CGContextRef = CGBitmapContextCreate(nil, Int(w), Int(h), pC, pR, colorSpace, bitmapInfo)
         
         CGContextSetRGBFillColor(context, 1.0, 1.0, 1.0, 1.0)
