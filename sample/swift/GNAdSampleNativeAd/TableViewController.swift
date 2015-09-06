@@ -241,8 +241,8 @@ class TableViewController: UITableViewController, GNNativeAdRequestDelegate {
         let pC: Int = CGImageGetBitsPerComponent(cimage)
         let pR: Int = pC * 4 * Int(w)
         var colorSpace: CGColorSpaceRef = CGColorSpaceCreateDeviceRGB()!
-        let bitmapInfo = CGBitmapInfo(rawValue: CGImageAlphaInfo.NoneSkipLast.rawValue)
-        var context: CGContextRef = CGBitmapContextCreate(nil, Int(w), Int(h), pC, pR, colorSpace, bitmapInfo)
+        let bitmapInfo = CGImageAlphaInfo.NoneSkipLast.rawValue
+        var context: CGContextRef = CGBitmapContextCreate(nil, Int(w), Int(h), pC, pR, colorSpace, bitmapInfo)!
         
         CGContextSetRGBFillColor(context, 1.0, 1.0, 1.0, 1.0)
         CGContextFillRect(context, CGRectMake(0, 0, w, h))

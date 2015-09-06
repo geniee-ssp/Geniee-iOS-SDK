@@ -66,7 +66,7 @@ class TableViewController: UITableViewController, GNAdViewRequestDelegate {
         dispatch_after(
             dispatch_time(
                 DISPATCH_TIME_NOW,
-                Int64(0.5 * Double(NSEC_PER_SEC))
+                Int64(0.8 * Double(NSEC_PER_SEC))
             ),
             dispatch_get_main_queue(),
             {self.createCellDataList()})
@@ -226,7 +226,7 @@ class TableViewController: UITableViewController, GNAdViewRequestDelegate {
         var context: CGContextRef
         
         UIGraphicsBeginImageContext(CGSizeMake(w, h))
-        context = UIGraphicsGetCurrentContext(!)
+        context = UIGraphicsGetCurrentContext()!
         CGContextTranslateCTM(context, 0, 0)
         CGContextRotateCTM(context, 0)
         
@@ -246,15 +246,15 @@ class TableViewController: UITableViewController, GNAdViewRequestDelegate {
         if (cornerRadius > maxCornerSize) {
             cornerRadius = maxCornerSize
         }
-        
+            
         let h: CGFloat = image.size.height
         let w: CGFloat = image.size.width
-        var cimage: CGImageRef = image.CGImag!;e
+        var cimage: CGImageRef = image.CGImage!
         let pC: Int = CGImageGetBitsPerComponent(cimage)
         let pR: Int = pC * 4 * Int(w)
-        var colorSpace: CGColorSpaceRef = CGColorSpaceCreateDeviceRGB(!)
-        let bitmapInfo = CGBitmapInfo(rawValue: CGImageAlphaInfo.NoneSkipLast.rawValue)
-        var context: CGContextRef = CGBitmapContextCreate(nil, Int(w), Int(h), pC, pR, colorSpace, bitmapInfo)
+        var colorSpace: CGColorSpaceRef = CGColorSpaceCreateDeviceRGB()!
+        let bitmapInfo = CGImageAlphaInfo.NoneSkipLast.rawValue
+        var context: CGContextRef = CGBitmapContextCreate(nil, Int(w), Int(h), pC, pR, colorSpace, bitmapInfo)!
         
         CGContextSetRGBFillColor(context, 1.0, 1.0, 1.0, 1.0)
         CGContextFillRect(context, CGRectMake(0, 0, w, h))
