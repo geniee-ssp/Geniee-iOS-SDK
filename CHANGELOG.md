@@ -1,3 +1,7 @@
+## Version 2.1.4
+
+- **Add Natvie Ad click tracking**
+
 ## Version 2.1.3
 
 - **Add Bitcode for iOS9**

@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B686DF8E1B21BA80007E9DCF /* GNAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B686DF791B21BA80007E9DCF /* GNAdSDK.framework */; };
-		B686DF8F1B21BA80007E9DCF /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B686DF7E1B21BA80007E9DCF /* DDXMLElementAdditions.m */; };
-		B686DF901B21BA80007E9DCF /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = B686DF811B21BA80007E9DCF /* NSString+DDXML.m */; };
-		B686DF911B21BA80007E9DCF /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B686DF841B21BA80007E9DCF /* DDXMLDocument.m */; };
-		B686DF921B21BA80007E9DCF /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B686DF861B21BA80007E9DCF /* DDXMLElement.m */; };
-		B686DF931B21BA80007E9DCF /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B686DF881B21BA80007E9DCF /* DDXMLNode.m */; };
-		B686DF941B21BA80007E9DCF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B686DF8D1B21BA80007E9DCF /* Reachability.m */; };
+		B6858D101C806D2E00462735 /* GNAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6858CFB1C806D2E00462735 /* GNAdSDK.framework */; };
+		B6858D111C806D2E00462735 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858D001C806D2E00462735 /* DDXMLElementAdditions.m */; };
+		B6858D121C806D2E00462735 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858D031C806D2E00462735 /* NSString+DDXML.m */; };
+		B6858D131C806D2E00462735 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858D061C806D2E00462735 /* DDXMLDocument.m */; };
+		B6858D141C806D2E00462735 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858D081C806D2E00462735 /* DDXMLElement.m */; };
+		B6858D151C806D2E00462735 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858D0A1C806D2E00462735 /* DDXMLNode.m */; };
+		B6858D161C806D2E00462735 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858D0F1C806D2E00462735 /* Reachability.m */; };
 		FE099ED21A46DB1500A5455B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE099ED11A46DB1500A5455B /* main.m */; };
 		FE099ED51A46DB1500A5455B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE099ED41A46DB1500A5455B /* AppDelegate.m */; };
 		FE099ED81A46DB1500A5455B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE099ED71A46DB1500A5455B /* ViewController.m */; };
@@ -50,21 +50,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B686DF791B21BA80007E9DCF /* GNAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GNAdSDK.framework; sourceTree = "<group>"; };
-		B686DF7D1B21BA80007E9DCF /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
-		B686DF7E1B21BA80007E9DCF /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
-		B686DF801B21BA80007E9DCF /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
-		B686DF811B21BA80007E9DCF /* NSString+DDXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDXML.m"; sourceTree = "<group>"; };
-		B686DF821B21BA80007E9DCF /* DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXML.h; sourceTree = "<group>"; };
-		B686DF831B21BA80007E9DCF /* DDXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLDocument.h; sourceTree = "<group>"; };
-		B686DF841B21BA80007E9DCF /* DDXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLDocument.m; sourceTree = "<group>"; };
-		B686DF851B21BA80007E9DCF /* DDXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElement.h; sourceTree = "<group>"; };
-		B686DF861B21BA80007E9DCF /* DDXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElement.m; sourceTree = "<group>"; };
-		B686DF871B21BA80007E9DCF /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
-		B686DF881B21BA80007E9DCF /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
-		B686DF8A1B21BA80007E9DCF /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
-		B686DF8C1B21BA80007E9DCF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		B686DF8D1B21BA80007E9DCF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		B6858CFB1C806D2E00462735 /* GNAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GNAdSDK.framework; sourceTree = "<group>"; };
+		B6858CFF1C806D2E00462735 /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
+		B6858D001C806D2E00462735 /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
+		B6858D021C806D2E00462735 /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
+		B6858D031C806D2E00462735 /* NSString+DDXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDXML.m"; sourceTree = "<group>"; };
+		B6858D041C806D2E00462735 /* DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXML.h; sourceTree = "<group>"; };
+		B6858D051C806D2E00462735 /* DDXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLDocument.h; sourceTree = "<group>"; };
+		B6858D061C806D2E00462735 /* DDXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLDocument.m; sourceTree = "<group>"; };
+		B6858D071C806D2E00462735 /* DDXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElement.h; sourceTree = "<group>"; };
+		B6858D081C806D2E00462735 /* DDXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElement.m; sourceTree = "<group>"; };
+		B6858D091C806D2E00462735 /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
+		B6858D0A1C806D2E00462735 /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
+		B6858D0C1C806D2E00462735 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
+		B6858D0E1C806D2E00462735 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		B6858D0F1C806D2E00462735 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		FE099ECC1A46DB1500A5455B /* GNAdSampleVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNAdSampleVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE099ED01A46DB1500A5455B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE099ED11A46DB1500A5455B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 				FE099F351A46F60B00A5455B /* MessageUI.framework in Frameworks */,
 				FE099F331A46F60500A5455B /* QuartzCore.framework in Frameworks */,
 				FE099F311A46F5FF00A5455B /* CoreMedia.framework in Frameworks */,
-				B686DF8E1B21BA80007E9DCF /* GNAdSDK.framework in Frameworks */,
+				B6858D101C806D2E00462735 /* GNAdSDK.framework in Frameworks */,
 				FE099F2F1A46F5F900A5455B /* CoreFoundation.framework in Frameworks */,
 				FE099F2D1A46F5DA00A5455B /* AudioToolbox.framework in Frameworks */,
 				FE099F2B1A46F5D000A5455B /* AVFoundation.framework in Frameworks */,
@@ -130,73 +130,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B686DF781B21BA80007E9DCF /* GenieeAdsSDK-2.1.3 */ = {
+		B6858CFA1C806D2E00462735 /* GenieeAdsSDK */ = {
 			isa = PBXGroup;
 			children = (
-				B686DF791B21BA80007E9DCF /* GNAdSDK.framework */,
-				B686DF7A1B21BA80007E9DCF /* libs */,
+				B6858CFB1C806D2E00462735 /* GNAdSDK.framework */,
+				B6858CFC1C806D2E00462735 /* libs */,
 			);
-			name = "GenieeAdsSDK-2.1.3";
-			path = "../../../GenieeAdsSDK-2.1.3";
+			name = GenieeAdsSDK;
+			path = ../../../GenieeAdsSDK;
 			sourceTree = "<group>";
 		};
-		B686DF7A1B21BA80007E9DCF /* libs */ = {
+		B6858CFC1C806D2E00462735 /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				B686DF7B1B21BA80007E9DCF /* KissXML */,
-				B686DF8B1B21BA80007E9DCF /* Reachability */,
+				B6858CFD1C806D2E00462735 /* KissXML */,
+				B6858D0D1C806D2E00462735 /* Reachability */,
 			);
 			path = libs;
 			sourceTree = "<group>";
 		};
-		B686DF7B1B21BA80007E9DCF /* KissXML */ = {
+		B6858CFD1C806D2E00462735 /* KissXML */ = {
 			isa = PBXGroup;
 			children = (
-				B686DF7C1B21BA80007E9DCF /* Additions */,
-				B686DF7F1B21BA80007E9DCF /* Categories */,
-				B686DF821B21BA80007E9DCF /* DDXML.h */,
-				B686DF831B21BA80007E9DCF /* DDXMLDocument.h */,
-				B686DF841B21BA80007E9DCF /* DDXMLDocument.m */,
-				B686DF851B21BA80007E9DCF /* DDXMLElement.h */,
-				B686DF861B21BA80007E9DCF /* DDXMLElement.m */,
-				B686DF871B21BA80007E9DCF /* DDXMLNode.h */,
-				B686DF881B21BA80007E9DCF /* DDXMLNode.m */,
-				B686DF891B21BA80007E9DCF /* Private */,
+				B6858CFE1C806D2E00462735 /* Additions */,
+				B6858D011C806D2E00462735 /* Categories */,
+				B6858D041C806D2E00462735 /* DDXML.h */,
+				B6858D051C806D2E00462735 /* DDXMLDocument.h */,
+				B6858D061C806D2E00462735 /* DDXMLDocument.m */,
+				B6858D071C806D2E00462735 /* DDXMLElement.h */,
+				B6858D081C806D2E00462735 /* DDXMLElement.m */,
+				B6858D091C806D2E00462735 /* DDXMLNode.h */,
+				B6858D0A1C806D2E00462735 /* DDXMLNode.m */,
+				B6858D0B1C806D2E00462735 /* Private */,
 			);
 			path = KissXML;
 			sourceTree = "<group>";
 		};
-		B686DF7C1B21BA80007E9DCF /* Additions */ = {
+		B6858CFE1C806D2E00462735 /* Additions */ = {
 			isa = PBXGroup;
 			children = (
-				B686DF7D1B21BA80007E9DCF /* DDXMLElementAdditions.h */,
-				B686DF7E1B21BA80007E9DCF /* DDXMLElementAdditions.m */,
+				B6858CFF1C806D2E00462735 /* DDXMLElementAdditions.h */,
+				B6858D001C806D2E00462735 /* DDXMLElementAdditions.m */,
 			);
 			path = Additions;
 			sourceTree = "<group>";
 		};
-		B686DF7F1B21BA80007E9DCF /* Categories */ = {
+		B6858D011C806D2E00462735 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				B686DF801B21BA80007E9DCF /* NSString+DDXML.h */,
-				B686DF811B21BA80007E9DCF /* NSString+DDXML.m */,
+				B6858D021C806D2E00462735 /* NSString+DDXML.h */,
+				B6858D031C806D2E00462735 /* NSString+DDXML.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
 		};
-		B686DF891B21BA80007E9DCF /* Private */ = {
+		B6858D0B1C806D2E00462735 /* Private */ = {
 			isa = PBXGroup;
 			children = (
-				B686DF8A1B21BA80007E9DCF /* DDXMLPrivate.h */,
+				B6858D0C1C806D2E00462735 /* DDXMLPrivate.h */,
 			);
 			path = Private;
 			sourceTree = "<group>";
 		};
-		B686DF8B1B21BA80007E9DCF /* Reachability */ = {
+		B6858D0D1C806D2E00462735 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
-				B686DF8C1B21BA80007E9DCF /* Reachability.h */,
-				B686DF8D1B21BA80007E9DCF /* Reachability.m */,
+				B6858D0E1C806D2E00462735 /* Reachability.h */,
+				B6858D0F1C806D2E00462735 /* Reachability.m */,
 			);
 			path = Reachability;
 			sourceTree = "<group>";
@@ -204,7 +204,7 @@
 		FE099EC31A46DB1500A5455B = {
 			isa = PBXGroup;
 			children = (
-				B686DF781B21BA80007E9DCF /* GenieeAdsSDK-2.1.3 */,
+				B6858CFA1C806D2E00462735 /* GenieeAdsSDK */,
 				FE099F381A46F7A800A5455B /* Toast */,
 				FE099F1B1A46DF7B00A5455B /* Frameworks */,
 				FE099ECE1A46DB1500A5455B /* GNAdSampleVideo */,
@@ -395,16 +395,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B686DF931B21BA80007E9DCF /* DDXMLNode.m in Sources */,
+				B6858D151C806D2E00462735 /* DDXMLNode.m in Sources */,
 				FE099ED81A46DB1500A5455B /* ViewController.m in Sources */,
 				FE099ED51A46DB1500A5455B /* AppDelegate.m in Sources */,
 				FE099ED21A46DB1500A5455B /* main.m in Sources */,
-				B686DF941B21BA80007E9DCF /* Reachability.m in Sources */,
-				B686DF901B21BA80007E9DCF /* NSString+DDXML.m in Sources */,
-				B686DF921B21BA80007E9DCF /* DDXMLElement.m in Sources */,
-				B686DF911B21BA80007E9DCF /* DDXMLDocument.m in Sources */,
+				B6858D161C806D2E00462735 /* Reachability.m in Sources */,
+				B6858D121C806D2E00462735 /* NSString+DDXML.m in Sources */,
+				B6858D141C806D2E00462735 /* DDXMLElement.m in Sources */,
+				B6858D131C806D2E00462735 /* DDXMLDocument.m in Sources */,
 				FE099F3B1A46F7A800A5455B /* UIView+Toast.m in Sources */,
-				B686DF8F1B21BA80007E9DCF /* DDXMLElementAdditions.m in Sources */,
+				B6858D111C806D2E00462735 /* DDXMLElementAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,7 +531,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"../../../GenieeAdsSDK-2.1.3",
+					../../../GenieeAdsSDK,
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -543,7 +543,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"../../../GenieeAdsSDK-2.1.3",
+					../../../GenieeAdsSDK,
 				);
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -557,7 +557,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"../../../GenieeAdsSDK-2.1.3",
+					../../../GenieeAdsSDK,
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -569,7 +569,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"../../../GenieeAdsSDK-2.1.3",
+					../../../GenieeAdsSDK,
 				);
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";

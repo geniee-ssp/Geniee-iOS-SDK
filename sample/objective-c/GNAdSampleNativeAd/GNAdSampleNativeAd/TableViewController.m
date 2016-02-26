@@ -33,7 +33,7 @@
     _nativeAdRequest = [[GNNativeAdRequest alloc] initWithID:@"YOUR_SSP_APP_ID"];
     _nativeAdRequest.delegate = self;
     //_nativeAdRequest.GNAdlogPriority = GNLogPriorityInfo;
-    //_nativeAdRequest.geoLocationEnable = YES;
+    _nativeAdRequest.geoLocationEnable = YES;
     [_nativeAdRequest loadAds];
     
     [self requestCellDataListAsync];
@@ -164,7 +164,7 @@
 {
     TableViewCell *cell = (TableViewCell*)[tableView cellForRowAtIndexPath:indexPath];
     if (cell.nativeAd != nil) {
-        [cell.nativeAd trackingClick];
+        [cell.nativeAd trackingClick:cell];
     } else {
         [self performSegueWithIdentifier:@"selectRow" sender:self];
     }

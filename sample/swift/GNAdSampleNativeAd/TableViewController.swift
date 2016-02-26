@@ -139,7 +139,7 @@ class TableViewController: UITableViewController, GNNativeAdRequestDelegate {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let cell = tableView.cellForRowAtIndexPath(indexPath) as! TableViewCell
         if (cell.nativeAd != nil) {
-            cell.nativeAd.trackingClick()
+            cell.nativeAd.trackingClick(cell)
         } else {
             self.performSegueWithIdentifier("selectRow", sender: self)
         }
