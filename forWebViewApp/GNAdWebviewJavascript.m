@@ -7,8 +7,7 @@
 @import AdSupport;
 
 static NSString *const kGNCustomScheme = @"gnjssdkscheme";
-static NSString *const kGNCustomSchemeOpen = @"gnjssdkscheme-lp";
-static NSString *const kGNSpecifierGetIdfa = @"get_idfa";
+static NSString *const kGNSpecifierCallNative = @"call_native";
 
 @interface GNAdWebviewJavascript () {
     __weak UIWebView *_webView;
@@ -88,7 +87,7 @@ static NSString *const kGNSpecifierGetIdfa = @"get_idfa";
 
     __strong typeof(_webViewDelegate) strongDelegate = _webViewDelegate;
     if ([[url scheme] isEqualToString:kGNCustomScheme]) {
-        if ([[url resourceSpecifier] isEqualToString:kGNSpecifierGetIdfa]) {
+        if ([[url resourceSpecifier] isEqualToString:kGNSpecifierCallNative]) {
             [self performSelector:@selector(webToNativeCall)];
         }
         return NO;
