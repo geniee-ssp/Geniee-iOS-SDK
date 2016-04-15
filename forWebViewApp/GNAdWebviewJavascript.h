@@ -17,6 +17,6 @@
 #pragma mark Pre-Request
 
 // Initializes a GNAdWebviewJavascript and sets it to the specified webview.
-- (id)initWithWebView:(UIWebView *)uiWebView keywords:(NSArray *)keywords;
+- (id)initWithWebView:(UIWebView *)uiWebView;
 
 @end
