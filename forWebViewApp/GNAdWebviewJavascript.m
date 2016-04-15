@@ -19,12 +19,11 @@ static NSString *const kGNSpecifierCallNative = @"call_native";
 
 @implementation GNAdWebviewJavascript
 
-- (id)initWithWebView:(UIWebView *)uiWebView keywords:(NSArray *)keywords {
+- (id)initWithWebView:(UIWebView *)uiWebView {
     if ((self = [super init])) {
         _webView = uiWebView;
         _webViewDelegate = [uiWebView delegate];
         _webView.delegate = self;
-        _keywords = [NSArray arrayWithArray:keywords];
     }
     return self;
 }
@@ -62,7 +61,8 @@ static NSString *const kGNSpecifierCallNative = @"call_native";
     }
 }
 
-- (void)webToNativeCall {
+- (void)webToNativeCall:(NSArray *)params {
+    _keywords = [NSArray arrayWithArray:params];
     NSString *js = [NSString stringWithFormat:@"gnjssdk_set(%@, '%@', '%@');", ![self canTracking] ? @(true) : @(false), [self idfa], [self bundleId]];
     [_webView stringByEvaluatingJavaScriptFromString:js];
 }
@@ -87,8 +87,13 @@ static NSString *const kGNSpecifierCallNative = @"call_native";
 
     __strong typeof(_webViewDelegate) strongDelegate = _webViewDelegate;
     if ([[url scheme] isEqualToString:kGNCustomScheme]) {
-        if ([[url resourceSpecifier] isEqualToString:kGNSpecifierCallNative]) {
-            [self performSelector:@selector(webToNativeCall)];
+        if ([[url resourceSpecifier] hasPrefix:kGNSpecifierCallNative]) {
+            NSArray *params = @[];
+            NSArray *tmp = [[url resourceSpecifier] componentsSeparatedByString:@"?"];
+            if ([tmp count] > 1) {
+                params = [NSArray arrayWithArray:[tmp[1] componentsSeparatedByString:@","]];
+            }
+            [self performSelector:@selector(webToNativeCall:) withObject:params];
         }
         return NO;
     } else if (strongDelegate && [strongDelegate
