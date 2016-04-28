@@ -68,9 +68,6 @@ typedef enum {
 
 @end
 
-// The view that displays banner ads.
-@interface GNAdView : UIView
-
 // Ad size type definition
 typedef enum {
     GNAdSizeTypeNone = 0, // No definition
@@ -79,7 +76,7 @@ typedef enum {
     GNAdSizeTypeTall,     // 300x250
     GNAdSizeTypeLarge,    // 728x90
     GNAdSizeTypeW468H60,  //468x60
-	GNAdSizeTypeW120H600, //120x600
+    GNAdSizeTypeW120H600, //120x600
     GNAdSizeTypeW160H600, //160x600
     GNAdSizeTypeW320H100, //320x100
     GNAdSizeTypeW57H57,   //57x57
@@ -89,6 +86,11 @@ typedef enum {
     GNAdSizeTypeW1024H66, //1024x66
     GNAdSizeTypeCustom,   //Custom size
 } GNAdSizeType;
+
+// The view that displays banner ads.
+@interface GNAdView : UIView
+
+
 
 #pragma mark Initialization
 
