@@ -12,7 +12,6 @@
 		B61D1C5E1AA9D5A400727331 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B61D1C5C1AA9D5A400727331 /* Main.storyboard */; };
 		B61D1C601AA9D5A400727331 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B61D1C5F1AA9D5A400727331 /* Images.xcassets */; };
 		B61D1C631AA9D5A400727331 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B61D1C611AA9D5A400727331 /* LaunchScreen.xib */; };
-		B61D1C6F1AA9D5A400727331 /* GNAdSampleNativeAdTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B61D1C6E1AA9D5A400727331 /* GNAdSampleNativeAdTests.m */; };
 		B61D1CA21AA9D67400727331 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61D1CA11AA9D67400727331 /* UIKit.framework */; };
 		B61D1CA41AA9D67C00727331 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61D1CA31AA9D67C00727331 /* AdSupport.framework */; };
 		B61D1CA61AA9D6DF00727331 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61D1CA51AA9D6DF00727331 /* CoreGraphics.framework */; };
@@ -40,16 +39,6 @@
 		B6858CDC1C805FB300462735 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858CD51C805FB300462735 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		B61D1C691AA9D5A400727331 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B61D1C471AA9D5A400727331 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B61D1C4E1AA9D5A400727331;
-			remoteInfo = GNAdSampleNativeAd;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		B61D1C4F1AA9D5A400727331 /* GNAdSampleNativeAd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNAdSampleNativeAd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B61D1C531AA9D5A400727331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,9 +48,6 @@
 		B61D1C5D1AA9D5A400727331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B61D1C5F1AA9D5A400727331 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B61D1C621AA9D5A400727331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B61D1C681AA9D5A400727331 /* GNAdSampleNativeAdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GNAdSampleNativeAdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B61D1C6D1AA9D5A400727331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B61D1C6E1AA9D5A400727331 /* GNAdSampleNativeAdTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNAdSampleNativeAdTests.m; sourceTree = "<group>"; };
 		B61D1CA11AA9D67400727331 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B61D1CA31AA9D67C00727331 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		B61D1CA51AA9D6DF00727331 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -124,13 +110,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B61D1C651AA9D5A400727331 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -140,7 +119,6 @@
 				B6858CC01C805FB300462735 /* GenieeAdsSDK */,
 				B61D1CA01AA9D63D00727331 /* Frameworks */,
 				B61D1C511AA9D5A400727331 /* GNAdSampleNativeAd */,
-				B61D1C6B1AA9D5A400727331 /* GNAdSampleNativeAdTests */,
 				B61D1C501AA9D5A400727331 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -149,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				B61D1C4F1AA9D5A400727331 /* GNAdSampleNativeAd.app */,
-				B61D1C681AA9D5A400727331 /* GNAdSampleNativeAdTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,23 +155,6 @@
 			children = (
 				B61D1C531AA9D5A400727331 /* Info.plist */,
 				B61D1C541AA9D5A400727331 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B61D1C6B1AA9D5A400727331 /* GNAdSampleNativeAdTests */ = {
-			isa = PBXGroup;
-			children = (
-				B61D1C6E1AA9D5A400727331 /* GNAdSampleNativeAdTests.m */,
-				B61D1C6C1AA9D5A400727331 /* Supporting Files */,
-			);
-			path = GNAdSampleNativeAdTests;
-			sourceTree = "<group>";
-		};
-		B61D1C6C1AA9D5A400727331 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B61D1C6D1AA9D5A400727331 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -329,24 +289,6 @@
 			productReference = B61D1C4F1AA9D5A400727331 /* GNAdSampleNativeAd.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B61D1C671AA9D5A400727331 /* GNAdSampleNativeAdTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B61D1C751AA9D5A400727331 /* Build configuration list for PBXNativeTarget "GNAdSampleNativeAdTests" */;
-			buildPhases = (
-				B61D1C641AA9D5A400727331 /* Sources */,
-				B61D1C651AA9D5A400727331 /* Frameworks */,
-				B61D1C661AA9D5A400727331 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B61D1C6A1AA9D5A400727331 /* PBXTargetDependency */,
-			);
-			name = GNAdSampleNativeAdTests;
-			productName = GNAdSampleNativeAdTests;
-			productReference = B61D1C681AA9D5A400727331 /* GNAdSampleNativeAdTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -358,10 +300,7 @@
 				TargetAttributes = {
 					B61D1C4E1AA9D5A400727331 = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					B61D1C671AA9D5A400727331 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = B61D1C4E1AA9D5A400727331;
+						DevelopmentTeam = RKMVWZ32F4;
 					};
 				};
 			};
@@ -379,7 +318,6 @@
 			projectRoot = "";
 			targets = (
 				B61D1C4E1AA9D5A400727331 /* GNAdSampleNativeAd */,
-				B61D1C671AA9D5A400727331 /* GNAdSampleNativeAdTests */,
 			);
 		};
 /* End PBXProject section */
@@ -392,13 +330,6 @@
 				B61D1C5E1AA9D5A400727331 /* Main.storyboard in Resources */,
 				B61D1C631AA9D5A400727331 /* LaunchScreen.xib in Resources */,
 				B61D1C601AA9D5A400727331 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B61D1C661AA9D5A400727331 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,23 +355,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B61D1C641AA9D5A400727331 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B61D1C6F1AA9D5A400727331 /* GNAdSampleNativeAdTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B61D1C6A1AA9D5A400727331 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B61D1C4E1AA9D5A400727331 /* GNAdSampleNativeAd */;
-			targetProxy = B61D1C691AA9D5A400727331 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B61D1C5C1AA9D5A400727331 /* Main.storyboard */ = {
@@ -545,6 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					../../../GenieeAdsSDK,
@@ -570,6 +486,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					../../../GenieeAdsSDK,
@@ -590,40 +507,6 @@
 			};
 			name = Release;
 		};
-		B61D1C761AA9D5A400727331 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = GNAdSampleNativeAdTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GNAdSampleNativeAd.app/GNAdSampleNativeAd";
-			};
-			name = Debug;
-		};
-		B61D1C771AA9D5A400727331 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = GNAdSampleNativeAdTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GNAdSampleNativeAd.app/GNAdSampleNativeAd";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -641,15 +524,6 @@
 			buildConfigurations = (
 				B61D1C731AA9D5A400727331 /* Debug */,
 				B61D1C741AA9D5A400727331 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B61D1C751AA9D5A400727331 /* Build configuration list for PBXNativeTarget "GNAdSampleNativeAdTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B61D1C761AA9D5A400727331 /* Debug */,
-				B61D1C771AA9D5A400727331 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

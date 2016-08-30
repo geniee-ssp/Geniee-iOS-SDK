@@ -9,7 +9,7 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "940219EB-97C7-4B3B-8E7A-1E9EA8CEECD4",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "52F467044D434C7C9BD20FFDFA62D224B48314C2" : "Geniee-iOS-SDK",
+    "52F467044D434C7C9BD20FFDFA62D224B48314C2" : "Geniee-iOS-SDK\/",
     "0F4B00D4B39FC69448867DE83F9692A765B9D16F" : "gitlab\/sdk-ssp"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "GNAdSampleBanner",

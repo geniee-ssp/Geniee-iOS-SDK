@@ -292,6 +292,8 @@
 				TargetAttributes = {
 					B6C9613E1A4D26AA00E7CB15 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = RKMVWZ32F4;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -451,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					../../../GenieeAdsSDK,
@@ -469,6 +472,7 @@
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = GNAdSampleMultipleBanner;
 				SWIFT_OBJC_BRIDGING_HEADER = "GNAdSampleMultipleBanner-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -477,6 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					../../../GenieeAdsSDK,
@@ -495,6 +500,7 @@
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = GNAdSampleMultipleBanner;
 				SWIFT_OBJC_BRIDGING_HEADER = "GNAdSampleMultipleBanner-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};

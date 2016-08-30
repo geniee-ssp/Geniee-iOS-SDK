@@ -10,6 +10,12 @@
 		B64838001B20B89A001A3BD9 /* libGNAdMediationAdapter-1.0.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B64837F31B20B89A001A3BD9 /* libGNAdMediationAdapter-1.0.3.a */; };
 		B64838011B20B89A001A3BD9 /* libGNAdMediationAdmobAdapter-1.0.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B64837F61B20B89A001A3BD9 /* libGNAdMediationAdmobAdapter-1.0.0.a */; };
 		B64838021B20B89A001A3BD9 /* libGNAdMediationIAdAdapter-1.0.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B64837F81B20B89A001A3BD9 /* libGNAdMediationIAdAdapter-1.0.0.a */; };
+		B66AFF181D7428DC0063CAEA /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66AFF171D7428DC0063CAEA /* MediaPlayer.framework */; };
+		B66AFF1A1D742BCF0063CAEA /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66AFF191D742BCF0063CAEA /* SafariServices.framework */; };
+		B66AFF1C1D742BDF0063CAEA /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66AFF1B1D742BDF0063CAEA /* CoreBluetooth.framework */; };
+		B66AFF1E1D742C140063CAEA /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66AFF1D1D742C140063CAEA /* CoreMotion.framework */; };
+		B66AFF241D742CF90063CAEA /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66AFF231D742CF90063CAEA /* MobileCoreServices.framework */; };
+		B66AFF261D742D2A0063CAEA /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66AFF251D742D2A0063CAEA /* GLKit.framework */; };
 		B6858D4A1C806EF600462735 /* GNAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6858D351C806EF600462735 /* GNAdSDK.framework */; };
 		B6858D4B1C806EF600462735 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858D3A1C806EF600462735 /* DDXMLElementAdditions.m */; };
 		B6858D4C1C806EF600462735 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858D3D1C806EF600462735 /* NSString+DDXML.m */; };
@@ -17,16 +23,12 @@
 		B6858D4E1C806EF600462735 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858D421C806EF600462735 /* DDXMLElement.m */; };
 		B6858D4F1C806EF600462735 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858D441C806EF600462735 /* DDXMLNode.m */; };
 		B6858D501C806EF600462735 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858D491C806EF600462735 /* Reachability.m */; };
-		B6A433CF1B20A81700824420 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A433C81B20A81700824420 /* GoogleMobileAds.framework */; };
-		B6A433D01B20A81700824420 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = B6A433CD1B20A81700824420 /* README.txt */; };
-		B6A433D11B20A81700824420 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = B6A433CE1B20A81700824420 /* README.txt */; };
 		FE637CF51A46FCC900CF2223 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE637CF41A46FCC900CF2223 /* main.m */; };
 		FE637CF81A46FCC900CF2223 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE637CF71A46FCC900CF2223 /* AppDelegate.m */; };
 		FE637CFB1A46FCC900CF2223 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE637CFA1A46FCC900CF2223 /* ViewController.m */; };
 		FE637CFE1A46FCC900CF2223 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE637CFC1A46FCC900CF2223 /* Main.storyboard */; };
 		FE637D001A46FCC900CF2223 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE637CFF1A46FCC900CF2223 /* Images.xcassets */; };
 		FE637D031A46FCC900CF2223 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE637D011A46FCC900CF2223 /* LaunchScreen.xib */; };
-		FE637D0F1A46FCC900CF2223 /* GNAdSampleMediationBannerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE637D0E1A46FCC900CF2223 /* GNAdSampleMediationBannerTests.m */; };
 		FE637D191A46FD7000CF2223 /* icon_geniee.png in Resources */ = {isa = PBXBuildFile; fileRef = FE637D181A46FD7000CF2223 /* icon_geniee.png */; };
 		FE637D441A46FDD900CF2223 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE637D431A46FDD900CF2223 /* UIKit.framework */; };
 		FE637D461A46FDDE00CF2223 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE637D451A46FDDE00CF2223 /* AdSupport.framework */; };
@@ -48,20 +50,18 @@
 		FE637DCE1A4706C200CF2223 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE637DCD1A4706C200CF2223 /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		FE637D091A46FCC900CF2223 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FE637CE71A46FCC900CF2223 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FE637CEE1A46FCC900CF2223;
-			remoteInfo = GNAdSampleMediationBanner;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		B64837F31B20B89A001A3BD9 /* libGNAdMediationAdapter-1.0.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libGNAdMediationAdapter-1.0.3.a"; sourceTree = "<group>"; };
 		B64837F61B20B89A001A3BD9 /* libGNAdMediationAdmobAdapter-1.0.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libGNAdMediationAdmobAdapter-1.0.0.a"; sourceTree = "<group>"; };
 		B64837F81B20B89A001A3BD9 /* libGNAdMediationIAdAdapter-1.0.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libGNAdMediationIAdAdapter-1.0.0.a"; sourceTree = "<group>"; };
+		B66AFF171D7428DC0063CAEA /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		B66AFF191D742BCF0063CAEA /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		B66AFF1B1D742BDF0063CAEA /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		B66AFF1D1D742C140063CAEA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		B66AFF1F1D742CAC0063CAEA /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		B66AFF211D742CCA0063CAEA /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		B66AFF231D742CF90063CAEA /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		B66AFF251D742D2A0063CAEA /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		B6858D351C806EF600462735 /* GNAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GNAdSDK.framework; sourceTree = "<group>"; };
 		B6858D391C806EF600462735 /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
 		B6858D3A1C806EF600462735 /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
@@ -77,12 +77,6 @@
 		B6858D461C806EF600462735 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
 		B6858D481C806EF600462735 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		B6858D491C806EF600462735 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		B6A433C81B20A81700824420 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
-		B6A433CA1B20A81700824420 /* GADMAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
-		B6A433CB1B20A81700824420 /* GADMAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
-		B6A433CC1B20A81700824420 /* GADMEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMEnums.h; sourceTree = "<group>"; };
-		B6A433CD1B20A81700824420 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		B6A433CE1B20A81700824420 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		FE637CEF1A46FCC900CF2223 /* GNAdSampleMediationBanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNAdSampleMediationBanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE637CF31A46FCC900CF2223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE637CF41A46FCC900CF2223 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -93,9 +87,6 @@
 		FE637CFD1A46FCC900CF2223 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE637CFF1A46FCC900CF2223 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FE637D021A46FCC900CF2223 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		FE637D081A46FCC900CF2223 /* GNAdSampleMediationBannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GNAdSampleMediationBannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE637D0D1A46FCC900CF2223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE637D0E1A46FCC900CF2223 /* GNAdSampleMediationBannerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNAdSampleMediationBannerTests.m; sourceTree = "<group>"; };
 		FE637D181A46FD7000CF2223 /* icon_geniee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_geniee.png; sourceTree = "<group>"; };
 		FE637D431A46FDD900CF2223 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FE637D451A46FDDE00CF2223 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -122,6 +113,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B66AFF261D742D2A0063CAEA /* GLKit.framework in Frameworks */,
+				B66AFF241D742CF90063CAEA /* MobileCoreServices.framework in Frameworks */,
+				B66AFF1E1D742C140063CAEA /* CoreMotion.framework in Frameworks */,
+				B66AFF1C1D742BDF0063CAEA /* CoreBluetooth.framework in Frameworks */,
+				B66AFF1A1D742BCF0063CAEA /* SafariServices.framework in Frameworks */,
+				B66AFF181D7428DC0063CAEA /* MediaPlayer.framework in Frameworks */,
 				FE637DCE1A4706C200CF2223 /* StoreKit.framework in Frameworks */,
 				FE637DCC1A4706BA00CF2223 /* EventKitUI.framework in Frameworks */,
 				FE637DCA1A4706B500CF2223 /* EventKit.framework in Frameworks */,
@@ -135,7 +132,6 @@
 				FE637D541A46FE1200CF2223 /* AudioToolbox.framework in Frameworks */,
 				FE637D521A46FE0B00CF2223 /* AVFoundation.framework in Frameworks */,
 				FE637D501A46FE0300CF2223 /* SystemConfiguration.framework in Frameworks */,
-				B6A433CF1B20A81700824420 /* GoogleMobileAds.framework in Frameworks */,
 				FE637D4E1A46FDF900CF2223 /* libxml2.dylib in Frameworks */,
 				FE637D4C1A46FDF200CF2223 /* CoreTelephony.framework in Frameworks */,
 				B64838011B20B89A001A3BD9 /* libGNAdMediationAdmobAdapter-1.0.0.a in Frameworks */,
@@ -145,13 +141,6 @@
 				FE637D481A46FDE400CF2223 /* CoreGraphics.framework in Frameworks */,
 				FE637D461A46FDDE00CF2223 /* AdSupport.framework in Frameworks */,
 				FE637D441A46FDD900CF2223 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FE637D051A46FCC900CF2223 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,37 +261,13 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
-		B6A433C71B20A81700824420 /* GoogleMobileAdsSdkiOS-7.4.1 */ = {
-			isa = PBXGroup;
-			children = (
-				B6A433C81B20A81700824420 /* GoogleMobileAds.framework */,
-				B6A433C91B20A81700824420 /* Mediation Adapters */,
-				B6A433CE1B20A81700824420 /* README.txt */,
-			);
-			name = "GoogleMobileAdsSdkiOS-7.4.1";
-			path = "../GoogleMobileAdsSdkiOS-7.4.1";
-			sourceTree = "<group>";
-		};
-		B6A433C91B20A81700824420 /* Mediation Adapters */ = {
-			isa = PBXGroup;
-			children = (
-				B6A433CA1B20A81700824420 /* GADMAdNetworkAdapterProtocol.h */,
-				B6A433CB1B20A81700824420 /* GADMAdNetworkConnectorProtocol.h */,
-				B6A433CC1B20A81700824420 /* GADMEnums.h */,
-				B6A433CD1B20A81700824420 /* README.txt */,
-			);
-			path = "Mediation Adapters";
-			sourceTree = "<group>";
-		};
 		FE637CE61A46FCC900CF2223 = {
 			isa = PBXGroup;
 			children = (
 				B6858D341C806EF600462735 /* GenieeAdsSDK */,
 				B64837F11B20B89A001A3BD9 /* libAdsMediation */,
-				B6A433C71B20A81700824420 /* GoogleMobileAdsSdkiOS-7.4.1 */,
 				FE637D421A46FDBB00CF2223 /* Frameworks */,
 				FE637CF11A46FCC900CF2223 /* GNAdSampleMediationBanner */,
-				FE637D0B1A46FCC900CF2223 /* GNAdSampleMediationBannerTests */,
 				FE637CF01A46FCC900CF2223 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -311,7 +276,6 @@
 			isa = PBXGroup;
 			children = (
 				FE637CEF1A46FCC900CF2223 /* GNAdSampleMediationBanner.app */,
-				FE637D081A46FCC900CF2223 /* GNAdSampleMediationBannerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -341,26 +305,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		FE637D0B1A46FCC900CF2223 /* GNAdSampleMediationBannerTests */ = {
-			isa = PBXGroup;
-			children = (
-				FE637D0E1A46FCC900CF2223 /* GNAdSampleMediationBannerTests.m */,
-				FE637D0C1A46FCC900CF2223 /* Supporting Files */,
-			);
-			path = GNAdSampleMediationBannerTests;
-			sourceTree = "<group>";
-		};
-		FE637D0C1A46FCC900CF2223 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FE637D0D1A46FCC900CF2223 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		FE637D421A46FDBB00CF2223 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B66AFF251D742D2A0063CAEA /* GLKit.framework */,
+				B66AFF231D742CF90063CAEA /* MobileCoreServices.framework */,
+				B66AFF211D742CCA0063CAEA /* CoreVideo.framework */,
+				B66AFF1F1D742CAC0063CAEA /* VideoToolbox.framework */,
+				B66AFF1D1D742C140063CAEA /* CoreMotion.framework */,
+				B66AFF1B1D742BDF0063CAEA /* CoreBluetooth.framework */,
+				B66AFF191D742BCF0063CAEA /* SafariServices.framework */,
+				B66AFF171D7428DC0063CAEA /* MediaPlayer.framework */,
 				FE637DCD1A4706C200CF2223 /* StoreKit.framework */,
 				FE637DCB1A4706BA00CF2223 /* EventKitUI.framework */,
 				FE637DC91A4706B500CF2223 /* EventKit.framework */,
@@ -403,24 +358,6 @@
 			productReference = FE637CEF1A46FCC900CF2223 /* GNAdSampleMediationBanner.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FE637D071A46FCC900CF2223 /* GNAdSampleMediationBannerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FE637D151A46FCC900CF2223 /* Build configuration list for PBXNativeTarget "GNAdSampleMediationBannerTests" */;
-			buildPhases = (
-				FE637D041A46FCC900CF2223 /* Sources */,
-				FE637D051A46FCC900CF2223 /* Frameworks */,
-				FE637D061A46FCC900CF2223 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FE637D0A1A46FCC900CF2223 /* PBXTargetDependency */,
-			);
-			name = GNAdSampleMediationBannerTests;
-			productName = GNAdSampleMediationBannerTests;
-			productReference = FE637D081A46FCC900CF2223 /* GNAdSampleMediationBannerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -432,10 +369,7 @@
 				TargetAttributes = {
 					FE637CEE1A46FCC900CF2223 = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					FE637D071A46FCC900CF2223 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = FE637CEE1A46FCC900CF2223;
+						DevelopmentTeam = RKMVWZ32F4;
 					};
 				};
 			};
@@ -453,7 +387,6 @@
 			projectRoot = "";
 			targets = (
 				FE637CEE1A46FCC900CF2223 /* GNAdSampleMediationBanner */,
-				FE637D071A46FCC900CF2223 /* GNAdSampleMediationBannerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -467,15 +400,6 @@
 				FE637D031A46FCC900CF2223 /* LaunchScreen.xib in Resources */,
 				FE637D001A46FCC900CF2223 /* Images.xcassets in Resources */,
 				FE637D191A46FD7000CF2223 /* icon_geniee.png in Resources */,
-				B6A433D11B20A81700824420 /* README.txt in Resources */,
-				B6A433D01B20A81700824420 /* README.txt in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FE637D061A46FCC900CF2223 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,23 +422,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE637D041A46FCC900CF2223 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FE637D0F1A46FCC900CF2223 /* GNAdSampleMediationBannerTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FE637D0A1A46FCC900CF2223 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FE637CEE1A46FCC900CF2223 /* GNAdSampleMediationBanner */;
-			targetProxy = FE637D091A46FCC900CF2223 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FE637CFC1A46FCC900CF2223 /* Main.storyboard */ = {
@@ -619,11 +527,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"../GoogleMobileAdsSdkiOS-7.4.1",
 					../../../GenieeAdsSDK,
+					"../GoogleMobileAdsSdkiOS-7.10.0",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -638,6 +547,7 @@
 					../../../libAdsMediation/GNAdMediation/Admob,
 					../../../libAdsMediation/GNAdMediation/iAd,
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-lxml2",
 					"-ObjC",
@@ -651,11 +561,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"../GoogleMobileAdsSdkiOS-7.4.1",
 					../../../GenieeAdsSDK,
+					"../GoogleMobileAdsSdkiOS-7.10.0",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -670,45 +581,12 @@
 					../../../libAdsMediation/GNAdMediation/Admob,
 					../../../libAdsMediation/GNAdMediation/iAd,
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-lxml2",
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		FE637D161A46FCC900CF2223 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = GNAdSampleMediationBannerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GNAdSampleMediationBanner.app/GNAdSampleMediationBanner";
-			};
-			name = Debug;
-		};
-		FE637D171A46FCC900CF2223 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = GNAdSampleMediationBannerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GNAdSampleMediationBanner.app/GNAdSampleMediationBanner";
 			};
 			name = Release;
 		};
@@ -729,15 +607,6 @@
 			buildConfigurations = (
 				FE637D131A46FCC900CF2223 /* Debug */,
 				FE637D141A46FCC900CF2223 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FE637D151A46FCC900CF2223 /* Build configuration list for PBXNativeTarget "GNAdSampleMediationBannerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FE637D161A46FCC900CF2223 /* Debug */,
-				FE637D171A46FCC900CF2223 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
