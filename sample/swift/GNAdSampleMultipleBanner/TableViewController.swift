@@ -232,7 +232,7 @@ class TableViewController: UITableViewController, GNAdViewRequestDelegate {
         
         CGContextSetInterpolationQuality(context, CGInterpolationQuality.High)
         image.drawInRect(CGRectMake(0, 0, w, h))
-        let resultImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()
+        let resultImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
         return resultImage
@@ -252,7 +252,7 @@ class TableViewController: UITableViewController, GNAdViewRequestDelegate {
         var cimage: CGImageRef = image.CGImage!
         let pC: Int = CGImageGetBitsPerComponent(cimage)
         let pR: Int = pC * 4 * Int(w)
-        var colorSpace: CGColorSpaceRef = CGColorSpaceCreateDeviceRGB()!
+        var colorSpace: CGColorSpaceRef = CGColorSpaceCreateDeviceRGB()
         let bitmapInfo = CGImageAlphaInfo.NoneSkipLast.rawValue
         var context: CGContextRef = CGBitmapContextCreate(nil, Int(w), Int(h), pC, pR, colorSpace, bitmapInfo)!
         

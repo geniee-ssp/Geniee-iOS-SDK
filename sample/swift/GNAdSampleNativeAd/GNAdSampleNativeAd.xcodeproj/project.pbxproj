@@ -35,19 +35,8 @@
 		B6C9614A1A4D26AA00E7CB15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6C961481A4D26AA00E7CB15 /* Main.storyboard */; };
 		B6C9614C1A4D26AA00E7CB15 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6C9614B1A4D26AA00E7CB15 /* Images.xcassets */; };
 		B6C9614F1A4D26AA00E7CB15 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6C9614D1A4D26AA00E7CB15 /* LaunchScreen.xib */; };
-		B6C9615B1A4D26AA00E7CB15 /* GNAdSampleNativeAdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C9615A1A4D26AA00E7CB15 /* GNAdSampleNativeAdTests.swift */; };
 		B6D438121A55380800C439C2 /* GNQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D438111A55380800C439C2 /* GNQueue.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B6C961551A4D26AA00E7CB15 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B6C961371A4D26AA00E7CB15 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B6C9613E1A4D26AA00E7CB15;
-			remoteInfo = GNAdSampleNativeAd;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B61A38051A514D7A0041956E /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -89,9 +78,6 @@
 		B6C961491A4D26AA00E7CB15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6C9614B1A4D26AA00E7CB15 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B6C9614E1A4D26AA00E7CB15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B6C961541A4D26AA00E7CB15 /* GNAdSampleNativeAdTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GNAdSampleNativeAdTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6C961591A4D26AA00E7CB15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6C9615A1A4D26AA00E7CB15 /* GNAdSampleNativeAdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNAdSampleNativeAdTests.swift; sourceTree = "<group>"; };
 		B6D438111A55380800C439C2 /* GNQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GNQueue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,13 +101,6 @@
 				B646FA781AAB41C50021547C /* CoreGraphics.framework in Frameworks */,
 				B646FA761AAB41BC0021547C /* AdSupport.framework in Frameworks */,
 				B646FA741AAB41B00021547C /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B6C961511A4D26AA00E7CB15 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +218,6 @@
 				B61A38071A514D9D0041956E /* TableViewCell.swift */,
 				B61A38051A514D7A0041956E /* TableViewController.swift */,
 				B6C961411A4D26AA00E7CB15 /* GNAdSampleNativeAd */,
-				B6C961571A4D26AA00E7CB15 /* GNAdSampleNativeAdTests */,
 				B6C961401A4D26AA00E7CB15 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -248,7 +226,6 @@
 			isa = PBXGroup;
 			children = (
 				B6C9613F1A4D26AA00E7CB15 /* GNAdSampleNativeAd.app */,
-				B6C961541A4D26AA00E7CB15 /* GNAdSampleNativeAdTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -269,23 +246,6 @@
 			isa = PBXGroup;
 			children = (
 				B6C961431A4D26AA00E7CB15 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B6C961571A4D26AA00E7CB15 /* GNAdSampleNativeAdTests */ = {
-			isa = PBXGroup;
-			children = (
-				B6C9615A1A4D26AA00E7CB15 /* GNAdSampleNativeAdTests.swift */,
-				B6C961581A4D26AA00E7CB15 /* Supporting Files */,
-			);
-			path = GNAdSampleNativeAdTests;
-			sourceTree = "<group>";
-		};
-		B6C961581A4D26AA00E7CB15 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B6C961591A4D26AA00E7CB15 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -318,24 +278,6 @@
 			productReference = B6C9613F1A4D26AA00E7CB15 /* GNAdSampleNativeAd.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B6C961531A4D26AA00E7CB15 /* GNAdSampleNativeAdTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B6C961611A4D26AA00E7CB15 /* Build configuration list for PBXNativeTarget "GNAdSampleNativeAdTests" */;
-			buildPhases = (
-				B6C961501A4D26AA00E7CB15 /* Sources */,
-				B6C961511A4D26AA00E7CB15 /* Frameworks */,
-				B6C961521A4D26AA00E7CB15 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B6C961561A4D26AA00E7CB15 /* PBXTargetDependency */,
-			);
-			name = GNAdSampleNativeAdTests;
-			productName = GNAdSampleNativeAdTests;
-			productReference = B6C961541A4D26AA00E7CB15 /* GNAdSampleNativeAdTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -349,10 +291,8 @@
 				TargetAttributes = {
 					B6C9613E1A4D26AA00E7CB15 = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					B6C961531A4D26AA00E7CB15 = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = B6C9613E1A4D26AA00E7CB15;
+						DevelopmentTeam = RKMVWZ32F4;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -370,7 +310,6 @@
 			projectRoot = "";
 			targets = (
 				B6C9613E1A4D26AA00E7CB15 /* GNAdSampleNativeAd */,
-				B6C961531A4D26AA00E7CB15 /* GNAdSampleNativeAdTests */,
 			);
 		};
 /* End PBXProject section */
@@ -383,13 +322,6 @@
 				B6C9614A1A4D26AA00E7CB15 /* Main.storyboard in Resources */,
 				B6C9614F1A4D26AA00E7CB15 /* LaunchScreen.xib in Resources */,
 				B6C9614C1A4D26AA00E7CB15 /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B6C961521A4D26AA00E7CB15 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,23 +346,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B6C961501A4D26AA00E7CB15 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B6C9615B1A4D26AA00E7CB15 /* GNAdSampleNativeAdTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B6C961561A4D26AA00E7CB15 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B6C9613E1A4D26AA00E7CB15 /* GNAdSampleNativeAd */;
-			targetProxy = B6C961551A4D26AA00E7CB15 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B6C961481A4D26AA00E7CB15 /* Main.storyboard */ = {
@@ -536,6 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					../../../GenieeAdsSDK,
@@ -554,6 +471,7 @@
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "GNAdSampleNativeAd-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -562,6 +480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					../../../GenieeAdsSDK,
@@ -580,40 +499,7 @@
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "GNAdSampleNativeAd-Bridging-Header.h";
-			};
-			name = Release;
-		};
-		B6C961621A4D26AA00E7CB15 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = GNAdSampleNativeAdTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GNAdSampleNativeAd.app/GNAdSampleNativeAd";
-			};
-			name = Debug;
-		};
-		B6C961631A4D26AA00E7CB15 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = GNAdSampleNativeAdTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GNAdSampleNativeAd.app/GNAdSampleNativeAd";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -634,15 +520,6 @@
 			buildConfigurations = (
 				B6C9615F1A4D26AA00E7CB15 /* Debug */,
 				B6C961601A4D26AA00E7CB15 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B6C961611A4D26AA00E7CB15 /* Build configuration list for PBXNativeTarget "GNAdSampleNativeAdTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B6C961621A4D26AA00E7CB15 /* Debug */,
-				B6C961631A4D26AA00E7CB15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
