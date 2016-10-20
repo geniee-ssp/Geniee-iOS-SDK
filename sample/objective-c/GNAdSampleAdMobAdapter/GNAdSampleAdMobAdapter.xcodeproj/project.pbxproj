@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B64837A01B20B22A001A3BD9 /* libGNAdMediationAdapter-1.0.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B648379F1B20B22A001A3BD9 /* libGNAdMediationAdapter-1.0.3.a */; };
-		B66AFF321D742F420063CAEA /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66AFF281D742F420063CAEA /* GoogleMobileAds.framework */; };
-		B66AFF331D742F420063CAEA /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = B66AFF301D742F420063CAEA /* README.txt */; };
-		B66AFF341D742F420063CAEA /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = B66AFF311D742F420063CAEA /* README.txt */; };
 		B6858D2D1C806E3800462735 /* GNAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6858D181C806E3800462735 /* GNAdSDK.framework */; };
 		B6858D2E1C806E3800462735 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858D1D1C806E3800462735 /* DDXMLElementAdditions.m */; };
 		B6858D2F1C806E3800462735 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858D201C806E3800462735 /* NSString+DDXML.m */; };
@@ -46,15 +43,6 @@
 
 /* Begin PBXFileReference section */
 		B648379F1B20B22A001A3BD9 /* libGNAdMediationAdapter-1.0.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libGNAdMediationAdapter-1.0.3.a"; sourceTree = "<group>"; };
-		B66AFF281D742F420063CAEA /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
-		B66AFF2A1D742F420063CAEA /* GADMAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
-		B66AFF2B1D742F420063CAEA /* GADMAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
-		B66AFF2C1D742F420063CAEA /* GADMediationAdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMediationAdRequest.h; sourceTree = "<group>"; };
-		B66AFF2D1D742F420063CAEA /* GADMEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMEnums.h; sourceTree = "<group>"; };
-		B66AFF2E1D742F420063CAEA /* GADMRewardBasedVideoAdNetworkAdapterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMRewardBasedVideoAdNetworkAdapterProtocol.h; sourceTree = "<group>"; };
-		B66AFF2F1D742F420063CAEA /* GADMRewardBasedVideoAdNetworkConnectorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADMRewardBasedVideoAdNetworkConnectorProtocol.h; sourceTree = "<group>"; };
-		B66AFF301D742F420063CAEA /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
-		B66AFF311D742F420063CAEA /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		B6858D181C806E3800462735 /* GNAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GNAdSDK.framework; sourceTree = "<group>"; };
 		B6858D1C1C806E3800462735 /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
 		B6858D1D1C806E3800462735 /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
@@ -117,7 +105,6 @@
 				FE637E951A470C3100CF2223 /* AudioToolbox.framework in Frameworks */,
 				B6858D2D1C806E3800462735 /* GNAdSDK.framework in Frameworks */,
 				FE637E931A470C2A00CF2223 /* AVFoundation.framework in Frameworks */,
-				B66AFF321D742F420063CAEA /* GoogleMobileAds.framework in Frameworks */,
 				FE637E911A470C2300CF2223 /* SystemConfiguration.framework in Frameworks */,
 				FE637E8F1A470C1C00CF2223 /* libxml2.dylib in Frameworks */,
 				FE637E8D1A470C1600CF2223 /* CoreTelephony.framework in Frameworks */,
@@ -139,31 +126,6 @@
 			);
 			name = GNAdAdMobAdapter;
 			path = ../../../libAdsMediation/GNAdAdMobAdapter;
-			sourceTree = "<group>";
-		};
-		B66AFF271D742F420063CAEA /* GoogleMobileAdsSdkiOS-7.10.0 */ = {
-			isa = PBXGroup;
-			children = (
-				B66AFF281D742F420063CAEA /* GoogleMobileAds.framework */,
-				B66AFF291D742F420063CAEA /* Mediation Adapters */,
-				B66AFF311D742F420063CAEA /* README.txt */,
-			);
-			name = "GoogleMobileAdsSdkiOS-7.10.0";
-			path = "../GoogleMobileAdsSdkiOS-7.10.0";
-			sourceTree = "<group>";
-		};
-		B66AFF291D742F420063CAEA /* Mediation Adapters */ = {
-			isa = PBXGroup;
-			children = (
-				B66AFF2A1D742F420063CAEA /* GADMAdNetworkAdapterProtocol.h */,
-				B66AFF2B1D742F420063CAEA /* GADMAdNetworkConnectorProtocol.h */,
-				B66AFF2C1D742F420063CAEA /* GADMediationAdRequest.h */,
-				B66AFF2D1D742F420063CAEA /* GADMEnums.h */,
-				B66AFF2E1D742F420063CAEA /* GADMRewardBasedVideoAdNetworkAdapterProtocol.h */,
-				B66AFF2F1D742F420063CAEA /* GADMRewardBasedVideoAdNetworkConnectorProtocol.h */,
-				B66AFF301D742F420063CAEA /* README.txt */,
-			);
-			path = "Mediation Adapters";
 			sourceTree = "<group>";
 		};
 		B6858D171C806E3800462735 /* GenieeAdsSDK */ = {
@@ -240,7 +202,6 @@
 		FE637DFE1A470B0A00CF2223 = {
 			isa = PBXGroup;
 			children = (
-				B66AFF271D742F420063CAEA /* GoogleMobileAdsSdkiOS-7.10.0 */,
 				B6858D171C806E3800462735 /* GenieeAdsSDK */,
 				B648379E1B20B22A001A3BD9 /* GNAdAdMobAdapter */,
 				FE637E831A470BDD00CF2223 /* Frameworks */,
@@ -333,7 +294,7 @@
 		FE637DFF1A470B0A00CF2223 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Geniee;
 				TargetAttributes = {
 					FE637E061A470B0A00CF2223 = {
@@ -368,8 +329,6 @@
 				FE637E161A470B0A00CF2223 /* Main.storyboard in Resources */,
 				FE637E1B1A470B0A00CF2223 /* LaunchScreen.xib in Resources */,
 				FE637E181A470B0A00CF2223 /* Images.xcassets in Resources */,
-				B66AFF331D742F420063CAEA /* README.txt in Resources */,
-				B66AFF341D742F420063CAEA /* README.txt in Resources */,
 				FE637EB21A47116000CF2223 /* icon_geniee.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,15 +387,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -449,9 +412,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -470,8 +434,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -479,14 +445,16 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -520,6 +488,7 @@
 					"-ObjC",
 					"-lxml2",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.geniee.sample.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -551,6 +520,7 @@
 					"-ObjC",
 					"-lxml2",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.geniee.sample.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
