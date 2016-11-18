@@ -1,3 +1,11 @@
+## Version 2.1.6
+
+- **Change http to https for ATS**
+
+## Version 2.1.5
+
+- **fix for Xcode7.3 Swift**
+
 ## Version 2.1.4
 
 - **Add Natvie Ad click tracking**
