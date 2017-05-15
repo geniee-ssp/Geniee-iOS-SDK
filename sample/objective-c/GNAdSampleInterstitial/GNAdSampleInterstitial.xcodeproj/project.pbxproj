@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6858CF31C8068ED00462735 /* GNAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6858CDE1C8068ED00462735 /* GNAdSDK.framework */; };
+		B654223C1E6AE13200655928 /* GNAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B654223A1E6AE13200655928 /* GNAdSDK.framework */; };
 		B6858CF41C8068ED00462735 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858CE31C8068ED00462735 /* DDXMLElementAdditions.m */; };
 		B6858CF51C8068ED00462735 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858CE61C8068ED00462735 /* NSString+DDXML.m */; };
 		B6858CF61C8068ED00462735 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858CE91C8068ED00462735 /* DDXMLDocument.m */; };
@@ -39,7 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B6858CDE1C8068ED00462735 /* GNAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GNAdSDK.framework; sourceTree = "<group>"; };
+		B654223A1E6AE13200655928 /* GNAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GNAdSDK.framework; sourceTree = "<group>"; };
 		B6858CE21C8068ED00462735 /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
 		B6858CE31C8068ED00462735 /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
 		B6858CE51C8068ED00462735 /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 				FE9C27CB1A4426280094116F /* MessageUI.framework in Frameworks */,
 				FE9C27C91A4426230094116F /* QuartzCore.framework in Frameworks */,
 				FE9C27C71A44261D0094116F /* CoreMedia.framework in Frameworks */,
-				B6858CF31C8068ED00462735 /* GNAdSDK.framework in Frameworks */,
+				B654223C1E6AE13200655928 /* GNAdSDK.framework in Frameworks */,
 				FE9C27C51A4426140094116F /* CoreFoundation.framework in Frameworks */,
 				FE9C27C31A44260B0094116F /* AudioToolbox.framework in Frameworks */,
 				FE9C27C11A4426010094116F /* AVFoundation.framework in Frameworks */,
@@ -109,14 +109,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B6858CDD1C8068ED00462735 /* GenieeAdsSDK */ = {
+		B65422381E6AE13200655928 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				B6858CDE1C8068ED00462735 /* GNAdSDK.framework */,
+				B654223A1E6AE13200655928 /* GNAdSDK.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		B6858CDD1C8068ED00462735 /* GNAdSDK */ = {
+			isa = PBXGroup;
+			children = (
+				B65422381E6AE13200655928 /* Framework */,
 				B6858CDF1C8068ED00462735 /* libs */,
 			);
-			name = GenieeAdsSDK;
-			path = ../../../GenieeAdsSDK;
+			name = GNAdSDK;
+			path = ../../../GNAdSDK;
 			sourceTree = "<group>";
 		};
 		B6858CDF1C8068ED00462735 /* libs */ = {
@@ -183,7 +191,7 @@
 		FE9C275B1A44253F0094116F = {
 			isa = PBXGroup;
 			children = (
-				B6858CDD1C8068ED00462735 /* GenieeAdsSDK */,
+				B6858CDD1C8068ED00462735 /* GNAdSDK */,
 				FE9C27CE1A4429540094116F /* Toast */,
 				FE9C27B11A4425AD0094116F /* Frameworks */,
 				FE9C27661A44253F0094116F /* GNAdSampleInterstitial */,
@@ -453,7 +461,7 @@
 				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					../../../GenieeAdsSDK,
+					../../../GNAdSDK/Framework,
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -476,7 +484,7 @@
 				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					../../../GenieeAdsSDK,
+					../../../GNAdSDK/Framework,
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
