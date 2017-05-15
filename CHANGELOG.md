@@ -1,3 +1,11 @@
+## Version 2.1.8
+
+- **Add MultiLoadAd for NativeAd**
+
+## Version 2.1.7
+
+- **Add Reward Video**
+
 ## Version 2.1.6
 
 - **Change http to https for ATS**
