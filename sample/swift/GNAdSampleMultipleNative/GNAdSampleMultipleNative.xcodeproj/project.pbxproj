@@ -11,11 +11,7 @@
 		BB8757F51EADD23A00E647FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8757F31EADD23A00E647FC /* Main.storyboard */; };
 		BB8757F71EADD23B00E647FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB8757F61EADD23B00E647FC /* Assets.xcassets */; };
 		BB8757FA1EADD23B00E647FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8757F81EADD23B00E647FC /* LaunchScreen.storyboard */; };
-		BB875B5A1EADD41600E647FC /* GNAdSDK.2.1.8.zip in Resources */ = {isa = PBXBuildFile; fileRef = BB87598B1EADD41500E647FC /* GNAdSDK.2.1.8.zip */; };
 		BB875B5B1EADD41600E647FC /* GNAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB87598C1EADD41500E647FC /* GNAdSDK.framework */; };
-		BB875B7E1EADD41700E647FC /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8759F21EADD41500E647FC /* TFHpple.m */; };
-		BB875B7F1EADD41700E647FC /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8759F41EADD41500E647FC /* TFHppleElement.m */; };
-		BB875B801EADD41700E647FC /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8759F61EADD41500E647FC /* XPathQuery.m */; };
 		BB875B811EADD41700E647FC /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8759FA1EADD41600E647FC /* DDXMLElementAdditions.m */; };
 		BB875B821EADD41700E647FC /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8759FD1EADD41600E647FC /* NSString+DDXML.m */; };
 		BB875B831EADD41700E647FC /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = BB875A001EADD41600E647FC /* DDXMLDocument.m */; };
@@ -51,12 +47,6 @@
 		BB8757FB1EADD23B00E647FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB87598B1EADD41500E647FC /* GNAdSDK.2.1.8.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = GNAdSDK.2.1.8.zip; sourceTree = "<group>"; };
 		BB87598C1EADD41500E647FC /* GNAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GNAdSDK.framework; sourceTree = "<group>"; };
-		BB8759F11EADD41500E647FC /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
-		BB8759F21EADD41500E647FC /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
-		BB8759F31EADD41500E647FC /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
-		BB8759F41EADD41500E647FC /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
-		BB8759F51EADD41500E647FC /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
-		BB8759F61EADD41500E647FC /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
 		BB8759F91EADD41600E647FC /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
 		BB8759FA1EADD41600E647FC /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
 		BB8759FC1EADD41600E647FC /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
@@ -175,24 +165,10 @@
 		BB8759EF1EADD41500E647FC /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				BB8759F01EADD41500E647FC /* hpple */,
 				BB8759F71EADD41500E647FC /* KissXML */,
 				BB875A071EADD41600E647FC /* Reachability */,
 			);
 			path = libs;
-			sourceTree = "<group>";
-		};
-		BB8759F01EADD41500E647FC /* hpple */ = {
-			isa = PBXGroup;
-			children = (
-				BB8759F11EADD41500E647FC /* TFHpple.h */,
-				BB8759F21EADD41500E647FC /* TFHpple.m */,
-				BB8759F31EADD41500E647FC /* TFHppleElement.h */,
-				BB8759F41EADD41500E647FC /* TFHppleElement.m */,
-				BB8759F51EADD41500E647FC /* XPathQuery.h */,
-				BB8759F61EADD41500E647FC /* XPathQuery.m */,
-			);
-			path = hpple;
 			sourceTree = "<group>";
 		};
 		BB8759F71EADD41500E647FC /* KissXML */ = {
@@ -344,7 +320,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB8757FA1EADD23B00E647FC /* LaunchScreen.storyboard in Resources */,
-				BB875B5A1EADD41600E647FC /* GNAdSDK.2.1.8.zip in Resources */,
 				BB8757F71EADD23B00E647FC /* Assets.xcassets in Resources */,
 				BB8757F51EADD23A00E647FC /* Main.storyboard in Resources */,
 			);
@@ -367,9 +342,6 @@
 				BB8757F01EADD23A00E647FC /* AppDelegate.swift in Sources */,
 				BB875BAA1EADE04D00E647FC /* TableViewController.swift in Sources */,
 				BB875BB01EADEB0700E647FC /* MyCellData.swift in Sources */,
-				BB875B801EADD41700E647FC /* XPathQuery.m in Sources */,
-				BB875B7E1EADD41700E647FC /* TFHpple.m in Sources */,
-				BB875B7F1EADD41700E647FC /* TFHppleElement.m in Sources */,
 				BB875B851EADD41700E647FC /* DDXMLNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
