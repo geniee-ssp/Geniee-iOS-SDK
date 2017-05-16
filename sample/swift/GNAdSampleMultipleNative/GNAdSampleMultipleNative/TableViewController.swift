@@ -12,19 +12,23 @@ class TableViewController: UITableViewController {
     var queueAds: GNQueue = GNQueue(aMaxSize: 50)
     var cellDataList: NSMutableArray = NSMutableArray()
     
-    var nativeAdRequest: GNNativeAdRequest = GNNativeAdRequest(id: "YOUR_APP_SSP_ID")
+    var nativeAdRequest: GNNativeAdRequest? = GNNativeAdRequest(id: "YOUR_APP_SSP_ID")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         secondsStart = Date.timeIntervalSinceReferenceDate
         
         // Load GNNativeAdRequest
-        nativeAdRequest.delegate = self
-        nativeAdRequest.gnAdlogPriority = GNLogPriorityInfo
-        nativeAdRequest.geoLocationEnable = true
+        nativeAdRequest?.delegate = self
+        nativeAdRequest?.gnAdlogPriority = GNLogPriorityInfo
+        nativeAdRequest?.geoLocationEnable = true
         loading = true
 
-        nativeAdRequest.multiLoadAds()
+        if let _ = nativeAdRequest {
+            nativeAdRequest?.multiLoadAds()
+        } else {
+            self.createCellDataList()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -124,7 +128,7 @@ class TableViewController: UITableViewController {
         
         secondsStart = Date.timeIntervalSinceReferenceDate
         loading = true
-        nativeAdRequest.multiLoadAds()
+        nativeAdRequest?.multiLoadAds()
     }
     
     
