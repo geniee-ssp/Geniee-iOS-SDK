@@ -17,9 +17,6 @@
 		BBEE23F41EADB8F8004983A9 /* MyCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEE23F31EADB8F8004983A9 /* MyCellData.m */; };
 		BBEE23F71EADBAEA004983A9 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEE23F61EADBAEA004983A9 /* TableViewCell.m */; };
 		BBEE27521EADBE54004983A9 /* GNAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBEE25831EADBE53004983A9 /* GNAdSDK.framework */; };
-		BBEE27751EADBE54004983A9 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEE25E91EADBE53004983A9 /* TFHpple.m */; };
-		BBEE27761EADBE54004983A9 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEE25EB1EADBE53004983A9 /* TFHppleElement.m */; };
-		BBEE27771EADBE54004983A9 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEE25ED1EADBE53004983A9 /* XPathQuery.m */; };
 		BBEE27781EADBE54004983A9 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEE25F11EADBE53004983A9 /* DDXMLElementAdditions.m */; };
 		BBEE27791EADBE54004983A9 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEE25F41EADBE53004983A9 /* NSString+DDXML.m */; };
 		BBEE277A1EADBE54004983A9 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEE25F71EADBE53004983A9 /* DDXMLDocument.m */; };
@@ -80,12 +77,6 @@
 		BBEE23F51EADBAEA004983A9 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewCell.h; path = Models/TableViewCell.h; sourceTree = "<group>"; };
 		BBEE23F61EADBAEA004983A9 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewCell.m; path = Models/TableViewCell.m; sourceTree = "<group>"; };
 		BBEE25831EADBE53004983A9 /* GNAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GNAdSDK.framework; sourceTree = "<group>"; };
-		BBEE25E81EADBE53004983A9 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
-		BBEE25E91EADBE53004983A9 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
-		BBEE25EA1EADBE53004983A9 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
-		BBEE25EB1EADBE53004983A9 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
-		BBEE25EC1EADBE53004983A9 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
-		BBEE25ED1EADBE53004983A9 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
 		BBEE25F01EADBE53004983A9 /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
 		BBEE25F11EADBE53004983A9 /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
 		BBEE25F31EADBE53004983A9 /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
@@ -248,24 +239,10 @@
 		BBEE25E61EADBE53004983A9 /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				BBEE25E71EADBE53004983A9 /* hpple */,
 				BBEE25EE1EADBE53004983A9 /* KissXML */,
 				BBEE25FE1EADBE53004983A9 /* Reachability */,
 			);
 			path = libs;
-			sourceTree = "<group>";
-		};
-		BBEE25E71EADBE53004983A9 /* hpple */ = {
-			isa = PBXGroup;
-			children = (
-				BBEE25E81EADBE53004983A9 /* TFHpple.h */,
-				BBEE25E91EADBE53004983A9 /* TFHpple.m */,
-				BBEE25EA1EADBE53004983A9 /* TFHppleElement.h */,
-				BBEE25EB1EADBE53004983A9 /* TFHppleElement.m */,
-				BBEE25EC1EADBE53004983A9 /* XPathQuery.h */,
-				BBEE25ED1EADBE53004983A9 /* XPathQuery.m */,
-			);
-			path = hpple;
 			sourceTree = "<group>";
 		};
 		BBEE25EE1EADBE53004983A9 /* KissXML */ = {
@@ -481,14 +458,11 @@
 				BBEE277B1EADBE54004983A9 /* DDXMLElement.m in Sources */,
 				BBEE23F71EADBAEA004983A9 /* TableViewCell.m in Sources */,
 				BBEE23F41EADB8F8004983A9 /* MyCellData.m in Sources */,
-				BBEE27761EADBE54004983A9 /* TFHppleElement.m in Sources */,
 				BBEE27A31EADC3CC004983A9 /* TableViewController.m in Sources */,
 				BBEE23BF1EADA40B004983A9 /* AppDelegate.m in Sources */,
 				BBEE23F01EADA5E0004983A9 /* GNQueue.m in Sources */,
-				BBEE27751EADBE54004983A9 /* TFHpple.m in Sources */,
 				BBEE27791EADBE54004983A9 /* NSString+DDXML.m in Sources */,
 				BBEE27781EADBE54004983A9 /* DDXMLElementAdditions.m in Sources */,
-				BBEE27771EADBE54004983A9 /* XPathQuery.m in Sources */,
 				BBEE23BC1EADA40B004983A9 /* main.m in Sources */,
 				BBEE277C1EADBE54004983A9 /* DDXMLNode.m in Sources */,
 			);
