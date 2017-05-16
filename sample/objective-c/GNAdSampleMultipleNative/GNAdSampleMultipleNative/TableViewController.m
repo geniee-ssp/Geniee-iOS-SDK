@@ -39,6 +39,7 @@ static const int CELLCOUNT = 20;
     
     // ad loading.
     [nativeAdRequest multiLoadAds];
+    [self createCellDataList];
 }
 
 - (void)dealloc
@@ -61,7 +62,6 @@ static const int CELLCOUNT = 20;
         [queueAds enqueue:nativeAd];
     }
     [self createCellDataList];
-    
 }
 
 // Called when GNNativeAdRequest native ads request failed.
