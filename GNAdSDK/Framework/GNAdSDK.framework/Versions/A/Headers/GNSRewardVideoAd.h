@@ -18,6 +18,8 @@
 /// Returns the shared GNSRewardVideoAd instance.
 + (GNSRewardVideoAd *)sharedInstance;
 
+/// unavailable method.
+- (instancetype) init __attribute__((unavailable("init not available. use sharedInstance")));
 
 /// Initiates the request to fetch the reward video ad.
 - (void)loadRequest:(GNSRequest *)request withZoneID:(NSString *)zoneID;

@@ -31,6 +31,9 @@
 @property(nonatomic, readonly, assign) double app_rating;
 @property(nonatomic, readonly, copy) NSString *app_storeURL;
 @property(nonatomic, readonly, copy) NSString *app_targetAge;
+@property(nonatomic, readonly, copy) NSString *optout_text;
+@property(nonatomic, readonly, copy) NSString *optout_image_url;
+@property(nonatomic, readonly, copy) NSString *optout_url;
 
 /**
  * Initializes a GNNativeAd.

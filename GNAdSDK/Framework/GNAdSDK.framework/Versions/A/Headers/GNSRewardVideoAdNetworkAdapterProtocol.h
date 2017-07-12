@@ -34,7 +34,7 @@
 /// Tells the adapter to request a reward  video ad. This method is called after the adapter
 /// has been set up. The adapter should notify the Geniee Ads SDK if the request succeeds or
 /// fails using callbacks provided in the connector.
-- (void)requestRewardVideoAd;
+- (void)requestRewardVideoAd:(NSInteger)timeOut;
 
 /// Tells the adapter to present the reward  video ad with the provided view controller. This
 /// method is only called after the adapter successfully requested an ad.
