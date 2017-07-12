@@ -1,3 +1,6 @@
+## Version 2.2.2
+- **Add Optout information for NativeAd**
+
 ## Version 2.1.8
 
 - **Add MultiLoadAd for NativeAd**
