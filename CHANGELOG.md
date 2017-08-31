@@ -1,3 +1,6 @@
+## Version 2.2.3
+- **Improve blank detection for Banner Ads**
+
 ## Version 2.2.2
 - **Add Optout information for NativeAd**
 
