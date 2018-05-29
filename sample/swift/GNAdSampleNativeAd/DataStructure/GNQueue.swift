@@ -14,15 +14,15 @@ class GNQueue: NSObject {
         maxSize = aMaxSize;
     }
     
-    func dequeue() -> AnyObject? {
-        var headObject: AnyObject?
+    func dequeue() -> Any? {
+        var headObject: Any?
         objc_sync_enter(queue)
         if (queue.count == 0) {
             return nil
         }
-        headObject = queue.objectAtIndex(0)
+        headObject = queue.object(at:0)
         if (headObject != nil) {
-            queue.removeObjectAtIndex(0)
+            queue.removeObject(at:0)
         }
         objc_sync_exit(queue)
         return headObject;
@@ -34,9 +34,9 @@ class GNQueue: NSObject {
             return;
         }
         if (queue.count >= maxSize) {
-            queue.removeObjectAtIndex(0)
+            queue.removeObject(at:0)
         }
-        queue.addObject(anObject!)
+        queue.add(anObject!)
         objc_sync_exit(queue)
     }
     
