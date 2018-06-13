@@ -1,0 +1,6 @@
+framework module GNSAdapterAdColonyRewardVideo {
+  umbrella header "GNSAdapterAdColonyRewardVideo.h"
+
+  export *
+  module * { export * }
+}

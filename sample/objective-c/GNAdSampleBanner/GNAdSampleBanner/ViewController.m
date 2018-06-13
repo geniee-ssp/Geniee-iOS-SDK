@@ -5,7 +5,9 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITextFieldDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextField *zoneIDTextField;
 
 @end
 
@@ -14,16 +16,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    _zoneIDTextField.delegate = self;
+    
     _adView = [[GNAdView alloc] initWithFrame:CGRectMake(0, 20, 320, 50)
-                                   adSizeType:GNAdSizeTypeSmall appID:@"YOUR_SSP_APP_ID"];
+                                   adSizeType:GNAdSizeTypeSmall appID:_zoneIDTextField.text];
     _adView.delegate = self;
     _adView.rootViewController = self;
     //_adView.geoLocationEnable = YES;
-    //_adView.GNAdlogPriority = GNLogPriorityInfo;
+    _adView.GNAdlogPriority = GNLogPriorityInfo;
+    
     [self.view addSubview:_adView];
 
     _adView.center = CGPointMake(self.view.center.x, _adView.center.y);
     [_adView startAdLoop];
+
 }
 
 - (void)dealloc
@@ -41,6 +47,30 @@
 {
     NSLog(@"ViewController: shouldStartExternalBrowserWithClick : %@.", landingURL);
     return YES;
+}
+
+- (IBAction)pushedButton:(id)sender {
+    _adView = nil;
+    
+    if (!_zoneIDTextField.text) {
+        return;
+    }
+    
+    _adView = [[GNAdView alloc] initWithFrame:CGRectMake(0, 20, 300, 250)
+                                   adSizeType:GNAdSizeTypeTall
+                                        appID:_zoneIDTextField.text];
+    _adView.delegate = self;
+    _adView.rootViewController = self;
+    [self.view addSubview:_adView];
+    
+    _adView.center = CGPointMake(self.view.center.x, _adView.center.y);
+    [_adView startAdLoop];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    textField.resignFirstResponder;
+    return true;
 }
 
 @end

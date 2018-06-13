@@ -58,7 +58,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
   s.vendored_frameworks = "GNAdSDK/Framework/GNAdSDK.framework"
-  s.source_files = "GNAdSDK/libs/Reachability/*.{h,m}"
+  s.source_files = "GNAdSDK/libs/Reachability/*.{h,m}", "GNAdSDK/libs/RewardMediationAdapter/*/*.{h,m}"
+  
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

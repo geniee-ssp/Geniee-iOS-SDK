@@ -9,12 +9,12 @@ import Foundation
 class TableViewController: UITableViewController, GNNativeAdRequestDelegate {
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     var _loading: Bool = false
-    var _secondsStart: NSTimeInterval = 0.0, _secondsEnd: NSTimeInterval = 0.0
+    var _secondsStart: TimeInterval = 0.0, _secondsEnd: TimeInterval = 0.0
     var _queueAds: GNQueue = GNQueue(aMaxSize: 100)
     var _cellDataList: NSMutableArray = NSMutableArray()
     
     // Create GNNativeAdRequest
-    var _nativeAdRequest: GNNativeAdRequest  = GNNativeAdRequest(ID:"YOUR_SSP_APP_ID");
+    var _nativeAdRequest: GNNativeAdRequest  = GNNativeAdRequest(id:"YOUR_SSP_APP_ID")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -148,7 +148,7 @@ class TableViewController: UITableViewController, GNNativeAdRequestDelegate {
     
     // Request and Create Icon Image
     
-    func requestImageWithURL(url: NSURL, completion:(image: UIImage!, error: NSError!)->Void)
+    func requestImageWithURL(_ url: NSURL, completion:(image: UIImage!, error: NSError!)->Void)
     {
         var request: NSURLRequest = NSURLRequest(URL: url)
         NSURLConnection.sendAsynchronousRequest(
