@@ -4,7 +4,7 @@
 //
 
 #import "GNSAdapterAdColonyRewardVideoAd.h"
-#import <AdColony/AdColony.h>
+#import <AdColony/AdColony/AdColony.h>
 #import <GNAdSDK/GNSRewardVideoAdNetworkConnectorProtocol.h>
 #import <GNAdSDK/GNSAdNetworkExtraParams.h>
 #import <GNAdSDK/GNSAdReward.h>
@@ -72,7 +72,7 @@ static BOOL loggingEnabled = YES;
                                                 selector:@selector(sendDidFailToLoadRewardVideoWithTimeOut)
                                                 userInfo:nil
                                                  repeats:NO];
-        
+
     });
 }
 
@@ -87,7 +87,7 @@ static BOOL loggingEnabled = YES;
 
 - (void)sendDidFailToLoadRewardVideoWithTimeOut{
     [self deleteTimer];
-    
+
     [self ALLog:@"Rewarded video loading Timeout."];
     NSDictionary *errorInfo = @{ NSLocalizedDescriptionKey : @"Rewarded video loading Timeout." };
     NSError *error = [NSError errorWithDomain: kGNSAdapterAdColonyRewardVideoAdKeyErrorDomain
@@ -104,7 +104,7 @@ static BOOL loggingEnabled = YES;
         [self.connector adapterDidReceiveRewardVideoAd:self];
         return;
     }
-    
+
     // set Timer
     [self setTimerWith:timeout];
 
@@ -115,7 +115,7 @@ static BOOL loggingEnabled = YES;
 
     [self ALLog:[NSString stringWithFormat:@"AppId=%@", extras.app_id]];
     [self ALLog:[NSString stringWithFormat:@"ZoneId=%@", extras.zone_id]];
-    
+
     // Need load in main thread
     __weak GNSAdapterAdColonyRewardVideoAd* weakSelf = self;
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -153,7 +153,7 @@ static BOOL loggingEnabled = YES;
 
         _isConfigured = YES;
     });
-    
+
 }
 
 - (void)presentRewardVideoAdWithRootViewController:(UIViewController *)viewController {
@@ -175,7 +175,7 @@ static BOOL loggingEnabled = YES;
 #pragma mark - AdColony
 
 - (void)requestInterstitial {
-    
+
     GNSExtrasAdColony *extras = [self.connector networkExtras];
 
     //Request an interstitial ad from AdColony
