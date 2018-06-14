@@ -13,9 +13,12 @@
 		BBE1E56620D0EBA80035A52A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBE1E56520D0EBA80035A52A /* Assets.xcassets */; };
 		BBE1E56920D0EBA80035A52A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBE1E56720D0EBA80035A52A /* LaunchScreen.storyboard */; };
 		BBE1E56C20D0EBA80035A52A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE1E56B20D0EBA80035A52A /* main.m */; };
+		E142426F04E51C5C3DD1B946 /* libPods-GNCAdSampleBanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEB3CA2D030DF4798469EAB /* libPods-GNCAdSampleBanner.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		192EF6194FE01A86DAB898FC /* Pods-GNCAdSampleBanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNCAdSampleBanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GNCAdSampleBanner/Pods-GNCAdSampleBanner.debug.xcconfig"; sourceTree = "<group>"; };
+		9EEB3CA2D030DF4798469EAB /* libPods-GNCAdSampleBanner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GNCAdSampleBanner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE1E55920D0EBA20035A52A /* GNCAdSampleBanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNCAdSampleBanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE1E55C20D0EBA20035A52A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BBE1E55D20D0EBA20035A52A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		BBE1E56820D0EBA80035A52A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBE1E56A20D0EBA80035A52A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBE1E56B20D0EBA80035A52A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D74E9D1B3307124316A62566 /* Pods-GNCAdSampleBanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNCAdSampleBanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-GNCAdSampleBanner/Pods-GNCAdSampleBanner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E142426F04E51C5C3DD1B946 /* libPods-GNCAdSampleBanner.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7B517D70CBBB2979DC86507 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				192EF6194FE01A86DAB898FC /* Pods-GNCAdSampleBanner.debug.xcconfig */,
+				D74E9D1B3307124316A62566 /* Pods-GNCAdSampleBanner.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BBE1E55020D0EBA20035A52A = {
 			isa = PBXGroup;
 			children = (
 				BBE1E55B20D0EBA20035A52A /* GNCAdSampleBanner */,
 				BBE1E55A20D0EBA20035A52A /* Products */,
+				A7B517D70CBBB2979DC86507 /* Pods */,
+				BE654908B2939CCD201AF37B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +87,14 @@
 			path = GNCAdSampleBanner;
 			sourceTree = "<group>";
 		};
+		BE654908B2939CCD201AF37B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EEB3CA2D030DF4798469EAB /* libPods-GNCAdSampleBanner.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBE1E56F20D0EBA80035A52A /* Build configuration list for PBXNativeTarget "GNCAdSampleBanner" */;
 			buildPhases = (
+				BE85388F96B499B296AA4857 /* [CP] Check Pods Manifest.lock */,
 				BBE1E55520D0EBA20035A52A /* Sources */,
 				BBE1E55620D0EBA20035A52A /* Frameworks */,
 				BBE1E55720D0EBA20035A52A /* Resources */,
+				7C515D2462D18F50BBB4205C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +161,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C515D2462D18F50BBB4205C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GNCAdSampleBanner/Pods-GNCAdSampleBanner-frameworks.sh",
+				"${PODS_ROOT}/../../../../../rewardMediation/AdColony/GNSAdapterAdColonyRewardVideo.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GNSAdapterAdColonyRewardVideo.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GNCAdSampleBanner/Pods-GNCAdSampleBanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE85388F96B499B296AA4857 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GNCAdSampleBanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BBE1E55520D0EBA20035A52A /* Sources */ = {
@@ -281,11 +346,13 @@
 		};
 		BBE1E57020D0EBA80035A52A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 192EF6194FE01A86DAB898FC /* Pods-GNCAdSampleBanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				INFOPLIST_FILE = GNCAdSampleBanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,11 +365,13 @@
 		};
 		BBE1E57120D0EBA80035A52A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D74E9D1B3307124316A62566 /* Pods-GNCAdSampleBanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				INFOPLIST_FILE = GNCAdSampleBanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
