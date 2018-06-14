@@ -77,9 +77,9 @@ static BOOL loggingEnabled = YES;
     GNSExtrasAmoad *extras = [self.connector networkExtras];
     [self ALLLog:[NSString stringWithFormat:@"Amoad request sId=%@", extras.sId]];
     dispatch_async(dispatch_get_main_queue(), ^{
-        _adsource = [AMoAdInterstitialVideo sharedInstanceWithSid:extras.sId tag:@"genieeReward"];
-        [_adsource setDelegate:self];
-        [_adsource load];
+        self->_adsource = [AMoAdInterstitialVideo sharedInstanceWithSid:extras.sId tag:@"genieeReward"];
+        [self->_adsource setDelegate:self];
+        [self->_adsource load];
     });
 }
 
@@ -116,7 +116,7 @@ static BOOL loggingEnabled = YES;
 
 - (void)setTimerWith:(NSInteger)timeout {
     dispatch_async(dispatch_get_main_queue(), ^{
-        _timer = [NSTimer scheduledTimerWithTimeInterval:timeout
+        self->_timer = [NSTimer scheduledTimerWithTimeInterval:timeout
                                                   target:self
                                                 selector:@selector(sendDidFailToLoadRewardVideoWithTimeOut)
                                                 userInfo:nil
