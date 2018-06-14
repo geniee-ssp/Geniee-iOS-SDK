@@ -28,7 +28,7 @@ class GNQueue: NSObject {
         return headObject;
     }
     
-    func enqueue(anObject: AnyObject?) {
+    func enqueue(_ anObject: Any?) {
         objc_sync_enter(queue)
         if (anObject == nil) {
             return;

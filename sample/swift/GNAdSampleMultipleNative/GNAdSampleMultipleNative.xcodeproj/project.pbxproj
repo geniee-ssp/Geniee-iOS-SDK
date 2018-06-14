@@ -292,6 +292,7 @@
 				TargetAttributes = {
 					BB8757EB1EADD23A00E647FC = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = RKMVWZ32F4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -465,6 +466,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				FRAMEWORK_SEARCH_PATHS = (
 					../../../GNAdSDK/Framework,
 					"$(inherited)",
@@ -488,6 +490,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				FRAMEWORK_SEARCH_PATHS = (
 					../../../GNAdSDK/Framework,
 					"$(inherited)",

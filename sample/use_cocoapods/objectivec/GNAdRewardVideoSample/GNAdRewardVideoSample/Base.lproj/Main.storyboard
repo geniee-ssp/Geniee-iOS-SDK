@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ieO-xA-RJr">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wHI-pb-Vdg">
+            <objects>
+                <viewController id="ieO-xA-RJr" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Esm-rz-o3l"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fdz-td-e6a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VVV-4x-Xct">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Started" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwa-wx-anM">
+                                <rect key="frame" x="134" y="323" width="107" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYs-rC-ddw">
+                                <rect key="frame" x="147" y="419" width="81" height="30"/>
+                                <state key="normal" title="Show Video"/>
+                                <connections>
+                                    <action selector="showVideo:" destination="ieO-xA-RJr" eventType="touchUpInside" id="6oV-zS-eMq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GNAdRewardVideoSample" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfx-FL-mkZ">
+                                <rect key="frame" x="86" y="223" width="204" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93x-qA-noF">
+                                <rect key="frame" x="152" y="369" width="71" height="30"/>
+                                <state key="normal" title="Play Again"/>
+                                <connections>
+                                    <action selector="playAgain:" destination="ieO-xA-RJr" eventType="touchUpInside" id="kVe-MY-GRv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coin Count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXX-NA-rKm">
+                                <rect key="frame" x="145" y="273" width="86" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PlU-Rt-ZwI">
+                                <rect key="frame" x="189" y="155" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="I7Q-OX-k9c"/>
+                                    <constraint firstAttribute="width" constant="150" id="t9Y-S1-2Wx"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="zoneid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSY-2u-aL1">
+                                <rect key="frame" x="94" y="160" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tSY-2u-aL1" firstAttribute="centerY" secondItem="VVV-4x-Xct" secondAttribute="centerY" constant="-163" id="0RA-oo-vFy"/>
+                            <constraint firstItem="tSY-2u-aL1" firstAttribute="centerX" secondItem="VVV-4x-Xct" secondAttribute="centerX" constant="-68" id="3Db-my-Y25"/>
+                            <constraint firstItem="PlU-Rt-ZwI" firstAttribute="centerY" secondItem="VVV-4x-Xct" secondAttribute="centerY" constant="-163.5" id="DzE-hV-KaE"/>
+                            <constraint firstItem="93x-qA-noF" firstAttribute="centerX" secondItem="VVV-4x-Xct" secondAttribute="centerX" id="HAH-Os-R2p"/>
+                            <constraint firstItem="YXX-NA-rKm" firstAttribute="centerY" secondItem="VVV-4x-Xct" secondAttribute="centerY" constant="-50" id="HrB-Jb-oho"/>
+                            <constraint firstItem="93x-qA-noF" firstAttribute="centerY" secondItem="VVV-4x-Xct" secondAttribute="centerY" constant="50" id="SYv-kb-Q25"/>
+                            <constraint firstItem="Hwa-wx-anM" firstAttribute="centerY" secondItem="VVV-4x-Xct" secondAttribute="centerY" id="a8p-3b-41T"/>
+                            <constraint firstItem="rfx-FL-mkZ" firstAttribute="centerY" secondItem="VVV-4x-Xct" secondAttribute="centerY" constant="-100" id="bBj-TM-yhd"/>
+                            <constraint firstItem="CYs-rC-ddw" firstAttribute="centerX" secondItem="VVV-4x-Xct" secondAttribute="centerX" id="cVw-q1-yqb"/>
+                            <constraint firstItem="YXX-NA-rKm" firstAttribute="centerX" secondItem="VVV-4x-Xct" secondAttribute="centerX" id="cxN-XQ-K0o"/>
+                            <constraint firstItem="CYs-rC-ddw" firstAttribute="centerY" secondItem="VVV-4x-Xct" secondAttribute="centerY" constant="100" id="kRH-g2-hs6"/>
+                            <constraint firstItem="PlU-Rt-ZwI" firstAttribute="centerX" secondItem="VVV-4x-Xct" secondAttribute="centerX" constant="76.5" id="ndT-36-qVg"/>
+                            <constraint firstItem="Hwa-wx-anM" firstAttribute="centerX" secondItem="VVV-4x-Xct" secondAttribute="centerX" id="ntS-yK-FSe"/>
+                            <constraint firstItem="rfx-FL-mkZ" firstAttribute="centerX" secondItem="VVV-4x-Xct" secondAttribute="centerX" id="rYt-oT-IUF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ShowVideoButton" destination="VVV-4x-Xct" id="BPD-V2-y7h"/>
+                        <outlet property="coinCountLabel" destination="YXX-NA-rKm" id="wIh-Tx-2yD"/>
+                        <outlet property="gameLabel" destination="Hwa-wx-anM" id="hHv-zS-Lc6"/>
+                        <outlet property="playAgainButton" destination="93x-qA-noF" id="8W1-ln-HZx"/>
+                        <outlet property="showVideoButton" destination="CYs-rC-ddw" id="ZoY-Tu-mJZ"/>
+                        <outlet property="zoneIDText" destination="PlU-Rt-ZwI" id="xtQ-fd-5zO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7M6-oc-uXg" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="119.1904047976012"/>
+        </scene>
+    </scenes>
+</document>
