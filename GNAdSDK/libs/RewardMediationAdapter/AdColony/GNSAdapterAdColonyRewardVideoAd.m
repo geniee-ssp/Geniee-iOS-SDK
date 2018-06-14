@@ -4,7 +4,7 @@
 //
 
 #import "GNSAdapterAdColonyRewardVideoAd.h"
-#import <AdColony/AdColony/AdColony.h>
+#import <AdColony/AdColony.h>
 #import <GNAdSDK/GNSRewardVideoAdNetworkConnectorProtocol.h>
 #import <GNAdSDK/GNSAdNetworkExtraParams.h>
 #import <GNAdSDK/GNSAdReward.h>
