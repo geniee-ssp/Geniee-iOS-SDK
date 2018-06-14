@@ -30,7 +30,7 @@
 		B61D1CC81AA9D8B200727331 /* MyCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = B61D1CC21AA9D8B200727331 /* MyCellData.m */; };
 		B61D1CC91AA9D8B200727331 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B61D1CC41AA9D8B200727331 /* TableViewCell.m */; };
 		B61D1CCA1AA9D8B200727331 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B61D1CC61AA9D8B200727331 /* TableViewController.m */; };
-		B6858CD61C805FB300462735 /* GNAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6858CC11C805FB300462735 /* GNAdSDK.framework */; };
+		B65422461E6AE24400655928 /* GNAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65422441E6AE24400655928 /* GNAdSDK.framework */; };
 		B6858CD71C805FB300462735 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858CC61C805FB300462735 /* DDXMLElementAdditions.m */; };
 		B6858CD81C805FB300462735 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858CC91C805FB300462735 /* NSString+DDXML.m */; };
 		B6858CD91C805FB300462735 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858CCC1C805FB300462735 /* DDXMLDocument.m */; };
@@ -70,7 +70,7 @@
 		B61D1CC41AA9D8B200727331 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		B61D1CC51AA9D8B200727331 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		B61D1CC61AA9D8B200727331 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
-		B6858CC11C805FB300462735 /* GNAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GNAdSDK.framework; sourceTree = "<group>"; };
+		B65422441E6AE24400655928 /* GNAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GNAdSDK.framework; sourceTree = "<group>"; };
 		B6858CC51C805FB300462735 /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
 		B6858CC61C805FB300462735 /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
 		B6858CC81C805FB300462735 /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 				B61D1CBA1AA9D72F00727331 /* MessageUI.framework in Frameworks */,
 				B61D1CB81AA9D72900727331 /* QuartzCore.framework in Frameworks */,
 				B61D1CB61AA9D72100727331 /* CoreMedia.framework in Frameworks */,
-				B6858CD61C805FB300462735 /* GNAdSDK.framework in Frameworks */,
+				B65422461E6AE24400655928 /* GNAdSDK.framework in Frameworks */,
 				B61D1CB41AA9D71900727331 /* CoreFoundation.framework in Frameworks */,
 				B61D1CB21AA9D71200727331 /* AudioToolbox.framework in Frameworks */,
 				B61D1CB01AA9D70B00727331 /* AVFoundation.framework in Frameworks */,
@@ -116,7 +116,7 @@
 		B61D1C461AA9D5A400727331 = {
 			isa = PBXGroup;
 			children = (
-				B6858CC01C805FB300462735 /* GenieeAdsSDK */,
+				B6858CC01C805FB300462735 /* GNAdSDK */,
 				B61D1CA01AA9D63D00727331 /* Frameworks */,
 				B61D1C511AA9D5A400727331 /* GNAdSampleNativeAd */,
 				B61D1C501AA9D5A400727331 /* Products */,
@@ -198,14 +198,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		B6858CC01C805FB300462735 /* GenieeAdsSDK */ = {
+		B65422421E6AE24400655928 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				B6858CC11C805FB300462735 /* GNAdSDK.framework */,
+				B65422441E6AE24400655928 /* GNAdSDK.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		B6858CC01C805FB300462735 /* GNAdSDK */ = {
+			isa = PBXGroup;
+			children = (
+				B65422421E6AE24400655928 /* Framework */,
 				B6858CC21C805FB300462735 /* libs */,
 			);
-			name = GenieeAdsSDK;
-			path = ../../../GenieeAdsSDK;
+			name = GNAdSDK;
+			path = ../../../GNAdSDK;
 			sourceTree = "<group>";
 		};
 		B6858CC21C805FB300462735 /* libs */ = {
@@ -295,7 +303,7 @@
 		B61D1C471AA9D5A400727331 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "k-koh";
 				TargetAttributes = {
 					B61D1C4E1AA9D5A400727331 = {
@@ -390,15 +398,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -411,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -432,8 +444,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -441,13 +455,14 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -463,7 +478,7 @@
 				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					../../../GenieeAdsSDK,
+					../../../GNAdSDK/Framework,
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -472,11 +487,9 @@
 				);
 				INFOPLIST_FILE = GNAdSampleNativeAd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					../../../GenieeAdsSDK,
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.geniee.sample.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -489,7 +502,7 @@
 				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					../../../GenieeAdsSDK,
+					../../../GNAdSDK/Framework,
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -498,11 +511,9 @@
 				);
 				INFOPLIST_FILE = GNAdSampleNativeAd/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					../../../GenieeAdsSDK,
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.geniee.sample.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

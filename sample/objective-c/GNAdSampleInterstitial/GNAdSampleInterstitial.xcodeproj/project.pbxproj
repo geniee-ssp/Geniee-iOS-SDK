@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6858CF31C8068ED00462735 /* GNAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6858CDE1C8068ED00462735 /* GNAdSDK.framework */; };
+		B654223C1E6AE13200655928 /* GNAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B654223A1E6AE13200655928 /* GNAdSDK.framework */; };
 		B6858CF41C8068ED00462735 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858CE31C8068ED00462735 /* DDXMLElementAdditions.m */; };
 		B6858CF51C8068ED00462735 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858CE61C8068ED00462735 /* NSString+DDXML.m */; };
 		B6858CF61C8068ED00462735 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858CE91C8068ED00462735 /* DDXMLDocument.m */; };
@@ -39,7 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B6858CDE1C8068ED00462735 /* GNAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GNAdSDK.framework; sourceTree = "<group>"; };
+		B654223A1E6AE13200655928 /* GNAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GNAdSDK.framework; sourceTree = "<group>"; };
 		B6858CE21C8068ED00462735 /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
 		B6858CE31C8068ED00462735 /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
 		B6858CE51C8068ED00462735 /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 				FE9C27CB1A4426280094116F /* MessageUI.framework in Frameworks */,
 				FE9C27C91A4426230094116F /* QuartzCore.framework in Frameworks */,
 				FE9C27C71A44261D0094116F /* CoreMedia.framework in Frameworks */,
-				B6858CF31C8068ED00462735 /* GNAdSDK.framework in Frameworks */,
+				B654223C1E6AE13200655928 /* GNAdSDK.framework in Frameworks */,
 				FE9C27C51A4426140094116F /* CoreFoundation.framework in Frameworks */,
 				FE9C27C31A44260B0094116F /* AudioToolbox.framework in Frameworks */,
 				FE9C27C11A4426010094116F /* AVFoundation.framework in Frameworks */,
@@ -109,14 +109,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B6858CDD1C8068ED00462735 /* GenieeAdsSDK */ = {
+		B65422381E6AE13200655928 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				B6858CDE1C8068ED00462735 /* GNAdSDK.framework */,
+				B654223A1E6AE13200655928 /* GNAdSDK.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		B6858CDD1C8068ED00462735 /* GNAdSDK */ = {
+			isa = PBXGroup;
+			children = (
+				B65422381E6AE13200655928 /* Framework */,
 				B6858CDF1C8068ED00462735 /* libs */,
 			);
-			name = GenieeAdsSDK;
-			path = ../../../GenieeAdsSDK;
+			name = GNAdSDK;
+			path = ../../../GNAdSDK;
 			sourceTree = "<group>";
 		};
 		B6858CDF1C8068ED00462735 /* libs */ = {
@@ -183,7 +191,7 @@
 		FE9C275B1A44253F0094116F = {
 			isa = PBXGroup;
 			children = (
-				B6858CDD1C8068ED00462735 /* GenieeAdsSDK */,
+				B6858CDD1C8068ED00462735 /* GNAdSDK */,
 				FE9C27CE1A4429540094116F /* Toast */,
 				FE9C27B11A4425AD0094116F /* Frameworks */,
 				FE9C27661A44253F0094116F /* GNAdSampleInterstitial */,
@@ -280,7 +288,7 @@
 		FE9C275C1A44253F0094116F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Geniee;
 				TargetAttributes = {
 					FE9C27631A44253F0094116F = {
@@ -374,15 +382,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -395,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -416,8 +428,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -425,13 +439,14 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -446,7 +461,7 @@
 				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					../../../GenieeAdsSDK,
+					../../../GNAdSDK/Framework,
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,6 +472,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.geniee.sample.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -468,7 +484,7 @@
 				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					../../../GenieeAdsSDK,
+					../../../GNAdSDK/Framework,
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -479,6 +495,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.geniee.sample.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -1,3 +1,25 @@
+## Version 2.2.3
+- **Improve blank detection for Banner Ads**
+
+## Version 2.2.2
+- **Add Optout information for NativeAd**
+
+## Version 2.1.8
+
+- **Add MultiLoadAd for NativeAd**
+
+## Version 2.1.7
+
+- **Add Reward Video**
+
+## Version 2.1.6
+
+- **Change http to https for ATS**
+
+## Version 2.1.5
+
+- **fix for Xcode7.3 Swift**
+
 ## Version 2.1.4
 
 - **Add Natvie Ad click tracking**

@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6858CB91C805F7200462735 /* GNAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6858CA41C805F7200462735 /* GNAdSDK.framework */; };
+		B65422361E6ADF7500655928 /* GNAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65422341E6ADF7500655928 /* GNAdSDK.framework */; };
+		B671980E1E6BCB00003753AB /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B671980D1E6BCB00003753AB /* libxml2.2.tbd */; };
 		B6858CBA1C805F7200462735 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858CA91C805F7200462735 /* DDXMLElementAdditions.m */; };
 		B6858CBB1C805F7200462735 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858CAC1C805F7200462735 /* NSString+DDXML.m */; };
 		B6858CBC1C805F7200462735 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858CAF1C805F7200462735 /* DDXMLDocument.m */; };
@@ -20,7 +21,6 @@
 		FE77CC301A4420E8000D0B50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE77CC2F1A4420E8000D0B50 /* CoreGraphics.framework */; };
 		FE77CC321A4420F2000D0B50 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE77CC311A4420F2000D0B50 /* CoreLocation.framework */; };
 		FE77CC341A4420FD000D0B50 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE77CC331A4420FD000D0B50 /* CoreTelephony.framework */; };
-		FE77CC361A442107000D0B50 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FE77CC351A442107000D0B50 /* libxml2.dylib */; };
 		FE77CC381A44210E000D0B50 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE77CC371A44210E000D0B50 /* SystemConfiguration.framework */; };
 		FE77CC3A1A442114000D0B50 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE77CC391A442114000D0B50 /* AVFoundation.framework */; };
 		FE77CC3C1A44212A000D0B50 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE77CC3B1A44212A000D0B50 /* AudioToolbox.framework */; };
@@ -38,7 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B6858CA41C805F7200462735 /* GNAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GNAdSDK.framework; sourceTree = "<group>"; };
+		B65422341E6ADF7500655928 /* GNAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GNAdSDK.framework; sourceTree = "<group>"; };
+		B671980D1E6BCB00003753AB /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
 		B6858CA81C805F7200462735 /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
 		B6858CA91C805F7200462735 /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
 		B6858CAB1C805F7200462735 /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
@@ -59,7 +60,6 @@
 		FE77CC2F1A4420E8000D0B50 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		FE77CC311A4420F2000D0B50 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FE77CC331A4420FD000D0B50 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		FE77CC351A442107000D0B50 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		FE77CC371A44210E000D0B50 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		FE77CC391A442114000D0B50 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		FE77CC3B1A44212A000D0B50 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -85,16 +85,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B671980E1E6BCB00003753AB /* libxml2.2.tbd in Frameworks */,
 				FE77CC461A442157000D0B50 /* Foundation.framework in Frameworks */,
 				FE77CC441A44214C000D0B50 /* MessageUI.framework in Frameworks */,
 				FE77CC421A442144000D0B50 /* QuartzCore.framework in Frameworks */,
 				FE77CC401A44213E000D0B50 /* CoreMedia.framework in Frameworks */,
-				B6858CB91C805F7200462735 /* GNAdSDK.framework in Frameworks */,
+				B65422361E6ADF7500655928 /* GNAdSDK.framework in Frameworks */,
 				FE77CC3E1A442134000D0B50 /* CoreFoundation.framework in Frameworks */,
 				FE77CC3C1A44212A000D0B50 /* AudioToolbox.framework in Frameworks */,
 				FE77CC3A1A442114000D0B50 /* AVFoundation.framework in Frameworks */,
 				FE77CC381A44210E000D0B50 /* SystemConfiguration.framework in Frameworks */,
-				FE77CC361A442107000D0B50 /* libxml2.dylib in Frameworks */,
 				FE77CC341A4420FD000D0B50 /* CoreTelephony.framework in Frameworks */,
 				FE77CC321A4420F2000D0B50 /* CoreLocation.framework in Frameworks */,
 				FE77CC301A4420E8000D0B50 /* CoreGraphics.framework in Frameworks */,
@@ -106,14 +106,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B6858CA31C805F7200462735 /* GenieeAdsSDK */ = {
+		B65422321E6ADF7500655928 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				B6858CA41C805F7200462735 /* GNAdSDK.framework */,
+				B65422341E6ADF7500655928 /* GNAdSDK.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		B6858CA31C805F7200462735 /* GNAdSDK */ = {
+			isa = PBXGroup;
+			children = (
+				B65422321E6ADF7500655928 /* Framework */,
 				B6858CA51C805F7200462735 /* libs */,
 			);
-			name = GenieeAdsSDK;
-			path = ../../../GenieeAdsSDK;
+			name = GNAdSDK;
+			path = ../../../GNAdSDK;
 			sourceTree = "<group>";
 		};
 		B6858CA51C805F7200462735 /* libs */ = {
@@ -180,6 +188,7 @@
 		FE77CC2A1A4420BB000D0B50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B671980D1E6BCB00003753AB /* libxml2.2.tbd */,
 				FE77CC451A442157000D0B50 /* Foundation.framework */,
 				FE77CC431A44214C000D0B50 /* MessageUI.framework */,
 				FE77CC411A442144000D0B50 /* QuartzCore.framework */,
@@ -188,7 +197,6 @@
 				FE77CC3B1A44212A000D0B50 /* AudioToolbox.framework */,
 				FE77CC391A442114000D0B50 /* AVFoundation.framework */,
 				FE77CC371A44210E000D0B50 /* SystemConfiguration.framework */,
-				FE77CC351A442107000D0B50 /* libxml2.dylib */,
 				FE77CC331A4420FD000D0B50 /* CoreTelephony.framework */,
 				FE77CC311A4420F2000D0B50 /* CoreLocation.framework */,
 				FE77CC2F1A4420E8000D0B50 /* CoreGraphics.framework */,
@@ -201,7 +209,7 @@
 		FECFF2C51A43EC6A00A06E68 = {
 			isa = PBXGroup;
 			children = (
-				B6858CA31C805F7200462735 /* GenieeAdsSDK */,
+				B6858CA31C805F7200462735 /* GNAdSDK */,
 				FE77CC2A1A4420BB000D0B50 /* Frameworks */,
 				FECFF2D01A43EC6A00A06E68 /* GNAdSampleBanner */,
 				FECFF2CF1A43EC6A00A06E68 /* Products */,
@@ -267,7 +275,7 @@
 		FECFF2C61A43EC6A00A06E68 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Geniee;
 				TargetAttributes = {
 					FECFF2CD1A43EC6A00A06E68 = {
@@ -360,15 +368,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -381,7 +393,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -402,8 +414,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -411,13 +425,14 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -433,7 +448,7 @@
 				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					../../../GenieeAdsSDK,
+					../../../GNAdSDK/Framework,
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -444,6 +459,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.geniee.sample.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -456,7 +472,7 @@
 				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					../../../GenieeAdsSDK,
+					../../../GNAdSDK/Framework,
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -467,6 +483,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.geniee.sample.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
