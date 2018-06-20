@@ -13,5 +13,4 @@ target 'GNAdRewardVideoSample' do
   pod 'TapjoySDK', '~> 11.12.2'
   pod 'UnityAds', '~> 2.2.1'
   pod 'VungleSDK-iOS', '~> 6.2.0'
-  pod 'GNSRewardAdapterAdColony', :path => '../../../../rewardMediation/AdColony/'
 end
