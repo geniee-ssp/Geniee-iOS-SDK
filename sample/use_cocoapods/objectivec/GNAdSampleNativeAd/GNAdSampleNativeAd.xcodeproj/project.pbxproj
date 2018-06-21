@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E833B4CD20DB7F4100413035 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E833B4CC20DB7F4100413035 /* AppDelegate.m */; };
+		E833B4D320DB7F4100413035 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E833B4D120DB7F4100413035 /* Main.storyboard */; };
+		E833B4D520DB7F4300413035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E833B4D420DB7F4300413035 /* Assets.xcassets */; };
+		E833B4D820DB7F4300413035 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E833B4D620DB7F4300413035 /* LaunchScreen.storyboard */; };
+		E833B4DB20DB7F4300413035 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E833B4DA20DB7F4300413035 /* main.m */; };
+		E833B4E420DB809F00413035 /* GNQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E833B4E220DB809F00413035 /* GNQueue.m */; };
+		E833B4E820DB80AB00413035 /* MyCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = E833B4E720DB80AB00413035 /* MyCellData.m */; };
+		E833B4EB20DB813C00413035 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E833B4EA20DB813C00413035 /* TableViewCell.m */; };
+		E833B4EE20DB815700413035 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E833B4ED20DB815700413035 /* TableViewController.m */; };
+		FA0212F3A7D88F394B846EE8 /* libPods-GNAdSampleNativeAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9A3D7F89322764B39CCE7C /* libPods-GNAdSampleNativeAd.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		171EA01D026356C2646DBAA9 /* Pods-GNAdSampleNativeAd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdSampleNativeAd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdSampleNativeAd/Pods-GNAdSampleNativeAd.debug.xcconfig"; sourceTree = "<group>"; };
+		5A9A3D7F89322764B39CCE7C /* libPods-GNAdSampleNativeAd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GNAdSampleNativeAd.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76E322F3ED86A9A43FF99491 /* Pods-GNAdSampleNativeAd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdSampleNativeAd.release.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdSampleNativeAd/Pods-GNAdSampleNativeAd.release.xcconfig"; sourceTree = "<group>"; };
+		E833B4C820DB7F4100413035 /* GNAdSampleNativeAd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNAdSampleNativeAd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E833B4CB20DB7F4100413035 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E833B4CC20DB7F4100413035 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E833B4D220DB7F4100413035 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E833B4D420DB7F4300413035 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E833B4D720DB7F4300413035 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E833B4D920DB7F4300413035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E833B4DA20DB7F4300413035 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E833B4E220DB809F00413035 /* GNQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNQueue.m; sourceTree = "<group>"; };
+		E833B4E320DB809F00413035 /* GNQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNQueue.h; sourceTree = "<group>"; };
+		E833B4E620DB80AB00413035 /* MyCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCellData.h; sourceTree = "<group>"; };
+		E833B4E720DB80AB00413035 /* MyCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCellData.m; sourceTree = "<group>"; };
+		E833B4E920DB813200413035 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = "../../../../objective-c/GNAdSampleNativeAd/GNAdSampleNativeAd/TableViewController.h"; sourceTree = "<group>"; };
+		E833B4EA20DB813C00413035 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewCell.m; path = "../../../../objective-c/GNAdSampleNativeAd/GNAdSampleNativeAd/TableViewCell.m"; sourceTree = "<group>"; };
+		E833B4EC20DB814A00413035 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TableViewCell.h; path = "../../../../objective-c/GNAdSampleNativeAd/GNAdSampleNativeAd/TableViewCell.h"; sourceTree = "<group>"; };
+		E833B4ED20DB815700413035 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = "../../../../objective-c/GNAdSampleNativeAd/GNAdSampleNativeAd/TableViewController.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E833B4C520DB7F4100413035 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA0212F3A7D88F394B846EE8 /* libPods-GNAdSampleNativeAd.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D2B5B0735C63787799F55B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A9A3D7F89322764B39CCE7C /* libPods-GNAdSampleNativeAd.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E380F280C3EA884F05319FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				171EA01D026356C2646DBAA9 /* Pods-GNAdSampleNativeAd.debug.xcconfig */,
+				76E322F3ED86A9A43FF99491 /* Pods-GNAdSampleNativeAd.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E833B4BF20DB7F4100413035 = {
+			isa = PBXGroup;
+			children = (
+				E833B4CA20DB7F4100413035 /* GNAdSampleNativeAd */,
+				E833B4C920DB7F4100413035 /* Products */,
+				4E380F280C3EA884F05319FF /* Pods */,
+				1D2B5B0735C63787799F55B8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E833B4C920DB7F4100413035 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E833B4C820DB7F4100413035 /* GNAdSampleNativeAd.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E833B4CA20DB7F4100413035 /* GNAdSampleNativeAd */ = {
+			isa = PBXGroup;
+			children = (
+				E833B4E520DB80AB00413035 /* Models */,
+				E833B4E120DB809F00413035 /* DataStructure */,
+				E833B4CB20DB7F4100413035 /* AppDelegate.h */,
+				E833B4CC20DB7F4100413035 /* AppDelegate.m */,
+				E833B4E920DB813200413035 /* TableViewController.h */,
+				E833B4ED20DB815700413035 /* TableViewController.m */,
+				E833B4EC20DB814A00413035 /* TableViewCell.h */,
+				E833B4EA20DB813C00413035 /* TableViewCell.m */,
+				E833B4D120DB7F4100413035 /* Main.storyboard */,
+				E833B4D420DB7F4300413035 /* Assets.xcassets */,
+				E833B4D620DB7F4300413035 /* LaunchScreen.storyboard */,
+				E833B4D920DB7F4300413035 /* Info.plist */,
+				E833B4DA20DB7F4300413035 /* main.m */,
+			);
+			path = GNAdSampleNativeAd;
+			sourceTree = "<group>";
+		};
+		E833B4E120DB809F00413035 /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				E833B4E220DB809F00413035 /* GNQueue.m */,
+				E833B4E320DB809F00413035 /* GNQueue.h */,
+			);
+			path = DataStructure;
+			sourceTree = "<group>";
+		};
+		E833B4E520DB80AB00413035 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E833B4E620DB80AB00413035 /* MyCellData.h */,
+				E833B4E720DB80AB00413035 /* MyCellData.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E833B4C720DB7F4100413035 /* GNAdSampleNativeAd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E833B4DE20DB7F4300413035 /* Build configuration list for PBXNativeTarget "GNAdSampleNativeAd" */;
+			buildPhases = (
+				F1B298B7B87FD9F18725BFB7 /* [CP] Check Pods Manifest.lock */,
+				E833B4C420DB7F4100413035 /* Sources */,
+				E833B4C520DB7F4100413035 /* Frameworks */,
+				E833B4C620DB7F4100413035 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GNAdSampleNativeAd;
+			productName = GNAdSampleNativeAd;
+			productReference = E833B4C820DB7F4100413035 /* GNAdSampleNativeAd.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E833B4C020DB7F4100413035 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Geniee;
+				TargetAttributes = {
+					E833B4C720DB7F4100413035 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = E833B4C320DB7F4100413035 /* Build configuration list for PBXProject "GNAdSampleNativeAd" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E833B4BF20DB7F4100413035;
+			productRefGroup = E833B4C920DB7F4100413035 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E833B4C720DB7F4100413035 /* GNAdSampleNativeAd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E833B4C620DB7F4100413035 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E833B4D820DB7F4300413035 /* LaunchScreen.storyboard in Resources */,
+				E833B4D520DB7F4300413035 /* Assets.xcassets in Resources */,
+				E833B4D320DB7F4100413035 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F1B298B7B87FD9F18725BFB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GNAdSampleNativeAd-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E833B4C420DB7F4100413035 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E833B4EB20DB813C00413035 /* TableViewCell.m in Sources */,
+				E833B4E820DB80AB00413035 /* MyCellData.m in Sources */,
+				E833B4DB20DB7F4300413035 /* main.m in Sources */,
+				E833B4E420DB809F00413035 /* GNQueue.m in Sources */,
+				E833B4EE20DB815700413035 /* TableViewController.m in Sources */,
+				E833B4CD20DB7F4100413035 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E833B4D120DB7F4100413035 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E833B4D220DB7F4100413035 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E833B4D620DB7F4300413035 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E833B4D720DB7F4300413035 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E833B4DC20DB7F4300413035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E833B4DD20DB7F4300413035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E833B4DF20DB7F4300413035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 171EA01D026356C2646DBAA9 /* Pods-GNAdSampleNativeAd.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RKMVWZ32F4;
+				INFOPLIST_FILE = GNAdSampleNativeAd/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.geniee.GNAdSampleNativeAd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E833B4E020DB7F4300413035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76E322F3ED86A9A43FF99491 /* Pods-GNAdSampleNativeAd.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RKMVWZ32F4;
+				INFOPLIST_FILE = GNAdSampleNativeAd/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.geniee.GNAdSampleNativeAd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E833B4C320DB7F4100413035 /* Build configuration list for PBXProject "GNAdSampleNativeAd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E833B4DC20DB7F4300413035 /* Debug */,
+				E833B4DD20DB7F4300413035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E833B4DE20DB7F4300413035 /* Build configuration list for PBXNativeTarget "GNAdSampleNativeAd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E833B4DF20DB7F4300413035 /* Debug */,
+				E833B4E020DB7F4300413035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E833B4C020DB7F4100413035 /* Project object */;
+}
