@@ -40,7 +40,7 @@ class ViewController: UIViewController, UITextFieldDelegate, GNAdViewDelegate {
         return true
     }
     
-    func shouldStartExternalBrowser(withClick nativeAd: GNAdView, landingURL: String) -> Bool {
+    func shouldStartExternalBrowser(withClick adView: GNAdView!, landingURL: String!) -> Bool {
         NSLog("ViewController: shouldStartExternalBrowserWithClick : %@.", landingURL)
         return true
     }
