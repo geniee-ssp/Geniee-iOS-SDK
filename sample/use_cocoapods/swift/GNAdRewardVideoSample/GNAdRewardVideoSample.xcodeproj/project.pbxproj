@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D1ABF5B2B8415E81D4533E6 /* libPods-GNAdRewardVideoSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDA3AB38E035D5C16264B7A /* libPods-GNAdRewardVideoSample.a */; };
+		E8899FEE20D8D12000BE7091 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8899FED20D8D12000BE7091 /* AppDelegate.swift */; };
+		E8899FF020D8D12000BE7091 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8899FEF20D8D12000BE7091 /* ViewController.swift */; };
+		E8899FF320D8D12000BE7091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8899FF120D8D12000BE7091 /* Main.storyboard */; };
+		E8899FF520D8D12100BE7091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8899FF420D8D12100BE7091 /* Assets.xcassets */; };
+		E8899FF820D8D12100BE7091 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8899FF620D8D12100BE7091 /* LaunchScreen.storyboard */; };
+		E8CECFB620DA70CD007779A8 /* GNSAdapterUnityAdsRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CECF9C20DA70CC007779A8 /* GNSAdapterUnityAdsRewardVideoAd.m */; };
+		E8CECFB720DA70CD007779A8 /* GNSAdapterVungleRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CECFA020DA70CC007779A8 /* GNSAdapterVungleRewardVideoAd.m */; };
+		E8CECFB820DA70CD007779A8 /* GNSAdapterAmoadRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CECFA220DA70CC007779A8 /* GNSAdapterAmoadRewardVideoAd.m */; };
+		E8CECFB920DA70CD007779A8 /* GNSAdapterTapjoyRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CECFA520DA70CC007779A8 /* GNSAdapterTapjoyRewardVideoAd.m */; };
+		E8CECFBA20DA70CD007779A8 /* GNSAdapterAppLovinRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CECFA820DA70CC007779A8 /* GNSAdapterAppLovinRewardVideoAd.m */; };
+		E8CECFBB20DA70CD007779A8 /* GNSAdapterAdColonyRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CECFAB20DA70CC007779A8 /* GNSAdapterAdColonyRewardVideoAd.m */; };
+		E8CECFBC20DA70CD007779A8 /* GNSAdapterMaioRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CECFAF20DA70CD007779A8 /* GNSAdapterMaioRewardVideoAd.m */; };
+		E8CECFBD20DA70CD007779A8 /* GNSAdapterNendRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CECFB220DA70CD007779A8 /* GNSAdapterNendRewardVideoAd.m */; };
+		E8CECFBE20DA70CD007779A8 /* GNSAdapterCARewardRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CECFB420DA70CD007779A8 /* GNSAdapterCARewardRewardVideoAd.m */; };
+		E8CED00020DA74BB007779A8 /* MediaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8CECFFF20DA74BB007779A8 /* MediaSDK.framework */; };
+		E8CED03220DA76EE007779A8 /* amoad_link_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CED01E20DA76ED007779A8 /* amoad_link_btn_h.png */; };
+		E8CED03320DA76EE007779A8 /* amoad_link_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CED02020DA76ED007779A8 /* amoad_link_btn.png */; };
+		E8CED03420DA76EE007779A8 /* amoad_panel.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CED02220DA76ED007779A8 /* amoad_panel.png */; };
+		E8CED03520DA76EE007779A8 /* libAMoAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8CED02720DA76ED007779A8 /* libAMoAd.a */; };
+		E8CED03620DA76EE007779A8 /* amoad_close_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CED02920DA76ED007779A8 /* amoad_close_btn_h.png */; };
+		E8CED03720DA76EE007779A8 /* amoad_close_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CED02B20DA76ED007779A8 /* amoad_close_btn.png */; };
+		E8CED03820DA76EE007779A8 /* amoad_panel_l.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CED02E20DA76ED007779A8 /* amoad_panel_l.png */; };
+		E8CED03A20DA76FF007779A8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8CED03920DA76FF007779A8 /* AdSupport.framework */; };
+		E8CED03C20DA770C007779A8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8CED03B20DA770C007779A8 /* AVFoundation.framework */; };
+		E8CED03E20DA7715007779A8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8CED03D20DA7715007779A8 /* CoreMedia.framework */; };
+		E8CED04020DA771D007779A8 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8CED03F20DA771C007779A8 /* ImageIO.framework */; };
+		E8CED04220DA7730007779A8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8CED04120DA7730007779A8 /* StoreKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5AEC8EFEE82A23D0A8C370DB /* Pods-GNAdRewardVideoSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdRewardVideoSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdRewardVideoSample/Pods-GNAdRewardVideoSample.release.xcconfig"; sourceTree = "<group>"; };
+		E8899FEA20D8D12000BE7091 /* GNAdRewardVideoSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNAdRewardVideoSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8899FED20D8D12000BE7091 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8899FEF20D8D12000BE7091 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E8899FF220D8D12000BE7091 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8899FF420D8D12100BE7091 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8899FF720D8D12100BE7091 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8899FF920D8D12100BE7091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8CECF9420D8DDF1007779A8 /* GNAdRewardVideo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GNAdRewardVideo-Bridging-Header.h"; sourceTree = "<group>"; };
+		E8CECF9C20DA70CC007779A8 /* GNSAdapterUnityAdsRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterUnityAdsRewardVideoAd.m; sourceTree = "<group>"; };
+		E8CECF9D20DA70CC007779A8 /* GNSAdapterUnityAdsRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterUnityAdsRewardVideoAd.h; sourceTree = "<group>"; };
+		E8CECF9F20DA70CC007779A8 /* GNSAdapterVungleRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterVungleRewardVideoAd.h; sourceTree = "<group>"; };
+		E8CECFA020DA70CC007779A8 /* GNSAdapterVungleRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterVungleRewardVideoAd.m; sourceTree = "<group>"; };
+		E8CECFA220DA70CC007779A8 /* GNSAdapterAmoadRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterAmoadRewardVideoAd.m; sourceTree = "<group>"; };
+		E8CECFA320DA70CC007779A8 /* GNSAdapterAmoadRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterAmoadRewardVideoAd.h; sourceTree = "<group>"; };
+		E8CECFA520DA70CC007779A8 /* GNSAdapterTapjoyRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterTapjoyRewardVideoAd.m; sourceTree = "<group>"; };
+		E8CECFA620DA70CC007779A8 /* GNSAdapterTapjoyRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterTapjoyRewardVideoAd.h; sourceTree = "<group>"; };
+		E8CECFA820DA70CC007779A8 /* GNSAdapterAppLovinRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterAppLovinRewardVideoAd.m; sourceTree = "<group>"; };
+		E8CECFA920DA70CC007779A8 /* GNSAdapterAppLovinRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterAppLovinRewardVideoAd.h; sourceTree = "<group>"; };
+		E8CECFAB20DA70CC007779A8 /* GNSAdapterAdColonyRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterAdColonyRewardVideoAd.m; sourceTree = "<group>"; };
+		E8CECFAC20DA70CD007779A8 /* GNSAdapterAdColonyRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterAdColonyRewardVideoAd.h; sourceTree = "<group>"; };
+		E8CECFAE20DA70CD007779A8 /* GNSAdapterMaioRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterMaioRewardVideoAd.h; sourceTree = "<group>"; };
+		E8CECFAF20DA70CD007779A8 /* GNSAdapterMaioRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterMaioRewardVideoAd.m; sourceTree = "<group>"; };
+		E8CECFB120DA70CD007779A8 /* GNSAdapterNendRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterNendRewardVideoAd.h; sourceTree = "<group>"; };
+		E8CECFB220DA70CD007779A8 /* GNSAdapterNendRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterNendRewardVideoAd.m; sourceTree = "<group>"; };
+		E8CECFB420DA70CD007779A8 /* GNSAdapterCARewardRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterCARewardRewardVideoAd.m; sourceTree = "<group>"; };
+		E8CECFB520DA70CD007779A8 /* GNSAdapterCARewardRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterCARewardRewardVideoAd.h; sourceTree = "<group>"; };
+		E8CECFFF20DA74BB007779A8 /* MediaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MediaSDK.framework; sourceTree = "<group>"; };
+		E8CED01E20DA76ED007779A8 /* amoad_link_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_link_btn_h.png; sourceTree = "<group>"; };
+		E8CED01F20DA76ED007779A8 /* AMoAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdView.h; sourceTree = "<group>"; };
+		E8CED02020DA76ED007779A8 /* amoad_link_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_link_btn.png; sourceTree = "<group>"; };
+		E8CED02120DA76ED007779A8 /* AMoAdItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdItem.h; sourceTree = "<group>"; };
+		E8CED02220DA76ED007779A8 /* amoad_panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_panel.png; sourceTree = "<group>"; };
+		E8CED02320DA76ED007779A8 /* AMoAdInfeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdInfeed.h; sourceTree = "<group>"; };
+		E8CED02420DA76ED007779A8 /* AMoAdNativePreRoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativePreRoll.h; sourceTree = "<group>"; };
+		E8CED02520DA76ED007779A8 /* AMoAdAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdAnalytics.h; sourceTree = "<group>"; };
+		E8CED02620DA76ED007779A8 /* AMoAdWeb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdWeb.h; sourceTree = "<group>"; };
+		E8CED02720DA76ED007779A8 /* libAMoAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAMoAd.a; sourceTree = "<group>"; };
+		E8CED02820DA76ED007779A8 /* AMoAdNativeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativeView.h; sourceTree = "<group>"; };
+		E8CED02920DA76ED007779A8 /* amoad_close_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_close_btn_h.png; sourceTree = "<group>"; };
+		E8CED02A20DA76ED007779A8 /* AMoAdNativeMainVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativeMainVideoView.h; sourceTree = "<group>"; };
+		E8CED02B20DA76ED007779A8 /* amoad_close_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_close_btn.png; sourceTree = "<group>"; };
+		E8CED02C20DA76ED007779A8 /* AMoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAd.h; sourceTree = "<group>"; };
+		E8CED02D20DA76ED007779A8 /* AMoAdInterstitialVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdInterstitialVideo.h; sourceTree = "<group>"; };
+		E8CED02E20DA76ED007779A8 /* amoad_panel_l.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_panel_l.png; sourceTree = "<group>"; };
+		E8CED02F20DA76ED007779A8 /* AMoAdLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdLogger.h; sourceTree = "<group>"; };
+		E8CED03020DA76ED007779A8 /* AMoAdInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdInterstitial.h; sourceTree = "<group>"; };
+		E8CED03120DA76ED007779A8 /* AMoAdList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdList.h; sourceTree = "<group>"; };
+		E8CED03920DA76FF007779A8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		E8CED03B20DA770C007779A8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E8CED03D20DA7715007779A8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		E8CED03F20DA771C007779A8 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		E8CED04120DA7730007779A8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		EFDA3AB38E035D5C16264B7A /* libPods-GNAdRewardVideoSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GNAdRewardVideoSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F663CD704AC51422DC1D98F8 /* Pods-GNAdRewardVideoSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdRewardVideoSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdRewardVideoSample/Pods-GNAdRewardVideoSample.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8899FE720D8D12000BE7091 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8CED04220DA7730007779A8 /* StoreKit.framework in Frameworks */,
+				E8CED04020DA771D007779A8 /* ImageIO.framework in Frameworks */,
+				E8CED03E20DA7715007779A8 /* CoreMedia.framework in Frameworks */,
+				E8CED03C20DA770C007779A8 /* AVFoundation.framework in Frameworks */,
+				E8CED03A20DA76FF007779A8 /* AdSupport.framework in Frameworks */,
+				E8CED03520DA76EE007779A8 /* libAMoAd.a in Frameworks */,
+				E8CED00020DA74BB007779A8 /* MediaSDK.framework in Frameworks */,
+				5D1ABF5B2B8415E81D4533E6 /* libPods-GNAdRewardVideoSample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3EB938CDB8A6AA78F5CA3D74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8CED04120DA7730007779A8 /* StoreKit.framework */,
+				E8CED03F20DA771C007779A8 /* ImageIO.framework */,
+				E8CED03D20DA7715007779A8 /* CoreMedia.framework */,
+				E8CED03B20DA770C007779A8 /* AVFoundation.framework */,
+				E8CED03920DA76FF007779A8 /* AdSupport.framework */,
+				E8CED01D20DA76ED007779A8 /* AMoAdSdk */,
+				E8CECFFF20DA74BB007779A8 /* MediaSDK.framework */,
+				EFDA3AB38E035D5C16264B7A /* libPods-GNAdRewardVideoSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C79A714ABE916D1EC078793B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F663CD704AC51422DC1D98F8 /* Pods-GNAdRewardVideoSample.debug.xcconfig */,
+				5AEC8EFEE82A23D0A8C370DB /* Pods-GNAdRewardVideoSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E8899FE120D8D12000BE7091 = {
+			isa = PBXGroup;
+			children = (
+				E8899FEC20D8D12000BE7091 /* GNAdRewardVideoSample */,
+				E8899FEB20D8D12000BE7091 /* Products */,
+				C79A714ABE916D1EC078793B /* Pods */,
+				3EB938CDB8A6AA78F5CA3D74 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E8899FEB20D8D12000BE7091 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8899FEA20D8D12000BE7091 /* GNAdRewardVideoSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8899FEC20D8D12000BE7091 /* GNAdRewardVideoSample */ = {
+			isa = PBXGroup;
+			children = (
+				E8CECF9A20DA70CC007779A8 /* Adapter */,
+				E8899FED20D8D12000BE7091 /* AppDelegate.swift */,
+				E8899FEF20D8D12000BE7091 /* ViewController.swift */,
+				E8899FF120D8D12000BE7091 /* Main.storyboard */,
+				E8899FF420D8D12100BE7091 /* Assets.xcassets */,
+				E8899FF620D8D12100BE7091 /* LaunchScreen.storyboard */,
+				E8899FF920D8D12100BE7091 /* Info.plist */,
+				E8CECF9420D8DDF1007779A8 /* GNAdRewardVideo-Bridging-Header.h */,
+			);
+			path = GNAdRewardVideoSample;
+			sourceTree = "<group>";
+		};
+		E8CECF9A20DA70CC007779A8 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				E8CECF9B20DA70CC007779A8 /* UnityAds */,
+				E8CECF9E20DA70CC007779A8 /* Vungle */,
+				E8CECFA120DA70CC007779A8 /* Amoad */,
+				E8CECFA420DA70CC007779A8 /* Tapjoy */,
+				E8CECFA720DA70CC007779A8 /* AppLovin */,
+				E8CECFAA20DA70CC007779A8 /* AdColony */,
+				E8CECFAD20DA70CD007779A8 /* Maio */,
+				E8CECFB020DA70CD007779A8 /* Nend */,
+				E8CECFB320DA70CD007779A8 /* CAReward */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		E8CECF9B20DA70CC007779A8 /* UnityAds */ = {
+			isa = PBXGroup;
+			children = (
+				E8CECF9C20DA70CC007779A8 /* GNSAdapterUnityAdsRewardVideoAd.m */,
+				E8CECF9D20DA70CC007779A8 /* GNSAdapterUnityAdsRewardVideoAd.h */,
+			);
+			path = UnityAds;
+			sourceTree = "<group>";
+		};
+		E8CECF9E20DA70CC007779A8 /* Vungle */ = {
+			isa = PBXGroup;
+			children = (
+				E8CECF9F20DA70CC007779A8 /* GNSAdapterVungleRewardVideoAd.h */,
+				E8CECFA020DA70CC007779A8 /* GNSAdapterVungleRewardVideoAd.m */,
+			);
+			path = Vungle;
+			sourceTree = "<group>";
+		};
+		E8CECFA120DA70CC007779A8 /* Amoad */ = {
+			isa = PBXGroup;
+			children = (
+				E8CECFA220DA70CC007779A8 /* GNSAdapterAmoadRewardVideoAd.m */,
+				E8CECFA320DA70CC007779A8 /* GNSAdapterAmoadRewardVideoAd.h */,
+			);
+			path = Amoad;
+			sourceTree = "<group>";
+		};
+		E8CECFA420DA70CC007779A8 /* Tapjoy */ = {
+			isa = PBXGroup;
+			children = (
+				E8CECFA520DA70CC007779A8 /* GNSAdapterTapjoyRewardVideoAd.m */,
+				E8CECFA620DA70CC007779A8 /* GNSAdapterTapjoyRewardVideoAd.h */,
+			);
+			path = Tapjoy;
+			sourceTree = "<group>";
+		};
+		E8CECFA720DA70CC007779A8 /* AppLovin */ = {
+			isa = PBXGroup;
+			children = (
+				E8CECFA820DA70CC007779A8 /* GNSAdapterAppLovinRewardVideoAd.m */,
+				E8CECFA920DA70CC007779A8 /* GNSAdapterAppLovinRewardVideoAd.h */,
+			);
+			path = AppLovin;
+			sourceTree = "<group>";
+		};
+		E8CECFAA20DA70CC007779A8 /* AdColony */ = {
+			isa = PBXGroup;
+			children = (
+				E8CECFAB20DA70CC007779A8 /* GNSAdapterAdColonyRewardVideoAd.m */,
+				E8CECFAC20DA70CD007779A8 /* GNSAdapterAdColonyRewardVideoAd.h */,
+			);
+			path = AdColony;
+			sourceTree = "<group>";
+		};
+		E8CECFAD20DA70CD007779A8 /* Maio */ = {
+			isa = PBXGroup;
+			children = (
+				E8CECFAE20DA70CD007779A8 /* GNSAdapterMaioRewardVideoAd.h */,
+				E8CECFAF20DA70CD007779A8 /* GNSAdapterMaioRewardVideoAd.m */,
+			);
+			path = Maio;
+			sourceTree = "<group>";
+		};
+		E8CECFB020DA70CD007779A8 /* Nend */ = {
+			isa = PBXGroup;
+			children = (
+				E8CECFB120DA70CD007779A8 /* GNSAdapterNendRewardVideoAd.h */,
+				E8CECFB220DA70CD007779A8 /* GNSAdapterNendRewardVideoAd.m */,
+			);
+			path = Nend;
+			sourceTree = "<group>";
+		};
+		E8CECFB320DA70CD007779A8 /* CAReward */ = {
+			isa = PBXGroup;
+			children = (
+				E8CECFB420DA70CD007779A8 /* GNSAdapterCARewardRewardVideoAd.m */,
+				E8CECFB520DA70CD007779A8 /* GNSAdapterCARewardRewardVideoAd.h */,
+			);
+			path = CAReward;
+			sourceTree = "<group>";
+		};
+		E8CED01D20DA76ED007779A8 /* AMoAdSdk */ = {
+			isa = PBXGroup;
+			children = (
+				E8CED01E20DA76ED007779A8 /* amoad_link_btn_h.png */,
+				E8CED01F20DA76ED007779A8 /* AMoAdView.h */,
+				E8CED02020DA76ED007779A8 /* amoad_link_btn.png */,
+				E8CED02120DA76ED007779A8 /* AMoAdItem.h */,
+				E8CED02220DA76ED007779A8 /* amoad_panel.png */,
+				E8CED02320DA76ED007779A8 /* AMoAdInfeed.h */,
+				E8CED02420DA76ED007779A8 /* AMoAdNativePreRoll.h */,
+				E8CED02520DA76ED007779A8 /* AMoAdAnalytics.h */,
+				E8CED02620DA76ED007779A8 /* AMoAdWeb.h */,
+				E8CED02720DA76ED007779A8 /* libAMoAd.a */,
+				E8CED02820DA76ED007779A8 /* AMoAdNativeView.h */,
+				E8CED02920DA76ED007779A8 /* amoad_close_btn_h.png */,
+				E8CED02A20DA76ED007779A8 /* AMoAdNativeMainVideoView.h */,
+				E8CED02B20DA76ED007779A8 /* amoad_close_btn.png */,
+				E8CED02C20DA76ED007779A8 /* AMoAd.h */,
+				E8CED02D20DA76ED007779A8 /* AMoAdInterstitialVideo.h */,
+				E8CED02E20DA76ED007779A8 /* amoad_panel_l.png */,
+				E8CED02F20DA76ED007779A8 /* AMoAdLogger.h */,
+				E8CED03020DA76ED007779A8 /* AMoAdInterstitial.h */,
+				E8CED03120DA76ED007779A8 /* AMoAdList.h */,
+			);
+			path = AMoAdSdk;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8899FE920D8D12000BE7091 /* GNAdRewardVideoSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8899FFC20D8D12100BE7091 /* Build configuration list for PBXNativeTarget "GNAdRewardVideoSample" */;
+			buildPhases = (
+				9E10513CFDDB766D80262400 /* [CP] Check Pods Manifest.lock */,
+				E8899FE620D8D12000BE7091 /* Sources */,
+				E8899FE720D8D12000BE7091 /* Frameworks */,
+				E8899FE820D8D12000BE7091 /* Resources */,
+				6B91C525F678EF317F44EFA3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GNAdRewardVideoSample;
+			productName = GNAdRewardVideoSample;
+			productReference = E8899FEA20D8D12000BE7091 /* GNAdRewardVideoSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8899FE220D8D12000BE7091 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Geniee;
+				TargetAttributes = {
+					E8899FE920D8D12000BE7091 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = E8899FE520D8D12000BE7091 /* Build configuration list for PBXProject "GNAdRewardVideoSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8899FE120D8D12000BE7091;
+			productRefGroup = E8899FEB20D8D12000BE7091 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8899FE920D8D12000BE7091 /* GNAdRewardVideoSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8899FE820D8D12000BE7091 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8899FF820D8D12100BE7091 /* LaunchScreen.storyboard in Resources */,
+				E8CED03620DA76EE007779A8 /* amoad_close_btn_h.png in Resources */,
+				E8899FF520D8D12100BE7091 /* Assets.xcassets in Resources */,
+				E8CED03320DA76EE007779A8 /* amoad_link_btn.png in Resources */,
+				E8CED03420DA76EE007779A8 /* amoad_panel.png in Resources */,
+				E8CED03820DA76EE007779A8 /* amoad_panel_l.png in Resources */,
+				E8CED03220DA76EE007779A8 /* amoad_link_btn_h.png in Resources */,
+				E8CED03720DA76EE007779A8 /* amoad_close_btn.png in Resources */,
+				E8899FF320D8D12000BE7091 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B91C525F678EF317F44EFA3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GNAdRewardVideoSample/Pods-GNAdRewardVideoSample-resources.sh",
+				"${PODS_ROOT}/NendSDK_iOS/NendAd.embeddedframework/NendAd.framework/Resources/NendAdResource.bundle",
+				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v11.12.2/Libraries/Tapjoy.embeddedframework/Resources/TapjoyResources.bundle",
+				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v11.12.2/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Resources/TapjoyResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NendAdResource.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TapjoyResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GNAdRewardVideoSample/Pods-GNAdRewardVideoSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E10513CFDDB766D80262400 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GNAdRewardVideoSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8899FE620D8D12000BE7091 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8CECFBC20DA70CD007779A8 /* GNSAdapterMaioRewardVideoAd.m in Sources */,
+				E8899FF020D8D12000BE7091 /* ViewController.swift in Sources */,
+				E8CECFB920DA70CD007779A8 /* GNSAdapterTapjoyRewardVideoAd.m in Sources */,
+				E8CECFB620DA70CD007779A8 /* GNSAdapterUnityAdsRewardVideoAd.m in Sources */,
+				E8CECFB720DA70CD007779A8 /* GNSAdapterVungleRewardVideoAd.m in Sources */,
+				E8CECFBE20DA70CD007779A8 /* GNSAdapterCARewardRewardVideoAd.m in Sources */,
+				E8CECFB820DA70CD007779A8 /* GNSAdapterAmoadRewardVideoAd.m in Sources */,
+				E8CECFBA20DA70CD007779A8 /* GNSAdapterAppLovinRewardVideoAd.m in Sources */,
+				E8CECFBB20DA70CD007779A8 /* GNSAdapterAdColonyRewardVideoAd.m in Sources */,
+				E8CECFBD20DA70CD007779A8 /* GNSAdapterNendRewardVideoAd.m in Sources */,
+				E8899FEE20D8D12000BE7091 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E8899FF120D8D12000BE7091 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8899FF220D8D12000BE7091 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8899FF620D8D12100BE7091 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8899FF720D8D12100BE7091 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8899FFA20D8D12100BE7091 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E8899FFB20D8D12100BE7091 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8899FFD20D8D12100BE7091 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F663CD704AC51422DC1D98F8 /* Pods-GNAdRewardVideoSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RKMVWZ32F4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GNAdRewardVideoSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AMoAdSdk",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.geniee.GNAdRewardVideoSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GNAdRewardVideoSample/GNAdRewardVideo-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8899FFE20D8D12100BE7091 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AEC8EFEE82A23D0A8C370DB /* Pods-GNAdRewardVideoSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RKMVWZ32F4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GNAdRewardVideoSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AMoAdSdk",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.geniee.GNAdRewardVideoSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GNAdRewardVideoSample/GNAdRewardVideo-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8899FE520D8D12000BE7091 /* Build configuration list for PBXProject "GNAdRewardVideoSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8899FFA20D8D12100BE7091 /* Debug */,
+				E8899FFB20D8D12100BE7091 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8899FFC20D8D12100BE7091 /* Build configuration list for PBXNativeTarget "GNAdRewardVideoSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8899FFD20D8D12100BE7091 /* Debug */,
+				E8899FFE20D8D12100BE7091 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8899FE220D8D12000BE7091 /* Project object */;
+}
