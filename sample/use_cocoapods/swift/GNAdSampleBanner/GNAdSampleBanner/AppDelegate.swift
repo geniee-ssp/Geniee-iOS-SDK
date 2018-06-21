@@ -1,10 +1,6 @@
 //
 //  AppDelegate.swift
 //  GNAdSampleBanner
-//
-//  Created by Tomoyasu Kouta on 2018/06/21.
-//  Copyright © 2018年 Geniee. All rights reserved.
-//
 
 import UIKit
 
