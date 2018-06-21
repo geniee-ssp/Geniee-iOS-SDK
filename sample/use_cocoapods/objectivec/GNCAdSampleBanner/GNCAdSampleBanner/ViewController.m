@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import <AdColony/AdColony.h>
 
 @interface ViewController ()
 

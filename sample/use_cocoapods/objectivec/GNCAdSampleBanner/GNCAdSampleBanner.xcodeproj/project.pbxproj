@@ -106,7 +106,6 @@
 				BBE1E55520D0EBA20035A52A /* Sources */,
 				BBE1E55620D0EBA20035A52A /* Frameworks */,
 				BBE1E55720D0EBA20035A52A /* Resources */,
-				7C515D2462D18F50BBB4205C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,24 +162,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7C515D2462D18F50BBB4205C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GNCAdSampleBanner/Pods-GNCAdSampleBanner-frameworks.sh",
-				"${PODS_ROOT}/../../../../../rewardMediation/AdColony/GNSAdapterAdColonyRewardVideo.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GNSAdapterAdColonyRewardVideo.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GNCAdSampleBanner/Pods-GNCAdSampleBanner-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		BE85388F96B499B296AA4857 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
