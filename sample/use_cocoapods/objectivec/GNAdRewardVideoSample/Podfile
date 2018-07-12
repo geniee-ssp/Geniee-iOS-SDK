@@ -6,7 +6,7 @@ target 'GNAdRewardVideoSample' do
   # use_frameworks!
 
   # Pods for GNAdRewardVideoSample
-  pod 'Geniee-iOS-SDK', :git => 'https://github.com/geniee-ssp/Geniee-iOS-SDK.git', :branch => 'master'
+  pod 'Geniee-iOS-SDK', :git => 'https://github.com/geniee-ssp/Geniee-iOS-SDK.git', :branch => 'develop'
   pod 'AdColony', '~> 3.3.4'
   pod 'AppLovinSDK','~> 5.0.1'
   pod 'MaioSDK', '~> 1.3.0'
