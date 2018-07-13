@@ -1,0 +1,6 @@
+framework module GNAdDFPRewardMediationAdapter {
+  umbrella header "GNAdDFPRewardMediationAdapter.h"
+
+  export *
+  module * { export * }
+}
