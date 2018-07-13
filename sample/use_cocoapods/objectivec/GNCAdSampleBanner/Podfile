@@ -6,6 +6,6 @@ target 'GNCAdSampleBanner' do
   # use_frameworks!
 # when local test path
 
- pod 'Geniee-iOS-SDK', :git => 'https://github.com/geniee-ssp/Geniee-iOS-SDK.git', :branch => 'master'
+ pod 'Geniee-iOS-SDK', :git => 'https://github.com/geniee-ssp/Geniee-iOS-SDK.git', :branch => 'develop'
 
 end
