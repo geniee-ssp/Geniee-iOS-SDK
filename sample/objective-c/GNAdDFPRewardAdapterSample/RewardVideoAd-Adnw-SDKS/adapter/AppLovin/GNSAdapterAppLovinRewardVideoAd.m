@@ -38,7 +38,7 @@ ALAdDisplayDelegate, ALAdVideoPlaybackDelegate>
 }
 
 + (NSString *)adapterVersion {
-    return @"2.4.4";
+    return @"2.5.0";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {

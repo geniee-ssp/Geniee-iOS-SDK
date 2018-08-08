@@ -34,7 +34,7 @@ static BOOL loggingEnabled = YES;
 }
 
 + (NSString *)adapterVersion {
-    return @"2.4.4";
+    return @"2.5.0";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {
@@ -67,7 +67,7 @@ static BOOL loggingEnabled = YES;
 - (void)setTimerWith:(NSInteger)timeout
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        self->_timer = [NSTimer scheduledTimerWithTimeInterval:timeout
+        _timer = [NSTimer scheduledTimerWithTimeInterval:timeout
                                                   target:self
                                                 selector:@selector(sendDidFailToLoadRewardVideoWithTimeOut)
                                                 userInfo:nil
@@ -107,12 +107,12 @@ static BOOL loggingEnabled = YES;
     
     // set Timer
     [self setTimerWith:timeout];
-    
+
     _ad_available = NO;
-    
+
     self.reward = nil;
     GNSExtrasAdColony *extras = [self.connector networkExtras];
-    
+
     [self ALLog:[NSString stringWithFormat:@"AppId=%@", extras.app_id]];
     [self ALLog:[NSString stringWithFormat:@"ZoneId=%@", extras.zone_id]];
     
@@ -121,23 +121,23 @@ static BOOL loggingEnabled = YES;
     dispatch_async(dispatch_get_main_queue(), ^{
         __strong GNSAdapterAdColonyRewardVideoAd* strongSelf = weakSelf;
         if (!strongSelf) return;
-        
+
         //Initialize AdColony on initial launch
         [AdColony configureWithAppID:extras.app_id zoneIDs:@[extras.zone_id] options:nil completion:^(NSArray<AdColonyZone *> * zones) {
-            
+
             //Set the zone's reward handler
             AdColonyZone *zone = [zones firstObject];
             zone.reward = ^(BOOL success, NSString *name, int amount) {
-                
+
                 if (success) {
-                    
+
                     [self ALLog:[NSString stringWithFormat:@"rewarded successfully"]];
-                    
+
                     GNSExtrasAdColony *extras = [self.connector networkExtras];
                     self.reward = [[GNSAdReward alloc]
                                    initWithRewardType: extras.type
                                    rewardAmount: extras.amount];
-                    
+
                     if (self.reward) {
                         [self.connector adapter: self didRewardUserWithReward: self.reward];
                         self.reward = nil;
@@ -146,12 +146,12 @@ static BOOL loggingEnabled = YES;
                     [self ALLog:[NSString stringWithFormat:@"rewarded in failure"]];
                 }
             };
-            
+
             //AdColony has finished configuring, so let's request an interstitial ad
             [self requestInterstitial];
         }];
-        
-        self->_isConfigured = YES;
+
+        _isConfigured = YES;
     });
     
 }
@@ -177,40 +177,40 @@ static BOOL loggingEnabled = YES;
 - (void)requestInterstitial {
     
     GNSExtrasAdColony *extras = [self.connector networkExtras];
-    
+
     //Request an interstitial ad from AdColony
     [AdColony requestInterstitialInZone:extras.zone_id options:nil
-     
+
      //Handler for successful ad requests
                                 success:^(AdColonyInterstitial* ad) {
-                                    
+
                                     //Once the ad has finished, set the loading state and request a new interstitial
                                     ad.close = ^{
                                         self._ad = nil;
-                                        
+
                                         [self requestInterstitial];
                                     };
-                                    
+
                                     //Interstitials can expire, so we need to handle that event also
                                     ad.expire = ^{
                                         self._ad = nil;
-                                        
+
                                         [self requestInterstitial];
                                     };
-                                    
+
                                     //Store a reference to the returned interstitial object
                                     self._ad = ad;
-                                    
+
                                     [self.connector adapterDidReceiveRewardVideoAd:self];
-                                    self->_ad_available = YES;
-                                    
+                                    _ad_available = YES;
+
                                 }
-     
+
      //Handler for failed ad requests
                                 failure:^(AdColonyAdRequestError* error) {
-                                    
+
                                     [self.connector adapter: self didFailToLoadRewardVideoAdwithError: error];
-                                    
+
                                     [self ALLog:[NSString stringWithFormat: @"GNSAdColonyAdapter Request failed with error: %@ and suggestion: %@", [error localizedDescription], [error localizedRecoverySuggestion]]];
                                 }
      ];

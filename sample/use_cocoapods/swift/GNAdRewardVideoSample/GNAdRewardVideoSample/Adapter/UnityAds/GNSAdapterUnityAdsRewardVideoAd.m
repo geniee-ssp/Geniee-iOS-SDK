@@ -33,7 +33,7 @@ static BOOL loggingEnabled = YES;
 }
 
 + (NSString *)adapterVersion {
-    return @"2.4.4";
+    return @"2.5.0";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {
@@ -66,7 +66,7 @@ static BOOL loggingEnabled = YES;
 - (void)setTimerWith:(NSInteger)timeout
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        self->_timer = [NSTimer scheduledTimerWithTimeInterval:timeout
+        _timer = [NSTimer scheduledTimerWithTimeInterval:timeout
                                                   target:self
                                                 selector:@selector(sendDidFailToLoadRewardVideoWithTimeOut)
                                                 userInfo:nil

@@ -33,7 +33,7 @@ static BOOL loggingEnabled = YES;
 }
 
 + (NSString *)adapterVersion {
-    return @"2.4.4";
+    return @"2.5.0";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {
@@ -170,7 +170,7 @@ static BOOL loggingEnabled = YES;
     [self.connector adapterDidCloseRewardVideoAd:self];
 }
 
-/** MARK: Plz translate
+/** 
  *  It will be called when the ad play ends.
  *  It is called only at the end of the first playback and is not called at the end of replay playback.
  *

@@ -5,7 +5,6 @@
 
 #import "GNSAdapterCARewardRewardVideoAd.h"
 #import <MediaSDK/MediaSDK.h>
-#import <MediaSDK/MSPVA.h>
 #import <GNAdSDK/GNSRewardVideoAdNetworkConnectorProtocol.h>
 #import <GNAdSDK/GNSAdNetworkExtraParams.h>
 #import <GNAdSDK/GNSAdReward.h>
@@ -13,7 +12,7 @@
 static NSString *const kGNSAdapterCARewardRewardVideoAdKeyErrorDomain = @"jp.co.geniee.GNSAdapterCARewardRewardVideoAd";
 static BOOL loggingEnabled = YES;
 
-@interface GNSAdapterCARewardRewardVideoAd () <UIApplicationDelegate, MSPVAViewControllerDelegate>
+@interface GNSAdapterCARewardRewardVideoAd () <UIApplicationDelegate>
 
 @property(nonatomic, strong) GNSAdReward *reward;
 @property(nonatomic, weak) id<GNSRewardVideoAdNetworkConnector> connector;
@@ -33,7 +32,7 @@ static BOOL loggingEnabled = YES;
 }
 
 + (NSString *)adapterVersion {
-    return @"2.4.4";
+    return @"2.5.0";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {
@@ -47,11 +46,8 @@ static BOOL loggingEnabled = YES;
     extra.sdk_token = parameter.external_link_media_id;
     extra.type = parameter.type;
     extra.amount = parameter.amount;
-
+    extra.media_user_id = @"geniee";
     extra.placement = @"placement_1";
-    // Please set orientation to "portrait" or "landscape" with your app's orientation
-    extra.orientation = @"portrait";
-    //extra.testMode = parameter.testMode;
     return extra;
 }
 
@@ -71,7 +67,7 @@ static BOOL loggingEnabled = YES;
 - (void)setTimerWith:(NSInteger)timeout
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        self->_timer = [NSTimer scheduledTimerWithTimeInterval:timeout
+        _timer = [NSTimer scheduledTimerWithTimeInterval:timeout
                                                   target:self
                                                 selector:@selector(sendDidFailToLoadRewardVideoWithTimeOut)
                                                 userInfo:nil
@@ -115,20 +111,21 @@ static BOOL loggingEnabled = YES;
     GNSExtrasCAReward *extras = [self.connector networkExtras];
     [self ALLog:[NSString stringWithFormat:@"MediaId=%@", extras.m_id]];
     [self ALLog:[NSString stringWithFormat:@"SDKKey=%@", extras.sdk_token]];
-    NSString *uid = [MSPVA createMediaUserId];
-    [self ALLog:[NSString stringWithFormat:@"media_user_id=%@", uid]];
+    [self ALLog:[NSString stringWithFormat:@"media_user_id=%@", extras.media_user_id]];
 
-    if (extras.testMode) [MediaSDK setDebugOn];
-    [MediaSDK setObject:extras.m_id forKey:@"m_id"];
-    [MediaSDK setObject:uid forKey:@"media_user_id"];
-    [MediaSDK setObject:extras.sdk_token forKey:@"sdk_token"];
-    [MediaSDK setObject:extras.placement forKey:@"placement"];
-    [MSPVA setDelegate:self];
-    [MSPVA requestAd];
+    self.gvaAdManager = [[MSGVAManager alloc] init];
+    self.gvaAdManager.m_id = extras.m_id;
+    self.gvaAdManager.media_user_id = extras.media_user_id;
+    self.gvaAdManager.placement = extras.placement;
+    self.gvaAdManager.sdk_token = extras.sdk_token;
+    [self.gvaAdManager setDelegate:self];
+    [self.gvaAdManager loadAd];
 }
 
 - (void)presentRewardVideoAdWithRootViewController:(UIViewController *)viewController {
-    [MSPVA execute];
+    if (self.isReadyForDisplay) {
+        [self.gvaAdManager showAdView:viewController];
+    }
 }
 
 - (void)stopBeingDelegate {
@@ -137,58 +134,63 @@ static BOOL loggingEnabled = YES;
 
 - (BOOL)isReadyForDisplay
 {
-    return _ad_available;
+    return [self.gvaAdManager isReady];
 }
 
-- (void)pvaViewController:(MSPVAViewController *)viewController onPVAMessage:(NSString *)message {
-    [self ALLog:[NSString stringWithFormat:@"onPVAMessage message = '%@'.", message]];
-    NSDictionary* ret = [MSPVA getQueryDictionary:message];
-    if([ret count] > 0) {
-        [self deleteTimer];
-        NSString* type = [ret objectForKey:@"type"];
-        NSString* status = [ret objectForKey:@"status"];
-        //NSString* placement = [ret objectForKey:@"placement"];
-        //NSString* reward_id = [ret objectForKey:@"id"];
-        //NSString* amaount = [ret objectForKey:@"amount"];
-        //NSString* event = [ret objectForKey:@"event"];
-        
-        if([@"ad_available" isEqualToString:type]) {
-            if([@"ok" isEqualToString:status]) {
-                [self ALLog:@"Ad was available"];
-                _ad_available = YES;
-                /// Tells the delegate that a reward video ad was received.
-                [self.connector adapterDidReceiveRewardVideoAd:self];
-            } else {
-                NSDictionary *errorInfo = @{ NSLocalizedDescriptionKey : @"No Ad was available" };
-                NSError *error = [NSError errorWithDomain: kGNSAdapterCARewardRewardVideoAdKeyErrorDomain
-                                                     code: 1
-                                                 userInfo: errorInfo];
-                _ad_available = NO;
-                /// Tells the delegate that the reward video ad failed to load.
-                [self.connector adapter: self didFailToLoadRewardVideoAdwithError: error];
-            }
-        } else if([@"video_start" isEqualToString:type]) {
-            _ad_available = NO;
-            /// Tells the delegate that the reward video ad started playing.
-            [self.connector adapterDidStartPlayingRewardVideoAd:self];
-        } else if([@"close" isEqualToString:type]) {
-            _ad_available = NO;
-            /// Tells the delegate that the reward video ad closed.
-            [self.connector adapterDidCloseRewardVideoAd:self];
-        } else if([@"incentive" isEqualToString:type]) {
-            _ad_available = NO;
-            GNSExtrasCAReward *extras = [self.connector networkExtras];
-            self.reward = [[GNSAdReward alloc]
-                           initWithRewardType: extras.type
-                           rewardAmount: extras.amount];
-            if (self.reward) {
-                /// Tells the delegate that the reward video ad has rewarded the user.
-                [self.connector adapter: self didRewardUserWithReward: self.reward];
-                self.reward = nil;
-            }
-        }
+#pragma MSGVAVideoAdDelegate
+
+- (void)onGVAAdClick:(MSGVAManager *)msGVAManager {
+    [self ALLog:@"onGVAAdClick"];
+}
+
+- (void)onGVAClose:(MSGVAManager *)msGVAManager {
+
+    [self ALLog:@"onGVAClose"];
+
+    [self.connector adapterDidCloseRewardVideoAd:self];
+}
+
+- (void)onGVAFailedToPlay:(MSGVAManager *)msGVAManager {
+    [self ALLog:@"onGVAFailedToPlay"];
+}
+
+- (void)onGVAFailedToReceiveAd:(MSGVAManager *)msGVAManager {
+
+    [self ALLog:@"onGVAFailedToReceiveAd"];
+    [self deleteTimer];
+    NSDictionary *errorInfo = @{ NSLocalizedDescriptionKey : @"Failed to receive ad" };
+    NSError *error = [NSError errorWithDomain: kGNSAdapterCARewardRewardVideoAdKeyErrorDomain
+                                         code: 1
+                                     userInfo: errorInfo];
+    [self.connector adapter: self didFailToLoadRewardVideoAdwithError: error];
+}
+
+- (void)onGVAPlayEnd:(MSGVAManager *)msGVAManager {
+
+    [self ALLog:@"onGVAPlayEnd"];
+
+    GNSExtrasCAReward *extras = [self.connector networkExtras];
+    self.reward = [[GNSAdReward alloc]
+                   initWithRewardType: extras.type
+                   rewardAmount: extras.amount];
+    if (self.reward) {
+        [self.connector adapter: self didRewardUserWithReward: self.reward];
+        self.reward = nil;
     }
 }
 
+- (void)onGVAPlayStart:(MSGVAManager *)msGVAManager {
+
+    [self ALLog:@"onGVAPlayStart"];
+
+    [self.connector adapterDidStartPlayingRewardVideoAd:self];
+}
+
+- (void)onGVAReadyToPlayAd:(MSGVAManager *)msGVAManager {
+
+    [self ALLog:@"onGVAReadyToPlayAd"];
+    [self deleteTimer];
+    [self.connector adapterDidReceiveRewardVideoAd:self];
+}
 
 @end
