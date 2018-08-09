@@ -24,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F977C1A211C0EFF00CA4B24 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		2F977C1B211C0EFF00CA4B24 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		2F977C1C211C0EFF00CA4B24 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2F977C1D211C0EFF00CA4B24 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		2F977C1E211C0EFF00CA4B24 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		2F977C1F211C0F2A00CA4B24 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		4790DB81BED490E327226CFE /* Pods-GNAdRewardVideoSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdRewardVideoSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdRewardVideoSample/Pods-GNAdRewardVideoSample.debug.xcconfig"; sourceTree = "<group>"; };
 		52175E9F7393F4160FF64D82 /* libPods-GNAdRewardVideoSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GNAdRewardVideoSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE1E58820D2841B0035A52A /* GNAdRewardVideoSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNAdRewardVideoSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +195,12 @@
 		EBDFB509BC430792671E65F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F977C1F211C0F2A00CA4B24 /* WebKit.framework */,
+				2F977C1E211C0EFF00CA4B24 /* AdSupport.framework */,
+				2F977C1C211C0EFF00CA4B24 /* AVFoundation.framework */,
+				2F977C1B211C0EFF00CA4B24 /* CoreMedia.framework */,
+				2F977C1D211C0EFF00CA4B24 /* ImageIO.framework */,
+				2F977C1A211C0EFF00CA4B24 /* StoreKit.framework */,
 				52175E9F7393F4160FF64D82 /* libPods-GNAdRewardVideoSample.a */,
 			);
 			name = Frameworks;
@@ -470,13 +482,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/AMoAdSdk",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.com.geniee.GNAdRewardVideoSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -497,13 +506,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/AMoAdSdk",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.com.geniee.GNAdRewardVideoSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
