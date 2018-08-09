@@ -1,0 +1,32 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'GNAdDFPRewardAdapterSample' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+
+  # Pods for DFPRewardedVideoExample
+  # DFP, GenieeCustomAdapter.
+  #pod 'Geniee-DFP-Mediation-Adapter', :path => '~/Downloads/TestLibrary'
+  #  pod 'Geniee-DFP-Mediation-Adapter', :git => 'https://github.com/geniee-ssp/Geniee-iOS-SDK.git', :branch => 'feature/custom_mediation'
+  pod 'Geniee-DFP-Mediation-Adapter'
+
+  # GNSDK.
+  pod 'Geniee-iOS-SDK'
+  # Maio.
+  pod 'MaioSDK', '~> 1.3.0'
+  # AppLovin.
+  pod 'AppLovinSDK','~> 5.0.1'
+  # UnityAds.
+  pod 'UnityAds', '~> 2.2.1'
+  # AdColony.
+  pod 'AdColony', '~> 3.3.4'
+  # Tapjoy.
+  pod 'TapjoySDK', '~> 11.12.2'
+  # Vungle.
+  pod 'VungleSDK-iOS', '~> 6.2.0'
+  # Nend.
+  pod 'NendSDK_iOS', '~> 4.0.6'
+  # CAReward.
+  #  After...
+
+end
