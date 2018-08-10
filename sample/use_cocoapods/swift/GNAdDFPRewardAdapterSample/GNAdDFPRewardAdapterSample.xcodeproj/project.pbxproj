@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		105E65B1E1C5C74BD7D003FE /* libPods-DFPRewardedVideoExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E825AE4031F64FF9409BE757 /* libPods-DFPRewardedVideoExample.a */; };
+		9B0497D88D21F1179FF282A5 /* libPods-GNAdDFPRewardAdapterSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 421C22343D94A4AEDDE6D4D4 /* libPods-GNAdDFPRewardAdapterSample.a */; };
+		EF5B4B5320E9F4D50077F39A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5B4B5220E9F4D50077F39A /* AppDelegate.swift */; };
+		EF5B4B5520E9F4D50077F39A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5B4B5420E9F4D50077F39A /* ViewController.swift */; };
+		EF5B4B5820E9F4D50077F39A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5B4B5620E9F4D50077F39A /* Main.storyboard */; };
+		EF5B4B5A20E9F4D50077F39A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5B4B5920E9F4D50077F39A /* Assets.xcassets */; };
+		EF5B4B5D20E9F4D50077F39A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF5B4B5B20E9F4D50077F39A /* LaunchScreen.storyboard */; };
+		EF5B4B8620E9FD140077F39A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5B4B8520E9FD140077F39A /* AdSupport.framework */; };
+		EF5B4B8820E9FD1E0077F39A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5B4B8720E9FD1E0077F39A /* AVFoundation.framework */; };
+		EF5B4B8A20E9FD270077F39A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5B4B8920E9FD270077F39A /* CoreMedia.framework */; };
+		EF5B4B8C20E9FD310077F39A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5B4B8B20E9FD310077F39A /* SystemConfiguration.framework */; };
+		EF5B4B8E20E9FD3B0077F39A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5B4B8D20E9FD3B0077F39A /* StoreKit.framework */; };
+		EF5B4BA820E9FE360077F39A /* GNSAdapterUnityAdsRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5B4B9120E9FE360077F39A /* GNSAdapterUnityAdsRewardVideoAd.m */; };
+		EF5B4BA920E9FE360077F39A /* GNSAdapterVungleRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5B4B9520E9FE360077F39A /* GNSAdapterVungleRewardVideoAd.m */; };
+		EF5B4BAB20E9FE360077F39A /* GNSAdapterTapjoyRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5B4B9A20E9FE360077F39A /* GNSAdapterTapjoyRewardVideoAd.m */; };
+		EF5B4BAC20E9FE360077F39A /* GNSAdapterAppLovinRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5B4B9D20E9FE360077F39A /* GNSAdapterAppLovinRewardVideoAd.m */; };
+		EF5B4BAD20E9FE360077F39A /* GNSAdapterAdColonyRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5B4BA020E9FE360077F39A /* GNSAdapterAdColonyRewardVideoAd.m */; };
+		EF5B4BAE20E9FE360077F39A /* GNSAdapterMaioRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5B4BA420E9FE360077F39A /* GNSAdapterMaioRewardVideoAd.m */; };
+		EF5B4BAF20E9FE360077F39A /* GNSAdapterNendRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5B4BA720E9FE360077F39A /* GNSAdapterNendRewardVideoAd.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EF5B4BD920EA1B030077F39A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		421C22343D94A4AEDDE6D4D4 /* libPods-GNAdDFPRewardAdapterSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GNAdDFPRewardAdapterSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42CDD6AF4C045A61BEF05A09 /* Pods-GNAdDFPRewardAdapterSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdDFPRewardAdapterSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdDFPRewardAdapterSample/Pods-GNAdDFPRewardAdapterSample.debug.xcconfig"; sourceTree = "<group>"; };
+		5EF23FD15295ECEE817EAAFD /* Pods-GNAdDFPRewardAdapterSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdDFPRewardAdapterSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdDFPRewardAdapterSample/Pods-GNAdDFPRewardAdapterSample.release.xcconfig"; sourceTree = "<group>"; };
+		E825AE4031F64FF9409BE757 /* libPods-DFPRewardedVideoExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DFPRewardedVideoExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5B4B4F20E9F4D50077F39A /* GNAdDFPRewardAdapterSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNAdDFPRewardAdapterSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5B4B5220E9F4D50077F39A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF5B4B5420E9F4D50077F39A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF5B4B5720E9F4D50077F39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF5B4B5920E9F4D50077F39A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF5B4B5C20E9F4D50077F39A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF5B4B5E20E9F4D50077F39A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF5B4B8520E9FD140077F39A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		EF5B4B8720E9FD1E0077F39A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EF5B4B8920E9FD270077F39A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		EF5B4B8B20E9FD310077F39A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EF5B4B8D20E9FD3B0077F39A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		EF5B4B9120E9FE360077F39A /* GNSAdapterUnityAdsRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterUnityAdsRewardVideoAd.m; sourceTree = "<group>"; };
+		EF5B4B9220E9FE360077F39A /* GNSAdapterUnityAdsRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterUnityAdsRewardVideoAd.h; sourceTree = "<group>"; };
+		EF5B4B9420E9FE360077F39A /* GNSAdapterVungleRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterVungleRewardVideoAd.h; sourceTree = "<group>"; };
+		EF5B4B9520E9FE360077F39A /* GNSAdapterVungleRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterVungleRewardVideoAd.m; sourceTree = "<group>"; };
+		EF5B4B9A20E9FE360077F39A /* GNSAdapterTapjoyRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterTapjoyRewardVideoAd.m; sourceTree = "<group>"; };
+		EF5B4B9B20E9FE360077F39A /* GNSAdapterTapjoyRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterTapjoyRewardVideoAd.h; sourceTree = "<group>"; };
+		EF5B4B9D20E9FE360077F39A /* GNSAdapterAppLovinRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterAppLovinRewardVideoAd.m; sourceTree = "<group>"; };
+		EF5B4B9E20E9FE360077F39A /* GNSAdapterAppLovinRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterAppLovinRewardVideoAd.h; sourceTree = "<group>"; };
+		EF5B4BA020E9FE360077F39A /* GNSAdapterAdColonyRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterAdColonyRewardVideoAd.m; sourceTree = "<group>"; };
+		EF5B4BA120E9FE360077F39A /* GNSAdapterAdColonyRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterAdColonyRewardVideoAd.h; sourceTree = "<group>"; };
+		EF5B4BA320E9FE360077F39A /* GNSAdapterMaioRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterMaioRewardVideoAd.h; sourceTree = "<group>"; };
+		EF5B4BA420E9FE360077F39A /* GNSAdapterMaioRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterMaioRewardVideoAd.m; sourceTree = "<group>"; };
+		EF5B4BA620E9FE360077F39A /* GNSAdapterNendRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterNendRewardVideoAd.h; sourceTree = "<group>"; };
+		EF5B4BA720E9FE360077F39A /* GNSAdapterNendRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterNendRewardVideoAd.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF5B4B4C20E9F4D50077F39A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF5B4B8E20E9FD3B0077F39A /* StoreKit.framework in Frameworks */,
+				EF5B4B8C20E9FD310077F39A /* SystemConfiguration.framework in Frameworks */,
+				EF5B4B8A20E9FD270077F39A /* CoreMedia.framework in Frameworks */,
+				EF5B4B8820E9FD1E0077F39A /* AVFoundation.framework in Frameworks */,
+				EF5B4B8620E9FD140077F39A /* AdSupport.framework in Frameworks */,
+				105E65B1E1C5C74BD7D003FE /* libPods-DFPRewardedVideoExample.a in Frameworks */,
+				9B0497D88D21F1179FF282A5 /* libPods-GNAdDFPRewardAdapterSample.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D614F9A9FD6254F4BFF55A32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF5B4B8D20E9FD3B0077F39A /* StoreKit.framework */,
+				EF5B4B8B20E9FD310077F39A /* SystemConfiguration.framework */,
+				EF5B4B8920E9FD270077F39A /* CoreMedia.framework */,
+				EF5B4B8720E9FD1E0077F39A /* AVFoundation.framework */,
+				EF5B4B8520E9FD140077F39A /* AdSupport.framework */,
+				E825AE4031F64FF9409BE757 /* libPods-DFPRewardedVideoExample.a */,
+				421C22343D94A4AEDDE6D4D4 /* libPods-GNAdDFPRewardAdapterSample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D958D31CB59D2521AF339891 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42CDD6AF4C045A61BEF05A09 /* Pods-GNAdDFPRewardAdapterSample.debug.xcconfig */,
+				5EF23FD15295ECEE817EAAFD /* Pods-GNAdDFPRewardAdapterSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF5B4B4620E9F4D40077F39A = {
+			isa = PBXGroup;
+			children = (
+				EF5B4B8F20E9FE360077F39A /* adapter */,
+				EF5B4B5120E9F4D50077F39A /* GNAdDFPRewardAdapterSample */,
+				EF5B4B5020E9F4D50077F39A /* Products */,
+				D958D31CB59D2521AF339891 /* Pods */,
+				D614F9A9FD6254F4BFF55A32 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF5B4B5020E9F4D50077F39A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF5B4B4F20E9F4D50077F39A /* GNAdDFPRewardAdapterSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF5B4B5120E9F4D50077F39A /* GNAdDFPRewardAdapterSample */ = {
+			isa = PBXGroup;
+			children = (
+				EF5B4B5220E9F4D50077F39A /* AppDelegate.swift */,
+				EF5B4B5420E9F4D50077F39A /* ViewController.swift */,
+				EF5B4B5620E9F4D50077F39A /* Main.storyboard */,
+				EF5B4B5920E9F4D50077F39A /* Assets.xcassets */,
+				EF5B4B5B20E9F4D50077F39A /* LaunchScreen.storyboard */,
+				EF5B4B5E20E9F4D50077F39A /* Info.plist */,
+			);
+			path = GNAdDFPRewardAdapterSample;
+			sourceTree = "<group>";
+		};
+		EF5B4B8F20E9FE360077F39A /* adapter */ = {
+			isa = PBXGroup;
+			children = (
+				EF5B4B9020E9FE360077F39A /* UnityAds */,
+				EF5B4B9320E9FE360077F39A /* Vungle */,
+				EF5B4B9920E9FE360077F39A /* Tapjoy */,
+				EF5B4B9C20E9FE360077F39A /* AppLovin */,
+				EF5B4B9F20E9FE360077F39A /* AdColony */,
+				EF5B4BA220E9FE360077F39A /* Maio */,
+				EF5B4BA520E9FE360077F39A /* Nend */,
+			);
+			path = adapter;
+			sourceTree = "<group>";
+		};
+		EF5B4B9020E9FE360077F39A /* UnityAds */ = {
+			isa = PBXGroup;
+			children = (
+				EF5B4B9120E9FE360077F39A /* GNSAdapterUnityAdsRewardVideoAd.m */,
+				EF5B4B9220E9FE360077F39A /* GNSAdapterUnityAdsRewardVideoAd.h */,
+			);
+			path = UnityAds;
+			sourceTree = "<group>";
+		};
+		EF5B4B9320E9FE360077F39A /* Vungle */ = {
+			isa = PBXGroup;
+			children = (
+				EF5B4B9420E9FE360077F39A /* GNSAdapterVungleRewardVideoAd.h */,
+				EF5B4B9520E9FE360077F39A /* GNSAdapterVungleRewardVideoAd.m */,
+			);
+			path = Vungle;
+			sourceTree = "<group>";
+		};
+		EF5B4B9920E9FE360077F39A /* Tapjoy */ = {
+			isa = PBXGroup;
+			children = (
+				EF5B4B9A20E9FE360077F39A /* GNSAdapterTapjoyRewardVideoAd.m */,
+				EF5B4B9B20E9FE360077F39A /* GNSAdapterTapjoyRewardVideoAd.h */,
+			);
+			path = Tapjoy;
+			sourceTree = "<group>";
+		};
+		EF5B4B9C20E9FE360077F39A /* AppLovin */ = {
+			isa = PBXGroup;
+			children = (
+				EF5B4B9D20E9FE360077F39A /* GNSAdapterAppLovinRewardVideoAd.m */,
+				EF5B4B9E20E9FE360077F39A /* GNSAdapterAppLovinRewardVideoAd.h */,
+			);
+			path = AppLovin;
+			sourceTree = "<group>";
+		};
+		EF5B4B9F20E9FE360077F39A /* AdColony */ = {
+			isa = PBXGroup;
+			children = (
+				EF5B4BA020E9FE360077F39A /* GNSAdapterAdColonyRewardVideoAd.m */,
+				EF5B4BA120E9FE360077F39A /* GNSAdapterAdColonyRewardVideoAd.h */,
+			);
+			path = AdColony;
+			sourceTree = "<group>";
+		};
+		EF5B4BA220E9FE360077F39A /* Maio */ = {
+			isa = PBXGroup;
+			children = (
+				EF5B4BA320E9FE360077F39A /* GNSAdapterMaioRewardVideoAd.h */,
+				EF5B4BA420E9FE360077F39A /* GNSAdapterMaioRewardVideoAd.m */,
+			);
+			path = Maio;
+			sourceTree = "<group>";
+		};
+		EF5B4BA520E9FE360077F39A /* Nend */ = {
+			isa = PBXGroup;
+			children = (
+				EF5B4BA620E9FE360077F39A /* GNSAdapterNendRewardVideoAd.h */,
+				EF5B4BA720E9FE360077F39A /* GNSAdapterNendRewardVideoAd.m */,
+			);
+			path = Nend;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF5B4B4E20E9F4D50077F39A /* GNAdDFPRewardAdapterSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF5B4B6120E9F4D50077F39A /* Build configuration list for PBXNativeTarget "GNAdDFPRewardAdapterSample" */;
+			buildPhases = (
+				F3D848C41C2E18D8F7CA2FCA /* [CP] Check Pods Manifest.lock */,
+				EF5B4B4B20E9F4D50077F39A /* Sources */,
+				EF5B4B4C20E9F4D50077F39A /* Frameworks */,
+				EF5B4B4D20E9F4D50077F39A /* Resources */,
+				C3262EFD98F8698AC0A8F455 /* [CP] Copy Pods Resources */,
+				EF5B4BD920EA1B030077F39A /* Embed Frameworks */,
+				EFC61EA893AAC2AC51A5CB98 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GNAdDFPRewardAdapterSample;
+			productName = DFPRewardedVideoExample;
+			productReference = EF5B4B4F20E9F4D50077F39A /* GNAdDFPRewardAdapterSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF5B4B4720E9F4D40077F39A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Yazaki Hironobu";
+				TargetAttributes = {
+					EF5B4B4E20E9F4D50077F39A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = EF5B4B4A20E9F4D40077F39A /* Build configuration list for PBXProject "GNAdDFPRewardAdapterSample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF5B4B4620E9F4D40077F39A;
+			productRefGroup = EF5B4B5020E9F4D50077F39A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF5B4B4E20E9F4D50077F39A /* GNAdDFPRewardAdapterSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF5B4B4D20E9F4D50077F39A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF5B4B5D20E9F4D50077F39A /* LaunchScreen.storyboard in Resources */,
+				EF5B4B5A20E9F4D50077F39A /* Assets.xcassets in Resources */,
+				EF5B4B5820E9F4D50077F39A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C3262EFD98F8698AC0A8F455 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GNAdDFPRewardAdapterSample/Pods-GNAdDFPRewardAdapterSample-resources.sh",
+				"${PODS_ROOT}/NendSDK_iOS/NendAd.embeddedframework/NendAd.framework/Resources/NendAdResource.bundle",
+				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v11.12.2/Libraries/Tapjoy.embeddedframework/Resources/TapjoyResources.bundle",
+				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v11.12.2/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Resources/TapjoyResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NendAdResource.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TapjoyResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GNAdDFPRewardAdapterSample/Pods-GNAdDFPRewardAdapterSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFC61EA893AAC2AC51A5CB98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GNAdDFPRewardAdapterSample/Pods-GNAdDFPRewardAdapterSample-frameworks.sh",
+				"${PODS_ROOT}/Geniee-DFP-Mediation-Adapter/GNAdDFPRewardMediationAdapter/Framework/GNAdDFPRewardMediationAdapter.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GNAdDFPRewardMediationAdapter.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GNAdDFPRewardAdapterSample/Pods-GNAdDFPRewardAdapterSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3D848C41C2E18D8F7CA2FCA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GNAdDFPRewardAdapterSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF5B4B4B20E9F4D50077F39A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF5B4B5520E9F4D50077F39A /* ViewController.swift in Sources */,
+				EF5B4BAB20E9FE360077F39A /* GNSAdapterTapjoyRewardVideoAd.m in Sources */,
+				EF5B4BA920E9FE360077F39A /* GNSAdapterVungleRewardVideoAd.m in Sources */,
+				EF5B4BAC20E9FE360077F39A /* GNSAdapterAppLovinRewardVideoAd.m in Sources */,
+				EF5B4BAF20E9FE360077F39A /* GNSAdapterNendRewardVideoAd.m in Sources */,
+				EF5B4BAD20E9FE360077F39A /* GNSAdapterAdColonyRewardVideoAd.m in Sources */,
+				EF5B4BA820E9FE360077F39A /* GNSAdapterUnityAdsRewardVideoAd.m in Sources */,
+				EF5B4B5320E9F4D50077F39A /* AppDelegate.swift in Sources */,
+				EF5B4BAE20E9FE360077F39A /* GNSAdapterMaioRewardVideoAd.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF5B4B5620E9F4D50077F39A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF5B4B5720E9F4D50077F39A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF5B4B5B20E9F4D50077F39A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF5B4B5C20E9F4D50077F39A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF5B4B5F20E9F4D50077F39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF5B4B6020E9F4D50077F39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF5B4B6220E9F4D50077F39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42CDD6AF4C045A61BEF05A09 /* Pods-GNAdDFPRewardAdapterSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RKMVWZ32F4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GNAdDFPRewardAdapterSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AMoAdSdk",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Geniee-iOS-SDK\"",
+					"-l\"KissXML\"",
+					"-l\"c++\"",
+					"-l\"sqlite3.0\"",
+					"-l\"xml2\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AdColony\"",
+					"-framework",
+					"\"AdSupport\"",
+					"-framework",
+					"\"AppLovinSDK\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"EventKit\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GNAdSDK\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"Maio\"",
+					"-framework",
+					"\"MapKit\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"NendAd\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"Social\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"Tapjoy\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UnityAds\"",
+					"-framework",
+					"\"VungleSDK\"",
+					"-framework",
+					"\"WebKit\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"CoreTelephony\"",
+					"-weak_framework",
+					"\"Foundation\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"StoreKit\"",
+					"-weak_framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"WatchConnectivity\"",
+					"-weak_framework",
+					"\"WebKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.geniee.DFPRewardedVideoExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF5B4B6320E9F4D50077F39A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EF23FD15295ECEE817EAAFD /* Pods-GNAdDFPRewardAdapterSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RKMVWZ32F4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GNAdDFPRewardAdapterSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AMoAdSdk",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"Geniee-iOS-SDK\"",
+					"-l\"KissXML\"",
+					"-l\"c++\"",
+					"-l\"sqlite3.0\"",
+					"-l\"xml2\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AdColony\"",
+					"-framework",
+					"\"AdSupport\"",
+					"-framework",
+					"\"AppLovinSDK\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreData\"",
+					"-framework",
+					"\"CoreFoundation\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"EventKit\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GLKit\"",
+					"-framework",
+					"\"GNAdSDK\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"Maio\"",
+					"-framework",
+					"\"MapKit\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"NendAd\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"Social\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"Tapjoy\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UnityAds\"",
+					"-framework",
+					"\"VungleSDK\"",
+					"-framework",
+					"\"WebKit\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"CoreTelephony\"",
+					"-weak_framework",
+					"\"Foundation\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"StoreKit\"",
+					"-weak_framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"WatchConnectivity\"",
+					"-weak_framework",
+					"\"WebKit\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.geniee.DFPRewardedVideoExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF5B4B4A20E9F4D40077F39A /* Build configuration list for PBXProject "GNAdDFPRewardAdapterSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF5B4B5F20E9F4D50077F39A /* Debug */,
+				EF5B4B6020E9F4D50077F39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF5B4B6120E9F4D50077F39A /* Build configuration list for PBXNativeTarget "GNAdDFPRewardAdapterSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF5B4B6220E9F4D50077F39A /* Debug */,
+				EF5B4B6320E9F4D50077F39A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF5B4B4720E9F4D40077F39A /* Project object */;
+}

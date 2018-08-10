@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F89252821009A9B002496C1 /* GNSAdapterCARewardRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F89252621009A9B002496C1 /* GNSAdapterCARewardRewardVideoAd.m */; };
 		5D1ABF5B2B8415E81D4533E6 /* libPods-GNAdRewardVideoSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDA3AB38E035D5C16264B7A /* libPods-GNAdRewardVideoSample.a */; };
 		E8899FEE20D8D12000BE7091 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8899FED20D8D12000BE7091 /* AppDelegate.swift */; };
 		E8899FF020D8D12000BE7091 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8899FEF20D8D12000BE7091 /* ViewController.swift */; };
@@ -21,15 +22,6 @@
 		E8CECFBB20DA70CD007779A8 /* GNSAdapterAdColonyRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CECFAB20DA70CC007779A8 /* GNSAdapterAdColonyRewardVideoAd.m */; };
 		E8CECFBC20DA70CD007779A8 /* GNSAdapterMaioRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CECFAF20DA70CD007779A8 /* GNSAdapterMaioRewardVideoAd.m */; };
 		E8CECFBD20DA70CD007779A8 /* GNSAdapterNendRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CECFB220DA70CD007779A8 /* GNSAdapterNendRewardVideoAd.m */; };
-		E8CECFBE20DA70CD007779A8 /* GNSAdapterCARewardRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CECFB420DA70CD007779A8 /* GNSAdapterCARewardRewardVideoAd.m */; };
-		E8CED00020DA74BB007779A8 /* MediaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8CECFFF20DA74BB007779A8 /* MediaSDK.framework */; };
-		E8CED03220DA76EE007779A8 /* amoad_link_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CED01E20DA76ED007779A8 /* amoad_link_btn_h.png */; };
-		E8CED03320DA76EE007779A8 /* amoad_link_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CED02020DA76ED007779A8 /* amoad_link_btn.png */; };
-		E8CED03420DA76EE007779A8 /* amoad_panel.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CED02220DA76ED007779A8 /* amoad_panel.png */; };
-		E8CED03520DA76EE007779A8 /* libAMoAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E8CED02720DA76ED007779A8 /* libAMoAd.a */; };
-		E8CED03620DA76EE007779A8 /* amoad_close_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CED02920DA76ED007779A8 /* amoad_close_btn_h.png */; };
-		E8CED03720DA76EE007779A8 /* amoad_close_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CED02B20DA76ED007779A8 /* amoad_close_btn.png */; };
-		E8CED03820DA76EE007779A8 /* amoad_panel_l.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CED02E20DA76ED007779A8 /* amoad_panel_l.png */; };
 		E8CED03A20DA76FF007779A8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8CED03920DA76FF007779A8 /* AdSupport.framework */; };
 		E8CED03C20DA770C007779A8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8CED03B20DA770C007779A8 /* AVFoundation.framework */; };
 		E8CED03E20DA7715007779A8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8CED03D20DA7715007779A8 /* CoreMedia.framework */; };
@@ -38,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F89252621009A9B002496C1 /* GNSAdapterCARewardRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterCARewardRewardVideoAd.m; sourceTree = "<group>"; };
+		2F89252721009A9B002496C1 /* GNSAdapterCARewardRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterCARewardRewardVideoAd.h; sourceTree = "<group>"; };
+		2F977C20211C0F3800CA4B24 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		5AEC8EFEE82A23D0A8C370DB /* Pods-GNAdRewardVideoSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdRewardVideoSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdRewardVideoSample/Pods-GNAdRewardVideoSample.release.xcconfig"; sourceTree = "<group>"; };
 		E8899FEA20D8D12000BE7091 /* GNAdRewardVideoSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNAdRewardVideoSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8899FED20D8D12000BE7091 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,29 +58,6 @@
 		E8CECFAF20DA70CD007779A8 /* GNSAdapterMaioRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterMaioRewardVideoAd.m; sourceTree = "<group>"; };
 		E8CECFB120DA70CD007779A8 /* GNSAdapterNendRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterNendRewardVideoAd.h; sourceTree = "<group>"; };
 		E8CECFB220DA70CD007779A8 /* GNSAdapterNendRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterNendRewardVideoAd.m; sourceTree = "<group>"; };
-		E8CECFB420DA70CD007779A8 /* GNSAdapterCARewardRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterCARewardRewardVideoAd.m; sourceTree = "<group>"; };
-		E8CECFB520DA70CD007779A8 /* GNSAdapterCARewardRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterCARewardRewardVideoAd.h; sourceTree = "<group>"; };
-		E8CECFFF20DA74BB007779A8 /* MediaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MediaSDK.framework; sourceTree = "<group>"; };
-		E8CED01E20DA76ED007779A8 /* amoad_link_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_link_btn_h.png; sourceTree = "<group>"; };
-		E8CED01F20DA76ED007779A8 /* AMoAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdView.h; sourceTree = "<group>"; };
-		E8CED02020DA76ED007779A8 /* amoad_link_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_link_btn.png; sourceTree = "<group>"; };
-		E8CED02120DA76ED007779A8 /* AMoAdItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdItem.h; sourceTree = "<group>"; };
-		E8CED02220DA76ED007779A8 /* amoad_panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_panel.png; sourceTree = "<group>"; };
-		E8CED02320DA76ED007779A8 /* AMoAdInfeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdInfeed.h; sourceTree = "<group>"; };
-		E8CED02420DA76ED007779A8 /* AMoAdNativePreRoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativePreRoll.h; sourceTree = "<group>"; };
-		E8CED02520DA76ED007779A8 /* AMoAdAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdAnalytics.h; sourceTree = "<group>"; };
-		E8CED02620DA76ED007779A8 /* AMoAdWeb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdWeb.h; sourceTree = "<group>"; };
-		E8CED02720DA76ED007779A8 /* libAMoAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAMoAd.a; sourceTree = "<group>"; };
-		E8CED02820DA76ED007779A8 /* AMoAdNativeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativeView.h; sourceTree = "<group>"; };
-		E8CED02920DA76ED007779A8 /* amoad_close_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_close_btn_h.png; sourceTree = "<group>"; };
-		E8CED02A20DA76ED007779A8 /* AMoAdNativeMainVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativeMainVideoView.h; sourceTree = "<group>"; };
-		E8CED02B20DA76ED007779A8 /* amoad_close_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_close_btn.png; sourceTree = "<group>"; };
-		E8CED02C20DA76ED007779A8 /* AMoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAd.h; sourceTree = "<group>"; };
-		E8CED02D20DA76ED007779A8 /* AMoAdInterstitialVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdInterstitialVideo.h; sourceTree = "<group>"; };
-		E8CED02E20DA76ED007779A8 /* amoad_panel_l.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_panel_l.png; sourceTree = "<group>"; };
-		E8CED02F20DA76ED007779A8 /* AMoAdLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdLogger.h; sourceTree = "<group>"; };
-		E8CED03020DA76ED007779A8 /* AMoAdInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdInterstitial.h; sourceTree = "<group>"; };
-		E8CED03120DA76ED007779A8 /* AMoAdList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdList.h; sourceTree = "<group>"; };
 		E8CED03920DA76FF007779A8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		E8CED03B20DA770C007779A8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E8CED03D20DA7715007779A8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
@@ -105,8 +77,6 @@
 				E8CED03E20DA7715007779A8 /* CoreMedia.framework in Frameworks */,
 				E8CED03C20DA770C007779A8 /* AVFoundation.framework in Frameworks */,
 				E8CED03A20DA76FF007779A8 /* AdSupport.framework in Frameworks */,
-				E8CED03520DA76EE007779A8 /* libAMoAd.a in Frameworks */,
-				E8CED00020DA74BB007779A8 /* MediaSDK.framework in Frameworks */,
 				5D1ABF5B2B8415E81D4533E6 /* libPods-GNAdRewardVideoSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,16 +84,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F89252521009A9B002496C1 /* CAReward */ = {
+			isa = PBXGroup;
+			children = (
+				2F89252621009A9B002496C1 /* GNSAdapterCARewardRewardVideoAd.m */,
+				2F89252721009A9B002496C1 /* GNSAdapterCARewardRewardVideoAd.h */,
+			);
+			name = CAReward;
+			path = ../../../../objectivec/GNAdRewardVideoSample/GNAdRewardVideoSample/Adapter/CAReward;
+			sourceTree = "<group>";
+		};
 		3EB938CDB8A6AA78F5CA3D74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F977C20211C0F3800CA4B24 /* WebKit.framework */,
 				E8CED04120DA7730007779A8 /* StoreKit.framework */,
 				E8CED03F20DA771C007779A8 /* ImageIO.framework */,
 				E8CED03D20DA7715007779A8 /* CoreMedia.framework */,
 				E8CED03B20DA770C007779A8 /* AVFoundation.framework */,
 				E8CED03920DA76FF007779A8 /* AdSupport.framework */,
-				E8CED01D20DA76ED007779A8 /* AMoAdSdk */,
-				E8CECFFF20DA74BB007779A8 /* MediaSDK.framework */,
 				EFDA3AB38E035D5C16264B7A /* libPods-GNAdRewardVideoSample.a */,
 			);
 			name = Frameworks;
@@ -174,6 +153,7 @@
 		E8CECF9A20DA70CC007779A8 /* Adapter */ = {
 			isa = PBXGroup;
 			children = (
+				2F89252521009A9B002496C1 /* CAReward */,
 				E8CECF9B20DA70CC007779A8 /* UnityAds */,
 				E8CECF9E20DA70CC007779A8 /* Vungle */,
 				E8CECFA120DA70CC007779A8 /* Amoad */,
@@ -182,7 +162,6 @@
 				E8CECFAA20DA70CC007779A8 /* AdColony */,
 				E8CECFAD20DA70CD007779A8 /* Maio */,
 				E8CECFB020DA70CD007779A8 /* Nend */,
-				E8CECFB320DA70CD007779A8 /* CAReward */,
 			);
 			path = Adapter;
 			sourceTree = "<group>";
@@ -259,42 +238,6 @@
 			path = Nend;
 			sourceTree = "<group>";
 		};
-		E8CECFB320DA70CD007779A8 /* CAReward */ = {
-			isa = PBXGroup;
-			children = (
-				E8CECFB420DA70CD007779A8 /* GNSAdapterCARewardRewardVideoAd.m */,
-				E8CECFB520DA70CD007779A8 /* GNSAdapterCARewardRewardVideoAd.h */,
-			);
-			path = CAReward;
-			sourceTree = "<group>";
-		};
-		E8CED01D20DA76ED007779A8 /* AMoAdSdk */ = {
-			isa = PBXGroup;
-			children = (
-				E8CED01E20DA76ED007779A8 /* amoad_link_btn_h.png */,
-				E8CED01F20DA76ED007779A8 /* AMoAdView.h */,
-				E8CED02020DA76ED007779A8 /* amoad_link_btn.png */,
-				E8CED02120DA76ED007779A8 /* AMoAdItem.h */,
-				E8CED02220DA76ED007779A8 /* amoad_panel.png */,
-				E8CED02320DA76ED007779A8 /* AMoAdInfeed.h */,
-				E8CED02420DA76ED007779A8 /* AMoAdNativePreRoll.h */,
-				E8CED02520DA76ED007779A8 /* AMoAdAnalytics.h */,
-				E8CED02620DA76ED007779A8 /* AMoAdWeb.h */,
-				E8CED02720DA76ED007779A8 /* libAMoAd.a */,
-				E8CED02820DA76ED007779A8 /* AMoAdNativeView.h */,
-				E8CED02920DA76ED007779A8 /* amoad_close_btn_h.png */,
-				E8CED02A20DA76ED007779A8 /* AMoAdNativeMainVideoView.h */,
-				E8CED02B20DA76ED007779A8 /* amoad_close_btn.png */,
-				E8CED02C20DA76ED007779A8 /* AMoAd.h */,
-				E8CED02D20DA76ED007779A8 /* AMoAdInterstitialVideo.h */,
-				E8CED02E20DA76ED007779A8 /* amoad_panel_l.png */,
-				E8CED02F20DA76ED007779A8 /* AMoAdLogger.h */,
-				E8CED03020DA76ED007779A8 /* AMoAdInterstitial.h */,
-				E8CED03120DA76ED007779A8 /* AMoAdList.h */,
-			);
-			path = AMoAdSdk;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -356,13 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8899FF820D8D12100BE7091 /* LaunchScreen.storyboard in Resources */,
-				E8CED03620DA76EE007779A8 /* amoad_close_btn_h.png in Resources */,
 				E8899FF520D8D12100BE7091 /* Assets.xcassets in Resources */,
-				E8CED03320DA76EE007779A8 /* amoad_link_btn.png in Resources */,
-				E8CED03420DA76EE007779A8 /* amoad_panel.png in Resources */,
-				E8CED03820DA76EE007779A8 /* amoad_panel_l.png in Resources */,
-				E8CED03220DA76EE007779A8 /* amoad_link_btn_h.png in Resources */,
-				E8CED03720DA76EE007779A8 /* amoad_close_btn.png in Resources */,
 				E8899FF320D8D12000BE7091 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,9 +358,9 @@
 				E8CECFB920DA70CD007779A8 /* GNSAdapterTapjoyRewardVideoAd.m in Sources */,
 				E8CECFB620DA70CD007779A8 /* GNSAdapterUnityAdsRewardVideoAd.m in Sources */,
 				E8CECFB720DA70CD007779A8 /* GNSAdapterVungleRewardVideoAd.m in Sources */,
-				E8CECFBE20DA70CD007779A8 /* GNSAdapterCARewardRewardVideoAd.m in Sources */,
 				E8CECFB820DA70CD007779A8 /* GNSAdapterAmoadRewardVideoAd.m in Sources */,
 				E8CECFBA20DA70CD007779A8 /* GNSAdapterAppLovinRewardVideoAd.m in Sources */,
+				2F89252821009A9B002496C1 /* GNSAdapterCARewardRewardVideoAd.m in Sources */,
 				E8CECFBB20DA70CD007779A8 /* GNSAdapterAdColonyRewardVideoAd.m in Sources */,
 				E8CECFBD20DA70CD007779A8 /* GNSAdapterNendRewardVideoAd.m in Sources */,
 				E8899FEE20D8D12000BE7091 /* AppDelegate.swift in Sources */,

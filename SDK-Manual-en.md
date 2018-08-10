@@ -20,9 +20,9 @@ Download iOS SDK form the URL below :
 
 ## ChangeLog
 
-- **[ChangeLog](https://github.com/geniee-ssp/Geniee-iOS-SDK/blob/master/CHANGELOG.md)**
+- **[LoG](https://github.com/geniee-ssp/Geniee-iOS-SDK/releases)**
 
 ## System requirements
 
-- Ads SDK supports iOS5 or later.
-- Ads SDK supports 32bit / 64bit.
+- Ads SDK supports iOS9 or later.
+- Ads SDK supports 64bit.

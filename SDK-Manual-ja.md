@@ -20,9 +20,9 @@ Geniee iOS SDK は、iOS アプリケーション内に広告を表示するた�
 
 ## バージョン新機能
 
-[変更履歴](https://github.com/geniee-ssp/Geniee-iOS-SDK/blob/master/CHANGELOG.md) を参照してください。
+[変更履歴](https://github.com/geniee-ssp/Geniee-iOS-SDK/releases) を参照してください。
 
 ## 動作要件
 
-- バージョン5以降のiOSを対象としています。
-- 32bit / 64bit のiOSを対象としています。
+- バージョン9以降のiOSを対象としています。
+- 64bit のiOSを対象としています。
