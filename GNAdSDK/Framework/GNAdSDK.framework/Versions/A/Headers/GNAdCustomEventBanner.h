@@ -1,5 +1,6 @@
 //
 //  GNAdCustomEventBanner.h
+//  GNAdSDK
 //
 
 #import <UIKit/UIKit.h>

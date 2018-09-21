@@ -1,5 +1,6 @@
 //
 //  GNSRewardVideoAdNetworkConnector.h
+//  GNAdSDK
 //
 
 #import "GNSMediationAdRequest.h"

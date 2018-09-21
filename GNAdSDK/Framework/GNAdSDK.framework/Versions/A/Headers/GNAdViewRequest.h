@@ -1,6 +1,6 @@
 //
 //  GNAdViewRequest.h
-//  Copyright (c) 2015 Geniee. All rights reserved.
+//  GNAdSDK
 //
 
 #import <Foundation/Foundation.h>

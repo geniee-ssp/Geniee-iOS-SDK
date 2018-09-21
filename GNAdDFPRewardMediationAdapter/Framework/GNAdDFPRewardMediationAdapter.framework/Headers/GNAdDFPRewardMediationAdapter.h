@@ -2,9 +2,6 @@
 //  GNAdDFPRewardMediationAdapter.h
 //  GNAdDFPRewardMediationAdapter
 //
-//  Created by Long Uni on 2018/06/06.
-//  Copyright © 2018年 Yamamoto Kazunori. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
 #import <GoogleMobileAds/GoogleMobileAds.h>
