@@ -2,9 +2,6 @@
 //  AppDelegate.m
 //  GNAdRewardVideoSample
 //
-//  Created by Yamamoto Kazunori on 2018/06/14.
-//  Copyright © 2018年 Yamamoto Kazunori. All rights reserved.
-//
 
 #import "AppDelegate.h"
 

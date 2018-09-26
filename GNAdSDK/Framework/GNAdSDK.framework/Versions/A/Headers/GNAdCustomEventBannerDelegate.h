@@ -1,5 +1,6 @@
 //
 //  GNAdCustomEventBannerDelegate.h
+//  GNAdSDK
 //
 
 #import <Foundation/Foundation.h>

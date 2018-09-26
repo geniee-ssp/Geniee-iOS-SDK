@@ -2,9 +2,6 @@
 //  ViewController.m
 //  GNAdSampleBanner
 //
-//  Created by { Kazunori } on 2018/06/10.
-//  Copyright © 2018 Yamamoto Kazunori. All rights reserved.
-//
 
 #import "ViewController.h"
 

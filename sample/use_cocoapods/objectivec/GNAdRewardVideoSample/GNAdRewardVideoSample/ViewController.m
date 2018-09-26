@@ -103,12 +103,9 @@ static const NSInteger GameLength = 5;
     if ([[GNSRewardVideoAd sharedInstance] canShow]) {
         [[GNSRewardVideoAd sharedInstance] show:self];
     } else {
-        [[[UIAlertView alloc]
-          initWithTitle:@"Reward video not ready"
-          message:@"The Reward video didn't finish loading or failed to load or need to reload"
-          delegate:self
-          cancelButtonTitle:@"OK"
-          otherButtonTitles:nil] show];
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Reward video not ready" message:@"The Reward video didn't finish loading or failed to load or need to reload" preferredStyle:UIAlertControllerStyleAlert];
+        [alertController addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+        [self presentViewController:alertController animated:YES completion:nil];
     }
 }
 

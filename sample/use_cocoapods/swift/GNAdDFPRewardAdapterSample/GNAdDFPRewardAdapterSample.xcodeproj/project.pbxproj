@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		105E65B1E1C5C74BD7D003FE /* libPods-DFPRewardedVideoExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E825AE4031F64FF9409BE757 /* libPods-DFPRewardedVideoExample.a */; };
 		9B0497D88D21F1179FF282A5 /* libPods-GNAdDFPRewardAdapterSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 421C22343D94A4AEDDE6D4D4 /* libPods-GNAdDFPRewardAdapterSample.a */; };
 		EF5B4B5320E9F4D50077F39A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5B4B5220E9F4D50077F39A /* AppDelegate.swift */; };
 		EF5B4B5520E9F4D50077F39A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5B4B5420E9F4D50077F39A /* ViewController.swift */; };
@@ -84,7 +83,6 @@
 				EF5B4B8A20E9FD270077F39A /* CoreMedia.framework in Frameworks */,
 				EF5B4B8820E9FD1E0077F39A /* AVFoundation.framework in Frameworks */,
 				EF5B4B8620E9FD140077F39A /* AdSupport.framework in Frameworks */,
-				105E65B1E1C5C74BD7D003FE /* libPods-DFPRewardedVideoExample.a in Frameworks */,
 				9B0497D88D21F1179FF282A5 /* libPods-GNAdDFPRewardAdapterSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

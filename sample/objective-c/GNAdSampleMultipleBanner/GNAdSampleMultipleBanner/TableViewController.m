@@ -188,10 +188,9 @@
 + (void)requestImageWithURL:(NSURL*)url completion:(void (^)(UIImage *image, NSError *error))completion
 {
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    [NSURLConnection
-     sendAsynchronousRequest:request
-     queue:[NSOperationQueue mainQueue]
-     completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+    NSURLSessionConfiguration * conf = [NSURLSessionConfiguration ephemeralSessionConfiguration];
+    NSURLSession * session = [NSURLSession sessionWithConfiguration:conf];
+    [[session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *connectionError) {
          if (connectionError) {
              completion(nil, connectionError);
              return;
@@ -204,7 +203,7 @@
                  return;
              });
          });
-     }];
+    }] resume];
 }
 
 + (UIImage*)createIconImageWithImage:(UIImage*)image

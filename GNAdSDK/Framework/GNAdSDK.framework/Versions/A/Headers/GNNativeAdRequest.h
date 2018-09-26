@@ -1,6 +1,6 @@
 //
 //  GNNativeAdRequest.h
-//  Copyright (c) 2014 Geniee. All rights reserved.
+//  GNAdSDK
 //
 
 #import <Foundation/Foundation.h>
