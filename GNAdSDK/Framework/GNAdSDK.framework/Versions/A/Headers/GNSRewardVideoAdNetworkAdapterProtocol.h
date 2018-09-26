@@ -1,5 +1,6 @@
 //
 //  GADMRewardVideoAdNetworkAdapter.h
+//  GNAdSDK
 //
 
 

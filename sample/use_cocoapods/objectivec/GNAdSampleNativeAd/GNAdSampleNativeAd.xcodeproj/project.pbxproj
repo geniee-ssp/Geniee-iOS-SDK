@@ -14,8 +14,8 @@
 		E833B4DB20DB7F4300413035 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E833B4DA20DB7F4300413035 /* main.m */; };
 		E833B4E420DB809F00413035 /* GNQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E833B4E220DB809F00413035 /* GNQueue.m */; };
 		E833B4E820DB80AB00413035 /* MyCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = E833B4E720DB80AB00413035 /* MyCellData.m */; };
-		E833B4EB20DB813C00413035 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E833B4EA20DB813C00413035 /* TableViewCell.m */; };
-		E833B4EE20DB815700413035 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E833B4ED20DB815700413035 /* TableViewController.m */; };
+		EF4A325E2137C8D300D0BAD0 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4A325B2137C8D300D0BAD0 /* TableViewController.m */; };
+		EF4A325F2137C8D300D0BAD0 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4A325C2137C8D300D0BAD0 /* TableViewCell.m */; };
 		FA0212F3A7D88F394B846EE8 /* libPods-GNAdSampleNativeAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9A3D7F89322764B39CCE7C /* libPods-GNAdSampleNativeAd.a */; };
 /* End PBXBuildFile section */
 
@@ -35,10 +35,10 @@
 		E833B4E320DB809F00413035 /* GNQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNQueue.h; sourceTree = "<group>"; };
 		E833B4E620DB80AB00413035 /* MyCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCellData.h; sourceTree = "<group>"; };
 		E833B4E720DB80AB00413035 /* MyCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCellData.m; sourceTree = "<group>"; };
-		E833B4E920DB813200413035 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = "../../../../objective-c/GNAdSampleNativeAd/GNAdSampleNativeAd/TableViewController.h"; sourceTree = "<group>"; };
-		E833B4EA20DB813C00413035 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewCell.m; path = "../../../../objective-c/GNAdSampleNativeAd/GNAdSampleNativeAd/TableViewCell.m"; sourceTree = "<group>"; };
-		E833B4EC20DB814A00413035 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TableViewCell.h; path = "../../../../objective-c/GNAdSampleNativeAd/GNAdSampleNativeAd/TableViewCell.h"; sourceTree = "<group>"; };
-		E833B4ED20DB815700413035 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = "../../../../objective-c/GNAdSampleNativeAd/GNAdSampleNativeAd/TableViewController.m"; sourceTree = "<group>"; };
+		EF4A325A2137C8D300D0BAD0 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		EF4A325B2137C8D300D0BAD0 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		EF4A325C2137C8D300D0BAD0 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		EF4A325D2137C8D300D0BAD0 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,15 +95,15 @@
 				E833B4E120DB809F00413035 /* DataStructure */,
 				E833B4CB20DB7F4100413035 /* AppDelegate.h */,
 				E833B4CC20DB7F4100413035 /* AppDelegate.m */,
-				E833B4E920DB813200413035 /* TableViewController.h */,
-				E833B4ED20DB815700413035 /* TableViewController.m */,
-				E833B4EC20DB814A00413035 /* TableViewCell.h */,
-				E833B4EA20DB813C00413035 /* TableViewCell.m */,
 				E833B4D120DB7F4100413035 /* Main.storyboard */,
 				E833B4D420DB7F4300413035 /* Assets.xcassets */,
 				E833B4D620DB7F4300413035 /* LaunchScreen.storyboard */,
 				E833B4D920DB7F4300413035 /* Info.plist */,
 				E833B4DA20DB7F4300413035 /* main.m */,
+				EF4A325A2137C8D300D0BAD0 /* TableViewCell.h */,
+				EF4A325C2137C8D300D0BAD0 /* TableViewCell.m */,
+				EF4A325D2137C8D300D0BAD0 /* TableViewController.h */,
+				EF4A325B2137C8D300D0BAD0 /* TableViewController.m */,
 			);
 			path = GNAdSampleNativeAd;
 			sourceTree = "<group>";
@@ -218,11 +218,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E833B4EB20DB813C00413035 /* TableViewCell.m in Sources */,
 				E833B4E820DB80AB00413035 /* MyCellData.m in Sources */,
+				EF4A325F2137C8D300D0BAD0 /* TableViewCell.m in Sources */,
 				E833B4DB20DB7F4300413035 /* main.m in Sources */,
 				E833B4E420DB809F00413035 /* GNQueue.m in Sources */,
-				E833B4EE20DB815700413035 /* TableViewController.m in Sources */,
+				EF4A325E2137C8D300D0BAD0 /* TableViewController.m in Sources */,
 				E833B4CD20DB7F4100413035 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +367,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				INFOPLIST_FILE = GNAdSampleNativeAd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -385,6 +386,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				INFOPLIST_FILE = GNAdSampleNativeAd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

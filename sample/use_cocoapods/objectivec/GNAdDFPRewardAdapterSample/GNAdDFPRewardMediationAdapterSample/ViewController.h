@@ -11,7 +11,7 @@
 #import <GNAdSDK/GNSRewardVideoAdDelegate.h>
 #import <GoogleMobileAds/GoogleMobileAds.h>
 
-@interface ViewController : UIViewController <GNSRewardVideoAdDelegate , GADRewardBasedVideoAdDelegate>
+@interface ViewController : UIViewController <GADRewardBasedVideoAdDelegate, UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *zoneIDText;
 

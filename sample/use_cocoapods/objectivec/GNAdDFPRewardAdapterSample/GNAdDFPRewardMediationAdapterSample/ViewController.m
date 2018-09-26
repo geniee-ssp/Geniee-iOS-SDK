@@ -29,7 +29,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    _dfpAdUnitIdLabel.delegate = self;
+
     [GADRewardBasedVideoAd sharedInstance].delegate = self;
     
     self.showVideoButton.hidden = YES;
@@ -98,6 +99,12 @@
 /// Tells the delegate that the reward based video ad will leave the application.
 - (void)rewardBasedVideoAdWillLeaveApplication:(GADRewardBasedVideoAd *)rewardBasedVideoAd {
     NSLog(@"rewardBasedVideoAdWillLeaveApplication");
+}
+
+-(BOOL) textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
 }
 
 

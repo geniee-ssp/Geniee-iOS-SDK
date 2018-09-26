@@ -1,9 +1,6 @@
 //
 //  ViewController.swift
-//  DFPRewardedVideoExample
-//
-//  Created by Yazaki Hironobu on 2018/07/02.
-//  Copyright © 2018年 Yazaki Hironobu. All rights reserved.
+//  GNAdDFPRewardedAdapterSample
 //
 
 import GoogleMobileAds
@@ -21,6 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        unitIdTextField.delegate = self
         rewardBasedVideo = GADRewardBasedVideoAd.sharedInstance()
         rewardBasedVideo?.delegate = self
         loadButton.isHidden = false
@@ -82,6 +80,14 @@ extension ViewController : GADRewardBasedVideoAdDelegate {
     func rewardBasedVideoAd(_ rewardBasedVideoAd: GADRewardBasedVideoAd,
                             didRewardUserWith reward: GADAdReward) {
         print("Reward received with currency: \(reward.type), amount \(reward.amount).")
+    }
+}
+// MARK: UITextFieldDelegate implementation
+extension ViewController : UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // Hide the keyboard when press return key in a UITextField
+        textField.resignFirstResponder()
+        return true;
     }
 }
 

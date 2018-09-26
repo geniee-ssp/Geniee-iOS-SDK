@@ -1,9 +1,6 @@
 //
 //  AppDelegate.swift
-//  DFPRewardedVideoExample
-//
-//  Created by Yazaki Hironobu on 2018/07/02.
-//  Copyright © 2018年 Yazaki Hironobu. All rights reserved.
+//  GNAdDFPRewardedAdapterSample
 //
 
 import UIKit
