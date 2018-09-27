@@ -1,0 +1,6 @@
+framework module GNAdDFPBannerMediationAdapter {
+  umbrella header "GNAdDFPBannerMediationAdapter.h"
+
+  export *
+  module * { export * }
+}
