@@ -6,6 +6,6 @@ target 'GNAdSampleNativeAd' do
   #use_frameworks!
 
   # Pods for GNAdSampleNativeAd
-  pod 'Geniee-iOS-SDK', :git => 'https://github.com/geniee-ssp/Geniee-iOS-SDK.git', :branch => 'master'
+  pod 'Geniee-iOS-SDK'
 
 end

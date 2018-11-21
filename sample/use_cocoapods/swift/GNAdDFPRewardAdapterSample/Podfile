@@ -4,10 +4,7 @@
 target 'GNAdDFPRewardAdapterSample' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
 
-  # Pods for DFPRewardedVideoExample
   # DFP, GenieeCustomAdapter.
-  #pod 'Geniee-DFP-Mediation-Adapter', :path => '~/Downloads/TestLibrary'
-  #  pod 'Geniee-DFP-Mediation-Adapter', :git => 'https://github.com/geniee-ssp/Geniee-iOS-SDK.git', :branch => 'feature/custom_mediation'
   pod 'Geniee-DFP-Mediation-Adapter'
 
   # GNSDK.
