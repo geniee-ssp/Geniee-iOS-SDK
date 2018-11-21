@@ -14,14 +14,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    _adView = [[GNAdView alloc]
-               initWithFrame:CGRectMake(0, 20, 320, 50) adSizeType:GNAdSizeTypeSmall
-               appID:@"YOUR_SSP_APP_ID"];
+    _adView = [[GNAdView alloc] initWithAdSizeType:GNAdSizeTypeTall appID:@"YOUR_SSP_APP_ID"];
     _adView.delegate = self;
     _adView.rootViewController = self;
+    //_adView.GNAdlogPriority = GNLogPriorityInfo;
 
     [self.view addSubview:_adView];
-    _adView.center = CGPointMake(self.view.center.x, _adView.center.y);
+    _adView.center = CGPointMake(self.view.center.x, self.view.center.y);
     [_adView startAdLoop];
 }
 

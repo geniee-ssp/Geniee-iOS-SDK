@@ -7,19 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84649750752A435E7BBAEB63 /* libPods-GNAdSampleBanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68F6E6707B7FB1858D58F7F2 /* libPods-GNAdSampleBanner.a */; };
 		BBE1E55E20D0EBA20035A52A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE1E55D20D0EBA20035A52A /* AppDelegate.m */; };
 		BBE1E56120D0EBA20035A52A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE1E56020D0EBA20035A52A /* ViewController.m */; };
 		BBE1E56420D0EBA20035A52A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBE1E56220D0EBA20035A52A /* Main.storyboard */; };
 		BBE1E56620D0EBA80035A52A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBE1E56520D0EBA80035A52A /* Assets.xcassets */; };
 		BBE1E56920D0EBA80035A52A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBE1E56720D0EBA80035A52A /* LaunchScreen.storyboard */; };
 		BBE1E56C20D0EBA80035A52A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE1E56B20D0EBA80035A52A /* main.m */; };
-		E142426F04E51C5C3DD1B946 /* libPods-GNCAdSampleBanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEB3CA2D030DF4798469EAB /* libPods-GNCAdSampleBanner.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		192EF6194FE01A86DAB898FC /* Pods-GNCAdSampleBanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNCAdSampleBanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GNCAdSampleBanner/Pods-GNCAdSampleBanner.debug.xcconfig"; sourceTree = "<group>"; };
-		9EEB3CA2D030DF4798469EAB /* libPods-GNCAdSampleBanner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GNCAdSampleBanner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBE1E55920D0EBA20035A52A /* GNCAdSampleBanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNCAdSampleBanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2713F47857A0651B330C9B4E /* Pods-GNAdSampleBanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdSampleBanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdSampleBanner/Pods-GNAdSampleBanner.debug.xcconfig"; sourceTree = "<group>"; };
+		68F6E6707B7FB1858D58F7F2 /* libPods-GNAdSampleBanner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GNAdSampleBanner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84CA8800A596D209B12F1417 /* Pods-GNAdSampleBanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdSampleBanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdSampleBanner/Pods-GNAdSampleBanner.release.xcconfig"; sourceTree = "<group>"; };
+		BBE1E55920D0EBA20035A52A /* GNAdSampleBanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNAdSampleBanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE1E55C20D0EBA20035A52A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BBE1E55D20D0EBA20035A52A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BBE1E55F20D0EBA20035A52A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -29,7 +30,6 @@
 		BBE1E56820D0EBA80035A52A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBE1E56A20D0EBA80035A52A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBE1E56B20D0EBA80035A52A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D74E9D1B3307124316A62566 /* Pods-GNCAdSampleBanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNCAdSampleBanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-GNCAdSampleBanner/Pods-GNCAdSampleBanner.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E142426F04E51C5C3DD1B946 /* libPods-GNCAdSampleBanner.a in Frameworks */,
+				84649750752A435E7BBAEB63 /* libPods-GNAdSampleBanner.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,8 +47,8 @@
 		A7B517D70CBBB2979DC86507 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				192EF6194FE01A86DAB898FC /* Pods-GNCAdSampleBanner.debug.xcconfig */,
-				D74E9D1B3307124316A62566 /* Pods-GNCAdSampleBanner.release.xcconfig */,
+				2713F47857A0651B330C9B4E /* Pods-GNAdSampleBanner.debug.xcconfig */,
+				84CA8800A596D209B12F1417 /* Pods-GNAdSampleBanner.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -56,7 +56,7 @@
 		BBE1E55020D0EBA20035A52A = {
 			isa = PBXGroup;
 			children = (
-				BBE1E55B20D0EBA20035A52A /* GNCAdSampleBanner */,
+				BBE1E55B20D0EBA20035A52A /* GNAdSampleBanner */,
 				BBE1E55A20D0EBA20035A52A /* Products */,
 				A7B517D70CBBB2979DC86507 /* Pods */,
 				BE654908B2939CCD201AF37B /* Frameworks */,
@@ -66,12 +66,12 @@
 		BBE1E55A20D0EBA20035A52A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BBE1E55920D0EBA20035A52A /* GNCAdSampleBanner.app */,
+				BBE1E55920D0EBA20035A52A /* GNAdSampleBanner.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BBE1E55B20D0EBA20035A52A /* GNCAdSampleBanner */ = {
+		BBE1E55B20D0EBA20035A52A /* GNAdSampleBanner */ = {
 			isa = PBXGroup;
 			children = (
 				BBE1E55C20D0EBA20035A52A /* AppDelegate.h */,
@@ -84,13 +84,13 @@
 				BBE1E56A20D0EBA80035A52A /* Info.plist */,
 				BBE1E56B20D0EBA80035A52A /* main.m */,
 			);
-			path = GNCAdSampleBanner;
+			path = GNAdSampleBanner;
 			sourceTree = "<group>";
 		};
 		BE654908B2939CCD201AF37B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9EEB3CA2D030DF4798469EAB /* libPods-GNCAdSampleBanner.a */,
+				68F6E6707B7FB1858D58F7F2 /* libPods-GNAdSampleBanner.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -98,9 +98,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BBE1E55820D0EBA20035A52A /* GNCAdSampleBanner */ = {
+		BBE1E55820D0EBA20035A52A /* GNAdSampleBanner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BBE1E56F20D0EBA80035A52A /* Build configuration list for PBXNativeTarget "GNCAdSampleBanner" */;
+			buildConfigurationList = BBE1E56F20D0EBA80035A52A /* Build configuration list for PBXNativeTarget "GNAdSampleBanner" */;
 			buildPhases = (
 				BE85388F96B499B296AA4857 /* [CP] Check Pods Manifest.lock */,
 				BBE1E55520D0EBA20035A52A /* Sources */,
@@ -111,9 +111,9 @@
 			);
 			dependencies = (
 			);
-			name = GNCAdSampleBanner;
+			name = GNAdSampleBanner;
 			productName = GNCAdSampleBanner;
-			productReference = BBE1E55920D0EBA20035A52A /* GNCAdSampleBanner.app */;
+			productReference = BBE1E55920D0EBA20035A52A /* GNAdSampleBanner.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -130,7 +130,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BBE1E55420D0EBA20035A52A /* Build configuration list for PBXProject "GNCAdSampleBanner" */;
+			buildConfigurationList = BBE1E55420D0EBA20035A52A /* Build configuration list for PBXProject "GNAdSampleBanner" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -143,7 +143,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BBE1E55820D0EBA20035A52A /* GNCAdSampleBanner */,
+				BBE1E55820D0EBA20035A52A /* GNAdSampleBanner */,
 			);
 		};
 /* End PBXProject section */
@@ -173,7 +173,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GNCAdSampleBanner-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-GNAdSampleBanner-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -327,18 +327,18 @@
 		};
 		BBE1E57020D0EBA80035A52A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 192EF6194FE01A86DAB898FC /* Pods-GNCAdSampleBanner.debug.xcconfig */;
+			baseConfigurationReference = 2713F47857A0651B330C9B4E /* Pods-GNAdSampleBanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKMVWZ32F4;
-				INFOPLIST_FILE = GNCAdSampleBanner/Info.plist;
+				INFOPLIST_FILE = GNAdSampleBanner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.com.geniee.GNCAdSampleBanner;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.com.geniee.GNAdSampleBanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -346,18 +346,18 @@
 		};
 		BBE1E57120D0EBA80035A52A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D74E9D1B3307124316A62566 /* Pods-GNCAdSampleBanner.release.xcconfig */;
+			baseConfigurationReference = 84CA8800A596D209B12F1417 /* Pods-GNAdSampleBanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKMVWZ32F4;
-				INFOPLIST_FILE = GNCAdSampleBanner/Info.plist;
+				INFOPLIST_FILE = GNAdSampleBanner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.com.geniee.GNCAdSampleBanner;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.com.geniee.GNAdSampleBanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,7 +366,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BBE1E55420D0EBA20035A52A /* Build configuration list for PBXProject "GNCAdSampleBanner" */ = {
+		BBE1E55420D0EBA20035A52A /* Build configuration list for PBXProject "GNAdSampleBanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BBE1E56D20D0EBA80035A52A /* Debug */,
@@ -375,7 +375,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BBE1E56F20D0EBA80035A52A /* Build configuration list for PBXNativeTarget "GNCAdSampleBanner" */ = {
+		BBE1E56F20D0EBA80035A52A /* Build configuration list for PBXNativeTarget "GNAdSampleBanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BBE1E57020D0EBA80035A52A /* Debug */,
