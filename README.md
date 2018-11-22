@@ -14,8 +14,8 @@
 |:--|:--|
 |GNAdSDK| 3.2.0 |
 |rewardMediation|2.5.0|
-|GNAdDFPBannerMediationAdapter|3.2.0.0|
-|GNAdDFPRewardMediationAdapter|3.2.0.0|
+|GNAdDFPBannerMediationAdapter|3.2.0.1|
+|GNAdDFPRewardMediationAdapter|3.2.0.1|
 
 ### [Ad Network(RewardVideo Mediation)](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-For-iOS)
 
