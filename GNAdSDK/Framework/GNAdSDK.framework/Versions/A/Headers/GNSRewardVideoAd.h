@@ -6,11 +6,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "GNSRequest.h"
+#import "GNSdkMediation.h"
 
 @protocol GNSRewardVideoAdDelegate;
 
 /// The GNSRewardVideoAd class is used for requesting and presenting a reward video ad.
-@interface GNSRewardVideoAd : NSObject
+@interface GNSRewardVideoAd : GNSdkMediation
 
 /// Delegate for receiving video notifications.
 @property(nonatomic, weak) id<GNSRewardVideoAdDelegate> delegate;
