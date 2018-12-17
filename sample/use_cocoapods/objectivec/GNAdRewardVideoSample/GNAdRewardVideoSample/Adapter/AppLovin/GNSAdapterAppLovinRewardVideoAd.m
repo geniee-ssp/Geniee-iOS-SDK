@@ -7,9 +7,7 @@
 
 #import <AppLovinSDK/ALSdk.h>
 #import <AppLovinSDK/ALIncentivizedInterstitialAd.h>
-//#import "ALSdk.h"
-//#import "ALIncentivizedInterstitialAd.h"
-#import <GNAdSDK/GNSRewardVideoAdNetworkConnectorProtocol.h>
+#import <GNAdSDK/GNSAdNetworkConnectorProtocol.h>
 #import <GNAdSDK/GNSAdNetworkExtraParams.h>
 #import <GNAdSDK/GNSAdReward.h>
 
@@ -21,8 +19,9 @@ static BOOL loggingEnabled = YES;
 ALAdDisplayDelegate, ALAdVideoPlaybackDelegate>
 
 @property(nonatomic, strong) GNSAdReward *reward;
-@property(nonatomic, weak) id<GNSRewardVideoAdNetworkConnector> connector;
+@property(nonatomic, weak) id<GNSAdNetworkConnector> connector;
 @property (nonatomic, retain) NSTimer *timer;
+@property (nonatomic, strong) ALIncentivizedInterstitialAd *incentivizedInterstitial;
 
 @end
 
@@ -38,7 +37,7 @@ ALAdDisplayDelegate, ALAdVideoPlaybackDelegate>
 }
 
 + (NSString *)adapterVersion {
-    return @"2.5.0";
+    return @"2.6.0";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {
@@ -48,13 +47,14 @@ ALAdDisplayDelegate, ALAdVideoPlaybackDelegate>
 - (id<GNSAdNetworkExtras>)networkExtrasParameter:(GNSAdNetworkExtraParams *) parameter
 {
     GNSExtrasAppLovin * extra = [[GNSExtrasAppLovin alloc]init];
-    extra.placement_id = parameter.external_link_id;
+    extra.zone_id = parameter.external_link_id;
     extra.type = parameter.type;
     extra.amount = parameter.amount;
     return extra;
 }
 
-- (instancetype)initWithRewardVideoAdNetworkConnector:(id<GNSRewardVideoAdNetworkConnector>)connector {
+- (instancetype)initWithAdNetworkConnector:(id<GNSAdNetworkConnector>)connector
+{
     self = [super init];
     if (self) {
         self.connector = connector;
@@ -66,9 +66,8 @@ ALAdDisplayDelegate, ALAdVideoPlaybackDelegate>
 - (void)setUp {
     
     [self ALLog:[NSString stringWithFormat:@"setUp AppLovin version = %@", [ALSdk version]]];
-    
     [[ALSdk shared] initializeSdk];
-    [self.connector adapterDidSetUpRewardVideoAd:self];
+    [self.connector adapterDidSetupAd:self];
 }
 
 - (void)setTimerWith:(NSInteger)timeout
@@ -98,15 +97,15 @@ ALAdDisplayDelegate, ALAdVideoPlaybackDelegate>
     NSError *error = [NSError errorWithDomain: kGNSAdapterAppLovinRewardVideoAdKeyErrorDomain
                                          code: 1
                                      userInfo: errorInfo];
-    [self.connector adapter: self didFailToLoadRewardVideoAdwithError: error];
+    [self.connector adapter: self didFailToLoadAdwithError: error];
 }
 
 
 // AppLovin have no auto load
-- (void)requestRewardVideoAd:(NSInteger)timeout {
+- (void)requestAd:(NSInteger)timeout {
     //Return the result when already loaded
     if ([self isReadyForDisplay]) {
-        [self.connector adapterDidReceiveRewardVideoAd:self];
+        [self.connector adapterDidReceiveAd:self];
         return;
     }
     // set Timer
@@ -114,23 +113,33 @@ ALAdDisplayDelegate, ALAdVideoPlaybackDelegate>
     
     self.reward = nil;
     GNSExtrasAppLovin *extras = [self.connector networkExtras];
-    [ALIncentivizedInterstitialAd preloadAndNotify:self];
-
+    
+    [self ALLog:[NSString stringWithFormat:@"Create Incent with Applovin zone_id = @%@",extras.zone_id]];
+    
+    if([extras.zone_id length] == 0){
+        self.incentivizedInterstitial = [[ALIncentivizedInterstitialAd alloc] initWithSdk: [ALSdk shared]];
+    } else {
+        self.incentivizedInterstitial = [[ALIncentivizedInterstitialAd alloc] initWithZoneIdentifier: extras.zone_id];
+    }
+    [self.incentivizedInterstitial preloadAndNotify: self];
+    
 }
 
-- (void)presentRewardVideoAdWithRootViewController:(UIViewController *)viewController {
+- (void)presentAdWithRootViewController:(UIViewController *)viewController {
     [self setSharedDelegates];
-    [ALIncentivizedInterstitialAd showAndNotify: self];
+    [self ALLog:[NSString stringWithFormat:@"Show Applovin zone_id = @%@",self.incentivizedInterstitial.zoneIdentifier]];
+    
+    [self.incentivizedInterstitial showAndNotify: self];
 }
 
 - (void)setSharedDelegates {
-    [ALIncentivizedInterstitialAd shared].adDisplayDelegate = self;
-    [ALIncentivizedInterstitialAd shared].adVideoPlaybackDelegate = self;
+    self.incentivizedInterstitial.adDisplayDelegate = self;
+    self.incentivizedInterstitial.adVideoPlaybackDelegate = self;
 }
 
 - (void)unsetSharedDelegates {
-    [ALIncentivizedInterstitialAd shared].adDisplayDelegate = nil;
-    [ALIncentivizedInterstitialAd shared].adVideoPlaybackDelegate = nil;
+    self.incentivizedInterstitial.adDisplayDelegate = nil;
+    self.incentivizedInterstitial.adVideoPlaybackDelegate = nil;
 }
 
 - (void)stopBeingDelegate {
@@ -140,14 +149,14 @@ ALAdDisplayDelegate, ALAdVideoPlaybackDelegate>
 
 - (BOOL)isReadyForDisplay
 {
-    return [ALIncentivizedInterstitialAd isReadyForDisplay];
+    return [self.incentivizedInterstitial isReadyForDisplay];
 }
 
 #pragma mark - ALAdLoadDelegate
 
 - (void)adService:(ALAdService *)adService didLoadAd:(ALAd *)ad {
     [self deleteTimer];
-    [self.connector adapterDidReceiveRewardVideoAd:self];
+    [self.connector adapterDidReceiveAd:self];
 }
 
 - (void)adService:(ALAdService *)adService didFailToLoadAdWithError:(int)code {
@@ -157,7 +166,7 @@ ALAdDisplayDelegate, ALAdVideoPlaybackDelegate>
                                          //code: (code == kALErrorCodeNoFill) ? kGADErrorMediationNoFill : kGADErrorNetworkError
                                          code: (code == kALErrorCodeNoFill) ? kALErrorCodeNoFill : kALErrorCodeNoFill
                                      userInfo: errorInfo];
-    [self.connector adapter: self didFailToLoadRewardVideoAdwithError: error];
+    [self.connector adapter: self didFailToLoadAdwithError: error];
 }
 
 #pragma mark - ALAdDisplayDelegate
@@ -170,7 +179,7 @@ ALAdDisplayDelegate, ALAdVideoPlaybackDelegate>
 }
 
 - (void)ad:(ALAd *)ad wasHiddenIn:(UIView *)view {
-    [self.connector adapterDidCloseRewardVideoAd:self];
+    [self.connector adapterDidCloseAd:self];
     [self unsetSharedDelegates];
 }
 

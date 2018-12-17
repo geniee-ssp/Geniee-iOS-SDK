@@ -6,7 +6,7 @@
 #import "GNSAdapterTapjoyRewardVideoAd.h"
 #import <Tapjoy/Tapjoy.h>
 #import <Tapjoy/TJPlacement.h>
-#import <GNAdSDK/GNSRewardVideoAdNetworkConnectorProtocol.h>
+#import <GNAdSDK/GNSAdNetworkConnectorProtocol.h>
 #import <GNAdSDK/GNSAdNetworkExtraParams.h>
 #import <GNAdSDK/GNSAdReward.h>
 
@@ -21,7 +21,7 @@ static BOOL establishingConnection = NO;
 @property(nonatomic, weak) TJPlacement *p;
 @property(nonatomic, assign) BOOL requestingAd;
 
-@property(nonatomic, weak) id<GNSRewardVideoAdNetworkConnector> connector;
+@property(nonatomic, weak) id<GNSAdNetworkConnector> connector;
 @property (nonatomic, retain) NSTimer *timer;
 @property (nonatomic, assign) NSInteger timeout;
 
@@ -39,7 +39,7 @@ static BOOL establishingConnection = NO;
 }
 
 + (NSString *)adapterVersion {
-    return @"2.4.4";
+    return @"2.6.0";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {
@@ -57,7 +57,8 @@ static BOOL establishingConnection = NO;
     return extra;
 }
 
-- (instancetype)initWithRewardVideoAdNetworkConnector:(id<GNSRewardVideoAdNetworkConnector>)connector {
+- (instancetype)initWithAdNetworkConnector:(id<GNSAdNetworkConnector>)connector
+{
     self = [super init];
     if (self) {
         self.connector = connector;
@@ -89,7 +90,7 @@ static BOOL establishingConnection = NO;
             establishingConnection = YES;
         }
     }
-    [self.connector adapterDidSetUpRewardVideoAd:self];
+    [self.connector adapterDidSetupAd:self];
 }
 
 - (void)setTimerWith:(NSInteger)timeout
@@ -120,11 +121,11 @@ static BOOL establishingConnection = NO;
     NSError *error = [NSError errorWithDomain: kGNSAdapterTapjoyRewardVideoAdKeyErrorDomain
                                          code: 1
                                      userInfo: errorInfo];
-    [self.connector adapter: self didFailToLoadRewardVideoAdwithError: error];
+    [self.connector adapter: self didFailToLoadAdwithError: error];
 }
 
 
-- (void)requestRewardVideoAd:(NSInteger)timeout {
+- (void)requestAd:(NSInteger)timeout {
     _timeout = timeout;
     self.requestingAd = YES;
     //Start connect sdk
@@ -139,7 +140,7 @@ static BOOL establishingConnection = NO;
     //Return the result when already loaded
     if (_isConfigured && [self isReadyForDisplay]) {
         self.requestingAd = NO;
-        [self.connector adapterDidReceiveRewardVideoAd:self];
+        [self.connector adapterDidReceiveAd:self];
         return;
     }
     // set Timer
@@ -165,7 +166,7 @@ static BOOL establishingConnection = NO;
 
 }
 
-- (void)presentRewardVideoAdWithRootViewController:(UIViewController *)viewController {
+- (void)presentAdWithRootViewController:(UIViewController *)viewController {
     if(self.p != nil && self.p.isContentReady) {
         [self.p showContentWithViewController: viewController];
     }
@@ -188,7 +189,7 @@ static BOOL establishingConnection = NO;
     NSError *error = [NSError errorWithDomain: kGNSAdapterTapjoyRewardVideoAdKeyErrorDomain
                                          code: 1
                                      userInfo: errorInfo];
-    [self.connector adapter: self didFailToLoadRewardVideoAdwithError: error];
+    [self.connector adapter: self didFailToLoadAdwithError: error];
 }
 
 #pragma mark - Tapjoy connection notification
@@ -199,7 +200,7 @@ static BOOL establishingConnection = NO;
     establishingConnection = NO;
     if (self.requestingAd) {
         [self deleteTimer];
-        [self requestRewardVideoAd:_timeout];
+        [self requestAd:_timeout];
     }
 }
 
@@ -231,7 +232,7 @@ static BOOL establishingConnection = NO;
     if (self.p != nil && self.p.isContentAvailable) {
         
         [self ALLog:@"There is some content for this placement"];
-        [self.connector adapterDidReceiveRewardVideoAd:self];
+        [self.connector adapterDidReceiveAd:self];
     } else {
         
         [self ALLog:@"There is no content for this placement"];
@@ -239,7 +240,7 @@ static BOOL establishingConnection = NO;
         NSError *error = [NSError errorWithDomain: kGNSAdapterTapjoyRewardVideoAdKeyErrorDomain
                                              code: 1
                                          userInfo: errorInfo];
-        [self.connector adapter: self didFailToLoadRewardVideoAdwithError: error];
+        [self.connector adapter: self didFailToLoadAdwithError: error];
     }
     [self deleteTimer];
     
@@ -253,7 +254,7 @@ static BOOL establishingConnection = NO;
 - (void)contentDidDisappear:(TJPlacement*)placement
 {
     [self ALLog:@"contentDidDisappear"];
-    [self.connector adapterDidCloseRewardVideoAd:self];
+    [self.connector adapterDidCloseAd:self];
 }
 
 #pragma mark - video progress
