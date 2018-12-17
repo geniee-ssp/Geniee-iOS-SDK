@@ -23,7 +23,6 @@
     self.showAdButton.hidden = YES;
     GNSRequest *request = [GNSRequest request];
     //request.geoLocationEnable = NO;
-    request.testMode = YES;
     request.GNAdlogPriority = GNLogPriorityInfo;
     [[GNSFullscreenInterstitialAd sharedInstance] loadRequest:request withZoneID:_zoneIDText.text];
 }
