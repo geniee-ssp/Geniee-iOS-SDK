@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 
-  s.name         = "Geniee-DFP-Mediation-Adapter"
+  s.name         = "Geniee-DFP-Mediation-FullscreenInterstitial-Adapter"
   s.version      = "4.0.0"
   s.summary      = "An SDK for ad menetization with the Geniee Network"
   s.homepage     = "https://geniee.co.jp"
@@ -54,7 +54,7 @@ Pod::Spec.new do |s|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-  s.vendored_frameworks = "GNAdDFPRewardMediationAdapter/Framework/GNAdDFPRewardMediationAdapter.framework"
+  s.vendored_frameworks = "GNAdDFPFullscreenInterstitialMediationAdapter/Framework/GNAdDFPFullscreenInterstitialMediationAdapter.framework"
   
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
