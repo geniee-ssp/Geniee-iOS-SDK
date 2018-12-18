@@ -6,7 +6,7 @@
 #import "GNSAdapterUnityAdsRewardVideoAd.h"
 
 #import "UnityAds/UnityAds.h"
-#import <GNAdSDK/GNSRewardVideoAdNetworkConnectorProtocol.h>
+#import <GNAdSDK/GNSAdNetworkConnectorProtocol.h>
 #import <GNAdSDK/GNSAdNetworkExtraParams.h>
 #import <GNAdSDK/GNSAdReward.h>
 
@@ -16,7 +16,7 @@ static BOOL loggingEnabled = YES;
 @interface GNSAdapterUnityAdsRewardVideoAd () <UnityAdsDelegate>
 
 @property(nonatomic, strong) GNSAdReward *reward;
-@property(nonatomic, weak) id<GNSRewardVideoAdNetworkConnector> connector;
+@property(nonatomic, weak) id<GNSAdNetworkConnector> connector;
 @property (nonatomic, retain) NSTimer *timer;
 
 @end
@@ -33,7 +33,7 @@ static BOOL loggingEnabled = YES;
 }
 
 + (NSString *)adapterVersion {
-    return @"2.5.0";
+    return @"2.6.0";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {
@@ -50,7 +50,8 @@ static BOOL loggingEnabled = YES;
     return extra;
 }
 
-- (instancetype)initWithRewardVideoAdNetworkConnector:(id<GNSRewardVideoAdNetworkConnector>)connector {
+- (instancetype)initWithAdNetworkConnector:(id<GNSAdNetworkConnector>)connector
+{
     self = [super init];
     if (self) {
         self.connector = connector;
@@ -60,7 +61,7 @@ static BOOL loggingEnabled = YES;
 }
 
 - (void)setUp {
-    [self.connector adapterDidSetUpRewardVideoAd:self];
+    [self.connector adapterDidSetupAd:self];
 }
 
 - (void)setTimerWith:(NSInteger)timeout
@@ -91,13 +92,13 @@ static BOOL loggingEnabled = YES;
     NSError *error = [NSError errorWithDomain: kGNSAdapterUnityAdsRewardVideoAdKeyErrorDomain
                                          code: 1
                                      userInfo: errorInfo];
-    [self.connector adapter: self didFailToLoadRewardVideoAdwithError: error];
+    [self.connector adapter: self didFailToLoadAdwithError: error];
 }
 
-- (void)requestRewardVideoAd:(NSInteger)timeout {
+- (void)requestAd:(NSInteger)timeout {
     //Return the result when already loaded
     if ([self isReadyForDisplay]) {
-        [self.connector adapterDidReceiveRewardVideoAd:self];
+        [self.connector adapterDidReceiveAd:self];
         return;
     }
     // set Timer
@@ -116,7 +117,7 @@ static BOOL loggingEnabled = YES;
     return [UnityAds isReady:extras.placement_id];
 }
 
-- (void)presentRewardVideoAdWithRootViewController:(UIViewController *)viewController {
+- (void)presentAdWithRootViewController:(UIViewController *)viewController {
     GNSExtrasUnityAds *extras = [self.connector networkExtras];
     if ([UnityAds isReady:extras.placement_id]) {
         [UnityAds show:viewController placementId:extras.placement_id];
@@ -132,7 +133,7 @@ static BOOL loggingEnabled = YES;
 - (void)unityAdsReady:(NSString *)placementId
 {
     [self deleteTimer];
-    [self.connector adapterDidReceiveRewardVideoAd:self];
+    [self.connector adapterDidReceiveAd:self];
 }
 
 - (void)unityAdsDidError:(UnityAdsError)error withMessage:(NSString *)message
@@ -142,7 +143,7 @@ static BOOL loggingEnabled = YES;
     NSError *ns_error = [NSError errorWithDomain: kGNSAdapterUnityAdsRewardVideoAdKeyErrorDomain
                                          code: error
                                      userInfo: errorInfo];
-    [self.connector adapter: self didFailToLoadRewardVideoAdwithError: ns_error];
+    [self.connector adapter: self didFailToLoadAdwithError: ns_error];
 }
 
 - (void)unityAdsDidStart:(NSString *)placementId
@@ -180,7 +181,7 @@ static BOOL loggingEnabled = YES;
             self.reward = nil;
         }
     }
-    [self.connector adapterDidCloseRewardVideoAd:self];
+    [self.connector adapterDidCloseAd:self];
 }
 
 @end

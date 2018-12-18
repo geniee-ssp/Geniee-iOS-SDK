@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Geniee-iOS-SDK"
-  s.version      = "3.4.1"
+  s.version      = "4.0.0"
   s.summary      = "An SDK for ad menetization with the Geniee Network"
   s.homepage     = "https://geniee.co.jp"
 
@@ -27,9 +27,10 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Geniee" => "kota.tomoyasu@geniee.co.jp" }
-  # Or just: s.author    = "TomoyasuKota"
-  # s.authors            = { "TomoyasuKota" => "kota.tomoyasu@geniee.co.jp" }
+  s.author             = { "Geniee" => "kazunori.yamamoto@geniee.co.jp" }
+  # Or just: s.author    = "YamamotoKazunori"
+  # s.authors            = { "YamamotoKazunori" => "reform.kazunori@gmail.com" }
+  # s.social_media_url   = "http://twitter.com/YamamotoKazunori"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -46,7 +47,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/geniee-ssp/Geniee-iOS-SDK.git", :tag => "v.3.4.1" }
+  s.source       = { :git => "https://github.com/geniee-ssp/Geniee-iOS-SDK.git", :tag => "v.4.0.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

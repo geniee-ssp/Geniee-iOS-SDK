@@ -17,7 +17,7 @@ static BOOL loggingEnabled = YES;
 @property(nonatomic, strong) GNSAdReward *reward;
 @property(nonatomic, weak) AMoAdInterstitialVideo *adsource;
 @property(nonatomic, assign) BOOL requestingAd;
-@property(nonatomic, weak) id<GNSRewardVideoAdNetworkConnector> connector;
+@property(nonatomic, weak) id<GNSAdNetworkConnector> connector;
 @property(nonatomic, retain) NSTimer *timer;
 @property(nonatomic, assign) NSInteger timeout;
 @end
@@ -33,10 +33,10 @@ static BOOL loggingEnabled = YES;
     }
 }
 
-#pragma mark - implement GNSRewardVideoAdNetworkConnector
+#pragma mark - implement GNSAdNetworkConnector
 
 + (NSString *)adapterVersion {
-    return @"2.4.4";
+    return @"2.6.0";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {
@@ -51,7 +51,8 @@ static BOOL loggingEnabled = YES;
     return extra;
 }
 
-- (instancetype)initWithRewardVideoAdNetworkConnector:(id<GNSRewardVideoAdNetworkConnector>)connector {
+- (instancetype)initWithAdNetworkConnector:(id<GNSAdNetworkConnector>)connector
+{
     self = [super init];
     if (self) {
         self.connector = connector;
@@ -62,13 +63,13 @@ static BOOL loggingEnabled = YES;
 - (void)setUp {
     
     [self ALLLog:[NSString stringWithFormat:@"setUp AMoAd version: %ld", (long)[AMoAdInterstitialVideo version]]];
-    [self.connector adapterDidSetUpRewardVideoAd:self];
+    [self.connector adapterDidSetupAd:self];
 }
 
-- (void)requestRewardVideoAd:(NSInteger)timeout {
+- (void)requestAd:(NSInteger)timeout {
     
     if ([self isReadyForDisplay]) {
-        [self.connector adapterDidReceiveRewardVideoAd:self];
+        [self.connector adapterDidReceiveAd:self];
         return;
     }
     [self setTimerWith:timeout];
@@ -83,7 +84,7 @@ static BOOL loggingEnabled = YES;
     });
 }
 
-- (void)presentRewardVideoAdWithRootViewController:(UIViewController *)viewController {
+- (void)presentAdWithRootViewController:(UIViewController *)viewController {
     if (self.adsource.loaded) {
         self.adsource.cancellable = NO;
         [self.adsource show];
@@ -108,7 +109,7 @@ static BOOL loggingEnabled = YES;
     NSError *error = [NSError errorWithDomain:kGNSAdapterAmoadRewardVideoAdKeyErrorDomain
                                          code:1
                                      userInfo:errorInfo];
-    [self.connector adapter:self didFailToLoadRewardVideoAdwithError:error];
+    [self.connector adapter:self didFailToLoadAdwithError:error];
     
 }
 
@@ -140,7 +141,7 @@ static BOOL loggingEnabled = YES;
                       
                                          code:1
                                      userInfo:errorInfo];
-    [self.connector adapter:self didFailToLoadRewardVideoAdwithError:error];
+    [self.connector adapter:self didFailToLoadAdwithError:error];
 }
 
 #pragma mark - AmoadDelegate
@@ -150,7 +151,7 @@ static BOOL loggingEnabled = YES;
     [self ALLLog:[NSString stringWithFormat:@"didLoadAd: adResult = %ld", (long)result]];
     [self deleteTimer];
     if (result == AMoAdResultSuccess) {
-        [self.connector adapterDidReceiveRewardVideoAd:self];
+        [self.connector adapterDidReceiveAd:self];
     } else if (result == AMoAdResultFailure ){
         [self onErrorWithMessage:@"Amoad load Result is Failure"];
     } else {
@@ -167,7 +168,7 @@ static BOOL loggingEnabled = YES;
 - (void)amoadInterstitialVideoWillDismiss:(AMoAdInterstitialVideo *)amoadInterstitialVideo
 {
     [self ALLLog:@"amoadInterstitialVideoWillDismiss"];
-    [self.connector adapterDidCloseRewardVideoAd:self];
+    [self.connector adapterDidCloseAd:self];
 }
 
 - (void)amoadInterstitialVideoDidComplete:(AMoAdInterstitialVideo *)amoadInterstitialVideo

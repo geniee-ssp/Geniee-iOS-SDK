@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GNAdFullscreenInterstitialSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZoneId" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2E-CS-ETj">
+                                <rect key="frame" x="50" y="70" width="54" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JpM-yV-SDf" userLabel="ZoneId Text">
+                                <rect key="frame" x="124" y="70" width="201" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GNAdFullscreenInterstitialAdSample" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhb-uf-jKO">
+                                <rect key="frame" x="49" y="150" width="277" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQ1-pC-prH">
+                                <rect key="frame" x="159.5" y="221" width="56" height="30"/>
+                                <state key="normal" title="Load Ad"/>
+                                <connections>
+                                    <action selector="loadInterstitialAd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pP0-ck-bng"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9v-M2-mi9">
+                                <rect key="frame" x="157" y="301" width="61" height="30"/>
+                                <state key="normal" title="Show Ad"/>
+                                <connections>
+                                    <action selector="showInterstitialAd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uuF-vb-4z0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IQ1-pC-prH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hm6-ja-wa8"/>
+                            <constraint firstItem="J9v-M2-mi9" firstAttribute="top" secondItem="IQ1-pC-prH" secondAttribute="bottom" constant="50" id="ZhS-3P-W2g"/>
+                            <constraint firstItem="JpM-yV-SDf" firstAttribute="top" secondItem="G2E-CS-ETj" secondAttribute="top" id="aIE-kR-g2f"/>
+                            <constraint firstItem="G2E-CS-ETj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="ams-3a-U43"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JpM-yV-SDf" secondAttribute="trailing" constant="50" id="bol-87-tXI"/>
+                            <constraint firstItem="bhb-uf-jKO" firstAttribute="top" secondItem="JpM-yV-SDf" secondAttribute="bottom" constant="50" id="d8g-nm-q5a"/>
+                            <constraint firstItem="G2E-CS-ETj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="lMR-94-vpL"/>
+                            <constraint firstItem="IQ1-pC-prH" firstAttribute="top" secondItem="bhb-uf-jKO" secondAttribute="bottom" constant="50" id="nKZ-gI-73t"/>
+                            <constraint firstItem="bhb-uf-jKO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ntL-Rz-64h"/>
+                            <constraint firstItem="J9v-M2-mi9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sFC-Ho-sF4"/>
+                            <constraint firstItem="JpM-yV-SDf" firstAttribute="leading" secondItem="G2E-CS-ETj" secondAttribute="trailing" constant="20" id="urB-va-Sdr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="loadAdButton" destination="IQ1-pC-prH" id="PQm-Fh-grP"/>
+                        <outlet property="showAdButton" destination="J9v-M2-mi9" id="Hm2-Wa-ORo"/>
+                        <outlet property="zoneIdText" destination="JpM-yV-SDf" id="c5x-8O-pDV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

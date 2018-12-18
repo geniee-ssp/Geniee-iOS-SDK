@@ -1,0 +1,6 @@
+framework module GNAdDFPFullscreenInterstitialMediationAdapter {
+  umbrella header "GNAdDFPFullscreenInterstitialMediationAdapter.h"
+
+  export *
+  module * { export * }
+}

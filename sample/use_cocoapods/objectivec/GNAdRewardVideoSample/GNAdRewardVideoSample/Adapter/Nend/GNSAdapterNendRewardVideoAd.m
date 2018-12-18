@@ -15,7 +15,7 @@ static BOOL loggingEnabled = YES;
 @property(nonatomic, strong) GNSAdReward *reward;
 @property(nonatomic) NADRewardedVideo *rewardedVideo;
 @property(nonatomic, assign) BOOL requestingAd;
-@property(nonatomic, weak) id<GNSRewardVideoAdNetworkConnector> connector;
+@property(nonatomic, weak) id<GNSAdNetworkConnector> connector;
 @property(nonatomic, retain) NSTimer *timer;
 @property(nonatomic, assign) NSInteger timeout;
 
@@ -36,7 +36,7 @@ static BOOL loggingEnabled = YES;
 #pragma mark - implement GNSRewardVideoAdNetworkConnector
 
 + (NSString *)adapterVersion {
-    return @"2.5.0";
+    return @"2.6.0";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {
@@ -52,7 +52,8 @@ static BOOL loggingEnabled = YES;
     return extra;
 }
 
-- (instancetype)initWithRewardVideoAdNetworkConnector:(id<GNSRewardVideoAdNetworkConnector>)connector {
+- (instancetype)initWithAdNetworkConnector:(id<GNSAdNetworkConnector>)connector
+{
     self = [super init];
     if (self) {
         self.connector = connector;
@@ -62,13 +63,13 @@ static BOOL loggingEnabled = YES;
 
 - (void)setUp {
     [self AllLog:@"setup"];
-    [self.connector adapterDidSetUpRewardVideoAd:self];
+    [self.connector adapterDidSetupAd:self];
 }
 
-- (void)requestRewardVideoAd:(NSInteger)timeout {
+- (void)requestAd:(NSInteger)timeout {
     
     if ([self isReadyForDisplay]) {
-        [self.connector adapterDidReceiveRewardVideoAd:self];
+        [self.connector adapterDidReceiveAd:self];
         return;
     }
     [self setTimerWith:timeout];
@@ -84,7 +85,7 @@ static BOOL loggingEnabled = YES;
     [self.rewardedVideo loadAd];
 }
 
-- (void)presentRewardVideoAdWithRootViewController:(UIViewController *)viewController {
+- (void)presentAdWithRootViewController:(UIViewController *)viewController {
     if (self.rewardedVideo.isReady) {
         [self.rewardedVideo showAdFromViewController:viewController];
     }
@@ -106,7 +107,7 @@ static BOOL loggingEnabled = YES;
     NSError *error = [NSError errorWithDomain: kGNSAdapterNendRewardVideoAdKeyErrorDomain
                                          code: 1
                                      userInfo: errorInfo];
-    [self.connector adapter: self didFailToLoadRewardVideoAdwithError: error];
+    [self.connector adapter: self didFailToLoadAdwithError: error];
 }
 
 
@@ -137,7 +138,7 @@ static BOOL loggingEnabled = YES;
     NSError *error = [NSError errorWithDomain:kGNSAdapterNendRewardVideoAdKeyErrorDomain
                                          code:1
                                      userInfo:errorInfo];
-    [self.connector adapter:self didFailToLoadRewardVideoAdwithError:error];
+    [self.connector adapter:self didFailToLoadAdwithError:error];
 }
 
 #pragma mark - NendDelegate
@@ -146,14 +147,14 @@ static BOOL loggingEnabled = YES;
 {
     [self AllLog:@"nadRewardVideoAdDidReceiveAd"];
     [self deleteTimer];
-    [self.connector adapterDidReceiveRewardVideoAd:self];
+    [self.connector adapterDidReceiveAd:self];
 }
 
 - (void)nadRewardVideoAd:(NADRewardedVideo *)nadRewardedVideoAd didFailToLoadWithError:(NSError *)error
 {
     [self AllLog:[NSString stringWithFormat:@"didFailToLoadWithError error = %@", [error localizedDescription]]];
     [self deleteTimer];
-    [self.connector adapter:self didFailToLoadRewardVideoAdwithError:error];
+    [self.connector adapter:self didFailToLoadAdwithError:error];
     
 }
 
@@ -166,7 +167,7 @@ static BOOL loggingEnabled = YES;
 - (void)nadRewardVideoAdDidStopPlaying:(NADRewardedVideo *)nadRewardedVideoAd
 {
     [self AllLog:@"nadRewardVideoAdDidStopPlaying"];
-    [self.connector adapterDidCloseRewardVideoAd:self];
+    [self.connector adapterDidCloseAd:self];
 }
 
 

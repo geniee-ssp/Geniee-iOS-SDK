@@ -5,10 +5,10 @@
 
 #import <Foundation/Foundation.h>
 
-#import <GNAdSDK/GNSRewardVideoAdNetworkAdapterProtocol.h>
+#import <GNAdSDK/GNSAdNetworkAdapterProtocol.h>
 #import <GNAdSDK/GNSAdNetworkExtras.h>
 
-@interface GNSAdapterAdColonyRewardVideoAd : NSObject<GNSRewardVideoAdNetworkAdapter>
+@interface GNSAdapterAdColonyRewardVideoAd : NSObject<GNSAdNetworkAdapter>
 
 @property (nonatomic, assign) BOOL isConfigured;
 @property (nonatomic, assign) BOOL ad_available;

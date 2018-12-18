@@ -5,10 +5,10 @@
 
 #import <Foundation/Foundation.h>
 
-#import <GNAdSDK/GNSRewardVideoAdNetworkAdapterProtocol.h>
+#import <GNAdSDK/GNSAdNetworkAdapterProtocol.h>
 #import <GNAdSDK/GNSAdNetworkExtras.h>
 
-@interface GNSAdapterVungleRewardVideoAd : NSObject<GNSRewardVideoAdNetworkAdapter>
+@interface GNSAdapterVungleRewardVideoAd : NSObject<GNSAdNetworkAdapter>
 
 - (void)onErrorWithMessage:(NSString*) message;
 

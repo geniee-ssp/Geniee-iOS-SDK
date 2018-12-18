@@ -5,7 +5,7 @@
 
 #import "GNSAdapterVungleRewardVideoAd.h"
 #import <VungleSDK/VungleSDK.h>
-#import <GNAdSDK/GNSRewardVideoAdNetworkConnectorProtocol.h>
+#import <GNAdSDK/GNSAdNetworkConnectorProtocol.h>
 #import <GNAdSDK/GNSAdNetworkExtraParams.h>
 #import <GNAdSDK/GNSAdReward.h>
 
@@ -16,7 +16,7 @@ static BOOL loggingEnabled = YES;
 
 @property(nonatomic, strong) GNSAdReward *reward;
 
-@property(nonatomic, weak) id<GNSRewardVideoAdNetworkConnector> connector;
+@property(nonatomic, weak) id<GNSAdNetworkConnector> connector;
 
 @property (nonatomic, retain) NSTimer *timer;
 
@@ -38,7 +38,7 @@ static BOOL loggingEnabled = YES;
 }
 
 + (NSString *)adapterVersion {
-    return @"2.4.4";
+    return @"2.6.0";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {
@@ -56,7 +56,8 @@ static BOOL loggingEnabled = YES;
     return extra;
 }
 
-- (instancetype)initWithRewardVideoAdNetworkConnector:(id<GNSRewardVideoAdNetworkConnector>)connector {
+- (instancetype)initWithAdNetworkConnector:(id<GNSAdNetworkConnector>)connector
+{
     self = [super init];
     if (self) {
         self.connector = connector;
@@ -75,7 +76,7 @@ static BOOL loggingEnabled = YES;
 
     [self ALLog:[NSString stringWithFormat:@"setUp: %ld", (long)[VungleSDK version]]];
 
-    [self.connector adapterDidSetUpRewardVideoAd:self];
+    [self.connector adapterDidSetupAd:self];
 }
 
 - (void)setTimerWith:(NSInteger)timeout
@@ -106,15 +107,15 @@ static BOOL loggingEnabled = YES;
     NSError *error = [NSError errorWithDomain: kGNSAdapterVungleRewardVideoAdKeyErrorDomain
                                          code: 1
                                      userInfo: errorInfo];
-    [self.connector adapter: self didFailToLoadRewardVideoAdwithError: error];
+    [self.connector adapter: self didFailToLoadAdwithError: error];
 }
 
-- (void)requestRewardVideoAd:(NSInteger)timeout {
+- (void)requestAd:(NSInteger)timeout {
     self.requestingAd = YES;
     //Return the result when already loaded
     if ([self isReadyForDisplay]) {
         self.requestingAd = NO;
-        [self.connector adapterDidReceiveRewardVideoAd:self];
+        [self.connector adapterDidReceiveAd:self];
         return;
     }
 
@@ -135,7 +136,7 @@ static BOOL loggingEnabled = YES;
         [self.sdk setDelegate:self];
 
         if(![self.sdk startWithAppId:extras.app_id error:&error]) {
-            [self.connector adapter:self didFailToSetUpRewardVideoAdWithError:error];
+            [self.connector adapter:self didFailToSetupAdWithError:error];
         }
 
     } else {
@@ -148,7 +149,7 @@ static BOOL loggingEnabled = YES;
     }
 }
 
-- (void)presentRewardVideoAdWithRootViewController:(UIViewController *)viewController {
+- (void)presentAdWithRootViewController:(UIViewController *)viewController {
 
     GNSExtrasVungle *extras = [self.connector networkExtras];
 
@@ -179,7 +180,7 @@ static BOOL loggingEnabled = YES;
     NSError *error = [NSError errorWithDomain: kGNSAdapterVungleRewardVideoAdKeyErrorDomain
                                          code: 1
                                      userInfo: errorInfo];
-    [self.connector adapter: self didFailToLoadRewardVideoAdwithError: error];
+    [self.connector adapter: self didFailToLoadAdwithError: error];
 }
 
 #pragma implement VungleSDKDelegate
@@ -190,7 +191,7 @@ static BOOL loggingEnabled = YES;
         self.requestingAd = NO;
         [self deleteTimer];
         if (isAdPlayable) {
-            [self.connector adapterDidReceiveRewardVideoAd:self];
+            [self.connector adapterDidReceiveAd:self];
         } else {
             [self onErrorWithMessage:@"Vungle There is no Ad"];
         }
@@ -213,7 +214,7 @@ static BOOL loggingEnabled = YES;
         self.reward = nil;
     }
 
-    [self.connector adapterDidCloseRewardVideoAd:self];
+    [self.connector adapterDidCloseAd:self];
 }
 
 - (void)vungleSDKDidInitialize {
