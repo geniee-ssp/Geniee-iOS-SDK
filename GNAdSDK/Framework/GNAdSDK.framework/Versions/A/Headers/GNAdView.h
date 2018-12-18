@@ -103,6 +103,9 @@ typedef enum {
 // Initializes a GNAdView and sets it to the specified frame, size type, and geniee app ID
 - (id)initWithFrame:(CGRect)frame adSizeType:(GNAdSizeType)adSizeType appID:(NSString *)appID;
 
+// Initializes a GNAdView and sets it to the specified size type, and geniee app ID
+- (id)initWithAdSizeType:(GNAdSizeType)adSizeType appID:(NSString *)appID;
+
 // Initializes a GNAdView and sets it to the specified frame, size type, size, and geniee app ID
 - (id)initWithFrame:(CGRect)frame adSizeType:(GNAdSizeType)adSizeType adSize:(CGSize)adSize appID:(NSString *)appID;
 
