@@ -31,7 +31,7 @@
 | Tapjoy| 12.0.0 | 
 | Vungle| 6.2.0 | 
 | Nend| 5.0.2 | 
-| AMoAd| 5.2.1 | 
+| AMoAd| playable1.0.0| 
 
 ### [Ad Network(Fullscreen interstitial Mediation)](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/FullscreenInterstitial-For-iOS)
 
