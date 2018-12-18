@@ -12,21 +12,32 @@
 
 |SDK| Version |
 |:--|:--|
-|GNAdSDK| 3.2.0 |
-|rewardMediation|2.5.0|
-|GNAdDFPBannerMediationAdapter|3.2.0.1|
-|GNAdDFPRewardMediationAdapter|3.2.0.1|
+|GNAdSDK| 4.0.0 |
+|rewardMediation|2.6.0|
+|fullscreenMediation|2.6.0|
+|GNAdDFPBannerMediationAdapter|4.0.0.0|
+|GNAdDFPRewardMediationAdapter|4.0.0.0|
+|GNAdDFPFullscreenInterstitialMediationAdapter|4.0.0.0|
 
 ### [Ad Network(RewardVideo Mediation)](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-For-iOS)
 
 | AD Network　　　　　　　　　　　　　 | Verified version　　　　|
 |:-----------|:------------|
 | maio | 1.3.0 |
-| AppLovin| 5.0.1 | 
-| Unity Ads| 2.2.1 | 
-| AdColony | 3.3.4 | 
+| AppLovin| 5.1.1 | 
+| Unity Ads| 2.3.0 | 
+| AdColony | 3.3.5 | 
 | CAReward| 2.3.1 | 
-| Tapjoy| 11.12.2 | 
+| Tapjoy| 12.0.0 | 
 | Vungle| 6.2.0 | 
-| Nend| 4.0.6 | 
+| Nend| 5.0.2 | 
 | AMoAd| 5.2.1 | 
+
+### [Ad Network(Fullscreen interstitial Mediation)](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/FullscreenInterstitial-For-iOS)
+
+| AD Network　　　　　　　　　　　　　 | Verified version　　　　|
+|:-----------|:------------|
+| maio | 1.3.0 |
+| AppLovin| 5.1.1 | 
+| Nend| 5.0.2 | 
+| Zucks| 4.7.8 | 
