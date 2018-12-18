@@ -6,7 +6,7 @@
 #import "GNSAdapterMaioRewardVideoAd.h"
 
 #import <Maio/Maio.h>
-#import <GNAdSDK/GNSRewardVideoAdNetworkConnectorProtocol.h>
+#import <GNAdSDK/GNSAdNetworkConnectorProtocol.h>
 #import <GNAdSDK/GNSAdNetworkExtraParams.h>
 #import <GNAdSDK/GNSAdReward.h>
 
@@ -16,7 +16,7 @@ static BOOL loggingEnabled = YES;
 @interface GNSAdapterMaioRewardVideoAd () <MaioDelegate>
 
 @property(nonatomic, strong) GNSAdReward *reward;
-@property(nonatomic, weak) id<GNSRewardVideoAdNetworkConnector> connector;
+@property(nonatomic, weak) id<GNSAdNetworkConnector> connector;
 @property (nonatomic, retain) NSTimer *timer;
 
 @end
@@ -33,7 +33,7 @@ static BOOL loggingEnabled = YES;
 }
 
 + (NSString *)adapterVersion {
-    return @"2.5.0";
+    return @"2.6.0";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {
@@ -49,7 +49,8 @@ static BOOL loggingEnabled = YES;
     return extra;
 }
 
-- (instancetype)initWithRewardVideoAdNetworkConnector:(id<GNSRewardVideoAdNetworkConnector>)connector {
+- (instancetype)initWithAdNetworkConnector:(id<GNSAdNetworkConnector>)connector
+{
     self = [super init];
     if (self) {
         self.connector = connector;
@@ -59,7 +60,7 @@ static BOOL loggingEnabled = YES;
 }
 
 - (void)setUp {
-    [self.connector adapterDidSetUpRewardVideoAd:self];
+    [self.connector adapterDidSetupAd:self];
 }
 
 - (void)setTimerWith:(NSInteger)timeout
@@ -90,15 +91,14 @@ static BOOL loggingEnabled = YES;
     NSError *error = [NSError errorWithDomain: kGNSAdapterMaioRewardVideoAdKeyErrorDomain
                                          code: 1
                                      userInfo: errorInfo];
-    [self.connector adapter: self didFailToLoadRewardVideoAdwithError: error];
+    [self.connector adapter:self didFailToLoadAdwithError:error];
 }
 
-
-- (void)requestRewardVideoAd:(NSInteger)timeout {
+- (void)requestAd:(NSInteger)timeout {
     
     //Return the result when already loaded
     if ([self isReadyForDisplay]) {
-        [self.connector adapterDidReceiveRewardVideoAd:self];
+        [self.connector adapterDidReceiveAd:self];
         return;
     }
     // set Timer
@@ -109,8 +109,8 @@ static BOOL loggingEnabled = YES;
     [self ALLog:[NSString stringWithFormat:@"MediaId=%@", extras.media_id]];
     [Maio startWithMediaId:extras.media_id delegate:self];
 }
-
-- (void)presentRewardVideoAdWithRootViewController:(UIViewController *)viewController {
+- (void)presentAdWithRootViewController:(UIViewController *)viewController
+{
     [Maio showWithViewController:viewController];
 }
 
@@ -130,7 +130,7 @@ static BOOL loggingEnabled = YES;
 - (void)maioDidInitialize
 {
     // Called when Ads first loaded
-    [self.connector adapterDidReceiveRewardVideoAd:self];
+    [self.connector adapterDidReceiveAd:self];
 }
 
 - (void)maioDidFail:(NSString *)zoneId reason:(MaioFailReason)reason
@@ -140,7 +140,7 @@ static BOOL loggingEnabled = YES;
     NSError *error = [NSError errorWithDomain: kGNSAdapterMaioRewardVideoAdKeyErrorDomain
                                          code: reason
                                      userInfo: errorInfo];
-    [self.connector adapter: self didFailToLoadRewardVideoAdwithError: error];
+    [self.connector adapter:self didFailToLoadAdwithError:error];
 }
 
 - (void)maioDidChangeCanShow:(NSString *)zoneId newValue:(BOOL)newValue
@@ -150,7 +150,7 @@ static BOOL loggingEnabled = YES;
     // Received Ad
     if (newValue){
         [self deleteTimer];
-        [self.connector adapterDidReceiveRewardVideoAd:self];
+        [self.connector adapterDidReceiveAd:self];
     }
 }
 
@@ -167,7 +167,7 @@ static BOOL loggingEnabled = YES;
 
 - (void)maioDidCloseAd:(NSString *)zoneId
 {
-    [self.connector adapterDidCloseRewardVideoAd:self];
+    [self.connector adapterDidCloseAd:self];
 }
 
 /** 

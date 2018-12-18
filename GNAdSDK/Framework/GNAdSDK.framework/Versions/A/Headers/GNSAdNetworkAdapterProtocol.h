@@ -8,10 +8,10 @@
 #import "GNSAdNetworkExtras.h"
 #import "GNSAdNetworkExtraParams.h"
 
-@protocol GNSRewardVideoAdNetworkConnector;
+@protocol GNSAdNetworkConnector;
 
 /// Your adapter must conform to this protocol to provide reward  video ads.
-@protocol GNSRewardVideoAdNetworkAdapter<NSObject>
+@protocol GNSAdNetworkAdapter<NSObject>
 
 /// Returns a version string for the adapter.
 + (NSString *)adapterVersion;
@@ -24,8 +24,8 @@
 
 /// Returns an initialized instance of the adapter. The adapter must only maintain a weak reference
 /// to the provided connector.
-- (instancetype)initWithRewardVideoAdNetworkConnector:
-        (id<GNSRewardVideoAdNetworkConnector>)connector;
+- (instancetype)initWithAdNetworkConnector:
+        (id<GNSAdNetworkConnector>)connector;
 
 /// Tells the adapter to set up reward  video ads. The adapter should notify the Geniee
 /// Ads SDK whether set up has succeeded or failed using callbacks provided in the connector. When
@@ -35,11 +35,11 @@
 /// Tells the adapter to request a reward  video ad. This method is called after the adapter
 /// has been set up. The adapter should notify the Geniee Ads SDK if the request succeeds or
 /// fails using callbacks provided in the connector.
-- (void)requestRewardVideoAd:(NSInteger)timeOut;
+- (void)requestAd:(NSInteger)timeOut;
 
 /// Tells the adapter to present the reward  video ad with the provided view controller. This
 /// method is only called after the adapter successfully requested an ad.
-- (void)presentRewardVideoAdWithRootViewController:(UIViewController *)viewController;
+- (void)presentAdWithRootViewController:(UIViewController *)viewController;
 
 /// Tells the adapter to remove itself as a delegate or notification observer from the underlying ad
 /// network SDK.

@@ -5,7 +5,7 @@
 
 #import "GNSAdapterAdColonyRewardVideoAd.h"
 #import <AdColony/AdColony.h>
-#import <GNAdSDK/GNSRewardVideoAdNetworkConnectorProtocol.h>
+#import <GNAdSDK/GNSAdNetworkConnectorProtocol.h>
 #import <GNAdSDK/GNSAdNetworkExtraParams.h>
 #import <GNAdSDK/GNSAdReward.h>
 
@@ -16,7 +16,7 @@ static BOOL loggingEnabled = YES;
 @interface GNSAdapterAdColonyRewardVideoAd () <UIApplicationDelegate>
 
 @property(nonatomic, strong) GNSAdReward *reward;
-@property(nonatomic, weak) id<GNSRewardVideoAdNetworkConnector> connector;
+@property(nonatomic, weak) id<GNSAdNetworkConnector> connector;
 @property (nonatomic, retain) NSTimer *timer;
 @property(nonatomic, weak) AdColonyInterstitial *_ad;
 
@@ -34,7 +34,7 @@ static BOOL loggingEnabled = YES;
 }
 
 + (NSString *)adapterVersion {
-    return @"2.5.0";
+    return @"2.6.0";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {
@@ -51,7 +51,8 @@ static BOOL loggingEnabled = YES;
     return extra;
 }
 
-- (instancetype)initWithRewardVideoAdNetworkConnector:(id<GNSRewardVideoAdNetworkConnector>)connector {
+- (instancetype)initWithAdNetworkConnector:(id<GNSAdNetworkConnector>)connector
+{
     self = [super init];
     if (self) {
         self.connector = connector;
@@ -61,7 +62,7 @@ static BOOL loggingEnabled = YES;
 
 - (void)setUp {
     [self ALLog:[NSString stringWithFormat:@"setUp Adcolony version = %ld", (long)[AdColony version]]];
-    [self.connector adapterDidSetUpRewardVideoAd:self];
+    [self.connector adapterDidSetupAd:self];
 }
 
 - (void)setTimerWith:(NSInteger)timeout
@@ -93,15 +94,15 @@ static BOOL loggingEnabled = YES;
     NSError *error = [NSError errorWithDomain: kGNSAdapterAdColonyRewardVideoAdKeyErrorDomain
                                          code: 1
                                      userInfo: errorInfo];
-    [self.connector adapter: self didFailToLoadRewardVideoAdwithError: error];
+    [self.connector adapter: self didFailToLoadAdwithError: error];
 }
 
 
-- (void)requestRewardVideoAd:(NSInteger)timeout  {
+- (void)requestAd:(NSInteger)timeout  {
     //Return the result when already loaded
     //The isReady will be error when AdColony not configured
     if (_isConfigured && [self isReadyForDisplay]) {
-        [self.connector adapterDidReceiveRewardVideoAd:self];
+        [self.connector adapterDidReceiveAd:self];
         return;
     }
     
@@ -156,10 +157,11 @@ static BOOL loggingEnabled = YES;
     
 }
 
-- (void)presentRewardVideoAdWithRootViewController:(UIViewController *)viewController {
+- (void)presentAdWithRootViewController:(UIViewController *)viewController {
     //Display our ad to the user
     if (!self._ad.expired) {
         [self._ad showWithPresentingViewController:viewController];
+        [self.connector adapterDidStartPlayingRewardVideoAd:self];
     }
 }
 
@@ -201,7 +203,7 @@ static BOOL loggingEnabled = YES;
                                     //Store a reference to the returned interstitial object
                                     self._ad = ad;
 
-                                    [self.connector adapterDidReceiveRewardVideoAd:self];
+                                    [self.connector adapterDidReceiveAd:self];
                                     _ad_available = YES;
 
                                 }
@@ -209,7 +211,7 @@ static BOOL loggingEnabled = YES;
      //Handler for failed ad requests
                                 failure:^(AdColonyAdRequestError* error) {
 
-                                    [self.connector adapter: self didFailToLoadRewardVideoAdwithError: error];
+                                    [self.connector adapter: self didFailToLoadAdwithError: error];
 
                                     [self ALLog:[NSString stringWithFormat: @"GNSAdColonyAdapter Request failed with error: %@ and suggestion: %@", [error localizedDescription], [error localizedRecoverySuggestion]]];
                                 }

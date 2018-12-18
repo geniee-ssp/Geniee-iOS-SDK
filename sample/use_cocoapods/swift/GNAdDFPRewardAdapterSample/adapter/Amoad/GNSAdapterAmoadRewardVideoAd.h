@@ -4,10 +4,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <GNAdSDK/GNSRewardVideoAdNetworkConnectorProtocol.h>
+#import <GNAdSDK/GNSAdNetworkConnectorProtocol.h>
 #import <GNAdSDK/GNSAdNetworkExtras.h>
 
-@interface GNSAdapterAmoadRewardVideoAd : NSObject<GNSRewardVideoAdNetworkAdapter>
+@interface GNSAdapterAmoadRewardVideoAd : NSObject<GNSAdNetworkAdapter>
 
 - (void)onErrorWithMessage:(NSString *)message;
 

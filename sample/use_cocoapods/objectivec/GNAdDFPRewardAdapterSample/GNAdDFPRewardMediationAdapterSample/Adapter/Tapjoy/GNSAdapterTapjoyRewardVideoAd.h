@@ -5,11 +5,11 @@
 
 #import <Foundation/Foundation.h>
 
-#import <GNAdSDK/GNSRewardVideoAdNetworkAdapterProtocol.h>
+#import <GNAdSDK/GNSAdNetworkAdapterProtocol.h>
 #import <GNAdSDK/GNSAdNetworkExtras.h>
 #import <Tapjoy/TJPlacement.h>
 
-@interface GNSAdapterTapjoyRewardVideoAd : NSObject<GNSRewardVideoAdNetworkAdapter>
+@interface GNSAdapterTapjoyRewardVideoAd : NSObject<GNSAdNetworkAdapter>
 
 @property (nonatomic, assign) BOOL isConfigured;
 

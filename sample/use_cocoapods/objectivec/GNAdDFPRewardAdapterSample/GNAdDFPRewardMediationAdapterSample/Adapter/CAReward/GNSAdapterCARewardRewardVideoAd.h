@@ -5,12 +5,12 @@
 
 #import <Foundation/Foundation.h>
 
-#import <GNAdSDK/GNSRewardVideoAdNetworkAdapterProtocol.h>
+#import <GNAdSDK/GNSAdNetworkAdapterProtocol.h>
 #import <GNAdSDK/GNSAdNetworkExtras.h>
 #import <MediaSDK/MediaSDK.h>
 #import <MediaSDK/MSGVAManager.h>
 
-@interface GNSAdapterCARewardRewardVideoAd : NSObject<GNSRewardVideoAdNetworkAdapter, MSGVAVideoAdDelegate>
+@interface GNSAdapterCARewardRewardVideoAd : NSObject<GNSAdNetworkAdapter, MSGVAVideoAdDelegate>
 
 @property MSGVAManager *gvaAdManager;
 

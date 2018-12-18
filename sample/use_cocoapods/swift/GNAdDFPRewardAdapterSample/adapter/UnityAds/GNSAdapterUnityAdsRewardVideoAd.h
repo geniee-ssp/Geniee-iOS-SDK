@@ -5,10 +5,10 @@
 
 #import <Foundation/Foundation.h>
 
-#import <GNAdSDK/GNSRewardVideoAdNetworkAdapterProtocol.h>
+#import <GNAdSDK/GNSAdNetworkAdapterProtocol.h>
 #import <GNAdSDK/GNSAdNetworkExtras.h>
 
-@interface GNSAdapterUnityAdsRewardVideoAd : NSObject<GNSRewardVideoAdNetworkAdapter>
+@interface GNSAdapterUnityAdsRewardVideoAd : NSObject<GNSAdNetworkAdapter>
 
 @end
 
