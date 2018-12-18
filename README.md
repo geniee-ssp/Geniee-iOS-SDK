@@ -39,6 +39,6 @@
 | AD Network　　　　　　　　　　　　　 | Verified version　　　　|
 |:-----------|:------------|
 | [maio](FullscreenInterstitial-Ad-Integration-ADNW-Maio-For-iOS) | 1.3.0 |
-| [AppLovin](FullscreenInterstitial-Ad-Integration-ADNW-Applovin-For-iOS) | 5.0.1 | 
+| [AppLovin](FullscreenInterstitial-Ad-Integration-ADNW-Applovin-For-iOS) | 5.1.1 | 
 | [Nend](FullscreenInterstitial-Ad-Integration-ADNW-Nend-For-iOS) | 5.0.2 | 
 | [Zucks](FullscreenInterstitial-Ad-Integration-ADNW-Zucks-For-iOS) | 4.7.8 | 
