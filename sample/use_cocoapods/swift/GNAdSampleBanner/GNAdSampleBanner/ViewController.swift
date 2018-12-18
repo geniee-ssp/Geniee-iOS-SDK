@@ -21,9 +21,7 @@ class ViewController: UIViewController, UITextFieldDelegate, GNAdViewDelegate {
     }
     
     private func setAdView(_ zoneId: String) {
-        adView = GNAdView(frame: CGRect(x: 0, y: 20, width: 320, height: 50),
-                          adSizeType: GNAdSizeTypeSmall,
-                          appID: zoneId)
+        adView = GNAdView( adSizeType: GNAdSizeTypeTall, appID: zoneId)
         guard let adView = self.adView else { return }
         adView.delegate = self
         adView.rootViewController = self
