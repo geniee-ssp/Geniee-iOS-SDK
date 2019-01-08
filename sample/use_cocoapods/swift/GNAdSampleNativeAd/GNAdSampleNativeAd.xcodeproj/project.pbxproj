@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CA526768371B8D191A1AD16 /* libPods-GNAdSampleNativeAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2BDEE5AE73B9D904F0F4F00 /* libPods-GNAdSampleNativeAd.a */; };
+		EF3046A021C9EFAA00967834 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF30469F21C9EFAA00967834 /* AppDelegate.swift */; };
+		EF3046A221C9EFAA00967834 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3046A121C9EFAA00967834 /* MainViewController.swift */; };
+		EF3046A521C9EFAA00967834 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3046A321C9EFAA00967834 /* Main.storyboard */; };
+		EF3046A721C9EFAF00967834 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF3046A621C9EFAF00967834 /* Assets.xcassets */; };
+		EF3046AA21C9EFAF00967834 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3046A821C9EFAF00967834 /* LaunchScreen.storyboard */; };
+		EF3046B521CA14AB00967834 /* GNQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3046B221CA14AA00967834 /* GNQueue.swift */; };
+		EF3046B621CA14AB00967834 /* MyCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3046B421CA14AB00967834 /* MyCellData.swift */; };
+		EF3048BD21CA18B200967834 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3048BB21CA18B200967834 /* ImageTableViewCell.swift */; };
+		EF3048BE21CA18B200967834 /* ImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3048BC21CA18B200967834 /* ImageTableViewController.swift */; };
+		EFC52D4721D5AE9B003F4EF4 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC52D4521D5AE9B003F4EF4 /* VideoTableViewCell.swift */; };
+		EFC52D4821D5AE9B003F4EF4 /* VideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC52D4621D5AE9B003F4EF4 /* VideoTableViewController.swift */; };
+		EFC52D4A21D5D483003F4EF4 /* SimpleUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC52D4921D5D483003F4EF4 /* SimpleUIButton.swift */; };
+		EFC52D4C21D5D792003F4EF4 /* SimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC52D4B21D5D792003F4EF4 /* SimpleViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		142C899782D7F4275DAD92D9 /* Pods-GNAdSampleNativeAd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdSampleNativeAd.release.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdSampleNativeAd/Pods-GNAdSampleNativeAd.release.xcconfig"; sourceTree = "<group>"; };
+		1F7617F8FFC594AFC2188B05 /* Pods-GNAdSampleNativeAd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdSampleNativeAd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdSampleNativeAd/Pods-GNAdSampleNativeAd.debug.xcconfig"; sourceTree = "<group>"; };
+		A2BDEE5AE73B9D904F0F4F00 /* libPods-GNAdSampleNativeAd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GNAdSampleNativeAd.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF30469C21C9EFAA00967834 /* GNAdSampleNativeAd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNAdSampleNativeAd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF30469F21C9EFAA00967834 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF3046A121C9EFAA00967834 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EF3046A421C9EFAA00967834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF3046A621C9EFAF00967834 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF3046A921C9EFAF00967834 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF3046AB21C9EFAF00967834 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF3046B221CA14AA00967834 /* GNQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GNQueue.swift; sourceTree = "<group>"; };
+		EF3046B421CA14AB00967834 /* MyCellData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCellData.swift; sourceTree = "<group>"; };
+		EF3047AD21CA159600967834 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EF3047AF21CA15A900967834 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		EF3047B121CA15B200967834 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EF3047B321CA15BA00967834 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		EF3047B521CA15C400967834 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		EF3047B721CA15CF00967834 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EF3047B921CA15D800967834 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EF3047BB21CA15E000967834 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EF3047BD21CA15EB00967834 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		EF3047BF21CA15F500967834 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		EF3047C121CA160000967834 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EF3047C321CA160C00967834 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EF3047C521CA161900967834 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		EF3047C721CA162100967834 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EF3048BB21CA18B200967834 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		EF3048BC21CA18B200967834 /* ImageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewController.swift; sourceTree = "<group>"; };
+		EF3048C021CA19C600967834 /* GNAdSampleNativeAd-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GNAdSampleNativeAd-Bridging-Header.h"; sourceTree = "<group>"; };
+		EFC52D4521D5AE9B003F4EF4 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		EFC52D4621D5AE9B003F4EF4 /* VideoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTableViewController.swift; sourceTree = "<group>"; };
+		EFC52D4921D5D483003F4EF4 /* SimpleUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleUIButton.swift; sourceTree = "<group>"; };
+		EFC52D4B21D5D792003F4EF4 /* SimpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF30469921C9EFAA00967834 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CA526768371B8D191A1AD16 /* libPods-GNAdSampleNativeAd.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		943330A4B26BC53D9357AE6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F7617F8FFC594AFC2188B05 /* Pods-GNAdSampleNativeAd.debug.xcconfig */,
+				142C899782D7F4275DAD92D9 /* Pods-GNAdSampleNativeAd.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF30469321C9EFAA00967834 = {
+			isa = PBXGroup;
+			children = (
+				EF3048C021CA19C600967834 /* GNAdSampleNativeAd-Bridging-Header.h */,
+				EF30469E21C9EFAA00967834 /* GNAdSampleNativeAd */,
+				EF30469D21C9EFAA00967834 /* Products */,
+				EF3047AC21CA159600967834 /* Frameworks */,
+				943330A4B26BC53D9357AE6C /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		EF30469D21C9EFAA00967834 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF30469C21C9EFAA00967834 /* GNAdSampleNativeAd.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF30469E21C9EFAA00967834 /* GNAdSampleNativeAd */ = {
+			isa = PBXGroup;
+			children = (
+				EF30469F21C9EFAA00967834 /* AppDelegate.swift */,
+				EF3046A121C9EFAA00967834 /* MainViewController.swift */,
+				EF3046A321C9EFAA00967834 /* Main.storyboard */,
+				EF3046A621C9EFAF00967834 /* Assets.xcassets */,
+				EF3046B121CA14AA00967834 /* DataStructure */,
+				EF3046B321CA14AB00967834 /* Models */,
+				EF3048BB21CA18B200967834 /* ImageTableViewCell.swift */,
+				EF3048BC21CA18B200967834 /* ImageTableViewController.swift */,
+				EFC52D4521D5AE9B003F4EF4 /* VideoTableViewCell.swift */,
+				EFC52D4621D5AE9B003F4EF4 /* VideoTableViewController.swift */,
+				EFC52D4921D5D483003F4EF4 /* SimpleUIButton.swift */,
+				EFC52D4B21D5D792003F4EF4 /* SimpleViewController.swift */,
+				EF3046A821C9EFAF00967834 /* LaunchScreen.storyboard */,
+				EF3046AB21C9EFAF00967834 /* Info.plist */,
+			);
+			path = GNAdSampleNativeAd;
+			sourceTree = "<group>";
+		};
+		EF3046B121CA14AA00967834 /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				EF3046B221CA14AA00967834 /* GNQueue.swift */,
+			);
+			path = DataStructure;
+			sourceTree = "<group>";
+		};
+		EF3046B321CA14AB00967834 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF3046B421CA14AB00967834 /* MyCellData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF3047AC21CA159600967834 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF3047C721CA162100967834 /* UIKit.framework */,
+				EF3047C521CA161900967834 /* AdSupport.framework */,
+				EF3047C321CA160C00967834 /* CoreGraphics.framework */,
+				EF3047C121CA160000967834 /* CoreLocation.framework */,
+				EF3047BF21CA15F500967834 /* CoreTelephony.framework */,
+				EF3047BD21CA15EB00967834 /* libxml2.2.tbd */,
+				EF3047BB21CA15E000967834 /* SystemConfiguration.framework */,
+				EF3047B921CA15D800967834 /* AVFoundation.framework */,
+				EF3047B721CA15CF00967834 /* AudioToolbox.framework */,
+				EF3047B521CA15C400967834 /* CoreFoundation.framework */,
+				EF3047B321CA15BA00967834 /* CoreMedia.framework */,
+				EF3047B121CA15B200967834 /* QuartzCore.framework */,
+				EF3047AF21CA15A900967834 /* MessageUI.framework */,
+				EF3047AD21CA159600967834 /* Foundation.framework */,
+				A2BDEE5AE73B9D904F0F4F00 /* libPods-GNAdSampleNativeAd.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF30469B21C9EFAA00967834 /* GNAdSampleNativeAd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF3046AE21C9EFAF00967834 /* Build configuration list for PBXNativeTarget "GNAdSampleNativeAd" */;
+			buildPhases = (
+				95F6D81C218C2652E7A353F9 /* [CP] Check Pods Manifest.lock */,
+				EF30469821C9EFAA00967834 /* Sources */,
+				EF30469921C9EFAA00967834 /* Frameworks */,
+				EF30469A21C9EFAA00967834 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GNAdSampleNativeAd;
+			productName = GNAdSampleNativeAd;
+			productReference = EF30469C21C9EFAA00967834 /* GNAdSampleNativeAd.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF30469421C9EFAA00967834 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Geniee;
+				TargetAttributes = {
+					EF30469B21C9EFAA00967834 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = EF30469721C9EFAA00967834 /* Build configuration list for PBXProject "GNAdSampleNativeAd" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF30469321C9EFAA00967834;
+			productRefGroup = EF30469D21C9EFAA00967834 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF30469B21C9EFAA00967834 /* GNAdSampleNativeAd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF30469A21C9EFAA00967834 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF3046AA21C9EFAF00967834 /* LaunchScreen.storyboard in Resources */,
+				EF3046A721C9EFAF00967834 /* Assets.xcassets in Resources */,
+				EF3046A521C9EFAA00967834 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95F6D81C218C2652E7A353F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GNAdSampleNativeAd-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF30469821C9EFAA00967834 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF3046A221C9EFAA00967834 /* MainViewController.swift in Sources */,
+				EFC52D4721D5AE9B003F4EF4 /* VideoTableViewCell.swift in Sources */,
+				EF3046A021C9EFAA00967834 /* AppDelegate.swift in Sources */,
+				EF3048BD21CA18B200967834 /* ImageTableViewCell.swift in Sources */,
+				EF3046B521CA14AB00967834 /* GNQueue.swift in Sources */,
+				EFC52D4A21D5D483003F4EF4 /* SimpleUIButton.swift in Sources */,
+				EF3048BE21CA18B200967834 /* ImageTableViewController.swift in Sources */,
+				EF3046B621CA14AB00967834 /* MyCellData.swift in Sources */,
+				EFC52D4821D5AE9B003F4EF4 /* VideoTableViewController.swift in Sources */,
+				EFC52D4C21D5D792003F4EF4 /* SimpleViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF3046A321C9EFAA00967834 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF3046A421C9EFAA00967834 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF3046A821C9EFAF00967834 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF3046A921C9EFAF00967834 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF3046AC21C9EFAF00967834 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF3046AD21C9EFAF00967834 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF3046AF21C9EFAF00967834 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F7617F8FFC594AFC2188B05 /* Pods-GNAdSampleNativeAd.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RKMVWZ32F4;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = GNAdSampleNativeAd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.geniee.GNAdSampleNativeAd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GNAdSampleNativeAd-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF3046B021C9EFAF00967834 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 142C899782D7F4275DAD92D9 /* Pods-GNAdSampleNativeAd.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RKMVWZ32F4;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = GNAdSampleNativeAd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.geniee.GNAdSampleNativeAd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GNAdSampleNativeAd-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF30469721C9EFAA00967834 /* Build configuration list for PBXProject "GNAdSampleNativeAd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF3046AC21C9EFAF00967834 /* Debug */,
+				EF3046AD21C9EFAF00967834 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF3046AE21C9EFAF00967834 /* Build configuration list for PBXNativeTarget "GNAdSampleNativeAd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF3046AF21C9EFAF00967834 /* Debug */,
+				EF3046B021C9EFAF00967834 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF30469421C9EFAA00967834 /* Project object */;
+}
