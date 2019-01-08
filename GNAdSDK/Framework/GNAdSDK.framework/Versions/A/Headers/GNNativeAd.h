@@ -6,6 +6,7 @@
 #import <Foundation/Foundation.h>
 #import "GNNativeAdRequest.h"
 #import <UIKit/UIKit.h>
+@class GNSNativeVideoPlayerView;
 
 /**
  * The `GNNativeAd` class is used to manage native ad.
@@ -34,6 +35,7 @@
 @property(nonatomic, readonly, copy) NSString *optout_text;
 @property(nonatomic, readonly, copy) NSString *optout_image_url;
 @property(nonatomic, readonly, copy) NSString *optout_url;
+@property(nonatomic, readonly, copy) NSString *vast_xml;
 
 /**
  * Initializes a GNNativeAd.
@@ -61,5 +63,15 @@
  * @param uiView the view for tracking click beacon tag
  */
 - (void)trackingClick:(UIView *)uiView;
+
+/**
+ * Get the GNSNativeVideoPlayerView.
+ */
+- (GNSNativeVideoPlayerView*)getVideoView:(CGRect)frame;
+
+/**
+ * Get the existence of video advertisement.
+ */
+- (BOOL)hasVideoContent;
 
 @end
