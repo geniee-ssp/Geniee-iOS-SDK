@@ -3,6 +3,8 @@
 //  GNAdSampleNativeAd
 //
 
+import UIKit
+
 class GNQueue: NSObject {
     var queue: NSMutableArray = []
     var maxSize: Int = 0
@@ -12,13 +14,13 @@ class GNQueue: NSObject {
         maxSize = aMaxSize;
     }
     
-    func dequeue() -> Any? {
-        var headObject: Any?
+    func dequeue() -> AnyObject? {
+        var headObject: AnyObject?
         objc_sync_enter(queue)
         if (queue.count == 0) {
             return nil
         }
-        headObject = queue.object(at:0)
+        headObject = queue.object(at:0) as AnyObject
         if (headObject != nil) {
             queue.removeObject(at:0)
         }
@@ -26,7 +28,7 @@ class GNQueue: NSObject {
         return headObject;
     }
     
-    func enqueue(_ anObject: AnyObject?) {
+    func enqueue(anObject: AnyObject?) {
         objc_sync_enter(queue)
         if (anObject == nil) {
             return;
@@ -46,4 +48,3 @@ class GNQueue: NSObject {
         return c
     }
 }
-

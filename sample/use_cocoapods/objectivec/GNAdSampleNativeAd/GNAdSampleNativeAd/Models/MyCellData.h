@@ -12,4 +12,3 @@
 @property (nonatomic, readonly)NSString *content;
 
 @end
-

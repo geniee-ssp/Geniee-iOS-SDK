@@ -36,7 +36,7 @@ static BOOL loggingEnabled = YES;
 #pragma mark - implement GNSAdNetworkConnector
 
 + (NSString *)adapterVersion {
-    return @"2.6.0";
+    return @"2.7.0";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {
