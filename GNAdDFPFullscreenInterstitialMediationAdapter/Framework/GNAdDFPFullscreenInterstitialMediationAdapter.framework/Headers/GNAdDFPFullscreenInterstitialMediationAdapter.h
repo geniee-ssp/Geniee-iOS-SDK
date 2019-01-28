@@ -13,4 +13,8 @@
 @interface GNAdDFPFullscreenInterstitialMediationAdapter : NSObject<GADCustomEventInterstitial, GNSFullscreenInterstitialAdDelegate>
 @property(nonatomic, assign) id<GADCustomEventInterstitialDelegate> delegate;
 @property(nonatomic, weak) NSString *appId;
+/// デバッグログの出力レベルを設定します。
+@property(nonatomic) GNLogPriority GNAdlogPriority;
+
 @end
+

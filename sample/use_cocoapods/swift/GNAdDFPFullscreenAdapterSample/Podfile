@@ -7,8 +7,8 @@ target 'GNAdDFPFullscreenAdapterSample' do
 
   # Pods for GNAdDFPFullscreenAdapterSample
   pod 'Google-Mobile-Ads-SDK'
-  pod 'Geniee-DFP-Mediation-FullscreenInterstitial-Adapter', :git => 'https://github.com/geniee-ssp/Geniee-iOS-SDK.git', :branch => 'feature/fullscreen_mediation'
-  pod 'Geniee-iOS-SDK', :git => 'https://github.com/geniee-ssp/Geniee-iOS-SDK.git', :branch => 'feature/fullscreen_mediation'
+  pod 'Geniee-DFP-Mediation-FullscreenInterstitial-Adapter'
+  pod 'Geniee-iOS-SDK'
   pod 'AppLovinSDK','~> 5.1.1'
   pod 'MaioSDK', '~> 1.4.0'
   pod 'NendSDK_iOS', '~> 5.0.2'
