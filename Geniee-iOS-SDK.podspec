@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Geniee-iOS-SDK"
-  s.version      = "5.0.0"
+  s.version      = "5.0.1"
   s.summary      = "An SDK for ad menetization with the Geniee Network"
   s.homepage     = "https://geniee.co.jp"
 

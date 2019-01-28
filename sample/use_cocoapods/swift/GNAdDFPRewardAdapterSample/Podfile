@@ -3,27 +3,16 @@
 
 target 'GNAdDFPRewardAdapterSample' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-
-  # DFP, GenieeCustomAdapter.
+  #use_frameworks!
   pod 'Geniee-DFP-Mediation-Adapter'
-
-  # GNSDK.
+  pod 'Google-Mobile-Ads-SDK'
   pod 'Geniee-iOS-SDK'
-  # Maio.
-  pod 'MaioSDK', '~> 1.3.0'
-  # AppLovin.
-  pod 'AppLovinSDK','~> 5.0.1'
-  # UnityAds.
-  pod 'UnityAds', '~> 2.2.1'
-  # AdColony.
-  pod 'AdColony', '~> 3.3.4'
-  # Tapjoy.
-  pod 'TapjoySDK', '~> 11.12.2'
-  # Vungle.
+  pod 'AdColony', '~> 3.3.5'
+  pod 'AppLovinSDK','~> 5.1.1'
+  pod 'MaioSDK', '~> 1.4.0'
+  pod 'NendSDK_iOS', '~> 5.0.2'
+  pod 'TapjoySDK', '~> 12.0.0'
+  pod 'UnityAds', '~> 2.3.0'
   pod 'VungleSDK-iOS', '~> 6.2.0'
-  # Nend.
-  pod 'NendSDK_iOS', '~> 4.0.6'
-  # CAReward.
-  #  After...
 
 end
