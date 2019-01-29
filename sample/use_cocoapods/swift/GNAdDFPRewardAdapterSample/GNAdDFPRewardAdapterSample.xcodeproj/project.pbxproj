@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F979C1E21B50BE4000A81A6 /* GNSAdapterUnityAdsRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F979C0421B50BE4000A81A6 /* GNSAdapterUnityAdsRewardVideoAd.m */; };
+		2F979C1F21B50BE4000A81A6 /* GNSAdapterVungleRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F979C0821B50BE4000A81A6 /* GNSAdapterVungleRewardVideoAd.m */; };
+		2F979C2021B50BE4000A81A6 /* GNSAdapterAmoadRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F979C0A21B50BE4000A81A6 /* GNSAdapterAmoadRewardVideoAd.m */; };
+		2F979C2121B50BE4000A81A6 /* GNSAdapterTapjoyRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F979C0D21B50BE4000A81A6 /* GNSAdapterTapjoyRewardVideoAd.m */; };
+		2F979C2221B50BE4000A81A6 /* GNSAdapterAppLovinRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F979C1021B50BE4000A81A6 /* GNSAdapterAppLovinRewardVideoAd.m */; };
+		2F979C2321B50BE4000A81A6 /* GNSAdapterAdColonyRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F979C1321B50BE4000A81A6 /* GNSAdapterAdColonyRewardVideoAd.m */; };
+		2F979C2421B50BE4000A81A6 /* GNSAdapterMaioRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F979C1721B50BE4000A81A6 /* GNSAdapterMaioRewardVideoAd.m */; };
+		2F979C2521B50BE4000A81A6 /* GNSAdapterNendRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F979C1A21B50BE4000A81A6 /* GNSAdapterNendRewardVideoAd.m */; };
+		2F979C2621B50BE4000A81A6 /* GNSAdapterCARewardRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F979C1C21B50BE4000A81A6 /* GNSAdapterCARewardRewardVideoAd.m */; };
 		9B0497D88D21F1179FF282A5 /* libPods-GNAdDFPRewardAdapterSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 421C22343D94A4AEDDE6D4D4 /* libPods-GNAdDFPRewardAdapterSample.a */; };
 		EF5B4B5320E9F4D50077F39A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5B4B5220E9F4D50077F39A /* AppDelegate.swift */; };
 		EF5B4B5520E9F4D50077F39A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5B4B5420E9F4D50077F39A /* ViewController.swift */; };
@@ -18,13 +27,6 @@
 		EF5B4B8A20E9FD270077F39A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5B4B8920E9FD270077F39A /* CoreMedia.framework */; };
 		EF5B4B8C20E9FD310077F39A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5B4B8B20E9FD310077F39A /* SystemConfiguration.framework */; };
 		EF5B4B8E20E9FD3B0077F39A /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5B4B8D20E9FD3B0077F39A /* StoreKit.framework */; };
-		EF5B4BA820E9FE360077F39A /* GNSAdapterUnityAdsRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5B4B9120E9FE360077F39A /* GNSAdapterUnityAdsRewardVideoAd.m */; };
-		EF5B4BA920E9FE360077F39A /* GNSAdapterVungleRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5B4B9520E9FE360077F39A /* GNSAdapterVungleRewardVideoAd.m */; };
-		EF5B4BAB20E9FE360077F39A /* GNSAdapterTapjoyRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5B4B9A20E9FE360077F39A /* GNSAdapterTapjoyRewardVideoAd.m */; };
-		EF5B4BAC20E9FE360077F39A /* GNSAdapterAppLovinRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5B4B9D20E9FE360077F39A /* GNSAdapterAppLovinRewardVideoAd.m */; };
-		EF5B4BAD20E9FE360077F39A /* GNSAdapterAdColonyRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5B4BA020E9FE360077F39A /* GNSAdapterAdColonyRewardVideoAd.m */; };
-		EF5B4BAE20E9FE360077F39A /* GNSAdapterMaioRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5B4BA420E9FE360077F39A /* GNSAdapterMaioRewardVideoAd.m */; };
-		EF5B4BAF20E9FE360077F39A /* GNSAdapterNendRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5B4BA720E9FE360077F39A /* GNSAdapterNendRewardVideoAd.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +43,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2F979C0421B50BE4000A81A6 /* GNSAdapterUnityAdsRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterUnityAdsRewardVideoAd.m; sourceTree = "<group>"; };
+		2F979C0521B50BE4000A81A6 /* GNSAdapterUnityAdsRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterUnityAdsRewardVideoAd.h; sourceTree = "<group>"; };
+		2F979C0721B50BE4000A81A6 /* GNSAdapterVungleRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterVungleRewardVideoAd.h; sourceTree = "<group>"; };
+		2F979C0821B50BE4000A81A6 /* GNSAdapterVungleRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterVungleRewardVideoAd.m; sourceTree = "<group>"; };
+		2F979C0A21B50BE4000A81A6 /* GNSAdapterAmoadRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterAmoadRewardVideoAd.m; sourceTree = "<group>"; };
+		2F979C0B21B50BE4000A81A6 /* GNSAdapterAmoadRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterAmoadRewardVideoAd.h; sourceTree = "<group>"; };
+		2F979C0D21B50BE4000A81A6 /* GNSAdapterTapjoyRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterTapjoyRewardVideoAd.m; sourceTree = "<group>"; };
+		2F979C0E21B50BE4000A81A6 /* GNSAdapterTapjoyRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterTapjoyRewardVideoAd.h; sourceTree = "<group>"; };
+		2F979C1021B50BE4000A81A6 /* GNSAdapterAppLovinRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterAppLovinRewardVideoAd.m; sourceTree = "<group>"; };
+		2F979C1121B50BE4000A81A6 /* GNSAdapterAppLovinRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterAppLovinRewardVideoAd.h; sourceTree = "<group>"; };
+		2F979C1321B50BE4000A81A6 /* GNSAdapterAdColonyRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterAdColonyRewardVideoAd.m; sourceTree = "<group>"; };
+		2F979C1421B50BE4000A81A6 /* GNSAdapterAdColonyRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterAdColonyRewardVideoAd.h; sourceTree = "<group>"; };
+		2F979C1621B50BE4000A81A6 /* GNSAdapterMaioRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterMaioRewardVideoAd.h; sourceTree = "<group>"; };
+		2F979C1721B50BE4000A81A6 /* GNSAdapterMaioRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterMaioRewardVideoAd.m; sourceTree = "<group>"; };
+		2F979C1921B50BE4000A81A6 /* GNSAdapterNendRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterNendRewardVideoAd.h; sourceTree = "<group>"; };
+		2F979C1A21B50BE4000A81A6 /* GNSAdapterNendRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterNendRewardVideoAd.m; sourceTree = "<group>"; };
+		2F979C1C21B50BE4000A81A6 /* GNSAdapterCARewardRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterCARewardRewardVideoAd.m; sourceTree = "<group>"; };
+		2F979C1D21B50BE4000A81A6 /* GNSAdapterCARewardRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterCARewardRewardVideoAd.h; sourceTree = "<group>"; };
 		421C22343D94A4AEDDE6D4D4 /* libPods-GNAdDFPRewardAdapterSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GNAdDFPRewardAdapterSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42CDD6AF4C045A61BEF05A09 /* Pods-GNAdDFPRewardAdapterSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdDFPRewardAdapterSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdDFPRewardAdapterSample/Pods-GNAdDFPRewardAdapterSample.debug.xcconfig"; sourceTree = "<group>"; };
 		5EF23FD15295ECEE817EAAFD /* Pods-GNAdDFPRewardAdapterSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdDFPRewardAdapterSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdDFPRewardAdapterSample/Pods-GNAdDFPRewardAdapterSample.release.xcconfig"; sourceTree = "<group>"; };
@@ -57,20 +77,6 @@
 		EF5B4B8920E9FD270077F39A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		EF5B4B8B20E9FD310077F39A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		EF5B4B8D20E9FD3B0077F39A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		EF5B4B9120E9FE360077F39A /* GNSAdapterUnityAdsRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterUnityAdsRewardVideoAd.m; sourceTree = "<group>"; };
-		EF5B4B9220E9FE360077F39A /* GNSAdapterUnityAdsRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterUnityAdsRewardVideoAd.h; sourceTree = "<group>"; };
-		EF5B4B9420E9FE360077F39A /* GNSAdapterVungleRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterVungleRewardVideoAd.h; sourceTree = "<group>"; };
-		EF5B4B9520E9FE360077F39A /* GNSAdapterVungleRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterVungleRewardVideoAd.m; sourceTree = "<group>"; };
-		EF5B4B9A20E9FE360077F39A /* GNSAdapterTapjoyRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterTapjoyRewardVideoAd.m; sourceTree = "<group>"; };
-		EF5B4B9B20E9FE360077F39A /* GNSAdapterTapjoyRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterTapjoyRewardVideoAd.h; sourceTree = "<group>"; };
-		EF5B4B9D20E9FE360077F39A /* GNSAdapterAppLovinRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterAppLovinRewardVideoAd.m; sourceTree = "<group>"; };
-		EF5B4B9E20E9FE360077F39A /* GNSAdapterAppLovinRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterAppLovinRewardVideoAd.h; sourceTree = "<group>"; };
-		EF5B4BA020E9FE360077F39A /* GNSAdapterAdColonyRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterAdColonyRewardVideoAd.m; sourceTree = "<group>"; };
-		EF5B4BA120E9FE360077F39A /* GNSAdapterAdColonyRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterAdColonyRewardVideoAd.h; sourceTree = "<group>"; };
-		EF5B4BA320E9FE360077F39A /* GNSAdapterMaioRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterMaioRewardVideoAd.h; sourceTree = "<group>"; };
-		EF5B4BA420E9FE360077F39A /* GNSAdapterMaioRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterMaioRewardVideoAd.m; sourceTree = "<group>"; };
-		EF5B4BA620E9FE360077F39A /* GNSAdapterNendRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterNendRewardVideoAd.h; sourceTree = "<group>"; };
-		EF5B4BA720E9FE360077F39A /* GNSAdapterNendRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterNendRewardVideoAd.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +96,104 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F979C0221B50BE4000A81A6 /* rewardMediation */ = {
+			isa = PBXGroup;
+			children = (
+				2F979C0321B50BE4000A81A6 /* UnityAds */,
+				2F979C0621B50BE4000A81A6 /* Vungle */,
+				2F979C0921B50BE4000A81A6 /* Amoad */,
+				2F979C0C21B50BE4000A81A6 /* Tapjoy */,
+				2F979C0F21B50BE4000A81A6 /* AppLovin */,
+				2F979C1221B50BE4000A81A6 /* AdColony */,
+				2F979C1521B50BE4000A81A6 /* Maio */,
+				2F979C1821B50BE4000A81A6 /* Nend */,
+				2F979C1B21B50BE4000A81A6 /* CAReward */,
+			);
+			name = rewardMediation;
+			path = ../../../../rewardMediation;
+			sourceTree = "<group>";
+		};
+		2F979C0321B50BE4000A81A6 /* UnityAds */ = {
+			isa = PBXGroup;
+			children = (
+				2F979C0421B50BE4000A81A6 /* GNSAdapterUnityAdsRewardVideoAd.m */,
+				2F979C0521B50BE4000A81A6 /* GNSAdapterUnityAdsRewardVideoAd.h */,
+			);
+			path = UnityAds;
+			sourceTree = "<group>";
+		};
+		2F979C0621B50BE4000A81A6 /* Vungle */ = {
+			isa = PBXGroup;
+			children = (
+				2F979C0721B50BE4000A81A6 /* GNSAdapterVungleRewardVideoAd.h */,
+				2F979C0821B50BE4000A81A6 /* GNSAdapterVungleRewardVideoAd.m */,
+			);
+			path = Vungle;
+			sourceTree = "<group>";
+		};
+		2F979C0921B50BE4000A81A6 /* Amoad */ = {
+			isa = PBXGroup;
+			children = (
+				2F979C0A21B50BE4000A81A6 /* GNSAdapterAmoadRewardVideoAd.m */,
+				2F979C0B21B50BE4000A81A6 /* GNSAdapterAmoadRewardVideoAd.h */,
+			);
+			path = Amoad;
+			sourceTree = "<group>";
+		};
+		2F979C0C21B50BE4000A81A6 /* Tapjoy */ = {
+			isa = PBXGroup;
+			children = (
+				2F979C0D21B50BE4000A81A6 /* GNSAdapterTapjoyRewardVideoAd.m */,
+				2F979C0E21B50BE4000A81A6 /* GNSAdapterTapjoyRewardVideoAd.h */,
+			);
+			path = Tapjoy;
+			sourceTree = "<group>";
+		};
+		2F979C0F21B50BE4000A81A6 /* AppLovin */ = {
+			isa = PBXGroup;
+			children = (
+				2F979C1021B50BE4000A81A6 /* GNSAdapterAppLovinRewardVideoAd.m */,
+				2F979C1121B50BE4000A81A6 /* GNSAdapterAppLovinRewardVideoAd.h */,
+			);
+			path = AppLovin;
+			sourceTree = "<group>";
+		};
+		2F979C1221B50BE4000A81A6 /* AdColony */ = {
+			isa = PBXGroup;
+			children = (
+				2F979C1321B50BE4000A81A6 /* GNSAdapterAdColonyRewardVideoAd.m */,
+				2F979C1421B50BE4000A81A6 /* GNSAdapterAdColonyRewardVideoAd.h */,
+			);
+			path = AdColony;
+			sourceTree = "<group>";
+		};
+		2F979C1521B50BE4000A81A6 /* Maio */ = {
+			isa = PBXGroup;
+			children = (
+				2F979C1621B50BE4000A81A6 /* GNSAdapterMaioRewardVideoAd.h */,
+				2F979C1721B50BE4000A81A6 /* GNSAdapterMaioRewardVideoAd.m */,
+			);
+			path = Maio;
+			sourceTree = "<group>";
+		};
+		2F979C1821B50BE4000A81A6 /* Nend */ = {
+			isa = PBXGroup;
+			children = (
+				2F979C1921B50BE4000A81A6 /* GNSAdapterNendRewardVideoAd.h */,
+				2F979C1A21B50BE4000A81A6 /* GNSAdapterNendRewardVideoAd.m */,
+			);
+			path = Nend;
+			sourceTree = "<group>";
+		};
+		2F979C1B21B50BE4000A81A6 /* CAReward */ = {
+			isa = PBXGroup;
+			children = (
+				2F979C1C21B50BE4000A81A6 /* GNSAdapterCARewardRewardVideoAd.m */,
+				2F979C1D21B50BE4000A81A6 /* GNSAdapterCARewardRewardVideoAd.h */,
+			);
+			path = CAReward;
+			sourceTree = "<group>";
+		};
 		D614F9A9FD6254F4BFF55A32 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,7 +220,7 @@
 		EF5B4B4620E9F4D40077F39A = {
 			isa = PBXGroup;
 			children = (
-				EF5B4B8F20E9FE360077F39A /* adapter */,
+				2F979C0221B50BE4000A81A6 /* rewardMediation */,
 				EF5B4B5120E9F4D50077F39A /* GNAdDFPRewardAdapterSample */,
 				EF5B4B5020E9F4D50077F39A /* Products */,
 				D958D31CB59D2521AF339891 /* Pods */,
@@ -143,83 +247,6 @@
 				EF5B4B5E20E9F4D50077F39A /* Info.plist */,
 			);
 			path = GNAdDFPRewardAdapterSample;
-			sourceTree = "<group>";
-		};
-		EF5B4B8F20E9FE360077F39A /* adapter */ = {
-			isa = PBXGroup;
-			children = (
-				EF5B4B9020E9FE360077F39A /* UnityAds */,
-				EF5B4B9320E9FE360077F39A /* Vungle */,
-				EF5B4B9920E9FE360077F39A /* Tapjoy */,
-				EF5B4B9C20E9FE360077F39A /* AppLovin */,
-				EF5B4B9F20E9FE360077F39A /* AdColony */,
-				EF5B4BA220E9FE360077F39A /* Maio */,
-				EF5B4BA520E9FE360077F39A /* Nend */,
-			);
-			path = adapter;
-			sourceTree = "<group>";
-		};
-		EF5B4B9020E9FE360077F39A /* UnityAds */ = {
-			isa = PBXGroup;
-			children = (
-				EF5B4B9120E9FE360077F39A /* GNSAdapterUnityAdsRewardVideoAd.m */,
-				EF5B4B9220E9FE360077F39A /* GNSAdapterUnityAdsRewardVideoAd.h */,
-			);
-			path = UnityAds;
-			sourceTree = "<group>";
-		};
-		EF5B4B9320E9FE360077F39A /* Vungle */ = {
-			isa = PBXGroup;
-			children = (
-				EF5B4B9420E9FE360077F39A /* GNSAdapterVungleRewardVideoAd.h */,
-				EF5B4B9520E9FE360077F39A /* GNSAdapterVungleRewardVideoAd.m */,
-			);
-			path = Vungle;
-			sourceTree = "<group>";
-		};
-		EF5B4B9920E9FE360077F39A /* Tapjoy */ = {
-			isa = PBXGroup;
-			children = (
-				EF5B4B9A20E9FE360077F39A /* GNSAdapterTapjoyRewardVideoAd.m */,
-				EF5B4B9B20E9FE360077F39A /* GNSAdapterTapjoyRewardVideoAd.h */,
-			);
-			path = Tapjoy;
-			sourceTree = "<group>";
-		};
-		EF5B4B9C20E9FE360077F39A /* AppLovin */ = {
-			isa = PBXGroup;
-			children = (
-				EF5B4B9D20E9FE360077F39A /* GNSAdapterAppLovinRewardVideoAd.m */,
-				EF5B4B9E20E9FE360077F39A /* GNSAdapterAppLovinRewardVideoAd.h */,
-			);
-			path = AppLovin;
-			sourceTree = "<group>";
-		};
-		EF5B4B9F20E9FE360077F39A /* AdColony */ = {
-			isa = PBXGroup;
-			children = (
-				EF5B4BA020E9FE360077F39A /* GNSAdapterAdColonyRewardVideoAd.m */,
-				EF5B4BA120E9FE360077F39A /* GNSAdapterAdColonyRewardVideoAd.h */,
-			);
-			path = AdColony;
-			sourceTree = "<group>";
-		};
-		EF5B4BA220E9FE360077F39A /* Maio */ = {
-			isa = PBXGroup;
-			children = (
-				EF5B4BA320E9FE360077F39A /* GNSAdapterMaioRewardVideoAd.h */,
-				EF5B4BA420E9FE360077F39A /* GNSAdapterMaioRewardVideoAd.m */,
-			);
-			path = Maio;
-			sourceTree = "<group>";
-		};
-		EF5B4BA520E9FE360077F39A /* Nend */ = {
-			isa = PBXGroup;
-			children = (
-				EF5B4BA620E9FE360077F39A /* GNSAdapterNendRewardVideoAd.h */,
-				EF5B4BA720E9FE360077F39A /* GNSAdapterNendRewardVideoAd.m */,
-			);
-			path = Nend;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,8 +328,8 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GNAdDFPRewardAdapterSample/Pods-GNAdDFPRewardAdapterSample-resources.sh",
 				"${PODS_ROOT}/NendSDK_iOS/NendAd.embeddedframework/NendAd.framework/Resources/NendAdResource.bundle",
-				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v11.12.2/Libraries/Tapjoy.embeddedframework/Resources/TapjoyResources.bundle",
-				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v11.12.2/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Resources/TapjoyResources.bundle",
+				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v12.0.0/Libraries/Tapjoy.embeddedframework/Resources/TapjoyResources.bundle",
+				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v12.0.0/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Resources/TapjoyResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -358,14 +385,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF5B4B5520E9F4D50077F39A /* ViewController.swift in Sources */,
-				EF5B4BAB20E9FE360077F39A /* GNSAdapterTapjoyRewardVideoAd.m in Sources */,
-				EF5B4BA920E9FE360077F39A /* GNSAdapterVungleRewardVideoAd.m in Sources */,
-				EF5B4BAC20E9FE360077F39A /* GNSAdapterAppLovinRewardVideoAd.m in Sources */,
-				EF5B4BAF20E9FE360077F39A /* GNSAdapterNendRewardVideoAd.m in Sources */,
-				EF5B4BAD20E9FE360077F39A /* GNSAdapterAdColonyRewardVideoAd.m in Sources */,
-				EF5B4BA820E9FE360077F39A /* GNSAdapterUnityAdsRewardVideoAd.m in Sources */,
+				2F979C2121B50BE4000A81A6 /* GNSAdapterTapjoyRewardVideoAd.m in Sources */,
+				2F979C1F21B50BE4000A81A6 /* GNSAdapterVungleRewardVideoAd.m in Sources */,
+				2F979C2021B50BE4000A81A6 /* GNSAdapterAmoadRewardVideoAd.m in Sources */,
+				2F979C2221B50BE4000A81A6 /* GNSAdapterAppLovinRewardVideoAd.m in Sources */,
+				2F979C2521B50BE4000A81A6 /* GNSAdapterNendRewardVideoAd.m in Sources */,
+				2F979C2321B50BE4000A81A6 /* GNSAdapterAdColonyRewardVideoAd.m in Sources */,
+				2F979C2621B50BE4000A81A6 /* GNSAdapterCARewardRewardVideoAd.m in Sources */,
+				2F979C1E21B50BE4000A81A6 /* GNSAdapterUnityAdsRewardVideoAd.m in Sources */,
 				EF5B4B5320E9F4D50077F39A /* AppDelegate.swift in Sources */,
-				EF5B4BAE20E9FE360077F39A /* GNSAdapterMaioRewardVideoAd.m in Sources */,
+				2F979C2421B50BE4000A81A6 /* GNSAdapterMaioRewardVideoAd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,10 +547,7 @@
 				);
 				INFOPLIST_FILE = GNAdDFPRewardAdapterSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AMoAdSdk",
@@ -646,10 +672,7 @@
 				);
 				INFOPLIST_FILE = GNAdDFPRewardAdapterSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AMoAdSdk",

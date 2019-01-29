@@ -12,10 +12,10 @@
 		194B263521C7AE75003DD030 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194B263321C7AE75003DD030 /* Main.storyboard */; };
 		194B263721C7AE76003DD030 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 194B263621C7AE76003DD030 /* Assets.xcassets */; };
 		194B263A21C7AE76003DD030 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194B263821C7AE76003DD030 /* LaunchScreen.storyboard */; };
-		194B26C421C7CA57003DD030 /* GNSAdapterAppLovinFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 194B26BA21C7CA57003DD030 /* GNSAdapterAppLovinFullscreenInterstitialAd.m */; };
-		194B26C521C7CA57003DD030 /* GNSAdapterMaioFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 194B26BC21C7CA57003DD030 /* GNSAdapterMaioFullscreenInterstitialAd.m */; };
-		194B26C621C7CA57003DD030 /* GNSAdapterNendFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 194B26C021C7CA57003DD030 /* GNSAdapterNendFullscreenInterstitialAd.m */; };
-		194B26C721C7CA57003DD030 /* GNSAdapterZucksFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 194B26C221C7CA57003DD030 /* GNSAdapterZucksFullscreenInterstitialAd.m */; };
+		2F25D88E21D4CB8C00FD5DD2 /* GNSAdapterAppLovinFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F25D88421D4CB8C00FD5DD2 /* GNSAdapterAppLovinFullscreenInterstitialAd.m */; };
+		2F25D88F21D4CB8C00FD5DD2 /* GNSAdapterMaioFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F25D88621D4CB8C00FD5DD2 /* GNSAdapterMaioFullscreenInterstitialAd.m */; };
+		2F25D89021D4CB8C00FD5DD2 /* GNSAdapterNendFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F25D88A21D4CB8C00FD5DD2 /* GNSAdapterNendFullscreenInterstitialAd.m */; };
+		2F25D89121D4CB8C00FD5DD2 /* GNSAdapterZucksFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F25D88C21D4CB8C00FD5DD2 /* GNSAdapterZucksFullscreenInterstitialAd.m */; };
 		78DAC42A57C79F9DDF56352A /* libPods-GNAdFullscreenInterstitialSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C972851CCCA0EA12560210 /* libPods-GNAdFullscreenInterstitialSample.a */; };
 /* End PBXBuildFile section */
 
@@ -29,14 +29,14 @@
 		194B263921C7AE76003DD030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		194B263B21C7AE76003DD030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		194B265221C7B612003DD030 /* GNAdFullscreenInterstitial-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GNAdFullscreenInterstitial-Bridging-Header.h"; sourceTree = "<group>"; };
-		194B26B921C7CA57003DD030 /* GNSAdapterAppLovinFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterAppLovinFullscreenInterstitialAd.h; sourceTree = "<group>"; };
-		194B26BA21C7CA57003DD030 /* GNSAdapterAppLovinFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterAppLovinFullscreenInterstitialAd.m; sourceTree = "<group>"; };
-		194B26BC21C7CA57003DD030 /* GNSAdapterMaioFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterMaioFullscreenInterstitialAd.m; sourceTree = "<group>"; };
-		194B26BD21C7CA57003DD030 /* GNSAdapterMaioFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterMaioFullscreenInterstitialAd.h; sourceTree = "<group>"; };
-		194B26BF21C7CA57003DD030 /* GNSAdapterNendFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterNendFullscreenInterstitialAd.h; sourceTree = "<group>"; };
-		194B26C021C7CA57003DD030 /* GNSAdapterNendFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterNendFullscreenInterstitialAd.m; sourceTree = "<group>"; };
-		194B26C221C7CA57003DD030 /* GNSAdapterZucksFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterZucksFullscreenInterstitialAd.m; sourceTree = "<group>"; };
-		194B26C321C7CA57003DD030 /* GNSAdapterZucksFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterZucksFullscreenInterstitialAd.h; sourceTree = "<group>"; };
+		2F25D88321D4CB8C00FD5DD2 /* GNSAdapterAppLovinFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterAppLovinFullscreenInterstitialAd.h; sourceTree = "<group>"; };
+		2F25D88421D4CB8C00FD5DD2 /* GNSAdapterAppLovinFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterAppLovinFullscreenInterstitialAd.m; sourceTree = "<group>"; };
+		2F25D88621D4CB8C00FD5DD2 /* GNSAdapterMaioFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterMaioFullscreenInterstitialAd.m; sourceTree = "<group>"; };
+		2F25D88721D4CB8C00FD5DD2 /* GNSAdapterMaioFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterMaioFullscreenInterstitialAd.h; sourceTree = "<group>"; };
+		2F25D88921D4CB8C00FD5DD2 /* GNSAdapterNendFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterNendFullscreenInterstitialAd.h; sourceTree = "<group>"; };
+		2F25D88A21D4CB8C00FD5DD2 /* GNSAdapterNendFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterNendFullscreenInterstitialAd.m; sourceTree = "<group>"; };
+		2F25D88C21D4CB8C00FD5DD2 /* GNSAdapterZucksFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterZucksFullscreenInterstitialAd.m; sourceTree = "<group>"; };
+		2F25D88D21D4CB8C00FD5DD2 /* GNSAdapterZucksFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterZucksFullscreenInterstitialAd.h; sourceTree = "<group>"; };
 		F2C972851CCCA0EA12560210 /* libPods-GNAdFullscreenInterstitialSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GNAdFullscreenInterstitialSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC0183B9D55F91FA09714183 /* Pods-GNAdFullscreenInterstitialSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdFullscreenInterstitialSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdFullscreenInterstitialSample/Pods-GNAdFullscreenInterstitialSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +56,7 @@
 		194B262321C7AE75003DD030 = {
 			isa = PBXGroup;
 			children = (
+				2F25D88121D4CB8C00FD5DD2 /* fullscreenMediation */,
 				194B262E21C7AE75003DD030 /* GNAdFullscreenInterstitialSample */,
 				194B262D21C7AE75003DD030 /* Products */,
 				E01086F1850C85DBC9768E39 /* Pods */,
@@ -74,7 +75,6 @@
 		194B262E21C7AE75003DD030 /* GNAdFullscreenInterstitialSample */ = {
 			isa = PBXGroup;
 			children = (
-				194B26B721C7CA57003DD030 /* adapter */,
 				194B262F21C7AE75003DD030 /* AppDelegate.swift */,
 				194B263121C7AE75003DD030 /* ViewController.swift */,
 				194B263321C7AE75003DD030 /* Main.storyboard */,
@@ -86,59 +86,60 @@
 			path = GNAdFullscreenInterstitialSample;
 			sourceTree = "<group>";
 		};
-		194B26B721C7CA57003DD030 /* adapter */ = {
-			isa = PBXGroup;
-			children = (
-				194B26B821C7CA57003DD030 /* AppLovin */,
-				194B26BB21C7CA57003DD030 /* Maio */,
-				194B26BE21C7CA57003DD030 /* Nend */,
-				194B26C121C7CA57003DD030 /* Zucks */,
-			);
-			path = adapter;
-			sourceTree = "<group>";
-		};
-		194B26B821C7CA57003DD030 /* AppLovin */ = {
-			isa = PBXGroup;
-			children = (
-				194B26B921C7CA57003DD030 /* GNSAdapterAppLovinFullscreenInterstitialAd.h */,
-				194B26BA21C7CA57003DD030 /* GNSAdapterAppLovinFullscreenInterstitialAd.m */,
-			);
-			path = AppLovin;
-			sourceTree = "<group>";
-		};
-		194B26BB21C7CA57003DD030 /* Maio */ = {
-			isa = PBXGroup;
-			children = (
-				194B26BC21C7CA57003DD030 /* GNSAdapterMaioFullscreenInterstitialAd.m */,
-				194B26BD21C7CA57003DD030 /* GNSAdapterMaioFullscreenInterstitialAd.h */,
-			);
-			path = Maio;
-			sourceTree = "<group>";
-		};
-		194B26BE21C7CA57003DD030 /* Nend */ = {
-			isa = PBXGroup;
-			children = (
-				194B26BF21C7CA57003DD030 /* GNSAdapterNendFullscreenInterstitialAd.h */,
-				194B26C021C7CA57003DD030 /* GNSAdapterNendFullscreenInterstitialAd.m */,
-			);
-			path = Nend;
-			sourceTree = "<group>";
-		};
-		194B26C121C7CA57003DD030 /* Zucks */ = {
-			isa = PBXGroup;
-			children = (
-				194B26C221C7CA57003DD030 /* GNSAdapterZucksFullscreenInterstitialAd.m */,
-				194B26C321C7CA57003DD030 /* GNSAdapterZucksFullscreenInterstitialAd.h */,
-			);
-			path = Zucks;
-			sourceTree = "<group>";
-		};
 		2CB1811F6F7FAED7E737B7DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				F2C972851CCCA0EA12560210 /* libPods-GNAdFullscreenInterstitialSample.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F25D88121D4CB8C00FD5DD2 /* fullscreenMediation */ = {
+			isa = PBXGroup;
+			children = (
+				2F25D88221D4CB8C00FD5DD2 /* AppLovin */,
+				2F25D88521D4CB8C00FD5DD2 /* Maio */,
+				2F25D88821D4CB8C00FD5DD2 /* Nend */,
+				2F25D88B21D4CB8C00FD5DD2 /* Zucks */,
+			);
+			name = fullscreenMediation;
+			path = ../../../../fullscreenMediation;
+			sourceTree = "<group>";
+		};
+		2F25D88221D4CB8C00FD5DD2 /* AppLovin */ = {
+			isa = PBXGroup;
+			children = (
+				2F25D88321D4CB8C00FD5DD2 /* GNSAdapterAppLovinFullscreenInterstitialAd.h */,
+				2F25D88421D4CB8C00FD5DD2 /* GNSAdapterAppLovinFullscreenInterstitialAd.m */,
+			);
+			path = AppLovin;
+			sourceTree = "<group>";
+		};
+		2F25D88521D4CB8C00FD5DD2 /* Maio */ = {
+			isa = PBXGroup;
+			children = (
+				2F25D88621D4CB8C00FD5DD2 /* GNSAdapterMaioFullscreenInterstitialAd.m */,
+				2F25D88721D4CB8C00FD5DD2 /* GNSAdapterMaioFullscreenInterstitialAd.h */,
+			);
+			path = Maio;
+			sourceTree = "<group>";
+		};
+		2F25D88821D4CB8C00FD5DD2 /* Nend */ = {
+			isa = PBXGroup;
+			children = (
+				2F25D88921D4CB8C00FD5DD2 /* GNSAdapterNendFullscreenInterstitialAd.h */,
+				2F25D88A21D4CB8C00FD5DD2 /* GNSAdapterNendFullscreenInterstitialAd.m */,
+			);
+			path = Nend;
+			sourceTree = "<group>";
+		};
+		2F25D88B21D4CB8C00FD5DD2 /* Zucks */ = {
+			isa = PBXGroup;
+			children = (
+				2F25D88C21D4CB8C00FD5DD2 /* GNSAdapterZucksFullscreenInterstitialAd.m */,
+				2F25D88D21D4CB8C00FD5DD2 /* GNSAdapterZucksFullscreenInterstitialAd.h */,
+			);
+			path = Zucks;
 			sourceTree = "<group>";
 		};
 		E01086F1850C85DBC9768E39 /* Pods */ = {
@@ -262,11 +263,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				194B26C621C7CA57003DD030 /* GNSAdapterNendFullscreenInterstitialAd.m in Sources */,
+				2F25D89021D4CB8C00FD5DD2 /* GNSAdapterNendFullscreenInterstitialAd.m in Sources */,
 				194B263221C7AE75003DD030 /* ViewController.swift in Sources */,
-				194B26C421C7CA57003DD030 /* GNSAdapterAppLovinFullscreenInterstitialAd.m in Sources */,
-				194B26C721C7CA57003DD030 /* GNSAdapterZucksFullscreenInterstitialAd.m in Sources */,
-				194B26C521C7CA57003DD030 /* GNSAdapterMaioFullscreenInterstitialAd.m in Sources */,
+				2F25D88E21D4CB8C00FD5DD2 /* GNSAdapterAppLovinFullscreenInterstitialAd.m in Sources */,
+				2F25D89121D4CB8C00FD5DD2 /* GNSAdapterZucksFullscreenInterstitialAd.m in Sources */,
+				2F25D88F21D4CB8C00FD5DD2 /* GNSAdapterMaioFullscreenInterstitialAd.m in Sources */,
 				194B263021C7AE75003DD030 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

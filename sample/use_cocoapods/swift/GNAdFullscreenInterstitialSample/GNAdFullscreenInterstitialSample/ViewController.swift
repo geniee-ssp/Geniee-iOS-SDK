@@ -24,7 +24,6 @@ class ViewController: UIViewController, UITextFieldDelegate, GNSFullscreenInters
         let request = GNSRequest()
         // set log level
         request.gnAdlogPriority = GNLogPriorityInfo
-        request.testMode = true;
         if let idStr = zoneIdText.text {
             if idStr.isEmpty {
                 NSLog("Please input zone id.")

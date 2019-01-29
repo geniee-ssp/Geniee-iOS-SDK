@@ -12,10 +12,10 @@
 		194B266721C7C005003DD030 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194B266521C7C005003DD030 /* Main.storyboard */; };
 		194B266921C7C006003DD030 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 194B266821C7C006003DD030 /* Assets.xcassets */; };
 		194B266C21C7C006003DD030 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194B266A21C7C006003DD030 /* LaunchScreen.storyboard */; };
-		194B26B321C7CA03003DD030 /* GNSAdapterAppLovinFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 194B26A921C7CA03003DD030 /* GNSAdapterAppLovinFullscreenInterstitialAd.m */; };
-		194B26B421C7CA03003DD030 /* GNSAdapterMaioFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 194B26AB21C7CA03003DD030 /* GNSAdapterMaioFullscreenInterstitialAd.m */; };
-		194B26B521C7CA03003DD030 /* GNSAdapterNendFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 194B26AF21C7CA03003DD030 /* GNSAdapterNendFullscreenInterstitialAd.m */; };
-		194B26B621C7CA03003DD030 /* GNSAdapterZucksFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 194B26B121C7CA03003DD030 /* GNSAdapterZucksFullscreenInterstitialAd.m */; };
+		2F25D86C21D4CA6D00FD5DD2 /* GNSAdapterAppLovinFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F25D86221D4CA6D00FD5DD2 /* GNSAdapterAppLovinFullscreenInterstitialAd.m */; };
+		2F25D86D21D4CA6D00FD5DD2 /* GNSAdapterMaioFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F25D86421D4CA6D00FD5DD2 /* GNSAdapterMaioFullscreenInterstitialAd.m */; };
+		2F25D86E21D4CA6D00FD5DD2 /* GNSAdapterNendFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F25D86821D4CA6D00FD5DD2 /* GNSAdapterNendFullscreenInterstitialAd.m */; };
+		2F25D86F21D4CA6D00FD5DD2 /* GNSAdapterZucksFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F25D86A21D4CA6D00FD5DD2 /* GNSAdapterZucksFullscreenInterstitialAd.m */; };
 		6B07B500CF18F4F912019956 /* libPods-GNAdDFPFullscreenAdapterSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3AAC7EF5811FDC8F0AF7D16 /* libPods-GNAdDFPFullscreenAdapterSample.a */; };
 /* End PBXBuildFile section */
 
@@ -27,14 +27,14 @@
 		194B266821C7C006003DD030 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		194B266B21C7C006003DD030 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		194B266D21C7C006003DD030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		194B26A821C7CA03003DD030 /* GNSAdapterAppLovinFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterAppLovinFullscreenInterstitialAd.h; sourceTree = "<group>"; };
-		194B26A921C7CA03003DD030 /* GNSAdapterAppLovinFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterAppLovinFullscreenInterstitialAd.m; sourceTree = "<group>"; };
-		194B26AB21C7CA03003DD030 /* GNSAdapterMaioFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterMaioFullscreenInterstitialAd.m; sourceTree = "<group>"; };
-		194B26AC21C7CA03003DD030 /* GNSAdapterMaioFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterMaioFullscreenInterstitialAd.h; sourceTree = "<group>"; };
-		194B26AE21C7CA03003DD030 /* GNSAdapterNendFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterNendFullscreenInterstitialAd.h; sourceTree = "<group>"; };
-		194B26AF21C7CA03003DD030 /* GNSAdapterNendFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterNendFullscreenInterstitialAd.m; sourceTree = "<group>"; };
-		194B26B121C7CA03003DD030 /* GNSAdapterZucksFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterZucksFullscreenInterstitialAd.m; sourceTree = "<group>"; };
-		194B26B221C7CA03003DD030 /* GNSAdapterZucksFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterZucksFullscreenInterstitialAd.h; sourceTree = "<group>"; };
+		2F25D86121D4CA6D00FD5DD2 /* GNSAdapterAppLovinFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterAppLovinFullscreenInterstitialAd.h; sourceTree = "<group>"; };
+		2F25D86221D4CA6D00FD5DD2 /* GNSAdapterAppLovinFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterAppLovinFullscreenInterstitialAd.m; sourceTree = "<group>"; };
+		2F25D86421D4CA6D00FD5DD2 /* GNSAdapterMaioFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterMaioFullscreenInterstitialAd.m; sourceTree = "<group>"; };
+		2F25D86521D4CA6D00FD5DD2 /* GNSAdapterMaioFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterMaioFullscreenInterstitialAd.h; sourceTree = "<group>"; };
+		2F25D86721D4CA6D00FD5DD2 /* GNSAdapterNendFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterNendFullscreenInterstitialAd.h; sourceTree = "<group>"; };
+		2F25D86821D4CA6D00FD5DD2 /* GNSAdapterNendFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterNendFullscreenInterstitialAd.m; sourceTree = "<group>"; };
+		2F25D86A21D4CA6D00FD5DD2 /* GNSAdapterZucksFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterZucksFullscreenInterstitialAd.m; sourceTree = "<group>"; };
+		2F25D86B21D4CA6D00FD5DD2 /* GNSAdapterZucksFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterZucksFullscreenInterstitialAd.h; sourceTree = "<group>"; };
 		821AE6BE583982081F8AAB0D /* Pods-GNAdDFPFullscreenAdapterSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdDFPFullscreenAdapterSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdDFPFullscreenAdapterSample/Pods-GNAdDFPFullscreenAdapterSample.release.xcconfig"; sourceTree = "<group>"; };
 		85F3D0859A692B3D65132015 /* Pods-GNAdDFPFullscreenAdapterSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdDFPFullscreenAdapterSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdDFPFullscreenAdapterSample/Pods-GNAdDFPFullscreenAdapterSample.debug.xcconfig"; sourceTree = "<group>"; };
 		A3AAC7EF5811FDC8F0AF7D16 /* libPods-GNAdDFPFullscreenAdapterSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GNAdDFPFullscreenAdapterSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,7 +82,7 @@
 		194B266021C7C005003DD030 /* GNAdDFPFullscreenAdapterSample */ = {
 			isa = PBXGroup;
 			children = (
-				194B26A621C7CA03003DD030 /* adapter */,
+				2F25D85F21D4CA6D00FD5DD2 /* fullscreenMediation */,
 				194B266121C7C005003DD030 /* AppDelegate.swift */,
 				194B266321C7C005003DD030 /* ViewController.swift */,
 				194B266521C7C005003DD030 /* Main.storyboard */,
@@ -93,49 +93,50 @@
 			path = GNAdDFPFullscreenAdapterSample;
 			sourceTree = "<group>";
 		};
-		194B26A621C7CA03003DD030 /* adapter */ = {
+		2F25D85F21D4CA6D00FD5DD2 /* fullscreenMediation */ = {
 			isa = PBXGroup;
 			children = (
-				194B26A721C7CA03003DD030 /* AppLovin */,
-				194B26AA21C7CA03003DD030 /* Maio */,
-				194B26AD21C7CA03003DD030 /* Nend */,
-				194B26B021C7CA03003DD030 /* Zucks */,
+				2F25D86021D4CA6D00FD5DD2 /* AppLovin */,
+				2F25D86321D4CA6D00FD5DD2 /* Maio */,
+				2F25D86621D4CA6D00FD5DD2 /* Nend */,
+				2F25D86921D4CA6D00FD5DD2 /* Zucks */,
 			);
-			path = adapter;
+			name = fullscreenMediation;
+			path = ../../../../../fullscreenMediation;
 			sourceTree = "<group>";
 		};
-		194B26A721C7CA03003DD030 /* AppLovin */ = {
+		2F25D86021D4CA6D00FD5DD2 /* AppLovin */ = {
 			isa = PBXGroup;
 			children = (
-				194B26A821C7CA03003DD030 /* GNSAdapterAppLovinFullscreenInterstitialAd.h */,
-				194B26A921C7CA03003DD030 /* GNSAdapterAppLovinFullscreenInterstitialAd.m */,
+				2F25D86121D4CA6D00FD5DD2 /* GNSAdapterAppLovinFullscreenInterstitialAd.h */,
+				2F25D86221D4CA6D00FD5DD2 /* GNSAdapterAppLovinFullscreenInterstitialAd.m */,
 			);
 			path = AppLovin;
 			sourceTree = "<group>";
 		};
-		194B26AA21C7CA03003DD030 /* Maio */ = {
+		2F25D86321D4CA6D00FD5DD2 /* Maio */ = {
 			isa = PBXGroup;
 			children = (
-				194B26AB21C7CA03003DD030 /* GNSAdapterMaioFullscreenInterstitialAd.m */,
-				194B26AC21C7CA03003DD030 /* GNSAdapterMaioFullscreenInterstitialAd.h */,
+				2F25D86421D4CA6D00FD5DD2 /* GNSAdapterMaioFullscreenInterstitialAd.m */,
+				2F25D86521D4CA6D00FD5DD2 /* GNSAdapterMaioFullscreenInterstitialAd.h */,
 			);
 			path = Maio;
 			sourceTree = "<group>";
 		};
-		194B26AD21C7CA03003DD030 /* Nend */ = {
+		2F25D86621D4CA6D00FD5DD2 /* Nend */ = {
 			isa = PBXGroup;
 			children = (
-				194B26AE21C7CA03003DD030 /* GNSAdapterNendFullscreenInterstitialAd.h */,
-				194B26AF21C7CA03003DD030 /* GNSAdapterNendFullscreenInterstitialAd.m */,
+				2F25D86721D4CA6D00FD5DD2 /* GNSAdapterNendFullscreenInterstitialAd.h */,
+				2F25D86821D4CA6D00FD5DD2 /* GNSAdapterNendFullscreenInterstitialAd.m */,
 			);
 			path = Nend;
 			sourceTree = "<group>";
 		};
-		194B26B021C7CA03003DD030 /* Zucks */ = {
+		2F25D86921D4CA6D00FD5DD2 /* Zucks */ = {
 			isa = PBXGroup;
 			children = (
-				194B26B121C7CA03003DD030 /* GNSAdapterZucksFullscreenInterstitialAd.m */,
-				194B26B221C7CA03003DD030 /* GNSAdapterZucksFullscreenInterstitialAd.h */,
+				2F25D86A21D4CA6D00FD5DD2 /* GNSAdapterZucksFullscreenInterstitialAd.m */,
+				2F25D86B21D4CA6D00FD5DD2 /* GNSAdapterZucksFullscreenInterstitialAd.h */,
 			);
 			path = Zucks;
 			sourceTree = "<group>";
@@ -279,11 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				194B26B521C7CA03003DD030 /* GNSAdapterNendFullscreenInterstitialAd.m in Sources */,
+				2F25D86E21D4CA6D00FD5DD2 /* GNSAdapterNendFullscreenInterstitialAd.m in Sources */,
 				194B266421C7C005003DD030 /* ViewController.swift in Sources */,
-				194B26B321C7CA03003DD030 /* GNSAdapterAppLovinFullscreenInterstitialAd.m in Sources */,
-				194B26B621C7CA03003DD030 /* GNSAdapterZucksFullscreenInterstitialAd.m in Sources */,
-				194B26B421C7CA03003DD030 /* GNSAdapterMaioFullscreenInterstitialAd.m in Sources */,
+				2F25D86C21D4CA6D00FD5DD2 /* GNSAdapterAppLovinFullscreenInterstitialAd.m in Sources */,
+				2F25D86F21D4CA6D00FD5DD2 /* GNSAdapterZucksFullscreenInterstitialAd.m in Sources */,
+				2F25D86D21D4CA6D00FD5DD2 /* GNSAdapterMaioFullscreenInterstitialAd.m in Sources */,
 				194B266221C7C005003DD030 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +435,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				INFOPLIST_FILE = GNAdDFPFullscreenAdapterSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +455,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				INFOPLIST_FILE = GNAdDFPFullscreenAdapterSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

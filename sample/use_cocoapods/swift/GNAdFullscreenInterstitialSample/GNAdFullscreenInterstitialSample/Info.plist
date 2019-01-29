@@ -41,20 +41,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>NSAppTransportSecurity</key>
-    <dict>
-        <key>NSExceptionDomains</key>
-        <dict>
-            <key>fenrir.ty5.geniee.jp</key>
-            <dict>
-                <key>NSIncludesSubdomains</key>
-                <true/>
-                <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
-                <true/>
-            </dict>
-        </dict>
-    </dict>
-    <key>AppLovinSdkKey</key>
-    <string>N4G7uo57iqMqzxtL6sLW8hC0I7SL_CyNGDU90aGkOdXMZPifF2BOkNO1VrNV2KtJXLSTxkGJLpgvCNZRQmr88D</string>
 </dict>
 </plist>

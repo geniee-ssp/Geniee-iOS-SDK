@@ -4,16 +4,14 @@ platform :ios, '9.0'
 
 target 'GNAdDFPRewardMediationAdapterSample' do
   pod 'Google-Mobile-Ads-SDK'
-
   pod 'Geniee-DFP-Mediation-Adapter'
   pod 'Geniee-iOS-SDK'
-
-  pod 'AdColony', '~> 3.3.4'
-  pod 'AppLovinSDK','~> 5.0.1'
-  pod 'MaioSDK', '~> 1.3.0'
-  pod 'NendSDK_iOS', '~> 4.0.6'
-  pod 'TapjoySDK', '~> 11.12.2'
-  pod 'UnityAds', '~> 2.2.1'
+  pod 'AdColony', '~> 3.3.5'
+  pod 'AppLovinSDK','~> 5.1.1'
+  pod 'MaioSDK', '~> 1.4.0'
+  pod 'NendSDK_iOS', '~> 5.0.2'
+  pod 'TapjoySDK', '~> 12.0.0'
+  pod 'UnityAds', '~> 2.3.0'
   pod 'VungleSDK-iOS', '~> 6.2.0'
 
 end
