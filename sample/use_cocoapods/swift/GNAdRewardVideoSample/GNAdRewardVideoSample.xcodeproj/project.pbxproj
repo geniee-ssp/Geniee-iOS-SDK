@@ -145,7 +145,8 @@
 				E8CECFAD20DA70CD007779A8 /* Maio */,
 				E8CECFB020DA70CD007779A8 /* Nend */,
 			);
-			path = Adapter;
+			name = Adapter;
+			path = ../../../../../rewardMediation;
 			sourceTree = "<group>";
 		};
 		E8CECF9B20DA70CC007779A8 /* UnityAds */ = {
