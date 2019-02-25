@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Geniee-iOS-SDK"
-  s.version      = "5.0.0"
+  s.version      = "5.0.1"
   s.summary      = "An SDK for ad menetization with the Geniee Network"
   s.homepage     = "https://geniee.co.jp"
 
@@ -47,7 +47,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/geniee-ssp/Geniee-iOS-SDK.git", :tag => "v.5.0.0" }
+  s.source       = { :git => "https://github.com/geniee-ssp/Geniee-iOS-SDK.git", :tag => "v.5.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
