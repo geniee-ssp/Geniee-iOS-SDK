@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleDisplayName</key>
+	<string>DFPRewardVideo</string>
 	<key>AppLovinSdkKey</key>
 	<string>N4G7uo57iqMqzxtL6sLW8hC0I7SL_CyNGDU90aGkOdXMZPifF2BOkNO1VrNV2KtJXLSTxkGJLpgvCNZRQmr88D</string>
 	<key>CFBundleDevelopmentRegion</key>
