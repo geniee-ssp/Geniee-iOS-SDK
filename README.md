@@ -12,12 +12,12 @@
 
 |SDK| Version |
 |:--|:--|
-|GNAdSDK| 5.1.0 |
+|GNAdSDK| 5.0.1 |
 |rewardMediation|2.7.0|
 |fullscreenMediation|2.7.0|
-|GNAdDFPBannerMediationAdapter|5.1.0.0|
-|GNAdDFPRewardMediationAdapter|5.1.0.0|
-|GNAdDFPFullscreenInterstitialMediationAdapter|5.1.0.0|
+|GNAdDFPBannerMediationAdapter|5.0.1.0|
+|GNAdDFPRewardMediationAdapter|5.0.1.0|
+|GNAdDFPFullscreenInterstitialMediationAdapter|5.0.1.0|
 
 ### [Ad Network(RewardVideo Mediation)](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-For-iOS)
 
@@ -42,3 +42,7 @@
 | [AppLovin](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/FullscreenInterstitial-Ad-Integration-ADNW-Applovin-For-iOS) | 5.1.1 | 
 | [Nend](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/FullscreenInterstitial-Ad-Integration-ADNW-Nend-For-iOS) | 5.0.2 | 
 | [Zucks](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/FullscreenInterstitial-Ad-Integration-ADNW-Zucks-For-iOS) | 4.7.8 | 
+| [Tapjoy](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/FullscreenInterstitial-Ad-Integration-ADNW-Tapjoy-For-iOS) | 12.0.0 |
+| [UnityAds](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/FullscreenInterstitial-Ad-Integration-ADNW-UnityAds-For-iOS) | 2.3.0 |
+| [Vungle](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/FullscreenInterstitial-Ad-Integration-ADNW-Vungle-For-iOS) | 6.2.0 |
+| [Imobile](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/FullscreenInterstitial-Ad-Integration-ADNW-Imobile-For-iOS) | 2.0.29 |

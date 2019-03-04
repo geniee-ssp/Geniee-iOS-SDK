@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C509BA622290DDD0041F2D7 /* GNSAdapterTapjoyFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C509B9F22290DDD0041F2D7 /* GNSAdapterTapjoyFullscreenInterstitialAd.m */; };
+		0C509BA722290DDD0041F2D7 /* GNSAdapterVungleFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C509BA222290DDD0041F2D7 /* GNSAdapterVungleFullscreenInterstitialAd.m */; };
+		0C509BA822290DDD0041F2D7 /* GNSAdapterUnityAdsFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C509BA522290DDD0041F2D7 /* GNSAdapterUnityAdsFullscreenInterstitialAd.m */; };
+		0C509BAC22290DE70041F2D7 /* GNSAdapterImobileFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C509BAB22290DE70041F2D7 /* GNSAdapterImobileFullscreenInterstitialAd.m */; };
+		0C509BAE22290E020041F2D7 /* ImobileSdkAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C509BAD22290E020041F2D7 /* ImobileSdkAds.framework */; };
 		194B25FE21C7A675003DD030 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 194B25FD21C7A675003DD030 /* AppDelegate.m */; };
 		194B260121C7A675003DD030 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 194B260021C7A675003DD030 /* ViewController.m */; };
 		194B260421C7A675003DD030 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194B260221C7A675003DD030 /* Main.storyboard */; };
@@ -21,6 +26,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C509B9E22290DDD0041F2D7 /* GNSAdapterTapjoyFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterTapjoyFullscreenInterstitialAd.h; sourceTree = "<group>"; };
+		0C509B9F22290DDD0041F2D7 /* GNSAdapterTapjoyFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterTapjoyFullscreenInterstitialAd.m; sourceTree = "<group>"; };
+		0C509BA122290DDD0041F2D7 /* GNSAdapterVungleFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterVungleFullscreenInterstitialAd.h; sourceTree = "<group>"; };
+		0C509BA222290DDD0041F2D7 /* GNSAdapterVungleFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterVungleFullscreenInterstitialAd.m; sourceTree = "<group>"; };
+		0C509BA422290DDD0041F2D7 /* GNSAdapterUnityAdsFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterUnityAdsFullscreenInterstitialAd.h; sourceTree = "<group>"; };
+		0C509BA522290DDD0041F2D7 /* GNSAdapterUnityAdsFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterUnityAdsFullscreenInterstitialAd.m; sourceTree = "<group>"; };
+		0C509BAA22290DE70041F2D7 /* GNSAdapterImobileFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterImobileFullscreenInterstitialAd.h; sourceTree = "<group>"; };
+		0C509BAB22290DE70041F2D7 /* GNSAdapterImobileFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterImobileFullscreenInterstitialAd.m; sourceTree = "<group>"; };
+		0C509BAD22290E020041F2D7 /* ImobileSdkAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImobileSdkAds.framework; path = "../../../../Mediation-Adnw-SDKS/FullscreenInterstitialAd-Adnw-SDKS/ImobileSdkAds.framework"; sourceTree = "<group>"; };
 		194B25F921C7A675003DD030 /* GNAdDFPFullscreenInterstitialAdapterSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNAdDFPFullscreenInterstitialAdapterSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		194B25FC21C7A675003DD030 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		194B25FD21C7A675003DD030 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C509BAE22290E020041F2D7 /* ImobileSdkAds.framework in Frameworks */,
 				6CE98FF9C6C31D0C2BEF576A /* libPods-GNAdDFPFullscreenInterstitialAdapterSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +71,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C509B9D22290DDD0041F2D7 /* Tapjoy */ = {
+			isa = PBXGroup;
+			children = (
+				0C509B9E22290DDD0041F2D7 /* GNSAdapterTapjoyFullscreenInterstitialAd.h */,
+				0C509B9F22290DDD0041F2D7 /* GNSAdapterTapjoyFullscreenInterstitialAd.m */,
+			);
+			path = Tapjoy;
+			sourceTree = "<group>";
+		};
+		0C509BA022290DDD0041F2D7 /* Vungle */ = {
+			isa = PBXGroup;
+			children = (
+				0C509BA122290DDD0041F2D7 /* GNSAdapterVungleFullscreenInterstitialAd.h */,
+				0C509BA222290DDD0041F2D7 /* GNSAdapterVungleFullscreenInterstitialAd.m */,
+			);
+			path = Vungle;
+			sourceTree = "<group>";
+		};
+		0C509BA322290DDD0041F2D7 /* UnityAds */ = {
+			isa = PBXGroup;
+			children = (
+				0C509BA422290DDD0041F2D7 /* GNSAdapterUnityAdsFullscreenInterstitialAd.h */,
+				0C509BA522290DDD0041F2D7 /* GNSAdapterUnityAdsFullscreenInterstitialAd.m */,
+			);
+			path = UnityAds;
+			sourceTree = "<group>";
+		};
+		0C509BA922290DE70041F2D7 /* Imobile */ = {
+			isa = PBXGroup;
+			children = (
+				0C509BAA22290DE70041F2D7 /* GNSAdapterImobileFullscreenInterstitialAd.h */,
+				0C509BAB22290DE70041F2D7 /* GNSAdapterImobileFullscreenInterstitialAd.m */,
+			);
+			path = Imobile;
+			sourceTree = "<group>";
+		};
 		194B25F021C7A675003DD030 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +145,10 @@
 		2F57D54621FF13F2007D61E5 /* fullscreenMediation */ = {
 			isa = PBXGroup;
 			children = (
+				0C509B9D22290DDD0041F2D7 /* Tapjoy */,
+				0C509BA322290DDD0041F2D7 /* UnityAds */,
+				0C509BA022290DDD0041F2D7 /* Vungle */,
+				0C509BA922290DE70041F2D7 /* Imobile */,
 				2F57D54721FF13F2007D61E5 /* AppLovin */,
 				2F57D54A21FF13F2007D61E5 /* Maio */,
 				2F57D54D21FF13F2007D61E5 /* Nend */,
@@ -151,6 +206,7 @@
 		F03AA57EEBEF9A67A9910D0E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C509BAD22290E020041F2D7 /* ImobileSdkAds.framework */,
 				B53C843B952E72B85CEE480C /* libPods-GNAdDFPFullscreenInterstitialAdapterSample.a */,
 			);
 			name = Frameworks;
@@ -249,7 +305,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GNAdDFPFullscreenInterstitialAdapterSample/Pods-GNAdDFPFullscreenInterstitialAdapterSample-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-GNAdDFPFullscreenInterstitialAdapterSample/Pods-GNAdDFPFullscreenInterstitialAdapterSample-frameworks.sh",
 				"${PODS_ROOT}/Geniee-DFP-Mediation-FullscreenInterstitial-Adapter/GNAdDFPFullscreenInterstitialMediationAdapter/Framework/GNAdDFPFullscreenInterstitialMediationAdapter.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -258,7 +314,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GNAdDFPFullscreenInterstitialAdapterSample/Pods-GNAdDFPFullscreenInterstitialAdapterSample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GNAdDFPFullscreenInterstitialAdapterSample/Pods-GNAdDFPFullscreenInterstitialAdapterSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DD2F8745D76C18906E33AAA0 /* [CP] Copy Pods Resources */ = {
@@ -267,16 +323,19 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GNAdDFPFullscreenInterstitialAdapterSample/Pods-GNAdDFPFullscreenInterstitialAdapterSample-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-GNAdDFPFullscreenInterstitialAdapterSample/Pods-GNAdDFPFullscreenInterstitialAdapterSample-resources.sh",
 				"${PODS_ROOT}/NendSDK_iOS/NendAd.embeddedframework/NendAd.framework/Resources/NendAdResource.bundle",
+				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v12.0.0/Libraries/Tapjoy.embeddedframework/Resources/TapjoyResources.bundle",
+				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v12.0.0/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Resources/TapjoyResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NendAdResource.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TapjoyResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GNAdDFPFullscreenInterstitialAdapterSample/Pods-GNAdDFPFullscreenInterstitialAdapterSample-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GNAdDFPFullscreenInterstitialAdapterSample/Pods-GNAdDFPFullscreenInterstitialAdapterSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -287,9 +346,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				194B260121C7A675003DD030 /* ViewController.m in Sources */,
+				0C509BA622290DDD0041F2D7 /* GNSAdapterTapjoyFullscreenInterstitialAd.m in Sources */,
 				2F57D55321FF13F2007D61E5 /* GNSAdapterAppLovinFullscreenInterstitialAd.m in Sources */,
+				0C509BA822290DDD0041F2D7 /* GNSAdapterUnityAdsFullscreenInterstitialAd.m in Sources */,
+				0C509BAC22290DE70041F2D7 /* GNSAdapterImobileFullscreenInterstitialAd.m in Sources */,
 				194B260C21C7A676003DD030 /* main.m in Sources */,
 				194B25FE21C7A675003DD030 /* AppDelegate.m in Sources */,
+				0C509BA722290DDD0041F2D7 /* GNSAdapterVungleFullscreenInterstitialAd.m in Sources */,
 				2F57D55621FF13F2007D61E5 /* GNSAdapterZucksFullscreenInterstitialAd.m in Sources */,
 				2F57D55421FF13F2007D61E5 /* GNSAdapterMaioFullscreenInterstitialAd.m in Sources */,
 				2F57D55521FF13F2007D61E5 /* GNSAdapterNendFullscreenInterstitialAd.m in Sources */,
@@ -437,6 +500,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKMVWZ32F4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/AppLovinSDK/applovin-ios-sdk-5.1.2\"",
+					"\"${PODS_ROOT}/Geniee-DFP-Mediation-FullscreenInterstitial-Adapter/GNAdDFPFullscreenInterstitialMediationAdapter/Framework\"",
+					"\"${PODS_ROOT}/Geniee-iOS-SDK/GNAdSDK/Framework\"",
+					"\"${PODS_ROOT}/Google-Mobile-Ads-SDK/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/MaioSDK\"",
+					"\"${PODS_ROOT}/NendSDK_iOS/NendAd.embeddedframework\"",
+					"\"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v12.0.0/Libraries/Tapjoy.embeddedframework\"",
+					"\"${PODS_ROOT}/UnityAds\"",
+					"\"${PODS_ROOT}/VungleSDK-iOS\"",
+					"\"${PODS_ROOT}/ZucksAdNetworkSDK\"",
+					"\"$(PODS_ROOT)/TapjoySDK/**\"",
+					"../../../../Mediation-Adnw-SDKS/FullscreenInterstitialAd-Adnw-SDKS/",
+				);
 				INFOPLIST_FILE = GNAdDFPFullscreenInterstitialAdapterSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +533,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKMVWZ32F4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/AppLovinSDK/applovin-ios-sdk-5.1.2\"",
+					"\"${PODS_ROOT}/Geniee-DFP-Mediation-FullscreenInterstitial-Adapter/GNAdDFPFullscreenInterstitialMediationAdapter/Framework\"",
+					"\"${PODS_ROOT}/Geniee-iOS-SDK/GNAdSDK/Framework\"",
+					"\"${PODS_ROOT}/Google-Mobile-Ads-SDK/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/MaioSDK\"",
+					"\"${PODS_ROOT}/NendSDK_iOS/NendAd.embeddedframework\"",
+					"\"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v12.0.0/Libraries/Tapjoy.embeddedframework\"",
+					"\"${PODS_ROOT}/UnityAds\"",
+					"\"${PODS_ROOT}/VungleSDK-iOS\"",
+					"\"${PODS_ROOT}/ZucksAdNetworkSDK\"",
+					"\"$(PODS_ROOT)/TapjoySDK/**\"",
+					"../../../../Mediation-Adnw-SDKS/FullscreenInterstitialAd-Adnw-SDKS/",
+				);
 				INFOPLIST_FILE = GNAdDFPFullscreenInterstitialAdapterSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
