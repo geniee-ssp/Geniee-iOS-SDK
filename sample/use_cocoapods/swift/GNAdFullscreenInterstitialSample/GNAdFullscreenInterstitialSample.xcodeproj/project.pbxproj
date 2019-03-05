@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C509A06221E97AF0041F2D7 /* GNSAdapterVungleFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C509A05221E97AF0041F2D7 /* GNSAdapterVungleFullscreenInterstitialAd.m */; };
+		0C509B06222692E00041F2D7 /* GNSAdapterTapjoyFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C509B05222692E00041F2D7 /* GNSAdapterTapjoyFullscreenInterstitialAd.m */; };
+		0C509B0A222692EE0041F2D7 /* GNSAdapterUnityAdsFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C509B09222692EE0041F2D7 /* GNSAdapterUnityAdsFullscreenInterstitialAd.m */; };
+		0C509B0E222692FB0041F2D7 /* GNSAdapterImobileFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C509B0D222692FB0041F2D7 /* GNSAdapterImobileFullscreenInterstitialAd.m */; };
+		0C509B122226964B0041F2D7 /* ImobileSdkAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C509B112226964B0041F2D7 /* ImobileSdkAds.framework */; };
 		194B263021C7AE75003DD030 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194B262F21C7AE75003DD030 /* AppDelegate.swift */; };
 		194B263221C7AE75003DD030 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194B263121C7AE75003DD030 /* ViewController.swift */; };
 		194B263521C7AE75003DD030 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 194B263321C7AE75003DD030 /* Main.storyboard */; };
@@ -21,6 +26,15 @@
 
 /* Begin PBXFileReference section */
 		0AD192FF347B29E5475F336C /* Pods-GNAdFullscreenInterstitialSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdFullscreenInterstitialSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdFullscreenInterstitialSample/Pods-GNAdFullscreenInterstitialSample.release.xcconfig"; sourceTree = "<group>"; };
+		0C509A04221E97AF0041F2D7 /* GNSAdapterVungleFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterVungleFullscreenInterstitialAd.h; sourceTree = "<group>"; };
+		0C509A05221E97AF0041F2D7 /* GNSAdapterVungleFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterVungleFullscreenInterstitialAd.m; sourceTree = "<group>"; };
+		0C509B04222692E00041F2D7 /* GNSAdapterTapjoyFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterTapjoyFullscreenInterstitialAd.h; sourceTree = "<group>"; };
+		0C509B05222692E00041F2D7 /* GNSAdapterTapjoyFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterTapjoyFullscreenInterstitialAd.m; sourceTree = "<group>"; };
+		0C509B08222692EE0041F2D7 /* GNSAdapterUnityAdsFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterUnityAdsFullscreenInterstitialAd.h; sourceTree = "<group>"; };
+		0C509B09222692EE0041F2D7 /* GNSAdapterUnityAdsFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterUnityAdsFullscreenInterstitialAd.m; sourceTree = "<group>"; };
+		0C509B0C222692FB0041F2D7 /* GNSAdapterImobileFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterImobileFullscreenInterstitialAd.h; sourceTree = "<group>"; };
+		0C509B0D222692FB0041F2D7 /* GNSAdapterImobileFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterImobileFullscreenInterstitialAd.m; sourceTree = "<group>"; };
+		0C509B112226964B0041F2D7 /* ImobileSdkAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImobileSdkAds.framework; path = "../../../../Mediation-Adnw-SDKS/FullscreenInterstitialAd-Adnw-SDKS/ImobileSdkAds.framework"; sourceTree = "<group>"; };
 		194B262C21C7AE75003DD030 /* GNAdFullscreenInterstitialSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNAdFullscreenInterstitialSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		194B262F21C7AE75003DD030 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		194B263121C7AE75003DD030 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C509B122226964B0041F2D7 /* ImobileSdkAds.framework in Frameworks */,
 				78DAC42A57C79F9DDF56352A /* libPods-GNAdFullscreenInterstitialSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,6 +68,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C509A03221E97AF0041F2D7 /* Vungle */ = {
+			isa = PBXGroup;
+			children = (
+				0C509A04221E97AF0041F2D7 /* GNSAdapterVungleFullscreenInterstitialAd.h */,
+				0C509A05221E97AF0041F2D7 /* GNSAdapterVungleFullscreenInterstitialAd.m */,
+			);
+			path = Vungle;
+			sourceTree = "<group>";
+		};
+		0C509B03222692E00041F2D7 /* Tapjoy */ = {
+			isa = PBXGroup;
+			children = (
+				0C509B04222692E00041F2D7 /* GNSAdapterTapjoyFullscreenInterstitialAd.h */,
+				0C509B05222692E00041F2D7 /* GNSAdapterTapjoyFullscreenInterstitialAd.m */,
+			);
+			path = Tapjoy;
+			sourceTree = "<group>";
+		};
+		0C509B07222692EE0041F2D7 /* UnityAds */ = {
+			isa = PBXGroup;
+			children = (
+				0C509B08222692EE0041F2D7 /* GNSAdapterUnityAdsFullscreenInterstitialAd.h */,
+				0C509B09222692EE0041F2D7 /* GNSAdapterUnityAdsFullscreenInterstitialAd.m */,
+			);
+			path = UnityAds;
+			sourceTree = "<group>";
+		};
+		0C509B0B222692FB0041F2D7 /* Imobile */ = {
+			isa = PBXGroup;
+			children = (
+				0C509B0C222692FB0041F2D7 /* GNSAdapterImobileFullscreenInterstitialAd.h */,
+				0C509B0D222692FB0041F2D7 /* GNSAdapterImobileFullscreenInterstitialAd.m */,
+			);
+			path = Imobile;
+			sourceTree = "<group>";
+		};
 		194B262321C7AE75003DD030 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +140,7 @@
 		2CB1811F6F7FAED7E737B7DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C509B112226964B0041F2D7 /* ImobileSdkAds.framework */,
 				F2C972851CCCA0EA12560210 /* libPods-GNAdFullscreenInterstitialSample.a */,
 			);
 			name = Frameworks;
@@ -97,6 +149,10 @@
 		2F25D88121D4CB8C00FD5DD2 /* fullscreenMediation */ = {
 			isa = PBXGroup;
 			children = (
+				0C509B03222692E00041F2D7 /* Tapjoy */,
+				0C509B07222692EE0041F2D7 /* UnityAds */,
+				0C509A03221E97AF0041F2D7 /* Vungle */,
+				0C509B0B222692FB0041F2D7 /* Imobile */,
 				2F25D88221D4CB8C00FD5DD2 /* AppLovin */,
 				2F25D88521D4CB8C00FD5DD2 /* Maio */,
 				2F25D88821D4CB8C00FD5DD2 /* Nend */,
@@ -244,16 +300,19 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GNAdFullscreenInterstitialSample/Pods-GNAdFullscreenInterstitialSample-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-GNAdFullscreenInterstitialSample/Pods-GNAdFullscreenInterstitialSample-resources.sh",
 				"${PODS_ROOT}/NendSDK_iOS/NendAd.embeddedframework/NendAd.framework/Resources/NendAdResource.bundle",
+				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v12.0.0/Libraries/Tapjoy.embeddedframework/Resources/TapjoyResources.bundle",
+				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v12.0.0/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Resources/TapjoyResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NendAdResource.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TapjoyResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GNAdFullscreenInterstitialSample/Pods-GNAdFullscreenInterstitialSample-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GNAdFullscreenInterstitialSample/Pods-GNAdFullscreenInterstitialSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -263,9 +322,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C509B0A222692EE0041F2D7 /* GNSAdapterUnityAdsFullscreenInterstitialAd.m in Sources */,
 				2F25D89021D4CB8C00FD5DD2 /* GNSAdapterNendFullscreenInterstitialAd.m in Sources */,
+				0C509B06222692E00041F2D7 /* GNSAdapterTapjoyFullscreenInterstitialAd.m in Sources */,
 				194B263221C7AE75003DD030 /* ViewController.swift in Sources */,
+				0C509A06221E97AF0041F2D7 /* GNSAdapterVungleFullscreenInterstitialAd.m in Sources */,
 				2F25D88E21D4CB8C00FD5DD2 /* GNSAdapterAppLovinFullscreenInterstitialAd.m in Sources */,
+				0C509B0E222692FB0041F2D7 /* GNSAdapterImobileFullscreenInterstitialAd.m in Sources */,
 				2F25D89121D4CB8C00FD5DD2 /* GNSAdapterZucksFullscreenInterstitialAd.m in Sources */,
 				2F25D88F21D4CB8C00FD5DD2 /* GNSAdapterMaioFullscreenInterstitialAd.m in Sources */,
 				194B263021C7AE75003DD030 /* AppDelegate.swift in Sources */,
@@ -417,6 +480,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKMVWZ32F4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/AppLovinSDK/applovin-ios-sdk-5.1.2\"",
+					"\"${PODS_ROOT}/Geniee-iOS-SDK/GNAdSDK/Framework\"",
+					"\"${PODS_ROOT}/MaioSDK\"",
+					"\"${PODS_ROOT}/NendSDK_iOS/NendAd.embeddedframework\"",
+					"\"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v12.0.0/Libraries/Tapjoy.embeddedframework\"",
+					"\"${PODS_ROOT}/UnityAds\"",
+					"\"${PODS_ROOT}/VungleSDK-iOS\"",
+					"\"${PODS_ROOT}/ZucksAdNetworkSDK\"",
+					"\"$(PODS_ROOT)/TapjoySDK/**\"",
+					"../../../../Mediation-Adnw-SDKS/FullscreenInterstitialAd-Adnw-SDKS/",
+				);
 				INFOPLIST_FILE = GNAdFullscreenInterstitialSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -438,6 +514,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKMVWZ32F4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/AppLovinSDK/applovin-ios-sdk-5.1.2\"",
+					"\"${PODS_ROOT}/Geniee-iOS-SDK/GNAdSDK/Framework\"",
+					"\"${PODS_ROOT}/MaioSDK\"",
+					"\"${PODS_ROOT}/NendSDK_iOS/NendAd.embeddedframework\"",
+					"\"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v12.0.0/Libraries/Tapjoy.embeddedframework\"",
+					"\"${PODS_ROOT}/UnityAds\"",
+					"\"${PODS_ROOT}/VungleSDK-iOS\"",
+					"\"${PODS_ROOT}/ZucksAdNetworkSDK\"",
+					"\"$(PODS_ROOT)/TapjoySDK/**\"",
+					"../../../../Mediation-Adnw-SDKS/FullscreenInterstitialAd-Adnw-SDKS/",
+				);
 				INFOPLIST_FILE = GNAdFullscreenInterstitialSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
