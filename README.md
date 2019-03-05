@@ -14,7 +14,7 @@
 |:--|:--|
 |GNAdSDK| 5.1.0 |
 |rewardMediation|2.7.0|
-|fullscreenMediation|2.7.0|
+|fullscreenMediation|3.0.0|
 |GNAdDFPBannerMediationAdapter|5.1.0.0|
 |GNAdDFPRewardMediationAdapter|5.1.0.0|
 |GNAdDFPFullscreenInterstitialMediationAdapter|5.1.0.0|
