@@ -9,6 +9,9 @@
 #import <GNAdSDK/GNSNativeVideoPlayerView.h>
 #import <GNAdSDK/Log4GNAd.h>
 
+// When you enable the following macros, the log of the movie festival time is output.
+//#define TEST_LOG_VIDEO_TIME
+
 // For view position.
 static const NSInteger SIZE_GAP = 5;
 static const NSInteger SIZE_TEXT = 25;
@@ -19,6 +22,10 @@ static const NSInteger SIZE_MEDIA = 350;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIView *rootView;
 @property(nonatomic, strong) GNNativeAdRequest *nativeAdRequest;
+#ifdef TEST_LOG_VIDEO_TIME
+@property (nonatomic, retain) NSTimer *timer;
+@property (nonatomic, retain) NSMutableArray *viewAry;
+#endif
 
 @end
 
@@ -27,6 +34,9 @@ static const NSInteger SIZE_MEDIA = 350;
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+#ifdef TEST_LOG_VIDEO_TIME
+    _viewAry = [NSMutableArray array];
+#endif
     // Create GNNativeAdRequest
     _nativeAdRequest = [[GNNativeAdRequest alloc] initWithID:_zoneid];
     [Log4GNAd setPriority:GNLogPriorityInfo];
@@ -40,9 +50,23 @@ static const NSInteger SIZE_MEDIA = 350;
     }
 }
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+    if (![self.navigationController.viewControllers containsObject:self]) {
+        // Pushed back.
+#ifdef TEST_LOG_VIDEO_TIME
+        [self forceStopOutputLogTimer];
+#endif
+    }
+    [super viewWillDisappear:animated];
+}
+
 - (void)dealloc
 {
     _nativeAdRequest.delegate = nil;
+#ifdef TEST_LOG_VIDEO_TIME
+    [self forceStopOutputLogTimer];
+#endif
 }
 
 #pragma mark GNSNativeVideoPlayerDelegate
@@ -59,10 +83,16 @@ static const NSInteger SIZE_MEDIA = 350;
 
 - (void)onVideoStartPlaying:(GNSNativeVideoPlayerView*)view {
     NSLog(@"onVideoStartPlaying");
+#ifdef TEST_LOG_VIDEO_TIME
+    [self requestStartOutputLogTimer:view];
+#endif
 }
 
 - (void)onVideoPlayComplete:(GNSNativeVideoPlayerView*)view {
     NSLog(@"onVideoPlayComplete");
+#ifdef TEST_LOG_VIDEO_TIME
+    [self requestStopOutputLogTimer:view];
+#endif
 }
 
 #pragma mark GNNativeAdRequestDelegate
@@ -184,6 +214,54 @@ static const NSInteger SIZE_MEDIA = 350;
         [view.nativeAd trackingClick:view];
     }
 }
+
+#ifdef TEST_LOG_VIDEO_TIME
+- (NSString*)getPlayingTime:(GNSNativeVideoPlayerView*)videoView {
+    float playTime = [videoView getCurrentposition];
+    float durationTime = [videoView getDuration];
+    NSString* str = [NSString stringWithFormat:@"%f / %f", playTime, durationTime];
+    return str;
+}
+
+- (void)requestStartOutputLogTimer:(GNSNativeVideoPlayerView*)view {
+    dispatch_async(
+                   dispatch_get_main_queue(),
+                   ^{
+                       [self->_viewAry addObject:view];
+                       if (![self->_timer isValid]) {
+                           
+                           self->_timer = [NSTimer timerWithTimeInterval:1.0f
+                                                                  target:self
+                                                                selector:@selector(outputLogForPlayTime:)
+                                                                userInfo:nil
+                                                                 repeats:YES];
+                           [[NSRunLoop currentRunLoop] addTimer:self->_timer forMode:NSRunLoopCommonModes];
+                       }
+                   }
+                   );
+}
+
+- (void)requestStopOutputLogTimer:(GNSNativeVideoPlayerView*)view {
+    [_viewAry removeObject:view];
+    if ([_viewAry count] <= 0) {
+        [self forceStopOutputLogTimer];
+    }
+}
+
+- (void)forceStopOutputLogTimer {
+    if ([_timer isValid]) {
+        [_timer invalidate];
+    }
+    _timer = nil;
+}
+
+-(void)outputLogForPlayTime:(NSTimer*)timer {
+    for(int i = 0; i < [_viewAry count]; i++){
+        GNSNativeVideoPlayerView* videoView = [_viewAry objectAtIndex:i];
+        NSLog(@"outputLogForPlayTime = [%@]",[self getPlayingTime:videoView]);
+    }
+}
+#endif
 
 @end
 

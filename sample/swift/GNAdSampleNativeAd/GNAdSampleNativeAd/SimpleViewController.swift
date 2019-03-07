@@ -9,6 +9,11 @@
 import UIKit
 import Foundation
 
+// When you enable the following macros, the log of the movie festival time is output.
+// "Build Settings" -> "Swift Compiler" - Custom Flags" -> "Other Swift Flags"
+// Add the "-D TEST_LOG_VIDEO_TIME"
+
+
 class SimpleViewController: UIViewController, GNNativeAdRequestDelegate, GNSNativeVideoPlayerDelegate {
     // For view position.
     static let SIZE_GAP = 5;
@@ -20,10 +25,17 @@ class SimpleViewController: UIViewController, GNNativeAdRequestDelegate, GNSNati
     @IBOutlet weak var rootView: UIView!
     
     var nativeAdRequest: GNNativeAdRequest? = nil
+#if TEST_LOG_VIDEO_TIME
+    var timer: Timer? = nil
+    var viewAry: NSMutableArray! = nil
+#endif
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+#if TEST_LOG_VIDEO_TIME
+        viewAry = NSMutableArray.init()
+#endif
         // Create GNNativeAdRequest
         nativeAdRequest = GNNativeAdRequest(id:zoneid)
         Log4GNAd.setPriority(GNLogPriorityInfo)
@@ -35,6 +47,24 @@ class SimpleViewController: UIViewController, GNNativeAdRequestDelegate, GNSNati
         }
     }
 
+    override func viewWillDisappear(_ animated:Bool) {
+
+        if (!(self.navigationController?.viewControllers.contains(self))!) {
+            // Pushed back.
+#if TEST_LOG_VIDEO_TIME
+            self.forceStopOutputLogTimer();
+#endif
+        }
+        super.viewWillDisappear(animated)
+    }
+
+    deinit {
+        self.nativeAdRequest?.delegate = nil;
+#if TEST_LOG_VIDEO_TIME
+        self.forceStopOutputLogTimer();
+#endif
+    }
+
     // MARK: GNSNativeVideoPlayerDelegate Notifications
     
     func onVideoReceiveSetting(_ view:GNSNativeVideoPlayerView) {
@@ -43,15 +73,21 @@ class SimpleViewController: UIViewController, GNNativeAdRequestDelegate, GNSNati
     }
     
     func onVideoFailWithError(_ view:GNSNativeVideoPlayerView, error:Error) {
-        print("onVideoFailWithError = %@", error.localizedDescription)
+        print("onVideoFailWithError = ", error.localizedDescription)
     }
     
     func onVideoStartPlaying(_ view:GNSNativeVideoPlayerView) {
         print("onVideoStartPlaying")
+#if TEST_LOG_VIDEO_TIME
+        requestStartOutputLogTimer(view)
+#endif
     }
     
     func onVideoPlayComplete(_ view:GNSNativeVideoPlayerView) {
         print("onVideoPlayComplete")
+#if TEST_LOG_VIDEO_TIME
+        requestStopOutputLogTimer(view)
+#endif
     }
 
     // MARK: - GNNativeAdRequestDelegate
@@ -68,11 +104,11 @@ class SimpleViewController: UIViewController, GNNativeAdRequestDelegate, GNSNati
     }
     
     func nativeAdRequest(_ request :GNNativeAdRequest!, didFailToReceiveAdsWithError error: Error!) {
-        print("TableViewController: didFailToReceiveAdsWithError : %@.", error.localizedDescription)
+        print("TableViewController: didFailToReceiveAdsWithError : ", error.localizedDescription)
     }
     
     func shouldStartExternalBrowser(withClick nativeAd: GNNativeAd!, landingURL: String!) -> Bool {
-        print("TableViewController: shouldStartExternalBrowserWithClick : %@.", landingURL)
+        print("TableViewController: shouldStartExternalBrowserWithClick : ", landingURL)
         return true
     }
 
@@ -168,5 +204,45 @@ class SimpleViewController: UIViewController, GNNativeAdRequestDelegate, GNSNati
             view.nativeAd.trackingClick(view);
         }
     }
+
+#if TEST_LOG_VIDEO_TIME
+    func getPlayingTime(_ videoView:GNSNativeVideoPlayerView) -> String {
+        let playTime: Float = videoView.getCurrentposition()
+        let durationTime: Float = videoView.getDuration()
+        let str: String = NSString(format:"%f / %f", playTime, durationTime) as String;
+        return str;
+    }
+
+    func requestStartOutputLogTimer(_ view:GNSNativeVideoPlayerView) {
+        DispatchQueue.main.async {
+            self.viewAry!.add(view)
+            if (self.timer == nil) {
+                self.timer = Timer.scheduledTimer(timeInterval:1.0, target:self, selector:#selector(self.outputLogForPlayTime(_:)), userInfo:nil, repeats:true)
+                RunLoop.current.add(self.timer!, forMode:RunLoop.Mode.common)
+            }
+        }
+    }
+
+    func requestStopOutputLogTimer(_ view:GNSNativeVideoPlayerView) {
+        self.viewAry!.remove(view)
+        if (viewAry!.count <= 0) {
+            self.forceStopOutputLogTimer()
+        }
+    }
+    
+    func forceStopOutputLogTimer() {
+        if (self.timer != nil) {
+            self.timer!.invalidate()
+        }
+        self.timer = nil
+    }
+
+    @objc func outputLogForPlayTime(_ timer:Timer) {
+        for i in 0 ..< viewAry!.count {
+            let videoView: GNSNativeVideoPlayerView = viewAry.object(at: i) as! GNSNativeVideoPlayerView
+            print("outputLogForPlayTime : [", getPlayingTime(videoView),"]")
+        }
+    }
+#endif
 
 }
