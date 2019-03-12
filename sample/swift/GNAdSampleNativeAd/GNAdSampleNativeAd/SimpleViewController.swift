@@ -16,6 +16,7 @@ import Foundation
 
 class SimpleViewController: UIViewController, GNNativeAdRequestDelegate, GNSNativeVideoPlayerDelegate {
     // For view position.
+    static let SIZE_CELL = 600;
     static let SIZE_GAP = 5;
     static let SIZE_TEXT = 25;
     static let SIZE_MEDIA = 350;
@@ -94,7 +95,7 @@ class SimpleViewController: UIViewController, GNNativeAdRequestDelegate, GNSNati
     
     func nativeAdRequestDidReceiveAds(_ nativeAds: [Any]!) {
         print("nativeAdRequestDidReceiveAds")
-        scrollView.contentSize = CGSize(width:Int(scrollView.contentSize.width), height:500*nativeAds.count);
+        scrollView.contentSize = CGSize(width:Int(scrollView.contentSize.width), height:SimpleViewController.SIZE_CELL*nativeAds.count);
         
         var cnt: Int = 0
         for nativeAd in nativeAds as! [GNNativeAd] {
@@ -119,28 +120,52 @@ class SimpleViewController: UIViewController, GNNativeAdRequestDelegate, GNSNati
         var height: Int = 0;
 
         // CellView.
-        var rect: CGRect = CGRect(x:0, y:(500*cnt), width:Int(scrollView.contentSize.width), height:500)
+        var rect: CGRect = CGRect(x:0, y:(SimpleViewController.SIZE_CELL*cnt), width:Int(scrollView.contentSize.width), height:SimpleViewController.SIZE_CELL)
         let cellView: UIView = UIView(frame: rect)
         rootView.addSubview(cellView);
     
-        // Title.
+        // TitleLine.
         height = 0;
-        rect = CGRect(x:0, y:height, width:width, height:SimpleViewController.SIZE_TEXT);
-        let titleView: UILabel = UILabel(frame: rect);
-        titleView.backgroundColor = UIColor.blue;
-        titleView.text = (nativeAd.title != nil) ? nativeAd.title : "No title";
-        titleView.textColor = UIColor.white;
-        cellView.addSubview(titleView)
+        rect = CGRect(x:0, y:height, width:width, height:SimpleViewController.SIZE_TEXT)
+        let titleLineView : UIStackView = UIStackView(frame: rect)
+        titleLineView.axis = .horizontal
+        cellView.addSubview(titleLineView)
+        // Icon.
+        rect = CGRect(x:0, y:height, width:SimpleViewController.SIZE_TEXT, height:SimpleViewController.SIZE_TEXT)
+        let iconView : UIImageView = UIImageView(frame: rect)
+        iconView.backgroundColor = UIColor.blue
+        iconView.contentMode = .scaleAspectFit;
+        let iconUrl : URL! = URL(string: nativeAd.icon_url)
+        if (iconUrl != nil) {
+            requestImageWithURL(iconUrl, completion:{(image: UIImage!, error: Error!)->Void in
+                if (error != nil) {
+                    return
+                }
+                iconView.image = image
+                iconView.center = CGPoint(x:SimpleViewController.SIZE_TEXT / 2, y:SimpleViewController.SIZE_TEXT / 2)
+            })
+        }
+        titleLineView.addSubview(iconView)
+        // Title.
+        rect = CGRect(x:SimpleViewController.SIZE_TEXT, y:height, width:(width - SimpleViewController.SIZE_TEXT), height:SimpleViewController.SIZE_TEXT)
+        let titleView : UILabel = UILabel(frame: rect)
+        titleView.backgroundColor = UIColor.blue
+        titleView.text = (nativeAd.title != nil) ? nativeAd.title : "No title"
+        titleView.textColor = UIColor.white
+        titleLineView.addSubview(titleView)
         // Media.
-        height += SimpleViewController.SIZE_TEXT + SimpleViewController.SIZE_GAP
+        height = SimpleViewController.SIZE_TEXT + SimpleViewController.SIZE_GAP
         rect = CGRect(x:0, y:height, width:width, height:SimpleViewController.SIZE_MEDIA)
         if (nativeAd.hasVideoContent()) {
             let videoView: GNSNativeVideoPlayerView = getVideoView(rect, nativeAd:nativeAd)
+            videoView.backgroundColor = UIColor.gray
             cellView.addSubview(videoView)
         } else {
             let imageView: UIImageView = UIImageView(frame:rect)
             imageView.contentMode = UIView.ContentMode.scaleAspectFit
-            let url = URL(string: nativeAd.icon_url)!
+            imageView.backgroundColor = UIColor.gray
+            let urlStr : String = (nativeAd.screenshots_url != nil) ? nativeAd.screenshots_url : nativeAd.icon_url;
+            let url : URL = URL(string: urlStr)!
             requestImageWithURL(url, completion:{(image: UIImage!, error: Error!)->Void in
                 if (error != nil)
                 {
@@ -160,8 +185,19 @@ class SimpleViewController: UIViewController, GNNativeAdRequestDelegate, GNSNati
         descriptionView.textColor = UIColor.black
         descriptionView.sizeToFit()
         cellView.addSubview(descriptionView)
-        // Button.
+        // Advertiser.
         height += SimpleViewController.SIZE_TEXT * lineNum + SimpleViewController.SIZE_GAP
+        rect = CGRect(x:0, y:height, width:width, height:SimpleViewController.SIZE_TEXT)
+        let advertiserView : UILabel  = UILabel(frame:rect)
+        var advertiserStr : String = (nativeAd.advertiser != nil) ? nativeAd.advertiser : "No advertiser"
+        advertiserStr = "Advertiser:" + advertiserStr
+        advertiserView.text = advertiserStr;
+        advertiserView.font = UIFont.systemFont(ofSize:12);
+        advertiserView.textAlignment = NSTextAlignment.right
+        advertiserView.textColor = UIColor.black
+        cellView.addSubview(advertiserView)
+        // Button.
+        height += SimpleViewController.SIZE_TEXT + SimpleViewController.SIZE_GAP
         rect = CGRect(x:0, y:height, width:width, height:SimpleViewController.SIZE_TEXT)
         let buttonView: SimpleUIButton = SimpleUIButton(frame:rect)
         buttonView.setTitle("Click", for:UIControl.State.normal);
@@ -173,6 +209,24 @@ class SimpleViewController: UIViewController, GNNativeAdRequestDelegate, GNSNati
         buttonView.layer.borderColor = UIColor.blue.cgColor
         buttonView.layer.borderWidth = 1
         cellView.addSubview(buttonView)
+        nativeAd.trackingImpression(with: cellView)
+        // Optout.
+        height += SimpleViewController.SIZE_TEXT + SimpleViewController.SIZE_GAP
+        rect = CGRect(x:0, y:height, width:width, height:SimpleViewController.SIZE_TEXT)
+        let optoutView: SimpleUIButton = SimpleUIButton(frame:rect)
+        var optoutStr : String = (nativeAd.optout_text != nil) ? nativeAd.optout_text : "No optout"
+        optoutStr = "Optout:" + optoutStr
+        optoutView.setTitle(optoutStr, for:UIControl.State.normal)
+        optoutView.titleLabel?.font = UIFont.systemFont(ofSize:12);
+        let optoutColor : UIColor = (nativeAd.optout_url != nil) ? UIColor.blue : UIColor.black
+        optoutView.setTitleColor(optoutColor, for:UIControl.State.normal)
+        optoutView.addTarget(self, action:#selector(optoutButton(_:)), for:UIControl.Event.touchUpInside)
+        let fitSize : CGSize = optoutView.sizeThatFits(CGSize(width:width, height:SimpleViewController.SIZE_TEXT))
+        rect = CGRect(x:(width - Int(fitSize.width)), y:height, width:Int(fitSize.width), height:SimpleViewController.SIZE_TEXT)
+        optoutView.frame = rect;
+        optoutView.nativeAd = nativeAd;
+        cellView.addSubview(optoutView)
+
         nativeAd.trackingImpression(with: cellView)
     }
     
@@ -197,6 +251,13 @@ class SimpleViewController: UIViewController, GNNativeAdRequestDelegate, GNSNati
                 return
             }
             }.resume()
+    }
+
+    @objc func optoutButton(_ view:SimpleUIButton) {
+        if (view.nativeAd != nil && view.nativeAd.optout_url != nil) {
+            let url : URL = URL.init(fileURLWithPath:view.nativeAd.optout_url)
+            UIApplication.shared.openURL(url)
+        }
     }
 
     @objc func clickButton(_ view:SimpleUIButton) {

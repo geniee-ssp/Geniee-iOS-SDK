@@ -13,6 +13,7 @@
 //#define TEST_LOG_VIDEO_TIME
 
 // For view position.
+static const NSInteger SIZE_CELL = 600;
 static const NSInteger SIZE_GAP = 5;
 static const NSInteger SIZE_TEXT = 25;
 static const NSInteger SIZE_MEDIA = 350;
@@ -102,7 +103,7 @@ static const NSInteger SIZE_MEDIA = 350;
 
 - (void)nativeAdRequestDidReceiveAds:(NSArray *)nativeAds {
     NSLog(@"nativeAdRequestDidReceiveAds");
-    _scrollView.contentSize = CGSizeMake(_scrollView.contentSize.width, 500*nativeAds.count);
+    _scrollView.contentSize = CGSizeMake(_scrollView.contentSize.width, SIZE_CELL*nativeAds.count);
     
     int cnt = 0;
     for (GNNativeAd *nativeAd in nativeAds) {
@@ -123,31 +124,59 @@ static const NSInteger SIZE_MEDIA = 350;
     int height = 0;
 
     // CellView.
-    rect = CGRectMake(0, (float)(500*cnt), _rootView.frame.size.width, 500);
+    rect = CGRectMake(0, (float)(SIZE_CELL*cnt), _rootView.frame.size.width, SIZE_CELL);
     UIView *cellView = [[UIView alloc] initWithFrame:rect];
     [_rootView addSubview:cellView];
 
-    // Title.
+    // TitleLine.
     height = 0;
     rect = CGRectMake(0, height, width, SIZE_TEXT);
+    UIStackView *titleLineView = [[UIStackView alloc] initWithFrame:rect];
+    titleLineView.axis = UILayoutConstraintAxisHorizontal;
+    [cellView addSubview:titleLineView];
+
+    // Icon.
+    rect = CGRectMake(0, height, SIZE_TEXT, SIZE_TEXT);
+    UIImageView* iconView = [[UIImageView alloc] initWithFrame:rect];
+    iconView.backgroundColor = UIColor.blueColor;
+    iconView.contentMode = UIViewContentModeScaleAspectFit;
+    NSURL *iconNsurl = [NSURL URLWithString:nativeAd.icon_url];
+    if (iconNsurl) {
+        [SimpleViewController requestImageWithURL:iconNsurl completion:^(UIImage *image, NSError *error) {
+            if (error) {
+                return;
+            }
+            iconView.image = image;
+            iconView.center = CGPointMake(SIZE_TEXT / 2, SIZE_TEXT / 2);
+        }];
+    }
+    [titleLineView addSubview:iconView];
+    
+    // Title.
+    rect = CGRectMake(SIZE_TEXT, height, (width - SIZE_TEXT), SIZE_TEXT);
     UILabel *titleView = [[UILabel alloc] initWithFrame:rect];
     titleView.backgroundColor = UIColor.blueColor;
     titleView.text = (nativeAd.title) ? nativeAd.title : @"No title";
     titleView.textColor = UIColor.whiteColor;
-    [cellView addSubview:titleView];
+    [titleLineView addSubview:titleView];
 
     // Media.
-    height += SIZE_TEXT + SIZE_GAP;
+    height = SIZE_TEXT + SIZE_GAP;
     rect = CGRectMake(0, height, width, SIZE_MEDIA);
     if ([nativeAd hasVideoContent]) {
         GNSNativeVideoPlayerView* videoView = [self getVideoView:rect nativeAd:nativeAd];
+        videoView.backgroundColor = UIColor.grayColor;
         [cellView addSubview:videoView];
     } else {
         UIImageView* imageView = [[UIImageView alloc] initWithFrame:rect];
         imageView.contentMode = UIViewContentModeScaleAspectFit;
-        NSURL *nsurl = [NSURL URLWithString:nativeAd.icon_url];
+        imageView.backgroundColor = UIColor.grayColor;
+        NSString* url = (nativeAd.screenshots_url) ? nativeAd.screenshots_url : nativeAd.icon_url;
+        NSURL *nsurl = [NSURL URLWithString:url];
         [SimpleViewController requestImageWithURL:nsurl completion:^(UIImage *image, NSError *error) {
-            if (error) return;
+            if (error) {
+                return;
+            }
             imageView.image = image;
         }];
         [cellView addSubview:imageView];
@@ -164,8 +193,20 @@ static const NSInteger SIZE_MEDIA = 350;
     [descriptionView sizeToFit];
     [cellView addSubview:descriptionView];
 
-    // Button.
+    // Advertiser.
     height += SIZE_TEXT * lineNum + SIZE_GAP;
+    rect = CGRectMake(0, height, width, SIZE_TEXT);
+    UILabel *advertiserView = [[UILabel alloc] initWithFrame:rect];
+    NSString *advertiserStr = (nativeAd.advertiser) ? nativeAd.advertiser : @"No advertiser";
+    advertiserStr = [NSString stringWithFormat:@"Advertiser:%@",advertiserStr];
+    advertiserView.text = advertiserStr;
+    advertiserView.font = [UIFont systemFontOfSize:12];
+    [advertiserView setTextAlignment:NSTextAlignmentRight];
+    advertiserView.textColor = UIColor.blackColor;
+    [cellView addSubview:advertiserView];
+
+    // Button.
+    height += SIZE_TEXT + SIZE_GAP;
     rect = CGRectMake(0, height, width, SIZE_TEXT);
     SimpleUIButton *buttonView = [SimpleUIButton buttonWithType:UIButtonTypeCustom];
     buttonView.frame = rect;
@@ -178,6 +219,24 @@ static const NSInteger SIZE_MEDIA = 350;
     buttonView.layer.borderColor = [UIColor blueColor].CGColor;
     buttonView.layer.borderWidth = 1;
     [cellView addSubview:buttonView];
+
+    // Optout.
+    height += SIZE_TEXT + SIZE_GAP;
+    rect = CGRectMake(0, height, width, SIZE_TEXT);
+    SimpleUIButton *optoutView = [SimpleUIButton buttonWithType:UIButtonTypeCustom];
+    optoutView.frame = rect;
+    NSString *optoutStr = (nativeAd.optout_text) ? nativeAd.optout_text : @"No optout";
+    optoutStr = [NSString stringWithFormat:@"Optout:%@",optoutStr];
+    [optoutView setTitle:optoutStr forState:UIControlStateNormal];
+    optoutView.titleLabel.font = [UIFont systemFontOfSize:12];
+    UIColor* optoutColor = (nativeAd.optout_url) ? [UIColor blueColor] : [UIColor blackColor];
+    [optoutView setTitleColor:optoutColor forState:UIControlStateNormal];
+    [optoutView addTarget:self action:@selector(optoutButton:) forControlEvents:UIControlEventTouchUpInside];
+    CGSize fitSize = [optoutView sizeThatFits:CGSizeMake(width, SIZE_TEXT)];
+    rect = CGRectMake((width - fitSize.width), height, fitSize.width, SIZE_TEXT);
+    optoutView.frame = rect;
+    optoutView.nativeAd = nativeAd;
+    [cellView addSubview:optoutView];
 
     [nativeAd trackingImpressionWithView:cellView];
 }
@@ -206,6 +265,14 @@ static const NSInteger SIZE_MEDIA = 350;
             });
         });
     }] resume];
+}
+
+- (void)optoutButton:(SimpleUIButton*)view
+{
+    if (view && view.nativeAd && view.nativeAd.optout_url) {
+        NSURL* url = [NSURL URLWithString:view.nativeAd.optout_url];
+        [[UIApplication sharedApplication] openURL:url];
+    }
 }
 
 - (void)clickButton:(SimpleUIButton*)view
