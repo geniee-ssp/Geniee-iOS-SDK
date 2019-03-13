@@ -48,9 +48,21 @@
 - (BOOL)getMuted;
 // Set the mute state.
 - (void)setMuted:(BOOL)isMuted;
+#pragma mark UI(Show).
+// Get the showing state of the mute button.
+- (BOOL)getVisibilityMuteButton;
+// Get the showing state of the progressbar.
+- (BOOL)getVisibilityProgressbar;
+// Set the showing state of the mute button.
+- (void)setVisibilityMuteButton:(BOOL)isShow;
+// Set the showing state of the progressbar.
+- (void)setVisibilityProgressbar:(BOOL)isShow;
 #pragma mark media info.
 - (int)getMediaFileWidth;
 - (int)getMediaFileHeight;
 - (float)getMediaFileAspect;
+- (float)getDuration;
+- (float)getCurrentposition;
+- (bool)isPlaying;
 
 @end
