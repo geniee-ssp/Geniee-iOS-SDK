@@ -77,5 +77,8 @@
 - (int)getMediaFileWidth;
 - (int)getMediaFileHeight;
 - (float)getMediaFileAspect;
+- (float)getDuration;
+- (float)getCurrentposition;
+- (bool)isPlaying;
 
 @end
