@@ -46,6 +46,8 @@
 - (BOOL)isReady;
 // Request the show.
 - (BOOL)show;
+// Requset the replay.
+- (void)replay;
 - (void)clearCache;
 #pragma mark UI(Controller).
 // Get the mute state.

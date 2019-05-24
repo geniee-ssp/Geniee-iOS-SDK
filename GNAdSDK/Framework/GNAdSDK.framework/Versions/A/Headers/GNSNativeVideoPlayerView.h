@@ -43,6 +43,8 @@
 - (BOOL)isReady;
 // Request the show.
 - (BOOL)show;
+// Requset the replay.
+- (void)replay;
 #pragma mark UI(Controller).
 // Get the mute state.
 - (BOOL)getMuted;
@@ -53,10 +55,14 @@
 - (BOOL)getVisibilityMuteButton;
 // Get the showing state of the progressbar.
 - (BOOL)getVisibilityProgressbar;
+// Get the showing state of the replay button.
+- (BOOL)getVisibilityReplayButton;
 // Set the showing state of the mute button.
 - (void)setVisibilityMuteButton:(BOOL)isShow;
 // Set the showing state of the progressbar.
 - (void)setVisibilityProgressbar:(BOOL)isShow;
+// Set the showing state of the replay button.
+- (void)setVisibilityReplayButton:(BOOL)isShow;
 #pragma mark media info.
 - (int)getMediaFileWidth;
 - (int)getMediaFileHeight;

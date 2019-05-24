@@ -12,12 +12,12 @@
 
 |SDK| Version |
 |:--|:--|
-|GNAdSDK| 5.1.3 |
+|GNAdSDK| 5.1.4 |
 |rewardMediation|2.7.0|
 |fullscreenMediation|3.0.0|
-|GNAdDFPBannerMediationAdapter|5.1.3|
-|GNAdDFPRewardMediationAdapter|5.1.3|
-|GNAdDFPFullscreenInterstitialMediationAdapter|5.1.3|
+|GNAdDFPBannerMediationAdapter|5.1.4|
+|GNAdDFPRewardMediationAdapter|5.1.4|
+|GNAdDFPFullscreenInterstitialMediationAdapter|5.1.4|
 
 ### [Ad Network(RewardVideo Mediation)](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-For-iOS)
 
