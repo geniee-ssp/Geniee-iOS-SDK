@@ -19,9 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _videoAd = [[GNAdVideo alloc] initWithID:@"YOUR_SSP_APP_ID_FOR_VIDEO"];
+    _videoAd = [[GNAdVideo alloc] initWithID:@"YOUR_ZONE_ID_FOR_VIDEO"];
     //Optional sets alternative interstitial
-    //[_videoAd setAlternativeInterstitialAppID:@"YOUR_SSP_APP_ID_FOR_INTERSTITIAL"];
+    //[_videoAd setAlternativeInterstitialAppID:@"YOUR_ZONE_ID_FOR_INTERSTITIAL"];
     
     _videoAd.delegate = self;
     _videoAd.rootViewController = self;

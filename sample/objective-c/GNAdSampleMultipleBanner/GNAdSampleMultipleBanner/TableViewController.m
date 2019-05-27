@@ -30,7 +30,7 @@
     queueAds = [[GNQueue alloc] initWithSize:100];
     
     // Create GNAdViewRequest
-    _adViewRequest = [[GNAdViewRequest alloc] initWithID:@"APPID1,APPID2,APPID3,...,APPID10"];
+    _adViewRequest = [[GNAdViewRequest alloc] initWithID:@"ZONE_ID_1,ZONE_ID_2,ZONE_ID_3,...,ZONE_ID_10"];
     _adViewRequest.delegate = self;
     //_adViewRequest.GNAdlogPriority = GNLogPriorityInfo;
     //_adViewRequest.geoLocationEnable = YES;
@@ -56,7 +56,7 @@
     NSLog(@"TableViewController: gnAdViewRequestDidReceiveAds in %f seconds.", (double)(secondsEnd - secondsStart));
     for (GNAdView *adView in gnAdViews) {
         // You can identify the GNAdView by using the zoneID field of GNAdView.
-        //if ([adView.zoneID isEqualToString:@"YOUR_SSP_APP_ID"]) {
+        //if ([adView.zoneID isEqualToString:@"YOUR_ZONE_ID"]) {
         //    [_cellDataList addObject:adView];
         //}
         [queueAds enqueue:adView];

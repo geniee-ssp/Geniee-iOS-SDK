@@ -16,7 +16,7 @@ Geniee iOS SDK は、iOS アプリケーション内に広告を表示するた�
 ## 組み込み手順
 
 組み込み手順は、以下のドキュメントを参照してください。  
-<https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki>
+<https://developers.geniee.co.jp/ios/>
 
 ## バージョン新機能
 

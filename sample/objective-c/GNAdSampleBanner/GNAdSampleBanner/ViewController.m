@@ -14,7 +14,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _adView = [[GNAdView alloc] initWithAdSizeType:GNAdSizeTypeSmall appID:@"YOUR_SSP_APP_ID"];
+    _adView = [[GNAdView alloc] initWithAdSizeType:GNAdSizeTypeSmall appID:@"YOUR_ZONE_ID"];
     _adView.delegate = self;
     _adView.rootViewController = self;
     //_adView.geoLocationEnable = YES;

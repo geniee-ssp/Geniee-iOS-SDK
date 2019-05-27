@@ -42,7 +42,7 @@ class ImageTableViewController: UITableViewController, GNNativeAdRequestDelegate
         NSLog("TableViewController: nativeAdRequestDidReceiveAds in %f seconds.", (Double)(_secondsEnd - _secondsStart));
         for nativeAd in nativeAds as! [GNNativeAd] {
             // You can identify the GNNativeAd by using the zoneID field of GNNativeAd.
-            //if (nativeAd.zoneID == "YOUR_SSP_APP_ID") {
+            //if (nativeAd.zoneID == "YOUR_ZONE_ID") {
             //    _cellDataList.add(nativeAd)
             //}
             _queueAds.enqueue(anObject: nativeAd)

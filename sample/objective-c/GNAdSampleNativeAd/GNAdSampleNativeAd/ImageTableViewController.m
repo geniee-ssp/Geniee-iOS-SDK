@@ -66,7 +66,7 @@
     NSLog(@"TableViewController: nativeAdRequestDidReceiveAds in %f seconds.", (double)(secondsEnd - secondsStart));
     for (GNNativeAd *nativeAd in nativeAds) {
         // You can identify the GNNativeAd by using the zoneID field of GNNativeAd.
-        //if ([nativeAd.zoneID isEqualToString:@"YOUR_SSP_APP_ID"]) {
+        //if ([nativeAd.zoneID isEqualToString:@"YOUR_ZONE_ID"]) {
         //    [_cellDataList addObject:nativeAd];
         //}
         [queueAds enqueue:nativeAd];
