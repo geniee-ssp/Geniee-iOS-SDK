@@ -7,7 +7,7 @@ import UIKit
 
 class ViewController: UIViewController, GNAdViewDelegate {
     
-    var _adView : GNAdView = GNAdView(adSizeType:GNAdSizeTypeSmall, appID:"YOUR_SSP_APP_ID")
+    var _adView : GNAdView = GNAdView(adSizeType:GNAdSizeTypeSmall, appID:"YOUR_ZONE_ID")
 
     override func viewDidLoad() {
         super.viewDidLoad()

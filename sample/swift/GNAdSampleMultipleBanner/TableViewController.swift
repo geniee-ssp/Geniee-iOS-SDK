@@ -14,7 +14,7 @@ class TableViewController: UITableViewController, GNAdViewRequestDelegate {
     var _cellDataList: NSMutableArray = NSMutableArray()
     
     // Create GNAdViewRequest
-    var _adViewRequest: GNAdViewRequest  = GNAdViewRequest(id:"APPID1,APPID2,APPID3,...,APPID10");
+    var _adViewRequest: GNAdViewRequest  = GNAdViewRequest(id:"ZONE_ID_1,ZONE_ID_2,ZONE_ID_3,...,ZONE_ID_10");
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,7 +41,7 @@ class TableViewController: UITableViewController, GNAdViewRequestDelegate {
         NSLog("TableViewController: nativeAdRequestDidReceiveAds in %f seconds.", (Double)(_secondsEnd - _secondsStart));
         for adView in gnAdViews as! [GNAdView] {
             // You can identify the GNAdView by using the zoneID field of GNAdView.
-            //if (adView.zoneID == "YOUR_SSP_APP_ID") {
+            //if (adView.zoneID == "YOUR_ZONE_ID") {
             //    _cellDataList.add(adView)
             //}
             _queueAds.enqueue(anObject: adView)

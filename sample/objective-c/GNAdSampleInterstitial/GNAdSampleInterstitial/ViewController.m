@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    _interstitial = [[GNInterstitial alloc] initWithID:@"YOUR_SSP_APP_ID"];
+    _interstitial = [[GNInterstitial alloc] initWithID:@"YOUR_ZONE_ID"];
     _interstitial.delegate = self;
     _interstitial.rootViewController = self;
     //_interstitial.geoLocationEnable = YES;
