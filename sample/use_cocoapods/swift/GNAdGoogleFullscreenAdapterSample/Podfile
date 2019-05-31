@@ -8,6 +8,7 @@ target 'GNAdGoogleFullscreenAdapterSample' do
   # Pods for GNAdGoogleFullscreenAdapterSample
   pod 'Google-Mobile-Ads-SDK'
   pod 'Geniee-iOS-SDK'
+  pod 'Geniee-Google-Mediation-Adapter'
   pod 'AppLovinSDK','~> 5.1.1'
   pod 'MaioSDK', '~> 1.4.0'
   pod 'NendSDK_iOS', '~> 5.0.2'
