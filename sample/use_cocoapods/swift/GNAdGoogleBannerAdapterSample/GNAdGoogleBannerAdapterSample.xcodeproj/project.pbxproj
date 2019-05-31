@@ -3,13 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		001E10B0C31251D6B5BCFACB /* libPods-GNAdDFPBannerAdapterSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D040F4602804C7661A5105BB /* libPods-GNAdDFPBannerAdapterSample.a */; };
-		0C00E67C229647F200142AA6 /* GNAdGoogleMediationAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C00E67B229647F200142AA6 /* GNAdGoogleMediationAdapter.framework */; };
-		0C00E67D229647F200142AA6 /* GNAdGoogleMediationAdapter.framework in Copy Files */ = {isa = PBXBuildFile; fileRef = 0C00E67B229647F200142AA6 /* GNAdGoogleMediationAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2F69D4FE210820A00068DBE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F69D4FD210820A00068DBE2 /* AppDelegate.swift */; };
 		2F69D500210820A00068DBE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F69D4FF210820A00068DBE2 /* ViewController.swift */; };
 		2F69D503210820A00068DBE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F69D501210820A00068DBE2 /* Main.storyboard */; };
@@ -17,20 +14,6 @@
 		2F69D508210820A10068DBE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F69D506210820A10068DBE2 /* LaunchScreen.storyboard */; };
 		378E7059F9659139A312A86B /* libPods-GNAdGoogleBannerAdapterSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B4E51F9D674800FB7179C7 /* libPods-GNAdGoogleBannerAdapterSample.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		2F69D62021083DC60068DBE2 /* Copy Files */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				0C00E67D229647F200142AA6 /* GNAdGoogleMediationAdapter.framework in Copy Files */,
-			);
-			name = "Copy Files";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0C00E67B229647F200142AA6 /* GNAdGoogleMediationAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GNAdGoogleMediationAdapter.framework; path = ../../../../GNAdGoogleMediationAdapter/Framework/GNAdGoogleMediationAdapter.framework; sourceTree = "<group>"; };
@@ -44,7 +27,6 @@
 		2F69D507210820A10068DBE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F69D509210820A10068DBE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FBD3AA1282600AA64E5FDBB /* Pods-GNAdGoogleBannerAdapterSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdGoogleBannerAdapterSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdGoogleBannerAdapterSample/Pods-GNAdGoogleBannerAdapterSample.release.xcconfig"; sourceTree = "<group>"; };
-		D040F4602804C7661A5105BB /* libPods-GNAdDFPBannerAdapterSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GNAdDFPBannerAdapterSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +34,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C00E67C229647F200142AA6 /* GNAdGoogleMediationAdapter.framework in Frameworks */,
-				001E10B0C31251D6B5BCFACB /* libPods-GNAdDFPBannerAdapterSample.a in Frameworks */,
 				378E7059F9659139A312A86B /* libPods-GNAdGoogleBannerAdapterSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,7 +76,6 @@
 		2F69D602210822300068DBE2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D040F4602804C7661A5105BB /* libPods-GNAdDFPBannerAdapterSample.a */,
 				13B4E51F9D674800FB7179C7 /* libPods-GNAdGoogleBannerAdapterSample.a */,
 			);
 			name = Frameworks;
@@ -122,7 +101,7 @@
 				2F69D4F6210820A00068DBE2 /* Sources */,
 				2F69D4F7210820A00068DBE2 /* Frameworks */,
 				2F69D4F8210820A00068DBE2 /* Resources */,
-				2F69D62021083DC60068DBE2 /* Copy Files */,
+				11B949C125F1B7C785F210A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +175,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		11B949C125F1B7C785F210A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNAdGoogleBannerAdapterSample/Pods-GNAdGoogleBannerAdapterSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNAdGoogleBannerAdapterSample/Pods-GNAdGoogleBannerAdapterSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GNAdGoogleBannerAdapterSample/Pods-GNAdGoogleBannerAdapterSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -355,10 +351,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKMVWZ32F4;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../../GNAdGoogleMediationAdapter/Framework\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include;
 				INFOPLIST_FILE = GNAdGoogleBannerAdapterSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -385,10 +378,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKMVWZ32F4;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../../GNAdGoogleMediationAdapter/Framework\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include;
 				INFOPLIST_FILE = GNAdGoogleBannerAdapterSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
