@@ -29,9 +29,9 @@ Pod::Spec.new do |s|
 
   s.author             = {
 			"takaaki.kobayashi" => "takaaki.kobayashi@geniee.co.jp",
-			"hironobu.yazaki" : "hironobu.yazaki@geniee.co.jp",
-			"Nguyen Thanh Long" : "long.nguyenthanh@geniee.co.jp",
-			"Nguyen Duy Long" : "longnd@geniee.co.jp"
+			"hironobu.yazaki" => "hironobu.yazaki@geniee.co.jp",
+			"Nguyen Thanh Long" => "long.nguyenthanh@geniee.co.jp",
+			"Nguyen Duy Long" => "longnd@geniee.co.jp"
 			}
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
