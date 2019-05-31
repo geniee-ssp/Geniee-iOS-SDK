@@ -58,7 +58,7 @@ Pod::Spec.new do |s|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-  s.vendored_frameworks = "GNAdGoogleRewardMediationAdapter/Framework/GNAdGoogleRewardMediationAdapter.framework"
+  s.vendored_frameworks = "GNAdGoogleMediationAdapter/Framework/GNAdGoogleMediationAdapter.framework"
   
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
