@@ -27,12 +27,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = {
-			"takaaki.kobayashi" => "takaaki.kobayashi@geniee.co.jp",
-			"hironobu.yazaki" : "hironobu.yazaki@geniee.co.jp",
-			"Nguyen Thanh Long" : "long.nguyenthanh@geniee.co.jp",
-			"Nguyen Duy Long" : "longnd@geniee.co.jp"
-			}
+  s.author             = { "Geniee" => "takaaki.kobayashi@geniee.co.jp" }
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -58,7 +53,7 @@ Pod::Spec.new do |s|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-  s.vendored_frameworks = "GNAdGoogleRewardMediationAdapter/Framework/GNAdGoogleRewardMediationAdapter.framework"
+  s.vendored_frameworks = "GNAdGoogleMediationAdapter/Framework/GNAdGoogleMediationAdapter.framework"
   
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
