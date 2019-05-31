@@ -272,6 +272,7 @@
 				EF5B4B4D20E9F4D50077F39A /* Resources */,
 				C3262EFD98F8698AC0A8F455 /* [CP] Copy Pods Resources */,
 				EF5B4BD920EA1B030077F39A /* Embed Frameworks */,
+				AEEDE127603804F18DAB1F4E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -329,21 +330,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		AEEDE127603804F18DAB1F4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNAdGoogleRewardAdapterSample/Pods-GNAdGoogleRewardAdapterSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNAdGoogleRewardAdapterSample/Pods-GNAdGoogleRewardAdapterSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GNAdGoogleRewardAdapterSample/Pods-GNAdGoogleRewardAdapterSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C3262EFD98F8698AC0A8F455 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GNAdGoogleRewardAdapterSample/Pods-GNAdGoogleRewardAdapterSample-resources.sh",
-				"${PODS_ROOT}/NendSDK_iOS/NendAd.embeddedframework/NendAd.framework/Resources/NendAdResource.bundle",
-				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v12.0.0/Libraries/Tapjoy.embeddedframework/Resources/TapjoyResources.bundle",
-				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v12.0.0/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Resources/TapjoyResources.bundle",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNAdGoogleRewardAdapterSample/Pods-GNAdGoogleRewardAdapterSample-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NendAdResource.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TapjoyResources.bundle",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNAdGoogleRewardAdapterSample/Pods-GNAdGoogleRewardAdapterSample-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

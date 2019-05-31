@@ -8,5 +8,6 @@ target 'GNAdGoogleBannerAdapterSample' do
   # Pods for GNAdGoogleBannerAdapterSample
   pod 'Google-Mobile-Ads-SDK'
   pod 'Geniee-iOS-SDK'
+  pod 'Geniee-Google-Mediation-Adapter'
 
 end
