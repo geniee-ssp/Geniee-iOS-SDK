@@ -13,7 +13,7 @@
 |SDK| Version |
 |:--|:--|
 |GNAdSDK| 5.1.4 |
-|rewardMediation|2.7.0|
+|rewardMediation|3.0.0|
 |fullscreenMediation|3.0.0|
 |GNAdGoogleMediationAdapter|5.1.4|
 
@@ -30,7 +30,7 @@
 | [Vungle](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Vungle-For-iOS.html) | 6.2.0 | 
 | [Nend](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Nend-For-iOS.html) | 5.0.2 | 
 | [AMoAd](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Amoad-For-iOS.html) | playable-1.0.0 | 
-
+| [TikTok](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-TikTok-For-iOS.html) | 2.0.1.2 |
 
 ### [Ad Network(Fullscreen interstitial Mediation)](https://developers.geniee.co.jp/ios/fullscreen-interstitial/)
 

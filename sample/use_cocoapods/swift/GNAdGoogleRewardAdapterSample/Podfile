@@ -14,5 +14,6 @@ target 'GNAdGoogleRewardAdapterSample' do
   pod 'TapjoySDK', '~> 12.0.0'
   pod 'UnityAds', '~> 2.3.0'
   pod 'VungleSDK-iOS', '~> 6.2.0'
+  pod 'Bytedance-UnionAD', '~> 2.0.1.2'
 
 end

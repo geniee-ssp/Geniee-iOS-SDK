@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C00E6822296778A00142AA6 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C00E6812296778A00142AA6 /* CoreServices.framework */; };
-		0C3E0C03228BBEF0002B1880 /* GNAdGoogleMediationAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3E0C02228BBEF0002B1880 /* GNAdGoogleMediationAdapter.framework */; };
-		0C3E0C04228BBEF0002B1880 /* GNAdGoogleMediationAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3E0C02228BBEF0002B1880 /* GNAdGoogleMediationAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0C1EDBA322ADF20600661094 /* GNSAdapterTikTokRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1EDBA222ADF20600661094 /* GNSAdapterTikTokRewardVideoAd.m */; };
 		0C3E0C06228BBF54002B1880 /* MediaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3E0C05228BBF54002B1880 /* MediaSDK.framework */; };
 		0C3E0C08228BC22B002B1880 /* libAMoAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3E0C07228BC22B002B1880 /* libAMoAd.a */; };
 		0C3E0C1E228BC391002B1880 /* amoad_link_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C3E0C0A228BC391002B1880 /* amoad_link_btn_h.png */; };
@@ -50,7 +49,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0C3E0C04228BBEF0002B1880 /* GNAdGoogleMediationAdapter.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,7 +57,8 @@
 
 /* Begin PBXFileReference section */
 		0C00E6812296778A00142AA6 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
-		0C3E0C02228BBEF0002B1880 /* GNAdGoogleMediationAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GNAdGoogleMediationAdapter.framework; path = ../../../../GNAdGoogleMediationAdapter/Framework/GNAdGoogleMediationAdapter.framework; sourceTree = "<group>"; };
+		0C1EDBA122ADF20600661094 /* GNSAdapterTikTokRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterTikTokRewardVideoAd.h; sourceTree = "<group>"; };
+		0C1EDBA222ADF20600661094 /* GNSAdapterTikTokRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterTikTokRewardVideoAd.m; sourceTree = "<group>"; };
 		0C3E0C05228BBF54002B1880 /* MediaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaSDK.framework; path = "../../../../Mediation-Adnw-SDKS/RewardVideoAd-Adnw-SDKS/MediaSDK.framework"; sourceTree = "<group>"; };
 		0C3E0C07228BC22B002B1880 /* libAMoAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAMoAd.a; path = "../../../../Mediation-Adnw-SDKS/RewardVideoAd-Adnw-SDKS/AMoAdSdk/libAMoAd.a"; sourceTree = "<group>"; };
 		0C3E0C0A228BC391002B1880 /* amoad_link_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_link_btn_h.png; sourceTree = "<group>"; };
@@ -132,7 +131,6 @@
 				0C3E0C06228BBF54002B1880 /* MediaSDK.framework in Frameworks */,
 				2F977C19211BE26600CA4B24 /* StoreKit.framework in Frameworks */,
 				2F977C17211BE25C00CA4B24 /* ImageIO.framework in Frameworks */,
-				0C3E0C03228BBEF0002B1880 /* GNAdGoogleMediationAdapter.framework in Frameworks */,
 				0C3E0C21228BC391002B1880 /* libAMoAd.a in Frameworks */,
 				B69C08A31DBA8CE900647F02 /* WebKit.framework in Frameworks */,
 				B69C088D1DBA8C7000647F02 /* AVFoundation.framework in Frameworks */,
@@ -145,6 +143,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C1EDBA022ADF20600661094 /* TikTok */ = {
+			isa = PBXGroup;
+			children = (
+				0C1EDBA122ADF20600661094 /* GNSAdapterTikTokRewardVideoAd.h */,
+				0C1EDBA222ADF20600661094 /* GNSAdapterTikTokRewardVideoAd.m */,
+			);
+			path = TikTok;
+			sourceTree = "<group>";
+		};
 		0C3E0C09228BC391002B1880 /* AMoAdSdk */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +183,7 @@
 		2F979AFE21B50955000A81A6 /* rewardMediation */ = {
 			isa = PBXGroup;
 			children = (
+				0C1EDBA022ADF20600661094 /* TikTok */,
 				2F979AFF21B50955000A81A6 /* UnityAds */,
 				2F979B0221B50955000A81A6 /* Vungle */,
 				2F979B0521B50955000A81A6 /* Amoad */,
@@ -283,7 +291,6 @@
 		B64ACC0E1DA69DAA000BC00D = {
 			isa = PBXGroup;
 			children = (
-				0C3E0C02228BBEF0002B1880 /* GNAdGoogleMediationAdapter.framework */,
 				2F979AFE21B50955000A81A6 /* rewardMediation */,
 				B64ACC191DA69DAA000BC00D /* GNAdGoogleRewardMediationAdapterSample */,
 				B64ACC181DA69DAA000BC00D /* Products */,
@@ -356,6 +363,7 @@
 				B64ACC151DA69DAA000BC00D /* Resources */,
 				0C3AE57C20CE72F100374635 /* Embed Frameworks */,
 				0EE7B431A3F623528CDD476B /* [CP] Copy Pods Resources */,
+				0550F583047B65E76D6BDDF4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -421,6 +429,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0550F583047B65E76D6BDDF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNAdGoogleRewardMediationAdapterSample/Pods-GNAdGoogleRewardMediationAdapterSample-frameworks.sh",
+				"${PODS_ROOT}/Geniee-Google-Mediation-Adapter/GNAdGoogleMediationAdapter/Framework/GNAdGoogleMediationAdapter.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GNAdGoogleMediationAdapter.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GNAdGoogleRewardMediationAdapterSample/Pods-GNAdGoogleRewardMediationAdapterSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		0EE7B431A3F623528CDD476B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -428,12 +454,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GNAdGoogleRewardMediationAdapterSample/Pods-GNAdGoogleRewardMediationAdapterSample-resources.sh",
+				"${PODS_ROOT}/Bytedance-UnionAD/Bytedance-UnionAd/Frameworks/BUAdSDK.bundle",
 				"${PODS_ROOT}/NendSDK_iOS/NendAd.embeddedframework/NendAd.framework/Resources/NendAdResource.bundle",
 				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v12.0.0/Libraries/Tapjoy.embeddedframework/Resources/TapjoyResources.bundle",
 				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v12.0.0/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Resources/TapjoyResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BUAdSDK.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NendAdResource.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TapjoyResources.bundle",
 			);
@@ -469,6 +497,7 @@
 			files = (
 				2F979B2021B50955000A81A6 /* GNSAdapterMaioRewardVideoAd.m in Sources */,
 				B64ACC221DA69DAA000BC00D /* ViewController.m in Sources */,
+				0C1EDBA322ADF20600661094 /* GNSAdapterTikTokRewardVideoAd.m in Sources */,
 				2F979B1D21B50955000A81A6 /* GNSAdapterTapjoyRewardVideoAd.m in Sources */,
 				2F979B1A21B50955000A81A6 /* GNSAdapterUnityAdsRewardVideoAd.m in Sources */,
 				2F979B1B21B50955000A81A6 /* GNSAdapterVungleRewardVideoAd.m in Sources */,
@@ -624,7 +653,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"\"$(SRCROOT)/../../../../GNAdGoogleMediationAdapter/Framework\"",
 					"\"$(SRCROOT)/../../../../Mediation-Adnw-SDKS/RewardVideoAd-Adnw-SDKS\"",
 				);
 				HEADER_SEARCH_PATHS = (
@@ -661,7 +689,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"\"$(SRCROOT)/../../../../GNAdGoogleMediationAdapter/Framework\"",
 					"\"$(SRCROOT)/../../../../Mediation-Adnw-SDKS/RewardVideoAd-Adnw-SDKS\"",
 				);
 				HEADER_SEARCH_PATHS = (
