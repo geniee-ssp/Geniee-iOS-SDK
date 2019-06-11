@@ -47,6 +47,10 @@
 	Amoad SDKの入手方法は営業担当にお問い合わせください。
 	
 	[https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-Amoad-For-iOS](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-Amoad-For-iOS)
+	
+- TikTok
+
+	[https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-TikTok-For-iOS](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-TikTok-For-iOS)
 
 ## About CAReward SDK and Amoad SDK
 
@@ -95,3 +99,6 @@ For details on how to install each ad network, please refer to the following URL
 	
 	[https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-Amoad-For-iOS-english](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-Amoad-For-iOS-english)
 
+- TikTok
+
+	[https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-TikTok-For-iOS-english](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-TikTok-For-iOS-english)

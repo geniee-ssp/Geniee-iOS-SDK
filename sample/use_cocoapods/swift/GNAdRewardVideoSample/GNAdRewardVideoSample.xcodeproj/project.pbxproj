@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C1EDC1B22AE051400661094 /* GNSAdapterTikTokRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1EDC1A22AE051100661094 /* GNSAdapterTikTokRewardVideoAd.m */; };
 		5D1ABF5B2B8415E81D4533E6 /* libPods-GNAdRewardVideoSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDA3AB38E035D5C16264B7A /* libPods-GNAdRewardVideoSample.a */; };
 		E8899FEE20D8D12000BE7091 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8899FED20D8D12000BE7091 /* AppDelegate.swift */; };
 		E8899FF020D8D12000BE7091 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8899FEF20D8D12000BE7091 /* ViewController.swift */; };
@@ -28,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C1EDC1922AE051100661094 /* GNSAdapterTikTokRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterTikTokRewardVideoAd.h; sourceTree = "<group>"; };
+		0C1EDC1A22AE051100661094 /* GNSAdapterTikTokRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterTikTokRewardVideoAd.m; sourceTree = "<group>"; };
 		2F977C20211C0F3800CA4B24 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		5AEC8EFEE82A23D0A8C370DB /* Pods-GNAdRewardVideoSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdRewardVideoSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdRewardVideoSample/Pods-GNAdRewardVideoSample.release.xcconfig"; sourceTree = "<group>"; };
 		E8899FEA20D8D12000BE7091 /* GNAdRewardVideoSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNAdRewardVideoSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C1EDC1822AE051100661094 /* TikTok */ = {
+			isa = PBXGroup;
+			children = (
+				0C1EDC1922AE051100661094 /* GNSAdapterTikTokRewardVideoAd.h */,
+				0C1EDC1A22AE051100661094 /* GNSAdapterTikTokRewardVideoAd.m */,
+			);
+			path = TikTok;
+			sourceTree = "<group>";
+		};
 		3EB938CDB8A6AA78F5CA3D74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +149,7 @@
 		E8CECF9A20DA70CC007779A8 /* Adapter */ = {
 			isa = PBXGroup;
 			children = (
+				0C1EDC1822AE051100661094 /* TikTok */,
 				E8CECF9B20DA70CC007779A8 /* UnityAds */,
 				E8CECF9E20DA70CC007779A8 /* Vungle */,
 				E8CECFA420DA70CC007779A8 /* Tapjoy */,
@@ -286,20 +299,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-GNAdRewardVideoSample/Pods-GNAdRewardVideoSample-resources.sh",
-				"${PODS_ROOT}/NendSDK_iOS/NendAd.embeddedframework/NendAd.framework/Resources/NendAdResource.bundle",
-				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v12.0.0/Libraries/Tapjoy.embeddedframework/Resources/TapjoyResources.bundle",
-				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v12.0.0/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Resources/TapjoyResources.bundle",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNAdRewardVideoSample/Pods-GNAdRewardVideoSample-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NendAdResource.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TapjoyResources.bundle",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNAdRewardVideoSample/Pods-GNAdRewardVideoSample-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GNAdRewardVideoSample/Pods-GNAdRewardVideoSample-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GNAdRewardVideoSample/Pods-GNAdRewardVideoSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9E10513CFDDB766D80262400 /* [CP] Check Pods Manifest.lock */ = {
@@ -331,6 +340,7 @@
 				E8899FF020D8D12000BE7091 /* ViewController.swift in Sources */,
 				E8CECFB920DA70CD007779A8 /* GNSAdapterTapjoyRewardVideoAd.m in Sources */,
 				E8CECFB620DA70CD007779A8 /* GNSAdapterUnityAdsRewardVideoAd.m in Sources */,
+				0C1EDC1B22AE051400661094 /* GNSAdapterTikTokRewardVideoAd.m in Sources */,
 				E8CECFB720DA70CD007779A8 /* GNSAdapterVungleRewardVideoAd.m in Sources */,
 				E8CECFBA20DA70CD007779A8 /* GNSAdapterAppLovinRewardVideoAd.m in Sources */,
 				E8CECFBB20DA70CD007779A8 /* GNSAdapterAdColonyRewardVideoAd.m in Sources */,

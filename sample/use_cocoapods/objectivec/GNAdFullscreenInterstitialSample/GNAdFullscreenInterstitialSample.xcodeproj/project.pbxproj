@@ -285,13 +285,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GNAdFullscreenInterstitialSample/Pods-GNAdFullscreenInterstitialSample-resources.sh",
-				"${PODS_ROOT}/NendSDK_iOS/NendAd.embeddedframework/NendAd.framework/Resources/NendAdResource.bundle",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNAdFullscreenInterstitialSample/Pods-GNAdFullscreenInterstitialSample-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NendAdResource.bundle",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNAdFullscreenInterstitialSample/Pods-GNAdFullscreenInterstitialSample-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
