@@ -71,14 +71,14 @@ static BOOL establishingConnection = NO;
     [self ALLog:[NSString stringWithFormat:@"setUp Tapjoy version = %ld", (long)[Tapjoy version]]];
     
     //Set up success and failure notifications
-    if ([Tapjoy isConnected] == false) {
+    if ([Tapjoy isLimitedConnected] == false) {
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(tjcConnectSuccess:)
-                                                     name:TJC_CONNECT_SUCCESS
+                                                     name:TJC_LIMITED_CONNECT_SUCCESS
                                                    object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(tjcConnectFail:)
-                                                     name:TJC_CONNECT_FAILED
+                                                     name:TJC_LIMITED_CONNECT_FAILED
                                                    object:nil];
         //Turn on Tapjoy debug mode
         //[Tapjoy setDebugEnabled:YES];
@@ -86,7 +86,7 @@ static BOOL establishingConnection = NO;
         //Connect to Tapjoy server
         if (establishingConnection == NO) {
             GNSExtrasTapjoy *extras = [self.connector networkExtras];
-            [Tapjoy connect: extras.sdk_key];
+            [Tapjoy limitedConnect:extras.sdk_key];
             establishingConnection = YES;
         }
     }
@@ -129,10 +129,10 @@ static BOOL establishingConnection = NO;
     _timeout = timeout;
     self.requestingAd = YES;
     //Start connect sdk
-    if ([Tapjoy isConnected] == false) {
+    if ([Tapjoy isLimitedConnected] == false) {
         if (establishingConnection == NO) {
             GNSExtrasTapjoy *extras = [self.connector networkExtras];
-            [Tapjoy connect: extras.sdk_key];
+            [Tapjoy limitedConnect:extras.sdk_key];
             establishingConnection = YES;
         }
         return;
@@ -151,10 +151,8 @@ static BOOL establishingConnection = NO;
     GNSExtrasTapjoy *extras = [self.connector networkExtras];
     [self ALLog:[NSString stringWithFormat:@"PlacementId=%@", extras.placement_id]];
     [self ALLog:[NSString stringWithFormat:@"SDKKey=%@", extras.sdk_key]];
-    self.p = [TJPlacement placementWithName:extras.placement_id
-                         mediationAgent:@"geniee"
-                            mediationId:nil
-                               delegate:self ];
+    
+    self.p = [TJPlacement limitedPlacementWithName:extras.placement_id mediationAgent:@"geniee" delegate:self];
     if (self.p != nil) {
         self.p.adapterVersion = [GNSAdapterTapjoyRewardVideoAd adapterVersion];
         self.p.videoDelegate = self;
@@ -163,7 +161,7 @@ static BOOL establishingConnection = NO;
     } else {
         [self onErrorWithMessage:@"Can not create Tapjoy placement"];
     }
-
+    
 }
 
 - (void)presentAdWithRootViewController:(UIViewController *)viewController {
@@ -271,7 +269,7 @@ static BOOL establishingConnection = NO;
     self.reward = [[GNSAdReward alloc]
                    initWithRewardType: extras.type
                    rewardAmount: extras.amount];
-
+    
     if (self.reward) {
         [self.connector adapter: self didRewardUserWithReward: self.reward];
         self.reward = nil;

@@ -26,7 +26,7 @@
 | [Unity Ads](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-UnityAds-For-iOS.html) | 2.3.0 | 
 | [AdColony](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-AdColony-For-iOS.html) | 3.3.5 | 
 | [CAReward](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-CAReward-For-iOS.html) | 2.3.1 | 
-| [Tapjoy](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Tapjoy-For-iOS.html) | 12.0.0 | 
+| [Tapjoy](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Tapjoy-For-iOS.html) | 12.2.1 | 
 | [Vungle](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Vungle-For-iOS.html) | 6.2.0 | 
 | [Nend](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Nend-For-iOS.html) | 5.0.2 | 
 | [AMoAd](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Amoad-For-iOS.html) | playable-1.0.0 | 
