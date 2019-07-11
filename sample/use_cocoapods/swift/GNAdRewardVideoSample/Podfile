@@ -4,7 +4,6 @@
 target 'GNAdRewardVideoSample' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   #use_frameworks!
-  pod 'Google-Mobile-Ads-SDK'
   pod 'Geniee-iOS-SDK'
   pod 'AdColony', '~> 3.3.5'
   pod 'AppLovinSDK','~> 5.1.1'

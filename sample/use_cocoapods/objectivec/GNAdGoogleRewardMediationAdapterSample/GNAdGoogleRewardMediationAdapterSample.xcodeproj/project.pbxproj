@@ -39,7 +39,6 @@
 		B69C088D1DBA8C7000647F02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69C088C1DBA8C7000647F02 /* AVFoundation.framework */; };
 		B69C08A31DBA8CE900647F02 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B69C08A21DBA8CE900647F02 /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		B6AE1EE51E9F91A400044A37 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AE1EE41E9F91A400044A37 /* CoreMotion.framework */; };
-		F11DEEBEAD7D29404B13D2FD /* libPods-GNAdGoogleRewardMediationAdapterSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 267AFFDA7A5117251C9C55CA /* libPods-GNAdGoogleRewardMediationAdapterSample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -81,8 +80,6 @@
 		0C3E0C1B228BC391002B1880 /* AMoAdLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdLogger.h; sourceTree = "<group>"; };
 		0C3E0C1C228BC391002B1880 /* AMoAdInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdInterstitial.h; sourceTree = "<group>"; };
 		0C3E0C1D228BC391002B1880 /* AMoAdList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdList.h; sourceTree = "<group>"; };
-		267AFFDA7A5117251C9C55CA /* libPods-GNAdGoogleRewardMediationAdapterSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GNAdGoogleRewardMediationAdapterSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		28F96ACFE4BA6A4C9CF7EBDD /* libPods-GNAdDFPRewardMediationAdapterSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GNAdDFPRewardMediationAdapterSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F977C16211BE25C00CA4B24 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		2F977C18211BE26600CA4B24 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2F979B0021B50955000A81A6 /* GNSAdapterUnityAdsRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterUnityAdsRewardVideoAd.m; sourceTree = "<group>"; };
@@ -103,8 +100,6 @@
 		2F979B1621B50955000A81A6 /* GNSAdapterNendRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterNendRewardVideoAd.m; sourceTree = "<group>"; };
 		2F979B1821B50955000A81A6 /* GNSAdapterCARewardRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterCARewardRewardVideoAd.m; sourceTree = "<group>"; };
 		2F979B1921B50955000A81A6 /* GNSAdapterCARewardRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterCARewardRewardVideoAd.h; sourceTree = "<group>"; };
-		33EF3B0DFCB48B37716FF9BE /* Pods-GNAdGoogleRewardMediationAdapterSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdGoogleRewardMediationAdapterSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdGoogleRewardMediationAdapterSample/Pods-GNAdGoogleRewardMediationAdapterSample.release.xcconfig"; sourceTree = "<group>"; };
-		41C42853DE1F002B65F4F265 /* Pods-GNAdGoogleRewardMediationAdapterSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdGoogleRewardMediationAdapterSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdGoogleRewardMediationAdapterSample/Pods-GNAdGoogleRewardMediationAdapterSample.debug.xcconfig"; sourceTree = "<group>"; };
 		B64ACC171DA69DAA000BC00D /* GNAdGoogleRewardMediationAdapterSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNAdGoogleRewardMediationAdapterSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64ACC1B1DA69DAA000BC00D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B64ACC1D1DA69DAA000BC00D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -136,7 +131,6 @@
 				B69C088D1DBA8C7000647F02 /* AVFoundation.framework in Frameworks */,
 				B69C08891DBA8C5900647F02 /* AdSupport.framework in Frameworks */,
 				B6AE1EE51E9F91A400044A37 /* CoreMotion.framework in Frameworks */,
-				F11DEEBEAD7D29404B13D2FD /* libPods-GNAdGoogleRewardMediationAdapterSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,15 +273,6 @@
 			path = CAReward;
 			sourceTree = "<group>";
 		};
-		8B996EB4B94254FBF332E487 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				41C42853DE1F002B65F4F265 /* Pods-GNAdGoogleRewardMediationAdapterSample.debug.xcconfig */,
-				33EF3B0DFCB48B37716FF9BE /* Pods-GNAdGoogleRewardMediationAdapterSample.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		B64ACC0E1DA69DAA000BC00D = {
 			isa = PBXGroup;
 			children = (
@@ -295,7 +280,6 @@
 				B64ACC191DA69DAA000BC00D /* GNAdGoogleRewardMediationAdapterSample */,
 				B64ACC181DA69DAA000BC00D /* Products */,
 				B64ACC311DA6A1BA000BC00D /* Frameworks */,
-				8B996EB4B94254FBF332E487 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -344,8 +328,6 @@
 				B69C08A21DBA8CE900647F02 /* WebKit.framework */,
 				B69C088C1DBA8C7000647F02 /* AVFoundation.framework */,
 				B69C08881DBA8C5900647F02 /* AdSupport.framework */,
-				28F96ACFE4BA6A4C9CF7EBDD /* libPods-GNAdDFPRewardMediationAdapterSample.a */,
-				267AFFDA7A5117251C9C55CA /* libPods-GNAdGoogleRewardMediationAdapterSample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -357,13 +339,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B64ACC2E1DA69DAA000BC00D /* Build configuration list for PBXNativeTarget "GNAdGoogleRewardMediationAdapterSample" */;
 			buildPhases = (
-				6E91C649E3DB39EF8D98851F /* [CP] Check Pods Manifest.lock */,
 				B64ACC131DA69DAA000BC00D /* Sources */,
 				B64ACC141DA69DAA000BC00D /* Frameworks */,
 				B64ACC151DA69DAA000BC00D /* Resources */,
 				0C3AE57C20CE72F100374635 /* Embed Frameworks */,
-				0EE7B431A3F623528CDD476B /* [CP] Copy Pods Resources */,
-				0550F583047B65E76D6BDDF4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -427,68 +406,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0550F583047B65E76D6BDDF4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GNAdGoogleRewardMediationAdapterSample/Pods-GNAdGoogleRewardMediationAdapterSample-frameworks.sh",
-				"${PODS_ROOT}/Geniee-Google-Mediation-Adapter/GNAdGoogleMediationAdapter/Framework/GNAdGoogleMediationAdapter.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GNAdGoogleMediationAdapter.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GNAdGoogleRewardMediationAdapterSample/Pods-GNAdGoogleRewardMediationAdapterSample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0EE7B431A3F623528CDD476B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GNAdGoogleRewardMediationAdapterSample/Pods-GNAdGoogleRewardMediationAdapterSample-resources.sh",
-				"${PODS_ROOT}/Bytedance-UnionAD/Bytedance-UnionAd/Frameworks/BUAdSDK.bundle",
-				"${PODS_ROOT}/NendSDK_iOS/NendAd.embeddedframework/NendAd.framework/Resources/NendAdResource.bundle",
-				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v12.2.1/Libraries/Tapjoy.embeddedframework/Resources/TapjoyResources.bundle",
-				"${PODS_ROOT}/TapjoySDK/TapjoySDK_iOS_v12.2.1/Libraries/Tapjoy.embeddedframework/Tapjoy.framework/Versions/A/Resources/TapjoyResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BUAdSDK.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NendAdResource.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TapjoyResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GNAdGoogleRewardMediationAdapterSample/Pods-GNAdGoogleRewardMediationAdapterSample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6E91C649E3DB39EF8D98851F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GNAdGoogleRewardMediationAdapterSample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B64ACC131DA69DAA000BC00D /* Sources */ = {
@@ -644,7 +561,6 @@
 		};
 		B64ACC2F1DA69DAA000BC00D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41C42853DE1F002B65F4F265 /* Pods-GNAdGoogleRewardMediationAdapterSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
@@ -680,7 +596,6 @@
 		};
 		B64ACC301DA69DAA000BC00D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33EF3B0DFCB48B37716FF9BE /* Pods-GNAdGoogleRewardMediationAdapterSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;

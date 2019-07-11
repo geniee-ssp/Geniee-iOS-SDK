@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>GADIsAdManagerApp</key>
+	<true/>
+	<key>GADApplicationIdentifier</key>
+	<string>YOUR_ADMOB_APP_ID</string>
+	<key>AppLovinSdkKey</key>
+	<string>YOUR_SDK_KEY</string>
 	<key>CFBundleDisplayName</key>
 	<string>GoogleFullInsti</string>
 	<key>CFBundleDevelopmentRegion</key>
@@ -43,7 +49,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    <key>GADApplicationIdentifier</key>
-    <string>ca-app-pub-5022212395897062~9518418756</string>
 </dict>
 </plist>

@@ -36,7 +36,6 @@
 		BBE1E59520D2841E0035A52A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBE1E59420D2841E0035A52A /* Assets.xcassets */; };
 		BBE1E59820D2841E0035A52A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBE1E59620D2841E0035A52A /* LaunchScreen.storyboard */; };
 		BBE1E59B20D2841E0035A52A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE1E59A20D2841E0035A52A /* main.m */; };
-		E52843AF9356C847F6D1ECB7 /* libPods-GNAdRewardVideoSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52175E9F7393F4160FF64D82 /* libPods-GNAdRewardVideoSample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,8 +87,6 @@
 		2F979B3B21B50979000A81A6 /* GNSAdapterNendRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterNendRewardVideoAd.m; sourceTree = "<group>"; };
 		2F979B3D21B50979000A81A6 /* GNSAdapterCARewardRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterCARewardRewardVideoAd.m; sourceTree = "<group>"; };
 		2F979B3E21B50979000A81A6 /* GNSAdapterCARewardRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterCARewardRewardVideoAd.h; sourceTree = "<group>"; };
-		4790DB81BED490E327226CFE /* Pods-GNAdRewardVideoSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdRewardVideoSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdRewardVideoSample/Pods-GNAdRewardVideoSample.debug.xcconfig"; sourceTree = "<group>"; };
-		52175E9F7393F4160FF64D82 /* libPods-GNAdRewardVideoSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GNAdRewardVideoSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE1E58820D2841B0035A52A /* GNAdRewardVideoSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNAdRewardVideoSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE1E58B20D2841B0035A52A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BBE1E58C20D2841B0035A52A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -100,7 +97,6 @@
 		BBE1E59720D2841E0035A52A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBE1E59920D2841E0035A52A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBE1E59A20D2841E0035A52A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CF3207216FCC24920B35FDAE /* Pods-GNAdRewardVideoSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdRewardVideoSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdRewardVideoSample/Pods-GNAdRewardVideoSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +111,6 @@
 				0C1EDBEE22AE008D00661094 /* AVFoundation.framework in Frameworks */,
 				0C1EDBED22AE008500661094 /* AdSupport.framework in Frameworks */,
 				0C1EDBD022ADFF7200661094 /* MediaSDK.framework in Frameworks */,
-				E52843AF9356C847F6D1ECB7 /* libPods-GNAdRewardVideoSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +260,6 @@
 				2F979B2321B50979000A81A6 /* rewardMediation */,
 				BBE1E58A20D2841B0035A52A /* GNAdRewardVideoSample */,
 				BBE1E58920D2841B0035A52A /* Products */,
-				CDC05CBD9DF5502FEFE112C7 /* Pods */,
 				EBDFB509BC430792671E65F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -294,15 +288,6 @@
 			path = GNAdRewardVideoSample;
 			sourceTree = "<group>";
 		};
-		CDC05CBD9DF5502FEFE112C7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4790DB81BED490E327226CFE /* Pods-GNAdRewardVideoSample.debug.xcconfig */,
-				CF3207216FCC24920B35FDAE /* Pods-GNAdRewardVideoSample.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		EBDFB509BC430792671E65F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,7 +299,6 @@
 				2F977C1B211C0EFF00CA4B24 /* CoreMedia.framework */,
 				2F977C1D211C0EFF00CA4B24 /* ImageIO.framework */,
 				2F977C1A211C0EFF00CA4B24 /* StoreKit.framework */,
-				52175E9F7393F4160FF64D82 /* libPods-GNAdRewardVideoSample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -326,11 +310,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBE1E59E20D2841E0035A52A /* Build configuration list for PBXNativeTarget "GNAdRewardVideoSample" */;
 			buildPhases = (
-				6FC1AF14837D8CD6B6EDCF93 /* [CP] Check Pods Manifest.lock */,
 				BBE1E58420D2841B0035A52A /* Sources */,
 				BBE1E58520D2841B0035A52A /* Frameworks */,
 				BBE1E58620D2841B0035A52A /* Resources */,
-				A2F846D96C778B4ADF9DE92F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -391,44 +373,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		6FC1AF14837D8CD6B6EDCF93 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GNAdRewardVideoSample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A2F846D96C778B4ADF9DE92F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GNAdRewardVideoSample/Pods-GNAdRewardVideoSample-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GNAdRewardVideoSample/Pods-GNAdRewardVideoSample-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GNAdRewardVideoSample/Pods-GNAdRewardVideoSample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BBE1E58420D2841B0035A52A /* Sources */ = {
@@ -585,7 +529,6 @@
 		};
 		BBE1E59F20D2841E0035A52A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4790DB81BED490E327226CFE /* Pods-GNAdRewardVideoSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -614,7 +557,6 @@
 		};
 		BBE1E5A020D2841E0035A52A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF3207216FCC24920B35FDAE /* Pods-GNAdRewardVideoSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
