@@ -34,7 +34,7 @@ static BOOL loggingEnabled = YES;
 }
 
 + (NSString *)adapterVersion {
-    return @"3.0.0";
+    return @"3.0.1";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {
@@ -185,9 +185,11 @@ static BOOL loggingEnabled = YES;
 
      //Handler for successful ad requests
                                 success:^(AdColonyInterstitial* ad) {
+                                    [self deleteTimer];
 
                                     //Once the ad has finished, set the loading state and request a new interstitial
                                     ad.close = ^{
+                                        [self.connector adapterDidCloseAd:self];
                                         self._ad = nil;
 
                                         [self requestInterstitial];
@@ -203,14 +205,16 @@ static BOOL loggingEnabled = YES;
                                     //Store a reference to the returned interstitial object
                                     self._ad = ad;
 
+                                    self.ad_available = YES;
                                     [self.connector adapterDidReceiveAd:self];
-                                    _ad_available = YES;
 
                                 }
 
      //Handler for failed ad requests
                                 failure:^(AdColonyAdRequestError* error) {
+                                    [self deleteTimer];
 
+                                    self.ad_available = NO;
                                     [self.connector adapter: self didFailToLoadAdwithError: error];
 
                                     [self ALLog:[NSString stringWithFormat: @"GNSAdColonyAdapter Request failed with error: %@ and suggestion: %@", [error localizedDescription], [error localizedRecoverySuggestion]]];

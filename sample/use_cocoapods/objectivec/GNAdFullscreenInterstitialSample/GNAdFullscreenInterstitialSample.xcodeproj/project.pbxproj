@@ -22,7 +22,6 @@
 		2F25D87E21D4CB4A00FD5DD2 /* GNSAdapterMaioFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F25D87521D4CB4A00FD5DD2 /* GNSAdapterMaioFullscreenInterstitialAd.m */; };
 		2F25D87F21D4CB4A00FD5DD2 /* GNSAdapterNendFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F25D87921D4CB4A00FD5DD2 /* GNSAdapterNendFullscreenInterstitialAd.m */; };
 		2F25D88021D4CB4A00FD5DD2 /* GNSAdapterZucksFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F25D87B21D4CB4A00FD5DD2 /* GNSAdapterZucksFullscreenInterstitialAd.m */; };
-		E6B16DB6DBFF975A60DEB972 /* libPods-GNAdFullscreenInterstitialSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FF5127C13AE531C20A7AE18 /* libPods-GNAdFullscreenInterstitialSample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +34,6 @@
 		0C509B1C222696CB0041F2D7 /* GNSAdapterImobileFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterImobileFullscreenInterstitialAd.h; sourceTree = "<group>"; };
 		0C509B1D222696CB0041F2D7 /* GNSAdapterImobileFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterImobileFullscreenInterstitialAd.m; sourceTree = "<group>"; };
 		0C509B1F222697590041F2D7 /* ImobileSdkAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImobileSdkAds.framework; path = "../../../../Mediation-Adnw-SDKS/FullscreenInterstitialAd-Adnw-SDKS/ImobileSdkAds.framework"; sourceTree = "<group>"; };
-		0FF5127C13AE531C20A7AE18 /* libPods-GNAdFullscreenInterstitialSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GNAdFullscreenInterstitialSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		194B25C621C79EE8003DD030 /* GNAdFullscreenInterstitialSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNAdFullscreenInterstitialSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		194B25C921C79EE8003DD030 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		194B25CA21C79EE8003DD030 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,8 +52,6 @@
 		2F25D87921D4CB4A00FD5DD2 /* GNSAdapterNendFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterNendFullscreenInterstitialAd.m; sourceTree = "<group>"; };
 		2F25D87B21D4CB4A00FD5DD2 /* GNSAdapterZucksFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterZucksFullscreenInterstitialAd.m; sourceTree = "<group>"; };
 		2F25D87C21D4CB4A00FD5DD2 /* GNSAdapterZucksFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterZucksFullscreenInterstitialAd.h; sourceTree = "<group>"; };
-		8481764673FDC2FFA762AD43 /* Pods-GNAdFullscreenInterstitialSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdFullscreenInterstitialSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdFullscreenInterstitialSample/Pods-GNAdFullscreenInterstitialSample.debug.xcconfig"; sourceTree = "<group>"; };
-		E53F974DC7A611FB01EE2EFC /* Pods-GNAdFullscreenInterstitialSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdFullscreenInterstitialSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdFullscreenInterstitialSample/Pods-GNAdFullscreenInterstitialSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +60,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C509B20222697590041F2D7 /* ImobileSdkAds.framework in Frameworks */,
-				E6B16DB6DBFF975A60DEB972 /* libPods-GNAdFullscreenInterstitialSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +108,6 @@
 				2F25D87021D4CB4A00FD5DD2 /* fullscreenMediation */,
 				194B25C821C79EE8003DD030 /* GNAdFullscreenInterstitialSample */,
 				194B25C721C79EE8003DD030 /* Products */,
-				F9D3096A8E62BBDC4EB65068 /* Pods */,
 				251159473D8AD5B2F5FDE56F /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -146,7 +140,6 @@
 			isa = PBXGroup;
 			children = (
 				0C509B1F222697590041F2D7 /* ImobileSdkAds.framework */,
-				0FF5127C13AE531C20A7AE18 /* libPods-GNAdFullscreenInterstitialSample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -203,15 +196,6 @@
 			path = Zucks;
 			sourceTree = "<group>";
 		};
-		F9D3096A8E62BBDC4EB65068 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8481764673FDC2FFA762AD43 /* Pods-GNAdFullscreenInterstitialSample.debug.xcconfig */,
-				E53F974DC7A611FB01EE2EFC /* Pods-GNAdFullscreenInterstitialSample.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,11 +203,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 194B25DC21C79EE9003DD030 /* Build configuration list for PBXNativeTarget "GNAdFullscreenInterstitialSample" */;
 			buildPhases = (
-				C0ACAED69443E6EE986A19F3 /* [CP] Check Pods Manifest.lock */,
 				194B25C221C79EE8003DD030 /* Sources */,
 				194B25C321C79EE8003DD030 /* Frameworks */,
 				194B25C421C79EE8003DD030 /* Resources */,
-				237825217BA9F7A11BDD3BF0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -278,44 +260,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		237825217BA9F7A11BDD3BF0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GNAdFullscreenInterstitialSample/Pods-GNAdFullscreenInterstitialSample-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GNAdFullscreenInterstitialSample/Pods-GNAdFullscreenInterstitialSample-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GNAdFullscreenInterstitialSample/Pods-GNAdFullscreenInterstitialSample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C0ACAED69443E6EE986A19F3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GNAdFullscreenInterstitialSample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		194B25C221C79EE8003DD030 /* Sources */ = {
@@ -472,7 +416,6 @@
 		};
 		194B25DD21C79EE9003DD030 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8481764673FDC2FFA762AD43 /* Pods-GNAdFullscreenInterstitialSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -503,7 +446,6 @@
 		};
 		194B25DE21C79EE9003DD030 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E53F974DC7A611FB01EE2EFC /* Pods-GNAdFullscreenInterstitialSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

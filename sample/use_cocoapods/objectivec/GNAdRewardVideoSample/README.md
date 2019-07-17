@@ -7,98 +7,93 @@
 
 - Maio
 
-	[https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-Maio-For-iOS](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-Maio-For-iOS)
+	[https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Maio-For-iOS.html](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Maio-For-iOS.html)
 
 - AppLovin
 
-	[https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-AppLovin-For-iOS](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-AppLovin-For-iOS)
-
+	[https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-AppLovin-For-iOS.html](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-AppLovin-For-iOS.html)
 
 - Unity Ads
 
-	[https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-UnityAds-For-iOS](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-UnityAds-For-iOS)
+	[https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-UnityAds-For-iOS.html](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-UnityAds-For-iOS.html)
 
 - AdColony
 	
-	[https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-AdColony-For-iOS](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-AdColony-For-iOS)
-
+	[https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-AdColony-For-iOS.html](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-AdColony-For-iOS.html)
 
 - CAReward
 
 	CAReward SDKの入手方法は営業担当にお問い合わせください。
 	
-	[https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-CAReward-For-iOS](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-CAReward-For-iOS)
+	[https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-CAReward-For-iOS.html](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-CAReward-For-iOS.html)
 
 - Tapjoy
 
-	[https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-Tapjoy-For-iOS](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-Tapjoy-For-iOS)
+	[https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Tapjoy-For-iOS.html](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Tapjoy-For-iOS.html)
 
 - Vungle
 
-	[https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-Vungle-For-iOS](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-Vungle-For-iOS)
-
+	[https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Vungle-For-iOS.html](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Vungle-For-iOS.html)
 
 - Nend
 
-	[https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-CAReward-For-iOS](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-Nend-For-iOS)
+	[https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Nend-For-iOS.html](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Nend-For-iOS.html)
 
 - Amoad
 
 	Amoad SDKの入手方法は営業担当にお問い合わせください。
 	
-	[https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-Amoad-For-iOS](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-Amoad-For-iOS)
+	[https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-AmoAd-For-iOS.html](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-AmoAd-For-iOS.html)
 	
 - TikTok
 
-	[https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-TikTok-For-iOS](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-TikTok-For-iOS)
+	[https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-TikTok-For-iOS.html](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-TikTok-For-iOS.html)
 
-## About CAReward SDK and Amoad SDK
+## About each ad network SDK installation method
 
 For details on how to install each ad network, please refer to the following URL.
 
 - Maio
 
-	[https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-Maio-For-iOS-english](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-Maio-For-iOS-english)
+	[https://developers.geniee.co.jp/en/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Maio-For-iOS.html](https://developers.geniee.co.jp/en/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Maio-For-iOS.html)
 
 - AppLovin
 
-	[https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-AppLovin-For-iOS-english](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-AppLovin-For-iOS-english)
+	[https://developers.geniee.co.jp/en/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-AppLovin-For-iOS.html](https://developers.geniee.co.jp/en/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-AppLovin-For-iOS.html)
 
 
 - Unity Ads
 
-	[https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-UnityAds-For-iOS-english](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-UnityAds-For-iOS-english)
+	[https://developers.geniee.co.jp/en/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-UnityAds-For-iOS.html](https://developers.geniee.co.jp/en/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-UnityAds-For-iOS.html)
 
 - AdColony
 	
-	[https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-AdColony-For-iOS-english](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-AdColony-For-iOS-english)
-
+	[https://developers.geniee.co.jp/en/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-AdColony-For-iOS.html](https://developers.geniee.co.jp/en/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-AdColony-For-iOS.html)
 
 - CAReward
 
 	To obtain CAReward SDK please contact your sales representative.
 	
-	[https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-CAReward-For-iOS-english](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-CAReward-For-iOS-english)
+	[https://developers.geniee.co.jp/en/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-CAReward-For-iOS.html](https://developers.geniee.co.jp/en/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-CAReward-For-iOS.html)
 
 - Tapjoy
 
-	[https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-Tapjoy-For-iOS-english](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-Tapjoy-For-iOS-english)
+	[https://developers.geniee.co.jp/en/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Tapjoy-For-iOS.html](https://developers.geniee.co.jp/en/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Tapjoy-For-iOS.html)
 
 - Vungle
 
-	[https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-Vungle-For-iOS-english](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-Vungle-For-iOS-english)
-
+	[https://developers.geniee.co.jp/en/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Vungle-For-iOS.html](https://developers.geniee.co.jp/en/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Vungle-For-iOS.html)
 
 - Nend
 
-	[https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-CAReward-For-iOS-english](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-Nend-For-iOS-english)
+	[https://developers.geniee.co.jp/en/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Nend-For-iOS.html](https://developers.geniee.co.jp/en/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Nend-For-iOS.html)
 
 - Amoad
 
 	To obtain Amoad SDK please contact your sales representative.
 	
-	[https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-Amoad-For-iOS-english](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-Amoad-For-iOS-english)
+	[https://developers.geniee.co.jp/en/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-AmoAd-For-iOS.html](https://developers.geniee.co.jp/en/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-AmoAd-For-iOS.html)
 
 - TikTok
 
-	[https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-TikTok-For-iOS-english](https://github.com/geniee-ssp/Geniee-iOS-SDK/wiki/RewardVideo-Ad-Integration-ADNW-TikTok-For-iOS-english)
+	[https://developers.geniee.co.jp/en/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-TikTok-For-iOS.html](https://developers.geniee.co.jp/en/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-TikTok-For-iOS.html)

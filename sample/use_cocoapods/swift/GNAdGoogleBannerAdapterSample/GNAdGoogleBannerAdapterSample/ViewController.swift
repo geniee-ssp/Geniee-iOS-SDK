@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         bannerView = DFPBannerView(adSize: kGADAdSizeMediumRectangle)
-        bannerView.adUnitID = "ca-app-pub-5022212395897062/3318297324"
+        bannerView.adUnitID = "MY_ADMANAGER_OR_ADMOB_AD_UNIT_ID"
         bannerView.rootViewController = self
         bannerView.load(DFPRequest())
 

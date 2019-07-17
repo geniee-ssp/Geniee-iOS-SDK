@@ -12,13 +12,9 @@
 		2F69D503210820A00068DBE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F69D501210820A00068DBE2 /* Main.storyboard */; };
 		2F69D505210820A10068DBE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F69D504210820A10068DBE2 /* Assets.xcassets */; };
 		2F69D508210820A10068DBE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F69D506210820A10068DBE2 /* LaunchScreen.storyboard */; };
-		378E7059F9659139A312A86B /* libPods-GNAdGoogleBannerAdapterSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B4E51F9D674800FB7179C7 /* libPods-GNAdGoogleBannerAdapterSample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C00E67B229647F200142AA6 /* GNAdGoogleMediationAdapter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GNAdGoogleMediationAdapter.framework; path = ../../../../GNAdGoogleMediationAdapter/Framework/GNAdGoogleMediationAdapter.framework; sourceTree = "<group>"; };
-		12B681734B042065CD18CDF7 /* Pods-GNAdGoogleBannerAdapterSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdGoogleBannerAdapterSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdGoogleBannerAdapterSample/Pods-GNAdGoogleBannerAdapterSample.debug.xcconfig"; sourceTree = "<group>"; };
-		13B4E51F9D674800FB7179C7 /* libPods-GNAdGoogleBannerAdapterSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GNAdGoogleBannerAdapterSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F69D4FA210820A00068DBE2 /* GNAdGoogleBannerAdapterSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNAdGoogleBannerAdapterSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F69D4FD210820A00068DBE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F69D4FF210820A00068DBE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,7 +22,6 @@
 		2F69D504210820A10068DBE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F69D507210820A10068DBE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F69D509210820A10068DBE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6FBD3AA1282600AA64E5FDBB /* Pods-GNAdGoogleBannerAdapterSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdGoogleBannerAdapterSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdGoogleBannerAdapterSample/Pods-GNAdGoogleBannerAdapterSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,7 +29,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				378E7059F9659139A312A86B /* libPods-GNAdGoogleBannerAdapterSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,11 +38,8 @@
 		2F69D4F1210820A00068DBE2 = {
 			isa = PBXGroup;
 			children = (
-				0C00E67B229647F200142AA6 /* GNAdGoogleMediationAdapter.framework */,
 				2F69D4FC210820A00068DBE2 /* GNAdGoogleBannerAdapterSample */,
 				2F69D4FB210820A00068DBE2 /* Products */,
-				2F69D602210822300068DBE2 /* Frameworks */,
-				58D07693F692DA8B51956CF0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,23 +64,6 @@
 			path = GNAdGoogleBannerAdapterSample;
 			sourceTree = "<group>";
 		};
-		2F69D602210822300068DBE2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				13B4E51F9D674800FB7179C7 /* libPods-GNAdGoogleBannerAdapterSample.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		58D07693F692DA8B51956CF0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				12B681734B042065CD18CDF7 /* Pods-GNAdGoogleBannerAdapterSample.debug.xcconfig */,
-				6FBD3AA1282600AA64E5FDBB /* Pods-GNAdGoogleBannerAdapterSample.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -97,11 +71,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F69D50C210820A10068DBE2 /* Build configuration list for PBXNativeTarget "GNAdGoogleBannerAdapterSample" */;
 			buildPhases = (
-				0E1DF0C000B2D3EB389B85F7 /* [CP] Check Pods Manifest.lock */,
 				2F69D4F6210820A00068DBE2 /* Sources */,
 				2F69D4F7210820A00068DBE2 /* Frameworks */,
 				2F69D4F8210820A00068DBE2 /* Resources */,
-				11B949C125F1B7C785F210A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,44 +129,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0E1DF0C000B2D3EB389B85F7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GNAdGoogleBannerAdapterSample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		11B949C125F1B7C785F210A3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GNAdGoogleBannerAdapterSample/Pods-GNAdGoogleBannerAdapterSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GNAdGoogleBannerAdapterSample/Pods-GNAdGoogleBannerAdapterSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GNAdGoogleBannerAdapterSample/Pods-GNAdGoogleBannerAdapterSample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2F69D4F6210820A00068DBE2 /* Sources */ = {
@@ -346,7 +280,6 @@
 		};
 		2F69D50D210820A10068DBE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 12B681734B042065CD18CDF7 /* Pods-GNAdGoogleBannerAdapterSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -373,7 +306,6 @@
 		};
 		2F69D50E210820A10068DBE2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6FBD3AA1282600AA64E5FDBB /* Pods-GNAdGoogleBannerAdapterSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

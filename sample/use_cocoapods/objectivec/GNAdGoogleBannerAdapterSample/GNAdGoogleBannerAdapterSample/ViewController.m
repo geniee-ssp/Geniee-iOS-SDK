@@ -25,7 +25,7 @@
     [self addBannerViewToView:self.bannerView];
 
     // Replace this ad unit ID with your own ad unit ID.
-    self.bannerView.adUnitID = @"MY_DFP_OR_ADMOB_AD_UNIT_ID";
+    self.bannerView.adUnitID = @"MY_ADMANAGER_OR_ADMOB_AD_UNIT_ID";
     self.bannerView.rootViewController = self;
     DFPRequest *request = [DFPRequest request];
     [self.bannerView loadRequest:request];

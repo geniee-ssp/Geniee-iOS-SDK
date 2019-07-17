@@ -6,7 +6,6 @@ target 'GNAdRewardVideoSample' do
   # use_frameworks!
 
   # Pods for GNAdRewardVideoSample
-  pod 'Google-Mobile-Ads-SDK'
   pod 'Geniee-iOS-SDK'
   pod 'AdColony', '~> 3.3.5'
   pod 'AppLovinSDK','~> 5.1.1'

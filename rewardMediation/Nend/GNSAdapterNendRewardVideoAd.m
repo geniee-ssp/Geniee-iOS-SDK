@@ -36,7 +36,7 @@ static BOOL loggingEnabled = YES;
 #pragma mark - implement GNSRewardVideoAdNetworkConnector
 
 + (NSString *)adapterVersion {
-    return @"3.0.0";
+    return @"3.0.1";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {
