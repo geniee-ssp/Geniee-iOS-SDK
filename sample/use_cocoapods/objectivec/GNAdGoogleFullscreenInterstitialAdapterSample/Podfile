@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'GNAdGoogleFullscreenInterstitialAdapterSample' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for GNAdGoogleFullscreenInterstitialAdapterSample
+  pod 'Google-Mobile-Ads-SDK'
+  pod 'Geniee-iOS-SDK'
+  pod 'Geniee-Google-Mediation-Adapter'
+  pod 'AppLovinSDK','~> 5.1.1'
+  pod 'MaioSDK', '~> 1.4.0'
+  pod 'NendSDK_iOS', '~> 5.0.2'
+  pod 'ZucksAdNetworkSDK', '~> 4.7.8'
+  pod 'VungleSDK-iOS', '~> 6.2.0'
+  pod 'TapjoySDK', '~> 12.0.0'
+  pod 'UnityAds', '~> 2.3.0'
+end
