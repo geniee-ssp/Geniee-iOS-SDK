@@ -1,0 +1,14 @@
+framework module GNAdGoogleMediation {
+  umbrella header "GNAdGoogleMediationAdapter.h"
+
+  export *
+  module * { export * }
+
+  link framework "Foundation"
+  link framework "UIKit"
+
+//  header "GNAdGoogleMediationAdapter.h"
+  header "GNAdGoogleBannerMediationAdapter.h"
+  header "GNAdGoogleFullscreenInterstitialMediationAdapter.h"
+  header "GNAdGoogleRewardMediationAdapter.h"
+}

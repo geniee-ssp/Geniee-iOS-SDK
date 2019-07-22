@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
-#import "GoogleMobileAds/GADCustomEventBanner.h"
-#import "GoogleMobileAds/GADCustomEventBannerDelegate.h"
+@import GoogleMobileAds;
 #import "GNAdSDK/GNAdView.h"
 #import "GNAdSDK/Log4GNAd.h"
 
