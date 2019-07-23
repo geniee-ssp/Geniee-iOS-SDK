@@ -9,7 +9,7 @@
 import UIKit
 import GoogleMobileAds
 
-class ViewController: UIViewController, UITextFieldDelegate, GADInterstitialDelegate {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var loadAdButton: UIButton!
     
@@ -22,6 +22,7 @@ class ViewController: UIViewController, UITextFieldDelegate, GADInterstitialDele
     override func viewDidLoad() {
         super.viewDidLoad()
         unitIdTextField.delegate = self;
+        self.showAdButton.isHidden = true;
     }
     
     func requestInterstitialAd()  {
@@ -34,10 +35,8 @@ class ViewController: UIViewController, UITextFieldDelegate, GADInterstitialDele
             }
         }
         let request = DFPRequest();
-        interstitial.load(request);
         interstitial.delegate = self;
-        self.showAdButton.isHidden = true;
-        self.loadAdButton.isHidden = true;
+        interstitial.load(request);
     }
 
     @IBAction func loadInterstitialAd(_ sender: Any) {
@@ -47,8 +46,9 @@ class ViewController: UIViewController, UITextFieldDelegate, GADInterstitialDele
     @IBAction func showInterstitialAd(_ sender: Any) {
         if interstitial.isReady {
             interstitial.present(fromRootViewController: self)
+            self.showAdButton.isHidden = true;
         } else {
-            NSLog("Ad wasn't ready.");
+            print("Ad wasn't ready.");
         }
     }
     
@@ -59,35 +59,38 @@ class ViewController: UIViewController, UITextFieldDelegate, GADInterstitialDele
         return true;
     }
     
-    //MARK GADInterstitialDelegate
+}
+//MARK GADInterstitialDelegate
+extension ViewController : GADInterstitialDelegate {
     /// Tells the delegate an ad request succeeded.
-    private func interstitialDidReceiveAd(_ ad: DFPInterstitial) {
+    func interstitialDidReceiveAd(_ ad: GADInterstitial) {
         print("interstitialDidReceiveAd")
+        self.showAdButton.isHidden = false;
     }
     
     /// Tells the delegate an ad request failed.
-    private func interstitial(_ ad: DFPInterstitial, didFailToReceiveAdWithError error: GADRequestError) {
+    func interstitial(_ ad: GADInterstitial, didFailToReceiveAdWithError error: GADRequestError) {
         print("interstitial:didFailToReceiveAdWithError: \(error.localizedDescription)")
     }
     
     /// Tells the delegate that an interstitial will be presented.
-    private func interstitialWillPresentScreen(_ ad: DFPInterstitial) {
+    func interstitialWillPresentScreen(_ ad: GADInterstitial) {
         print("interstitialWillPresentScreen")
     }
     
     /// Tells the delegate the interstitial is to be animated off the screen.
-    private func interstitialWillDismissScreen(_ ad: DFPInterstitial) {
+    func interstitialWillDismissScreen(_ ad: GADInterstitial) {
         print("interstitialWillDismissScreen")
     }
     
     /// Tells the delegate the interstitial had been animated off the screen.
-    private func interstitialDidDismissScreen(_ ad: DFPInterstitial) {
+    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
         print("interstitialDidDismissScreen")
     }
     
     /// Tells the delegate that a user click will open another app
     /// (such as the App Store), backgrounding the current app.
-    private func interstitialWillLeaveApplication(_ ad: DFPInterstitial) {
+    func interstitialWillLeaveApplication(_ ad: GADInterstitial) {
         print("interstitialWillLeaveApplication")
     }
 }

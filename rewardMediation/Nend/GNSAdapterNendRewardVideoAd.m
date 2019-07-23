@@ -36,7 +36,7 @@ static BOOL loggingEnabled = YES;
 #pragma mark - implement GNSRewardVideoAdNetworkConnector
 
 + (NSString *)adapterVersion {
-    return @"3.0.1";
+    return @"3.0.2";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {
@@ -164,9 +164,9 @@ static BOOL loggingEnabled = YES;
     [self.connector adapterDidStartPlayingRewardVideoAd:self];
 }
 
-- (void)nadRewardVideoAdDidStopPlaying:(NADRewardedVideo *)nadRewardedVideoAd
+- (void)nadRewardVideoAdDidClose:(NADRewardedVideo *)nadRewardedVideoAd
 {
-    [self AllLog:@"nadRewardVideoAdDidStopPlaying"];
+    [self AllLog:@"nadRewardVideoAdDidClose"];
     [self.connector adapterDidCloseAd:self];
 }
 

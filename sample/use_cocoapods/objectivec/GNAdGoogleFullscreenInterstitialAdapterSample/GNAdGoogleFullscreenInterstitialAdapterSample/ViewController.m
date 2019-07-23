@@ -27,7 +27,6 @@
     self.interstitial.delegate = self;
     DFPRequest *request = [DFPRequest request];
     [self.interstitial loadRequest:request];
-    _showAdButton.hidden = YES;
 }
 
 - (IBAction)requestAd:(id)sender {
@@ -37,6 +36,7 @@
 - (IBAction)showAd:(id)sender {
     if (self.interstitial.isReady) {
         [self.interstitial presentFromRootViewController:self];
+        _showAdButton.hidden = YES;
     }
 }
 

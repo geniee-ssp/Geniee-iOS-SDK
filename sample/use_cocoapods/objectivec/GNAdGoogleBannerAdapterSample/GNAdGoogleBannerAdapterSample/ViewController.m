@@ -6,7 +6,6 @@
 @import GoogleMobileAds;
 
 #import "ViewController.h"
-#import <GNAdGoogleMediationAdapter/GNAdGoogleRewardMediationAdapter.h>
 
 @interface ViewController()
 
