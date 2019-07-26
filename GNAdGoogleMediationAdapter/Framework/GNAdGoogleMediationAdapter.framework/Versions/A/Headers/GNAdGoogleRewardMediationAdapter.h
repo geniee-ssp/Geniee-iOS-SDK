@@ -4,7 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <GoogleMobileAds/GoogleMobileAds.h>
+@import GoogleMobileAds;
 #import "GNAdSDK/GNSRewardVideoAd.h"
 #import "GNAdSDK/GNSRequest.h"
 #import "GNAdSDK/GNSAdReward.h"

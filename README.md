@@ -13,9 +13,9 @@
 |SDK| Version |
 |:--|:--|
 |GNAdSDK| 5.1.4 |
-|rewardMediation|3.0.1|
+|rewardMediation|3.0.2|
 |fullscreenMediation|3.0.0|
-|GNAdGoogleMediationAdapter|5.1.5|
+|GNAdGoogleMediationAdapter|5.1.6|
 
 ### [Ad Network(RewardVideo Mediation)](https://developers.geniee.co.jp/ios/reward/)
 
