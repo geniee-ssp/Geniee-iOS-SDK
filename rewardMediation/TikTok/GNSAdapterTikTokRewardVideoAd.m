@@ -36,7 +36,7 @@ static BOOL loggingEnabled = YES;
 }
 
 + (NSString *)adapterVersion {
-    return @"3.0.2";
+    return @"3.0.3";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {
@@ -148,6 +148,7 @@ static BOOL loggingEnabled = YES;
 }
 
 - (void)rewardedVideoAdVideoDidLoad:(BURewardedVideoAd *)rewardedVideoAd {
+    [self deleteTimer];
     
     [self ALLog:@"rewardedVideoAdVideoDidLoad data load success"];
     
@@ -177,6 +178,7 @@ static BOOL loggingEnabled = YES;
 }
 
 - (void)rewardedVideoAd:(BURewardedVideoAd *)rewardedVideoAd didFailWithError:(NSError *)error {
+    [self deleteTimer];
     [self ALLog:[NSString stringWithFormat:@"didFailWithError: %@", error.localizedDescription]];
     
     self.isAdAvailable = NO;
