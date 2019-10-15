@@ -36,7 +36,7 @@ static BOOL loggingEnabled = YES;
 }
 
 + (NSString *)adapterVersion {
-    return @"3.0.3";
+    return @"3.1.0";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {
@@ -118,7 +118,6 @@ static BOOL loggingEnabled = YES;
     
     BURewardedVideoModel *model = [[BURewardedVideoModel alloc] init];
     model.userId = @"geniee";
-    model.isShowDownloadBar = NO;
     self.rewardedVideoAd = [[BURewardedVideoAd alloc] initWithSlotID:extras.slotId rewardedVideoModel:model];
     self.rewardedVideoAd.delegate = self;
     [self.rewardedVideoAd loadAdData];
@@ -173,8 +172,6 @@ static BOOL loggingEnabled = YES;
 
 - (void)rewardedVideoAdDidClick:(BURewardedVideoAd *)rewardedVideoAd {
     [self ALLog:@"rewardedVideoAd video did click"];
-    
-    [self.connector adapterDidClickAd:self];
 }
 
 - (void)rewardedVideoAd:(BURewardedVideoAd *)rewardedVideoAd didFailWithError:(NSError *)error {
