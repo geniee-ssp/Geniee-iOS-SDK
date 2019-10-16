@@ -6,12 +6,12 @@ target 'GNAdRewardVideoSample' do
   #use_frameworks!
   pod 'Geniee-iOS-SDK'
   pod 'AdColony', '~> 3.3.5'
-  pod 'AppLovinSDK','~> 5.1.1'
+  pod 'AppLovinSDK','~> 6.9.4'
   pod 'MaioSDK', '~> 1.4.0'
-  pod 'NendSDK_iOS', '~> 5.0.2'
-  pod 'TapjoySDK', '~> 12.2.1'
-  pod 'UnityAds', '~> 2.3.0'
-  pod 'VungleSDK-iOS', '~> 6.2.0'
-  pod 'Bytedance-UnionAD', '~> 1.9.9.5'
+  pod 'NendSDK_iOS', '~> 5.3.0'
+  pod 'TapjoySDK', '~> 12.3.4'
+  pod 'UnityAds', '~> 3.3.0'
+  pod 'VungleSDK-iOS', '~> 6.4.5'
+  pod 'Bytedance-UnionAD', '~> 2.4.6.7'
   
 end
