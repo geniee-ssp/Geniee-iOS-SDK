@@ -1,4 +1,4 @@
-framework module GNAdGoogleMediation {
+framework module GNAdGoogleMediationAdapter {
   umbrella header "GNAdGoogleMediationAdapter.h"
 
   export *
