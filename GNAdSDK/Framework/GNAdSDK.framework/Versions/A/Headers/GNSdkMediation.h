@@ -39,9 +39,6 @@ typedef enum : NSInteger{
 /// Initiates the request to fetch the ad.
 - (void)loadRequest:(GNSRequest *)request withZoneID:(NSString *)zoneID;
 
-/// unavailable method.
-- (instancetype) init __attribute__((unavailable("init not available. use sharedInstance")));
-
 /// Indicates if the receiver is ready to show.
 - (BOOL)canShow;
 

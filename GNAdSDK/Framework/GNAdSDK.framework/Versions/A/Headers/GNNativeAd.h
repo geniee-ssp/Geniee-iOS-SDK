@@ -7,7 +7,7 @@
 #import "GNNativeAdRequest.h"
 #import <UIKit/UIKit.h>
 @class GNSNativeVideoPlayerView;
-
+@class GNSRewardVideoPlayerView;
 /**
  * The `GNNativeAd` class is used to manage native ad.
  */
@@ -36,6 +36,12 @@
 @property(nonatomic, readonly, copy) NSString *optout_image_url;
 @property(nonatomic, readonly, copy) NSString *optout_url;
 @property(nonatomic, readonly, copy) NSString *vast_xml;
+@property(nonatomic, readonly, copy) NSString *rewardType;
+@property(nonatomic, copy) NSDecimalNumber *rewardAmount;
+@property(nonatomic, readonly, assign) NSInteger view_limit;
+@property(nonatomic, readonly, assign) NSInteger view_rate;
+@property(nonatomic, readonly, assign) NSInteger view_reset;
+@property(nonatomic, readonly, assign) double video_ratio;
 
 /**
  * Initializes a GNNativeAd.
@@ -70,8 +76,17 @@
 - (GNSNativeVideoPlayerView*)getVideoView:(CGRect)frame;
 
 /**
+ * Get the GNSNativeVideoPlayerView.
+ */
+- (GNSRewardVideoPlayerView*)getRewardVideoView:(CGRect)frame;
+
+/**
  * Get the existence of video advertisement.
  */
 - (BOOL)hasVideoContent;
 
+/**
+ * Check if it is reward video
+ */
+- (BOOL)isNativeRewardVideo;
 @end
