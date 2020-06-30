@@ -24,4 +24,6 @@ typedef enum {
 
 @interface GNSAdConstants : NSObject
 
++ (NSString*)getSdkVersion;
+
 @end

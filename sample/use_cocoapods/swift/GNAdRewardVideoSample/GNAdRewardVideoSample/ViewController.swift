@@ -45,7 +45,7 @@ class ViewController: UIViewController, UITextFieldDelegate, GNSRewardVideoAdDel
                 showAlert(title: "Please input zone id.",
                           message: "Required zone id to request ad.")
             }
-            GNSRewardVideoAd.sharedInstance().load(request, withZoneID: idStr)
+            GNSRewardVideoAd.sharedInstance()?.load(request, withZoneID: idStr, isRTB: true)
         }
     }
     

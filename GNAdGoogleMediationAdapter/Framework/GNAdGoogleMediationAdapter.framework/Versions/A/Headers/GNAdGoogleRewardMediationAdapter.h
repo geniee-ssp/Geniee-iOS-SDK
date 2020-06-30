@@ -5,15 +5,7 @@
 
 #import <Foundation/Foundation.h>
 @import GoogleMobileAds;
-#import "GNAdSDK/GNSRewardVideoAd.h"
-#import "GNAdSDK/GNSRequest.h"
-#import "GNAdSDK/GNSAdReward.h"
-#import "GNAdSDK/GNSRewardVideoAdDelegate.h"
 
-@interface GNAdGoogleRewardMediationAdapter : NSObject <GADMRewardBasedVideoAdNetworkAdapter, GNSRewardVideoAdDelegate>
-
-@property(nonatomic, weak) id<GADMRewardBasedVideoAdNetworkConnector> connector;
-@property(nonatomic, weak) NSString *appId;
-@property(nonatomic, weak) NSString *sLogLevel;
+@interface GNAdGoogleRewardMediationAdapter : NSObject <GADMediationAdapter>
 
 @end

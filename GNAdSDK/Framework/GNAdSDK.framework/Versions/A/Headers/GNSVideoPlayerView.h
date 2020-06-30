@@ -4,6 +4,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GNSInternalAVPlayerViewController.h"
 
 @class GNSVideoPlayerView;
 
@@ -22,10 +23,15 @@
 
 // Sent when an video ad okay completed.
 - (void)onVideoPlayComplete:(GNSVideoPlayerView*)view;
+
+// Sent when a video is closed
+- (void)onVideoClosed:(GNSVideoPlayerView*)view;
 @end
 
 
 @interface GNSVideoPlayerView : UIView
+
+@property (nonatomic, retain) GNSInternalAVPlayerViewController* viewController;
 
 // Delegate object that receives state change notifications.
 // Remember to nil the delegate before deallocating this object.
@@ -75,6 +81,10 @@
 - (void)setVisibilityCurrentTimeLabel:(BOOL)isShow;
 // Set the showing state of the replay button.
 - (void)setVisibilityReplayButton:(BOOL)isShow;
+// Get the showing state of the close button.
+- (BOOL)getVisibilityCloseButton;
+// Set the showing state of the close button.
+- (void)setVisibilityCloseButton:(BOOL)isShow;
 #pragma mark media info.
 - (int)getMediaFileWidth;
 - (int)getMediaFileHeight;

@@ -4,6 +4,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GNSVideoPlayerView.h"
 @class GNNativeAd;
 
 // Delegate for receiving state change messages from a GNSVideoPlayerView such as
@@ -21,10 +22,15 @@
 
 // Sent when an video ad okay completed.
 - (void)onVideoPlayComplete:(GNSNativeVideoPlayerView*)view;
+
+// Sent when an video ad okay closed.
+- (void)onVideoClosed:(GNSNativeVideoPlayerView*)view;
 @end
 
 
 @interface GNSNativeVideoPlayerView : UIView
+
+@property(nonatomic, retain) GNSVideoPlayerView* playerView;
 
 // Delegate object that receives state change notifications.
 // Remember to nil the delegate before deallocating this object.
@@ -63,6 +69,8 @@
 - (void)setVisibilityProgressbar:(BOOL)isShow;
 // Set the showing state of the replay button.
 - (void)setVisibilityReplayButton:(BOOL)isShow;
+// Set the showing state of the close button.
+- (void)setVisibilityCloseButton:(BOOL)isShow;
 #pragma mark media info.
 - (int)getMediaFileWidth;
 - (int)getMediaFileHeight;
