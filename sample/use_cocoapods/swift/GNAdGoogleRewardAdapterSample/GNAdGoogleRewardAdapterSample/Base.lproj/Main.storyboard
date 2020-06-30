@@ -1,63 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kdp-Zk-Noy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="Jnx-tF-9Sy">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GNAdDFPRewardAdapterSample" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1U5-95-DLi"/>
-                        <viewControllerLayoutGuide type="bottom" id="BoA-UG-tBi"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <navigationController id="kdp-Zk-Noy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZPX-Zv-zQL">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZQB-Qc-wCe" kind="relationship" relationship="rootViewController" id="pkd-fA-Ftg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R3I-Fe-yjv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1257" y="131"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="Iga-ax-IJu">
+            <objects>
+                <viewController id="ZQB-Qc-wCe" customClass="MainViewController" customModule="GNAdGoogleRewardAdapterSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ACI-hV-UiB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nOi-aw-tdq">
-                                <rect key="frame" x="16" y="54" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Llk-tR-Xso">
-                                <rect key="frame" x="16" y="86" width="100" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Load"/>
-                                <connections>
-                                    <action selector="touchLoadButton:" destination="BYZ-38-t0r" eventType="touchDown" id="goz-9R-6Di"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hl1-uV-qex">
-                                <rect key="frame" x="259" y="92" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Show"/>
-                                <connections>
-                                    <action selector="touchShowButton:" destination="BYZ-38-t0r" eventType="touchDown" id="gKb-Ip-BoV"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Xx8-MJ-DQG">
+                                <rect key="frame" x="30" y="401" width="354" height="94"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="YOUR GOOGLE UNIT ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TTj-rI-pZo">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOJ-h1-ax9">
+                                        <rect key="frame" x="0.0" y="34" width="354" height="30"/>
+                                        <state key="normal" title="Regacy API"/>
+                                        <connections>
+                                            <action selector="downButtonRegacyApi:" destination="ZQB-Qc-wCe" eventType="touchDown" id="Hhh-Xq-yyS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Jh-F6-zgq">
+                                        <rect key="frame" x="0.0" y="64" width="354" height="30"/>
+                                        <state key="normal" title="New API"/>
+                                        <connections>
+                                            <action selector="downButtonNewApi:" destination="ZQB-Qc-wCe" eventType="touchDown" id="RtM-YX-B6V"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="axD-4V-pnG" firstAttribute="trailing" secondItem="Xx8-MJ-DQG" secondAttribute="trailing" constant="30" id="5AY-hq-NSt"/>
+                            <constraint firstItem="Xx8-MJ-DQG" firstAttribute="centerX" secondItem="ACI-hV-UiB" secondAttribute="centerX" id="fWU-IU-v9u"/>
+                            <constraint firstItem="Xx8-MJ-DQG" firstAttribute="centerY" secondItem="ACI-hV-UiB" secondAttribute="centerY" id="lro-ze-Hl0"/>
+                            <constraint firstItem="Xx8-MJ-DQG" firstAttribute="leading" secondItem="axD-4V-pnG" secondAttribute="leading" constant="30" id="sPg-ui-7Ru"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="axD-4V-pnG"/>
                     </view>
+                    <navigationItem key="navigationItem" id="jLK-Ul-T9q"/>
                     <connections>
-                        <outlet property="loadButton" destination="Llk-tR-Xso" id="i7v-HL-Rgw"/>
-                        <outlet property="showButton" destination="hl1-uV-qex" id="JyI-ya-O35"/>
-                        <outlet property="unitIdTextField" destination="nOi-aw-tdq" id="9VR-Ld-1Mr"/>
+                        <outlet property="adUnitIdView" destination="TTj-rI-pZo" id="aKC-Kd-bZC"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qmq-N4-pus" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="-446" y="131"/>
+        </scene>
+        <!--Reward Regacy View Controller-->
+        <scene sceneID="39h-FH-2kS">
+            <objects>
+                <viewController storyboardIdentifier="RewardRegacyViewController" id="2cP-fY-SFt" customClass="RewardRegacyViewController" customModule="GNAdGoogleRewardAdapterSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rS2-Hw-eti">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bXE-PA-gUZ">
+                                <rect key="frame" x="30" y="408" width="354" height="80.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regacy API" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVP-Ag-puK">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cZ-jK-bsB">
+                                        <rect key="frame" x="0.0" y="20.5" width="354" height="30"/>
+                                        <state key="normal" title="Load"/>
+                                        <connections>
+                                            <action selector="downButtonLoad:" destination="2cP-fY-SFt" eventType="touchDown" id="g0i-Ti-J0p"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yld-IE-chw">
+                                        <rect key="frame" x="0.0" y="50.5" width="354" height="30"/>
+                                        <state key="normal" title="Show"/>
+                                        <connections>
+                                            <action selector="downButtonShow:" destination="2cP-fY-SFt" eventType="touchDown" id="TwG-UW-aUD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bXE-PA-gUZ" firstAttribute="centerX" secondItem="rS2-Hw-eti" secondAttribute="centerX" id="1eC-VS-T0d"/>
+                            <constraint firstItem="bXE-PA-gUZ" firstAttribute="centerY" secondItem="rS2-Hw-eti" secondAttribute="centerY" id="b7D-Bh-l3L"/>
+                            <constraint firstItem="bXE-PA-gUZ" firstAttribute="leading" secondItem="LrA-wd-c1t" secondAttribute="leading" constant="30" id="nhv-Mh-hDW"/>
+                            <constraint firstItem="LrA-wd-c1t" firstAttribute="trailing" secondItem="bXE-PA-gUZ" secondAttribute="trailing" constant="30" id="rU5-bC-CZo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LrA-wd-c1t"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonLoad" destination="7cZ-jK-bsB" id="bkT-Sz-IfX"/>
+                        <outlet property="buttonShow" destination="Yld-IE-chw" id="B84-n1-WRg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fzZ-tj-tWg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="455" y="-210"/>
+        </scene>
+        <!--Reward New View Controller-->
+        <scene sceneID="GDl-oM-fhC">
+            <objects>
+                <viewController storyboardIdentifier="RewardNewViewController" id="FiB-cb-an2" customClass="RewardNewViewController" customModule="GNAdGoogleRewardAdapterSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y3e-ZZ-xq2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Zpl-lg-U31">
+                                <rect key="frame" x="30" y="408" width="354" height="80.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New API" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vhu-iv-waG">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27j-13-CgI">
+                                        <rect key="frame" x="0.0" y="20.5" width="354" height="30"/>
+                                        <state key="normal" title="Load"/>
+                                        <connections>
+                                            <action selector="downButtonLoad:" destination="FiB-cb-an2" eventType="touchDown" id="DYS-74-elZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeX-Jm-sDI">
+                                        <rect key="frame" x="0.0" y="50.5" width="354" height="30"/>
+                                        <state key="normal" title="Show"/>
+                                        <connections>
+                                            <action selector="downButtonShow:" destination="FiB-cb-an2" eventType="touchDown" id="7NX-tK-cDp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Zpl-lg-U31" firstAttribute="centerX" secondItem="Y3e-ZZ-xq2" secondAttribute="centerX" id="OME-I5-KQ6"/>
+                            <constraint firstItem="5DE-iz-XuK" firstAttribute="trailing" secondItem="Zpl-lg-U31" secondAttribute="trailing" constant="30" id="SlW-Dz-Rm1"/>
+                            <constraint firstItem="Zpl-lg-U31" firstAttribute="leading" secondItem="5DE-iz-XuK" secondAttribute="leading" constant="30" id="oyV-jd-hPC"/>
+                            <constraint firstItem="Zpl-lg-U31" firstAttribute="centerY" secondItem="Y3e-ZZ-xq2" secondAttribute="centerY" id="sGQ-EK-8OY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5DE-iz-XuK"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonLoad" destination="27j-13-CgI" id="Vu0-Jj-b3s"/>
+                        <outlet property="buttonShow" destination="KeX-Jm-sDI" id="VYa-2B-IOm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gOx-ET-ZEg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="454" y="489"/>
         </scene>
     </scenes>
 </document>

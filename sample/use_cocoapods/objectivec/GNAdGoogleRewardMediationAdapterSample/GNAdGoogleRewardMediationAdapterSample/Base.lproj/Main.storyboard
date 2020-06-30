@@ -1,85 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s9j-HV-t03">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="4IB-Zc-6Dv">
+            <objects>
+                <navigationController id="s9j-HV-t03" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="PFP-xL-Z68">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nu1-LH-d6n"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q3N-fI-WKg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1257" y="131"/>
+        </scene>
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVl-1D-ABE">
-                                <rect key="frame" x="147" y="368.5" width="81" height="30"/>
-                                <state key="normal" title="Show Video"/>
-                                <connections>
-                                    <action selector="showVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="feL-E0-reG"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Google Reward Adapter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6L-pV-Hdi">
-                                <rect key="frame" x="97" y="70" width="181.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izh-e9-PLq">
-                                <rect key="frame" x="152" y="318.5" width="71" height="30"/>
-                                <state key="normal" title="Play Again"/>
-                                <connections>
-                                    <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZXB-Vk-G4N"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ad Unit Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUY-BV-c1f">
-                                <rect key="frame" x="16" y="160" width="75" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S9h-yd-V0O">
-                                <rect key="frame" x="16" y="196" width="343" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TNK-32-ib8">
+                                <rect key="frame" x="30" y="401" width="354" height="94"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="YOUR GOOGLE UNIT ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gS2-Dq-Nxo">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6O-wK-lpt">
+                                        <rect key="frame" x="0.0" y="34" width="354" height="30"/>
+                                        <state key="normal" title="Regacy API"/>
+                                        <connections>
+                                            <action selector="downButtonRegacyApi:" destination="BYZ-38-t0r" eventType="touchDown" id="AD7-Ql-AzR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvU-Vy-9E1">
+                                        <rect key="frame" x="0.0" y="64" width="354" height="30"/>
+                                        <state key="normal" title="New API"/>
+                                        <connections>
+                                            <action selector="downButtonNewApi:" destination="BYZ-38-t0r" eventType="touchDown" id="vgb-sS-rFd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="tVl-1D-ABE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="9wZ-CJ-bJ5"/>
-                            <constraint firstItem="tVl-1D-ABE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Icf-cU-v39"/>
-                            <constraint firstItem="S9h-yd-V0O" firstAttribute="top" secondItem="cUY-BV-c1f" secondAttribute="bottom" constant="15" id="MSI-nv-w2O"/>
-                            <constraint firstItem="cUY-BV-c1f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Mrb-dC-YaT"/>
-                            <constraint firstItem="S9h-yd-V0O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="O2Y-tu-n9f"/>
-                            <constraint firstItem="d6L-pV-Hdi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="blw-m0-sVS"/>
-                            <constraint firstItem="d6L-pV-Hdi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="eIS-jV-FrI"/>
-                            <constraint firstItem="izh-e9-PLq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ksT-fU-VjP"/>
-                            <constraint firstItem="cUY-BV-c1f" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="140" id="nDA-OF-NPc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="S9h-yd-V0O" secondAttribute="trailing" id="ne7-qF-I2s"/>
-                            <constraint firstItem="izh-e9-PLq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yMP-Wa-NMR"/>
+                            <constraint firstItem="TNK-32-ib8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="0HI-yU-mSD"/>
+                            <constraint firstItem="TNK-32-ib8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GCj-66-Ebs"/>
+                            <constraint firstItem="TNK-32-ib8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Hr3-J4-tL5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TNK-32-ib8" secondAttribute="trailing" constant="30" id="J9g-WL-aUq"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="l3q-Ay-3eP"/>
                     <connections>
-                        <outlet property="ShowVideoButton" destination="8bC-Xf-vdC" id="dhL-Ua-IP3"/>
-                        <outlet property="dfpAdUnitIdLabel" destination="S9h-yd-V0O" id="AlJ-ls-dHG"/>
-                        <outlet property="playAgainButton" destination="izh-e9-PLq" id="qel-he-dQI"/>
-                        <outlet property="showVideoButton" destination="tVl-1D-ABE" id="GaR-o5-oAI"/>
-                        <outlet property="zoneIDText" destination="S9h-yd-V0O" id="Lly-Ae-0tv"/>
+                        <outlet property="adUnitIdView" destination="gS2-Dq-Nxo" id="fee-Ev-34F"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="119.1904047976012"/>
+            <point key="canvasLocation" x="-446" y="131"/>
+        </scene>
+        <!--Reward Regacy View Controller-->
+        <scene sceneID="6Wa-jF-l1N">
+            <objects>
+                <viewController storyboardIdentifier="RewardRegacyViewController" id="ye7-kT-Hzr" customClass="RewardRegacyViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iyh-cN-Yyo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="7sn-74-Ev3">
+                                <rect key="frame" x="30" y="408" width="354" height="80.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regacy API" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ojl-j4-wrK">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asa-Q0-Hhs">
+                                        <rect key="frame" x="0.0" y="20.5" width="354" height="30"/>
+                                        <state key="normal" title="Load"/>
+                                        <connections>
+                                            <action selector="downButtonLoad:" destination="ye7-kT-Hzr" eventType="touchDown" id="2m1-2s-Up1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G48-I2-83b">
+                                        <rect key="frame" x="0.0" y="50.5" width="354" height="30"/>
+                                        <state key="normal" title="Show"/>
+                                        <connections>
+                                            <action selector="downButtonShow:" destination="ye7-kT-Hzr" eventType="touchDown" id="Dzr-yd-Usu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7sn-74-Ev3" firstAttribute="centerX" secondItem="iyh-cN-Yyo" secondAttribute="centerX" id="NKP-b2-Zcn"/>
+                            <constraint firstItem="jiC-kx-VIA" firstAttribute="trailing" secondItem="7sn-74-Ev3" secondAttribute="trailing" constant="30" id="Nbv-bu-X2e"/>
+                            <constraint firstItem="7sn-74-Ev3" firstAttribute="leading" secondItem="jiC-kx-VIA" secondAttribute="leading" constant="30" id="ePR-V5-W1h"/>
+                            <constraint firstItem="7sn-74-Ev3" firstAttribute="centerY" secondItem="iyh-cN-Yyo" secondAttribute="centerY" id="maL-DF-epv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jiC-kx-VIA"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonLoad" destination="asa-Q0-Hhs" id="TOJ-Bf-Wlh"/>
+                        <outlet property="buttonShow" destination="G48-I2-83b" id="CeA-FV-GRY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O7c-0p-QWk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="455" y="-210"/>
+        </scene>
+        <!--Reward New View Controller-->
+        <scene sceneID="ykU-9T-c7g">
+            <objects>
+                <viewController storyboardIdentifier="RewardNewViewController" id="tEu-0u-DlC" customClass="RewardNewViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f4Q-kV-yBY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cph-u0-MFg">
+                                <rect key="frame" x="30" y="408" width="354" height="80.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New API" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBV-VK-gvE">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjm-lX-lPa">
+                                        <rect key="frame" x="0.0" y="20.5" width="354" height="30"/>
+                                        <state key="normal" title="Load"/>
+                                        <connections>
+                                            <action selector="downButtonLoad:" destination="tEu-0u-DlC" eventType="touchDown" id="umo-Yv-3TI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHV-J7-EQW">
+                                        <rect key="frame" x="0.0" y="50.5" width="354" height="30"/>
+                                        <state key="normal" title="Show"/>
+                                        <connections>
+                                            <action selector="downButtonShow:" destination="tEu-0u-DlC" eventType="touchDown" id="Mnx-Sq-3tl"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9WC-Zw-Q4J" firstAttribute="trailing" secondItem="cph-u0-MFg" secondAttribute="trailing" constant="30" id="DS8-Fb-UlW"/>
+                            <constraint firstItem="cph-u0-MFg" firstAttribute="centerY" secondItem="f4Q-kV-yBY" secondAttribute="centerY" id="Q1v-PN-AV4"/>
+                            <constraint firstItem="cph-u0-MFg" firstAttribute="centerX" secondItem="f4Q-kV-yBY" secondAttribute="centerX" id="Urn-pL-5hx"/>
+                            <constraint firstItem="cph-u0-MFg" firstAttribute="leading" secondItem="9WC-Zw-Q4J" secondAttribute="leading" constant="30" id="ysM-eD-aKx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9WC-Zw-Q4J"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonLoad" destination="cjm-lX-lPa" id="MpI-zp-gG5"/>
+                        <outlet property="buttonShow" destination="OHV-J7-EQW" id="oLS-ug-UhS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mgs-Xx-lUe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="454" y="489"/>
         </scene>
     </scenes>
 </document>

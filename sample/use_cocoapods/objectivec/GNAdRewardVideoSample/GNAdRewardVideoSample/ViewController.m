@@ -53,8 +53,7 @@ static const NSInteger GameLength = 5;
     //request.geoLocationEnable = NO;
     request.GNAdlogPriority = GNLogPriorityInfo;
     
-    [[GNSRewardVideoAd sharedInstance] loadRequest:request
-                                        withZoneID:_zoneIDText.text];
+    [[GNSRewardVideoAd sharedInstance] loadRequest:request withZoneID:_zoneIDText.text isRTB:true];
 }
 
 - (void)startNewGame {
