@@ -4,14 +4,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DDXMLDocument.h"
-#import "DDXML.h"
 
 // http://www.iab.net/media/file/VASTv3.0.pdf
 
 @interface GNSInternalVASTXmlParser : NSObject
-
-@property (strong, nonatomic) DDXMLDocument *document;    //VAST xml
 
 @property (nonatomic, copy) NSURL *mediaFileURL;
 @property (nonatomic, copy) NSArray *impressionURLs;
