@@ -12,7 +12,7 @@
 
 |SDK| Version |
 |:--|:--|
-|GNAdSDK| 7.0.0 |
+|GNAdSDK| 7.0.1 |
 |rewardMediation|3.1.0|
 |fullscreenMediation|3.0.0|
 |GNAdGoogleMediationAdapter|7.0.0|
