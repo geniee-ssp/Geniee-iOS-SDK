@@ -156,4 +156,8 @@ typedef enum {
 + (GNAdSizeType)adSizeTypeWithAdSize:(CGSize)adSize;
 - (void)releaseAdViews;
 
+#pragma mark set/get contentInsetAdjustmentBehavior of WKScrollView in WKWebView
+- (void)setScrollViewContentInsetAdjustmentBehavior:(UIScrollViewContentInsetAdjustmentBehavior)adjustmentBehavior API_AVAILABLE(ios(11.0),tvos(11.0));
+- (UIScrollViewContentInsetAdjustmentBehavior)getScrollViewContentInsetAdjustmentBehavior API_AVAILABLE(ios(11.0),tvos(11.0));
+
 @end
