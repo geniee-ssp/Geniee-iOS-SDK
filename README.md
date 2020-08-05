@@ -12,10 +12,10 @@
 
 |SDK| Version |
 |:--|:--|
-|GNAdSDK| 7.0.1 |
+|GNAdSDK| 7.0.2|
 |rewardMediation|3.1.0|
 |fullscreenMediation|3.0.0|
-|GNAdGoogleMediationAdapter|7.0.0|
+|GNAdGoogleMediationAdapter|7.0.1|
 
 ### [Ad Network(RewardVideo Mediation)](https://developers.geniee.co.jp/ios/reward/)
 
