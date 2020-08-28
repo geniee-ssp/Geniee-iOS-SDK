@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF3940DE24EF5BBA0089CDB8 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3940DC24EF5BBA0089CDB8 /* Util.m */; };
 		FE637E0D1A470B0A00CF2223 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE637E0C1A470B0A00CF2223 /* main.m */; };
 		FE637E101A470B0A00CF2223 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE637E0F1A470B0A00CF2223 /* AppDelegate.m */; };
 		FE637E131A470B0A00CF2223 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE637E121A470B0A00CF2223 /* ViewController.m */; };
@@ -31,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		0C3E0BF8228ACA90002B1880 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF3940DC24EF5BBA0089CDB8 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		EF3940DD24EF5BBA0089CDB8 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		FE637E071A470B0A00CF2223 /* GNAdGoogleBannerAdapterSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNAdGoogleBannerAdapterSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE637E0B1A470B0A00CF2223 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE637E0C1A470B0A00CF2223 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -78,6 +81,8 @@
 				FE637E0F1A470B0A00CF2223 /* AppDelegate.m */,
 				FE637E111A470B0A00CF2223 /* ViewController.h */,
 				FE637E121A470B0A00CF2223 /* ViewController.m */,
+				EF3940DD24EF5BBA0089CDB8 /* Util.h */,
+				EF3940DC24EF5BBA0089CDB8 /* Util.m */,
 				FE637E141A470B0A00CF2223 /* Main.storyboard */,
 				FE637E171A470B0A00CF2223 /* Images.xcassets */,
 				FE637E191A470B0A00CF2223 /* LaunchScreen.xib */,
@@ -174,6 +179,7 @@
 				FE637E131A470B0A00CF2223 /* ViewController.m in Sources */,
 				FE637E101A470B0A00CF2223 /* AppDelegate.m in Sources */,
 				FE637E0D1A470B0A00CF2223 /* main.m in Sources */,
+				EF3940DE24EF5BBA0089CDB8 /* Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +325,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/GNAdGoogleBannerAdapterSample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
@@ -348,6 +355,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/GNAdGoogleBannerAdapterSample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (

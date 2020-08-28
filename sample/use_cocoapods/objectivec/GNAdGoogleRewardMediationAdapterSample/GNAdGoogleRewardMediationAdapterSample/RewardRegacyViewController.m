@@ -29,7 +29,7 @@
     _buttonShow.enabled = NO;
 
     DFPRequest *request = [DFPRequest request];
-    //request.testDevices = @[[Util admobDeviceID]];
+    request.testDevices = @[[Util admobDeviceID]];
     [[GADRewardBasedVideoAd sharedInstance] loadRequest:request withAdUnitID:_unitId];
 }
 

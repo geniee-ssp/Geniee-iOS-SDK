@@ -26,7 +26,7 @@ class RewardRegacyViewController: UIViewController {
         buttonShow.isEnabled = false
 
         let request = DFPRequest()
-        //request.testDevices = [ Util.admobDeviceID() ]
+        request.testDevices = [ Util.admobDeviceID() ]
         GADRewardBasedVideoAd.sharedInstance().load(request, withAdUnitID: unitId)
     }
     

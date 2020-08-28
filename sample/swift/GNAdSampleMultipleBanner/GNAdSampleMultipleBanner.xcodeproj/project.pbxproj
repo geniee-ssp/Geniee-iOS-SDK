@@ -36,6 +36,7 @@
 		B6C9614C1A4D26AA00E7CB15 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6C9614B1A4D26AA00E7CB15 /* Images.xcassets */; };
 		B6C9614F1A4D26AA00E7CB15 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6C9614D1A4D26AA00E7CB15 /* LaunchScreen.xib */; };
 		B6D438121A55380800C439C2 /* GNQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D438111A55380800C439C2 /* GNQueue.swift */; };
+		EF5D903E24E3E7EE00857B13 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5D903D24E3E7EE00857B13 /* AppTrackingTransparency.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +80,7 @@
 		B6C9614B1A4D26AA00E7CB15 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B6C9614E1A4D26AA00E7CB15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B6D438111A55380800C439C2 /* GNQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GNQueue.swift; sourceTree = "<group>"; };
+		EF5D903D24E3E7EE00857B13 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B646FA8E1AAB421A0021547C /* Foundation.framework in Frameworks */,
+				EF5D903E24E3E7EE00857B13 /* AppTrackingTransparency.framework in Frameworks */,
 				B646FA8C1AAB42120021547C /* MessageUI.framework in Frameworks */,
 				B646FA8A1AAB420C0021547C /* QuartzCore.framework in Frameworks */,
 				B646FA881AAB42040021547C /* CoreMedia.framework in Frameworks */,
@@ -118,6 +121,7 @@
 		B646FA721AAB411C0021547C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF5D903D24E3E7EE00857B13 /* AppTrackingTransparency.framework */,
 				B646FA8D1AAB421A0021547C /* Foundation.framework */,
 				B646FA8B1AAB42120021547C /* MessageUI.framework */,
 				B646FA891AAB420C0021547C /* QuartzCore.framework */,
@@ -310,6 +314,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
