@@ -1,5 +1,11 @@
 # Geniee iOS SDK
 
+## Important information
+
+GNAdSDK is supported for version 8 and above, Xcode 12 and above.
+If you want to use a version lower than Xcode12, please use GNAd SDK version 7.
+
+
 ## Manual Link
 
 ### [日本語](SDK-Manual-ja.md)
@@ -44,3 +50,20 @@
 | [UnityAds](https://developers.geniee.co.jp/ios/fullscreen-interstitial/mediation/FullscreenInterstitial-Ad-Integration-ADNW-UnityAds-For-iOS.html) | 2.3.0 |
 | [Vungle](https://developers.geniee.co.jp/ios/fullscreen-interstitial/mediation/FullscreenInterstitial-Ad-Integration-ADNW-Vungle-For-iOS.html) | 6.2.0 |
 | [Imobile](https://developers.geniee.co.jp/ios/fullscreen-interstitial/mediation/FullscreenInterstitial-Ad-Integration-ADNW-Imobile-For-iOS.html) | 2.0.29 |
+
+
+## List of versions created framework with Xcode
+
+### GNAdSDK
+
+| SDK version | Xcode version |
+|:--|:--|
+| 8.0.0 | 12beta6 |
+| 7.0.2 | 11.3.1 |
+
+### GNAdGoogleMediationAdapter
+
+| SDK version | Xcode version |
+|:--|:--|
+| 8.0.0 | 12beta6 |
+| 7.0.1 | 11.3.1 |
