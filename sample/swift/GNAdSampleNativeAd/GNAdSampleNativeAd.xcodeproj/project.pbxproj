@@ -37,6 +37,7 @@
 		EF30488021CA17A400967834 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3047E321CA17A400967834 /* NSString+DDXML.m */; };
 		EF3048BD21CA18B200967834 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3048BB21CA18B200967834 /* ImageTableViewCell.swift */; };
 		EF3048BE21CA18B200967834 /* ImageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3048BC21CA18B200967834 /* ImageTableViewController.swift */; };
+		EF5D903C24E3E7DE00857B13 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5D903B24E3E7DE00857B13 /* AppTrackingTransparency.framework */; };
 		EFC52D4721D5AE9B003F4EF4 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC52D4521D5AE9B003F4EF4 /* VideoTableViewCell.swift */; };
 		EFC52D4821D5AE9B003F4EF4 /* VideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC52D4621D5AE9B003F4EF4 /* VideoTableViewController.swift */; };
 		EFC52D4A21D5D483003F4EF4 /* SimpleUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC52D4921D5D483003F4EF4 /* SimpleUIButton.swift */; };
@@ -85,6 +86,7 @@
 		EF3048BB21CA18B200967834 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		EF3048BC21CA18B200967834 /* ImageTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTableViewController.swift; sourceTree = "<group>"; };
 		EF3048C021CA19C600967834 /* GNAdSampleNativeAd-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GNAdSampleNativeAd-Bridging-Header.h"; sourceTree = "<group>"; };
+		EF5D903B24E3E7DE00857B13 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 		EFC52D4521D5AE9B003F4EF4 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		EFC52D4621D5AE9B003F4EF4 /* VideoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTableViewController.swift; sourceTree = "<group>"; };
 		EFC52D4921D5D483003F4EF4 /* SimpleUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleUIButton.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF30487921CA17A400967834 /* GNAdSDK.framework in Frameworks */,
+				EF5D903C24E3E7DE00857B13 /* AppTrackingTransparency.framework in Frameworks */,
 				EF3047C821CA162100967834 /* UIKit.framework in Frameworks */,
 				EF3047C621CA161900967834 /* AdSupport.framework in Frameworks */,
 				EF3047C421CA160C00967834 /* CoreGraphics.framework in Frameworks */,
@@ -176,6 +179,7 @@
 		EF3047AC21CA159600967834 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF5D903B24E3E7DE00857B13 /* AppTrackingTransparency.framework */,
 				EF3047C721CA162100967834 /* UIKit.framework */,
 				EF3047C521CA161900967834 /* AdSupport.framework */,
 				EF3047C321CA160C00967834 /* CoreGraphics.framework */,

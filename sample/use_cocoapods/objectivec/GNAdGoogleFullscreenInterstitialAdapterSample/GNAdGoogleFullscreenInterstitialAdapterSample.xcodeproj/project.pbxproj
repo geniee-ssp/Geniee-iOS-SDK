@@ -22,6 +22,7 @@
 		2F57D55421FF13F2007D61E5 /* GNSAdapterMaioFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F57D54B21FF13F2007D61E5 /* GNSAdapterMaioFullscreenInterstitialAd.m */; };
 		2F57D55521FF13F2007D61E5 /* GNSAdapterNendFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F57D54F21FF13F2007D61E5 /* GNSAdapterNendFullscreenInterstitialAd.m */; };
 		2F57D55621FF13F2007D61E5 /* GNSAdapterZucksFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F57D55121FF13F2007D61E5 /* GNSAdapterZucksFullscreenInterstitialAd.m */; };
+		EF3940E124EF5BF20089CDB8 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3940E024EF5BF20089CDB8 /* Util.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,6 +66,8 @@
 		2F57D54F21FF13F2007D61E5 /* GNSAdapterNendFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterNendFullscreenInterstitialAd.m; sourceTree = "<group>"; };
 		2F57D55121FF13F2007D61E5 /* GNSAdapterZucksFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterZucksFullscreenInterstitialAd.m; sourceTree = "<group>"; };
 		2F57D55221FF13F2007D61E5 /* GNSAdapterZucksFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterZucksFullscreenInterstitialAd.h; sourceTree = "<group>"; };
+		EF3940DF24EF5BF20089CDB8 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		EF3940E024EF5BF20089CDB8 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +143,8 @@
 				194B25FD21C7A675003DD030 /* AppDelegate.m */,
 				194B25FF21C7A675003DD030 /* ViewController.h */,
 				194B260021C7A675003DD030 /* ViewController.m */,
+				EF3940DF24EF5BF20089CDB8 /* Util.h */,
+				EF3940E024EF5BF20089CDB8 /* Util.m */,
 				194B260221C7A675003DD030 /* Main.storyboard */,
 				194B260521C7A676003DD030 /* Assets.xcassets */,
 				194B260721C7A676003DD030 /* LaunchScreen.storyboard */,
@@ -291,6 +296,7 @@
 				2F57D55621FF13F2007D61E5 /* GNSAdapterZucksFullscreenInterstitialAd.m in Sources */,
 				2F57D55421FF13F2007D61E5 /* GNSAdapterMaioFullscreenInterstitialAd.m in Sources */,
 				2F57D55521FF13F2007D61E5 /* GNSAdapterNendFullscreenInterstitialAd.m in Sources */,
+				EF3940E124EF5BF20089CDB8 /* Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +457,7 @@
 					"\"$(SRCROOT)/../../../../GNAdGoogleMediationAdapter/Framework\"",
 				);
 				INFOPLIST_FILE = GNAdGoogleFullscreenInterstitialAdapterSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,6 +491,7 @@
 					"\"$(SRCROOT)/../../../../GNAdGoogleMediationAdapter/Framework\"",
 				);
 				INFOPLIST_FILE = GNAdGoogleFullscreenInterstitialAdapterSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

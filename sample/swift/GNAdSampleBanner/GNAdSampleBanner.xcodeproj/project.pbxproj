@@ -33,6 +33,7 @@
 		B6BAEAC81A4CF7AA006A21AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BAEAC71A4CF7AA006A21AE /* CoreGraphics.framework */; };
 		B6BAEACA1A4CF7B6006A21AE /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BAEAC91A4CF7B6006A21AE /* AdSupport.framework */; };
 		B6BAEACC1A4CF7C1006A21AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6BAEACB1A4CF7C1006A21AE /* UIKit.framework */; };
+		EF5D904024E3E7FD00857B13 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5D903F24E3E7FD00857B13 /* AppTrackingTransparency.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		B6BAEAC91A4CF7B6006A21AE /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		B6BAEACB1A4CF7C1006A21AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B6BAEACD1A4CF882006A21AE /* GNAdSampleBanner-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GNAdSampleBanner-Bridging-Header.h"; sourceTree = "<group>"; };
+		EF5D903F24E3E7FD00857B13 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6BAEACC1A4CF7C1006A21AE /* UIKit.framework in Frameworks */,
+				EF5D904024E3E7FD00857B13 /* AppTrackingTransparency.framework in Frameworks */,
 				B6BAEACA1A4CF7B6006A21AE /* AdSupport.framework in Frameworks */,
 				B6BAEAC81A4CF7AA006A21AE /* CoreGraphics.framework in Frameworks */,
 				B6BAEAC61A4CF792006A21AE /* CoreLocation.framework in Frameworks */,
@@ -223,6 +226,7 @@
 		B6BAEAB01A4CF6CF006A21AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF5D903F24E3E7FD00857B13 /* AppTrackingTransparency.framework */,
 				B6BAEACB1A4CF7C1006A21AE /* UIKit.framework */,
 				B6BAEAC91A4CF7B6006A21AE /* AdSupport.framework */,
 				B6BAEAC71A4CF7AA006A21AE /* CoreGraphics.framework */,
@@ -451,6 +455,7 @@
 					"${SDKROOT}/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = GNAdSampleBanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-lxml2";
@@ -477,6 +482,7 @@
 					"${SDKROOT}/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = GNAdSampleBanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-lxml2";

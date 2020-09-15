@@ -3,6 +3,7 @@
 //
 
 
+#import <GNAdSDK/GNAdSDK.h>
 #import <GNAdSDK/GNAdViewRequest.h>
 #import <GNAdSDK/GNAdView.h>
 

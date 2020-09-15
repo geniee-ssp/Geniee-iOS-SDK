@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Util.h"
 @import GoogleMobileAds;
 
 @interface ViewController ()<GADInterstitialDelegate, UITextFieldDelegate>
@@ -26,6 +27,7 @@
     self.interstitial = [[DFPInterstitial alloc]initWithAdUnitID:_dfpAdUnitIdLabel.text];
     self.interstitial.delegate = self;
     DFPRequest *request = [DFPRequest request];
+    request.testDevices = @[[Util admobDeviceID]];
     [self.interstitial loadRequest:request];
 }
 

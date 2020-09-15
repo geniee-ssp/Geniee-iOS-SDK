@@ -14,7 +14,7 @@
 #define DEFAULT_HIDDEN_PROGRESSBAR NO
 #define DEFAULT_HIDDEN_CURRENT_TIME_LABEL YES
 #define DEFAULT_HIDDEN_REPLAY_BUTTON NO
-#define DEFAULT_HIDDEN_CLOSE_BUTTON NO
+#define DEFAULT_HIDDEN_CLOSE_BUTTON YES
 
 @protocol GNSInternalAVPlayerViewControllerDelegate <NSObject>
 - (CGFloat)getCurrentInviewSizeRatio:(BOOL)isCurrent;

@@ -10,77 +10,133 @@ import UIKit
 import GoogleMobileAds
 
 class ViewController: UIViewController {
-    var bannerView: DFPBannerView!
+
+    @IBOutlet weak var unitIdView: UITextField!
+    @IBOutlet weak var adSizeView: UIPickerView!
+    
+    private var adSizeList: [String] = []
+    private var adSizeIndex = 0
+    private var bannerView: DFPBannerView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        bannerView = DFPBannerView(adSize: kGADAdSizeMediumRectangle)
-        bannerView.adUnitID = "MY_ADMANAGER_OR_ADMOB_AD_UNIT_ID"
-        bannerView.rootViewController = self
-        bannerView.load(DFPRequest())
-
-        addBannerViewToView(bannerView)
+        adSizeView.delegate = self
+        adSizeView.dataSource = self
+        unitIdView.delegate = self
+        setAdSizeArray()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    private func setAdSizeArray() {
+        adSizeList.append("Select AdSizeType")
+        adSizeList.append("Banner")             // 320x50
+        adSizeList.append("MediumRectangle")    // 300x250
+    }
+
+    private func getAdSizeType(_ index: Int) -> GADAdSize {
+        var adSizeType: GADAdSize = kGADAdSizeInvalid
+        switch (index) {
+            case 1:
+                adSizeType = kGADAdSizeBanner
+                break
+            case 2:
+                adSizeType = kGADAdSizeMediumRectangle
+                break
+            default:
+                adSizeType = kGADAdSizeInvalid
+                break
+        }
+        return adSizeType
+    }
+
+    @IBAction func loadDownButton(_ sender: Any) {
+        if (unitIdView.text?.count == 0) {
+            return
+        }
+        if (adSizeIndex == 0) {
+            return
+        }
+        if (self.bannerView != nil) {
+            self.bannerView.removeFromSuperview()
+            self.bannerView.delegate = nil
+            self.bannerView = nil
+        }
+
+        // Instantiate the banner view with your desired banner size.
+        bannerView = DFPBannerView(adSize: self.getAdSizeType(adSizeIndex))
+        self.addBannerViewToView(self.bannerView)
+        self.bannerView.adUnitID = unitIdView.text
+        self.bannerView.delegate = self
+        self.bannerView.rootViewController = self
+        let request = DFPRequest()
+        request.testDevices = [ Util.admobDeviceID() ]
+        bannerView.load(request)
     }
     
-    /// Tells the delegate an ad request loaded an ad.
-    func adViewDidReceiveAd(_ bannerView: DFPBannerView) {
-        print("adViewDidReceiveAd")
-    }
-    
-    /// Tells the delegate an ad request failed.
-    func adView(_ bannerView: DFPBannerView,
-                didFailToReceiveAdWithError error: GADRequestError) {
-        print("adView:didFailToReceiveAdWithError: \(error.localizedDescription)")
-    }
-    
+
     func addBannerViewToView(_ bannerView: UIView) {
         bannerView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(bannerView)
-        if #available(iOS 11.0, *) {
-            positionBannerAtBottomOfSafeArea(bannerView)
-        }
-        else {
-            positionBannerAtBottomOfView(bannerView)
-        }
-    }
-    
-    @available (iOS 11, *)
-    func positionBannerAtBottomOfSafeArea(_ bannerView: UIView) {
-        // Position the banner. Stick it to the bottom of the Safe Area.
-        // Centered horizontally.
-        let guide: UILayoutGuide = view.safeAreaLayoutGuide
-        
-        NSLayoutConstraint.activate(
-            [bannerView.centerXAnchor.constraint(equalTo: guide.centerXAnchor),
-             bannerView.centerYAnchor.constraint(equalTo: guide.centerYAnchor)]
-        )
-    }
-    
-    func positionBannerAtBottomOfView(_ bannerView: UIView) {
-        // Center the banner horizontally.
-        view.addConstraint(NSLayoutConstraint(item: bannerView,
-                                              attribute: .centerX,
-                                              relatedBy: .equal,
-                                              toItem: view,
-                                              attribute: .centerX,
-                                              multiplier: 1,
-                                              constant: 0))
-        view.addConstraint(NSLayoutConstraint(item: bannerView,
-                                              attribute: .centerY,
-                                              relatedBy: .equal,
-                                              toItem: view,
-                                              attribute: .centerY,
-                                              multiplier: 1,
-                                              constant: 0))
-    }
 
+        view.addConstraint(NSLayoutConstraint(item: bannerView,
+                                              attribute: .centerX,
+                                              relatedBy: .equal,
+                                              toItem: view,
+                                              attribute: .centerX,
+                                              multiplier: 1,
+                                              constant: 0))
+        view.addConstraint(NSLayoutConstraint(item: bannerView,
+                                              attribute: .bottom,
+                                              relatedBy: .equal,
+                                              toItem: view,
+                                              attribute: .bottom,
+                                              multiplier: 1,
+                                              constant: -20))
+    }
 
 }
+// MARK: - GADBannerViewDelegate
+extension ViewController: GADBannerViewDelegate {
+    /// Tells the delegate an ad request loaded an ad.
+    func adViewDidReceiveAd(_ bannerView: GADBannerView) {
+        print("adViewDidReceiveAd")
+    }
 
+    /// Tells the delegate an ad request failed.
+    func adView(_ bannerView: GADBannerView,
+                didFailToReceiveAdWithError error: GADRequestError) {
+        print("adView:didFailToReceiveAdWithError: \(error.localizedDescription)")
+    }
+
+}
+// MARK: - UIPickerViewDataSource
+extension ViewController: UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return adSizeList.count
+    }
+
+}
+// MARK: - UIPickerViewDelegate
+extension ViewController: UIPickerViewDelegate {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return adSizeList[row]
+    }
+
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        adSizeIndex = pickerView.selectedRow(inComponent: 0)
+    }
+
+}
+// MARK: - UITextFieldDelegate
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // Hide the keyboard when press return key in a UITextField
+        textField.resignFirstResponder()
+        return true
+    }
+
+}

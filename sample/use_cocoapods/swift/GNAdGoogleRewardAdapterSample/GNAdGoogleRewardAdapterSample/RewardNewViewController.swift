@@ -23,7 +23,7 @@ class RewardNewViewController: UIViewController {
     @IBAction func downButtonLoad(_ sender: Any) {
         rewardedAd = GADRewardedAd(adUnitID: unitId)
         let request = GADRequest()
-        //request.testDevices = [ Util.admobDeviceID() ]
+        request.testDevices = [ Util.admobDeviceID() ]
         rewardedAd.load(request) { error in
             self.buttonLoad.isEnabled = true
             if let error = error {

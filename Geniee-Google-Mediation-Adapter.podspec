@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Geniee-Google-Mediation-Adapter"
-  s.version      = "7.0.4"
+  s.version      = "8.0.0"
   s.summary      = "An SDK for ad menetization with the Geniee Network"
   s.homepage     = "https://geniee.co.jp"
 
@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios, "8.0"
+  s.platform     = :ios, "9.0"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
- s.source       = { :git => "https://github.com/geniee-ssp/Geniee-iOS-SDK.git", :tag => "v.7.0.4" }
+ s.source       = { :git => "https://github.com/geniee-ssp/Geniee-iOS-SDK.git", :tag => "v.8.0.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -75,7 +75,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.frameworks = "UIKit", "AdSupport", "CoreGraphics", "CoreLocation", "CoreTelephony", "SystemConfiguration", "AVFoundation", "AudioToolbox", "CoreFoundation", "CoreMedia", "QuartzCore", "MessageUI", "Foundation"
+  # s.frameworks = "UIKit", "AdSupport", "CoreGraphics", "CoreLocation", "CoreTelephony", "SystemConfiguration", "AVFoundation", "AudioToolbox", "CoreFoundation", "CoreMedia", "QuartzCore", "MessageUI", "Foundation", "AppTrackingTransparency"
 
   # s.library   = "xml2"
   # s.libraries = "iconv", "xml2"

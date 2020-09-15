@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		2F69D503210820A00068DBE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F69D501210820A00068DBE2 /* Main.storyboard */; };
 		2F69D505210820A10068DBE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F69D504210820A10068DBE2 /* Assets.xcassets */; };
 		2F69D508210820A10068DBE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F69D506210820A10068DBE2 /* LaunchScreen.storyboard */; };
+		EF3940E724EF5CC00089CDB8 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3940E624EF5CC00089CDB8 /* Util.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		2F69D504210820A10068DBE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F69D507210820A10068DBE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F69D509210820A10068DBE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF3940E524EF5CC00089CDB8 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		EF3940E624EF5CC00089CDB8 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		EF72CFCA24E4DC20003714A2 /* GNAdGoogleBannerAdapterSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GNAdGoogleBannerAdapterSample-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +42,7 @@
 		2F69D4F1210820A00068DBE2 = {
 			isa = PBXGroup;
 			children = (
+				EF72CFCA24E4DC20003714A2 /* GNAdGoogleBannerAdapterSample-Bridging-Header.h */,
 				2F69D4FC210820A00068DBE2 /* GNAdGoogleBannerAdapterSample */,
 				2F69D4FB210820A00068DBE2 /* Products */,
 			);
@@ -56,6 +61,8 @@
 			children = (
 				2F69D4FD210820A00068DBE2 /* AppDelegate.swift */,
 				2F69D4FF210820A00068DBE2 /* ViewController.swift */,
+				EF3940E524EF5CC00089CDB8 /* Util.h */,
+				EF3940E624EF5CC00089CDB8 /* Util.m */,
 				2F69D501210820A00068DBE2 /* Main.storyboard */,
 				2F69D504210820A10068DBE2 /* Assets.xcassets */,
 				2F69D506210820A10068DBE2 /* LaunchScreen.storyboard */,
@@ -137,6 +144,7 @@
 			files = (
 				2F69D500210820A00068DBE2 /* ViewController.swift in Sources */,
 				2F69D4FE210820A00068DBE2 /* AppDelegate.swift in Sources */,
+				EF3940E724EF5CC00089CDB8 /* Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +307,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.geniee.sample.GNAdGoogleBannerAdapterSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GNAdGoogleBannerAdapterSample-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -325,6 +334,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.geniee.sample.GNAdGoogleBannerAdapterSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GNAdGoogleBannerAdapterSample-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

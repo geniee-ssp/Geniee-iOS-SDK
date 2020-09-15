@@ -27,7 +27,7 @@
 - (IBAction)downButtonLoad:(id)sender {
     _rewardedAd = [[GADRewardedAd alloc] initWithAdUnitID:_unitId];
     GADRequest *request = [GADRequest request];
-    //request.testDevices = @[[Util admobDeviceID]];
+    request.testDevices = @[[Util admobDeviceID]];
     [_rewardedAd loadRequest:request completionHandler:^(GADRequestError * _Nullable error) {
         self.buttonLoad.enabled = YES;
         if (error) {
