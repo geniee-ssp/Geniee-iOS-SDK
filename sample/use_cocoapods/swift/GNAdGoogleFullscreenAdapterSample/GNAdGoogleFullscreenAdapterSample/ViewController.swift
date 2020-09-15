@@ -35,6 +35,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             }
         }
         let request = DFPRequest();
+        request.testDevices = [ Util.admobDeviceID() ]
         interstitial.delegate = self;
         interstitial.load(request);
     }

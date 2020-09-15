@@ -6,30 +6,100 @@
 @import GoogleMobileAds;
 
 #import "ViewController.h"
+#import "Util.h"
 
 @interface ViewController()
+
+@property (weak, nonatomic) IBOutlet UITextField *unitIdView;
+@property (weak, nonatomic) IBOutlet UIPickerView *adSizeView;
 
 @property(nonatomic, strong) DFPBannerView *bannerView;
 
 @end
 
-@implementation ViewController
+@implementation ViewController {
+    NSMutableArray* adSizeArray;
+    int adSizeIndex;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-    // Instantiate the banner view with your desired banner size.
-    self.bannerView = [[DFPBannerView alloc] initWithAdSize:kGADAdSizeMediumRectangle];
-    [self addBannerViewToView:self.bannerView];
 
-    // Replace this ad unit ID with your own ad unit ID.
-    self.bannerView.adUnitID = @"MY_ADMANAGER_OR_ADMOB_AD_UNIT_ID";
+    adSizeIndex = 0;
+    _unitIdView.delegate = self;
+    _adSizeView.delegate = self;
+    [self setAdSizeArray];    
+}
+
+- (void)setAdSizeArray {
+    adSizeArray = [NSMutableArray array];
+    [adSizeArray addObject:@"Select AdSizeType"];
+    [adSizeArray addObject:@"Banner"];              // 320x50
+    [adSizeArray addObject:@"MediumRectangle"];     // 300x250
+}
+
+- (GADAdSize)getAdSizeType:(int)index {
+    GADAdSize adSizeType = kGADAdSizeInvalid;
+    switch (index) {
+        case 1:
+            adSizeType = kGADAdSizeBanner;
+            break;
+        case 2:
+            adSizeType = kGADAdSizeMediumRectangle;
+            break;
+        default:
+            adSizeType = kGADAdSizeInvalid;
+            break;
+    }
+    return adSizeType;
+}
+
+- (IBAction)loadDownButton:(id)sender {
+    if (_unitIdView.text.length == 0) {
+        return;
+    }
+    if (adSizeIndex == 0) {
+        return;
+    }
+    if (self.bannerView != nil) {
+        [self.bannerView removeFromSuperview];
+        self.bannerView.delegate = nil;
+        self.bannerView = nil;
+    }
+
+    // Instantiate the banner view with your desired banner size.
+    self.bannerView = [[DFPBannerView alloc] initWithAdSize:[self getAdSizeType:adSizeIndex]];
+    [self addBannerViewToView:self.bannerView];
+    self.bannerView.adUnitID = _unitIdView.text;
+    self.bannerView.delegate = self;
     self.bannerView.rootViewController = self;
     DFPRequest *request = [DFPRequest request];
+    request.testDevices = @[[Util admobDeviceID]];
     [self.bannerView loadRequest:request];
-    
 }
+
+
+#pragma mark - view positioning
+-(void)addBannerViewToView:(UIView *_Nonnull)bannerView {
+    self.bannerView.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:self.bannerView];
+
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:bannerView
+                                                          attribute:NSLayoutAttributeCenterX
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeCenterX
+                                                         multiplier:1
+                                                           constant:0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:bannerView
+                                                          attribute:NSLayoutAttributeBottom
+                                                          relatedBy:NSLayoutRelationEqual
+                                                             toItem:self.view
+                                                          attribute:NSLayoutAttributeBottom
+                                                         multiplier:1
+                                                           constant:-20]];
+}
+
 
 #pragma mark GADBannerViewDelegate impl
 
@@ -38,54 +108,37 @@
     NSLog(@"Received ad successfully");
 }
 
-- (void)adView:(GADBannerView *)view
-didFailToReceiveAdWithError:(GADRequestError *)error {
+- (void)adView:(GADBannerView *)view didFailToReceiveAdWithError:(GADRequestError *)error {
     NSLog(@"Failed to receive ad with error: %@", [error localizedFailureReason]);
 }
 
 
-#pragma mark - view positioning
+#pragma mark UIPickerViewDelegate.
 
--(void)addBannerViewToView:(UIView *_Nonnull)bannerView {
-    self.bannerView.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.view addSubview:self.bannerView];
-    if (@available(ios 11.0, *)) {
-        [self positionBannerViewAtBottomOfSafeArea:bannerView];
-    } else {
-        [self positionBannerViewAtBottomOfView:bannerView];
-    }
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return 1;
 }
 
-- (void)positionBannerViewAtBottomOfSafeArea:(UIView *_Nonnull)bannerView NS_AVAILABLE_IOS(11.0) {
-    // Position the banner. Stick it to the bottom of the Safe Area.
-    // Centered horizontally.
-    UILayoutGuide *guide = self.view.safeAreaLayoutGuide;
-    [NSLayoutConstraint activateConstraints:@[
-                                              [bannerView.centerXAnchor constraintEqualToAnchor:guide.centerXAnchor],
-                                              [bannerView.centerYAnchor constraintEqualToAnchor:guide.centerYAnchor]
-                                              ]];
+- (NSInteger)pickerView: (UIPickerView*)pView numberOfRowsInComponent:(NSInteger) component {
+    NSInteger cnt = [adSizeArray count];
+    return cnt;
 }
 
-- (void)positionBannerViewAtBottomOfView:(UIView *_Nonnull)bannerView {
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:bannerView
-                                                          attribute:NSLayoutAttributeCenterX
-                                                          relatedBy:NSLayoutRelationEqual
-                                                             toItem:self.view
-                                                          attribute:NSLayoutAttributeCenterX
-                                                         multiplier:1
-                                                           constant:0]];
-    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:bannerView
-                                                          attribute:NSLayoutAttributeCenterY
-                                                          relatedBy:NSLayoutRelationEqual
-                                                             toItem:self.view
-                                                          attribute:NSLayoutAttributeCenterY
-                                                         multiplier:1
-                                                           constant:0]];
+- (NSString*)pickerView: (UIPickerView*) pView titleForRow:(NSInteger) row forComponent:(NSInteger)componet
+{
+    return [adSizeArray objectAtIndex:row];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    adSizeIndex = (int)[pickerView selectedRowInComponent:0];
+}
+
+
+#pragma mark - UITextFieldDelegate
+-(BOOL) textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
 }
 
 @end

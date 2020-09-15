@@ -37,6 +37,7 @@
 		B6858D6B1C806F8B00462735 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858D5F1C806F8B00462735 /* DDXMLElement.m */; };
 		B6858D6C1C806F8B00462735 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858D611C806F8B00462735 /* DDXMLNode.m */; };
 		B6858D6D1C806F8B00462735 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858D661C806F8B00462735 /* Reachability.m */; };
+		EF5D904824E3E83F00857B13 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5D904724E3E83F00857B13 /* AppTrackingTransparency.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +86,7 @@
 		B6858D631C806F8B00462735 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
 		B6858D651C806F8B00462735 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		B6858D661C806F8B00462735 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		EF5D904724E3E83F00857B13 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B61D1CBC1AA9D73700727331 /* Foundation.framework in Frameworks */,
+				EF5D904824E3E83F00857B13 /* AppTrackingTransparency.framework in Frameworks */,
 				B61D1CBA1AA9D72F00727331 /* MessageUI.framework in Frameworks */,
 				B61D1CB81AA9D72900727331 /* QuartzCore.framework in Frameworks */,
 				B61D1CB61AA9D72100727331 /* CoreMedia.framework in Frameworks */,
@@ -162,6 +165,7 @@
 		B61D1CA01AA9D63D00727331 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF5D904724E3E83F00857B13 /* AppTrackingTransparency.framework */,
 				B61D1CBB1AA9D73700727331 /* Foundation.framework */,
 				B61D1CB91AA9D72F00727331 /* MessageUI.framework */,
 				B61D1CB71AA9D72900727331 /* QuartzCore.framework */,
@@ -317,6 +321,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -486,6 +491,7 @@
 					"${SDKROOT}/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = GNAdSampleMultipleBanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-lxml2";
@@ -510,6 +516,7 @@
 					"${SDKROOT}/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = GNAdSampleMultipleBanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-lxml2";

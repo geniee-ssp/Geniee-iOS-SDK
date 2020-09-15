@@ -4,6 +4,7 @@
 //
 
 #import "AppDelegate.h"
+#import <GNAdSDK/GNAdSDK.h>
 
 void uncaughtExceptionHandler(NSException *exception) {
     NSLog(@"CRASH: %@", exception);
@@ -22,6 +23,7 @@ void uncaughtExceptionHandler(NSException *exception) {
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
     // Override point for customization after application launch.
+    [GNAdSDK initSDK];
     return YES;
 }
 

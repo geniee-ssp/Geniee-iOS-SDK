@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF5D904624E3E83100857B13 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5D904524E3E83100857B13 /* AppTrackingTransparency.framework */; };
 		EF98655621BA14C600C737D0 /* GNQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = EF98655421BA14C500C737D0 /* GNQueue.m */; };
 		EF98655A21BA14E100C737D0 /* MyCellData.m in Sources */ = {isa = PBXBuildFile; fileRef = EF98655921BA14E100C737D0 /* MyCellData.m */; };
 		EF98681921BA153900C737D0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EF98656421BA153800C737D0 /* Reachability.m */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF5D904524E3E83100857B13 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 		EF98655421BA14C500C737D0 /* GNQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNQueue.m; sourceTree = "<group>"; };
 		EF98655521BA14C500C737D0 /* GNQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNQueue.h; sourceTree = "<group>"; };
 		EF98655821BA14E100C737D0 /* MyCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCellData.h; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF986A4821BA16E500C737D0 /* GNAdSDK.framework in Frameworks */,
+				EF5D904624E3E83100857B13 /* AppTrackingTransparency.framework in Frameworks */,
 				EF986A4721BA16D500C737D0 /* UIKit.framework in Frameworks */,
 				EF986A4521BA16CD00C737D0 /* AdSupport.framework in Frameworks */,
 				EF986A4321BA16C400C737D0 /* CoreGraphics.framework in Frameworks */,
@@ -228,6 +231,7 @@
 		EF986A2B21BA165600C737D0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF5D904524E3E83100857B13 /* AppTrackingTransparency.framework */,
 				EF986A4621BA16D500C737D0 /* UIKit.framework */,
 				EF986A4421BA16CD00C737D0 /* AdSupport.framework */,
 				EF986A4221BA16C400C737D0 /* CoreGraphics.framework */,

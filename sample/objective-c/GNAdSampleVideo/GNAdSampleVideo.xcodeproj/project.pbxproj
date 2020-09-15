@@ -14,6 +14,7 @@
 		B6858D141C806D2E00462735 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858D081C806D2E00462735 /* DDXMLElement.m */; };
 		B6858D151C806D2E00462735 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858D0A1C806D2E00462735 /* DDXMLNode.m */; };
 		B6858D161C806D2E00462735 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858D0F1C806D2E00462735 /* Reachability.m */; };
+		EF5D904424E3E82300857B13 /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5D904324E3E82300857B13 /* AppTrackingTransparency.framework */; };
 		FE099ED21A46DB1500A5455B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE099ED11A46DB1500A5455B /* main.m */; };
 		FE099ED51A46DB1500A5455B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE099ED41A46DB1500A5455B /* AppDelegate.m */; };
 		FE099ED81A46DB1500A5455B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE099ED71A46DB1500A5455B /* ViewController.m */; };
@@ -54,6 +55,7 @@
 		B6858D0C1C806D2E00462735 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
 		B6858D0E1C806D2E00462735 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		B6858D0F1C806D2E00462735 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		EF5D904324E3E82300857B13 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 		FE099ECC1A46DB1500A5455B /* GNAdSampleVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNAdSampleVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE099ED01A46DB1500A5455B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE099ED11A46DB1500A5455B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE099F371A46F61000A5455B /* Foundation.framework in Frameworks */,
+				EF5D904424E3E82300857B13 /* AppTrackingTransparency.framework in Frameworks */,
 				FE099F351A46F60B00A5455B /* MessageUI.framework in Frameworks */,
 				FE099F331A46F60500A5455B /* QuartzCore.framework in Frameworks */,
 				FE099F311A46F5FF00A5455B /* CoreMedia.framework in Frameworks */,
@@ -235,6 +238,7 @@
 		FE099F1B1A46DF7B00A5455B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF5D904324E3E82300857B13 /* AppTrackingTransparency.framework */,
 				FE099F361A46F61000A5455B /* Foundation.framework */,
 				FE099F341A46F60B00A5455B /* MessageUI.framework */,
 				FE099F321A46F60500A5455B /* QuartzCore.framework */,
@@ -302,6 +306,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -470,7 +475,7 @@
 					"${SDKROOT}/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = GNAdSampleVideo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-lxml2";
@@ -495,7 +500,7 @@
 					"${SDKROOT}/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = GNAdSampleVideo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-lxml2";
