@@ -58,7 +58,7 @@ If you want to use a version lower than Xcode12, please use GNAd SDK version 7.
 
 | SDK version | Xcode version |
 |:--|:--|
-| 8.0.1 | 12 |
+| 8.0.1 | 12.0.1 |
 | 8.0.0 | 12beta6 |
 | 7.0.2 | 11.3.1 |
 
@@ -66,6 +66,6 @@ If you want to use a version lower than Xcode12, please use GNAd SDK version 7.
 
 | SDK version | Xcode version |
 |:--|:--|
-| 8.0.1 | 12 |
+| 8.0.1 | 12.0.1 |
 | 8.0.0 | 12beta6 |
 | 7.0.1 | 11.3.1 |
