@@ -18,10 +18,10 @@ If you want to use a version lower than Xcode12, please use GNAd SDK version 7.
 
 |SDK| Version |
 |:--|:--|
-|GNAdSDK| 8.0.1|
+|GNAdSDK| 8.1.0|
 |rewardMediation|3.1.0|
 |fullscreenMediation|3.0.0|
-|GNAdGoogleMediationAdapter|8.0.1|
+|GNAdGoogleMediationAdapter|8.1.0|
 
 ### [Ad Network(RewardVideo Mediation)](https://developers.geniee.co.jp/ios/reward/)
 
@@ -58,6 +58,7 @@ If you want to use a version lower than Xcode12, please use GNAd SDK version 7.
 
 | SDK version | Xcode version |
 |:--|:--|
+| 8.1.0 | 12.0.1 |
 | 8.0.1 | 12.0.1 |
 | 8.0.0 | 12beta6 |
 | 7.0.2 | 11.3.1 |
@@ -66,6 +67,7 @@ If you want to use a version lower than Xcode12, please use GNAd SDK version 7.
 
 | SDK version | Xcode version |
 |:--|:--|
+| 8.1.0 | 12.0.1 |
 | 8.0.1 | 12.0.1 |
 | 8.0.0 | 12beta6 |
 | 7.0.1 | 11.3.1 |
