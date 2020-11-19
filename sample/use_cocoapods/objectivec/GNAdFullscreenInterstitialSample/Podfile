@@ -6,7 +6,7 @@ target 'GNAdFullscreenInterstitialSample' do
   # use_frameworks!
 
   # Pods for GNAdFullscreenInterstitialSample
-  pod 'Geniee-iOS-SDK'
+  pod 'Geniee-iOS-SDK','~> 7.0.5'
   pod 'AppLovinSDK','~> 5.1.1'
   pod 'MaioSDK', '~> 1.4.0'
   pod 'NendSDK_iOS', '~> 5.0.2'
