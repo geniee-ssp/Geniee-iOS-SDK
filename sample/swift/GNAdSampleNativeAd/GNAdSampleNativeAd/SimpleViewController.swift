@@ -135,15 +135,17 @@ class SimpleViewController: UIViewController, GNNativeAdRequestDelegate, GNSNati
         let iconView : UIImageView = UIImageView(frame: rect)
         iconView.backgroundColor = UIColor.blue
         iconView.contentMode = .scaleAspectFit;
-        let iconUrl : URL! = URL(string: nativeAd.icon_url)
-        if (iconUrl != nil) {
-            requestImageWithURL(iconUrl, completion:{(image: UIImage!, error: Error!)->Void in
-                if (error != nil) {
-                    return
-                }
-                iconView.image = image
-                iconView.center = CGPoint(x:SimpleViewController.SIZE_TEXT / 2, y:SimpleViewController.SIZE_TEXT / 2)
-            })
+        if (nativeAd.icon_url != nil) {
+            let iconUrl : URL! = URL(string: nativeAd.icon_url)
+            if (iconUrl != nil) {
+                requestImageWithURL(iconUrl, completion:{(image: UIImage!, error: Error!)->Void in
+                    if (error != nil) {
+                        return
+                    }
+                    iconView.image = image
+                    iconView.center = CGPoint(x:SimpleViewController.SIZE_TEXT / 2, y:SimpleViewController.SIZE_TEXT / 2)
+                })
+            }
         }
         titleLineView.addSubview(iconView)
         // Title.

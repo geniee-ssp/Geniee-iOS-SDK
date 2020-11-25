@@ -101,17 +101,19 @@ class ImageTableViewController: UITableViewController, GNNativeAdRequestDelegate
 
         if let nativeAd = _cellDataList.object(at: indexPath.row) as? GNNativeAd {
             cell.nativeAd = nativeAd;
-            cell.title.text = nativeAd.title;
-            cell.content.text = nativeAd.description
+            cell.title.text = (nativeAd.title != nil) ? nativeAd.title : "No title"
+            cell.content.text = (nativeAd.description != nil) ? nativeAd.description : "No description"
             cell.icon.image = nil;
-            let url = URL(string: nativeAd.icon_url)!
-            requestImageWithURL(url, completion:{(image: UIImage!, error: Error!)->Void in
-                if (error != nil)
-                {
-                    return
-                }
-                cell.icon.image = image
-            })
+            if (nativeAd.icon_url != nil) {
+                let url = URL(string: nativeAd.icon_url)!
+                requestImageWithURL(url, completion:{(image: UIImage!, error: Error!)->Void in
+                    if (error != nil)
+                    {
+                        return
+                    }
+                    cell.icon.image = image
+                })
+            }
             nativeAd.trackingImpression(with: cell)
         } else {
             let myCellData: MyCellData = _cellDataList.object(at:indexPath.row) as! MyCellData

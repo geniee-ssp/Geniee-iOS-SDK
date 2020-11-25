@@ -136,17 +136,19 @@
         GNNativeAd *nativeAd = (GNNativeAd *)[_cellDataList objectAtIndex:indexPath.row];
         if (nativeAd != nil) {
             cell.nativeAd = nativeAd;
-            cell.title.text = nativeAd.title;
-            cell.description.text = nativeAd.description;
+            cell.title.text = (nativeAd.title) ? nativeAd.title : @"No title";
+            cell.description.text = (nativeAd.description) ? nativeAd.description : @"No description";
             if ([nativeAd hasVideoContent]) {
                 // For video.
                 GNSNativeVideoPlayerView *videoView = [self getVideoView:rect nativeAd:nativeAd];
                 [cell.media addSubview:videoView];
             } else {
                 // For image.
-                NSURL *nsurl = [NSURL URLWithString:nativeAd.icon_url];
-                UIImageView* imageView = [self getImageView:rect nsurl:nsurl];
-                [cell.media addSubview:imageView];
+                if (nativeAd.icon_url != nil) {
+                   NSURL *nsurl = [NSURL URLWithString:nativeAd.icon_url];
+                   UIImageView* imageView = [self getImageView:rect nsurl:nsurl];
+                   [cell.media addSubview:imageView];
+                }
             }
             [nativeAd trackingImpressionWithView:cell];
         }

@@ -113,17 +113,19 @@ class VideoTableViewController: UITableViewController, GNNativeAdRequestDelegate
         let rect: CGRect = CGRect(x:0, y:0, width:cell.media.frame.size.width, height:cell.media.frame.size.height)
         if let nativeAd = _cellDataList.object(at: indexPath.row) as? GNNativeAd {
             cell.nativeAd = nativeAd
-            cell.title.text = nativeAd.title
-            cell.content.text = nativeAd.description
+            cell.title.text = (nativeAd.title != nil) ? nativeAd.title : "No title"
+            cell.content.text = (nativeAd.description != nil) ? nativeAd.description : "No description"
             if (nativeAd.hasVideoContent()) {
                 // For video.
                 let videoView: GNSNativeVideoPlayerView = getVideoView(rect, nativeAd:nativeAd)
                 cell.media.addSubview(videoView)
             } else {
                 // For image.
-                let url = URL(string: nativeAd.icon_url)!
-                let imageView: UIImageView = getImageView(_:rect, url:url)
-                cell.media.addSubview(imageView)
+                if (nativeAd.icon_url != nil) {
+                    let url = URL(string: nativeAd.icon_url)!
+                    let imageView: UIImageView = getImageView(_:rect, url:url)
+                    cell.media.addSubview(imageView)
+                }
             }
             nativeAd.trackingImpression(with: cell)
         } else {

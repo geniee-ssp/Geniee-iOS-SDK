@@ -140,15 +140,17 @@ static const NSInteger SIZE_MEDIA = 350;
     UIImageView* iconView = [[UIImageView alloc] initWithFrame:rect];
     iconView.backgroundColor = UIColor.blueColor;
     iconView.contentMode = UIViewContentModeScaleAspectFit;
-    NSURL *iconNsurl = [NSURL URLWithString:nativeAd.icon_url];
-    if (iconNsurl) {
-        [SimpleViewController requestImageWithURL:iconNsurl completion:^(UIImage *image, NSError *error) {
-            if (error) {
-                return;
-            }
-            iconView.image = image;
-            iconView.center = CGPointMake(SIZE_TEXT / 2, SIZE_TEXT / 2);
-        }];
+    if (nativeAd.icon_url != nil) {
+        NSURL *iconNsurl = [NSURL URLWithString:nativeAd.icon_url];
+        if (iconNsurl) {
+            [SimpleViewController requestImageWithURL:iconNsurl completion:^(UIImage *image, NSError *error) {
+                if (error) {
+                    return;
+                }
+                iconView.image = image;
+                iconView.center = CGPointMake(SIZE_TEXT / 2, SIZE_TEXT / 2);
+            }];
+        }
     }
     [titleLineView addSubview:iconView];
     

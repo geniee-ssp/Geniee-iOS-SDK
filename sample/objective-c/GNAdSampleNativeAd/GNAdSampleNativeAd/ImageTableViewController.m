@@ -130,14 +130,16 @@
         GNNativeAd *nativeAd = (GNNativeAd *)[_cellDataList objectAtIndex:indexPath.row];
         if (nativeAd != nil) {
             cell.nativeAd = nativeAd;
-            cell.title.text = nativeAd.title;
-            cell.description.text = nativeAd.description;
+            cell.title.text = (nativeAd.title) ? nativeAd.title : @"No title";
+            cell.description.text = (nativeAd.description) ? nativeAd.description : @"No description";
             cell.icon.image = nil;
-            NSURL *url = [NSURL URLWithString:nativeAd.icon_url];
-            [ImageTableViewController requestImageWithURL:url completion:^(UIImage *image, NSError *error) {
-                if (error) return;
-                cell.icon.image = image;
-            }];
+            if (nativeAd.icon_url != nil) {
+                NSURL *url = [NSURL URLWithString:nativeAd.icon_url];
+                [ImageTableViewController requestImageWithURL:url completion:^(UIImage *image, NSError *error) {
+                    if (error) return;
+                    cell.icon.image = image;
+                }];
+            }
             [nativeAd trackingImpressionWithView:cell];
         }
     } else {
