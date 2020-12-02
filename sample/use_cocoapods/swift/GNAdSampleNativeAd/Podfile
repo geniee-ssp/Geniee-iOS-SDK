@@ -6,6 +6,6 @@ target 'GNAdSampleNativeAd' do
   #use_frameworks!
 
   # Pods for GNAdSampleNativeAd
-  pod 'Geniee-iOS-SDK','~> 7.0.5'
+  pod 'Geniee-iOS-SDK','~> 7.0.6'
 
 end

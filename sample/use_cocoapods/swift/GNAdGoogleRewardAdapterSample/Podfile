@@ -7,8 +7,8 @@ target 'GNAdGoogleRewardAdapterSample' do
 
   # Pods for GNAdGoogleRewardAdapterSample
   pod 'Google-Mobile-Ads-SDK'
-  pod 'Geniee-iOS-SDK','~> 7.0.5'
-  pod 'Geniee-Google-Mediation-Adapter','~> 7.0.5'
+  pod 'Geniee-iOS-SDK','~> 7.0.6'
+  pod 'Geniee-Google-Mediation-Adapter','~> 7.0.6'
   pod 'AdColony', '~> 3.3.5'
   pod 'AppLovinSDK','~> 6.9.4'
   pod 'MaioSDK', '~> 1.4.0'
