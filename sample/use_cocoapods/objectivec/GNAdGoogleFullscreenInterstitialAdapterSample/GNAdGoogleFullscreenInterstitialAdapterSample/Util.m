@@ -1,6 +1,6 @@
 //
 //  Util.m
-//  GNAdGoogleRewardAdapterSample
+//  GNAdGoogleFullscreenInterstitialAdapterSample
 //
 
 #include "Util.h"
