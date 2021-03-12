@@ -2,13 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>SKAdNetworkItems</key>
-	<array>
-		<dict>
-			<key>SKAdNetworkIdentifier</key>
-			<string>cstr6suwn9.skadnetwork</string>
-		</dict>
-	</array>
 	<key>NSUserTrackingUsageDescription</key>
 	<string>Your data will be used to deliver personalized ads to you.</string>
 	<key>AppLovinSdkKey</key>
@@ -16,7 +9,9 @@
 	<key>GNAdSDK_Log_Level</key>
 	<string>info</string>
 	<key>GADApplicationIdentifier</key>
-	<string>YOUR_APP_ID</string>
+	<string>YOUR_ADMOB_APP_ID</string>
+	<key>GADIsAdManagerApp</key>
+	<true/>
 	<key>CFBundleDisplayName</key>
 	<string>GoogleRewardVideo</string>
 	<key>CFBundleDevelopmentRegion</key>

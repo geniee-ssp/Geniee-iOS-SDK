@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,38 +19,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GNAdGoogleFullscreenInterstitialSample" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LiO-A9-zz2">
-                                <rect key="frame" x="33" y="50" width="309" height="21"/>
+                                <rect key="frame" x="32.5" y="70" width="310.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ad Unit Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKi-mx-W9h">
-                                <rect key="frame" x="50" y="111" width="75" height="21"/>
+                                <rect key="frame" x="50" y="131" width="75" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="luh-vh-8GT" userLabel="DFP Ad Unit Id Label">
-                                <rect key="frame" x="50" y="152" width="275" height="34"/>
+                                <rect key="frame" x="50" y="172" width="275" height="30"/>
+                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BdE-pk-c2Y">
-                                <rect key="frame" x="159.5" y="236" width="56" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BdE-pk-c2Y">
+                                <rect key="frame" x="159.5" y="252" width="56" height="30"/>
                                 <state key="normal" title="Load Ad"/>
                                 <connections>
-                                    <action selector="downButtonLoad:" destination="BYZ-38-t0r" eventType="touchDown" id="PAH-wt-TWb"/>
+                                    <action selector="requestAd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OEj-6b-jmy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsm-8S-NOc">
-                                <rect key="frame" x="157" y="316" width="61" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsm-8S-NOc">
+                                <rect key="frame" x="157" y="332" width="61" height="30"/>
                                 <state key="normal" title="Show Ad"/>
                                 <connections>
-                                    <action selector="downButtonShow:" destination="BYZ-38-t0r" eventType="touchDown" id="5Jp-6n-2fR"/>
+                                    <action selector="showAd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1CI-QM-NaS"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fsm-8S-NOc" firstAttribute="top" secondItem="BdE-pk-c2Y" secondAttribute="bottom" constant="50" id="1Qz-Yp-BP0"/>
@@ -63,16 +65,15 @@
                             <constraint firstItem="bKi-mx-W9h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="kr8-q5-zlb"/>
                             <constraint firstItem="LiO-A9-zz2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yuq-wn-SrQ"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="buttonLoad" destination="BdE-pk-c2Y" id="Unw-ov-I7z"/>
-                        <outlet property="buttonShow" destination="fsm-8S-NOc" id="dWX-Lt-XQq"/>
-                        <outlet property="unitIdView" destination="luh-vh-8GT" id="2ud-im-B82"/>
+                        <outlet property="dfpAdUnitIdLabel" destination="luh-vh-8GT" id="KrB-XI-37a"/>
+                        <outlet property="showAdButton" destination="fsm-8S-NOc" id="LAc-sX-FsQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="22" y="100"/>
         </scene>
     </scenes>
 </document>

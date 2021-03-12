@@ -2,6 +2,9 @@
 //  ViewController.swift
 //  GNAdGoogleBannerAdapterSample
 //
+//  Created by Geniee on 2018/07/25.
+//  Copyright © 2018年 Geniee. All rights reserved.
+//
 
 import UIKit
 import GoogleMobileAds
@@ -13,7 +16,7 @@ class ViewController: UIViewController {
     
     private var adSizeList: [String] = []
     private var adSizeIndex = 0
-    private var bannerView: GAMBannerView!
+    private var bannerView: DFPBannerView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +25,6 @@ class ViewController: UIViewController {
         adSizeView.dataSource = self
         unitIdView.delegate = self
         setAdSizeArray()
-
-        GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = [Util.admobDeviceID()]
     }
 
     private func setAdSizeArray() {
@@ -62,13 +63,14 @@ class ViewController: UIViewController {
         }
 
         // Instantiate the banner view with your desired banner size.
-        self.bannerView = GAMBannerView.init(adSize: getAdSizeType(adSizeIndex))
+        bannerView = DFPBannerView(adSize: self.getAdSizeType(adSizeIndex))
         self.addBannerViewToView(self.bannerView)
         self.bannerView.adUnitID = unitIdView.text
         self.bannerView.delegate = self
         self.bannerView.rootViewController = self
-        let request: GAMRequest = GAMRequest.init()
-        self.bannerView.load(request)
+        let request = DFPRequest()
+        request.testDevices = [ Util.admobDeviceID() ]
+        bannerView.load(request)
     }
     
 
@@ -96,13 +98,14 @@ class ViewController: UIViewController {
 // MARK: - GADBannerViewDelegate
 extension ViewController: GADBannerViewDelegate {
     /// Tells the delegate an ad request loaded an ad.
-    func bannerViewDidReceiveAd(_ bannerView: GADBannerView) {
-        print("ViewController: bannerViewDidReceiveAd")
+    func adViewDidReceiveAd(_ bannerView: GADBannerView) {
+        print("adViewDidReceiveAd")
     }
 
     /// Tells the delegate an ad request failed.
-    func bannerView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: Error) {
-        print("ViewController: didFailToReceiveAdWithError: \(error.localizedDescription)")
+    func adView(_ bannerView: GADBannerView,
+                didFailToReceiveAdWithError error: GADRequestError) {
+        print("adView:didFailToReceiveAdWithError: \(error.localizedDescription)")
     }
 
 }

@@ -1,11 +1,13 @@
 //
 //  ViewController.h
-//  GNAdGoogleBannerAdapterSample
+//  GNAdSampleAdMobAdapter
 //
 
 #import <UIKit/UIKit.h>
+@class GADBannerView;
+@class GADBannerViewDelegate;
 
-@interface ViewController : UIViewController {
+@interface ViewController : UIViewController<GADBannerViewDelegate> {
 }
 
 @end

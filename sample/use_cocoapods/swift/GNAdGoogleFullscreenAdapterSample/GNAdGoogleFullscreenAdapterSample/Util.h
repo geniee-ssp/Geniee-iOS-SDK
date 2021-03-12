@@ -1,6 +1,6 @@
 //
 //  Util.h
-//  GNAdGoogleFullscreenAdapterSample
+//  GNAdGoogleRewardAdapterSample
 //
 
 #import <UIKit/UIKit.h>
