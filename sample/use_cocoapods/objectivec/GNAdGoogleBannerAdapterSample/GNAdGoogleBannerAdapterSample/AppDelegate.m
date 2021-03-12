@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  GNAdSampleAdMobAdapter
+//  GNAdGoogleBannerAdapterSample
 //
 
 #import "AppDelegate.h"

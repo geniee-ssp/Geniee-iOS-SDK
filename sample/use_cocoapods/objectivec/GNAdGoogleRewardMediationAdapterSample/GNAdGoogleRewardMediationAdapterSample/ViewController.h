@@ -1,10 +1,10 @@
 //
-//  MainViewController.h
+//  ViewController.h
 //  GNAdGoogleRewardMediationAdapterSample
 //
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController
+@interface ViewController : UIViewController
 
 @end

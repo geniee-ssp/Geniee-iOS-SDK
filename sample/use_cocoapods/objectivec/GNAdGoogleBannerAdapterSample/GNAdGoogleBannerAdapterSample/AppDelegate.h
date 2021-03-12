@@ -1,6 +1,6 @@
 //
 //  AppDelegate.h
-//  GNAdSampleAdMobAdapter
+//  GNAdGoogleBannerAdapterSample
 //
 
 #import <UIKit/UIKit.h>
