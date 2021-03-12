@@ -2,85 +2,85 @@
 //  ViewController.m
 //  GNAdGoogleFullscreenInterstitialAdapterSample
 //
+//  Created by Nguyenthanh Long on 12/17/18.
+//  Copyright © 2018 Geniee. All rights reserved.
+//
 
 #import "ViewController.h"
 #import "Util.h"
 @import GoogleMobileAds;
 
-@interface ViewController ()<GADFullScreenContentDelegate, UITextFieldDelegate>
-
-@property (weak, nonatomic) IBOutlet UITextField *unitIdView;
-@property (weak, nonatomic) IBOutlet UIButton *buttonLoad;
-@property (weak, nonatomic) IBOutlet UIButton *buttonShow;
-
-@property(nonatomic, strong) GAMInterstitialAd *interstitial;
-
+@interface ViewController ()<GADInterstitialDelegate, UITextFieldDelegate>
+@property(nonatomic, strong) DFPInterstitial *interstitial;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _buttonShow.enabled = NO;
-    _unitIdView.delegate = self;
-
-    GADMobileAds.sharedInstance.requestConfiguration.testDeviceIdentifiers = @[ [Util admobDeviceID] ];
+    _showAdButton.hidden = YES;
+    _dfpAdUnitIdLabel.delegate = self;
 }
 
-- (IBAction)downButtonLoad:(id)sender {
-    NSString* unitId = _unitIdView.text;
-    if (unitId.length == 0) {
-        return;
-    }
-
-    GAMRequest *request = [GAMRequest request];
-    [GAMInterstitialAd loadWithAdManagerAdUnitID:unitId request:request completionHandler:^(GAMInterstitialAd *ad, NSError *error) {
-        self.buttonLoad.enabled = YES;
-        if (error) {
-            NSLog(@"ViewController: downButtonLoad error = %@", error.localizedDescription);
-            return;
-        }
-        NSLog(@"ViewController: downButtonLoad ad loaded.");
-        self.buttonShow.enabled = YES;
-        self.interstitial = ad;
-        self.interstitial.fullScreenContentDelegate = self;
-    }];
-
-    _buttonLoad.enabled = NO;
+- (void)loadAd
+{
+    self.interstitial = [[DFPInterstitial alloc]initWithAdUnitID:_dfpAdUnitIdLabel.text];
+    self.interstitial.delegate = self;
+    DFPRequest *request = [DFPRequest request];
+    request.testDevices = @[[Util admobDeviceID]];
+    [self.interstitial loadRequest:request];
 }
 
-- (IBAction)downButtonShow:(id)sender {
-    if (self.interstitial) {
-        NSLog(@"ViewController: downButtonShow show.");
+- (IBAction)requestAd:(id)sender {
+    [self loadAd];
+}
+
+- (IBAction)showAd:(id)sender {
+    if (self.interstitial.isReady) {
         [self.interstitial presentFromRootViewController:self];
-    } else {
-        NSLog(@"ViewController: downButtonShow not show.");
+        _showAdButton.hidden = YES;
     }
 }
 
-
-#pragma mark GADFullScreenContentDelegate
-- (void)adDidPresentFullScreenContent:(id)ad {
-    NSLog(@"ViewController: adDidPresentFullScreenContent");
+#pragma mark GADInterstitialDelegate
+/// Tells the delegate an ad request succeeded.
+- (void)interstitialDidReceiveAd:(GADInterstitial *)ad
+{
+    NSLog(@"interstitialDidReceiveAd");
+    self.showAdButton.hidden = NO;
 }
 
-- (void)ad:(id)ad didFailToPresentFullScreenContentWithError:(NSError *)error {
-    NSLog(@"ViewController: didFailToPresentFullScreenContentWithError error = %@", [error localizedDescription]);
+/// Tells the delegate an ad request failed.
+- (void)interstitial:(DFPInterstitial *)ad
+didFailToReceiveAdWithError:(GADRequestError *)error {
+    NSLog(@"interstitial:didFailToReceiveAdWithError: %@", [error localizedDescription]);
 }
 
-- (void)adDidDismissFullScreenContent:(id)ad {
-    NSLog(@"ViewController: adDidDismissFullScreenContent");
-    _buttonShow.enabled = NO;
-    _interstitial = nil;
+/// Tells the delegate that an interstitial will be presented.
+- (void)interstitialWillPresentScreen:(DFPInterstitial *)ad {
+    NSLog(@"interstitialWillPresentScreen");
 }
 
+/// Tells the delegate the interstitial is to be animated off the screen.
+- (void)interstitialWillDismissScreen:(DFPInterstitial *)ad {
+    NSLog(@"interstitialWillDismissScreen");
+}
 
-#pragma mark UITextFieldDelegate
+/// Tells the delegate the interstitial had been animated off the screen.
+- (void)interstitialDidDismissScreen:(DFPInterstitial *)ad {
+    NSLog(@"interstitialDidDismissScreen");
+}
+
+/// Tells the delegate that a user click will open another app
+/// (such as the App Store), backgrounding the current app.
+- (void)interstitialWillLeaveApplication:(DFPInterstitial *)ad {
+    NSLog(@"interstitialWillLeaveApplication");
+}
+
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];
     return YES;
 }
-
 
 @end

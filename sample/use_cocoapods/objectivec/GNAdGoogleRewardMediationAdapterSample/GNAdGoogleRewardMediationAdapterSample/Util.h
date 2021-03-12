@@ -1,6 +1,6 @@
 //
 //  Util.h
-//  GNAdGoogleRewardMediationAdapterSample
+//  GNAdGoogleRewardAdapterSample
 //
 
 #import <UIKit/UIKit.h>
