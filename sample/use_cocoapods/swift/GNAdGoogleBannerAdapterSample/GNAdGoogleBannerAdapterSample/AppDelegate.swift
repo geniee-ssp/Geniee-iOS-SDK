@@ -2,9 +2,6 @@
 //  AppDelegate.swift
 //  GNAdGoogleBannerAdapterSample
 //
-//  Created by Geniee on 2018/07/25.
-//  Copyright © 2018年 Geniee. All rights reserved.
-//
 
 import UIKit
 
