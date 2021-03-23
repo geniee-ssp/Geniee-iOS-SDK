@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,7 +28,7 @@
 		EF3047C421CA160C00967834 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3047C321CA160C00967834 /* CoreGraphics.framework */; };
 		EF3047C621CA161900967834 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3047C521CA161900967834 /* AdSupport.framework */; };
 		EF3047C821CA162100967834 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3047C721CA162100967834 /* UIKit.framework */; };
-		EF30487921CA17A400967834 /* GNAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3047CC21CA17A400967834 /* GNAdSDK.framework */; };
+		EF30487921CA17A400967834 /* GNAdSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3047CC21CA17A400967834 /* GNAdSDK.xcframework */; };
 		EF30487B21CA17A400967834 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3047D321CA17A400967834 /* Reachability.m */; };
 		EF30487C21CA17A400967834 /* DDXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3047D821CA17A400967834 /* DDXMLElement.m */; };
 		EF30487D21CA17A400967834 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3047DB21CA17A400967834 /* DDXMLElementAdditions.m */; };
@@ -68,7 +68,7 @@
 		EF3047C321CA160C00967834 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		EF3047C521CA161900967834 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		EF3047C721CA162100967834 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		EF3047CC21CA17A400967834 /* GNAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GNAdSDK.framework; sourceTree = "<group>"; };
+		EF3047CC21CA17A400967834 /* GNAdSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GNAdSDK.xcframework; sourceTree = "<group>"; };
 		EF3047D321CA17A400967834 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		EF3047D421CA17A400967834 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		EF3047D621CA17A400967834 /* DDXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLDocument.h; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF30487921CA17A400967834 /* GNAdSDK.framework in Frameworks */,
+				EF30487921CA17A400967834 /* GNAdSDK.xcframework in Frameworks */,
 				EF5D903C24E3E7DE00857B13 /* AppTrackingTransparency.framework in Frameworks */,
 				EF3047C821CA162100967834 /* UIKit.framework in Frameworks */,
 				EF3047C621CA161900967834 /* AdSupport.framework in Frameworks */,
@@ -211,7 +211,7 @@
 		EF3047CB21CA17A400967834 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				EF3047CC21CA17A400967834 /* GNAdSDK.framework */,
+				EF3047CC21CA17A400967834 /* GNAdSDK.xcframework */,
 			);
 			path = Framework;
 			sourceTree = "<group>";

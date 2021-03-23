@@ -1,6 +1,6 @@
 //
 //  Util.m
-//  GNAdGoogleRewardAdapterSample
+//  GNAdGoogleRewardMediationAdapterSample
 //
 
 #include "Util.h"
