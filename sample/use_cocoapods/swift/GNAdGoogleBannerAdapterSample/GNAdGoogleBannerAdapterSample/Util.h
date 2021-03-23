@@ -1,6 +1,6 @@
 //
 //  Util.h
-//  GNAdGoogleRewardAdapterSample
+//  GNAdGoogleBannerAdapterSample
 //
 
 #import <UIKit/UIKit.h>

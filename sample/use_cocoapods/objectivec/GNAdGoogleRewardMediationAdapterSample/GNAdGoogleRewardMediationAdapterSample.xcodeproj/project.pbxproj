@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,13 +17,11 @@
 		EF053DB023F128F400BDDEDB /* GNSAdapterTikTokRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = EF053DA423F128F400BDDEDB /* GNSAdapterTikTokRewardVideoAd.m */; };
 		EF39689623ED46E100BCAFF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF39689523ED46E100BCAFF0 /* AppDelegate.m */; };
 		EF39689923ED46E100BCAFF0 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF39689823ED46E100BCAFF0 /* SceneDelegate.m */; };
-		EF39689C23ED46E100BCAFF0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF39689B23ED46E100BCAFF0 /* MainViewController.m */; };
 		EF39689F23ED46E100BCAFF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF39689D23ED46E100BCAFF0 /* Main.storyboard */; };
 		EF3968A123ED46E300BCAFF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF3968A023ED46E300BCAFF0 /* Assets.xcassets */; };
 		EF3968A423ED46E300BCAFF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3968A223ED46E300BCAFF0 /* LaunchScreen.storyboard */; };
 		EF3968A723ED46E300BCAFF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3968A623ED46E300BCAFF0 /* main.m */; };
-		EF3968AF23ED56D100BCAFF0 /* RewardRegacyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3968AE23ED56D100BCAFF0 /* RewardRegacyViewController.m */; };
-		EF3968B223ED5A7A00BCAFF0 /* RewardNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3968B123ED5A7A00BCAFF0 /* RewardNewViewController.m */; };
+		EF3968B223ED5A7A00BCAFF0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3968B123ED5A7A00BCAFF0 /* ViewController.m */; };
 		EF83DE1923F170B300B6D1A8 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = EF83DE1823F170B300B6D1A8 /* Util.m */; };
 /* End PBXBuildFile section */
 
@@ -49,17 +47,13 @@
 		EF39689523ED46E100BCAFF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EF39689723ED46E100BCAFF0 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		EF39689823ED46E100BCAFF0 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		EF39689A23ED46E100BCAFF0 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		EF39689B23ED46E100BCAFF0 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		EF39689E23ED46E100BCAFF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF3968A023ED46E300BCAFF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF3968A323ED46E300BCAFF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF3968A523ED46E300BCAFF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF3968A623ED46E300BCAFF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EF3968AD23ED56B400BCAFF0 /* RewardRegacyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardRegacyViewController.h; sourceTree = "<group>"; };
-		EF3968AE23ED56D100BCAFF0 /* RewardRegacyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RewardRegacyViewController.m; sourceTree = "<group>"; };
-		EF3968B023ED5A4B00BCAFF0 /* RewardNewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardNewViewController.h; sourceTree = "<group>"; };
-		EF3968B123ED5A7A00BCAFF0 /* RewardNewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RewardNewViewController.m; sourceTree = "<group>"; };
+		EF3968B023ED5A4B00BCAFF0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EF3968B123ED5A7A00BCAFF0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EF83DE1723F170B300B6D1A8 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		EF83DE1823F170B300B6D1A8 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,12 +189,8 @@
 				EF39689523ED46E100BCAFF0 /* AppDelegate.m */,
 				EF39689723ED46E100BCAFF0 /* SceneDelegate.h */,
 				EF39689823ED46E100BCAFF0 /* SceneDelegate.m */,
-				EF39689A23ED46E100BCAFF0 /* MainViewController.h */,
-				EF39689B23ED46E100BCAFF0 /* MainViewController.m */,
-				EF3968AD23ED56B400BCAFF0 /* RewardRegacyViewController.h */,
-				EF3968AE23ED56D100BCAFF0 /* RewardRegacyViewController.m */,
-				EF3968B023ED5A4B00BCAFF0 /* RewardNewViewController.h */,
-				EF3968B123ED5A7A00BCAFF0 /* RewardNewViewController.m */,
+				EF3968B023ED5A4B00BCAFF0 /* ViewController.h */,
+				EF3968B123ED5A7A00BCAFF0 /* ViewController.m */,
 				EF83DE1723F170B300B6D1A8 /* Util.h */,
 				EF83DE1823F170B300B6D1A8 /* Util.m */,
 				EF39689D23ED46E100BCAFF0 /* Main.storyboard */,
@@ -285,13 +275,11 @@
 				EF053DAF23F128F400BDDEDB /* GNSAdapterNendRewardVideoAd.m in Sources */,
 				EF053DAB23F128F400BDDEDB /* GNSAdapterTapjoyRewardVideoAd.m in Sources */,
 				EF053DA823F128F400BDDEDB /* GNSAdapterUnityAdsRewardVideoAd.m in Sources */,
-				EF3968B223ED5A7A00BCAFF0 /* RewardNewViewController.m in Sources */,
+				EF3968B223ED5A7A00BCAFF0 /* ViewController.m in Sources */,
 				EF053DAC23F128F400BDDEDB /* GNSAdapterAppLovinRewardVideoAd.m in Sources */,
 				EF83DE1923F170B300B6D1A8 /* Util.m in Sources */,
-				EF39689C23ED46E100BCAFF0 /* MainViewController.m in Sources */,
 				EF053DAE23F128F400BDDEDB /* GNSAdapterMaioRewardVideoAd.m in Sources */,
 				EF39689623ED46E100BCAFF0 /* AppDelegate.m in Sources */,
-				EF3968AF23ED56D100BCAFF0 /* RewardRegacyViewController.m in Sources */,
 				EF053DA923F128F400BDDEDB /* GNSAdapterVungleRewardVideoAd.m in Sources */,
 				EF053DAD23F128F400BDDEDB /* GNSAdapterAdColonyRewardVideoAd.m in Sources */,
 				EF3968A723ED46E300BCAFF0 /* main.m in Sources */,

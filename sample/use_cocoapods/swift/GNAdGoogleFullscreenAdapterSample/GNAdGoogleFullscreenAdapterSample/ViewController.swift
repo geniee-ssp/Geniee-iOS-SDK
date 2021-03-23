@@ -2,97 +2,82 @@
 //  ViewController.swift
 //  GNAdGoogleFullscreenAdapterSample
 //
-//  Created by Nguyenthanh Long on 12/17/18.
-//  Copyright © 2018 Geniee. All rights reserved.
-//
 
 import UIKit
 import GoogleMobileAds
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController {
 
-    @IBOutlet weak var loadAdButton: UIButton!
-    
-    @IBOutlet weak var showAdButton: UIButton!
-    
-    @IBOutlet weak var unitIdTextField: UITextField!
-    
-    var interstitial: DFPInterstitial!
+    @IBOutlet weak var unitIdView: UITextField!
+    @IBOutlet weak var buttonLoad: UIButton!
+    @IBOutlet weak var buttonShow: UIButton!
+
+    var interstitial: GAMInterstitialAd!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        unitIdTextField.delegate = self;
-        self.showAdButton.isHidden = true;
+        unitIdView.delegate = self
+        buttonShow.isEnabled = false
+
+        GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = [Util.admobDeviceID()]
     }
     
-    func requestInterstitialAd()  {
-        if let idStr = unitIdTextField.text{
-            if idStr.isEmpty {
-                NSLog("Please input ad unit id.")
-                return
-            } else {
-                interstitial = DFPInterstitial(adUnitID: idStr)
-            }
+    @IBAction func downButtonLoad(_ sender: Any) {
+        let unitId = unitIdView.text!
+        if unitId.isEmpty {
+            return
         }
-        let request = DFPRequest();
-        request.testDevices = [ Util.admobDeviceID() ]
-        interstitial.delegate = self;
-        interstitial.load(request);
+
+        let request = GAMRequest()
+        GAMInterstitialAd.load(withAdManagerAdUnitID: unitId, request: request, completionHandler: { (ad, error) in
+            self.buttonLoad.isEnabled = true
+            if let error = error {
+                print("ViewController: downButtonLoad error = \(error.localizedDescription)")
+                return
+            }
+            print("ViewController: downButtonLoad ad loaded.")
+            self.buttonShow.isEnabled = true
+            self.interstitial = ad
+            self.interstitial.fullScreenContentDelegate = self
+        })
+
+        buttonLoad.isEnabled = false
+    }
+    
+    @IBAction func downButtonShow(_ sender: Any) {
+        if let ad = interstitial {
+            print("ViewController: downButtonShow show.")
+            ad.present(fromRootViewController: self)
+        } else {
+            print("ViewController: downButtonShow not show.")
+        }
     }
 
-    @IBAction func loadInterstitialAd(_ sender: Any) {
-        self.requestInterstitialAd()
-    }
-    
-    @IBAction func showInterstitialAd(_ sender: Any) {
-        if interstitial.isReady {
-            interstitial.present(fromRootViewController: self)
-            self.showAdButton.isHidden = true;
-        } else {
-            print("Ad wasn't ready.");
-        }
-    }
-    
-    //MARK UITextFieldDelegate
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        // Hide the keyboard when press return key in a UITextField
-        unitIdTextField.resignFirstResponder()
-        return true;
-    }
-    
 }
 //MARK GADInterstitialDelegate
-extension ViewController : GADInterstitialDelegate {
-    /// Tells the delegate an ad request succeeded.
-    func interstitialDidReceiveAd(_ ad: GADInterstitial) {
-        print("interstitialDidReceiveAd")
-        self.showAdButton.isHidden = false;
+extension ViewController : GADFullScreenContentDelegate {
+    func adDidPresentFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+        print("ViewController: adDidPresentFullScreenContent")
     }
-    
-    /// Tells the delegate an ad request failed.
-    func interstitial(_ ad: GADInterstitial, didFailToReceiveAdWithError error: GADRequestError) {
-        print("interstitial:didFailToReceiveAdWithError: \(error.localizedDescription)")
+
+    func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
+      print("ViewController: didFailToPresentFullScreenContentWithError error = \(error.localizedDescription).")
     }
-    
-    /// Tells the delegate that an interstitial will be presented.
-    func interstitialWillPresentScreen(_ ad: GADInterstitial) {
-        print("interstitialWillPresentScreen")
+
+    func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+        print("ViewController: adDidDismissFullScreenContent")
+        buttonShow.isEnabled = false
+        interstitial = nil
     }
-    
-    /// Tells the delegate the interstitial is to be animated off the screen.
-    func interstitialWillDismissScreen(_ ad: GADInterstitial) {
-        print("interstitialWillDismissScreen")
+
+}
+//MARK GADInterstitialDelegate
+extension ViewController : UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // Hide the keyboard when press return key in a UITextField
+        unitIdView.resignFirstResponder()
+        return true;
     }
-    
-    /// Tells the delegate the interstitial had been animated off the screen.
-    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
-        print("interstitialDidDismissScreen")
-    }
-    
-    /// Tells the delegate that a user click will open another app
-    /// (such as the App Store), backgrounding the current app.
-    func interstitialWillLeaveApplication(_ ad: GADInterstitial) {
-        print("interstitialWillLeaveApplication")
-    }
+
 }
 

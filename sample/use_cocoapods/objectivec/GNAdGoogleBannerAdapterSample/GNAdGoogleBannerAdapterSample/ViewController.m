@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  GNAdSampleAdMobAdapter
+//  GNAdGoogleBannerAdapterSample
 //
 
 @import GoogleMobileAds;
@@ -8,12 +8,12 @@
 #import "ViewController.h"
 #import "Util.h"
 
-@interface ViewController()
+@interface ViewController() <GADBannerViewDelegate, UIPickerViewDelegate, UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *unitIdView;
 @property (weak, nonatomic) IBOutlet UIPickerView *adSizeView;
 
-@property(nonatomic, strong) DFPBannerView *bannerView;
+@property(nonatomic, strong) GAMBannerView *bannerView;
 
 @end
 
@@ -28,7 +28,9 @@
     adSizeIndex = 0;
     _unitIdView.delegate = self;
     _adSizeView.delegate = self;
-    [self setAdSizeArray];    
+    [self setAdSizeArray];
+
+    GADMobileAds.sharedInstance.requestConfiguration.testDeviceIdentifiers = @[[Util admobDeviceID]];
 }
 
 - (void)setAdSizeArray {
@@ -68,13 +70,12 @@
     }
 
     // Instantiate the banner view with your desired banner size.
-    self.bannerView = [[DFPBannerView alloc] initWithAdSize:[self getAdSizeType:adSizeIndex]];
+    _bannerView = [[GAMBannerView alloc] initWithAdSize:[self getAdSizeType:adSizeIndex]];
     [self addBannerViewToView:self.bannerView];
-    self.bannerView.adUnitID = _unitIdView.text;
-    self.bannerView.delegate = self;
-    self.bannerView.rootViewController = self;
-    DFPRequest *request = [DFPRequest request];
-    request.testDevices = @[[Util admobDeviceID]];
+    _bannerView.adUnitID = _unitIdView.text;
+    _bannerView.delegate = self;
+    _bannerView.rootViewController = self;
+    GAMRequest * request = [GAMRequest request];
     [self.bannerView loadRequest:request];
 }
 
@@ -104,12 +105,13 @@
 #pragma mark GADBannerViewDelegate impl
 
 // We've received an ad successfully.
-- (void)adViewDidReceiveAd:(GADBannerView *)adView {
-    NSLog(@"Received ad successfully");
+- (void)bannerViewDidReceiveAd:(nonnull GADBannerView *)bannerView {
+    NSLog(@"ViewController: bannerViewDidReceiveAd");
 }
 
-- (void)adView:(GADBannerView *)view didFailToReceiveAdWithError:(GADRequestError *)error {
-    NSLog(@"Failed to receive ad with error: %@", [error localizedFailureReason]);
+- (void)bannerView:(nonnull GADBannerView *)bannerView
+        didFailToReceiveAdWithError:(nonnull NSError *)error {
+    NSLog(@"ViewController: didFailToReceiveAdWithError: %@", [error localizedDescription]);
 }
 
 

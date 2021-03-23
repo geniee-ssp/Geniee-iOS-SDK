@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,7 +30,7 @@
 		EF986A4321BA16C400C737D0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF986A4221BA16C400C737D0 /* CoreGraphics.framework */; };
 		EF986A4521BA16CD00C737D0 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF986A4421BA16CD00C737D0 /* AdSupport.framework */; };
 		EF986A4721BA16D500C737D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF986A4621BA16D500C737D0 /* UIKit.framework */; };
-		EF986A4821BA16E500C737D0 /* GNAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF98655D21BA153800C737D0 /* GNAdSDK.framework */; };
+		EF986A4821BA16E500C737D0 /* GNAdSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF98655D21BA153800C737D0 /* GNAdSDK.xcframework */; };
 		EF986A4D21BA1ADE00C737D0 /* ImageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF986A4A21BA1ADE00C737D0 /* ImageTableViewController.m */; };
 		EF986A4E21BA1ADE00C737D0 /* ImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF986A4B21BA1ADE00C737D0 /* ImageTableViewCell.m */; };
 		EF986A5321BA27A100C737D0 /* VideoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF986A4F21BA27A000C737D0 /* VideoTableViewCell.m */; };
@@ -51,7 +51,7 @@
 		EF98655521BA14C500C737D0 /* GNQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNQueue.h; sourceTree = "<group>"; };
 		EF98655821BA14E100C737D0 /* MyCellData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCellData.h; sourceTree = "<group>"; };
 		EF98655921BA14E100C737D0 /* MyCellData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCellData.m; sourceTree = "<group>"; };
-		EF98655D21BA153800C737D0 /* GNAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GNAdSDK.framework; sourceTree = "<group>"; };
+		EF98655D21BA153800C737D0 /* GNAdSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GNAdSDK.xcframework; sourceTree = "<group>"; };
 		EF98656421BA153800C737D0 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		EF98656521BA153800C737D0 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		EF98656721BA153800C737D0 /* DDXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLDocument.h; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF986A4821BA16E500C737D0 /* GNAdSDK.framework in Frameworks */,
+				EF986A4821BA16E500C737D0 /* GNAdSDK.xcframework in Frameworks */,
 				EF5D904624E3E83100857B13 /* AppTrackingTransparency.framework in Frameworks */,
 				EF986A4721BA16D500C737D0 /* UIKit.framework in Frameworks */,
 				EF986A4521BA16CD00C737D0 /* AdSupport.framework in Frameworks */,
@@ -162,7 +162,7 @@
 		EF98655C21BA153800C737D0 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				EF98655D21BA153800C737D0 /* GNAdSDK.framework */,
+				EF98655D21BA153800C737D0 /* GNAdSDK.xcframework */,
 			);
 			path = Framework;
 			sourceTree = "<group>";

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,7 +24,7 @@
 		B646FA8A1AAB420C0021547C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B646FA891AAB420C0021547C /* QuartzCore.framework */; };
 		B646FA8C1AAB42120021547C /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B646FA8B1AAB42120021547C /* MessageUI.framework */; };
 		B646FA8E1AAB421A0021547C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B646FA8D1AAB421A0021547C /* Foundation.framework */; };
-		B654227F1E6AE9DB00655928 /* GNAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B654227D1E6AE9DB00655928 /* GNAdSDK.framework */; };
+		B654227F1E6AE9DB00655928 /* GNAdSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B654227D1E6AE9DB00655928 /* GNAdSDK.xcframework */; };
 		B6858DA21C8071BB00462735 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858D911C8071BB00462735 /* DDXMLElementAdditions.m */; };
 		B6858DA31C8071BB00462735 /* NSString+DDXML.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858D941C8071BB00462735 /* NSString+DDXML.m */; };
 		B6858DA41C8071BB00462735 /* DDXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858D971C8071BB00462735 /* DDXMLDocument.m */; };
@@ -58,7 +58,7 @@
 		B646FA891AAB420C0021547C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B646FA8B1AAB42120021547C /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		B646FA8D1AAB421A0021547C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		B654227D1E6AE9DB00655928 /* GNAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GNAdSDK.framework; sourceTree = "<group>"; };
+		B654227D1E6AE9DB00655928 /* GNAdSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GNAdSDK.xcframework; sourceTree = "<group>"; };
 		B6858D901C8071BB00462735 /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
 		B6858D911C8071BB00462735 /* DDXMLElementAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLElementAdditions.m; sourceTree = "<group>"; };
 		B6858D931C8071BB00462735 /* NSString+DDXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDXML.h"; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 				B646FA841AAB41F30021547C /* AudioToolbox.framework in Frameworks */,
 				B646FA821AAB41EB0021547C /* AVFoundation.framework in Frameworks */,
 				B646FA801AAB41E40021547C /* SystemConfiguration.framework in Frameworks */,
-				B654227F1E6AE9DB00655928 /* GNAdSDK.framework in Frameworks */,
+				B654227F1E6AE9DB00655928 /* GNAdSDK.xcframework in Frameworks */,
 				B646FA7E1AAB41DD0021547C /* libxml2.dylib in Frameworks */,
 				B646FA7C1AAB41D40021547C /* CoreTelephony.framework in Frameworks */,
 				B646FA7A1AAB41CD0021547C /* CoreLocation.framework in Frameworks */,
@@ -143,7 +143,7 @@
 		B654227B1E6AE9DB00655928 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				B654227D1E6AE9DB00655928 /* GNAdSDK.framework */,
+				B654227D1E6AE9DB00655928 /* GNAdSDK.xcframework */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
@@ -463,7 +463,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -486,7 +487,10 @@
 				);
 				INFOPLIST_FILE = GNAdSampleMultipleBanner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.geniee.sample.$(PRODUCT_NAME:rfc1034identifier)";
@@ -513,7 +517,10 @@
 				);
 				INFOPLIST_FILE = GNAdSampleMultipleBanner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.geniee.sample.$(PRODUCT_NAME:rfc1034identifier)";
