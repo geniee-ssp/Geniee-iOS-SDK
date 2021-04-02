@@ -1,6 +1,6 @@
 //
 //  Util.m
-//  GNAdGoogleRewardAdapterSample
+//  GNAdGoogleBannerAdapterSample
 //
 
 #include "Util.h"

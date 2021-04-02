@@ -1,3 +1,8 @@
+//
+//  SceneDelegate.m
+//  GNAdGoogleRewardMediationAdapterSample
+//
+
 #import "SceneDelegate.h"
 
 @interface SceneDelegate ()
