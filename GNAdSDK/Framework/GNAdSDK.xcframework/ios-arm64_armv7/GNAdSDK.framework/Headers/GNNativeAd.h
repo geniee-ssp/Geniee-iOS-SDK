@@ -43,6 +43,19 @@
 @property(nonatomic, readonly, assign) NSInteger view_reset;
 @property(nonatomic, readonly, assign) double video_ratio;
 
+@property(nonatomic, readonly, copy) NSString *skadn_version;
+@property(nonatomic, readonly, copy) NSString *skadn_itunesitem;
+@property(nonatomic, readonly, copy) NSString *skadn_sourceapp;
+@property(nonatomic, readonly, copy) NSString *skadn_network;
+@property(nonatomic, readonly, copy) NSString *skadn_campaign;
+@property(nonatomic, readonly, copy) NSString *skadn_imp_signature_signature;
+@property(nonatomic, readonly, copy) NSString *skadn_imp_signature_nonce;
+@property(nonatomic, readonly, copy) NSString *skadn_imp_signature_timestamp;
+@property(nonatomic, readonly, copy) NSString *skadn_click_signature_signature;
+@property(nonatomic, readonly, copy) NSString *skadn_click_signature_nonce;
+@property(nonatomic, readonly, copy) NSString *skadn_click_signature_timestamp;
+@property(nonatomic, readonly, assign) bool    isSignedAd;
+
 /**
  * Initializes a GNNativeAd.
  *
