@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C6E375D28E541C10046073B /* GNSAdapterPangleBannerAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E375C28E541C10046073B /* GNSAdapterPangleBannerAd.m */; };
+		0C6E375F28E5799B0046073B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6E375E28E5799B0046073B /* Security.framework */; };
+		3FDAE31575674EAF536CFEF6 /* Pods_GNAdSampleBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E79B5C73863C8A017303D9 /* Pods_GNAdSampleBanner.framework */; };
 		B65422361E6ADF7500655928 /* GNAdSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65422341E6ADF7500655928 /* GNAdSDK.xcframework */; };
 		B671980E1E6BCB00003753AB /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B671980D1E6BCB00003753AB /* libxml2.2.tbd */; };
 		B6858CBA1C805F7200462735 /* DDXMLElementAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B6858CA91C805F7200462735 /* DDXMLElementAdditions.m */; };
@@ -39,6 +42,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C6E375B28E541C10046073B /* GNSAdapterPangleBannerAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GNSAdapterPangleBannerAd.h; path = ../../../../bannerMediation/Pangle/GNSAdapterPangleBannerAd.h; sourceTree = "<group>"; };
+		0C6E375C28E541C10046073B /* GNSAdapterPangleBannerAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GNSAdapterPangleBannerAd.m; path = ../../../../bannerMediation/Pangle/GNSAdapterPangleBannerAd.m; sourceTree = "<group>"; };
+		0C6E375E28E5799B0046073B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		633AD40344AE0B931BC4968A /* Pods-GNAdSampleBanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdSampleBanner.debug.xcconfig"; path = "Target Support Files/Pods-GNAdSampleBanner/Pods-GNAdSampleBanner.debug.xcconfig"; sourceTree = "<group>"; };
+		87325F453F7AF1C19E8DE74F /* Pods-GNAdSampleBanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdSampleBanner.release.xcconfig"; path = "Target Support Files/Pods-GNAdSampleBanner/Pods-GNAdSampleBanner.release.xcconfig"; sourceTree = "<group>"; };
 		B65422341E6ADF7500655928 /* GNAdSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GNAdSDK.xcframework; sourceTree = "<group>"; };
 		B671980D1E6BCB00003753AB /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
 		B6858CA81C805F7200462735 /* DDXMLElementAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLElementAdditions.h; sourceTree = "<group>"; };
@@ -55,6 +63,7 @@
 		B6858CB51C805F7200462735 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
 		B6858CB71C805F7200462735 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		B6858CB81C805F7200462735 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		D0E79B5C73863C8A017303D9 /* Pods_GNAdSampleBanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GNAdSampleBanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF5D904B24E3E86900857B13 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 		FE77CC041A441FBF000D0B50 /* icon_geniee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_geniee.png; sourceTree = "<group>"; };
 		FE77CC2B1A4420D2000D0B50 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -103,6 +112,8 @@
 				FE77CC301A4420E8000D0B50 /* CoreGraphics.framework in Frameworks */,
 				FE77CC2E1A4420DB000D0B50 /* AdSupport.framework in Frameworks */,
 				FE77CC2C1A4420D3000D0B50 /* UIKit.framework in Frameworks */,
+				0C6E375F28E5799B0046073B /* Security.framework in Frameworks */,
+				3FDAE31575674EAF536CFEF6 /* Pods_GNAdSampleBanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,9 +199,19 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
+		C33F2187233C08E696586C4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				633AD40344AE0B931BC4968A /* Pods-GNAdSampleBanner.debug.xcconfig */,
+				87325F453F7AF1C19E8DE74F /* Pods-GNAdSampleBanner.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FE77CC2A1A4420BB000D0B50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C6E375E28E5799B0046073B /* Security.framework */,
 				EF5D904B24E3E86900857B13 /* AppTrackingTransparency.framework */,
 				B671980D1E6BCB00003753AB /* libxml2.2.tbd */,
 				FE77CC451A442157000D0B50 /* Foundation.framework */,
@@ -206,6 +227,7 @@
 				FE77CC2F1A4420E8000D0B50 /* CoreGraphics.framework */,
 				FE77CC2D1A4420DB000D0B50 /* AdSupport.framework */,
 				FE77CC2B1A4420D2000D0B50 /* UIKit.framework */,
+				D0E79B5C73863C8A017303D9 /* Pods_GNAdSampleBanner.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -217,6 +239,7 @@
 				FE77CC2A1A4420BB000D0B50 /* Frameworks */,
 				FECFF2D01A43EC6A00A06E68 /* GNAdSampleBanner */,
 				FECFF2CF1A43EC6A00A06E68 /* Products */,
+				C33F2187233C08E696586C4B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -231,6 +254,8 @@
 		FECFF2D01A43EC6A00A06E68 /* GNAdSampleBanner */ = {
 			isa = PBXGroup;
 			children = (
+				0C6E375B28E541C10046073B /* GNSAdapterPangleBannerAd.h */,
+				0C6E375C28E541C10046073B /* GNSAdapterPangleBannerAd.m */,
 				FECFF2D51A43EC6A00A06E68 /* AppDelegate.h */,
 				FECFF2D61A43EC6A00A06E68 /* AppDelegate.m */,
 				FECFF2D81A43EC6A00A06E68 /* ViewController.h */,
@@ -260,9 +285,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FECFF2F11A43EC6B00A06E68 /* Build configuration list for PBXNativeTarget "GNAdSampleBanner" */;
 			buildPhases = (
+				80BB08BCD8736C0484F99E74 /* [CP] Check Pods Manifest.lock */,
 				FECFF2CA1A43EC6A00A06E68 /* Sources */,
 				FECFF2CB1A43EC6A00A06E68 /* Frameworks */,
 				FECFF2CC1A43EC6A00A06E68 /* Resources */,
+				4E1FAEFCC42B714E1CA8CA68 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -321,6 +348,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4E1FAEFCC42B714E1CA8CA68 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNAdSampleBanner/Pods-GNAdSampleBanner-resources.sh",
+				"${PODS_ROOT}/Ads-Global/SDK/LICENSE",
+				"${PODS_ROOT}/Ads-Global/SDK/PAGAdSDK.bundle",
+				"${PODS_ROOT}/RangersAPM-Pangle/RangersAPM-Pangle/Assets/Core/APMInsightCore.bundle",
+				"${PODS_ROOT}/RangersAPM-Pangle/RangersAPM-Pangle/Assets/Crash/APMInsightCrash.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LICENSE",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PAGAdSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/APMInsightCore.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/APMInsightCrash.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GNAdSampleBanner/Pods-GNAdSampleBanner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80BB08BCD8736C0484F99E74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GNAdSampleBanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FECFF2CA1A43EC6A00A06E68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -328,6 +404,7 @@
 			files = (
 				B6858CBA1C805F7200462735 /* DDXMLElementAdditions.m in Sources */,
 				B6858CBD1C805F7200462735 /* DDXMLElement.m in Sources */,
+				0C6E375D28E541C10046073B /* GNSAdapterPangleBannerAd.m in Sources */,
 				FECFF2DA1A43EC6A00A06E68 /* ViewController.m in Sources */,
 				FECFF2D71A43EC6A00A06E68 /* AppDelegate.m in Sources */,
 				FECFF2D41A43EC6A00A06E68 /* main.m in Sources */,
@@ -447,6 +524,7 @@
 		};
 		FECFF2F21A43EC6B00A06E68 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 633AD40344AE0B931BC4968A /* Pods-GNAdSampleBanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -461,13 +539,16 @@
 					"${SDKROOT}/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = GNAdSampleBanner/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_LDFLAGS = "-lxml2";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.geniee.sample.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -475,6 +556,7 @@
 		};
 		FECFF2F31A43EC6B00A06E68 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87325F453F7AF1C19E8DE74F /* Pods-GNAdSampleBanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -489,13 +571,16 @@
 					"${SDKROOT}/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = GNAdSampleBanner/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "";
-				OTHER_LDFLAGS = "-lxml2";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.geniee.sample.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

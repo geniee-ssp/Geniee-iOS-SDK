@@ -130,6 +130,8 @@ typedef enum {
 // Show banner with the specified frame, and ad size
 - (void)showBannerWithFrame:(CGRect)frame adSize:(CGSize)adSize;
 
+@property(nonatomic, assign, setter=setUsingMediation:) BOOL usingMediation;
+
 #pragma mark set/get Ad backgroud color
 // Optional
 // Set Ad backgroud color.
