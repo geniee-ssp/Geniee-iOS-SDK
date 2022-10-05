@@ -1,0 +1,100 @@
+PODS:
+  - Ads-Global (4.7.0.6):
+    - Ads-Global/BUAdSDK (= 4.7.0.6)
+  - Ads-Global/APM (4.7.0.6):
+    - RangersAPM-Pangle/Crash (= 2.13.0)
+    - RangersAPM-Pangle/Global (= 2.13.0)
+    - RangersAPM-Pangle/SessionTracker (= 2.13.0)
+  - Ads-Global/BUAdSDK (4.7.0.6):
+    - Ads-Global/APM
+    - Ads-Global/BURelyAdSDK
+    - Ads-Global/Dep_Accurate
+  - Ads-Global/BURelyAdSDK (4.7.0.6)
+  - Ads-Global/Dep_Accurate (4.7.0.6):
+    - BUAdSDK (= 0.1.0.19)
+    - BURelyFoundation/Pangle (= 0.0.3.10)
+  - BUAdSDK (0.1.0.19):
+    - BUAdSDK/BUAdSDK (= 0.1.0.19)
+  - BUAdSDK/BUAdSDK (0.1.0.19)
+  - BURelyFoundation/AFNetworking (0.0.3.10)
+  - BURelyFoundation/BURelyFoundation (0.0.3.10)
+  - BURelyFoundation/Foundation (0.0.3.10):
+    - BURelyFoundation/NETWork
+  - BURelyFoundation/Gecko (0.0.3.10):
+    - BURelyFoundation/Foundation
+  - BURelyFoundation/NETWork (0.0.3.10):
+    - BURelyFoundation/AFNetworking
+  - BURelyFoundation/Pangle (0.0.3.10):
+    - BURelyFoundation/AFNetworking
+    - BURelyFoundation/BURelyFoundation
+    - BURelyFoundation/Foundation
+    - BURelyFoundation/Gecko
+    - BURelyFoundation/NETWork
+    - BURelyFoundation/SDWebImage
+    - BURelyFoundation/YYModel
+    - BURelyFoundation/ZFPlayer
+    - BURelyFoundation/Zip
+  - BURelyFoundation/SDWebImage (0.0.3.10):
+    - BURelyFoundation/Foundation
+  - BURelyFoundation/YYModel (0.0.3.10)
+  - BURelyFoundation/ZFPlayer (0.0.3.10):
+    - BURelyFoundation/Foundation
+    - BURelyFoundation/Zip
+  - BURelyFoundation/Zip (0.0.3.10):
+    - BURelyFoundation/Foundation
+  - OneKit-Pangle/BaseKit (1.3.11)
+  - OneKit-Pangle/Database (1.3.11):
+    - OneKit-Pangle/Service
+  - OneKit-Pangle/Reachability (1.3.11):
+    - OneKit-Pangle/Service
+  - OneKit-Pangle/Service (1.3.11)
+  - RangersAPM-Pangle/Above (2.13.0)
+  - RangersAPM-Pangle/Core (2.13.0):
+    - OneKit-Pangle/BaseKit (= 1.3.11)
+  - RangersAPM-Pangle/Crash (2.13.0):
+    - RangersAPM-Pangle/Core
+    - RangersAPM-Pangle/HMD
+    - RangersAPM-Pangle/Public
+  - RangersAPM-Pangle/Global (2.13.0):
+    - RangersAPM-Pangle/Core
+    - RangersAPM-Pangle/Public
+  - RangersAPM-Pangle/HMD (2.13.0):
+    - OneKit-Pangle/Database (= 1.3.11)
+    - RangersAPM-Pangle/Core
+  - RangersAPM-Pangle/Public (2.13.0):
+    - RangersAPM-Pangle/Above
+    - RangersAPM-Pangle/Core
+    - RangersAPM-Pangle/Zyone
+    - RARegisterKit-Pangle/Core (= 0.0.4)
+  - RangersAPM-Pangle/SessionTracker (2.13.0):
+    - RangersAPM-Pangle/Core
+    - RangersAPM-Pangle/HMD
+    - RangersAPM-Pangle/Public
+  - RangersAPM-Pangle/Zyone (2.13.0)
+  - RARegisterKit-Pangle/Core (0.0.4):
+    - OneKit-Pangle/BaseKit (= 1.3.11)
+    - OneKit-Pangle/Reachability (= 1.3.11)
+
+DEPENDENCIES:
+  - Ads-Global
+
+SPEC REPOS:
+  trunk:
+    - Ads-Global
+    - BUAdSDK
+    - BURelyFoundation
+    - OneKit-Pangle
+    - RangersAPM-Pangle
+    - RARegisterKit-Pangle
+
+SPEC CHECKSUMS:
+  Ads-Global: 331350b59fab4e5dc0d1f5aaf6f3442dd6745997
+  BUAdSDK: 76825d6c9bd72d4f38d5e1cda427e109a6a586ee
+  BURelyFoundation: 83db9b9b06911ea1178fa02b79421feaa30d907a
+  OneKit-Pangle: 19fc175cb04d0830594808f470751d3d2ab14318
+  RangersAPM-Pangle: b52281831bdb0528619a215909114c130919e3fb
+  RARegisterKit-Pangle: 9663963a1f15127a984600a5ee3e9887bcc2c1a0
+
+PODFILE CHECKSUM: e1051021457423c79469ba55dee2bd3d53698bfe
+
+COCOAPODS: 1.11.2

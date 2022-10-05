@@ -5,7 +5,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <GNAdViewDelegate>
 
 @end
 
@@ -14,7 +14,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _adView = [[GNAdView alloc] initWithAdSizeType:GNAdSizeTypeSmall appID:@"YOUR_ZONE_ID"];
+    _adView = [[GNAdView alloc] initWithAdSizeType:GNAdSizeTypeTall appID:@"1530755"];
     _adView.delegate = self;
     _adView.rootViewController = self;
     //_adView.geoLocationEnable = YES;
@@ -22,6 +22,7 @@
     [self.view addSubview:_adView];
 
     _adView.center = CGPointMake(self.view.center.x, self.view.center.y);
+    [_adView setUsingMediation:YES];
     [_adView startAdLoop];
     
     
@@ -43,5 +44,16 @@
     NSLog(@"ViewController: shouldStartExternalBrowserWithClick : %@.", landingURL);
     return YES;
 }
+
+#pragma GNAdViewDelegate
+
+- (void)adViewDidReceiveAd:(GNAdView *)adView {
+    NSLog(@"LongUni adViewDidReceiveAd");
+}
+
+- (void)adView:(GNAdView *)adView didFailReceiveAdWithError:(NSError *)error {
+    NSLog(@"LongUni didFailReceiveAdWithError: %@", error);
+}
+
 
 @end
