@@ -1,0 +1,11 @@
+framework module GNAdMAXMediationAdapter {
+  umbrella header "GNAdMAXMediationAdapter.h"
+
+  export *
+  module * { export * }
+
+  link framework "Foundation"
+  link framework "UIKit"
+
+  header "GNAdMAXMediationAdapter.h"
+}
