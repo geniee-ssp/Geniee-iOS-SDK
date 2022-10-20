@@ -33,7 +33,7 @@ static BOOL loggingEnbale = YES;
 
 #pragma mark - GNSAdNetworkAdapter
 + (NSString *)adapterVersion {
-    return @"3.0.1";
+    return @"3.1.0";
 }
 
 - (instancetype)initWithAdNetworkConnector:(id<GNSAdNetworkConnector>)connector {
@@ -61,7 +61,7 @@ static BOOL loggingEnbale = YES;
 - (void)presentAdWithRootViewController:(UIViewController *)viewController {
     [ALInterstitialAd shared].adDisplayDelegate = self;
     [ALInterstitialAd shared].adVideoPlaybackDelegate = self;
-    [[ALInterstitialAd shared] showOver:[UIApplication sharedApplication].keyWindow andRender:self.ad];
+    [[ALInterstitialAd shared] showAd:self.ad];
 }
 
 - (void)requestAd:(NSInteger)timeOut {
@@ -73,7 +73,7 @@ static BOOL loggingEnbale = YES;
     GNSExtrasFullscreenApplovin *extras = [self.connector networkExtras];
     [self AllLog:[NSString stringWithFormat:@"Create interstitial with Applovin zone_id = @%@",extras.zone_id]];
     if ([extras.zone_id length] == 0) {
-        [[ALSdk shared].adService loadNextAd:[ALAdSize sizeInterstitial] andNotify:self];
+        [[ALSdk shared].adService loadNextAd:[ALAdSize interstitial] andNotify:self];
     } else {
         [[ALSdk shared].adService loadNextAdForZoneIdentifier:extras.zone_id andNotify:self];
     }
