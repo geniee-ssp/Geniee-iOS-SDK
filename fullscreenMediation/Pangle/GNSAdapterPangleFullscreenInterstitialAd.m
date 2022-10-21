@@ -70,8 +70,6 @@ static BOOL loggingEnable = YES;
 
 - (void)requestAd:(NSInteger)timeOut {
     
-    NSLog(@"LongUni requestAd Pangle");
-    
     if ([self isReadyForDisplay]) {
         [self.connector adapterDidReceiveAd:self];
         return;
@@ -79,8 +77,6 @@ static BOOL loggingEnable = YES;
     [self setTimerWith:timeOut];
     
     GNSExtrasFullscreenPangle *extras = [self.connector networkExtras];
-    
-    NSLog(@"LongUni requestAd Pangle....: %@", extras.pangleAdUnitId);
     
     PAGInterstitialRequest *request = [PAGInterstitialRequest request];
     
@@ -109,14 +105,10 @@ static BOOL loggingEnable = YES;
     
     GNSExtrasFullscreenPangle *extras = [self.connector networkExtras];
     
-    NSLog(@"LongUni setUp Pangle: %@ - %@", extras.pangleAppId, extras.pangleAdUnitId);
-    
     PAGConfig *config = [PAGConfig shareConfig];
     config.appID = extras.pangleAppId;
     [PAGSdk startWithConfig:config completionHandler:^(BOOL success, NSError * _Nonnull error) {
         if (error) {
-            
-            NSLog(@"LongUni Could not initialize Pangle SDK: %@", error.description);
             
             NSDictionary *errorInfo = @{NSLocalizedDescriptionKey: @"Could not initialize Pangle SDK."};
             NSError *newError = [NSError errorWithDomain:kGNSAdapterPangleInterstitialAdKeyErrorDomain code:1 userInfo:errorInfo];

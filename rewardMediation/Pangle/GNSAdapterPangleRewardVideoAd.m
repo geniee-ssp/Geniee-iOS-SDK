@@ -116,8 +116,6 @@ static BOOL establishingConnection = NO;
 
 - (void)requestAd:(NSInteger)timeout {
     
-    NSLog(@"LongUni requestAd isReadyForDisplay: %@", [self isReadyForDisplay] ? @"YES" : @"NO");
-    
     if ([self isReadyForDisplay]) {
         
         [self.connector adapterDidReceiveAd:self];
@@ -180,8 +178,6 @@ static BOOL establishingConnection = NO;
 }
 
 - (void)adDidClick:(PAGRewardedAd *)ad {
-    NSLog(@"LongUni adDidClick");
-//    [self.connector adapterDidClickAd:self];
 }
 
 - (void)adDidDismiss:(PAGRewardedAd *)ad {
