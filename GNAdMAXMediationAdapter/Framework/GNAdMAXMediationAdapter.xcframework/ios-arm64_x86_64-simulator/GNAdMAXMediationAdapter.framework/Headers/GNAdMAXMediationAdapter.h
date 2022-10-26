@@ -13,10 +13,12 @@
 #import <AppLovinSDK/AppLovinSDK.h>
 
 
-@interface GNAdMAXMediationAdapter : ALMediationAdapter <MAAdViewAdapter> {
+@interface GNAdMAXMediationAdapter : ALMediationAdapter < MAAdapter, MAAdViewAdapter, MAInterstitialAdapter, MARewardedAdapter> {
     GNAdView *gnAdView;
 }
 
 @property (nonatomic, assign) id<MAAdViewAdapterDelegate> delegate;
+@property (nonatomic, assign) id<MAInterstitialAdapterDelegate> maxInterstitialDelegate;
+@property (nonatomic, assign) id<MARewardedAdapterDelegate> maxRewardDelegate;
 
 @end

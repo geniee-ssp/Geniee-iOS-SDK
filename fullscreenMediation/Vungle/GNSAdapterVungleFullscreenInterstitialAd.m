@@ -35,7 +35,7 @@ static BOOL loggingEnabled = YES;
 }
 
 + (NSString *)adapterVersion {
-    return @"3.0.1";
+    return @"3.1.0";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {

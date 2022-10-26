@@ -7,12 +7,13 @@ target 'GNAdFullscreenInterstitialSample' do
 
   # Pods for GNAdFullscreenInterstitialSample
   pod 'Geniee-iOS-SDK'
-  pod 'AppLovinSDK','~> 5.1.1'
+  pod 'AppLovinSDK'
   pod 'MaioSDK', '~> 1.4.0'
   pod 'NendSDK_iOS', '~> 5.0.2'
   pod 'ZucksAdNetworkSDK', '~> 4.9.0'
   pod 'VungleSDK-iOS', '~> 6.2.0'
   pod 'TapjoySDK', '~> 12.0.0'
   pod 'UnityAds', '~> 2.3.0'
+  pod 'Ads-Global'
 
 end

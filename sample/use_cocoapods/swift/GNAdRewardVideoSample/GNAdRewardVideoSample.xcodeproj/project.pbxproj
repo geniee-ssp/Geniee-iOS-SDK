@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C1EDC1B22AE051400661094 /* GNSAdapterTikTokRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1EDC1A22AE051100661094 /* GNSAdapterTikTokRewardVideoAd.m */; };
+		0CBABC8528F6A26200425CAD /* Pangle in Resources */ = {isa = PBXBuildFile; fileRef = 0CBABC8428F6A26200425CAD /* Pangle */; };
+		0CBABC8728F6A7F100425CAD /* GNSAdapterPangleRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBABC8628F6A7F100425CAD /* GNSAdapterPangleRewardVideoAd.m */; };
+		AF1A289A22514043D216273B /* libPods-GNAdRewardVideoSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D323CFC03E69D8239A82EFDC /* libPods-GNAdRewardVideoSample.a */; };
 		E8899FEE20D8D12000BE7091 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8899FED20D8D12000BE7091 /* AppDelegate.swift */; };
 		E8899FF020D8D12000BE7091 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8899FEF20D8D12000BE7091 /* ViewController.swift */; };
 		E8899FF320D8D12000BE7091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8899FF120D8D12000BE7091 /* Main.storyboard */; };
@@ -28,9 +30,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C1EDC1922AE051100661094 /* GNSAdapterTikTokRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterTikTokRewardVideoAd.h; sourceTree = "<group>"; };
-		0C1EDC1A22AE051100661094 /* GNSAdapterTikTokRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterTikTokRewardVideoAd.m; sourceTree = "<group>"; };
+		0CBABC8428F6A26200425CAD /* Pangle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pangle; sourceTree = "<group>"; };
+		0CBABC8628F6A7F100425CAD /* GNSAdapterPangleRewardVideoAd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = GNSAdapterPangleRewardVideoAd.m; path = ../../../../rewardMediation/Pangle/GNSAdapterPangleRewardVideoAd.m; sourceTree = "<group>"; };
 		2F977C20211C0F3800CA4B24 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		992B7A6D95A028E17F3EA62B /* Pods-GNAdRewardVideoSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdRewardVideoSample.release.xcconfig"; path = "Target Support Files/Pods-GNAdRewardVideoSample/Pods-GNAdRewardVideoSample.release.xcconfig"; sourceTree = "<group>"; };
+		BA4957058C421513EE932644 /* Pods-GNAdRewardVideoSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdRewardVideoSample.debug.xcconfig"; path = "Target Support Files/Pods-GNAdRewardVideoSample/Pods-GNAdRewardVideoSample.debug.xcconfig"; sourceTree = "<group>"; };
+		D323CFC03E69D8239A82EFDC /* libPods-GNAdRewardVideoSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GNAdRewardVideoSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8899FEA20D8D12000BE7091 /* GNAdRewardVideoSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNAdRewardVideoSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8899FED20D8D12000BE7091 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8899FEF20D8D12000BE7091 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,21 +75,13 @@
 				E8CED03E20DA7715007779A8 /* CoreMedia.framework in Frameworks */,
 				E8CED03C20DA770C007779A8 /* AVFoundation.framework in Frameworks */,
 				E8CED03A20DA76FF007779A8 /* AdSupport.framework in Frameworks */,
+				AF1A289A22514043D216273B /* libPods-GNAdRewardVideoSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C1EDC1822AE051100661094 /* TikTok */ = {
-			isa = PBXGroup;
-			children = (
-				0C1EDC1922AE051100661094 /* GNSAdapterTikTokRewardVideoAd.h */,
-				0C1EDC1A22AE051100661094 /* GNSAdapterTikTokRewardVideoAd.m */,
-			);
-			path = TikTok;
-			sourceTree = "<group>";
-		};
 		3EB938CDB8A6AA78F5CA3D74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,16 +91,28 @@
 				E8CED03D20DA7715007779A8 /* CoreMedia.framework */,
 				E8CED03B20DA770C007779A8 /* AVFoundation.framework */,
 				E8CED03920DA76FF007779A8 /* AdSupport.framework */,
+				D323CFC03E69D8239A82EFDC /* libPods-GNAdRewardVideoSample.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3CDB34D0C6E0970871AF13A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA4957058C421513EE932644 /* Pods-GNAdRewardVideoSample.debug.xcconfig */,
+				992B7A6D95A028E17F3EA62B /* Pods-GNAdRewardVideoSample.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		E8899FE120D8D12000BE7091 = {
 			isa = PBXGroup;
 			children = (
+				0CBABC8628F6A7F100425CAD /* GNSAdapterPangleRewardVideoAd.m */,
 				E8899FEC20D8D12000BE7091 /* GNAdRewardVideoSample */,
 				E8899FEB20D8D12000BE7091 /* Products */,
 				3EB938CDB8A6AA78F5CA3D74 /* Frameworks */,
+				E3CDB34D0C6E0970871AF13A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,7 +142,7 @@
 		E8CECF9A20DA70CC007779A8 /* Adapter */ = {
 			isa = PBXGroup;
 			children = (
-				0C1EDC1822AE051100661094 /* TikTok */,
+				0CBABC8428F6A26200425CAD /* Pangle */,
 				E8CECF9B20DA70CC007779A8 /* UnityAds */,
 				E8CECF9E20DA70CC007779A8 /* Vungle */,
 				E8CECFA420DA70CC007779A8 /* Tapjoy */,
@@ -216,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8899FFC20D8D12100BE7091 /* Build configuration list for PBXNativeTarget "GNAdRewardVideoSample" */;
 			buildPhases = (
+				C3AD37CC324B160C24AF7B67 /* [CP] Check Pods Manifest.lock */,
 				E8899FE620D8D12000BE7091 /* Sources */,
 				E8899FE720D8D12000BE7091 /* Frameworks */,
 				E8899FE820D8D12000BE7091 /* Resources */,
+				C9DB02680B5F18BDAAFA8154 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,12 +279,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8899FF820D8D12100BE7091 /* LaunchScreen.storyboard in Resources */,
+				0CBABC8528F6A26200425CAD /* Pangle in Resources */,
 				E8899FF520D8D12100BE7091 /* Assets.xcassets in Resources */,
 				E8899FF320D8D12000BE7091 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C3AD37CC324B160C24AF7B67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GNAdRewardVideoSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9DB02680B5F18BDAAFA8154 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNAdRewardVideoSample/Pods-GNAdRewardVideoSample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GNAdRewardVideoSample/Pods-GNAdRewardVideoSample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GNAdRewardVideoSample/Pods-GNAdRewardVideoSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E8899FE620D8D12000BE7091 /* Sources */ = {
@@ -284,11 +338,11 @@
 				E8899FF020D8D12000BE7091 /* ViewController.swift in Sources */,
 				E8CECFB920DA70CD007779A8 /* GNSAdapterTapjoyRewardVideoAd.m in Sources */,
 				E8CECFB620DA70CD007779A8 /* GNSAdapterUnityAdsRewardVideoAd.m in Sources */,
-				0C1EDC1B22AE051400661094 /* GNSAdapterTikTokRewardVideoAd.m in Sources */,
 				E8CECFB720DA70CD007779A8 /* GNSAdapterVungleRewardVideoAd.m in Sources */,
 				E8CECFBA20DA70CD007779A8 /* GNSAdapterAppLovinRewardVideoAd.m in Sources */,
 				E8CECFBB20DA70CD007779A8 /* GNSAdapterAdColonyRewardVideoAd.m in Sources */,
 				E8CECFBD20DA70CD007779A8 /* GNSAdapterNendRewardVideoAd.m in Sources */,
+				0CBABC8728F6A7F100425CAD /* GNSAdapterPangleRewardVideoAd.m in Sources */,
 				E8899FEE20D8D12000BE7091 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,6 +485,7 @@
 		};
 		E8899FFD20D8D12100BE7091 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA4957058C421513EE932644 /* Pods-GNAdRewardVideoSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -459,6 +514,7 @@
 		};
 		E8899FFE20D8D12100BE7091 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 992B7A6D95A028E17F3EA62B /* Pods-GNAdRewardVideoSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
