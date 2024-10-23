@@ -5,16 +5,15 @@
 
 #import "GNSAdapterAppLovinFullscreenInterstitialAd.h"
 
-#import <AppLovinSDK/ALSdk.h>
-#import <AppLovinSDK/ALInterstitialAd.h>
+#import <AppLovinSDK/AppLovinSDK.h>
 
 static NSString *const kGNSAdapterApplovinInterstitialAdKeyErrorDomain = @"jp.co.geniee.GNSAdapterApplovinInterstitialAd";
 static BOOL loggingEnbale = YES;
 
-@interface GNSAdapterAppLovinFullscreenInterstitialAd()<ALAdLoadDelegate, ALAdDisplayDelegate, ALAdVideoPlaybackDelegate>
+@interface GNSAdapterAppLovinFullscreenInterstitialAd()<MAAdDelegate>
 @property(nonatomic, weak)id<GNSAdNetworkConnector> connector;
 @property(nonatomic, retain) NSTimer *timer;
-@property(nonatomic, strong) ALAd *ad;
+@property (nonatomic, strong) MAInterstitialAd *maInterstitialAd;
 
 @end
 
@@ -33,7 +32,7 @@ static BOOL loggingEnbale = YES;
 
 #pragma mark - GNSAdNetworkAdapter
 + (NSString *)adapterVersion {
-    return @"3.1.0";
+    return @"3.1.1";
 }
 
 - (instancetype)initWithAdNetworkConnector:(id<GNSAdNetworkConnector>)connector {
@@ -45,7 +44,7 @@ static BOOL loggingEnbale = YES;
 }
 
 - (BOOL)isReadyForDisplay {
-    return self.ad != nil;
+    return [self.maInterstitialAd isReady];
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {
@@ -54,14 +53,15 @@ static BOOL loggingEnbale = YES;
 
 - (id<GNSAdNetworkExtras>)networkExtrasParameter:(GNSAdNetworkExtraParams *)parameter {
     GNSExtrasFullscreenApplovin *extra = [[GNSExtrasFullscreenApplovin alloc]init];
+    extra.sdkKey = parameter.external_link_media_id;
     extra.zone_id = parameter.external_link_id;
     return extra;
 }
 
 - (void)presentAdWithRootViewController:(UIViewController *)viewController {
-    [ALInterstitialAd shared].adDisplayDelegate = self;
-    [ALInterstitialAd shared].adVideoPlaybackDelegate = self;
-    [[ALInterstitialAd shared] showAd:self.ad];
+    if ([self isReadyForDisplay]) {
+        [self.maInterstitialAd showAd];
+    }
 }
 
 - (void)requestAd:(NSInteger)timeOut {
@@ -71,17 +71,67 @@ static BOOL loggingEnbale = YES;
     }
     [self setTimerWith:timeOut];
     GNSExtrasFullscreenApplovin *extras = [self.connector networkExtras];
-    [self AllLog:[NSString stringWithFormat:@"Create interstitial with Applovin zone_id = @%@",extras.zone_id]];
-    if ([extras.zone_id length] == 0) {
-        [[ALSdk shared].adService loadNextAd:[ALAdSize interstitial] andNotify:self];
-    } else {
-        [[ALSdk shared].adService loadNextAdForZoneIdentifier:extras.zone_id andNotify:self];
-    }
+    
+    self.maInterstitialAd = [[MAInterstitialAd alloc] initWithAdUnitIdentifier: extras.zone_id];
+    self.maInterstitialAd.delegate = self;
+
+    // Load the first ad
+    [self.maInterstitialAd loadAd];
 }
 
 - (void)setUp {
-    [self AllLog:@"setup"];
-    [self.connector adapterDidSetupAd:self];
+    
+    [self AllLog:[NSString stringWithFormat:@"setUp AppLovin version = %@", [ALSdk version]]];
+    
+    GNSExtrasFullscreenApplovin *extras = [self.connector networkExtras];
+    
+    ALSdkInitializationConfiguration *initConfig = [ALSdkInitializationConfiguration configurationWithSdkKey: extras.sdkKey builderBlock:^(ALSdkInitializationConfigurationBuilder *builder) {
+        
+        builder.mediationProvider = ALMediationProviderMAX;
+        
+        NSString *currentIDFV = UIDevice.currentDevice.identifierForVendor.UUIDString;
+        if ( currentIDFV.length > 0 )
+        {
+            builder.testDeviceAdvertisingIdentifiers = @[currentIDFV];
+        }
+    }];
+    
+    if (![[ALSdk shared] isInitialized]) {
+        
+        [[ALSdk shared] initializeWithConfiguration: initConfig completionHandler:^(ALSdkConfiguration *sdkConfig) {
+        }];
+        
+        [self waitForInitialization];
+    } else {
+        [self.connector adapterDidSetupAd:self];
+    }
+}
+
+- (void)waitForInitialization {
+    // Create a dispatch semaphore
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+    
+    // Polling interval
+    NSTimeInterval pollingInterval = 0.5; // 500ms
+    NSInteger maxAttempts = 10; // Limit the number of attempts
+    NSInteger attempts = 0;
+    
+    while (attempts < maxAttempts) {
+        if ([[ALSdk shared] isInitialized]) {
+            [self.connector adapterDidSetupAd:self];
+            return;
+        }
+        
+        attempts++;
+        // Wait for the specified interval before the next check
+        dispatch_semaphore_wait(semaphore, dispatch_time(DISPATCH_TIME_NOW, (int64_t)(pollingInterval * NSEC_PER_SEC)));
+    }
+
+    // If it still isn't initialized after max attempts, log and notify error
+    [self AllLog:@"Applovin SDK initialization timeout."];
+    [self.connector adapter:self didFailToSetupAdWithError:[NSError errorWithDomain:kGNSAdapterApplovinInterstitialAdKeyErrorDomain
+                                                                             code:101
+                                                                         userInfo:@{NSLocalizedDescriptionKey: @"Applovin SDK initialization timeout."}]];
 }
 
 - (void)stopBeingDelegate {
@@ -114,53 +164,39 @@ static BOOL loggingEnbale = YES;
     [self.connector adapter:self didFailToLoadAdwithError:error];
 }
 
-#pragma mark - Ad Load Delegate
-- (void)adService:(ALAdService *)adService didLoadAd:(ALAd *)ad
+#pragma mark - MAAdDelegate Protocol
+
+- (void)didLoadAd:(MAAd *)ad
 {
     [self deleteTimer];
-    self.ad = ad;
     [self.connector adapterDidReceiveAd:self];
 }
 
-- (void)adService:(ALAdService *)adService didFailToLoadAdWithError:(int)code
+
+- (void)didFailToLoadAdForAdUnitIdentifier:(NSString *)adUnitIdentifier withError:(MAError *)error
 {
     [self deleteTimer];
-    self.ad = nil;
-    NSDictionary *errorInfo = @{ NSLocalizedDescriptionKey : @"No ad to show." };
-    NSError *error = [NSError errorWithDomain: kGNSAdapterApplovinInterstitialAdKeyErrorDomain
-                      //code: (code == kALErrorCodeNoFill) ? kGADErrorMediationNoFill : kGADErrorNetworkError
-                                         code: (code == kALErrorCodeNoFill) ? kALErrorCodeNoFill : kALErrorCodeNoFill
+    NSDictionary *errorInfo = @{ NSLocalizedDescriptionKey : error.message };
+    NSError *withError = [NSError errorWithDomain: kGNSAdapterApplovinInterstitialAdKeyErrorDomain
+                                         code: error.code
                                      userInfo: errorInfo];
-    [self.connector adapter: self didFailToLoadAdwithError: error];
+    [self.connector adapter: self didFailToLoadAdwithError: withError];
 }
 
-#pragma mark - Ad Display Delegate
-- (void)ad:(ALAd *)ad wasDisplayedIn:(UIView *)view
-{
-    [self AllLog:@"Applovin interstitial displayed"];
-    self.ad = nil;
+- (void)didDisplayAd:(MAAd *)ad {
     [self.connector adapterWillPresentScreenInterstitialAd:self];
 }
 
-- (void)ad:(ALAd *)ad wasClickedIn:(UIView *)view
-{
-    [self.connector adapterDidClickAd:self];
-}
+- (void)didClickAd:(MAAd *)ad {}
 
-- (void)ad:(ALAd *)ad wasHiddenIn:(UIView *)view
+- (void)didHideAd:(MAAd *)ad
 {
     [self.connector adapterDidCloseAd:self];
 }
 
-#pragma mark - Ad Video Playback Delegate
-- (void)videoPlaybackBeganInAd:(ALAd *)ad
+- (void)didFailToDisplayAd:(MAAd *)ad withError:(MAError *)error
 {
-    [self AllLog:@"Applovin video started"];
-    [self.connector adapterWillPresentScreenInterstitialAd:self];
-}
-
-- (void)videoPlaybackEndedInAd:(nonnull ALAd *)ad atPlaybackPercent:(nonnull NSNumber *)percentPlayed fullyWatched:(BOOL)wasFullyWatched {
-    
+    [self.connector adapterDidCloseAd:self];
 }
 
 
