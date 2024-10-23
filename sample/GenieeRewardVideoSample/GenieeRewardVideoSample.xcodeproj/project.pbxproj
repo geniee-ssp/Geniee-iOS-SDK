@@ -1,0 +1,908 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C4833962CC1F96A00AB1F4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4833952CC1F96A00AB1F4D /* AppDelegate.swift */; };
+		0C4833982CC1F96A00AB1F4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4833972CC1F96A00AB1F4D /* SceneDelegate.swift */; };
+		0C48339A2CC1F96A00AB1F4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4833992CC1F96A00AB1F4D /* ViewController.swift */; };
+		0C48339D2CC1F96A00AB1F4D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0C48339C2CC1F96A00AB1F4D /* Base */; };
+		0C48339F2CC1F96E00AB1F4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C48339E2CC1F96E00AB1F4D /* Assets.xcassets */; };
+		0C4833A22CC1F96E00AB1F4D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 0C4833A12CC1F96E00AB1F4D /* Base */; };
+		0C4833AD2CC1F96F00AB1F4D /* GenieeRewardVideoSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4833AC2CC1F96F00AB1F4D /* GenieeRewardVideoSampleTests.swift */; };
+		0C4833B72CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4833B62CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITests.swift */; };
+		0C4833B92CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4833B82CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITestsLaunchTests.swift */; };
+		0C4833CD2CC1FBF500AB1F4D /* GNSAdapterVungleRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4833C82CC1FBF500AB1F4D /* GNSAdapterVungleRewardVideoAd.m */; };
+		0C4833CE2CC1FBF500AB1F4D /* GNSAdapterPangleRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4833CB2CC1FBF500AB1F4D /* GNSAdapterPangleRewardVideoAd.m */; };
+		0C4833D22CC1FE1D00AB1F4D /* GNSAdapterAppLovinRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4833D02CC1FE1D00AB1F4D /* GNSAdapterAppLovinRewardVideoAd.m */; };
+		0C4833DA2CC206AB00AB1F4D /* GNSAdapterUnityAdsRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4833D82CC206AB00AB1F4D /* GNSAdapterUnityAdsRewardVideoAd.m */; };
+		0CAE4F0F2CC64DB10014CF05 /* GNSAdapterGoogleAdxRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAE4F0D2CC64DB10014CF05 /* GNSAdapterGoogleAdxRewardVideoAd.m */; };
+		0CAE4F172CC766EB0014CF05 /* GNSAdapterMaioRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAE4F152CC766EA0014CF05 /* GNSAdapterMaioRewardVideoAd.m */; };
+		A6B6B607DC6EB99718BBFE4A /* Pods_GenieeRewardVideoSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EED60D24A801572F31696D /* Pods_GenieeRewardVideoSampleTests.framework */; };
+		EDC68E8B9B7FB482FA2660CB /* Pods_GenieeRewardVideoSample_GenieeRewardVideoSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6421D7AC7BA4184B0C3833B8 /* Pods_GenieeRewardVideoSample_GenieeRewardVideoSampleUITests.framework */; };
+		EE0711F281CC1EC86E3D4844 /* Pods_GenieeRewardVideoSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421C784D983525D965DF8C8F /* Pods_GenieeRewardVideoSample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C4833A92CC1F96F00AB1F4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C48338A2CC1F96A00AB1F4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C4833912CC1F96A00AB1F4D;
+			remoteInfo = GenieeRewardVideoSample;
+		};
+		0C4833B32CC1F96F00AB1F4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C48338A2CC1F96A00AB1F4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C4833912CC1F96A00AB1F4D;
+			remoteInfo = GenieeRewardVideoSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C4833922CC1F96A00AB1F4D /* GenieeRewardVideoSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenieeRewardVideoSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C4833952CC1F96A00AB1F4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0C4833972CC1F96A00AB1F4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0C4833992CC1F96A00AB1F4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0C48339C2CC1F96A00AB1F4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C48339E2CC1F96E00AB1F4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C4833A12CC1F96E00AB1F4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C4833A32CC1F96E00AB1F4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C4833A82CC1F96F00AB1F4D /* GenieeRewardVideoSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenieeRewardVideoSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C4833AC2CC1F96F00AB1F4D /* GenieeRewardVideoSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenieeRewardVideoSampleTests.swift; sourceTree = "<group>"; };
+		0C4833B22CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GenieeRewardVideoSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C4833B62CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenieeRewardVideoSampleUITests.swift; sourceTree = "<group>"; };
+		0C4833B82CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenieeRewardVideoSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0C4833C52CC1FB1700AB1F4D /* GNAdRewardVideo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GNAdRewardVideo-Bridging-Header.h"; sourceTree = "<group>"; };
+		0C4833C72CC1FBF500AB1F4D /* GNSAdapterVungleRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterVungleRewardVideoAd.h; sourceTree = "<group>"; };
+		0C4833C82CC1FBF500AB1F4D /* GNSAdapterVungleRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterVungleRewardVideoAd.m; sourceTree = "<group>"; };
+		0C4833CA2CC1FBF500AB1F4D /* GNSAdapterPangleRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterPangleRewardVideoAd.h; sourceTree = "<group>"; };
+		0C4833CB2CC1FBF500AB1F4D /* GNSAdapterPangleRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterPangleRewardVideoAd.m; sourceTree = "<group>"; };
+		0C4833CF2CC1FE1D00AB1F4D /* GNSAdapterAppLovinRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterAppLovinRewardVideoAd.h; sourceTree = "<group>"; };
+		0C4833D02CC1FE1D00AB1F4D /* GNSAdapterAppLovinRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterAppLovinRewardVideoAd.m; sourceTree = "<group>"; };
+		0C4833D72CC206AB00AB1F4D /* GNSAdapterUnityAdsRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterUnityAdsRewardVideoAd.h; sourceTree = "<group>"; };
+		0C4833D82CC206AB00AB1F4D /* GNSAdapterUnityAdsRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterUnityAdsRewardVideoAd.m; sourceTree = "<group>"; };
+		0CAE4F0C2CC64DB10014CF05 /* GNSAdapterGoogleAdxRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterGoogleAdxRewardVideoAd.h; sourceTree = "<group>"; };
+		0CAE4F0D2CC64DB10014CF05 /* GNSAdapterGoogleAdxRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterGoogleAdxRewardVideoAd.m; sourceTree = "<group>"; };
+		0CAE4F142CC766EA0014CF05 /* GNSAdapterMaioRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterMaioRewardVideoAd.h; sourceTree = "<group>"; };
+		0CAE4F152CC766EA0014CF05 /* GNSAdapterMaioRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterMaioRewardVideoAd.m; sourceTree = "<group>"; };
+		394A90739E7575F265EE200A /* Pods-GenieeRewardVideoSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenieeRewardVideoSampleTests.release.xcconfig"; path = "Target Support Files/Pods-GenieeRewardVideoSampleTests/Pods-GenieeRewardVideoSampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		421C784D983525D965DF8C8F /* Pods_GenieeRewardVideoSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenieeRewardVideoSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6421D7AC7BA4184B0C3833B8 /* Pods_GenieeRewardVideoSample_GenieeRewardVideoSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenieeRewardVideoSample_GenieeRewardVideoSampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89A1EE0BA883A98E7AB7803A /* Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests.release.xcconfig"; path = "Target Support Files/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		94EED60D24A801572F31696D /* Pods_GenieeRewardVideoSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenieeRewardVideoSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3149E8DF04A83DF140C8FC2 /* Pods-GenieeRewardVideoSampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenieeRewardVideoSampleTests.debug.xcconfig"; path = "Target Support Files/Pods-GenieeRewardVideoSampleTests/Pods-GenieeRewardVideoSampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B3CD8DAD362713E6182E7F67 /* Pods-GenieeRewardVideoSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenieeRewardVideoSample.debug.xcconfig"; path = "Target Support Files/Pods-GenieeRewardVideoSample/Pods-GenieeRewardVideoSample.debug.xcconfig"; sourceTree = "<group>"; };
+		C4A9A38E7B8D48AB8312B6F3 /* Pods-GenieeRewardVideoSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenieeRewardVideoSample.release.xcconfig"; path = "Target Support Files/Pods-GenieeRewardVideoSample/Pods-GenieeRewardVideoSample.release.xcconfig"; sourceTree = "<group>"; };
+		FC00DF9FF80F255103D31C14 /* Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests.debug.xcconfig"; path = "Target Support Files/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C48338F2CC1F96A00AB1F4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE0711F281CC1EC86E3D4844 /* Pods_GenieeRewardVideoSample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C4833A52CC1F96F00AB1F4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6B6B607DC6EB99718BBFE4A /* Pods_GenieeRewardVideoSampleTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C4833AF2CC1F96F00AB1F4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDC68E8B9B7FB482FA2660CB /* Pods_GenieeRewardVideoSample_GenieeRewardVideoSampleUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C4833892CC1F96A00AB1F4D = {
+			isa = PBXGroup;
+			children = (
+				0C4833942CC1F96A00AB1F4D /* GenieeRewardVideoSample */,
+				0C4833AB2CC1F96F00AB1F4D /* GenieeRewardVideoSampleTests */,
+				0C4833B52CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITests */,
+				0C4833932CC1F96A00AB1F4D /* Products */,
+				75CED68EAFCA6F5FAF23C67F /* Pods */,
+				692F7880855A6E663D4D2D75 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0C4833932CC1F96A00AB1F4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C4833922CC1F96A00AB1F4D /* GenieeRewardVideoSample.app */,
+				0C4833A82CC1F96F00AB1F4D /* GenieeRewardVideoSampleTests.xctest */,
+				0C4833B22CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C4833942CC1F96A00AB1F4D /* GenieeRewardVideoSample */ = {
+			isa = PBXGroup;
+			children = (
+				0C4833C62CC1FBE600AB1F4D /* adnetworks */,
+				0C4833C52CC1FB1700AB1F4D /* GNAdRewardVideo-Bridging-Header.h */,
+				0C4833952CC1F96A00AB1F4D /* AppDelegate.swift */,
+				0C4833972CC1F96A00AB1F4D /* SceneDelegate.swift */,
+				0C4833992CC1F96A00AB1F4D /* ViewController.swift */,
+				0C48339B2CC1F96A00AB1F4D /* Main.storyboard */,
+				0C48339E2CC1F96E00AB1F4D /* Assets.xcassets */,
+				0C4833A02CC1F96E00AB1F4D /* LaunchScreen.storyboard */,
+				0C4833A32CC1F96E00AB1F4D /* Info.plist */,
+			);
+			path = GenieeRewardVideoSample;
+			sourceTree = "<group>";
+		};
+		0C4833AB2CC1F96F00AB1F4D /* GenieeRewardVideoSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C4833AC2CC1F96F00AB1F4D /* GenieeRewardVideoSampleTests.swift */,
+			);
+			path = GenieeRewardVideoSampleTests;
+			sourceTree = "<group>";
+		};
+		0C4833B52CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0C4833B62CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITests.swift */,
+				0C4833B82CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITestsLaunchTests.swift */,
+			);
+			path = GenieeRewardVideoSampleUITests;
+			sourceTree = "<group>";
+		};
+		0C4833C62CC1FBE600AB1F4D /* adnetworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CAE4F162CC766EA0014CF05 /* Maio */,
+				0CAE4F0E2CC64DB10014CF05 /* GoogleAdx */,
+				0C4833D92CC206AB00AB1F4D /* UnityAds */,
+				0C4833D12CC1FE1D00AB1F4D /* AppLovin */,
+				0C4833CC2CC1FBF500AB1F4D /* Pangle */,
+				0C4833C92CC1FBF500AB1F4D /* Vungle */,
+			);
+			path = adnetworks;
+			sourceTree = "<group>";
+		};
+		0C4833C92CC1FBF500AB1F4D /* Vungle */ = {
+			isa = PBXGroup;
+			children = (
+				0C4833C72CC1FBF500AB1F4D /* GNSAdapterVungleRewardVideoAd.h */,
+				0C4833C82CC1FBF500AB1F4D /* GNSAdapterVungleRewardVideoAd.m */,
+			);
+			name = Vungle;
+			path = ../../../../rewardMediation/Vungle;
+			sourceTree = "<group>";
+		};
+		0C4833CC2CC1FBF500AB1F4D /* Pangle */ = {
+			isa = PBXGroup;
+			children = (
+				0C4833CA2CC1FBF500AB1F4D /* GNSAdapterPangleRewardVideoAd.h */,
+				0C4833CB2CC1FBF500AB1F4D /* GNSAdapterPangleRewardVideoAd.m */,
+			);
+			name = Pangle;
+			path = ../../../../rewardMediation/Pangle;
+			sourceTree = "<group>";
+		};
+		0C4833D12CC1FE1D00AB1F4D /* AppLovin */ = {
+			isa = PBXGroup;
+			children = (
+				0C4833CF2CC1FE1D00AB1F4D /* GNSAdapterAppLovinRewardVideoAd.h */,
+				0C4833D02CC1FE1D00AB1F4D /* GNSAdapterAppLovinRewardVideoAd.m */,
+			);
+			name = AppLovin;
+			path = ../../../../rewardMediation/AppLovin;
+			sourceTree = "<group>";
+		};
+		0C4833D92CC206AB00AB1F4D /* UnityAds */ = {
+			isa = PBXGroup;
+			children = (
+				0C4833D72CC206AB00AB1F4D /* GNSAdapterUnityAdsRewardVideoAd.h */,
+				0C4833D82CC206AB00AB1F4D /* GNSAdapterUnityAdsRewardVideoAd.m */,
+			);
+			name = UnityAds;
+			path = ../../../../rewardMediation/UnityAds;
+			sourceTree = "<group>";
+		};
+		0CAE4F0E2CC64DB10014CF05 /* GoogleAdx */ = {
+			isa = PBXGroup;
+			children = (
+				0CAE4F0C2CC64DB10014CF05 /* GNSAdapterGoogleAdxRewardVideoAd.h */,
+				0CAE4F0D2CC64DB10014CF05 /* GNSAdapterGoogleAdxRewardVideoAd.m */,
+			);
+			name = GoogleAdx;
+			path = ../../../../rewardMediation/GoogleAdx;
+			sourceTree = "<group>";
+		};
+		0CAE4F162CC766EA0014CF05 /* Maio */ = {
+			isa = PBXGroup;
+			children = (
+				0CAE4F142CC766EA0014CF05 /* GNSAdapterMaioRewardVideoAd.h */,
+				0CAE4F152CC766EA0014CF05 /* GNSAdapterMaioRewardVideoAd.m */,
+			);
+			name = Maio;
+			path = ../../../../rewardMediation/Maio;
+			sourceTree = "<group>";
+		};
+		692F7880855A6E663D4D2D75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				421C784D983525D965DF8C8F /* Pods_GenieeRewardVideoSample.framework */,
+				6421D7AC7BA4184B0C3833B8 /* Pods_GenieeRewardVideoSample_GenieeRewardVideoSampleUITests.framework */,
+				94EED60D24A801572F31696D /* Pods_GenieeRewardVideoSampleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75CED68EAFCA6F5FAF23C67F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B3CD8DAD362713E6182E7F67 /* Pods-GenieeRewardVideoSample.debug.xcconfig */,
+				C4A9A38E7B8D48AB8312B6F3 /* Pods-GenieeRewardVideoSample.release.xcconfig */,
+				FC00DF9FF80F255103D31C14 /* Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests.debug.xcconfig */,
+				89A1EE0BA883A98E7AB7803A /* Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests.release.xcconfig */,
+				A3149E8DF04A83DF140C8FC2 /* Pods-GenieeRewardVideoSampleTests.debug.xcconfig */,
+				394A90739E7575F265EE200A /* Pods-GenieeRewardVideoSampleTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C4833912CC1F96A00AB1F4D /* GenieeRewardVideoSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C4833BC2CC1F96F00AB1F4D /* Build configuration list for PBXNativeTarget "GenieeRewardVideoSample" */;
+			buildPhases = (
+				FAF77D30ECE4E2FFAF9FDA74 /* [CP] Check Pods Manifest.lock */,
+				0C48338E2CC1F96A00AB1F4D /* Sources */,
+				0C48338F2CC1F96A00AB1F4D /* Frameworks */,
+				0C4833902CC1F96A00AB1F4D /* Resources */,
+				BD7613F4B7CB1EF0433B8430 /* [CP] Embed Pods Frameworks */,
+				15FB106CC23F538DA5780D92 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GenieeRewardVideoSample;
+			productName = GenieeRewardVideoSample;
+			productReference = 0C4833922CC1F96A00AB1F4D /* GenieeRewardVideoSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0C4833A72CC1F96F00AB1F4D /* GenieeRewardVideoSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C4833BF2CC1F96F00AB1F4D /* Build configuration list for PBXNativeTarget "GenieeRewardVideoSampleTests" */;
+			buildPhases = (
+				74CDD7208AA3D6353A4292AC /* [CP] Check Pods Manifest.lock */,
+				0C4833A42CC1F96F00AB1F4D /* Sources */,
+				0C4833A52CC1F96F00AB1F4D /* Frameworks */,
+				0C4833A62CC1F96F00AB1F4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C4833AA2CC1F96F00AB1F4D /* PBXTargetDependency */,
+			);
+			name = GenieeRewardVideoSampleTests;
+			productName = GenieeRewardVideoSampleTests;
+			productReference = 0C4833A82CC1F96F00AB1F4D /* GenieeRewardVideoSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0C4833B12CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C4833C22CC1F96F00AB1F4D /* Build configuration list for PBXNativeTarget "GenieeRewardVideoSampleUITests" */;
+			buildPhases = (
+				9A012F6DF1507B3B0F7E1DEE /* [CP] Check Pods Manifest.lock */,
+				0C4833AE2CC1F96F00AB1F4D /* Sources */,
+				0C4833AF2CC1F96F00AB1F4D /* Frameworks */,
+				0C4833B02CC1F96F00AB1F4D /* Resources */,
+				0BE97456C754922C08A7AAEB /* [CP] Embed Pods Frameworks */,
+				0F4C297C28949F75176B7C50 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C4833B42CC1F96F00AB1F4D /* PBXTargetDependency */,
+			);
+			name = GenieeRewardVideoSampleUITests;
+			productName = GenieeRewardVideoSampleUITests;
+			productReference = 0C4833B22CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C48338A2CC1F96A00AB1F4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					0C4833912CC1F96A00AB1F4D = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					0C4833A72CC1F96F00AB1F4D = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 0C4833912CC1F96A00AB1F4D;
+					};
+					0C4833B12CC1F96F00AB1F4D = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 0C4833912CC1F96A00AB1F4D;
+					};
+				};
+			};
+			buildConfigurationList = 0C48338D2CC1F96A00AB1F4D /* Build configuration list for PBXProject "GenieeRewardVideoSample" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C4833892CC1F96A00AB1F4D;
+			productRefGroup = 0C4833932CC1F96A00AB1F4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C4833912CC1F96A00AB1F4D /* GenieeRewardVideoSample */,
+				0C4833A72CC1F96F00AB1F4D /* GenieeRewardVideoSampleTests */,
+				0C4833B12CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C4833902CC1F96A00AB1F4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C48339F2CC1F96E00AB1F4D /* Assets.xcassets in Resources */,
+				0C4833A22CC1F96E00AB1F4D /* Base in Resources */,
+				0C48339D2CC1F96A00AB1F4D /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C4833A62CC1F96F00AB1F4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C4833B02CC1F96F00AB1F4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BE97456C754922C08A7AAEB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F4C297C28949F75176B7C50 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15FB106CC23F538DA5780D92 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample/Pods-GenieeRewardVideoSample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample/Pods-GenieeRewardVideoSample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample/Pods-GenieeRewardVideoSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74CDD7208AA3D6353A4292AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GenieeRewardVideoSampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A012F6DF1507B3B0F7E1DEE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD7613F4B7CB1EF0433B8430 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample/Pods-GenieeRewardVideoSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample/Pods-GenieeRewardVideoSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample/Pods-GenieeRewardVideoSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAF77D30ECE4E2FFAF9FDA74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GenieeRewardVideoSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C48338E2CC1F96A00AB1F4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C4833DA2CC206AB00AB1F4D /* GNSAdapterUnityAdsRewardVideoAd.m in Sources */,
+				0C48339A2CC1F96A00AB1F4D /* ViewController.swift in Sources */,
+				0C4833CD2CC1FBF500AB1F4D /* GNSAdapterVungleRewardVideoAd.m in Sources */,
+				0C4833962CC1F96A00AB1F4D /* AppDelegate.swift in Sources */,
+				0C4833D22CC1FE1D00AB1F4D /* GNSAdapterAppLovinRewardVideoAd.m in Sources */,
+				0C4833982CC1F96A00AB1F4D /* SceneDelegate.swift in Sources */,
+				0C4833CE2CC1FBF500AB1F4D /* GNSAdapterPangleRewardVideoAd.m in Sources */,
+				0CAE4F0F2CC64DB10014CF05 /* GNSAdapterGoogleAdxRewardVideoAd.m in Sources */,
+				0CAE4F172CC766EB0014CF05 /* GNSAdapterMaioRewardVideoAd.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C4833A42CC1F96F00AB1F4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C4833AD2CC1F96F00AB1F4D /* GenieeRewardVideoSampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C4833AE2CC1F96F00AB1F4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C4833B92CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITestsLaunchTests.swift in Sources */,
+				0C4833B72CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C4833AA2CC1F96F00AB1F4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C4833912CC1F96A00AB1F4D /* GenieeRewardVideoSample */;
+			targetProxy = 0C4833A92CC1F96F00AB1F4D /* PBXContainerItemProxy */;
+		};
+		0C4833B42CC1F96F00AB1F4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C4833912CC1F96A00AB1F4D /* GenieeRewardVideoSample */;
+			targetProxy = 0C4833B32CC1F96F00AB1F4D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0C48339B2CC1F96A00AB1F4D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C48339C2CC1F96A00AB1F4D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0C4833A02CC1F96E00AB1F4D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C4833A12CC1F96E00AB1F4D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C4833BA2CC1F96F00AB1F4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0C4833BB2CC1F96F00AB1F4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C4833BD2CC1F96F00AB1F4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3CD8DAD362713E6182E7F67 /* Pods-GenieeRewardVideoSample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RKMVWZ32F4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GenieeRewardVideoSample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.geniee.GenieeRewardVideoSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "GenieeRewardVideoSample/GNAdRewardVideo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C4833BE2CC1F96F00AB1F4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4A9A38E7B8D48AB8312B6F3 /* Pods-GenieeRewardVideoSample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RKMVWZ32F4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GenieeRewardVideoSample/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.geniee.GenieeRewardVideoSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "GenieeRewardVideoSample/GNAdRewardVideo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0C4833C02CC1F96F00AB1F4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3149E8DF04A83DF140C8FC2 /* Pods-GenieeRewardVideoSampleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RKMVWZ32F4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.geniee.GenieeRewardVideoSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GenieeRewardVideoSample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GenieeRewardVideoSample";
+			};
+			name = Debug;
+		};
+		0C4833C12CC1F96F00AB1F4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 394A90739E7575F265EE200A /* Pods-GenieeRewardVideoSampleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RKMVWZ32F4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.geniee.GenieeRewardVideoSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GenieeRewardVideoSample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GenieeRewardVideoSample";
+			};
+			name = Release;
+		};
+		0C4833C32CC1F96F00AB1F4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC00DF9FF80F255103D31C14 /* Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RKMVWZ32F4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.geniee.GenieeRewardVideoSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GenieeRewardVideoSample;
+			};
+			name = Debug;
+		};
+		0C4833C42CC1F96F00AB1F4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89A1EE0BA883A98E7AB7803A /* Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RKMVWZ32F4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.geniee.GenieeRewardVideoSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GenieeRewardVideoSample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C48338D2CC1F96A00AB1F4D /* Build configuration list for PBXProject "GenieeRewardVideoSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C4833BA2CC1F96F00AB1F4D /* Debug */,
+				0C4833BB2CC1F96F00AB1F4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C4833BC2CC1F96F00AB1F4D /* Build configuration list for PBXNativeTarget "GenieeRewardVideoSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C4833BD2CC1F96F00AB1F4D /* Debug */,
+				0C4833BE2CC1F96F00AB1F4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C4833BF2CC1F96F00AB1F4D /* Build configuration list for PBXNativeTarget "GenieeRewardVideoSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C4833C02CC1F96F00AB1F4D /* Debug */,
+				0C4833C12CC1F96F00AB1F4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C4833C22CC1F96F00AB1F4D /* Build configuration list for PBXNativeTarget "GenieeRewardVideoSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C4833C32CC1F96F00AB1F4D /* Debug */,
+				0C4833C42CC1F96F00AB1F4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C48338A2CC1F96A00AB1F4D /* Project object */;
+}

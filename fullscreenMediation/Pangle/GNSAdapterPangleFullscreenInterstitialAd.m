@@ -17,6 +17,7 @@ static BOOL loggingEnable = YES;
 
 @property(nonatomic, strong) PAGLInterstitialAd *pangleInterstialAd;
 @property(nonatomic, strong) GNSExtrasFullscreenPangle *extras;
+@property (assign, nonatomic) BOOL isSDKInitialized;
 
 @end
 
@@ -34,7 +35,7 @@ static BOOL loggingEnable = YES;
 
 #pragma mark - GNSAdNetworkAdapter
 + (NSString *)adapterVersion {
-    return @"3.1.0";
+    return @"3.1.1";
 }
 
 - (instancetype)initWithAdNetworkConnector:(id<GNSAdNetworkConnector>)connector {
@@ -63,8 +64,6 @@ static BOOL loggingEnable = YES;
 - (void)presentAdWithRootViewController:(UIViewController *)viewController {
     if (self.pangleInterstialAd != nil) {
         [self.pangleInterstialAd presentFromRootViewController:viewController];
-        
-        [self.connector adapterWillPresentScreenInterstitialAd:self];
     }
 }
 
@@ -103,21 +102,49 @@ static BOOL loggingEnable = YES;
 - (void)setUp {
     [self AllLog:@"setup"];
     
-    GNSExtrasFullscreenPangle *extras = [self.connector networkExtras];
+    if(!self.isSDKInitialized) {
+        
+        GNSExtrasFullscreenPangle *extras = [self.connector networkExtras];
+        
+        PAGConfig *config = [PAGConfig shareConfig];
+        config.appID = extras.pangleAppId;
+        [PAGSdk startWithConfig:config completionHandler:^(BOOL success, NSError * _Nonnull error) {
+            if (error) {
+                return;
+            } else {
+                self.isSDKInitialized = true;
+            }
+        }];
+        
+        [self waitForInitialization];
+    } else {
+        [self.connector adapterDidSetupAd:self];
+    }
+}
+
+- (void)waitForInitialization {
+    // Create a dispatch semaphore
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
     
-    PAGConfig *config = [PAGConfig shareConfig];
-    config.appID = extras.pangleAppId;
-    [PAGSdk startWithConfig:config completionHandler:^(BOOL success, NSError * _Nonnull error) {
-        if (error) {
-            
-            NSDictionary *errorInfo = @{NSLocalizedDescriptionKey: @"Could not initialize Pangle SDK."};
-            NSError *newError = [NSError errorWithDomain:kGNSAdapterPangleInterstitialAdKeyErrorDomain code:1 userInfo:errorInfo];
-            [self.connector adapter:self didFailToLoadAdwithError:newError];
+    // Polling interval
+    NSTimeInterval pollingInterval = 0.5; // 500ms
+    NSInteger maxAttempts = 10; // Limit the number of attempts
+    NSInteger attempts = 0;
+    
+    while (attempts < maxAttempts) {
+        if (self.isSDKInitialized) {
+            [self.connector adapterDidSetupAd:self];
             return;
         }
-    }];
+        
+        attempts++;
+        // Wait for the specified interval before the next check
+        dispatch_semaphore_wait(semaphore, dispatch_time(DISPATCH_TIME_NOW, (int64_t)(pollingInterval * NSEC_PER_SEC)));
+    }
     
-    [self.connector adapterDidSetupAd:self];
+    NSDictionary *errorInfo = @{NSLocalizedDescriptionKey: @"Could not initialize Pangle SDK."};
+    NSError *newError = [NSError errorWithDomain:kGNSAdapterPangleInterstitialAdKeyErrorDomain code:101 userInfo:errorInfo];
+    [self.connector adapter:self didFailToLoadAdwithError:newError];
 }
 
 - (void)stopBeingDelegate {
@@ -160,7 +187,6 @@ static BOOL loggingEnable = YES;
 }
 
 - (void)adDidClick:(PAGLInterstitialAd *)ad{
-    [self.connector adapterDidClickAd:self];
 }
 
 - (void)adDidDismiss:(PAGLInterstitialAd *)ad{

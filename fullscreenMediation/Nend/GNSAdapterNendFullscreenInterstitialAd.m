@@ -35,7 +35,7 @@ static BOOL loggingEnbale = YES;
 #pragma mark - GNSAdNetworkAdapter
 + (NSString *)adapterVersion
 {
-    return @"3.1.0";
+    return @"3.1.1";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass

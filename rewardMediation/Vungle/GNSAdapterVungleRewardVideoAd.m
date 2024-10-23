@@ -4,7 +4,7 @@
 //
 
 #import "GNSAdapterVungleRewardVideoAd.h"
-#import <VungleSDK/VungleSDK.h>
+#import <VungleAdsSDK/VungleAdsSDK.h>
 #import <GNAdSDK/GNSAdNetworkConnectorProtocol.h>
 #import <GNAdSDK/GNSAdNetworkExtraParams.h>
 #import <GNAdSDK/GNSAdReward.h>
@@ -12,7 +12,7 @@
 static NSString *const kGNSAdapterVungleRewardVideoAdKeyErrorDomain = @"jp.co.geniee.GNSAdapterVungleRewardVideoAd";
 static BOOL loggingEnabled = YES;
 
-@interface GNSAdapterVungleRewardVideoAd () <UIApplicationDelegate, VungleSDKDelegate>
+@interface GNSAdapterVungleRewardVideoAd () <UIApplicationDelegate, VungleRewardedDelegate>
 
 @property(nonatomic, strong) GNSAdReward *reward;
 
@@ -20,7 +20,7 @@ static BOOL loggingEnabled = YES;
 
 @property (nonatomic, retain) NSTimer *timer;
 
-@property(nonatomic, weak) VungleSDK *sdk;
+@property (nonatomic, strong) VungleRewarded *vungleRewardedAd;
 
 @property(nonatomic, assign) BOOL requestingAd;
 
@@ -38,7 +38,7 @@ static BOOL loggingEnabled = YES;
 }
 
 + (NSString *)adapterVersion {
-    return @"3.2.0";
+    return @"3.2.1";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {
@@ -66,28 +66,59 @@ static BOOL loggingEnabled = YES;
 }
 
 - (void)setUp {
-    if (self.sdk == nil) {
-        self.sdk = [VungleSDK sharedSDK];
+    
+    GNSExtrasVungle *extras = [self.connector networkExtras];
+    
+    if (![VungleAds isInitialized]) {
+        [VungleAds initWithAppId:extras.app_id completion:^(NSError * _Nullable error) {
+            
+            if (error) {
+                [self.connector adapter:self didFailToSetupAdWithError:nil];
+            }
+        }];
+        
+        [self waitForInitialization];
+    } else {
+        [self.connector adapterDidSetupAd:self];
     }
-    if (self.sdk == nil) {
-        [self ALLog:[NSString stringWithFormat:@"Can not create Vungle instance"]];
-        return;
+}
+
+- (void)waitForInitialization {
+    // Create a dispatch semaphore
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+    
+    // Polling interval
+    NSTimeInterval pollingInterval = 0.5; // 500ms
+    NSInteger maxAttempts = 10; // Limit the number of attempts
+    NSInteger attempts = 0;
+    
+    while (attempts < maxAttempts) {
+        if ([VungleAds isInitialized]) {
+            [self.connector adapterDidSetupAd:self];
+            return;
+        }
+        
+        attempts++;
+        // Wait for the specified interval before the next check
+        dispatch_semaphore_wait(semaphore, dispatch_time(DISPATCH_TIME_NOW, (int64_t)(pollingInterval * NSEC_PER_SEC)));
     }
 
-    [self ALLog:[NSString stringWithFormat:@"setUp: %ld", (long)[VungleSDK version]]];
-
-    [self.connector adapterDidSetupAd:self];
+    // If it still isn't initialized after max attempts, log and notify error
+    [self ALLog:@"Vungle SDK initialization timeout."];
+    [self.connector adapter:self didFailToSetupAdWithError:[NSError errorWithDomain:kGNSAdapterVungleRewardVideoAdKeyErrorDomain
+                                                                             code:101
+                                                                         userInfo:@{NSLocalizedDescriptionKey: @"Vungle SDK initialization timeout."}]];
 }
 
 - (void)setTimerWith:(NSInteger)timeout
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        _timer = [NSTimer scheduledTimerWithTimeInterval:timeout
+        self->_timer = [NSTimer scheduledTimerWithTimeInterval:timeout
                                                   target:self
                                                 selector:@selector(sendDidFailToLoadRewardVideoWithTimeOut)
                                                 userInfo:nil
                                                  repeats:NO];
-
+        
     });
 }
 
@@ -111,65 +142,39 @@ static BOOL loggingEnabled = YES;
 }
 
 - (void)requestAd:(NSInteger)timeout {
+    
     self.requestingAd = YES;
-    //Return the result when already loaded
+    
     if ([self isReadyForDisplay]) {
         self.requestingAd = NO;
         [self.connector adapterDidReceiveAd:self];
         return;
     }
-
-    if (self.sdk == nil) {
-        return;
-    }
-
-    if (![self.sdk isInitialized]) {
-        // set Timer
-        [self setTimerWith:timeout];
-        
-        NSError *error = nil;
-
-        GNSExtrasVungle *extras = [self.connector networkExtras];
-        [self ALLog:[NSString stringWithFormat:@"AppId=%@", extras.app_id]];
-        [self ALLog:[NSString stringWithFormat:@"placementReferenceId=%@", extras.placementReferenceId]];
-
-        [self.sdk setDelegate:self];
-
-        if(![self.sdk startWithAppId:extras.app_id error:&error]) {
-            [self.connector adapter:self didFailToSetupAdWithError:error];
-        }
-
-    } else {
-
-        GNSExtrasVungle *extras = [self.connector networkExtras];
-
-        NSError *error1 = nil;
-        [self.sdk loadPlacementWithID:extras.placementReferenceId error:&error1];
-
-    }
+    
+    GNSExtrasVungle *extras = [self.connector networkExtras];
+    
+    self.vungleRewardedAd = [[VungleRewarded alloc] initWithPlacementId:extras.placementReferenceId];
+    self.vungleRewardedAd.delegate = self;
+    [self.vungleRewardedAd load:nil];
 }
 
 - (void)presentAdWithRootViewController:(UIViewController *)viewController {
-
-    GNSExtrasVungle *extras = [self.connector networkExtras];
-
+    
     if([self isReadyForDisplay]) {
-        NSError *error;
-        [self.sdk playAd:viewController options:nil placementID:extras.placementReferenceId error:&error];
+        [self.vungleRewardedAd presentWith:viewController];
     }
 }
 
 - (void)stopBeingDelegate {
     self.connector = nil;
-    if (self.sdk != nil) {
-        [self.sdk setDelegate:nil];
+    if (self.vungleRewardedAd != nil) {
+        [self.vungleRewardedAd setDelegate:nil];
     }
 }
 
 - (BOOL)isReadyForDisplay
 {
-    GNSExtrasVungle *extras = [self.connector networkExtras];
-    return (self.sdk != nil && [self.sdk isAdCachedForPlacementID:extras.placementReferenceId]);
+    return [self.vungleRewardedAd canPlayAd];
 }
 
 - (void)onErrorWithMessage:(NSString*) message
@@ -183,46 +188,59 @@ static BOOL loggingEnabled = YES;
     [self.connector adapter: self didFailToLoadAdwithError: error];
 }
 
-#pragma implement VungleSDKDelegate
-
-- (void)vungleAdPlayabilityUpdate:(BOOL)isAdPlayable placementID:(NSString *)placementID error:(NSError *)error {
-
-    if (self.requestingAd) {
-        self.requestingAd = NO;
-        [self deleteTimer];
-        if (isAdPlayable) {
-            [self.connector adapterDidReceiveAd:self];
-        } else {
-            [self onErrorWithMessage:@"Vungle There is no Ad"];
-        }
-    }
+#pragma mark - VungleRewarded Delegate Methods
+// Ad load events
+- (void)rewardedAdDidLoad:(VungleRewarded *)rewarded {
+    NSLog(@"rewardedAdDidLoad");
+    [self.connector adapterDidReceiveAd:self];
 }
-
-- (void)vungleWillShowAdForPlacementID:(NSString *)placementID {
+- (void)rewardedAdDidFailToLoad:(VungleRewarded *)rewarded
+                      withError:(NSError *)withError {
+    NSLog(@"rewardedAdDidFailToLoad");
+    [self.connector adapter: self didFailToLoadAdwithError: withError];
+}
+// Ad Lifecycle Events
+- (void)rewardedAdWillPresent:(VungleRewarded *)rewarded {
+    NSLog(@"rewardedAdWillPresent");
+    
+}
+- (void)rewardedAdDidPresent:(VungleRewarded *)rewarded {
+    NSLog(@"rewardedAdDidPresent");
     [self.connector adapterDidStartPlayingRewardVideoAd:self];
 }
-
-- (void)vungleWillCloseAdWithViewInfo:(VungleViewInfo *)info placementID:(NSString *)placementID {
-
+- (void)rewardedAdDidFailToPresent:(VungleRewarded *)rewarded
+                         withError:(NSError *)withError {
+    NSLog(@"rewardedAdDidFailToPresent: %@", withError);
+}
+- (void)rewardedAdDidTrackImpression:(VungleRewarded *)rewarded {
+    NSLog(@"rewardedAdDidTrackImpression");
+}
+- (void)rewardedAdDidClick:(VungleRewarded *)rewarded {
+    NSLog(@"rewardedAdDidClick");
+}
+- (void)rewardedAdWillLeaveApplication:(VungleRewarded *)rewarded {
+    NSLog(@"rewardedAdWillLeaveApplication");
+}
+- (void)rewardedAdDidRewardUser:(VungleRewarded *)rewarded {
+    NSLog(@"rewardedAdDidRewardUser");
+    
     GNSExtrasVungle *extras = [self.connector networkExtras];
     self.reward = [[GNSAdReward alloc]
                    initWithRewardType: extras.type
                    rewardAmount: extras.amount];
-
+    
     if (self.reward) {
         [self.connector adapter: self didRewardUserWithReward: self.reward];
         self.reward = nil;
     }
-
-    [self.connector adapterDidCloseAd:self];
 }
-
-- (void)vungleSDKDidInitialize {
-
-    GNSExtrasVungle *extras = [self.connector networkExtras];
-
-    NSError *sdkInitError = nil;
-    [self.sdk loadPlacementWithID:extras.placementReferenceId error:&sdkInitError];
+- (void)rewardedAdWillClose:(VungleRewarded *)rewarded {
+    NSLog(@"rewardedAdWillClose");
+    
+}
+- (void)rewardedAdDidClose:(VungleRewarded *)rewarded {
+    NSLog(@"rewardedAdDidClose");
+    [self.connector adapterDidCloseAd:self];
 }
 
 @end

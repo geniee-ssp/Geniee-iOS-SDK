@@ -14,7 +14,8 @@
 
 @interface GNSExtrasAppLovin : NSObject<GNSAdNetworkExtras>
 
-@property (nonatomic, copy) NSString *zone_id;
+@property (nonatomic, copy) NSString *sdkKey;
+@property (nonatomic, copy) NSString *zoneId;
 @property(nonatomic, copy) NSString *type;
 @property(nonatomic, copy) NSDecimalNumber *amount;
 
