@@ -44,6 +44,7 @@ static BOOL loggingEnabled = YES;
 {
     GNSExtrasMaio * extra = [[GNSExtrasMaio alloc]init];
     extra.media_id = parameter.external_link_id;
+    extra.zoneId = parameter.external_link_media_id;
     extra.type = parameter.type;
     extra.amount = parameter.amount;
     return extra;
@@ -111,7 +112,13 @@ static BOOL loggingEnabled = YES;
 }
 - (void)presentAdWithRootViewController:(UIViewController *)viewController
 {
-    [Maio showWithViewController:viewController];
+    GNSExtrasMaio *extras = [self.connector networkExtras];
+    [self ALLog:[NSString stringWithFormat:@"Maio presentAdWithRootViewController: %@", viewController]];
+    if ([self isReadyForDisplay]) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [Maio showWithViewController:viewController];
+        });
+    }
 }
 
 - (void)stopBeingDelegate {
@@ -130,7 +137,7 @@ static BOOL loggingEnabled = YES;
 - (void)maioDidInitialize
 {
     // Called when Ads first loaded
-    [self.connector adapterDidReceiveAd:self];
+//    [self.connector adapterDidReceiveAd:self];
 }
 
 - (void)maioDidFail:(NSString *)zoneId reason:(MaioFailReason)reason
@@ -148,7 +155,8 @@ static BOOL loggingEnabled = YES;
     // Called when Ads second loaded or later
     [self ALLog:[NSString stringWithFormat:@"load change: zoneId=%@, value=%ld", zoneId, (long)newValue]];
     // Received Ad
-    if (newValue){
+    GNSExtrasMaio *extras = [self.connector networkExtras];
+    if (newValue && [zoneId isEqualToString:extras.zoneId]){
         [self deleteTimer];
         [self.connector adapterDidReceiveAd:self];
     }

@@ -82,11 +82,9 @@ static BOOL loggingEnabled = YES;
     if (![[ALSdk shared] isInitialized]) {
         
         [[ALSdk shared] initializeWithConfiguration: initConfig completionHandler:^(ALSdkConfiguration *sdkConfig) {
-            NSLog(@"LongUni initializeWithConfiguration");
         }];
         
         [self waitForInitialization];
-        NSLog(@"LongUni waitForInitialization passed");
     } else {
         [self.connector adapterDidSetupAd:self];
     }

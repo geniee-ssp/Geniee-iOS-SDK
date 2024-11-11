@@ -16,4 +16,5 @@
 
 @interface GNSExtrasFullscreenMaio : NSObject<GNSAdNetworkExtras>
 @property(nonatomic,copy) NSString *media_id;
+@property(nonatomic, copy) NSString *zoneId;
 @end

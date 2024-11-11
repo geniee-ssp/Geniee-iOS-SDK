@@ -23,7 +23,7 @@ static BOOL loggingEnabled = YES;
 
 @end
 
-@implementation GNSExtrasVungle
+@implementation GNSExtrasFullscreenVungle
 @end
 
 @implementation GNSAdapterVungleFullscreenInterstitialAd
@@ -39,12 +39,12 @@ static BOOL loggingEnabled = YES;
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {
-    return [GNSExtrasVungle class];
+    return [GNSExtrasFullscreenVungle class];
 }
 
 - (id<GNSAdNetworkExtras>)networkExtrasParameter:(GNSAdNetworkExtraParams *) parameter
 {
-    GNSExtrasVungle * extra = [[GNSExtrasVungle alloc]init];
+    GNSExtrasFullscreenVungle * extra = [[GNSExtrasFullscreenVungle alloc]init];
     extra.app_id = parameter.external_link_id;
     extra.placementReferenceId = parameter.external_link_media_id;
     
@@ -62,7 +62,7 @@ static BOOL loggingEnabled = YES;
 
 - (void)setUp {
     
-    GNSExtrasVungle *extras = [self.connector networkExtras];
+    GNSExtrasFullscreenVungle *extras = [self.connector networkExtras];
     
     if (![VungleAds isInitialized]) {
         [VungleAds initWithAppId:extras.app_id completion:^(NSError * _Nullable error) {
@@ -148,7 +148,7 @@ static BOOL loggingEnabled = YES;
     // set Timer
     [self setTimerWith:timeout];
     
-    GNSExtrasVungle *extras = [self.connector networkExtras];
+    GNSExtrasFullscreenVungle *extras = [self.connector networkExtras];
     
     self.vungleInterstitialAd = [[VungleInterstitial alloc] initWithPlacementId:extras.placementReferenceId];
     self.vungleInterstitialAd.delegate = self;
