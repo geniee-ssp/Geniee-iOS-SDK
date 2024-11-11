@@ -33,7 +33,7 @@ static BOOL loggingEnable = YES;
 
 #pragma mark - GNSAdNetworkAdapter
 + (NSString *)adapterVersion {
-    return @"3.1.0";
+    return @"3.1.1";
 }
 
 - (instancetype)initWithAdNetworkConnector:(id<GNSAdNetworkConnector>)connector {
@@ -55,6 +55,7 @@ static BOOL loggingEnable = YES;
 - (id<GNSAdNetworkExtras>)networkExtrasParameter:(GNSAdNetworkExtraParams *)parameter {
     GNSExtrasFullscreenMaio *extra = [[GNSExtrasFullscreenMaio alloc] init];
     extra.media_id = parameter.external_link_id;
+    extra.zoneId = parameter.external_link_media_id;
     return extra;
 }
 
@@ -112,7 +113,7 @@ static BOOL loggingEnable = YES;
 - (void)maioDidInitialize
 {
     // Called when Ads first loaded
-    [self.connector adapterDidReceiveAd:self];
+//    [self.connector adapterDidReceiveAd:self];
 }
 
 - (void)maioDidFail:(NSString *)zoneId reason:(MaioFailReason)reason
@@ -130,7 +131,8 @@ static BOOL loggingEnable = YES;
     // Called when Ads second loaded or later
     [self AllLog:[NSString stringWithFormat:@"load change: zoneId=%@, value=%ld", zoneId, (long)newValue]];
     // Received Ad
-    if (newValue){
+    GNSExtrasFullscreenMaio *extras = [self.connector networkExtras];
+    if (newValue && [zoneId isEqualToString:extras.zoneId]){
         [self deleteTimer];
         [self.connector adapterDidReceiveAd:self];
     }

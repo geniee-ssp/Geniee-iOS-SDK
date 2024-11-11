@@ -20,8 +20,8 @@ If you want to use a version lower than Xcode12, please use GNAd SDK version 7.
 |:--|:--|
 |GNAdSDK| 8.3.1|
 |bannerMediation|1.0.0|
-|rewardMediation|3.2.0|
-|fullscreenMediation|3.1.0|
+|rewardMediation|3.2.1|
+|fullscreenMediation|3.1.1|
 |GNAdGoogleMediationAdapter|8.3.1|
 |GNAdMAXMediationAdapter|8.3.2|
 
@@ -38,7 +38,6 @@ If you want to use a version lower than Xcode12, please use GNAd SDK version 7.
 | [Vungle](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Vungle-For-iOS.html) | 6.4.5 | 
 | [Nend](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Nend-For-iOS.html) | 5.3.0 | 
 | [AMoAd](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Amoad-For-iOS.html) | playable-1.0.0 | 
-| [TikTok](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-TikTok-For-iOS.html) | 2.4.6.7 |
 
 ### [Ad Network(Fullscreen interstitial Mediation)](https://developers.geniee.co.jp/ios/fullscreen-interstitial/)
 

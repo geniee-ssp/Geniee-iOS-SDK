@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GenieeFullscreenInterstitialSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8a-M2-2XX">
+                                <rect key="frame" x="124" y="421" width="145" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Interstitial"/>
+                                <connections>
+                                    <action selector="onShowRewardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2aS-wu-a9I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k3c-H9-Lef">
+                                <rect key="frame" x="126" y="336" width="141" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Load Interstitial"/>
+                                <connections>
+                                    <action selector="onLoadRewardClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LRO-4B-hfC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVU-MQ-Dp7">
+                                <rect key="frame" x="175.66666666666666" y="747" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="A8a-M2-2XX" firstAttribute="top" secondItem="k3c-H9-Lef" secondAttribute="bottom" constant="50" id="1hi-Ro-jUc"/>
+                            <constraint firstItem="A8a-M2-2XX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="AwX-V3-WQo"/>
+                            <constraint firstItem="A8a-M2-2XX" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="HKK-6r-NCr"/>
+                            <constraint firstItem="DVU-MQ-Dp7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Y5w-1L-qw8"/>
+                            <constraint firstItem="k3c-H9-Lef" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="q4v-GG-gaX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DVU-MQ-Dp7" secondAttribute="bottom" constant="50" id="sRK-ax-ijl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="errorLabel" destination="DVU-MQ-Dp7" id="dSi-yn-NCI"/>
+                        <outlet property="loadRewardBt" destination="k3c-H9-Lef" id="B3B-8Y-buN"/>
+                        <outlet property="showRewardBt" destination="A8a-M2-2XX" id="wN5-LE-YPE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

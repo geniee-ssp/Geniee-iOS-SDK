@@ -39,7 +39,7 @@ static BOOL establishingConnection = NO;
 }
 
 + (NSString *)adapterVersion {
-    return @"3.2.0";
+    return @"3.2.1";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {

@@ -12,14 +12,15 @@
 static NSString *const kGNSAdapterUnityAdsInterstitialAdKeyErrorDomain = @"jp.co.geniee.GNSAdapterUnityAdsInterstitialAd";
 static BOOL loggingEnabled = YES;
 
-@interface GNSAdapterUnityAdsFullscreenInterstitialAd () <UnityAdsDelegate>
+@interface GNSAdapterUnityAdsFullscreenInterstitialAd () <UnityAdsInitializationDelegate, UnityAdsLoadDelegate, UnityAdsShowDelegate>
 
 @property(nonatomic, weak) id<GNSAdNetworkConnector> connector;
 @property (nonatomic, retain) NSTimer *timer;
+@property (assign, nonatomic) BOOL canShowAd;
 
 @end
 
-@implementation GNSExtrasUnityAds
+@implementation GNSExtrasFullscreenUnityAds
 @end
 
 @implementation GNSAdapterUnityAdsFullscreenInterstitialAd
@@ -31,16 +32,16 @@ static BOOL loggingEnabled = YES;
 }
 
 + (NSString *)adapterVersion {
-    return @"3.1.0";
+    return @"3.1.1";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {
-    return [GNSExtrasUnityAds class];
+    return [GNSExtrasFullscreenUnityAds class];
 }
 
 - (id<GNSAdNetworkExtras>)networkExtrasParameter:(GNSAdNetworkExtraParams *) parameter
 {
-    GNSExtrasUnityAds * extra = [[GNSExtrasUnityAds alloc]init];
+    GNSExtrasFullscreenUnityAds * extra = [[GNSExtrasFullscreenUnityAds alloc]init];
     extra.game_id = parameter.external_link_id;
     extra.placement_id = parameter.external_link_media_id;
     extra.type = parameter.type;
@@ -58,7 +59,44 @@ static BOOL loggingEnabled = YES;
 }
 
 - (void)setUp {
-    [self.connector adapterDidSetupAd:self];
+    
+    GNSExtrasFullscreenUnityAds *extras = [self.connector networkExtras];
+    
+    if(![UnityAds isInitialized]) {
+        [UnityAds initialize:extras.game_id
+                    testMode:false
+      initializationDelegate:self];
+        
+        [self waitForInitialization];
+    } else {
+        [self.connector adapterDidSetupAd:self];
+    }
+    
+}
+
+- (void)waitForInitialization {
+    // Create a dispatch semaphore
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0);
+    
+    // Polling interval
+    NSTimeInterval pollingInterval = 0.5; // 500ms
+    NSInteger maxAttempts = 10; // Limit the number of attempts
+    NSInteger attempts = 0;
+    
+    while (attempts < maxAttempts) {
+        if ([UnityAds isInitialized]) {
+            [self.connector adapterDidSetupAd:self];
+            return;
+        }
+        
+        attempts++;
+        dispatch_semaphore_wait(semaphore, dispatch_time(DISPATCH_TIME_NOW, (int64_t)(pollingInterval * NSEC_PER_SEC)));
+    }
+    
+    [self ALLog:@"UnityAds SDK initialization timeout."];
+    [self.connector adapter:self didFailToSetupAdWithError:[NSError errorWithDomain:kGNSAdapterUnityAdsInterstitialAdKeyErrorDomain
+                                                                               code:101
+                                                                           userInfo:@{NSLocalizedDescriptionKey: @"UnityAds SDK initialization timeout."}]];
 }
 
 - (void)setTimerWith:(NSInteger)timeout
@@ -84,8 +122,8 @@ static BOOL loggingEnabled = YES;
 - (void)sendDidFailToLoadAdWithTimeout{
     [self deleteTimer];
     
-    [self ALLog:@"Interstial Ad loading timeout."];
-    NSDictionary *errorInfo = @{ NSLocalizedDescriptionKey : @"Interstial Ad loading timeout." };
+    [self ALLog:@"UnityAds Interstial Ad loading timeout."];
+    NSDictionary *errorInfo = @{ NSLocalizedDescriptionKey : @"UnityAds Interstial Ad loading timeout." };
     NSError *error = [NSError errorWithDomain: kGNSAdapterUnityAdsInterstitialAdKeyErrorDomain
                                          code: 1
                                      userInfo: errorInfo];
@@ -101,21 +139,22 @@ static BOOL loggingEnabled = YES;
     // set Timer
     [self setTimerWith:timeout];
     
-    GNSExtrasUnityAds *extras = [self.connector networkExtras];
-    [self ALLog:[NSString stringWithFormat:@"UnityAds request game_id=%@ placement_id=%@", extras.game_id, extras.placement_id]];
+    GNSExtrasFullscreenUnityAds *extras = [self.connector networkExtras];
     
-    [UnityAds initialize:extras.game_id delegate:self];
+    self.canShowAd = false;
+    [UnityAds load: extras.placement_id
+      loadDelegate: self];
+    
 }
 
 - (BOOL)isReadyForDisplay {
-    GNSExtrasUnityAds *extras = [self.connector networkExtras];
-    return [UnityAds isReady:extras.placement_id];
+    return self.canShowAd;
 }
 
 - (void)presentAdWithRootViewController:(UIViewController *)viewController {
-    GNSExtrasUnityAds *extras = [self.connector networkExtras];
-    if ([UnityAds isReady:extras.placement_id]) {
-        [UnityAds show:viewController placementId:extras.placement_id];
+    GNSExtrasFullscreenUnityAds *extras = [self.connector networkExtras];
+    if ([self isReadyForDisplay]) {
+        [UnityAds show:viewController placementId:extras.placement_id showDelegate:self];
     }
 }
 
@@ -123,11 +162,34 @@ static BOOL loggingEnabled = YES;
     self.connector = nil;
 }
 
-#pragma mark - UnityAdsDelegate
-
-- (void)unityAdsDidError:(UnityAdsError)error withMessage:(nonnull NSString *)message {
+#pragma mark : UnityAdsInitializationDelegate
+- (void)initializationComplete {
     
-    [self ALLog: [NSString stringWithFormat:@"unityAdsDidError message = %@", message]];
+    GNSExtrasFullscreenUnityAds *extras = [self.connector networkExtras];
+    
+    [UnityAds load:extras.placement_id loadDelegate:self];
+}
+
+- (void)initializationFailed:(UnityAdsInitializationError)error withMessage:(NSString *)message {
+    [self.connector adapter:self didFailToSetupAdWithError:[NSError errorWithDomain:kGNSAdapterUnityAdsInterstitialAdKeyErrorDomain
+                                                                               code:101
+                                                                           userInfo:@{NSLocalizedDescriptionKey: message}]];
+}
+
+#pragma mark: UnityAdsLoadDelegate
+- (void)unityAdsAdLoaded:(NSString *)placementId {
+    
+    self.canShowAd = true;
+    [self deleteTimer];
+    [self.connector adapterDidReceiveAd:self];
+}
+
+- (void)unityAdsAdFailedToLoad:(NSString *)placementId
+                     withError:(UnityAdsLoadError)error
+                   withMessage:(NSString *)message {
+    
+    self.canShowAd = false;
+    
     [self deleteTimer];
     NSDictionary *errorInfo = @{ NSLocalizedDescriptionKey : message };
     NSError *ns_error = [NSError errorWithDomain: kGNSAdapterUnityAdsInterstitialAdKeyErrorDomain
@@ -136,39 +198,23 @@ static BOOL loggingEnabled = YES;
     [self.connector adapter: self didFailToLoadAdwithError: ns_error];
 }
 
-- (void)unityAdsDidFinish:(nonnull NSString *)placementId withFinishState:(UnityAdsFinishState)state {
+#pragma mark UnityAdsShowDelegate
+- (void)unityAdsShowComplete: (NSString *)placementId withFinishState: (UnityAdsShowCompletionState)state {
     
-    NSString *stateString = @"UNKNOWN";
-    switch (state) {
-        case kUnityAdsFinishStateError:
-            stateString = @"ERROR";
-            break;
-        case kUnityAdsFinishStateSkipped:
-            stateString = @"SKIPPED";
-            break;
-        case kUnityAdsFinishStateCompleted:
-            stateString = @"COMPLETED";
-            break;
-        default:
-            break;
-    }
-    [self ALLog: [NSString stringWithFormat:@"unityAdsDidFinish state = %@", stateString]];
+    self.canShowAd = false;
     
-    if (state == kUnityAdsFinishStateCompleted){
-        
-    }
     [self.connector adapterDidCloseAd:self];
 }
 
-- (void)unityAdsDidStart:(nonnull NSString *)placementId {
-    [self ALLog: @"unityAdsDidStart"];
+- (void)unityAdsShowFailed: (NSString *)placementId withError: (UnityAdsShowError)error withMessage: (NSString *)message {
+    self.canShowAd = false;
+}
+
+- (void)unityAdsShowStart:(NSString *)placementId {
     [self.connector adapterWillPresentScreenInterstitialAd:self];
 }
 
-- (void)unityAdsReady:(nonnull NSString *)placementId {
-    [self ALLog: @"unityAdsReady"];
-    [self deleteTimer];
-    [self.connector adapterDidReceiveAd:self];
+- (void)unityAdsShowClick:(NSString *)placementId {
 }
 
 @end

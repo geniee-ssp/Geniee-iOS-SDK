@@ -12,6 +12,7 @@
 @end
 
 @interface GNSExtrasFullscreenApplovin : NSObject<GNSAdNetworkExtras>
+@property (nonatomic, copy) NSString *sdkKey;
 @property(nonatomic, copy) NSString *zone_id;
 @end
 
