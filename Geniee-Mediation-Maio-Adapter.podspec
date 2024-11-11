@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Geniee-Mediation-Maio-Adapter"
-  s.version      = "3.1.1"
+  s.version      = "8.3.1.0"
   s.summary      = "An adapter SDK for integrating Maio"
   s.homepage     = "https://geniee.co.jp"
 
@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
- s.source       = { :git => "https://github.com/geniee-ssp/Geniee-iOS-SDK.git", :branch => "feature/cocoapod_adnws" }
+ s.source       = { :git => "https://github.com/geniee-ssp/Geniee-iOS-SDK.git", :tag => "v.8.3.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,6 +91,6 @@ Pod::Spec.new do |s|
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
 
   s.requires_arc = true
-  s.dependency "MaioSDK"
+  s.dependency "MaioSDK", "~> 1.6.5"
 
 end
