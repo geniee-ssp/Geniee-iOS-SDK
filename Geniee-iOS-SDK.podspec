@@ -99,6 +99,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2",
                     'OTHER_LDFLAGS' => '-ObjC' }
-  s.dependency "KissXML", "~> 5.3.3"
+  s.dependency "KissXML"
 
 end
