@@ -87,8 +87,11 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
+
   s.requires_arc = true
-  s.dependency "AppLovinSDK", "~> 11.11.4"
+  s.dependency "AppLovinSDK"
   s.dependency "Geniee-iOS-SDK"
 
 end
