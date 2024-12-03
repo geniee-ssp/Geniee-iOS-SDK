@@ -9,8 +9,8 @@
 Pod::Spec.new do |s|
 
   s.name         = "Geniee-MAX-Mediation-Adapter"
-  s.version      = "8.3.2"
-  s.summary      = "An SDK for ad menetization with the Geniee Network"
+  s.version      = "8.3.3"
+  s.summary      = "Geniee MAX adapter under MAX mediation"
   s.homepage     = "https://geniee.co.jp"
 
   s.license      = { :type => "Apache License, Version 2.0", :file => "LICENSE" }
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Geniee" => "takaaki.kobayashi@geniee.co.jp" }
+  s.author             = { "Geniee" => "longnd@geniee.co.jp" }
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios, "9.0"
+  s.platform     = :ios, "12.0"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
- s.source       = { :git => "https://github.com/geniee-ssp/Geniee-iOS-SDK.git", :tag => "v.8.3.2" }
+ s.source       = { :git => "https://github.com/geniee-ssp/Geniee-iOS-SDK.git", :tag => "v.8.3.4" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
