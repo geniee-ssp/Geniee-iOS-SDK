@@ -91,6 +91,7 @@ Pod::Spec.new do |s|
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
 
   s.requires_arc = true
-  s.dependency "Ads-Global", "~> 6.2.0.8"
+  s.dependency "Ads-Global"
+  s.dependency "Geniee-iOS-SDK"
 
 end

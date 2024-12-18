@@ -91,6 +91,7 @@ Pod::Spec.new do |s|
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
 
   s.requires_arc = true
-  s.dependency "AppLovinSDK", "~> 13.0.0"
+  s.dependency "AppLovinSDK"
+  s.dependency "Geniee-iOS-SDK"
 
 end
