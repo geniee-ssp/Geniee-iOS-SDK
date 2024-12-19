@@ -41,6 +41,10 @@ typedef enum {
 // connection was available or no ads were available (i.e. no fill).
 - (void)adView:(GNAdView *)adView didFailReceiveAdWithError:(NSError *)error;
 
+// Delegate method to be called when the ad is hidden
+- (void)adViewDidHide:(GNAdView *)adView;
+
+
 #pragma mark Click-Time Lifecycle Notifications
 
 /**
@@ -90,6 +94,7 @@ typedef enum {
 // The view that displays banner ads.
 @interface GNAdView : UIView
 
+@property (nonatomic, retain) IBOutlet UIButton* closeButton;
 
 
 #pragma mark Initialization
