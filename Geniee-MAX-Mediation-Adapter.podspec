@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Geniee-MAX-Mediation-Adapter"
-  s.version      = "8.3.4"
+  s.version      = "8.3.5"
   s.summary      = "Geniee MAX adapter under MAX mediation"
   s.homepage     = "https://geniee.co.jp"
 
