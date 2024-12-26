@@ -18,7 +18,7 @@ If you want to use a version lower than Xcode12, please use GNAd SDK version 7.
 
 |SDK| Version |
 |:--|:--|
-|GNAdSDK| 8.3.1|
+|GNAdSDK| 8.4.0|
 |bannerMediation|1.0.0|
 |rewardMediation|3.2.1|
 |fullscreenMediation|3.1.1|
