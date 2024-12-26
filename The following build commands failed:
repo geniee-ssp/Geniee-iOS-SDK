@@ -1,0 +1,118 @@
+    The following build commands failed:
+    	Ld /Users/nguyenduylong/Library/Developer/Xcode/DerivedData/App-cordfvspaihepsfitlberwpuniwp/Build/Intermediates.noindex/App.build/Release-iphonesimulator/App.build/Objects-normal/arm64/Binary/App normal arm64 (in target 'App' from project 'App')
+    	Ld /Users/nguyenduylong/Library/Developer/Xcode/DerivedData/App-cordfvspaihepsfitlberwpuniwp/Build/Intermediates.noindex/App.build/Release-iphonesimulator/App.build/Objects-normal/x86_64/Binary/App normal x86_64 (in target 'App' from project 'App')
+    (2 failures)
+   Testing with `xcodebuild`.
+ -> Geniee-Mediation-Maio-Adapter (8.3.1.1)
+    - WARN  | source: The version should be included in the Git tag.
+    - ERROR | [iOS] xcodebuild: Returned an unsuccessful exit code.
+    - NOTE  | xcodebuild:  note: Using codesigning identity override: -
+    - NOTE  | [iOS] xcodebuild:  note: Building targets in dependency order
+    - NOTE  | [iOS] xcodebuild:  note: Target dependency graph (5 targets)
+    - NOTE  | [iOS] xcodebuild:  note: Signing static framework with --generate-pre-encrypt-hashes (in target 'Pods-App' from project 'Pods')
+    - NOTE  | xcodebuild:  clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Analyzed 1 podspec.
+
+[!] The spec did not pass validation, due to 1 error and 1 warning.
+
+
+pod spec lint --verbose Geniee-Mediation-Maio-Adapter.podspec
+
+#
+#  Be sure to run `pod spec lint Geniee-Mediation-Maio-Adapter.podspec' to ensure this is a
+#  valid spec and to remove all comments including this before submitting the spec.
+#
+#  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
+#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
+#
+
+Pod::Spec.new do |s|
+
+  s.name         = "Geniee-Mediation-Maio-Adapter"
+  s.version      = "8.3.1.1"
+  s.summary      = "An adapter SDK for integrating Maio"
+  s.homepage     = "https://geniee.co.jp"
+
+  s.license      = { :type => "Apache License, Version 2.0", :file => "LICENSE" }
+
+
+  # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  Specify the authors of the library, with email addresses. Email addresses
+  #  of the authors are extracted from the SCM log. E.g. $ git log. CocoaPods also
+  #  accepts just a name if you'd rather not provide an email address.
+  #
+  #  Specify a social_media_url where others can refer to, for example a twitter
+  #  profile URL.
+  #
+
+  s.author             = { "Geniee" => "longnd@geniee.co.jp" }
+
+  # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  If this Pod runs only on iOS or OS X, then specify the platform and
+  #  the deployment target. You can optionally include the target after the platform.
+  #
+
+  s.platform     = :ios, "12.0"
+
+  # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  Specify the location from where the source should be retrieved.
+  #  Supports git, hg, bzr, svn and HTTP.
+  #
+
+ s.source       = { :git => "https://github.com/geniee-ssp/Geniee-iOS-SDK.git", :tag => "v.8.3.5" }
+
+
+  # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  CocoaPods is smart about how it includes source code. For source files
+  #  giving a folder will include any swift, h, m, mm, c & cpp files.
+  #  For header files it will include any header in the folder.
+  #  Not including the public_header_files will make all headers public.
+  #
+  s.vendored_frameworks = "adnetwork-adapters/Framework/GenieeMediationMaio.xcframework"
+  
+
+  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  A list of resources included with the Pod. These are copied into the
+  #  target bundle with a build phase script. Anything else will be cleaned.
+  #  You can preserve files from being cleaned, please don't preserve
+  #  non-essential files like tests, examples and documentation.
+  #
+
+  # s.resource  = "icon.png"
+  # s.resources = "Resources/*.png"
+
+  # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
+
+
+  # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  Link your library with frameworks, or libraries. Libraries do not include
+  #  the lib prefix of their name.
+  #
+
+  s.frameworks = "CoreAudioTypes"
+  # s.weak_frameworks = "AppTrackingTransparency"
+
+  # s.library   = "xml2"
+
+
+  # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  #
+  #  If your library depends on compiler flags you can set them in the xcconfig hash
+  #  where they will only apply to your library. If you depend on other Podspecs
+  #  you can include multiple dependencies to ensure it works.
+
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 i386' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64 i386' }
+
+  s.requires_arc = true
+  s.dependency "MaioSDK-v2"
+  s.dependency "Geniee-iOS-SDK"
+
+end
