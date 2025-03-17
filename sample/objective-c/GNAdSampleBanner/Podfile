@@ -7,6 +7,6 @@ target 'GNAdSampleBanner' do
 
   # Pods for GNAdSampleBanner
 
-  pod 'Ads-Global'
+  #pod 'Ads-Global'
   
 end
