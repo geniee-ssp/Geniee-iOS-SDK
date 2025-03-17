@@ -8,7 +8,8 @@
 
 @interface ViewController : UIViewController<GNAdViewDelegate>
 {
-    GNAdView *_adView;
+    NSMutableArray *_adViews;
+    UIScrollView *_scrollView;
 }
 
 @end
