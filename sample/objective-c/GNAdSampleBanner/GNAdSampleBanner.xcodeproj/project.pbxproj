@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C6E375D28E541C10046073B /* GNSAdapterPangleBannerAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C6E375C28E541C10046073B /* GNSAdapterPangleBannerAd.m */; };
 		0C6E375F28E5799B0046073B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6E375E28E5799B0046073B /* Security.framework */; };
 		3FDAE31575674EAF536CFEF6 /* Pods_GNAdSampleBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E79B5C73863C8A017303D9 /* Pods_GNAdSampleBanner.framework */; };
 		B65422361E6ADF7500655928 /* GNAdSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65422341E6ADF7500655928 /* GNAdSDK.xcframework */; };
@@ -42,8 +41,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C6E375B28E541C10046073B /* GNSAdapterPangleBannerAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GNSAdapterPangleBannerAd.h; path = ../../../../bannerMediation/Pangle/GNSAdapterPangleBannerAd.h; sourceTree = "<group>"; };
-		0C6E375C28E541C10046073B /* GNSAdapterPangleBannerAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GNSAdapterPangleBannerAd.m; path = ../../../../bannerMediation/Pangle/GNSAdapterPangleBannerAd.m; sourceTree = "<group>"; };
 		0C6E375E28E5799B0046073B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		633AD40344AE0B931BC4968A /* Pods-GNAdSampleBanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdSampleBanner.debug.xcconfig"; path = "Target Support Files/Pods-GNAdSampleBanner/Pods-GNAdSampleBanner.debug.xcconfig"; sourceTree = "<group>"; };
 		87325F453F7AF1C19E8DE74F /* Pods-GNAdSampleBanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdSampleBanner.release.xcconfig"; path = "Target Support Files/Pods-GNAdSampleBanner/Pods-GNAdSampleBanner.release.xcconfig"; sourceTree = "<group>"; };
@@ -254,8 +251,6 @@
 		FECFF2D01A43EC6A00A06E68 /* GNAdSampleBanner */ = {
 			isa = PBXGroup;
 			children = (
-				0C6E375B28E541C10046073B /* GNSAdapterPangleBannerAd.h */,
-				0C6E375C28E541C10046073B /* GNSAdapterPangleBannerAd.m */,
 				FECFF2D51A43EC6A00A06E68 /* AppDelegate.h */,
 				FECFF2D61A43EC6A00A06E68 /* AppDelegate.m */,
 				FECFF2D81A43EC6A00A06E68 /* ViewController.h */,
@@ -289,7 +284,6 @@
 				FECFF2CA1A43EC6A00A06E68 /* Sources */,
 				FECFF2CB1A43EC6A00A06E68 /* Frameworks */,
 				FECFF2CC1A43EC6A00A06E68 /* Resources */,
-				4E1FAEFCC42B714E1CA8CA68 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -349,30 +343,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4E1FAEFCC42B714E1CA8CA68 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GNAdSampleBanner/Pods-GNAdSampleBanner-resources.sh",
-				"${PODS_ROOT}/Ads-Global/SDK/LICENSE",
-				"${PODS_ROOT}/Ads-Global/SDK/PAGAdSDK.bundle",
-				"${PODS_ROOT}/RangersAPM-Pangle/RangersAPM-Pangle/Assets/Core/APMInsightCore.bundle",
-				"${PODS_ROOT}/RangersAPM-Pangle/RangersAPM-Pangle/Assets/Crash/APMInsightCrash.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LICENSE",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PAGAdSDK.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/APMInsightCore.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/APMInsightCrash.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GNAdSampleBanner/Pods-GNAdSampleBanner-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		80BB08BCD8736C0484F99E74 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -404,7 +374,6 @@
 			files = (
 				B6858CBA1C805F7200462735 /* DDXMLElementAdditions.m in Sources */,
 				B6858CBD1C805F7200462735 /* DDXMLElement.m in Sources */,
-				0C6E375D28E541C10046073B /* GNSAdapterPangleBannerAd.m in Sources */,
 				FECFF2DA1A43EC6A00A06E68 /* ViewController.m in Sources */,
 				FECFF2D71A43EC6A00A06E68 /* AppDelegate.m in Sources */,
 				FECFF2D41A43EC6A00A06E68 /* main.m in Sources */,
@@ -533,6 +502,7 @@
 					"$(inherited)",
 					../../../GNAdSDK/Framework,
 				);
+				GCC_NO_COMMON_BLOCKS = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
@@ -565,6 +535,7 @@
 					"$(inherited)",
 					../../../GNAdSDK/Framework,
 				);
+				GCC_NO_COMMON_BLOCKS = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
