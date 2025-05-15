@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "Geniee" => "longnd@geniee.co.jp" }
+  s.author             = { "Geniee" => "daikichi.teranishi@geniee.co.jp" }
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
