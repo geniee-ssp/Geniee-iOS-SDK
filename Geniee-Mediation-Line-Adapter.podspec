@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Geniee-Mediation-Line-Adapter"
-  s.version      = "8.3.1.0"
+  s.version      = "8.4.1.0"
   s.summary      = "An adapter SDK for integrating Line(FiveAd)"
   s.homepage     = "https://geniee.co.jp"
 
