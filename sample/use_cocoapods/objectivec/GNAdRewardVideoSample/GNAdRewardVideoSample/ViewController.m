@@ -35,6 +35,8 @@ static const NSInteger GameLength = 5;
     [super viewDidLoad];
     _zoneIDText.delegate = self;
     
+    [Log4GNAd setPriority:GNLogPriorityWarn];
+    
     [GNSRewardVideoAd sharedInstance].delegate = self;
     self.coinCount = 0;
     [self earnCoins:0];
@@ -53,7 +55,7 @@ static const NSInteger GameLength = 5;
     //request.geoLocationEnable = NO;
     request.GNAdlogPriority = GNLogPriorityInfo;
     
-    [[GNSRewardVideoAd sharedInstance] loadRequest:request withZoneID:_zoneIDText.text isRTB:true];
+    [[GNSRewardVideoAd sharedInstance] loadRequest:request withZoneID:@"1573619" isRTB:true];
 }
 
 - (void)startNewGame {

@@ -52,5 +52,8 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    
+    <key>GNAdSDK_Log_Level</key>
+    <string>info</string>
 </dict>
 </plist>

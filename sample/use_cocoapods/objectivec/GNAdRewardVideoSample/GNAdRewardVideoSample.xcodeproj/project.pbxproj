@@ -3,90 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C1EDBD022ADFF7200661094 /* MediaSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1EDBCF22ADFF7200661094 /* MediaSDK.framework */; };
-		0C1EDBE622AE005A00661094 /* amoad_link_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C1EDBD222AE005A00661094 /* amoad_link_btn_h.png */; };
-		0C1EDBE722AE005A00661094 /* amoad_link_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C1EDBD422AE005A00661094 /* amoad_link_btn.png */; };
-		0C1EDBE822AE005A00661094 /* amoad_panel.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C1EDBD622AE005A00661094 /* amoad_panel.png */; };
-		0C1EDBEA22AE005A00661094 /* amoad_close_btn_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C1EDBDD22AE005A00661094 /* amoad_close_btn_h.png */; };
-		0C1EDBEB22AE005A00661094 /* amoad_close_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C1EDBDF22AE005A00661094 /* amoad_close_btn.png */; };
-		0C1EDBEC22AE005A00661094 /* amoad_panel_l.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C1EDBE222AE005A00661094 /* amoad_panel_l.png */; };
 		0C1EDBED22AE008500661094 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F977C1E211C0EFF00CA4B24 /* AdSupport.framework */; };
 		0C1EDBEE22AE008D00661094 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F977C1C211C0EFF00CA4B24 /* AVFoundation.framework */; };
 		0C1EDBEF22AE009900661094 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F977C1B211C0EFF00CA4B24 /* CoreMedia.framework */; };
 		0C1EDBF122AE00A000661094 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1EDBF022AE00A000661094 /* SystemConfiguration.framework */; };
 		0C1EDBF222AE00A800661094 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F977C1A211C0EFF00CA4B24 /* StoreKit.framework */; };
-		0C1EDBF322AE00F800661094 /* libAMoAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1EDBDB22AE005A00661094 /* libAMoAd.a */; };
-		0C1EDBF722AE023E00661094 /* GNSAdapterTikTokRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C1EDBF622AE023D00661094 /* GNSAdapterTikTokRewardVideoAd.m */; };
-		2F979B3F21B50979000A81A6 /* GNSAdapterUnityAdsRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F979B2521B50979000A81A6 /* GNSAdapterUnityAdsRewardVideoAd.m */; };
-		2F979B4021B50979000A81A6 /* GNSAdapterVungleRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F979B2921B50979000A81A6 /* GNSAdapterVungleRewardVideoAd.m */; };
-		2F979B4121B50979000A81A6 /* GNSAdapterAmoadRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F979B2B21B50979000A81A6 /* GNSAdapterAmoadRewardVideoAd.m */; };
-		2F979B4221B50979000A81A6 /* GNSAdapterTapjoyRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F979B2E21B50979000A81A6 /* GNSAdapterTapjoyRewardVideoAd.m */; };
-		2F979B4321B50979000A81A6 /* GNSAdapterAppLovinRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F979B3121B50979000A81A6 /* GNSAdapterAppLovinRewardVideoAd.m */; };
-		2F979B4421B50979000A81A6 /* GNSAdapterAdColonyRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F979B3421B50979000A81A6 /* GNSAdapterAdColonyRewardVideoAd.m */; };
-		2F979B4521B50979000A81A6 /* GNSAdapterMaioRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F979B3821B50979000A81A6 /* GNSAdapterMaioRewardVideoAd.m */; };
-		2F979B4621B50979000A81A6 /* GNSAdapterNendRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F979B3B21B50979000A81A6 /* GNSAdapterNendRewardVideoAd.m */; };
-		2F979B4721B50979000A81A6 /* GNSAdapterCARewardRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F979B3D21B50979000A81A6 /* GNSAdapterCARewardRewardVideoAd.m */; };
 		BBE1E58D20D2841B0035A52A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE1E58C20D2841B0035A52A /* AppDelegate.m */; };
 		BBE1E59020D2841B0035A52A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE1E58F20D2841B0035A52A /* ViewController.m */; };
 		BBE1E59320D2841B0035A52A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBE1E59120D2841B0035A52A /* Main.storyboard */; };
 		BBE1E59520D2841E0035A52A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBE1E59420D2841E0035A52A /* Assets.xcassets */; };
 		BBE1E59820D2841E0035A52A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBE1E59620D2841E0035A52A /* LaunchScreen.storyboard */; };
 		BBE1E59B20D2841E0035A52A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE1E59A20D2841E0035A52A /* main.m */; };
+		E6280855E63FEF40B45237D1 /* libPods-GNAdRewardVideoSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC427D4682C7CCB079C3CF1 /* libPods-GNAdRewardVideoSample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C1EDBCF22ADFF7200661094 /* MediaSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaSDK.framework; path = "../../../../Mediation-Adnw-SDKS/RewardVideoAd-Adnw-SDKS/MediaSDK.framework"; sourceTree = "<group>"; };
-		0C1EDBD222AE005A00661094 /* amoad_link_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_link_btn_h.png; sourceTree = "<group>"; };
-		0C1EDBD322AE005A00661094 /* AMoAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdView.h; sourceTree = "<group>"; };
-		0C1EDBD422AE005A00661094 /* amoad_link_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_link_btn.png; sourceTree = "<group>"; };
-		0C1EDBD522AE005A00661094 /* AMoAdItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdItem.h; sourceTree = "<group>"; };
-		0C1EDBD622AE005A00661094 /* amoad_panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_panel.png; sourceTree = "<group>"; };
-		0C1EDBD722AE005A00661094 /* AMoAdInfeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdInfeed.h; sourceTree = "<group>"; };
-		0C1EDBD822AE005A00661094 /* AMoAdNativePreRoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativePreRoll.h; sourceTree = "<group>"; };
-		0C1EDBD922AE005A00661094 /* AMoAdAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdAnalytics.h; sourceTree = "<group>"; };
-		0C1EDBDA22AE005A00661094 /* AMoAdWeb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdWeb.h; sourceTree = "<group>"; };
-		0C1EDBDB22AE005A00661094 /* libAMoAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAMoAd.a; sourceTree = "<group>"; };
-		0C1EDBDC22AE005A00661094 /* AMoAdNativeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativeView.h; sourceTree = "<group>"; };
-		0C1EDBDD22AE005A00661094 /* amoad_close_btn_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_close_btn_h.png; sourceTree = "<group>"; };
-		0C1EDBDE22AE005A00661094 /* AMoAdNativeMainVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdNativeMainVideoView.h; sourceTree = "<group>"; };
-		0C1EDBDF22AE005A00661094 /* amoad_close_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_close_btn.png; sourceTree = "<group>"; };
-		0C1EDBE022AE005A00661094 /* AMoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAd.h; sourceTree = "<group>"; };
-		0C1EDBE122AE005A00661094 /* AMoAdInterstitialVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdInterstitialVideo.h; sourceTree = "<group>"; };
-		0C1EDBE222AE005A00661094 /* amoad_panel_l.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amoad_panel_l.png; sourceTree = "<group>"; };
-		0C1EDBE322AE005A00661094 /* AMoAdLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdLogger.h; sourceTree = "<group>"; };
-		0C1EDBE422AE005A00661094 /* AMoAdInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdInterstitial.h; sourceTree = "<group>"; };
-		0C1EDBE522AE005A00661094 /* AMoAdList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMoAdList.h; sourceTree = "<group>"; };
 		0C1EDBF022AE00A000661094 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		0C1EDBF522AE023D00661094 /* GNSAdapterTikTokRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterTikTokRewardVideoAd.h; sourceTree = "<group>"; };
-		0C1EDBF622AE023D00661094 /* GNSAdapterTikTokRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterTikTokRewardVideoAd.m; sourceTree = "<group>"; };
 		2F977C1A211C0EFF00CA4B24 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		2F977C1B211C0EFF00CA4B24 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		2F977C1C211C0EFF00CA4B24 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		2F977C1D211C0EFF00CA4B24 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		2F977C1E211C0EFF00CA4B24 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		2F977C1F211C0F2A00CA4B24 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		2F979B2521B50979000A81A6 /* GNSAdapterUnityAdsRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterUnityAdsRewardVideoAd.m; sourceTree = "<group>"; };
-		2F979B2621B50979000A81A6 /* GNSAdapterUnityAdsRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterUnityAdsRewardVideoAd.h; sourceTree = "<group>"; };
-		2F979B2821B50979000A81A6 /* GNSAdapterVungleRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterVungleRewardVideoAd.h; sourceTree = "<group>"; };
-		2F979B2921B50979000A81A6 /* GNSAdapterVungleRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterVungleRewardVideoAd.m; sourceTree = "<group>"; };
-		2F979B2B21B50979000A81A6 /* GNSAdapterAmoadRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterAmoadRewardVideoAd.m; sourceTree = "<group>"; };
-		2F979B2C21B50979000A81A6 /* GNSAdapterAmoadRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterAmoadRewardVideoAd.h; sourceTree = "<group>"; };
-		2F979B2E21B50979000A81A6 /* GNSAdapterTapjoyRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterTapjoyRewardVideoAd.m; sourceTree = "<group>"; };
-		2F979B2F21B50979000A81A6 /* GNSAdapterTapjoyRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterTapjoyRewardVideoAd.h; sourceTree = "<group>"; };
-		2F979B3121B50979000A81A6 /* GNSAdapterAppLovinRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterAppLovinRewardVideoAd.m; sourceTree = "<group>"; };
-		2F979B3221B50979000A81A6 /* GNSAdapterAppLovinRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterAppLovinRewardVideoAd.h; sourceTree = "<group>"; };
-		2F979B3421B50979000A81A6 /* GNSAdapterAdColonyRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterAdColonyRewardVideoAd.m; sourceTree = "<group>"; };
-		2F979B3521B50979000A81A6 /* GNSAdapterAdColonyRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterAdColonyRewardVideoAd.h; sourceTree = "<group>"; };
-		2F979B3721B50979000A81A6 /* GNSAdapterMaioRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterMaioRewardVideoAd.h; sourceTree = "<group>"; };
-		2F979B3821B50979000A81A6 /* GNSAdapterMaioRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterMaioRewardVideoAd.m; sourceTree = "<group>"; };
-		2F979B3A21B50979000A81A6 /* GNSAdapterNendRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterNendRewardVideoAd.h; sourceTree = "<group>"; };
-		2F979B3B21B50979000A81A6 /* GNSAdapterNendRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterNendRewardVideoAd.m; sourceTree = "<group>"; };
-		2F979B3D21B50979000A81A6 /* GNSAdapterCARewardRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterCARewardRewardVideoAd.m; sourceTree = "<group>"; };
-		2F979B3E21B50979000A81A6 /* GNSAdapterCARewardRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterCARewardRewardVideoAd.h; sourceTree = "<group>"; };
+		36B86103ED90216403CA63B2 /* Pods-GNAdRewardVideoSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdRewardVideoSample.debug.xcconfig"; path = "Target Support Files/Pods-GNAdRewardVideoSample/Pods-GNAdRewardVideoSample.debug.xcconfig"; sourceTree = "<group>"; };
+		3BC427D4682C7CCB079C3CF1 /* libPods-GNAdRewardVideoSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GNAdRewardVideoSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		829A164D5964A79DB3AA1BD2 /* Pods-GNAdRewardVideoSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdRewardVideoSample.release.xcconfig"; path = "Target Support Files/Pods-GNAdRewardVideoSample/Pods-GNAdRewardVideoSample.release.xcconfig"; sourceTree = "<group>"; };
 		BBE1E58820D2841B0035A52A /* GNAdRewardVideoSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNAdRewardVideoSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBE1E58B20D2841B0035A52A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BBE1E58C20D2841B0035A52A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -104,163 +50,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C1EDBF322AE00F800661094 /* libAMoAd.a in Frameworks */,
 				0C1EDBF222AE00A800661094 /* StoreKit.framework in Frameworks */,
 				0C1EDBF122AE00A000661094 /* SystemConfiguration.framework in Frameworks */,
 				0C1EDBEF22AE009900661094 /* CoreMedia.framework in Frameworks */,
 				0C1EDBEE22AE008D00661094 /* AVFoundation.framework in Frameworks */,
 				0C1EDBED22AE008500661094 /* AdSupport.framework in Frameworks */,
-				0C1EDBD022ADFF7200661094 /* MediaSDK.framework in Frameworks */,
+				E6280855E63FEF40B45237D1 /* libPods-GNAdRewardVideoSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C1EDBD122AE005A00661094 /* AMoAdSdk */ = {
+		1369BC650857594C4F1C40C5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0C1EDBD222AE005A00661094 /* amoad_link_btn_h.png */,
-				0C1EDBD322AE005A00661094 /* AMoAdView.h */,
-				0C1EDBD422AE005A00661094 /* amoad_link_btn.png */,
-				0C1EDBD522AE005A00661094 /* AMoAdItem.h */,
-				0C1EDBD622AE005A00661094 /* amoad_panel.png */,
-				0C1EDBD722AE005A00661094 /* AMoAdInfeed.h */,
-				0C1EDBD822AE005A00661094 /* AMoAdNativePreRoll.h */,
-				0C1EDBD922AE005A00661094 /* AMoAdAnalytics.h */,
-				0C1EDBDA22AE005A00661094 /* AMoAdWeb.h */,
-				0C1EDBDB22AE005A00661094 /* libAMoAd.a */,
-				0C1EDBDC22AE005A00661094 /* AMoAdNativeView.h */,
-				0C1EDBDD22AE005A00661094 /* amoad_close_btn_h.png */,
-				0C1EDBDE22AE005A00661094 /* AMoAdNativeMainVideoView.h */,
-				0C1EDBDF22AE005A00661094 /* amoad_close_btn.png */,
-				0C1EDBE022AE005A00661094 /* AMoAd.h */,
-				0C1EDBE122AE005A00661094 /* AMoAdInterstitialVideo.h */,
-				0C1EDBE222AE005A00661094 /* amoad_panel_l.png */,
-				0C1EDBE322AE005A00661094 /* AMoAdLogger.h */,
-				0C1EDBE422AE005A00661094 /* AMoAdInterstitial.h */,
-				0C1EDBE522AE005A00661094 /* AMoAdList.h */,
+				36B86103ED90216403CA63B2 /* Pods-GNAdRewardVideoSample.debug.xcconfig */,
+				829A164D5964A79DB3AA1BD2 /* Pods-GNAdRewardVideoSample.release.xcconfig */,
 			);
-			name = AMoAdSdk;
-			path = "../../../../Mediation-Adnw-SDKS/RewardVideoAd-Adnw-SDKS/AMoAdSdk";
-			sourceTree = "<group>";
-		};
-		0C1EDBF422AE023D00661094 /* TikTok */ = {
-			isa = PBXGroup;
-			children = (
-				0C1EDBF522AE023D00661094 /* GNSAdapterTikTokRewardVideoAd.h */,
-				0C1EDBF622AE023D00661094 /* GNSAdapterTikTokRewardVideoAd.m */,
-			);
-			path = TikTok;
-			sourceTree = "<group>";
-		};
-		2F979B2321B50979000A81A6 /* rewardMediation */ = {
-			isa = PBXGroup;
-			children = (
-				0C1EDBF422AE023D00661094 /* TikTok */,
-				2F979B2421B50979000A81A6 /* UnityAds */,
-				2F979B2721B50979000A81A6 /* Vungle */,
-				2F979B2A21B50979000A81A6 /* Amoad */,
-				2F979B2D21B50979000A81A6 /* Tapjoy */,
-				2F979B3021B50979000A81A6 /* AppLovin */,
-				2F979B3321B50979000A81A6 /* AdColony */,
-				2F979B3621B50979000A81A6 /* Maio */,
-				2F979B3921B50979000A81A6 /* Nend */,
-				2F979B3C21B50979000A81A6 /* CAReward */,
-			);
-			name = rewardMediation;
-			path = ../../../../rewardMediation;
-			sourceTree = "<group>";
-		};
-		2F979B2421B50979000A81A6 /* UnityAds */ = {
-			isa = PBXGroup;
-			children = (
-				2F979B2521B50979000A81A6 /* GNSAdapterUnityAdsRewardVideoAd.m */,
-				2F979B2621B50979000A81A6 /* GNSAdapterUnityAdsRewardVideoAd.h */,
-			);
-			path = UnityAds;
-			sourceTree = "<group>";
-		};
-		2F979B2721B50979000A81A6 /* Vungle */ = {
-			isa = PBXGroup;
-			children = (
-				2F979B2821B50979000A81A6 /* GNSAdapterVungleRewardVideoAd.h */,
-				2F979B2921B50979000A81A6 /* GNSAdapterVungleRewardVideoAd.m */,
-			);
-			path = Vungle;
-			sourceTree = "<group>";
-		};
-		2F979B2A21B50979000A81A6 /* Amoad */ = {
-			isa = PBXGroup;
-			children = (
-				2F979B2B21B50979000A81A6 /* GNSAdapterAmoadRewardVideoAd.m */,
-				2F979B2C21B50979000A81A6 /* GNSAdapterAmoadRewardVideoAd.h */,
-			);
-			path = Amoad;
-			sourceTree = "<group>";
-		};
-		2F979B2D21B50979000A81A6 /* Tapjoy */ = {
-			isa = PBXGroup;
-			children = (
-				2F979B2E21B50979000A81A6 /* GNSAdapterTapjoyRewardVideoAd.m */,
-				2F979B2F21B50979000A81A6 /* GNSAdapterTapjoyRewardVideoAd.h */,
-			);
-			path = Tapjoy;
-			sourceTree = "<group>";
-		};
-		2F979B3021B50979000A81A6 /* AppLovin */ = {
-			isa = PBXGroup;
-			children = (
-				2F979B3121B50979000A81A6 /* GNSAdapterAppLovinRewardVideoAd.m */,
-				2F979B3221B50979000A81A6 /* GNSAdapterAppLovinRewardVideoAd.h */,
-			);
-			path = AppLovin;
-			sourceTree = "<group>";
-		};
-		2F979B3321B50979000A81A6 /* AdColony */ = {
-			isa = PBXGroup;
-			children = (
-				2F979B3421B50979000A81A6 /* GNSAdapterAdColonyRewardVideoAd.m */,
-				2F979B3521B50979000A81A6 /* GNSAdapterAdColonyRewardVideoAd.h */,
-			);
-			path = AdColony;
-			sourceTree = "<group>";
-		};
-		2F979B3621B50979000A81A6 /* Maio */ = {
-			isa = PBXGroup;
-			children = (
-				2F979B3721B50979000A81A6 /* GNSAdapterMaioRewardVideoAd.h */,
-				2F979B3821B50979000A81A6 /* GNSAdapterMaioRewardVideoAd.m */,
-			);
-			path = Maio;
-			sourceTree = "<group>";
-		};
-		2F979B3921B50979000A81A6 /* Nend */ = {
-			isa = PBXGroup;
-			children = (
-				2F979B3A21B50979000A81A6 /* GNSAdapterNendRewardVideoAd.h */,
-				2F979B3B21B50979000A81A6 /* GNSAdapterNendRewardVideoAd.m */,
-			);
-			path = Nend;
-			sourceTree = "<group>";
-		};
-		2F979B3C21B50979000A81A6 /* CAReward */ = {
-			isa = PBXGroup;
-			children = (
-				2F979B3D21B50979000A81A6 /* GNSAdapterCARewardRewardVideoAd.m */,
-				2F979B3E21B50979000A81A6 /* GNSAdapterCARewardRewardVideoAd.h */,
-			);
-			path = CAReward;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		BBE1E57F20D2841B0035A52A = {
 			isa = PBXGroup;
 			children = (
-				0C1EDBD122AE005A00661094 /* AMoAdSdk */,
-				2F979B2321B50979000A81A6 /* rewardMediation */,
 				BBE1E58A20D2841B0035A52A /* GNAdRewardVideoSample */,
 				BBE1E58920D2841B0035A52A /* Products */,
 				EBDFB509BC430792671E65F7 /* Frameworks */,
+				1369BC650857594C4F1C40C5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -299,6 +116,7 @@
 				2F977C1B211C0EFF00CA4B24 /* CoreMedia.framework */,
 				2F977C1D211C0EFF00CA4B24 /* ImageIO.framework */,
 				2F977C1A211C0EFF00CA4B24 /* StoreKit.framework */,
+				3BC427D4682C7CCB079C3CF1 /* libPods-GNAdRewardVideoSample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -310,6 +128,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BBE1E59E20D2841E0035A52A /* Build configuration list for PBXNativeTarget "GNAdRewardVideoSample" */;
 			buildPhases = (
+				233EDEE133EDD637CDEC8D9B /* [CP] Check Pods Manifest.lock */,
 				BBE1E58420D2841B0035A52A /* Sources */,
 				BBE1E58520D2841B0035A52A /* Frameworks */,
 				BBE1E58620D2841B0035A52A /* Resources */,
@@ -360,36 +179,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C1EDBEB22AE005A00661094 /* amoad_close_btn.png in Resources */,
-				0C1EDBE622AE005A00661094 /* amoad_link_btn_h.png in Resources */,
-				0C1EDBEC22AE005A00661094 /* amoad_panel_l.png in Resources */,
-				0C1EDBE822AE005A00661094 /* amoad_panel.png in Resources */,
 				BBE1E59820D2841E0035A52A /* LaunchScreen.storyboard in Resources */,
 				BBE1E59520D2841E0035A52A /* Assets.xcassets in Resources */,
 				BBE1E59320D2841B0035A52A /* Main.storyboard in Resources */,
-				0C1EDBE722AE005A00661094 /* amoad_link_btn.png in Resources */,
-				0C1EDBEA22AE005A00661094 /* amoad_close_btn_h.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		233EDEE133EDD637CDEC8D9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GNAdRewardVideoSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BBE1E58420D2841B0035A52A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F979B4521B50979000A81A6 /* GNSAdapterMaioRewardVideoAd.m in Sources */,
 				BBE1E59020D2841B0035A52A /* ViewController.m in Sources */,
-				0C1EDBF722AE023E00661094 /* GNSAdapterTikTokRewardVideoAd.m in Sources */,
-				2F979B4221B50979000A81A6 /* GNSAdapterTapjoyRewardVideoAd.m in Sources */,
-				2F979B3F21B50979000A81A6 /* GNSAdapterUnityAdsRewardVideoAd.m in Sources */,
-				2F979B4021B50979000A81A6 /* GNSAdapterVungleRewardVideoAd.m in Sources */,
-				2F979B4721B50979000A81A6 /* GNSAdapterCARewardRewardVideoAd.m in Sources */,
-				2F979B4121B50979000A81A6 /* GNSAdapterAmoadRewardVideoAd.m in Sources */,
-				2F979B4321B50979000A81A6 /* GNSAdapterAppLovinRewardVideoAd.m in Sources */,
-				2F979B4421B50979000A81A6 /* GNSAdapterAdColonyRewardVideoAd.m in Sources */,
-				2F979B4621B50979000A81A6 /* GNSAdapterNendRewardVideoAd.m in Sources */,
 				BBE1E59B20D2841E0035A52A /* main.m in Sources */,
 				BBE1E58D20D2841B0035A52A /* AppDelegate.m in Sources */,
 			);
@@ -529,6 +357,7 @@
 		};
 		BBE1E59F20D2841E0035A52A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36B86103ED90216403CA63B2 /* Pods-GNAdRewardVideoSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -557,6 +386,7 @@
 		};
 		BBE1E5A020D2841E0035A52A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 829A164D5964A79DB3AA1BD2 /* Pods-GNAdRewardVideoSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
