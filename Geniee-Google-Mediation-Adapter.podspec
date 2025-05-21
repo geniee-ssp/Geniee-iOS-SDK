@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Geniee-Google-Mediation-Adapter"
-  s.version      = "8.3.2"
+  s.version      = "8.3.3"
   s.summary      = "Geniee Google adapter under Google Ads mediation"
   s.homepage     = "https://geniee.co.jp"
 
