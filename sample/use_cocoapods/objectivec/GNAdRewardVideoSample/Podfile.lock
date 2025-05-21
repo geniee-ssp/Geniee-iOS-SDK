@@ -1,0 +1,16 @@
+PODS:
+  - Geniee-iOS-SDK (8.4.1)
+
+DEPENDENCIES:
+  - Geniee-iOS-SDK (= 8.4.1)
+
+SPEC REPOS:
+  trunk:
+    - Geniee-iOS-SDK
+
+SPEC CHECKSUMS:
+  Geniee-iOS-SDK: 69816a28c199cc635b438a60da42f58ed12eb129
+
+PODFILE CHECKSUM: 577f25dbe949fb19196e7700c0ff7ca8cd21ce65
+
+COCOAPODS: 1.16.2

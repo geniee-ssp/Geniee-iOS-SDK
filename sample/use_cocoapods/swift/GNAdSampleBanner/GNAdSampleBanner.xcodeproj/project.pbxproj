@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07BAE356EA7BB2ADBCE37D5B /* libPods-GNAdSampleBanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E501A8BA941059A77CF8B3EA /* libPods-GNAdSampleBanner.a */; };
+		B3D60D2D06B025160CC4B837 /* libPods-GNAdSampleBanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B61788270652DCDA9E46E8 /* libPods-GNAdSampleBanner.a */; };
 		E8CED05020DB4EA9007779A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CED04F20DB4EA9007779A8 /* AppDelegate.swift */; };
 		E8CED05220DB4EA9007779A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CED05120DB4EA9007779A8 /* ViewController.swift */; };
 		E8CED05520DB4EA9007779A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8CED05320DB4EA9007779A8 /* Main.storyboard */; };
@@ -16,9 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		361368BE1D600A29AEA02D5A /* Pods-GNAdSampleBanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdSampleBanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdSampleBanner/Pods-GNAdSampleBanner.debug.xcconfig"; sourceTree = "<group>"; };
-		A637DFA1E07A880DDFD47800 /* Pods-GNAdSampleBanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdSampleBanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-GNAdSampleBanner/Pods-GNAdSampleBanner.release.xcconfig"; sourceTree = "<group>"; };
-		E501A8BA941059A77CF8B3EA /* libPods-GNAdSampleBanner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GNAdSampleBanner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19B61788270652DCDA9E46E8 /* libPods-GNAdSampleBanner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GNAdSampleBanner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D3FD7CFF6A80B31850D51C2 /* Pods-GNAdSampleBanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdSampleBanner.release.xcconfig"; path = "Target Support Files/Pods-GNAdSampleBanner/Pods-GNAdSampleBanner.release.xcconfig"; sourceTree = "<group>"; };
+		C540ABA09E80213BFD3795B3 /* Pods-GNAdSampleBanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GNAdSampleBanner.debug.xcconfig"; path = "Target Support Files/Pods-GNAdSampleBanner/Pods-GNAdSampleBanner.debug.xcconfig"; sourceTree = "<group>"; };
 		E81A996220DB5396004D3CD6 /* GNAdSampleBanner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GNAdSampleBanner-Bridging-Header.h"; sourceTree = "<group>"; };
 		E8CED04C20DB4EA9007779A8 /* GNAdSampleBanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNAdSampleBanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8CED04F20DB4EA9007779A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,28 +34,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07BAE356EA7BB2ADBCE37D5B /* libPods-GNAdSampleBanner.a in Frameworks */,
+				B3D60D2D06B025160CC4B837 /* libPods-GNAdSampleBanner.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7BC4EEB2F59AEE54EC58BB49 /* Pods */ = {
+		4ACC0EBF2D3904A58DA967AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				361368BE1D600A29AEA02D5A /* Pods-GNAdSampleBanner.debug.xcconfig */,
-				A637DFA1E07A880DDFD47800 /* Pods-GNAdSampleBanner.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		87B6F8FCFF34D092A8B3E3D3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E501A8BA941059A77CF8B3EA /* libPods-GNAdSampleBanner.a */,
+				19B61788270652DCDA9E46E8 /* libPods-GNAdSampleBanner.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97507C5D06FD681D6EBEF02B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C540ABA09E80213BFD3795B3 /* Pods-GNAdSampleBanner.debug.xcconfig */,
+				5D3FD7CFF6A80B31850D51C2 /* Pods-GNAdSampleBanner.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		E8CED04320DB4EA9007779A8 = {
@@ -63,8 +64,8 @@
 			children = (
 				E8CED04E20DB4EA9007779A8 /* GNAdSampleBanner */,
 				E8CED04D20DB4EA9007779A8 /* Products */,
-				7BC4EEB2F59AEE54EC58BB49 /* Pods */,
-				87B6F8FCFF34D092A8B3E3D3 /* Frameworks */,
+				97507C5D06FD681D6EBEF02B /* Pods */,
+				4ACC0EBF2D3904A58DA967AE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,7 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8CED05E20DB4EB2007779A8 /* Build configuration list for PBXNativeTarget "GNAdSampleBanner" */;
 			buildPhases = (
-				FEACF350A7FD513EAFB4A062 /* [CP] Check Pods Manifest.lock */,
+				D2E8D64E670178C079D01403 /* [CP] Check Pods Manifest.lock */,
 				E8CED04820DB4EA9007779A8 /* Sources */,
 				E8CED04920DB4EA9007779A8 /* Frameworks */,
 				E8CED04A20DB4EA9007779A8 /* Resources */,
@@ -158,16 +159,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		FEACF350A7FD513EAFB4A062 /* [CP] Check Pods Manifest.lock */ = {
+		D2E8D64E670178C079D01403 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-GNAdSampleBanner-checkManifestLockResult.txt",
 			);
@@ -326,13 +331,13 @@
 		};
 		E8CED05F20DB4EB2007779A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 361368BE1D600A29AEA02D5A /* Pods-GNAdSampleBanner.debug.xcconfig */;
+			baseConfigurationReference = C540ABA09E80213BFD3795B3 /* Pods-GNAdSampleBanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				INFOPLIST_FILE = GNAdSampleBanner/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,13 +352,13 @@
 		};
 		E8CED06020DB4EB2007779A8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A637DFA1E07A880DDFD47800 /* Pods-GNAdSampleBanner.release.xcconfig */;
+			baseConfigurationReference = 5D3FD7CFF6A80B31850D51C2 /* Pods-GNAdSampleBanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKMVWZ32F4;
 				INFOPLIST_FILE = GNAdSampleBanner/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
