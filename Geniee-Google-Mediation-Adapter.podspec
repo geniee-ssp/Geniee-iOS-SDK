@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios, "9.0"
+  s.platform     = :ios, "12.0"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -93,5 +93,5 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.dependency "Google-Mobile-Ads-SDK"
-  s.dependency "Geniee-iOS-SDK" 
+  s.dependency 'Geniee-iOS-SDK'
 end
