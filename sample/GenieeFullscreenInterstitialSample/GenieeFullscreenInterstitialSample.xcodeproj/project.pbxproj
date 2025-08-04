@@ -16,13 +16,9 @@
 		0C4833FF2CC23D8300AB1F4D /* GenieeFullscreenInterstitialSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4833FE2CC23D8300AB1F4D /* GenieeFullscreenInterstitialSampleTests.swift */; };
 		0C4834092CC23D8300AB1F4D /* GenieeFullscreenInterstitialSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4834082CC23D8300AB1F4D /* GenieeFullscreenInterstitialSampleUITests.swift */; };
 		0C48340B2CC23D8300AB1F4D /* GenieeFullscreenInterstitialSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C48340A2CC23D8300AB1F4D /* GenieeFullscreenInterstitialSampleUITestsLaunchTests.swift */; };
-		0C48341F2CC246B800AB1F4D /* GNSAdapterPangleFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C48341D2CC246B700AB1F4D /* GNSAdapterPangleFullscreenInterstitialAd.m */; };
-		0C83602C2CC5EFB000036DF0 /* GNSAdapterVungleFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C83602A2CC5EFB000036DF0 /* GNSAdapterVungleFullscreenInterstitialAd.m */; };
-		0C8360302CC5F7F800036DF0 /* GNSAdapterAppLovinFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C83602E2CC5F7F800036DF0 /* GNSAdapterAppLovinFullscreenInterstitialAd.m */; };
-		0C8360342CC608FC00036DF0 /* GNSAdapterUnityAdsFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8360322CC608FC00036DF0 /* GNSAdapterUnityAdsFullscreenInterstitialAd.m */; };
-		0C8360382CC638B900036DF0 /* GNSAdapterMaioFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8360362CC638B800036DF0 /* GNSAdapterMaioFullscreenInterstitialAd.m */; };
-		0CAE4F132CC74A660014CF05 /* GNSAdapterGoogleAdxFullscreenInterstitialAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAE4F112CC74A650014CF05 /* GNSAdapterGoogleAdxFullscreenInterstitialAd.m */; };
+		0C4BE68F2D1BB80F00622B46 /* GenieeMediationMaio.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4BE68E2D1BB80F00622B46 /* GenieeMediationMaio.xcframework */; };
 		1F07A506DE149D0C53DD9EE3 /* Pods_GenieeFullscreenInterstitialSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78173BBCBAB1BE82EE343A97 /* Pods_GenieeFullscreenInterstitialSample.framework */; };
+		48B5845D2DC1CC2400DA525B /* GenieeMediationLine.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B5845C2DC1CC2400DA525B /* GenieeMediationLine.xcframework */; };
 		581CE284B74ED2FFE3EABF2A /* Pods_GenieeFullscreenInterstitialSample_GenieeFullscreenInterstitialSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B30842D581CF54AD1AA7A4 /* Pods_GenieeFullscreenInterstitialSample_GenieeFullscreenInterstitialSampleUITests.framework */; };
 		BA2D6F801EF7F5BE0BE81382 /* Pods_GenieeFullscreenInterstitialSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC3919BDDCAFF8EF0F099E67 /* Pods_GenieeFullscreenInterstitialSampleTests.framework */; };
 /* End PBXBuildFile section */
@@ -60,20 +56,10 @@
 		0C4834082CC23D8300AB1F4D /* GenieeFullscreenInterstitialSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenieeFullscreenInterstitialSampleUITests.swift; sourceTree = "<group>"; };
 		0C48340A2CC23D8300AB1F4D /* GenieeFullscreenInterstitialSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenieeFullscreenInterstitialSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0C4834172CC23EAB00AB1F4D /* GNAdFullscreenInterstitial-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GNAdFullscreenInterstitial-Bridging-Header.h"; sourceTree = "<group>"; };
-		0C48341C2CC246B700AB1F4D /* GNSAdapterPangleFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterPangleFullscreenInterstitialAd.h; sourceTree = "<group>"; };
-		0C48341D2CC246B700AB1F4D /* GNSAdapterPangleFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterPangleFullscreenInterstitialAd.m; sourceTree = "<group>"; };
-		0C8360292CC5EFB000036DF0 /* GNSAdapterVungleFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterVungleFullscreenInterstitialAd.h; sourceTree = "<group>"; };
-		0C83602A2CC5EFB000036DF0 /* GNSAdapterVungleFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterVungleFullscreenInterstitialAd.m; sourceTree = "<group>"; };
-		0C83602D2CC5F7F800036DF0 /* GNSAdapterAppLovinFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterAppLovinFullscreenInterstitialAd.h; sourceTree = "<group>"; };
-		0C83602E2CC5F7F800036DF0 /* GNSAdapterAppLovinFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterAppLovinFullscreenInterstitialAd.m; sourceTree = "<group>"; };
-		0C8360312CC608FC00036DF0 /* GNSAdapterUnityAdsFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterUnityAdsFullscreenInterstitialAd.h; sourceTree = "<group>"; };
-		0C8360322CC608FC00036DF0 /* GNSAdapterUnityAdsFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterUnityAdsFullscreenInterstitialAd.m; sourceTree = "<group>"; };
-		0C8360352CC638B800036DF0 /* GNSAdapterMaioFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterMaioFullscreenInterstitialAd.h; sourceTree = "<group>"; };
-		0C8360362CC638B800036DF0 /* GNSAdapterMaioFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterMaioFullscreenInterstitialAd.m; sourceTree = "<group>"; };
-		0CAE4F102CC74A650014CF05 /* GNSAdapterGoogleAdxFullscreenInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterGoogleAdxFullscreenInterstitialAd.h; sourceTree = "<group>"; };
-		0CAE4F112CC74A650014CF05 /* GNSAdapterGoogleAdxFullscreenInterstitialAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterGoogleAdxFullscreenInterstitialAd.m; sourceTree = "<group>"; };
+		0C4BE68E2D1BB80F00622B46 /* GenieeMediationMaio.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GenieeMediationMaio.xcframework; path = "../../adnetwork-adapters/GenieeMediationMaio/Framework/GenieeMediationMaio.xcframework"; sourceTree = "<group>"; };
 		13B30842D581CF54AD1AA7A4 /* Pods_GenieeFullscreenInterstitialSample_GenieeFullscreenInterstitialSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenieeFullscreenInterstitialSample_GenieeFullscreenInterstitialSampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2473C2E669EAEC6DA3E44B08 /* Pods-GenieeFullscreenInterstitialSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenieeFullscreenInterstitialSample.release.xcconfig"; path = "Target Support Files/Pods-GenieeFullscreenInterstitialSample/Pods-GenieeFullscreenInterstitialSample.release.xcconfig"; sourceTree = "<group>"; };
+		48B5845C2DC1CC2400DA525B /* GenieeMediationLine.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GenieeMediationLine.xcframework; path = "../../adnetwork-adapters/GenieeMediationLine/Framework/GenieeMediationLine.xcframework"; sourceTree = "<group>"; };
 		78173BBCBAB1BE82EE343A97 /* Pods_GenieeFullscreenInterstitialSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenieeFullscreenInterstitialSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A18EF6F5C73A7AEA4CC953 /* Pods-GenieeFullscreenInterstitialSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenieeFullscreenInterstitialSampleTests.release.xcconfig"; path = "Target Support Files/Pods-GenieeFullscreenInterstitialSampleTests/Pods-GenieeFullscreenInterstitialSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		AC3919BDDCAFF8EF0F099E67 /* Pods_GenieeFullscreenInterstitialSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenieeFullscreenInterstitialSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +74,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F07A506DE149D0C53DD9EE3 /* Pods_GenieeFullscreenInterstitialSample.framework in Frameworks */,
+				48B5845D2DC1CC2400DA525B /* GenieeMediationLine.xcframework in Frameworks */,
+				0C4BE68F2D1BB80F00622B46 /* GenieeMediationMaio.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +101,8 @@
 		0C4833DB2CC23D7D00AB1F4D = {
 			isa = PBXGroup;
 			children = (
+				48B5845C2DC1CC2400DA525B /* GenieeMediationLine.xcframework */,
+				0C4BE68E2D1BB80F00622B46 /* GenieeMediationMaio.xcframework */,
 				0C4833E62CC23D7D00AB1F4D /* GenieeFullscreenInterstitialSample */,
 				0C4833FD2CC23D8300AB1F4D /* GenieeFullscreenInterstitialSampleTests */,
 				0C4834072CC23D8300AB1F4D /* GenieeFullscreenInterstitialSampleUITests */,
@@ -135,12 +125,6 @@
 		0C4833E62CC23D7D00AB1F4D /* GenieeFullscreenInterstitialSample */ = {
 			isa = PBXGroup;
 			children = (
-				0CAE4F122CC74A650014CF05 /* GoogleAdx */,
-				0C8360372CC638B800036DF0 /* Maio */,
-				0C8360332CC608FC00036DF0 /* UnityAds */,
-				0C83602F2CC5F7F800036DF0 /* AppLovin */,
-				0C83602B2CC5EFB000036DF0 /* Vungle */,
-				0C48341E2CC246B700AB1F4D /* Pangle */,
 				0C4834172CC23EAB00AB1F4D /* GNAdFullscreenInterstitial-Bridging-Header.h */,
 				0C4833E72CC23D7D00AB1F4D /* AppDelegate.swift */,
 				0C4833E92CC23D7D00AB1F4D /* SceneDelegate.swift */,
@@ -168,66 +152,6 @@
 				0C48340A2CC23D8300AB1F4D /* GenieeFullscreenInterstitialSampleUITestsLaunchTests.swift */,
 			);
 			path = GenieeFullscreenInterstitialSampleUITests;
-			sourceTree = "<group>";
-		};
-		0C48341E2CC246B700AB1F4D /* Pangle */ = {
-			isa = PBXGroup;
-			children = (
-				0C48341C2CC246B700AB1F4D /* GNSAdapterPangleFullscreenInterstitialAd.h */,
-				0C48341D2CC246B700AB1F4D /* GNSAdapterPangleFullscreenInterstitialAd.m */,
-			);
-			name = Pangle;
-			path = ../../../fullscreenMediation/Pangle;
-			sourceTree = "<group>";
-		};
-		0C83602B2CC5EFB000036DF0 /* Vungle */ = {
-			isa = PBXGroup;
-			children = (
-				0C8360292CC5EFB000036DF0 /* GNSAdapterVungleFullscreenInterstitialAd.h */,
-				0C83602A2CC5EFB000036DF0 /* GNSAdapterVungleFullscreenInterstitialAd.m */,
-			);
-			name = Vungle;
-			path = ../../../fullscreenMediation/Vungle;
-			sourceTree = "<group>";
-		};
-		0C83602F2CC5F7F800036DF0 /* AppLovin */ = {
-			isa = PBXGroup;
-			children = (
-				0C83602D2CC5F7F800036DF0 /* GNSAdapterAppLovinFullscreenInterstitialAd.h */,
-				0C83602E2CC5F7F800036DF0 /* GNSAdapterAppLovinFullscreenInterstitialAd.m */,
-			);
-			name = AppLovin;
-			path = ../../../fullscreenMediation/AppLovin;
-			sourceTree = "<group>";
-		};
-		0C8360332CC608FC00036DF0 /* UnityAds */ = {
-			isa = PBXGroup;
-			children = (
-				0C8360312CC608FC00036DF0 /* GNSAdapterUnityAdsFullscreenInterstitialAd.h */,
-				0C8360322CC608FC00036DF0 /* GNSAdapterUnityAdsFullscreenInterstitialAd.m */,
-			);
-			name = UnityAds;
-			path = ../../../fullscreenMediation/UnityAds;
-			sourceTree = "<group>";
-		};
-		0C8360372CC638B800036DF0 /* Maio */ = {
-			isa = PBXGroup;
-			children = (
-				0C8360352CC638B800036DF0 /* GNSAdapterMaioFullscreenInterstitialAd.h */,
-				0C8360362CC638B800036DF0 /* GNSAdapterMaioFullscreenInterstitialAd.m */,
-			);
-			name = Maio;
-			path = ../../../fullscreenMediation/Maio;
-			sourceTree = "<group>";
-		};
-		0CAE4F122CC74A650014CF05 /* GoogleAdx */ = {
-			isa = PBXGroup;
-			children = (
-				0CAE4F102CC74A650014CF05 /* GNSAdapterGoogleAdxFullscreenInterstitialAd.h */,
-				0CAE4F112CC74A650014CF05 /* GNSAdapterGoogleAdxFullscreenInterstitialAd.m */,
-			);
-			name = GoogleAdx;
-			path = ../../../fullscreenMediation/GoogleAdx;
 			sourceTree = "<group>";
 		};
 		3BFFCC211AE3F6D79966C881 /* Frameworks */ = {
@@ -265,7 +189,7 @@
 				0C4833E12CC23D7D00AB1F4D /* Frameworks */,
 				0C4833E22CC23D7D00AB1F4D /* Resources */,
 				4369121EDEEE761E9050D09B /* [CP] Embed Pods Frameworks */,
-				C2364C35D6E8DCD875C6376B /* [CP] Copy Pods Resources */,
+				7D4E0A6DB90A4E1F450EE13F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -304,7 +228,7 @@
 				0C4834012CC23D8300AB1F4D /* Frameworks */,
 				0C4834022CC23D8300AB1F4D /* Resources */,
 				ECB4F4373CF32BBC908C541A /* [CP] Embed Pods Frameworks */,
-				1A0D8C12D7EA176D93EC6A83 /* [CP] Copy Pods Resources */,
+				C5FE96BD95F4C49D160E66FE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -387,23 +311,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1A0D8C12D7EA176D93EC6A83 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GenieeFullscreenInterstitialSample-GenieeFullscreenInterstitialSampleUITests/Pods-GenieeFullscreenInterstitialSample-GenieeFullscreenInterstitialSampleUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GenieeFullscreenInterstitialSample-GenieeFullscreenInterstitialSampleUITests/Pods-GenieeFullscreenInterstitialSample-GenieeFullscreenInterstitialSampleUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GenieeFullscreenInterstitialSample-GenieeFullscreenInterstitialSampleUITests/Pods-GenieeFullscreenInterstitialSample-GenieeFullscreenInterstitialSampleUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4369121EDEEE761E9050D09B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -487,7 +394,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C2364C35D6E8DCD875C6376B /* [CP] Copy Pods Resources */ = {
+		7D4E0A6DB90A4E1F450EE13F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -502,6 +409,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GenieeFullscreenInterstitialSample/Pods-GenieeFullscreenInterstitialSample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5FE96BD95F4C49D160E66FE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GenieeFullscreenInterstitialSample-GenieeFullscreenInterstitialSampleUITests/Pods-GenieeFullscreenInterstitialSample-GenieeFullscreenInterstitialSampleUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GenieeFullscreenInterstitialSample-GenieeFullscreenInterstitialSampleUITests/Pods-GenieeFullscreenInterstitialSample-GenieeFullscreenInterstitialSampleUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GenieeFullscreenInterstitialSample-GenieeFullscreenInterstitialSampleUITests/Pods-GenieeFullscreenInterstitialSample-GenieeFullscreenInterstitialSampleUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ECB4F4373CF32BBC908C541A /* [CP] Embed Pods Frameworks */ = {
@@ -528,14 +452,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C83602C2CC5EFB000036DF0 /* GNSAdapterVungleFullscreenInterstitialAd.m in Sources */,
-				0C8360302CC5F7F800036DF0 /* GNSAdapterAppLovinFullscreenInterstitialAd.m in Sources */,
 				0C4833EC2CC23D7D00AB1F4D /* ViewController.swift in Sources */,
-				0CAE4F132CC74A660014CF05 /* GNSAdapterGoogleAdxFullscreenInterstitialAd.m in Sources */,
-				0C48341F2CC246B800AB1F4D /* GNSAdapterPangleFullscreenInterstitialAd.m in Sources */,
 				0C4833E82CC23D7D00AB1F4D /* AppDelegate.swift in Sources */,
-				0C8360342CC608FC00036DF0 /* GNSAdapterUnityAdsFullscreenInterstitialAd.m in Sources */,
-				0C8360382CC638B900036DF0 /* GNSAdapterMaioFullscreenInterstitialAd.m in Sources */,
 				0C4833EA2CC23D7D00AB1F4D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

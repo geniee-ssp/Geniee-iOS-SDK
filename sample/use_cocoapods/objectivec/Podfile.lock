@@ -1,0 +1,92 @@
+PODS:
+  - Ads-Global (7.4.1.0):
+    - Ads-Global/BUAdSDK (= 7.4.1.0)
+  - Ads-Global/BUAdSDK (7.4.1.0)
+  - AppLovinSDK (13.3.1)
+  - FiveAd (2.9.20241106)
+  - FiveGADAdapter (1.5.0):
+    - FiveAd (~> 2.4)
+    - Google-Mobile-Ads-SDK (>= 9.1.0)
+  - Geniee-Google-Mediation-Adapter (8.3.3):
+    - Geniee-iOS-SDK
+    - Google-Mobile-Ads-SDK
+  - Geniee-iOS-SDK (8.3.1):
+    - KissXML (~> 5.2.3)
+  - Geniee-Mediation-AppLovin-Adapter (8.3.1.0):
+    - AppLovinSDK
+    - Geniee-iOS-SDK
+  - Geniee-Mediation-GoogleAdManager-Adapter (8.3.1.0):
+    - Geniee-iOS-SDK
+    - Google-Mobile-Ads-SDK
+  - Geniee-Mediation-Line-Adapter (8.4.1.0):
+    - FiveGADAdapter
+    - Geniee-iOS-SDK
+  - Geniee-Mediation-Maio-Adapter (8.3.1.1):
+    - Geniee-iOS-SDK
+    - MaioSDK-v2
+  - Geniee-Mediation-Pangle-Adapter (8.3.1.0):
+    - Ads-Global
+    - Geniee-iOS-SDK
+  - Geniee-Mediation-UnityAds-Adapter (8.3.1.0):
+    - Geniee-iOS-SDK
+    - UnityAds
+  - Google-Mobile-Ads-SDK (12.8.0):
+    - GoogleUserMessagingPlatform (>= 1.1)
+  - GoogleUserMessagingPlatform (3.0.0)
+  - KissXML (5.2.3)
+  - MaioSDK-v2 (2.1.6)
+  - UnityAds (4.15.1)
+
+DEPENDENCIES:
+  - Geniee-Google-Mediation-Adapter
+  - Geniee-iOS-SDK
+  - Geniee-Mediation-AppLovin-Adapter
+  - Geniee-Mediation-GoogleAdManager-Adapter
+  - Geniee-Mediation-Line-Adapter
+  - Geniee-Mediation-Maio-Adapter
+  - Geniee-Mediation-Pangle-Adapter
+  - Geniee-Mediation-UnityAds-Adapter
+  - Google-Mobile-Ads-SDK
+
+SPEC REPOS:
+  trunk:
+    - Ads-Global
+    - AppLovinSDK
+    - FiveAd
+    - FiveGADAdapter
+    - Geniee-Google-Mediation-Adapter
+    - Geniee-iOS-SDK
+    - Geniee-Mediation-AppLovin-Adapter
+    - Geniee-Mediation-GoogleAdManager-Adapter
+    - Geniee-Mediation-Line-Adapter
+    - Geniee-Mediation-Maio-Adapter
+    - Geniee-Mediation-Pangle-Adapter
+    - Geniee-Mediation-UnityAds-Adapter
+    - Google-Mobile-Ads-SDK
+    - GoogleUserMessagingPlatform
+    - KissXML
+    - MaioSDK-v2
+    - UnityAds
+
+SPEC CHECKSUMS:
+  Ads-Global: a40a5b5effd381e4d58b52a914f4bcd4a6932d45
+  AppLovinSDK: 5075837afdee4fb429121799b8cbcc5918ef3a23
+  FiveAd: f25d5ff3bfe880f1c050e04e7e321eba9cf895df
+  FiveGADAdapter: 20f417e2205596c67bb335a5603a5e2363b7200e
+  Geniee-Google-Mediation-Adapter: 12d6e2714fcb1f0d5cb14ee464f3b9874f31078c
+  Geniee-iOS-SDK: 334d484d34ba0726987fbea82b50775c8b44de19
+  Geniee-Mediation-AppLovin-Adapter: cd9ff2fee14d04a208896d2357db0942ad9771bd
+  Geniee-Mediation-GoogleAdManager-Adapter: a9fa40b45724989b9fac9dbd6aabaa3e327ed7cd
+  Geniee-Mediation-Line-Adapter: e42cd37a17203618f933a98b6ba4170b7051730a
+  Geniee-Mediation-Maio-Adapter: 9ba623ed59ea3877927bb95b812db52f1ba86210
+  Geniee-Mediation-Pangle-Adapter: 20963d740e54a4ee708c17638e93d723f156870e
+  Geniee-Mediation-UnityAds-Adapter: c74e9a4ede76e8f1bbb043b152796f57beda6428
+  Google-Mobile-Ads-SDK: ece122bc89b38cab319543bc464a9ceabfe1d307
+  GoogleUserMessagingPlatform: f8d0cdad3ca835406755d0a69aa634f00e76d576
+  KissXML: 09f88ff8161fd058d67b70740b8b516687b52823
+  MaioSDK-v2: 02780811845ba7dff080c9b92b6a5d29484ac777
+  UnityAds: 107ca5df015ff7880c56ceddb1019e0c0d96846c
+
+PODFILE CHECKSUM: 2ff333e749ecd702fc4c9692fe9b8bf465eb2ee2
+
+COCOAPODS: 1.16.2

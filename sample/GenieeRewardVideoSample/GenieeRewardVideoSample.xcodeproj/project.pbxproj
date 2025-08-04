@@ -16,12 +16,8 @@
 		0C4833AD2CC1F96F00AB1F4D /* GenieeRewardVideoSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4833AC2CC1F96F00AB1F4D /* GenieeRewardVideoSampleTests.swift */; };
 		0C4833B72CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4833B62CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITests.swift */; };
 		0C4833B92CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4833B82CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITestsLaunchTests.swift */; };
-		0C4833CD2CC1FBF500AB1F4D /* GNSAdapterVungleRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4833C82CC1FBF500AB1F4D /* GNSAdapterVungleRewardVideoAd.m */; };
-		0C4833CE2CC1FBF500AB1F4D /* GNSAdapterPangleRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4833CB2CC1FBF500AB1F4D /* GNSAdapterPangleRewardVideoAd.m */; };
-		0C4833D22CC1FE1D00AB1F4D /* GNSAdapterAppLovinRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4833D02CC1FE1D00AB1F4D /* GNSAdapterAppLovinRewardVideoAd.m */; };
-		0C4833DA2CC206AB00AB1F4D /* GNSAdapterUnityAdsRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4833D82CC206AB00AB1F4D /* GNSAdapterUnityAdsRewardVideoAd.m */; };
-		0CAE4F0F2CC64DB10014CF05 /* GNSAdapterGoogleAdxRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAE4F0D2CC64DB10014CF05 /* GNSAdapterGoogleAdxRewardVideoAd.m */; };
-		0CAE4F172CC766EB0014CF05 /* GNSAdapterMaioRewardVideoAd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CAE4F152CC766EA0014CF05 /* GNSAdapterMaioRewardVideoAd.m */; };
+		0C4BE68B2D1BABD300622B46 /* GenieeMediationMaio.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C4BE68A2D1BABD300622B46 /* GenieeMediationMaio.xcframework */; };
+		48B5845F2DC1CE8100DA525B /* GenieeMediationLine.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B5845E2DC1CE8100DA525B /* GenieeMediationLine.xcframework */; };
 		A6B6B607DC6EB99718BBFE4A /* Pods_GenieeRewardVideoSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EED60D24A801572F31696D /* Pods_GenieeRewardVideoSampleTests.framework */; };
 		EDC68E8B9B7FB482FA2660CB /* Pods_GenieeRewardVideoSample_GenieeRewardVideoSampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6421D7AC7BA4184B0C3833B8 /* Pods_GenieeRewardVideoSample_GenieeRewardVideoSampleUITests.framework */; };
 		EE0711F281CC1EC86E3D4844 /* Pods_GenieeRewardVideoSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421C784D983525D965DF8C8F /* Pods_GenieeRewardVideoSample.framework */; };
@@ -59,20 +55,10 @@
 		0C4833B62CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenieeRewardVideoSampleUITests.swift; sourceTree = "<group>"; };
 		0C4833B82CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenieeRewardVideoSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0C4833C52CC1FB1700AB1F4D /* GNAdRewardVideo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GNAdRewardVideo-Bridging-Header.h"; sourceTree = "<group>"; };
-		0C4833C72CC1FBF500AB1F4D /* GNSAdapterVungleRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterVungleRewardVideoAd.h; sourceTree = "<group>"; };
-		0C4833C82CC1FBF500AB1F4D /* GNSAdapterVungleRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterVungleRewardVideoAd.m; sourceTree = "<group>"; };
-		0C4833CA2CC1FBF500AB1F4D /* GNSAdapterPangleRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterPangleRewardVideoAd.h; sourceTree = "<group>"; };
-		0C4833CB2CC1FBF500AB1F4D /* GNSAdapterPangleRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterPangleRewardVideoAd.m; sourceTree = "<group>"; };
-		0C4833CF2CC1FE1D00AB1F4D /* GNSAdapterAppLovinRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterAppLovinRewardVideoAd.h; sourceTree = "<group>"; };
-		0C4833D02CC1FE1D00AB1F4D /* GNSAdapterAppLovinRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterAppLovinRewardVideoAd.m; sourceTree = "<group>"; };
-		0C4833D72CC206AB00AB1F4D /* GNSAdapterUnityAdsRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterUnityAdsRewardVideoAd.h; sourceTree = "<group>"; };
-		0C4833D82CC206AB00AB1F4D /* GNSAdapterUnityAdsRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterUnityAdsRewardVideoAd.m; sourceTree = "<group>"; };
-		0CAE4F0C2CC64DB10014CF05 /* GNSAdapterGoogleAdxRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterGoogleAdxRewardVideoAd.h; sourceTree = "<group>"; };
-		0CAE4F0D2CC64DB10014CF05 /* GNSAdapterGoogleAdxRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterGoogleAdxRewardVideoAd.m; sourceTree = "<group>"; };
-		0CAE4F142CC766EA0014CF05 /* GNSAdapterMaioRewardVideoAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNSAdapterMaioRewardVideoAd.h; sourceTree = "<group>"; };
-		0CAE4F152CC766EA0014CF05 /* GNSAdapterMaioRewardVideoAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNSAdapterMaioRewardVideoAd.m; sourceTree = "<group>"; };
+		0C4BE68A2D1BABD300622B46 /* GenieeMediationMaio.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GenieeMediationMaio.xcframework; path = "../../adnetwork-adapters/GenieeMediationMaio/Framework/GenieeMediationMaio.xcframework"; sourceTree = "<group>"; };
 		394A90739E7575F265EE200A /* Pods-GenieeRewardVideoSampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenieeRewardVideoSampleTests.release.xcconfig"; path = "Target Support Files/Pods-GenieeRewardVideoSampleTests/Pods-GenieeRewardVideoSampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		421C784D983525D965DF8C8F /* Pods_GenieeRewardVideoSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenieeRewardVideoSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48B5845E2DC1CE8100DA525B /* GenieeMediationLine.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GenieeMediationLine.xcframework; path = "../../adnetwork-adapters/GenieeMediationLine/Framework/GenieeMediationLine.xcframework"; sourceTree = "<group>"; };
 		6421D7AC7BA4184B0C3833B8 /* Pods_GenieeRewardVideoSample_GenieeRewardVideoSampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenieeRewardVideoSample_GenieeRewardVideoSampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A1EE0BA883A98E7AB7803A /* Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests.release.xcconfig"; path = "Target Support Files/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests.release.xcconfig"; sourceTree = "<group>"; };
 		94EED60D24A801572F31696D /* Pods_GenieeRewardVideoSampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenieeRewardVideoSampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +74,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE0711F281CC1EC86E3D4844 /* Pods_GenieeRewardVideoSample.framework in Frameworks */,
+				48B5845F2DC1CE8100DA525B /* GenieeMediationLine.xcframework in Frameworks */,
+				0C4BE68B2D1BABD300622B46 /* GenieeMediationMaio.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +101,8 @@
 		0C4833892CC1F96A00AB1F4D = {
 			isa = PBXGroup;
 			children = (
+				48B5845E2DC1CE8100DA525B /* GenieeMediationLine.xcframework */,
+				0C4BE68A2D1BABD300622B46 /* GenieeMediationMaio.xcframework */,
 				0C4833942CC1F96A00AB1F4D /* GenieeRewardVideoSample */,
 				0C4833AB2CC1F96F00AB1F4D /* GenieeRewardVideoSampleTests */,
 				0C4833B52CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITests */,
@@ -135,8 +125,6 @@
 		0C4833942CC1F96A00AB1F4D /* GenieeRewardVideoSample */ = {
 			isa = PBXGroup;
 			children = (
-				0C4833C62CC1FBE600AB1F4D /* adnetworks */,
-				0C4833C52CC1FB1700AB1F4D /* GNAdRewardVideo-Bridging-Header.h */,
 				0C4833952CC1F96A00AB1F4D /* AppDelegate.swift */,
 				0C4833972CC1F96A00AB1F4D /* SceneDelegate.swift */,
 				0C4833992CC1F96A00AB1F4D /* ViewController.swift */,
@@ -144,6 +132,7 @@
 				0C48339E2CC1F96E00AB1F4D /* Assets.xcassets */,
 				0C4833A02CC1F96E00AB1F4D /* LaunchScreen.storyboard */,
 				0C4833A32CC1F96E00AB1F4D /* Info.plist */,
+				0C4833C52CC1FB1700AB1F4D /* GNAdRewardVideo-Bridging-Header.h */,
 			);
 			path = GenieeRewardVideoSample;
 			sourceTree = "<group>";
@@ -163,79 +152,6 @@
 				0C4833B82CC1F96F00AB1F4D /* GenieeRewardVideoSampleUITestsLaunchTests.swift */,
 			);
 			path = GenieeRewardVideoSampleUITests;
-			sourceTree = "<group>";
-		};
-		0C4833C62CC1FBE600AB1F4D /* adnetworks */ = {
-			isa = PBXGroup;
-			children = (
-				0CAE4F162CC766EA0014CF05 /* Maio */,
-				0CAE4F0E2CC64DB10014CF05 /* GoogleAdx */,
-				0C4833D92CC206AB00AB1F4D /* UnityAds */,
-				0C4833D12CC1FE1D00AB1F4D /* AppLovin */,
-				0C4833CC2CC1FBF500AB1F4D /* Pangle */,
-				0C4833C92CC1FBF500AB1F4D /* Vungle */,
-			);
-			path = adnetworks;
-			sourceTree = "<group>";
-		};
-		0C4833C92CC1FBF500AB1F4D /* Vungle */ = {
-			isa = PBXGroup;
-			children = (
-				0C4833C72CC1FBF500AB1F4D /* GNSAdapterVungleRewardVideoAd.h */,
-				0C4833C82CC1FBF500AB1F4D /* GNSAdapterVungleRewardVideoAd.m */,
-			);
-			name = Vungle;
-			path = ../../../../rewardMediation/Vungle;
-			sourceTree = "<group>";
-		};
-		0C4833CC2CC1FBF500AB1F4D /* Pangle */ = {
-			isa = PBXGroup;
-			children = (
-				0C4833CA2CC1FBF500AB1F4D /* GNSAdapterPangleRewardVideoAd.h */,
-				0C4833CB2CC1FBF500AB1F4D /* GNSAdapterPangleRewardVideoAd.m */,
-			);
-			name = Pangle;
-			path = ../../../../rewardMediation/Pangle;
-			sourceTree = "<group>";
-		};
-		0C4833D12CC1FE1D00AB1F4D /* AppLovin */ = {
-			isa = PBXGroup;
-			children = (
-				0C4833CF2CC1FE1D00AB1F4D /* GNSAdapterAppLovinRewardVideoAd.h */,
-				0C4833D02CC1FE1D00AB1F4D /* GNSAdapterAppLovinRewardVideoAd.m */,
-			);
-			name = AppLovin;
-			path = ../../../../rewardMediation/AppLovin;
-			sourceTree = "<group>";
-		};
-		0C4833D92CC206AB00AB1F4D /* UnityAds */ = {
-			isa = PBXGroup;
-			children = (
-				0C4833D72CC206AB00AB1F4D /* GNSAdapterUnityAdsRewardVideoAd.h */,
-				0C4833D82CC206AB00AB1F4D /* GNSAdapterUnityAdsRewardVideoAd.m */,
-			);
-			name = UnityAds;
-			path = ../../../../rewardMediation/UnityAds;
-			sourceTree = "<group>";
-		};
-		0CAE4F0E2CC64DB10014CF05 /* GoogleAdx */ = {
-			isa = PBXGroup;
-			children = (
-				0CAE4F0C2CC64DB10014CF05 /* GNSAdapterGoogleAdxRewardVideoAd.h */,
-				0CAE4F0D2CC64DB10014CF05 /* GNSAdapterGoogleAdxRewardVideoAd.m */,
-			);
-			name = GoogleAdx;
-			path = ../../../../rewardMediation/GoogleAdx;
-			sourceTree = "<group>";
-		};
-		0CAE4F162CC766EA0014CF05 /* Maio */ = {
-			isa = PBXGroup;
-			children = (
-				0CAE4F142CC766EA0014CF05 /* GNSAdapterMaioRewardVideoAd.h */,
-				0CAE4F152CC766EA0014CF05 /* GNSAdapterMaioRewardVideoAd.m */,
-			);
-			name = Maio;
-			path = ../../../../rewardMediation/Maio;
 			sourceTree = "<group>";
 		};
 		692F7880855A6E663D4D2D75 /* Frameworks */ = {
@@ -273,7 +189,7 @@
 				0C48338F2CC1F96A00AB1F4D /* Frameworks */,
 				0C4833902CC1F96A00AB1F4D /* Resources */,
 				BD7613F4B7CB1EF0433B8430 /* [CP] Embed Pods Frameworks */,
-				15FB106CC23F538DA5780D92 /* [CP] Copy Pods Resources */,
+				3CDCFC76938D03EE22263BD0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -312,7 +228,7 @@
 				0C4833AF2CC1F96F00AB1F4D /* Frameworks */,
 				0C4833B02CC1F96F00AB1F4D /* Resources */,
 				0BE97456C754922C08A7AAEB /* [CP] Embed Pods Frameworks */,
-				0F4C297C28949F75176B7C50 /* [CP] Copy Pods Resources */,
+				FE5CD4EF78B332501B5C8747 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -403,33 +319,20 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		0F4C297C28949F75176B7C50 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		15FB106CC23F538DA5780D92 /* [CP] Copy Pods Resources */ = {
+		3CDCFC76938D03EE22263BD0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -437,9 +340,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample/Pods-GenieeRewardVideoSample-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample/Pods-GenieeRewardVideoSample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -498,9 +405,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample/Pods-GenieeRewardVideoSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample/Pods-GenieeRewardVideoSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -529,6 +440,27 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FE5CD4EF78B332501B5C8747 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests/Pods-GenieeRewardVideoSample-GenieeRewardVideoSampleUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -536,15 +468,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C4833DA2CC206AB00AB1F4D /* GNSAdapterUnityAdsRewardVideoAd.m in Sources */,
 				0C48339A2CC1F96A00AB1F4D /* ViewController.swift in Sources */,
-				0C4833CD2CC1FBF500AB1F4D /* GNSAdapterVungleRewardVideoAd.m in Sources */,
 				0C4833962CC1F96A00AB1F4D /* AppDelegate.swift in Sources */,
-				0C4833D22CC1FE1D00AB1F4D /* GNSAdapterAppLovinRewardVideoAd.m in Sources */,
 				0C4833982CC1F96A00AB1F4D /* SceneDelegate.swift in Sources */,
-				0C4833CE2CC1FBF500AB1F4D /* GNSAdapterPangleRewardVideoAd.m in Sources */,
-				0CAE4F0F2CC64DB10014CF05 /* GNSAdapterGoogleAdxRewardVideoAd.m in Sources */,
-				0CAE4F172CC766EB0014CF05 /* GNSAdapterMaioRewardVideoAd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

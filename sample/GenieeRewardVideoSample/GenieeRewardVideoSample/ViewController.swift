@@ -16,6 +16,8 @@ class ViewController: UIViewController, GNSRewardVideoAdDelegate {
     
     @IBOutlet weak var errorLabel: UILabel!
     
+    private let defaultZoneId = "1508853"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,8 +33,6 @@ class ViewController: UIViewController, GNSRewardVideoAdDelegate {
     
     //MARK GNSRewardVideoAdDelegate
     func rewardVideoAdDidReceive(_ rewardVideoAd: GNSRewardVideoAd!) {
-        //            NSLog("ViewController: LongUni Reward video ad is received.%s", GNSRewardVideoAd.sharedInstance().canShow());
-        print("ViewController: LongUni Reward video ad is received. ", GNSRewardVideoAd.sharedInstance().canShow())
         loadRewardBt.isEnabled = false
         showRewardBt.isEnabled = true
         
@@ -69,7 +69,7 @@ class ViewController: UIViewController, GNSRewardVideoAdDelegate {
         
         let request = GNSRequest()
         
-        GNSRewardVideoAd.sharedInstance()?.load(request, withZoneID: "1246726", isRTB: false)
+        GNSRewardVideoAd.sharedInstance()?.load(request, withZoneID: defaultZoneId, isRTB: false)
         
         GNSRewardVideoAd.sharedInstance().delegate = self
         
@@ -82,7 +82,11 @@ class ViewController: UIViewController, GNSRewardVideoAdDelegate {
     
     
     @IBAction func onShowRewardClicked(_ sender: Any) {
-        GNSRewardVideoAd.sharedInstance().show(self)
+        
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            GNSRewardVideoAd.sharedInstance().show(self)
+        }
     }
     
 }
