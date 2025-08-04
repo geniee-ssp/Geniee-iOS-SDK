@@ -12,7 +12,7 @@ If you want to use a version lower than Xcode12, please use GNAd SDK version 7.
 ### [English](manuals/SDK-Manual-en.md)
 
 ## Latest SDK Version
-### [Geniee SDK](https://developers.geniee.co.jp/ios/setup/)
+### [Geniee SDK](https://developers.genieegroup.com/ios/get-started)
 
 |SDK| Version |
 |:--|:--|
@@ -23,7 +23,7 @@ If you want to use a version lower than Xcode12, please use GNAd SDK version 7.
 |GNAdGoogleMediationAdapter|8.3.1|
 |GNAdMAXMediationAdapter|8.3.2|
 
-### [Ad Network(RewardVideo Mediation)](https://developers.geniee.co.jp/ios/reward/)
+### [Ad Network(RewardVideo Mediation)](https://developers.genieegroup.com/ios/rewarded-video)
 
 | AD Network　　　　　　　　　　　　　 | Verified version　　　　|
 |:-----------|:------------|
@@ -37,7 +37,7 @@ If you want to use a version lower than Xcode12, please use GNAd SDK version 7.
 | [Nend](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Nend-For-iOS.html) | 5.3.0 | 
 | [AMoAd](https://developers.geniee.co.jp/ios/reward/mediation/RewardVideo-Ad-Integration-ADNW-Amoad-For-iOS.html) | playable-1.0.0 | 
 
-### [Ad Network(Fullscreen interstitial Mediation)](https://developers.geniee.co.jp/ios/fullscreen-interstitial/)
+### [Ad Network(Fullscreen interstitial Mediation)](https://developers.genieegroup.com/ios/fullscreen-interstitial)
 
 | AD Network　　　　　　　　　　　　　 | Verified version　　　　|
 |:-----------|:------------|
