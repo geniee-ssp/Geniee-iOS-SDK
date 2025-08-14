@@ -8,12 +8,14 @@ target 'GenieeFullscreenInterstitialSample' do
   # Pods for GenieeFullscreenInterstitialSample
   
   pod 'Geniee-iOS-SDK'
-  pod 'AppLovinSDK'
-  pod 'UnityAds'
-  pod 'Ads-Global'
-  pod 'VungleAds'
-  pod 'MaioSDK'
-  pod 'Google-Mobile-Ads-SDK'
+  pod 'MaioSDK-v2'
+  pod 'FiveGADAdapter' # Line SDK
+#  pod 'AppLovinSDK'
+#  pod 'MaioSDK'
+#  pod 'UnityAds'
+#  pod 'Ads-Global'
+#  pod 'VungleAds'
+#  pod 'Google-Mobile-Ads-SDK'
   
   post_install do |installer|
     installer.pods_project.targets.each do |target|

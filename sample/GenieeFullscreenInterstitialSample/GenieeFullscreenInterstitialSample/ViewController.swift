@@ -14,6 +14,8 @@ class ViewController: UIViewController, GNSFullscreenInterstitialAdDelegate {
     
     @IBOutlet weak var errorLabel: UILabel!
     
+    private let defaultZoneId = "1431165"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -64,7 +66,7 @@ class ViewController: UIViewController, GNSFullscreenInterstitialAdDelegate {
         
         let request = GNSRequest()
         
-        GNSFullscreenInterstitialAd.sharedInstance().load(request, withZoneID: "1577099")
+        GNSFullscreenInterstitialAd.sharedInstance().load(request, withZoneID: defaultZoneId)
         
         loadRewardBt.isEnabled = false
         showRewardBt.isEnabled = false
