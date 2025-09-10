@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Geniee-Google-Mediation-Adapter"
-  s.version      = "8.3.2"
+  s.version      = "8.3.3"
   s.summary      = "Geniee Google adapter under Google Ads mediation"
   s.homepage     = "https://geniee.co.jp"
 
@@ -34,7 +34,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios, "9.0"
+  s.platform     = :ios, "12.0"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
- s.source       = { :git => "https://github.com/geniee-ssp/Geniee-iOS-SDK.git", :tag => "v.8.3.5" }
+ s.source       = { :git => "https://github.com/geniee-ssp/Geniee-iOS-SDK.git", :tag => "v.8.4.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -93,5 +93,5 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   s.dependency "Google-Mobile-Ads-SDK"
-  s.dependency "Geniee-iOS-SDK" 
+  s.dependency 'Geniee-iOS-SDK'
 end
