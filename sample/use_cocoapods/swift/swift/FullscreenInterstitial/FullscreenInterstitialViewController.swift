@@ -1,16 +1,18 @@
 import UIKit
 
 class FullscreenInterstitialViewController: UIViewController, UITextFieldDelegate, GNSFullscreenInterstitialAdDelegate {
+    
     @IBOutlet weak var loadAdButton: UIButton!
-    
     @IBOutlet weak var showAdButton: UIButton!
-    
     @IBOutlet weak var zoneIdText: UITextField!
+    @IBOutlet weak var errorLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         zoneIdText.delegate = self
         GNSFullscreenInterstitialAd.sharedInstance().delegate = self
         self.showAdButton.isEnabled = false
+        errorLabel.text = ""
     }
     
     func requestInterstitialAd() {
@@ -45,11 +47,13 @@ class FullscreenInterstitialViewController: UIViewController, UITextFieldDelegat
     func fullscreenInterstitialDidReceive(_ fullscreenInterstitial: GNSFullscreenInterstitialAd!) {
         NSLog("ViewController: Fullscreen ad is received.")
         self.showAdButton.isEnabled = true
+        errorLabel.text = ""
     }
     
     func fullscreenInterstitial(_ fullscreenInterstitial: GNSFullscreenInterstitialAd!, didFailToLoadWithError error: Error!) {
         NSLog("ViewController: Fullscreen ad failed to load. error: %@", error.localizedDescription)
         self.loadAdButton.isEnabled = true
+        errorLabel.text = error.localizedDescription
     }
     
     func fullscreenInterstitialAdDidClose(_ fullscreenInterstitial: GNSFullscreenInterstitialAd!) {
