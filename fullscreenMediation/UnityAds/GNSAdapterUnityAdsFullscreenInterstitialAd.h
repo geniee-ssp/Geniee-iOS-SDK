@@ -12,7 +12,7 @@
 
 @end
 
-@interface GNSExtrasFullscreenUnityAds : NSObject<GNSAdNetworkExtras>
+@interface GNSExtrasUnityAds : NSObject<GNSAdNetworkExtras>
 
 @property(nonatomic, copy) NSString *game_id;
 @property(nonatomic, copy) NSString *placement_id;

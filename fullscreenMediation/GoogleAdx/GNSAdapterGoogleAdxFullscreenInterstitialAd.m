@@ -22,7 +22,7 @@ static BOOL loggingEnabled = YES;
 
 @end
 
-@implementation GNSExtrasFullscreenGoogleAdx
+@implementation GNSExtrasGoogleAdx
 @end
 
 @implementation GNSAdapterGoogleAdxFullscreenInterstitialAd
@@ -34,16 +34,16 @@ static BOOL loggingEnabled = YES;
 }
 
 + (NSString *)adapterVersion {
-    return @"3.2.1";
+    return @"3.1.1";
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {
-    return [GNSExtrasFullscreenGoogleAdx class];
+    return [GNSExtrasGoogleAdx class];
 }
 
 - (id<GNSAdNetworkExtras>)networkExtrasParameter:(GNSAdNetworkExtraParams *) parameter
 {
-    GNSExtrasFullscreenGoogleAdx * extra = [[GNSExtrasFullscreenGoogleAdx alloc]init];
+    GNSExtrasGoogleAdx * extra = [[GNSExtrasGoogleAdx alloc]init];
     extra.adUnitId = parameter.external_link_id;
     
     return extra;
@@ -108,7 +108,7 @@ static BOOL loggingEnabled = YES;
     [self setTimerWith:timeout];
 
     self.gamInterstitial = nil;
-    GNSExtrasFullscreenGoogleAdx *extras = [self.connector networkExtras];
+    GNSExtrasGoogleAdx *extras = [self.connector networkExtras];
     
     GAMRequest *request = [GAMRequest request];
     [GAMInterstitialAd loadWithAdManagerAdUnitID:extras.adUnitId

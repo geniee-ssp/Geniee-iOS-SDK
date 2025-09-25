@@ -14,7 +14,7 @@
 
 @end
 
-@interface GNSExtrasFullscreenGoogleAdx : NSObject<GNSAdNetworkExtras>
+@interface GNSExtrasGoogleAdx : NSObject<GNSAdNetworkExtras>
 
 @property(nonatomic, copy) NSString *adUnitId;
 

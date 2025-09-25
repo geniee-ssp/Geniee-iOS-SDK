@@ -14,7 +14,7 @@
 
 @end
 
-@interface GNSExtrasFullscreenVungle : NSObject<GNSAdNetworkExtras>
+@interface GNSExtrasVungle : NSObject<GNSAdNetworkExtras>
 
 @property(nonatomic, copy) NSString *app_id;
 @property(nonatomic, copy) NSString *placementReferenceId;
