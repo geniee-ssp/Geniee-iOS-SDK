@@ -33,7 +33,7 @@ static BOOL loggingEnabled = YES;
 
 - (void)ALLog:(NSString *)logMessage {
     if (loggingEnabled) {
-        NSLog(@"[INFO]GNSVungleAdapter: %@", logMessage);
+        NSLog(@"[INFO]GNSGoogleAdManagerAdapter: %@", logMessage);
     }
 }
 

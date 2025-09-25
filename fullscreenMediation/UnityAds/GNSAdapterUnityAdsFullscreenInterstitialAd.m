@@ -20,7 +20,7 @@ static BOOL loggingEnabled = YES;
 
 @end
 
-@implementation GNSExtrasUnityAds
+@implementation GNSExtrasFullscreenUnityAds
 @end
 
 @implementation GNSAdapterUnityAdsFullscreenInterstitialAd
@@ -36,12 +36,12 @@ static BOOL loggingEnabled = YES;
 }
 
 + (Class<GNSAdNetworkExtras>)networkExtrasClass {
-    return [GNSExtrasUnityAds class];
+    return [GNSExtrasFullscreenUnityAds class];
 }
 
 - (id<GNSAdNetworkExtras>)networkExtrasParameter:(GNSAdNetworkExtraParams *) parameter
 {
-    GNSExtrasUnityAds * extra = [[GNSExtrasUnityAds alloc]init];
+    GNSExtrasFullscreenUnityAds * extra = [[GNSExtrasFullscreenUnityAds alloc]init];
     extra.game_id = parameter.external_link_id;
     extra.placement_id = parameter.external_link_media_id;
     extra.type = parameter.type;
@@ -60,7 +60,7 @@ static BOOL loggingEnabled = YES;
 
 - (void)setUp {
     
-    GNSExtrasUnityAds *extras = [self.connector networkExtras];
+    GNSExtrasFullscreenUnityAds *extras = [self.connector networkExtras];
     
     if(![UnityAds isInitialized]) {
         [UnityAds initialize:extras.game_id
@@ -139,7 +139,7 @@ static BOOL loggingEnabled = YES;
     // set Timer
     [self setTimerWith:timeout];
     
-    GNSExtrasUnityAds *extras = [self.connector networkExtras];
+    GNSExtrasFullscreenUnityAds *extras = [self.connector networkExtras];
     
     self.canShowAd = false;
     [UnityAds load: extras.placement_id
@@ -152,7 +152,7 @@ static BOOL loggingEnabled = YES;
 }
 
 - (void)presentAdWithRootViewController:(UIViewController *)viewController {
-    GNSExtrasUnityAds *extras = [self.connector networkExtras];
+    GNSExtrasFullscreenUnityAds *extras = [self.connector networkExtras];
     if ([self isReadyForDisplay]) {
         [UnityAds show:viewController placementId:extras.placement_id showDelegate:self];
     }
@@ -165,7 +165,7 @@ static BOOL loggingEnabled = YES;
 #pragma mark : UnityAdsInitializationDelegate
 - (void)initializationComplete {
     
-    GNSExtrasUnityAds *extras = [self.connector networkExtras];
+    GNSExtrasFullscreenUnityAds *extras = [self.connector networkExtras];
     
     [UnityAds load:extras.placement_id loadDelegate:self];
 }
