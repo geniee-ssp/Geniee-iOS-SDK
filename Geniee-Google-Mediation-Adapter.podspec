@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Geniee-Google-Mediation-Adapter"
-  s.version      = "8.3.3"
+  s.version      = "8.3.4"
   s.summary      = "Geniee Google adapter under Google Ads mediation"
   s.homepage     = "https://geniee.co.jp"
 
@@ -42,7 +42,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
- s.source       = { :git => "https://github.com/geniee-ssp/Geniee-iOS-SDK.git", :tag => "v.8.4.2" }
+ s.source       = { :git => "https://github.com/geniee-ssp/Geniee-iOS-SDK.git", :tag => "v.8.4.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
