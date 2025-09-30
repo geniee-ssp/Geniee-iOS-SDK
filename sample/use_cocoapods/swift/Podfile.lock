@@ -7,14 +7,14 @@ PODS:
   - FiveGADAdapter (1.5.1):
     - FiveAd (~> 2.4)
     - Google-Mobile-Ads-SDK (~> 11.2)
-  - Geniee-Google-Mediation-Adapter (8.3.3):
+  - Geniee-Google-Mediation-Adapter (8.3.4):
     - Geniee-iOS-SDK
     - Google-Mobile-Ads-SDK
   - Geniee-iOS-SDK (8.4.1)
   - Geniee-Mediation-AppLovin-Adapter (8.3.1.0):
     - AppLovinSDK
     - Geniee-iOS-SDK
-  - Geniee-Mediation-GoogleAdManager-Adapter (8.3.1.0):
+  - Geniee-Mediation-GoogleAdManager-Adapter (8.4.1.0):
     - Geniee-iOS-SDK
     - Google-Mobile-Ads-SDK
   - Geniee-Mediation-Line-Adapter (8.4.1.0):
@@ -70,10 +70,10 @@ SPEC CHECKSUMS:
   AppLovinSDK: 5075837afdee4fb429121799b8cbcc5918ef3a23
   FiveAd: f25d5ff3bfe880f1c050e04e7e321eba9cf895df
   FiveGADAdapter: a5c2b05ca6aa608297574f515d9e07434fc339f5
-  Geniee-Google-Mediation-Adapter: 12d6e2714fcb1f0d5cb14ee464f3b9874f31078c
+  Geniee-Google-Mediation-Adapter: a2dfdb9b7655fd66340fccd8bf36897f64cfc612
   Geniee-iOS-SDK: 69816a28c199cc635b438a60da42f58ed12eb129
   Geniee-Mediation-AppLovin-Adapter: cd9ff2fee14d04a208896d2357db0942ad9771bd
-  Geniee-Mediation-GoogleAdManager-Adapter: a9fa40b45724989b9fac9dbd6aabaa3e327ed7cd
+  Geniee-Mediation-GoogleAdManager-Adapter: f2500523e8708934e0a86f598f183ff03da34eaf
   Geniee-Mediation-Line-Adapter: e42cd37a17203618f933a98b6ba4170b7051730a
   Geniee-Mediation-Maio-Adapter: 9ba623ed59ea3877927bb95b812db52f1ba86210
   Geniee-Mediation-Pangle-Adapter: 20963d740e54a4ee708c17638e93d723f156870e

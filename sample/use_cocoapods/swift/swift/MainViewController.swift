@@ -7,6 +7,7 @@ class MainViewController: UIViewController, UIScrollViewDelegate, GNAdViewDelega
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        GADMobileAds.sharedInstance().start()
         GADMobileAds.sharedInstance().requestConfiguration.testDeviceIdentifiers = [Util.admobDeviceID()]
         
         scrollView.contentSize = CGSizeMake(0, 1000)
@@ -17,8 +18,9 @@ class MainViewController: UIViewController, UIScrollViewDelegate, GNAdViewDelega
         createButton(title:"Google Banner", y:90).addTarget(self, action: #selector(showGoogleBanner), for: .touchUpInside)
         createButton(title:"Google Fullscreen Interstitial", y:0).addTarget(self, action: #selector(showGoogleFullscreenInterstitial), for: .touchUpInside)
         createButton(title:"Google Reward", y:-90).addTarget(self, action: #selector(showGoogleReward), for: .touchUpInside)
-        createButton(title:"Multiple Banner", y:-180).addTarget(self, action: #selector(showMultipleBanner), for: .touchUpInside)
-        createButton(title:"Native", y:-270).addTarget(self, action: #selector(showNative), for: .touchUpInside)
+        createButton(title:"Launch Google Ad Inspector", y:-180).addTarget(self, action: #selector(launchGoogleAdInspector), for: .touchUpInside)
+        createButton(title:"Multiple Banner", y:-270).addTarget(self, action: #selector(showMultipleBanner), for: .touchUpInside)
+        createButton(title:"Native", y:-360).addTarget(self, action: #selector(showNative), for: .touchUpInside)
     }
 
     override func didReceiveMemoryWarning() {
@@ -71,6 +73,12 @@ class MainViewController: UIViewController, UIScrollViewDelegate, GNAdViewDelega
     
     @objc func showGoogleReward() {
         showStoryboard("GoogleReward")
+    }
+    
+    @objc func launchGoogleAdInspector() {
+        GADMobileAds.sharedInstance().presentAdInspector(from: self) { error in
+            // Error will be non-nil if there was an issue and the inspector was not displayed.
+        }
     }
     
     @objc func showMultipleBanner() {
