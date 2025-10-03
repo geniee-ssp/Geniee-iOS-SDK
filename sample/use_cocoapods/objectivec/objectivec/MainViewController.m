@@ -13,9 +13,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [GADMobileAds.sharedInstance startWithCompletionHandler:nil];
     GADMobileAds.sharedInstance.requestConfiguration.testDeviceIdentifiers = @[[Util admobDeviceID]];
     
-    _scrollView.contentSize = CGSizeMake(0, 1000);
+    _scrollView.contentSize = CGSizeMake(0, 1100);
     
     [[self createButton:@"Banner" y:360] addTarget:self action:@selector(showBanner:) forControlEvents:UIControlEventTouchUpInside];
     [[self createButton:@"Fullscreen Interstitial" y:270] addTarget:self action:@selector(showFullscreenInterstitial:) forControlEvents:UIControlEventTouchUpInside];
@@ -23,10 +24,11 @@
     [[self createButton:@"Google Banner" y:90] addTarget:self action:@selector(showGoogleBanner:) forControlEvents:UIControlEventTouchUpInside];
     [[self createButton:@"Google Fullscreen Interstitial" y:0] addTarget:self action:@selector(showGoogleFullscreenInterstitial:) forControlEvents:UIControlEventTouchUpInside];
     [[self createButton:@"Google Reward" y:-90] addTarget:self action:@selector(showGoogleReward:) forControlEvents:UIControlEventTouchUpInside];
-    [[self createButton:@"Multiple Banner" y:-180] addTarget:self action:@selector(showMultipleBanner:) forControlEvents:UIControlEventTouchUpInside];
-    [[self createButton:@"Native" y:-270] addTarget:self action:@selector(showNative:) forControlEvents:UIControlEventTouchUpInside];
-    [[self createButton:@"Sample Interstitial" y:-360] addTarget:self action:@selector(showSampleInterstitial:) forControlEvents:UIControlEventTouchUpInside];
-    [[self createButton:@"Sample Video" y:-450] addTarget:self action:@selector(showSampleVideo:) forControlEvents:UIControlEventTouchUpInside];
+    [[self createButton:@"Launch Google Ad Inspector" y:-180] addTarget:self action:@selector(launchGoogleAdInspector:) forControlEvents:UIControlEventTouchUpInside];
+    [[self createButton:@"Multiple Banner" y:-270] addTarget:self action:@selector(showMultipleBanner:) forControlEvents:UIControlEventTouchUpInside];
+    [[self createButton:@"Native" y:-360] addTarget:self action:@selector(showNative:) forControlEvents:UIControlEventTouchUpInside];
+    [[self createButton:@"Sample Interstitial" y:-450] addTarget:self action:@selector(showSampleInterstitial:) forControlEvents:UIControlEventTouchUpInside];
+    [[self createButton:@"Sample Video" y:-540] addTarget:self action:@selector(showSampleVideo:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (UIButton *)createButton:(NSString *)title y:(NSInteger)y {
@@ -74,6 +76,13 @@
 
 - (void)showGoogleReward:(id)sender {
     [self showStoryboard: @"GoogleReward"];
+}
+
+- (void)launchGoogleAdInspector:(id)sender {
+    [GADMobileAds.sharedInstance presentAdInspectorFromViewController:self
+      completionHandler:^(NSError *error) {
+        // Error will be non-nil if there was an issue and the inspector was not displayed.
+    }];
 }
 
 - (void)showMultipleBanner:(id)sender {
