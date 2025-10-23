@@ -18,9 +18,13 @@
     
     _scrollView.contentSize = CGSizeMake(0, 1100);
     
+    NSBundle *bundle = [NSBundle mainBundle];
+    NSString *bundleIdentifier = [bundle bundleIdentifier];
+    bool isUseCocoapods = [bundleIdentifier isEqual: @"jp.com.geniee.sample-objectivec-cocoapods"];
+    
     [[self createButton:@"Banner" y:360] addTarget:self action:@selector(showBanner:) forControlEvents:UIControlEventTouchUpInside];
-    [[self createButton:@"Fullscreen Interstitial" y:270] addTarget:self action:@selector(showFullscreenInterstitial:) forControlEvents:UIControlEventTouchUpInside];
-    [[self createButton:@"Reward Video" y:180] addTarget:self action:@selector(showRewardVideo:) forControlEvents:UIControlEventTouchUpInside];
+    [[self createButton:@"Fullscreen Interstitial" y:270 isEnable:isUseCocoapods] addTarget:self action:@selector(showFullscreenInterstitial:) forControlEvents:UIControlEventTouchUpInside];
+    [[self createButton:@"Reward Video" y:180 isEnable:isUseCocoapods] addTarget:self action:@selector(showRewardVideo:) forControlEvents:UIControlEventTouchUpInside];
     [[self createButton:@"Google Banner" y:90] addTarget:self action:@selector(showGoogleBanner:) forControlEvents:UIControlEventTouchUpInside];
     [[self createButton:@"Google Fullscreen Interstitial" y:0] addTarget:self action:@selector(showGoogleFullscreenInterstitial:) forControlEvents:UIControlEventTouchUpInside];
     [[self createButton:@"Google Reward" y:-90] addTarget:self action:@selector(showGoogleReward:) forControlEvents:UIControlEventTouchUpInside];
@@ -31,15 +35,26 @@
     [[self createButton:@"Sample Video" y:-540] addTarget:self action:@selector(showSampleVideo:) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (UIButton *)createButton:(NSString *)title y:(NSInteger)y {
+- (UIButton *)createButton:(NSString *)title y:(NSInteger)y isEnable:(bool)isEnable {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
-    [button setTitle:title forState:UIControlStateNormal];
-    button.backgroundColor = [UIColor blueColor];
+    if (isEnable) {
+        [button setTitle:title forState:UIControlStateNormal];
+        button.backgroundColor = [UIColor blueColor];
+    } else {
+        [button setTitle:[title stringByAppendingString:@"\n(This sample is only\nsupported by use_cocoapods.)"] forState:UIControlStateNormal];
+        button.backgroundColor = [UIColor grayColor];
+        button.titleLabel.numberOfLines = 3;
+        button.enabled = false;
+    }
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     button.frame = CGRectMake(self.view.center.x - 125, self.view.center.y - y, 250, 80);
     button.layer.cornerRadius = 10;
     [_scrollView addSubview:button];
     return button;
+}
+
+- (UIButton *)createButton:(NSString *)title y:(NSInteger)y {
+    return [self createButton:title y:y isEnable:true];
 }
 
 - (void)showViewController:(UIViewController *)vc {
