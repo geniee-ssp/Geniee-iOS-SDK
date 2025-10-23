@@ -53,8 +53,8 @@
 
 
 #pragma mark GADFullScreenContentDelegate
-- (void)adDidPresentFullScreenContent:(id)ad {
-    NSLog(@"ViewController: adDidPresentFullScreenContent");
+- (void)adWillPresentFullScreenContent:(id<GADFullScreenPresentingAd>)ad {
+    NSLog(@"ViewController: adWillPresentFullScreenContent");
 }
 
 - (void)ad:(id)ad didFailToPresentFullScreenContentWithError:(NSError *)error {

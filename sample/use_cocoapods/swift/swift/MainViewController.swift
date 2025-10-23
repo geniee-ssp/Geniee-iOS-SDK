@@ -12,9 +12,12 @@ class MainViewController: UIViewController, UIScrollViewDelegate, GNAdViewDelega
         
         scrollView.contentSize = CGSizeMake(0, 1000)
         
+        let bundleIdentifier = Bundle.main.bundleIdentifier
+        let isUseCocoapods = bundleIdentifier == "jp.com.geniee.sample-swift-cocoapods"
+        
         createButton(title:"Banner", y:360).addTarget(self, action: #selector(showBanner), for: .touchUpInside)
-        createButton(title:"Fullscreen Interstitial", y:270).addTarget(self, action: #selector(showFullscreenInterstitial), for: .touchUpInside)
-        createButton(title:"Reward Video", y:180).addTarget(self, action: #selector(showRewardVideo), for: .touchUpInside)
+        createButton(title:"Fullscreen Interstitial", y:270, isEnable:isUseCocoapods).addTarget(self, action: #selector(showFullscreenInterstitial), for: .touchUpInside)
+        createButton(title:"Reward Video", y:180, isEnable:isUseCocoapods).addTarget(self, action: #selector(showRewardVideo), for: .touchUpInside)
         createButton(title:"Google Banner", y:90).addTarget(self, action: #selector(showGoogleBanner), for: .touchUpInside)
         createButton(title:"Google Fullscreen Interstitial", y:0).addTarget(self, action: #selector(showGoogleFullscreenInterstitial), for: .touchUpInside)
         createButton(title:"Google Reward", y:-90).addTarget(self, action: #selector(showGoogleReward), for: .touchUpInside)
@@ -28,10 +31,17 @@ class MainViewController: UIViewController, UIScrollViewDelegate, GNAdViewDelega
         // Dispose of any resources that can be recreated.
     }
     
-    func createButton(title:String, y:CGFloat) -> UIButton {
+    func createButton(title:String, y:CGFloat, isEnable:Bool = true) -> UIButton {
         let button = UIButton()
-        button.setTitle(title, for: .normal)
-        button.backgroundColor = .blue
+        if isEnable {
+            button.setTitle(title, for: .normal)
+            button.backgroundColor = .blue
+        } else {
+            button.setTitle(title + "\n(This sample is only\nsupported by use_cocoapods.)", for: .normal)
+            button.backgroundColor = .gray
+            button.titleLabel?.numberOfLines = 3
+            button.isEnabled = false
+        }
         button.setTitleColor(.white, for: .normal)
         button.frame = CGRectMake(self.view.center.x - 125, self.view.center.y - y, 250, 80)
         button.layer.cornerRadius = 10

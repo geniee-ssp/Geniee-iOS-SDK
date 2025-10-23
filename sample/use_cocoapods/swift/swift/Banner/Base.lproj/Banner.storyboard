@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,25 +16,22 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Zone ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqf-zW-wFf">
-                                <rect key="frame" x="0.0" y="80" width="375" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zone ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqf-zW-wFf">
+                                <rect key="frame" x="0.0" y="150" width="440" height="20.333333333333332"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="1573195" borderStyle="roundedRect" placeholder="Here!!ZoneID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ob6-gb-IZO">
-                                <rect key="frame" x="0.0" y="120" width="375" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="1573195" borderStyle="roundedRect" placeholder="Here!!ZoneID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ob6-gb-IZO">
+                                <rect key="frame" x="20" y="200" width="400" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CgB-oQ-tN4">
-                                <rect key="frame" x="0.0" y="578" width="375" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CgB-oQ-tN4">
+                                <rect key="frame" x="20" y="750" width="400" height="38"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Show"/>
@@ -44,6 +41,17 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Gqf-zW-wFf" firstAttribute="trailing" secondItem="Ob6-gb-IZO" secondAttribute="trailing" constant="20" id="7H0-10-fyk"/>
+                            <constraint firstItem="Ob6-gb-IZO" firstAttribute="trailing" secondItem="CgB-oQ-tN4" secondAttribute="trailing" id="7WG-Js-THV"/>
+                            <constraint firstItem="Gqf-zW-wFf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ob6-gb-IZO" secondAttribute="leading" constant="-20" id="B4o-No-UJa"/>
+                            <constraint firstItem="Ob6-gb-IZO" firstAttribute="leading" secondItem="CgB-oQ-tN4" secondAttribute="leading" id="EVx-k8-Cw1"/>
+                            <constraint firstItem="Ob6-gb-IZO" firstAttribute="top" secondItem="Gqf-zW-wFf" secondAttribute="bottom" constant="29.666666666666657" id="WBd-lM-bnn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CgB-oQ-tN4" secondAttribute="bottom" constant="100" id="Z46-Em-UcQ"/>
+                            <constraint firstItem="Gqf-zW-wFf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="eqI-qs-lPa"/>
+                            <constraint firstItem="Gqf-zW-wFf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="26" id="lkU-1L-DmJ"/>
+                            <constraint firstItem="Gqf-zW-wFf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nd7-qg-e5l"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="zoneIdText" destination="Ob6-gb-IZO" id="4Po-nr-WAe"/>

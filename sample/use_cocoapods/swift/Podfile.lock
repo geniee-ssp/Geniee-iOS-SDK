@@ -10,7 +10,7 @@ PODS:
   - Geniee-Google-Mediation-Adapter (8.3.4):
     - Geniee-iOS-SDK
     - Google-Mobile-Ads-SDK
-  - Geniee-iOS-SDK (8.4.1)
+  - Geniee-iOS-SDK (8.4.2)
   - Geniee-Mediation-AppLovin-Adapter (8.3.1.0):
     - AppLovinSDK
     - Geniee-iOS-SDK
@@ -71,7 +71,7 @@ SPEC CHECKSUMS:
   FiveAd: f25d5ff3bfe880f1c050e04e7e321eba9cf895df
   FiveGADAdapter: a5c2b05ca6aa608297574f515d9e07434fc339f5
   Geniee-Google-Mediation-Adapter: a2dfdb9b7655fd66340fccd8bf36897f64cfc612
-  Geniee-iOS-SDK: 69816a28c199cc635b438a60da42f58ed12eb129
+  Geniee-iOS-SDK: 5fef5f052137ac188c361a43007484560eda9390
   Geniee-Mediation-AppLovin-Adapter: cd9ff2fee14d04a208896d2357db0942ad9771bd
   Geniee-Mediation-GoogleAdManager-Adapter: f2500523e8708934e0a86f598f183ff03da34eaf
   Geniee-Mediation-Line-Adapter: e42cd37a17203618f933a98b6ba4170b7051730a
