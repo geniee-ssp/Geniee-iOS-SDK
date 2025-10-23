@@ -248,7 +248,7 @@ class SimpleViewController: UIViewController, GNNativeAdRequestDelegate, GNSNati
     @objc func optoutButton(_ view:SimpleUIButton) {
         if (view.nativeAd != nil && view.nativeAd.optout_url != nil) {
             let url : URL = URL.init(fileURLWithPath:view.nativeAd.optout_url)
-            UIApplication.shared.openURL(url)
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
         }
     }
 

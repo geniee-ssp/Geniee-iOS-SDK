@@ -266,7 +266,9 @@ static const NSInteger SIZE_MEDIA = 350;
 {
     if (view && view.nativeAd && view.nativeAd.optout_url) {
         NSURL* url = [NSURL URLWithString:view.nativeAd.optout_url];
-        [[UIApplication sharedApplication] openURL:url];
+        [[UIApplication sharedApplication] openURL:url
+                                           options:@{}
+                                 completionHandler:nil];
     }
 }
 

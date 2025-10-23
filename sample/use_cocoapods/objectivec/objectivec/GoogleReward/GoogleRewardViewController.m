@@ -58,8 +58,8 @@
 #pragma mark: GADFullScreenContentDelegate
 
 /// Tells the delegate that the rewarded ad was presented.
-- (void)adDidPresentFullScreenContent:(id)ad {
-    NSLog(@"ViewController: adDidPresentFullScreenContent");
+- (void)adWillPresentFullScreenContent:(id<GADFullScreenPresentingAd>)ad {
+    NSLog(@"ViewController: adWillPresentFullScreenContent");
 }
 
 /// Tells the delegate that the rewarded ad failed to present.
